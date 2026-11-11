@@ -1,0 +1,36 @@
+{
+ "eudem25m": {
+  "z_start_house": 43.05889892578125,
+  "z_end_road": 29.367380142211914,
+  "z_min": 29.367380142211914,
+  "z_max": 43.13251495361328,
+  "net_drop": 13.691518783569336,
+  "avg_grade_pct": 2.1562379757400665,
+  "total_climb_m": 2.4714088439941406,
+  "total_descent_m": 16.162927627563477,
+  "mean_abs_grade_pct": 2.9346681392943226,
+  "max_grade_10m_pct": -7.921638488769531,
+  "max_grade_10m_at_s": 145.0,
+  "max_grade_25m_pct": -7.5333099365234375,
+  "max_grade_25m_at_s": 135.0,
+  "max_grade_50m_pct": -7.15380859375,
+  "max_grade_50m_at_s": 115.0
+ },
+ "srtm30m": {
+  "z_start_house": 43.0,
+  "z_end_road": 29.0,
+  "z_min": 29.0,
+  "z_max": 43.0,
+  "net_drop": 14.0,
+  "avg_grade_pct": 2.2048197966603666,
+  "total_climb_m": 4.0,
+  "total_descent_m": 18.0,
+  "mean_abs_grade_pct": 3.464716823323433,
+  "max_grade_10m_pct": -10.0,
+  "max_grade_10m_at_s": 5.0,
+  "max_grade_25m_pct": -12.0,
+  "max_grade_25m_at_s": 55.0,
+  "max_grade_50m_pct": -10.0,
+  "max_grade_50m_at_s": 50.0
+ }
+}

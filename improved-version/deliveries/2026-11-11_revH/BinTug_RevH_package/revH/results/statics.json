@@ -1,0 +1,1614 @@
+{
+ "lift": {
+  "per_bin": [
+   {
+    "bin": "Weber 140 L",
+    "gross_kg": 66.0,
+    "comb_mm": 1001,
+    "carriage_travel_needed_mm": 261,
+    "mast_moment_Nm": 207,
+    "comb_pull_N": 345,
+    "roller_reaction_N": 691,
+    "lift_force_rollers_N": 733,
+    "lift_force_slides_N": 968,
+    "actuator_margin_rollers": 4.09,
+    "actuator_margin_slides": 3.1
+   },
+   {
+    "bin": "ESE 140 CL",
+    "gross_kg": 70.0,
+    "comb_mm": 969,
+    "carriage_travel_needed_mm": 229,
+    "mast_moment_Nm": 223,
+    "comb_pull_N": 373,
+    "roller_reaction_N": 743,
+    "lift_force_rollers_N": 775,
+    "lift_force_slides_N": 1028,
+    "actuator_margin_rollers": 3.87,
+    "actuator_margin_slides": 2.92
+   },
+   {
+    "bin": "ESE 240 SL (200 mm wheels)",
+    "gross_kg": 110.0,
+    "comb_mm": 1005,
+    "carriage_travel_needed_mm": 265,
+    "mast_moment_Nm": 459,
+    "comb_pull_N": 828,
+    "roller_reaction_N": 1530,
+    "lift_force_rollers_N": 1215,
+    "lift_force_slides_N": 1735,
+    "actuator_margin_rollers": 2.47,
+    "actuator_margin_slides": 1.73
+   },
+   {
+    "bin": "ESE 240 SL (250 mm wheels)",
+    "gross_kg": 110.0,
+    "comb_mm": 1030,
+    "carriage_travel_needed_mm": 290,
+    "mast_moment_Nm": 459,
+    "comb_pull_N": 828,
+    "roller_reaction_N": 1530,
+    "lift_force_rollers_N": 1215,
+    "lift_force_slides_N": 1735,
+    "actuator_margin_rollers": 2.47,
+    "actuator_margin_slides": 1.73
+   },
+   {
+    "bin": "SULO Citybac 240",
+    "gross_kg": 110.0,
+    "comb_mm": 991,
+    "carriage_travel_needed_mm": 251,
+    "mast_moment_Nm": 454,
+    "comb_pull_N": 818,
+    "roller_reaction_N": 1514,
+    "lift_force_rollers_N": 1214,
+    "lift_force_slides_N": 1729,
+    "actuator_margin_rollers": 2.47,
+    "actuator_margin_slides": 1.74
+   },
+   {
+    "bin": "ESE 240 CL (lowest)",
+    "gross_kg": 110.0,
+    "comb_mm": 938,
+    "carriage_travel_needed_mm": 198,
+    "mast_moment_Nm": 460,
+    "comb_pull_N": 830,
+    "roller_reaction_N": 1533,
+    "lift_force_rollers_N": 1215,
+    "lift_force_slides_N": 1737,
+    "actuator_margin_rollers": 2.47,
+    "actuator_margin_slides": 1.73
+   },
+   {
+    "bin": "Craemer MGBneo 240 (tallest)",
+    "gross_kg": 108.0,
+    "comb_mm": 1015,
+    "carriage_travel_needed_mm": 275,
+    "mast_moment_Nm": 453,
+    "comb_pull_N": 817,
+    "roller_reaction_N": 1508,
+    "lift_force_rollers_N": 1194,
+    "lift_force_slides_N": 1707,
+    "actuator_margin_rollers": 2.51,
+    "actuator_margin_slides": 1.76
+   }
+  ],
+  "stroke": {
+   "stroke_mm": 300,
+   "comb_z_min_mm": 840,
+   "comb_z_max_mm": 1140,
+   "bins_comb_range_mm": [
+    938,
+    1030
+   ],
+   "en840_band_mm": [
+    860,
+    1030
+   ],
+   "start_below_lowest_mm": 20,
+   "top_reserve_above_highest_plus_lift_mm": 10,
+   "lift_time_s_at_5mm_s": 20,
+   "full_stroke_time_s": 60
+  }
+ },
+ "structure": {
+  "mast 2 x 40x40x3": {
+   "Z_mm3": 10197,
+   "stress_static_MPa": 45.1,
+   "stress_3g_MPa": 135.3,
+   "sf_3g_S235": 1.74,
+   "kg_per_m_each": 3.49
+  },
+  "mast 2 x 50x50x3 (chosen)": {
+   "Z_mm3": 16679,
+   "stress_static_MPa": 27.6,
+   "stress_3g_MPa": 82.7,
+   "sf_3g_S235": 2.84,
+   "kg_per_m_each": 4.43
+  },
+  "side rail 50x50x3": {
+   "drive_wheel_load_N": 809,
+   "moment_Nm": 364,
+   "stress_static_MPa": 43.6,
+   "stress_3g_MPa": 130.9,
+   "sf_3g_S235": 1.79
+  },
+  "comb blade on lip": {
+   "note": "10 mm rounded edge bearing on 390 mm of lip (narrowest receiver assumed)",
+   "bearing_static_MPa": 0.28,
+   "bearing_3g_MPa": 0.83,
+   "hdpe_yield_MPa": "20-25"
+  }
+ },
+ "stability": {
+  "rows": [
+   {
+    "load": "unladen",
+    "mass_kg": 85.5,
+    "cg_x": 0.233,
+    "cg_z": 0.39,
+    "lateral_tip_deg": 51.2,
+    "cross_slope_30pct_margin": 4.14,
+    "tip_back_grade_pct": 59.8,
+    "tip_forward_decel_g": 1.3,
+    "nose_share_flat_pct": 31.5,
+    "nose_share_12pct_climb_pct": 25.2,
+    "accel_limit_12pct_climb_ms2": 4.69
+   },
+   {
+    "load": "empty 240 L",
+    "mass_kg": 98.5,
+    "cg_x": 0.208,
+    "cg_z": 0.416,
+    "lateral_tip_deg": 49.4,
+    "cross_slope_30pct_margin": 3.89,
+    "tip_back_grade_pct": 50.0,
+    "tip_forward_decel_g": 1.28,
+    "nose_share_flat_pct": 28.1,
+    "nose_share_12pct_climb_pct": 21.3,
+    "accel_limit_12pct_climb_ms2": 3.73,
+    "wind25_overturn_margin": 2.5
+   },
+   {
+    "load": "full 240 L",
+    "mass_kg": 195.5,
+    "cg_x": 0.116,
+    "cg_z": 0.564,
+    "lateral_tip_deg": 40.7,
+    "cross_slope_30pct_margin": 2.86,
+    "tip_back_grade_pct": 20.5,
+    "tip_forward_decel_g": 1.11,
+    "nose_share_flat_pct": 15.7,
+    "nose_share_12pct_climb_pct": 6.5,
+    "accel_limit_12pct_climb_ms2": 0.84,
+    "wind25_overturn_margin": 5.0
+   },
+   {
+    "load": "full 140 L",
+    "mass_kg": 155.5,
+    "cg_x": 0.185,
+    "cg_z": 0.517,
+    "lateral_tip_deg": 43.2,
+    "cross_slope_30pct_margin": 3.13,
+    "tip_back_grade_pct": 35.7,
+    "tip_forward_decel_g": 1.08,
+    "nose_share_flat_pct": 24.9,
+    "nose_share_12pct_climb_pct": 16.6,
+    "accel_limit_12pct_climb_ms2": 2.33,
+    "wind25_overturn_margin": 4.0
+   }
+  ],
+  "bin_swing_out": {
+   "note": "acceleration (nose-forward) needed to swing a hanging bin off the pad = g * xf / (comb height - CG height)",
+   "accel_g": 0.85
+  }
+ },
+ "drive": {
+  "kt": 0.0533,
+  "ratio": 32.0,
+  "eta": 0.8,
+  "rows": [
+   {
+    "load": "unladen",
+    "grade_pct": 2.2,
+    "force_N": 44,
+    "wheel_torque_Nm": 3.5,
+    "motor_current_A": 4.0,
+    "mech_power_W_at_0p8": 35
+   },
+   {
+    "load": "unladen",
+    "grade_pct": 7.5,
+    "force_N": 88,
+    "wheel_torque_Nm": 7.0,
+    "motor_current_A": 6.6,
+    "mech_power_W_at_0p8": 70
+   },
+   {
+    "load": "unladen",
+    "grade_pct": 12.0,
+    "force_N": 126,
+    "wheel_torque_Nm": 10.0,
+    "motor_current_A": 8.8,
+    "mech_power_W_at_0p8": 101
+   },
+   {
+    "load": "empty 240 L",
+    "grade_pct": 2.2,
+    "force_N": 50,
+    "wheel_torque_Nm": 4.0,
+    "motor_current_A": 4.4,
+    "mech_power_W_at_0p8": 40
+   },
+   {
+    "load": "empty 240 L",
+    "grade_pct": 7.5,
+    "force_N": 101,
+    "wheel_torque_Nm": 8.1,
+    "motor_current_A": 7.4,
+    "mech_power_W_at_0p8": 81
+   },
+   {
+    "load": "empty 240 L",
+    "grade_pct": 12.0,
+    "force_N": 145,
+    "wheel_torque_Nm": 11.5,
+    "motor_current_A": 9.9,
+    "mech_power_W_at_0p8": 116
+   },
+   {
+    "load": "full 240 L",
+    "grade_pct": 2.2,
+    "force_N": 100,
+    "wheel_torque_Nm": 7.9,
+    "motor_current_A": 7.3,
+    "mech_power_W_at_0p8": 80
+   },
+   {
+    "load": "full 240 L",
+    "grade_pct": 7.5,
+    "force_N": 201,
+    "wheel_torque_Nm": 16.0,
+    "motor_current_A": 13.2,
+    "mech_power_W_at_0p8": 161
+   },
+   {
+    "load": "full 240 L",
+    "grade_pct": 12.0,
+    "force_N": 288,
+    "wheel_torque_Nm": 22.9,
+    "motor_current_A": 18.3,
+    "mech_power_W_at_0p8": 230
+   }
+  ],
+  "t_lim_60Nm_equals_A": 44.0,
+  "t_lim_80Nm_equals_A": 59.0
+ },
+ "bin_on_slope": {
+  "rows": [
+   {
+    "fill": "empty",
+    "grade_pct": 5,
+    "facing": "wheels downhill",
+    "front_edge_share": 0.52,
+    "mu_needed_at_base": 0.1,
+    "holds_at_mu_0p35": true
+   },
+   {
+    "fill": "empty",
+    "grade_pct": 5,
+    "facing": "wheels uphill",
+    "front_edge_share": 0.61,
+    "mu_needed_at_base": 0.08,
+    "holds_at_mu_0p35": true
+   },
+   {
+    "fill": "empty",
+    "grade_pct": 8,
+    "facing": "wheels downhill",
+    "front_edge_share": 0.5,
+    "mu_needed_at_base": 0.16,
+    "holds_at_mu_0p35": true
+   },
+   {
+    "fill": "empty",
+    "grade_pct": 8,
+    "facing": "wheels uphill",
+    "front_edge_share": 0.64,
+    "mu_needed_at_base": 0.12,
+    "holds_at_mu_0p35": true
+   },
+   {
+    "fill": "empty",
+    "grade_pct": 12,
+    "facing": "wheels downhill",
+    "front_edge_share": 0.46,
+    "mu_needed_at_base": 0.26,
+    "holds_at_mu_0p35": true
+   },
+   {
+    "fill": "empty",
+    "grade_pct": 12,
+    "facing": "wheels uphill",
+    "front_edge_share": 0.68,
+    "mu_needed_at_base": 0.18,
+    "holds_at_mu_0p35": true
+   },
+   {
+    "fill": "full",
+    "grade_pct": 5,
+    "facing": "wheels downhill",
+    "front_edge_share": 0.48,
+    "mu_needed_at_base": 0.1,
+    "holds_at_mu_0p35": true
+   },
+   {
+    "fill": "full",
+    "grade_pct": 5,
+    "facing": "wheels uphill",
+    "front_edge_share": 0.59,
+    "mu_needed_at_base": 0.08,
+    "holds_at_mu_0p35": true
+   },
+   {
+    "fill": "full",
+    "grade_pct": 8,
+    "facing": "wheels downhill",
+    "front_edge_share": 0.45,
+    "mu_needed_at_base": 0.18,
+    "holds_at_mu_0p35": true
+   },
+   {
+    "fill": "full",
+    "grade_pct": 8,
+    "facing": "wheels uphill",
+    "front_edge_share": 0.63,
+    "mu_needed_at_base": 0.13,
+    "holds_at_mu_0p35": true
+   },
+   {
+    "fill": "full",
+    "grade_pct": 12,
+    "facing": "wheels downhill",
+    "front_edge_share": 0.4,
+    "mu_needed_at_base": 0.3,
+    "holds_at_mu_0p35": true
+   },
+   {
+    "fill": "full",
+    "grade_pct": 12,
+    "facing": "wheels uphill",
+    "front_edge_share": 0.67,
+    "mu_needed_at_base": 0.18,
+    "holds_at_mu_0p35": true
+   }
+  ],
+  "rule": "Across the slope the wheels cannot roll, so any pad steeper than about 5 % gets bins placed cross-slope or wheels-uphill."
+ },
+ "step_energy": {
+  "rows": [
+   {
+    "load": "unladen",
+    "mu": 0.6,
+    "h_mm": 30,
+    "v": 0.5,
+    "corner_angle_deg": 35.8,
+    "energy_short_J": 0.4,
+    "kinetic_after_impact_J": 7.9,
+    "passes": true
+   },
+   {
+    "load": "unladen",
+    "mu": 0.6,
+    "h_mm": 30,
+    "v": 0.8,
+    "corner_angle_deg": 35.8,
+    "energy_short_J": 0.4,
+    "kinetic_after_impact_J": 20.2,
+    "passes": true
+   },
+   {
+    "load": "unladen",
+    "mu": 0.6,
+    "h_mm": 40,
+    "v": 0.5,
+    "corner_angle_deg": 41.5,
+    "energy_short_J": 1.8,
+    "kinetic_after_impact_J": 6.9,
+    "passes": true
+   },
+   {
+    "load": "unladen",
+    "mu": 0.6,
+    "h_mm": 40,
+    "v": 0.8,
+    "corner_angle_deg": 41.5,
+    "energy_short_J": 1.8,
+    "kinetic_after_impact_J": 17.8,
+    "passes": true
+   },
+   {
+    "load": "unladen",
+    "mu": 0.6,
+    "h_mm": 50,
+    "v": 0.5,
+    "corner_angle_deg": 46.7,
+    "energy_short_J": 4.0,
+    "kinetic_after_impact_J": 6.0,
+    "passes": true
+   },
+   {
+    "load": "unladen",
+    "mu": 0.6,
+    "h_mm": 50,
+    "v": 0.8,
+    "corner_angle_deg": 46.7,
+    "energy_short_J": 4.0,
+    "kinetic_after_impact_J": 15.4,
+    "passes": true
+   },
+   {
+    "load": "unladen",
+    "mu": 0.6,
+    "h_mm": 60,
+    "v": 0.5,
+    "corner_angle_deg": 51.5,
+    "energy_short_J": 6.8,
+    "kinetic_after_impact_J": 5.1,
+    "passes": false
+   },
+   {
+    "load": "unladen",
+    "mu": 0.6,
+    "h_mm": 60,
+    "v": 0.8,
+    "corner_angle_deg": 51.5,
+    "energy_short_J": 6.8,
+    "kinetic_after_impact_J": 13.1,
+    "passes": true
+   },
+   {
+    "load": "unladen",
+    "mu": 0.6,
+    "h_mm": 80,
+    "v": 0.5,
+    "corner_angle_deg": 60.2,
+    "energy_short_J": 13.6,
+    "kinetic_after_impact_J": 3.5,
+    "passes": false
+   },
+   {
+    "load": "unladen",
+    "mu": 0.6,
+    "h_mm": 80,
+    "v": 0.8,
+    "corner_angle_deg": 60.2,
+    "energy_short_J": 13.6,
+    "kinetic_after_impact_J": 8.9,
+    "passes": false
+   },
+   {
+    "load": "unladen",
+    "mu": 0.45,
+    "h_mm": 30,
+    "v": 0.5,
+    "corner_angle_deg": 35.8,
+    "energy_short_J": 2.0,
+    "kinetic_after_impact_J": 7.9,
+    "passes": true
+   },
+   {
+    "load": "unladen",
+    "mu": 0.45,
+    "h_mm": 30,
+    "v": 0.8,
+    "corner_angle_deg": 35.8,
+    "energy_short_J": 2.0,
+    "kinetic_after_impact_J": 20.2,
+    "passes": true
+   },
+   {
+    "load": "unladen",
+    "mu": 0.45,
+    "h_mm": 40,
+    "v": 0.5,
+    "corner_angle_deg": 41.5,
+    "energy_short_J": 4.5,
+    "kinetic_after_impact_J": 6.9,
+    "passes": true
+   },
+   {
+    "load": "unladen",
+    "mu": 0.45,
+    "h_mm": 40,
+    "v": 0.8,
+    "corner_angle_deg": 41.5,
+    "energy_short_J": 4.5,
+    "kinetic_after_impact_J": 17.8,
+    "passes": true
+   },
+   {
+    "load": "unladen",
+    "mu": 0.45,
+    "h_mm": 50,
+    "v": 0.5,
+    "corner_angle_deg": 46.7,
+    "energy_short_J": 7.6,
+    "kinetic_after_impact_J": 6.0,
+    "passes": false
+   },
+   {
+    "load": "unladen",
+    "mu": 0.45,
+    "h_mm": 50,
+    "v": 0.8,
+    "corner_angle_deg": 46.7,
+    "energy_short_J": 7.6,
+    "kinetic_after_impact_J": 15.4,
+    "passes": true
+   },
+   {
+    "load": "unladen",
+    "mu": 0.45,
+    "h_mm": 60,
+    "v": 0.5,
+    "corner_angle_deg": 51.5,
+    "energy_short_J": 11.1,
+    "kinetic_after_impact_J": 5.1,
+    "passes": false
+   },
+   {
+    "load": "unladen",
+    "mu": 0.45,
+    "h_mm": 60,
+    "v": 0.8,
+    "corner_angle_deg": 51.5,
+    "energy_short_J": 11.1,
+    "kinetic_after_impact_J": 13.1,
+    "passes": true
+   },
+   {
+    "load": "unladen",
+    "mu": 0.45,
+    "h_mm": 80,
+    "v": 0.5,
+    "corner_angle_deg": 60.2,
+    "energy_short_J": 19.1,
+    "kinetic_after_impact_J": 3.5,
+    "passes": false
+   },
+   {
+    "load": "unladen",
+    "mu": 0.45,
+    "h_mm": 80,
+    "v": 0.8,
+    "corner_angle_deg": 60.2,
+    "energy_short_J": 19.1,
+    "kinetic_after_impact_J": 8.9,
+    "passes": false
+   },
+   {
+    "load": "unladen",
+    "mu": 0.3,
+    "h_mm": 30,
+    "v": 0.5,
+    "corner_angle_deg": 35.8,
+    "energy_short_J": 5.2,
+    "kinetic_after_impact_J": 7.9,
+    "passes": true
+   },
+   {
+    "load": "unladen",
+    "mu": 0.3,
+    "h_mm": 30,
+    "v": 0.8,
+    "corner_angle_deg": 35.8,
+    "energy_short_J": 5.2,
+    "kinetic_after_impact_J": 20.2,
+    "passes": true
+   },
+   {
+    "load": "unladen",
+    "mu": 0.3,
+    "h_mm": 40,
+    "v": 0.5,
+    "corner_angle_deg": 41.5,
+    "energy_short_J": 8.8,
+    "kinetic_after_impact_J": 6.9,
+    "passes": false
+   },
+   {
+    "load": "unladen",
+    "mu": 0.3,
+    "h_mm": 40,
+    "v": 0.8,
+    "corner_angle_deg": 41.5,
+    "energy_short_J": 8.8,
+    "kinetic_after_impact_J": 17.8,
+    "passes": true
+   },
+   {
+    "load": "unladen",
+    "mu": 0.3,
+    "h_mm": 50,
+    "v": 0.5,
+    "corner_angle_deg": 46.7,
+    "energy_short_J": 12.8,
+    "kinetic_after_impact_J": 6.0,
+    "passes": false
+   },
+   {
+    "load": "unladen",
+    "mu": 0.3,
+    "h_mm": 50,
+    "v": 0.8,
+    "corner_angle_deg": 46.7,
+    "energy_short_J": 12.8,
+    "kinetic_after_impact_J": 15.4,
+    "passes": true
+   },
+   {
+    "load": "unladen",
+    "mu": 0.3,
+    "h_mm": 60,
+    "v": 0.5,
+    "corner_angle_deg": 51.5,
+    "energy_short_J": 17.0,
+    "kinetic_after_impact_J": 5.1,
+    "passes": false
+   },
+   {
+    "load": "unladen",
+    "mu": 0.3,
+    "h_mm": 60,
+    "v": 0.8,
+    "corner_angle_deg": 51.5,
+    "energy_short_J": 17.0,
+    "kinetic_after_impact_J": 13.1,
+    "passes": false
+   },
+   {
+    "load": "unladen",
+    "mu": 0.3,
+    "h_mm": 80,
+    "v": 0.5,
+    "corner_angle_deg": 60.2,
+    "energy_short_J": 26.2,
+    "kinetic_after_impact_J": 3.5,
+    "passes": false
+   },
+   {
+    "load": "unladen",
+    "mu": 0.3,
+    "h_mm": 80,
+    "v": 0.8,
+    "corner_angle_deg": 60.2,
+    "energy_short_J": 26.2,
+    "kinetic_after_impact_J": 8.9,
+    "passes": false
+   },
+   {
+    "load": "empty 240 L",
+    "mu": 0.6,
+    "h_mm": 30,
+    "v": 0.5,
+    "corner_angle_deg": 35.8,
+    "energy_short_J": 0.5,
+    "kinetic_after_impact_J": 9.0,
+    "passes": true
+   },
+   {
+    "load": "empty 240 L",
+    "mu": 0.6,
+    "h_mm": 30,
+    "v": 0.8,
+    "corner_angle_deg": 35.8,
+    "energy_short_J": 0.5,
+    "kinetic_after_impact_J": 23.0,
+    "passes": true
+   },
+   {
+    "load": "empty 240 L",
+    "mu": 0.6,
+    "h_mm": 40,
+    "v": 0.5,
+    "corner_angle_deg": 41.5,
+    "energy_short_J": 2.2,
+    "kinetic_after_impact_J": 7.9,
+    "passes": true
+   },
+   {
+    "load": "empty 240 L",
+    "mu": 0.6,
+    "h_mm": 40,
+    "v": 0.8,
+    "corner_angle_deg": 41.5,
+    "energy_short_J": 2.2,
+    "kinetic_after_impact_J": 20.1,
+    "passes": true
+   },
+   {
+    "load": "empty 240 L",
+    "mu": 0.6,
+    "h_mm": 50,
+    "v": 0.5,
+    "corner_angle_deg": 46.7,
+    "energy_short_J": 4.8,
+    "kinetic_after_impact_J": 6.8,
+    "passes": true
+   },
+   {
+    "load": "empty 240 L",
+    "mu": 0.6,
+    "h_mm": 50,
+    "v": 0.8,
+    "corner_angle_deg": 46.7,
+    "energy_short_J": 4.8,
+    "kinetic_after_impact_J": 17.4,
+    "passes": true
+   },
+   {
+    "load": "empty 240 L",
+    "mu": 0.6,
+    "h_mm": 60,
+    "v": 0.5,
+    "corner_angle_deg": 51.5,
+    "energy_short_J": 8.2,
+    "kinetic_after_impact_J": 5.8,
+    "passes": false
+   },
+   {
+    "load": "empty 240 L",
+    "mu": 0.6,
+    "h_mm": 60,
+    "v": 0.8,
+    "corner_angle_deg": 51.5,
+    "energy_short_J": 8.2,
+    "kinetic_after_impact_J": 14.8,
+    "passes": true
+   },
+   {
+    "load": "empty 240 L",
+    "mu": 0.6,
+    "h_mm": 80,
+    "v": 0.5,
+    "corner_angle_deg": 60.2,
+    "energy_short_J": 16.4,
+    "kinetic_after_impact_J": 3.9,
+    "passes": false
+   },
+   {
+    "load": "empty 240 L",
+    "mu": 0.6,
+    "h_mm": 80,
+    "v": 0.8,
+    "corner_angle_deg": 60.2,
+    "energy_short_J": 16.4,
+    "kinetic_after_impact_J": 9.9,
+    "passes": false
+   },
+   {
+    "load": "empty 240 L",
+    "mu": 0.45,
+    "h_mm": 30,
+    "v": 0.5,
+    "corner_angle_deg": 35.8,
+    "energy_short_J": 2.5,
+    "kinetic_after_impact_J": 9.0,
+    "passes": true
+   },
+   {
+    "load": "empty 240 L",
+    "mu": 0.45,
+    "h_mm": 30,
+    "v": 0.8,
+    "corner_angle_deg": 35.8,
+    "energy_short_J": 2.5,
+    "kinetic_after_impact_J": 23.0,
+    "passes": true
+   },
+   {
+    "load": "empty 240 L",
+    "mu": 0.45,
+    "h_mm": 40,
+    "v": 0.5,
+    "corner_angle_deg": 41.5,
+    "energy_short_J": 5.5,
+    "kinetic_after_impact_J": 7.9,
+    "passes": true
+   },
+   {
+    "load": "empty 240 L",
+    "mu": 0.45,
+    "h_mm": 40,
+    "v": 0.8,
+    "corner_angle_deg": 41.5,
+    "energy_short_J": 5.5,
+    "kinetic_after_impact_J": 20.1,
+    "passes": true
+   },
+   {
+    "load": "empty 240 L",
+    "mu": 0.45,
+    "h_mm": 50,
+    "v": 0.5,
+    "corner_angle_deg": 46.7,
+    "energy_short_J": 9.2,
+    "kinetic_after_impact_J": 6.8,
+    "passes": false
+   },
+   {
+    "load": "empty 240 L",
+    "mu": 0.45,
+    "h_mm": 50,
+    "v": 0.8,
+    "corner_angle_deg": 46.7,
+    "energy_short_J": 9.2,
+    "kinetic_after_impact_J": 17.4,
+    "passes": true
+   },
+   {
+    "load": "empty 240 L",
+    "mu": 0.45,
+    "h_mm": 60,
+    "v": 0.5,
+    "corner_angle_deg": 51.5,
+    "energy_short_J": 13.5,
+    "kinetic_after_impact_J": 5.8,
+    "passes": false
+   },
+   {
+    "load": "empty 240 L",
+    "mu": 0.45,
+    "h_mm": 60,
+    "v": 0.8,
+    "corner_angle_deg": 51.5,
+    "energy_short_J": 13.5,
+    "kinetic_after_impact_J": 14.8,
+    "passes": true
+   },
+   {
+    "load": "empty 240 L",
+    "mu": 0.45,
+    "h_mm": 80,
+    "v": 0.5,
+    "corner_angle_deg": 60.2,
+    "energy_short_J": 23.1,
+    "kinetic_after_impact_J": 3.9,
+    "passes": false
+   },
+   {
+    "load": "empty 240 L",
+    "mu": 0.45,
+    "h_mm": 80,
+    "v": 0.8,
+    "corner_angle_deg": 60.2,
+    "energy_short_J": 23.1,
+    "kinetic_after_impact_J": 9.9,
+    "passes": false
+   },
+   {
+    "load": "empty 240 L",
+    "mu": 0.3,
+    "h_mm": 30,
+    "v": 0.5,
+    "corner_angle_deg": 35.8,
+    "energy_short_J": 6.3,
+    "kinetic_after_impact_J": 9.0,
+    "passes": true
+   },
+   {
+    "load": "empty 240 L",
+    "mu": 0.3,
+    "h_mm": 30,
+    "v": 0.8,
+    "corner_angle_deg": 35.8,
+    "energy_short_J": 6.3,
+    "kinetic_after_impact_J": 23.0,
+    "passes": true
+   },
+   {
+    "load": "empty 240 L",
+    "mu": 0.3,
+    "h_mm": 40,
+    "v": 0.5,
+    "corner_angle_deg": 41.5,
+    "energy_short_J": 10.7,
+    "kinetic_after_impact_J": 7.9,
+    "passes": false
+   },
+   {
+    "load": "empty 240 L",
+    "mu": 0.3,
+    "h_mm": 40,
+    "v": 0.8,
+    "corner_angle_deg": 41.5,
+    "energy_short_J": 10.7,
+    "kinetic_after_impact_J": 20.1,
+    "passes": true
+   },
+   {
+    "load": "empty 240 L",
+    "mu": 0.3,
+    "h_mm": 50,
+    "v": 0.5,
+    "corner_angle_deg": 46.7,
+    "energy_short_J": 15.5,
+    "kinetic_after_impact_J": 6.8,
+    "passes": false
+   },
+   {
+    "load": "empty 240 L",
+    "mu": 0.3,
+    "h_mm": 50,
+    "v": 0.8,
+    "corner_angle_deg": 46.7,
+    "energy_short_J": 15.5,
+    "kinetic_after_impact_J": 17.4,
+    "passes": true
+   },
+   {
+    "load": "empty 240 L",
+    "mu": 0.3,
+    "h_mm": 60,
+    "v": 0.5,
+    "corner_angle_deg": 51.5,
+    "energy_short_J": 20.6,
+    "kinetic_after_impact_J": 5.8,
+    "passes": false
+   },
+   {
+    "load": "empty 240 L",
+    "mu": 0.3,
+    "h_mm": 60,
+    "v": 0.8,
+    "corner_angle_deg": 51.5,
+    "energy_short_J": 20.6,
+    "kinetic_after_impact_J": 14.8,
+    "passes": false
+   },
+   {
+    "load": "empty 240 L",
+    "mu": 0.3,
+    "h_mm": 80,
+    "v": 0.5,
+    "corner_angle_deg": 60.2,
+    "energy_short_J": 31.7,
+    "kinetic_after_impact_J": 3.9,
+    "passes": false
+   },
+   {
+    "load": "empty 240 L",
+    "mu": 0.3,
+    "h_mm": 80,
+    "v": 0.8,
+    "corner_angle_deg": 60.2,
+    "energy_short_J": 31.7,
+    "kinetic_after_impact_J": 9.9,
+    "passes": false
+   },
+   {
+    "load": "full 240 L (110 kg)",
+    "mu": 0.6,
+    "h_mm": 30,
+    "v": 0.5,
+    "corner_angle_deg": 35.8,
+    "energy_short_J": 2.1,
+    "kinetic_after_impact_J": 17.0,
+    "passes": true
+   },
+   {
+    "load": "full 240 L (110 kg)",
+    "mu": 0.6,
+    "h_mm": 30,
+    "v": 0.8,
+    "corner_angle_deg": 35.8,
+    "energy_short_J": 2.1,
+    "kinetic_after_impact_J": 43.5,
+    "passes": true
+   },
+   {
+    "load": "full 240 L (110 kg)",
+    "mu": 0.6,
+    "h_mm": 40,
+    "v": 0.5,
+    "corner_angle_deg": 41.5,
+    "energy_short_J": 6.3,
+    "kinetic_after_impact_J": 14.7,
+    "passes": true
+   },
+   {
+    "load": "full 240 L (110 kg)",
+    "mu": 0.6,
+    "h_mm": 40,
+    "v": 0.8,
+    "corner_angle_deg": 41.5,
+    "energy_short_J": 6.3,
+    "kinetic_after_impact_J": 37.6,
+    "passes": true
+   },
+   {
+    "load": "full 240 L (110 kg)",
+    "mu": 0.6,
+    "h_mm": 50,
+    "v": 0.5,
+    "corner_angle_deg": 46.7,
+    "energy_short_J": 12.5,
+    "kinetic_after_impact_J": 12.5,
+    "passes": true
+   },
+   {
+    "load": "full 240 L (110 kg)",
+    "mu": 0.6,
+    "h_mm": 50,
+    "v": 0.8,
+    "corner_angle_deg": 46.7,
+    "energy_short_J": 12.5,
+    "kinetic_after_impact_J": 32.1,
+    "passes": true
+   },
+   {
+    "load": "full 240 L (110 kg)",
+    "mu": 0.6,
+    "h_mm": 60,
+    "v": 0.5,
+    "corner_angle_deg": 51.5,
+    "energy_short_J": 20.3,
+    "kinetic_after_impact_J": 10.5,
+    "passes": false
+   },
+   {
+    "load": "full 240 L (110 kg)",
+    "mu": 0.6,
+    "h_mm": 60,
+    "v": 0.8,
+    "corner_angle_deg": 51.5,
+    "energy_short_J": 20.3,
+    "kinetic_after_impact_J": 26.8,
+    "passes": true
+   },
+   {
+    "load": "full 240 L (110 kg)",
+    "mu": 0.6,
+    "h_mm": 80,
+    "v": 0.5,
+    "corner_angle_deg": 60.2,
+    "energy_short_J": 39.5,
+    "kinetic_after_impact_J": 6.8,
+    "passes": false
+   },
+   {
+    "load": "full 240 L (110 kg)",
+    "mu": 0.6,
+    "h_mm": 80,
+    "v": 0.8,
+    "corner_angle_deg": 60.2,
+    "energy_short_J": 39.5,
+    "kinetic_after_impact_J": 17.5,
+    "passes": false
+   },
+   {
+    "load": "full 240 L (110 kg)",
+    "mu": 0.45,
+    "h_mm": 30,
+    "v": 0.5,
+    "corner_angle_deg": 35.8,
+    "energy_short_J": 5.7,
+    "kinetic_after_impact_J": 17.0,
+    "passes": true
+   },
+   {
+    "load": "full 240 L (110 kg)",
+    "mu": 0.45,
+    "h_mm": 30,
+    "v": 0.8,
+    "corner_angle_deg": 35.8,
+    "energy_short_J": 5.7,
+    "kinetic_after_impact_J": 43.5,
+    "passes": true
+   },
+   {
+    "load": "full 240 L (110 kg)",
+    "mu": 0.45,
+    "h_mm": 40,
+    "v": 0.5,
+    "corner_angle_deg": 41.5,
+    "energy_short_J": 12.8,
+    "kinetic_after_impact_J": 14.7,
+    "passes": true
+   },
+   {
+    "load": "full 240 L (110 kg)",
+    "mu": 0.45,
+    "h_mm": 40,
+    "v": 0.8,
+    "corner_angle_deg": 41.5,
+    "energy_short_J": 12.8,
+    "kinetic_after_impact_J": 37.6,
+    "passes": true
+   },
+   {
+    "load": "full 240 L (110 kg)",
+    "mu": 0.45,
+    "h_mm": 50,
+    "v": 0.5,
+    "corner_angle_deg": 46.7,
+    "energy_short_J": 21.5,
+    "kinetic_after_impact_J": 12.5,
+    "passes": false
+   },
+   {
+    "load": "full 240 L (110 kg)",
+    "mu": 0.45,
+    "h_mm": 50,
+    "v": 0.8,
+    "corner_angle_deg": 46.7,
+    "energy_short_J": 21.5,
+    "kinetic_after_impact_J": 32.1,
+    "passes": true
+   },
+   {
+    "load": "full 240 L (110 kg)",
+    "mu": 0.45,
+    "h_mm": 60,
+    "v": 0.5,
+    "corner_angle_deg": 51.5,
+    "energy_short_J": 31.3,
+    "kinetic_after_impact_J": 10.5,
+    "passes": false
+   },
+   {
+    "load": "full 240 L (110 kg)",
+    "mu": 0.45,
+    "h_mm": 60,
+    "v": 0.8,
+    "corner_angle_deg": 51.5,
+    "energy_short_J": 31.3,
+    "kinetic_after_impact_J": 26.8,
+    "passes": false
+   },
+   {
+    "load": "full 240 L (110 kg)",
+    "mu": 0.45,
+    "h_mm": 80,
+    "v": 0.5,
+    "corner_angle_deg": 60.2,
+    "energy_short_J": 53.8,
+    "kinetic_after_impact_J": 6.8,
+    "passes": false
+   },
+   {
+    "load": "full 240 L (110 kg)",
+    "mu": 0.45,
+    "h_mm": 80,
+    "v": 0.8,
+    "corner_angle_deg": 60.2,
+    "energy_short_J": 53.8,
+    "kinetic_after_impact_J": 17.5,
+    "passes": false
+   },
+   {
+    "load": "full 240 L (110 kg)",
+    "mu": 0.3,
+    "h_mm": 30,
+    "v": 0.5,
+    "corner_angle_deg": 35.8,
+    "energy_short_J": 14.7,
+    "kinetic_after_impact_J": 17.0,
+    "passes": true
+   },
+   {
+    "load": "full 240 L (110 kg)",
+    "mu": 0.3,
+    "h_mm": 30,
+    "v": 0.8,
+    "corner_angle_deg": 35.8,
+    "energy_short_J": 14.7,
+    "kinetic_after_impact_J": 43.5,
+    "passes": true
+   },
+   {
+    "load": "full 240 L (110 kg)",
+    "mu": 0.3,
+    "h_mm": 40,
+    "v": 0.5,
+    "corner_angle_deg": 41.5,
+    "energy_short_J": 24.9,
+    "kinetic_after_impact_J": 14.7,
+    "passes": false
+   },
+   {
+    "load": "full 240 L (110 kg)",
+    "mu": 0.3,
+    "h_mm": 40,
+    "v": 0.8,
+    "corner_angle_deg": 41.5,
+    "energy_short_J": 24.9,
+    "kinetic_after_impact_J": 37.6,
+    "passes": true
+   },
+   {
+    "load": "full 240 L (110 kg)",
+    "mu": 0.3,
+    "h_mm": 50,
+    "v": 0.5,
+    "corner_angle_deg": 46.7,
+    "energy_short_J": 36.0,
+    "kinetic_after_impact_J": 12.5,
+    "passes": false
+   },
+   {
+    "load": "full 240 L (110 kg)",
+    "mu": 0.3,
+    "h_mm": 50,
+    "v": 0.8,
+    "corner_angle_deg": 46.7,
+    "energy_short_J": 36.0,
+    "kinetic_after_impact_J": 32.1,
+    "passes": false
+   },
+   {
+    "load": "full 240 L (110 kg)",
+    "mu": 0.3,
+    "h_mm": 60,
+    "v": 0.5,
+    "corner_angle_deg": 51.5,
+    "energy_short_J": 48.0,
+    "kinetic_after_impact_J": 10.5,
+    "passes": false
+   },
+   {
+    "load": "full 240 L (110 kg)",
+    "mu": 0.3,
+    "h_mm": 60,
+    "v": 0.8,
+    "corner_angle_deg": 51.5,
+    "energy_short_J": 48.0,
+    "kinetic_after_impact_J": 26.8,
+    "passes": false
+   },
+   {
+    "load": "full 240 L (110 kg)",
+    "mu": 0.3,
+    "h_mm": 80,
+    "v": 0.5,
+    "corner_angle_deg": 60.2,
+    "energy_short_J": 73.8,
+    "kinetic_after_impact_J": 6.8,
+    "passes": false
+   },
+   {
+    "load": "full 240 L (110 kg)",
+    "mu": 0.3,
+    "h_mm": 80,
+    "v": 0.8,
+    "corner_angle_deg": 60.2,
+    "energy_short_J": 73.8,
+    "kinetic_after_impact_J": 17.5,
+    "passes": false
+   },
+   {
+    "load": "full 140 L (70 kg)",
+    "mu": 0.6,
+    "h_mm": 30,
+    "v": 0.5,
+    "corner_angle_deg": 35.8,
+    "energy_short_J": 0.7,
+    "kinetic_after_impact_J": 14.0,
+    "passes": true
+   },
+   {
+    "load": "full 140 L (70 kg)",
+    "mu": 0.6,
+    "h_mm": 30,
+    "v": 0.8,
+    "corner_angle_deg": 35.8,
+    "energy_short_J": 0.7,
+    "kinetic_after_impact_J": 35.8,
+    "passes": true
+   },
+   {
+    "load": "full 140 L (70 kg)",
+    "mu": 0.6,
+    "h_mm": 40,
+    "v": 0.5,
+    "corner_angle_deg": 41.5,
+    "energy_short_J": 3.6,
+    "kinetic_after_impact_J": 12.2,
+    "passes": true
+   },
+   {
+    "load": "full 140 L (70 kg)",
+    "mu": 0.6,
+    "h_mm": 40,
+    "v": 0.8,
+    "corner_angle_deg": 41.5,
+    "energy_short_J": 3.6,
+    "kinetic_after_impact_J": 31.3,
+    "passes": true
+   },
+   {
+    "load": "full 140 L (70 kg)",
+    "mu": 0.6,
+    "h_mm": 50,
+    "v": 0.5,
+    "corner_angle_deg": 46.7,
+    "energy_short_J": 8.0,
+    "kinetic_after_impact_J": 10.5,
+    "passes": true
+   },
+   {
+    "load": "full 140 L (70 kg)",
+    "mu": 0.6,
+    "h_mm": 50,
+    "v": 0.8,
+    "corner_angle_deg": 46.7,
+    "energy_short_J": 8.0,
+    "kinetic_after_impact_J": 26.9,
+    "passes": true
+   },
+   {
+    "load": "full 140 L (70 kg)",
+    "mu": 0.6,
+    "h_mm": 60,
+    "v": 0.5,
+    "corner_angle_deg": 51.5,
+    "energy_short_J": 13.5,
+    "kinetic_after_impact_J": 8.9,
+    "passes": false
+   },
+   {
+    "load": "full 140 L (70 kg)",
+    "mu": 0.6,
+    "h_mm": 60,
+    "v": 0.8,
+    "corner_angle_deg": 51.5,
+    "energy_short_J": 13.5,
+    "kinetic_after_impact_J": 22.8,
+    "passes": true
+   },
+   {
+    "load": "full 140 L (70 kg)",
+    "mu": 0.6,
+    "h_mm": 80,
+    "v": 0.5,
+    "corner_angle_deg": 60.2,
+    "energy_short_J": 27.1,
+    "kinetic_after_impact_J": 5.9,
+    "passes": false
+   },
+   {
+    "load": "full 140 L (70 kg)",
+    "mu": 0.6,
+    "h_mm": 80,
+    "v": 0.8,
+    "corner_angle_deg": 60.2,
+    "energy_short_J": 27.1,
+    "kinetic_after_impact_J": 15.1,
+    "passes": false
+   },
+   {
+    "load": "full 140 L (70 kg)",
+    "mu": 0.45,
+    "h_mm": 30,
+    "v": 0.5,
+    "corner_angle_deg": 35.8,
+    "energy_short_J": 4.0,
+    "kinetic_after_impact_J": 14.0,
+    "passes": true
+   },
+   {
+    "load": "full 140 L (70 kg)",
+    "mu": 0.45,
+    "h_mm": 30,
+    "v": 0.8,
+    "corner_angle_deg": 35.8,
+    "energy_short_J": 4.0,
+    "kinetic_after_impact_J": 35.8,
+    "passes": true
+   },
+   {
+    "load": "full 140 L (70 kg)",
+    "mu": 0.45,
+    "h_mm": 40,
+    "v": 0.5,
+    "corner_angle_deg": 41.5,
+    "energy_short_J": 9.0,
+    "kinetic_after_impact_J": 12.2,
+    "passes": true
+   },
+   {
+    "load": "full 140 L (70 kg)",
+    "mu": 0.45,
+    "h_mm": 40,
+    "v": 0.8,
+    "corner_angle_deg": 41.5,
+    "energy_short_J": 9.0,
+    "kinetic_after_impact_J": 31.3,
+    "passes": true
+   },
+   {
+    "load": "full 140 L (70 kg)",
+    "mu": 0.45,
+    "h_mm": 50,
+    "v": 0.5,
+    "corner_angle_deg": 46.7,
+    "energy_short_J": 15.2,
+    "kinetic_after_impact_J": 10.5,
+    "passes": false
+   },
+   {
+    "load": "full 140 L (70 kg)",
+    "mu": 0.45,
+    "h_mm": 50,
+    "v": 0.8,
+    "corner_angle_deg": 46.7,
+    "energy_short_J": 15.2,
+    "kinetic_after_impact_J": 26.9,
+    "passes": true
+   },
+   {
+    "load": "full 140 L (70 kg)",
+    "mu": 0.45,
+    "h_mm": 60,
+    "v": 0.5,
+    "corner_angle_deg": 51.5,
+    "energy_short_J": 22.2,
+    "kinetic_after_impact_J": 8.9,
+    "passes": false
+   },
+   {
+    "load": "full 140 L (70 kg)",
+    "mu": 0.45,
+    "h_mm": 60,
+    "v": 0.8,
+    "corner_angle_deg": 51.5,
+    "energy_short_J": 22.2,
+    "kinetic_after_impact_J": 22.8,
+    "passes": true
+   },
+   {
+    "load": "full 140 L (70 kg)",
+    "mu": 0.45,
+    "h_mm": 80,
+    "v": 0.5,
+    "corner_angle_deg": 60.2,
+    "energy_short_J": 38.1,
+    "kinetic_after_impact_J": 5.9,
+    "passes": false
+   },
+   {
+    "load": "full 140 L (70 kg)",
+    "mu": 0.45,
+    "h_mm": 80,
+    "v": 0.8,
+    "corner_angle_deg": 60.2,
+    "energy_short_J": 38.1,
+    "kinetic_after_impact_J": 15.1,
+    "passes": false
+   },
+   {
+    "load": "full 140 L (70 kg)",
+    "mu": 0.3,
+    "h_mm": 30,
+    "v": 0.5,
+    "corner_angle_deg": 35.8,
+    "energy_short_J": 10.4,
+    "kinetic_after_impact_J": 14.0,
+    "passes": true
+   },
+   {
+    "load": "full 140 L (70 kg)",
+    "mu": 0.3,
+    "h_mm": 30,
+    "v": 0.8,
+    "corner_angle_deg": 35.8,
+    "energy_short_J": 10.4,
+    "kinetic_after_impact_J": 35.8,
+    "passes": true
+   },
+   {
+    "load": "full 140 L (70 kg)",
+    "mu": 0.3,
+    "h_mm": 40,
+    "v": 0.5,
+    "corner_angle_deg": 41.5,
+    "energy_short_J": 17.6,
+    "kinetic_after_impact_J": 12.2,
+    "passes": false
+   },
+   {
+    "load": "full 140 L (70 kg)",
+    "mu": 0.3,
+    "h_mm": 40,
+    "v": 0.8,
+    "corner_angle_deg": 41.5,
+    "energy_short_J": 17.6,
+    "kinetic_after_impact_J": 31.3,
+    "passes": true
+   },
+   {
+    "load": "full 140 L (70 kg)",
+    "mu": 0.3,
+    "h_mm": 50,
+    "v": 0.5,
+    "corner_angle_deg": 46.7,
+    "energy_short_J": 25.5,
+    "kinetic_after_impact_J": 10.5,
+    "passes": false
+   },
+   {
+    "load": "full 140 L (70 kg)",
+    "mu": 0.3,
+    "h_mm": 50,
+    "v": 0.8,
+    "corner_angle_deg": 46.7,
+    "energy_short_J": 25.5,
+    "kinetic_after_impact_J": 26.9,
+    "passes": true
+   },
+   {
+    "load": "full 140 L (70 kg)",
+    "mu": 0.3,
+    "h_mm": 60,
+    "v": 0.5,
+    "corner_angle_deg": 51.5,
+    "energy_short_J": 34.0,
+    "kinetic_after_impact_J": 8.9,
+    "passes": false
+   },
+   {
+    "load": "full 140 L (70 kg)",
+    "mu": 0.3,
+    "h_mm": 60,
+    "v": 0.8,
+    "corner_angle_deg": 51.5,
+    "energy_short_J": 34.0,
+    "kinetic_after_impact_J": 22.8,
+    "passes": false
+   },
+   {
+    "load": "full 140 L (70 kg)",
+    "mu": 0.3,
+    "h_mm": 80,
+    "v": 0.5,
+    "corner_angle_deg": 60.2,
+    "energy_short_J": 52.2,
+    "kinetic_after_impact_J": 5.9,
+    "passes": false
+   },
+   {
+    "load": "full 140 L (70 kg)",
+    "mu": 0.3,
+    "h_mm": 80,
+    "v": 0.8,
+    "corner_angle_deg": 60.2,
+    "energy_short_J": 52.2,
+    "kinetic_after_impact_J": 15.1,
+    "passes": false
+   }
+  ],
+  "nose_casters_full_240L": [
+   {
+    "h_mm": 40,
+    "push_needed_N": 313,
+    "push_available_N_at_60Nm": 755
+   },
+   {
+    "h_mm": 50,
+    "push_needed_N": 384,
+    "push_available_N_at_60Nm": 755
+   },
+   {
+    "h_mm": 60,
+    "push_needed_N": 470,
+    "push_available_N_at_60Nm": 755
+   },
+   {
+    "h_mm": 80,
+    "push_needed_N": 720,
+    "push_available_N_at_60Nm": 755
+   }
+  ]
+ }
+}

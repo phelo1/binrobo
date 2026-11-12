@@ -1,0 +1,468 @@
+{
+"bin": "ESE240SL",
+"seed": 202,
+"n": 7,
+"captured": 6,
+"false_holds": 0,
+"knocked": 0,
+"runs": [
+{
+"docked": true,
+"reapp": true,
+"dock_dy_mm": 6.5,
+"lift_rise_N": 122,
+"seat_switch": true,
+"keeper_on_bar": true,
+"keeper_deg": -17.5,
+"claim": true,
+"zc": 0.12,
+"q_app": 0.079,
+"captured": true,
+"wheel_clear_mm": 97.1,
+"bin_tilt_abs": 1.2,
+"seated": true,
+"dock": "tof",
+"result": "success",
+"first_result": "success",
+"knocked": false,
+"false_hold": false,
+"events": [
+[
+19.3,
+"docked: tof, bin dy -20 mm (camera -25), nib gap 2 mm, bin moved 0 mm, rim 0.956 q_app 0.076, yaw meas 0.8 true 1.4 deg"
+],
+[
+19.3,
+"back off 0.4 m and re-approach"
+],
+[
+40.57,
+"docked: tof, bin dy 6 mm (camera 7), nib gap 1 mm, bin moved 0 mm, rim 0.959 q_app 0.079, yaw meas 0.1 true -0.7 deg"
+],
+[
+47.56,
+"grab: claim True captured True clear 97 mm rise 122 N tilt 1.2"
+]
+],
+"i": 10,
+"params": {
+"bin": "ESE 240 SL (200 mm wheels)",
+"bar_r": 0.0135,
+"bar_shape": "tube",
+"bar_x": 0.1612,
+"cb": 0.0776,
+"bar_habs": 1.0082,
+"bar_h": 0.9082,
+"wheel_r": 0.1,
+"handle_half": 0.1956,
+"knuckles": [],
+"wy": 0.2595,
+"W": 0.583,
+"D": 0.737,
+"empty": 13.0,
+"dy": 0.022,
+"dyaw": 4.25,
+"mu": 0.72,
+"mu_hook": 0.21,
+"fill": 0.0,
+"lid": [
+"ajar",
+0.281
+],
+"comb_d": 0.002409591029020563
+},
+"cpu": 7.6
+},
+{
+"docked": true,
+"reapp": false,
+"dock_dy_mm": -0.8,
+"lift_rise_N": 1050,
+"seat_switch": true,
+"keeper_on_bar": true,
+"keeper_deg": -26.8,
+"claim": true,
+"zc": 0.143,
+"q_app": 0.092,
+"captured": true,
+"wheel_clear_mm": 89.2,
+"bin_tilt_abs": 3.1,
+"seated": true,
+"dock": "tof",
+"result": "success",
+"first_result": "success",
+"knocked": false,
+"false_hold": false,
+"events": [
+[
+23.52,
+"docked: tof, bin dy -1 mm (camera 5), nib gap 1 mm, bin moved 0 mm, rim 0.972 q_app 0.092, yaw meas 1.3 true 1.5 deg"
+],
+[
+47.59,
+"grab: claim True captured True clear 89 mm rise 1050 N tilt 3.1"
+]
+],
+"i": 11,
+"params": {
+"bin": "ESE 240 SL (200 mm wheels)",
+"bar_r": 0.0135,
+"bar_shape": "tube",
+"bar_x": 0.1506,
+"cb": 0.0656,
+"bar_habs": 1.0316,
+"bar_h": 0.9316,
+"wheel_r": 0.1,
+"handle_half": 0.1996,
+"knuckles": [
+[
+0.0584,
+0.005
+]
+],
+"wy": 0.2595,
+"W": 0.583,
+"D": 0.737,
+"empty": 13.0,
+"dy": -0.059,
+"dyaw": -0.4,
+"mu": 0.62,
+"mu_hook": 0.34,
+"fill": 97.0,
+"lid": [
+"closed",
+0.0
+],
+"comb_d": 0.0024248133576547735
+},
+"cpu": 6.7
+},
+{
+"docked": true,
+"reapp": false,
+"dock_dy_mm": -4.0,
+"lift_rise_N": 122,
+"seat_switch": true,
+"keeper_on_bar": true,
+"keeper_deg": -20.3,
+"claim": true,
+"zc": 0.123,
+"q_app": 0.077,
+"captured": true,
+"wheel_clear_mm": 97.1,
+"bin_tilt_abs": 1.2,
+"seated": true,
+"dock": "tof",
+"result": "success",
+"first_result": "success",
+"knocked": false,
+"false_hold": false,
+"events": [
+[
+25.45,
+"docked: tof, bin dy -4 mm (camera -7), nib gap 7 mm, bin moved 0 mm, rim 0.957 q_app 0.077, yaw meas 0.6 true -0.7 deg"
+],
+[
+32.63,
+"grab: claim True captured True clear 97 mm rise 122 N tilt 1.2"
+]
+],
+"i": 12,
+"params": {
+"bin": "ESE 240 SL (200 mm wheels)",
+"bar_r": 0.0135,
+"bar_shape": "tube",
+"bar_x": 0.1545,
+"cb": 0.0693,
+"bar_habs": 1.0117,
+"bar_h": 0.9117,
+"wheel_r": 0.1,
+"handle_half": 0.2008,
+"knuckles": [
+[
+0.0432,
+0.005
+]
+],
+"wy": 0.2595,
+"W": 0.583,
+"D": 0.737,
+"empty": 13.0,
+"dy": 0.075,
+"dyaw": -3.71,
+"mu": 0.72,
+"mu_hook": 0.43,
+"fill": 0.0,
+"lid": [
+"closed",
+0.0
+],
+"comb_d": 0.004968868187096303
+},
+"cpu": 5.2
+},
+{
+"docked": true,
+"reapp": true,
+"dock_dy_mm": -2.6,
+"lift_rise_N": 1057,
+"seat_switch": true,
+"keeper_on_bar": true,
+"keeper_deg": -19.3,
+"claim": true,
+"zc": 0.141,
+"q_app": 0.099,
+"captured": true,
+"wheel_clear_mm": 89.7,
+"bin_tilt_abs": 3.0,
+"seated": true,
+"dock": "tof",
+"result": "success",
+"first_result": "success",
+"knocked": false,
+"false_hold": false,
+"events": [
+[
+26.51,
+"docked: tof, bin dy 1 mm (camera -8), nib gap 6 mm, bin moved 0 mm, rim 0.970 q_app 0.090, yaw meas -2.3 true -1.9 deg"
+],
+[
+26.51,
+"back off 0.4 m and re-approach"
+],
+[
+46.13,
+"docked: tof, bin dy -3 mm (camera 3), nib gap 1 mm, bin moved 0 mm, rim 0.979 q_app 0.099, yaw meas 0.6 true 1.6 deg"
+],
+[
+69.89,
+"grab: claim True captured True clear 90 mm rise 1057 N tilt 3.0"
+]
+],
+"i": 19,
+"params": {
+"bin": "ESE 240 SL (200 mm wheels)",
+"bar_r": 0.0135,
+"bar_shape": "tube",
+"bar_x": 0.1521,
+"cb": 0.07,
+"bar_habs": 1.0297,
+"bar_h": 0.9297,
+"wheel_r": 0.1,
+"handle_half": 0.1899,
+"knuckles": [
+[
+0.051,
+0.005
+]
+],
+"wy": 0.2595,
+"W": 0.583,
+"D": 0.737,
+"empty": 13.0,
+"dy": 0.073,
+"dyaw": -4.92,
+"mu": 0.45,
+"mu_hook": 0.36,
+"fill": 97.0,
+"lid": [
+"closed",
+0.0
+],
+"comb_d": -0.00014346253407636865
+},
+"cpu": 11.1
+},
+{
+"docked": true,
+"reapp": true,
+"dock_dy_mm": -2.8,
+"lift_rise_N": 1060,
+"seat_switch": true,
+"keeper_on_bar": false,
+"keeper_deg": -83.0,
+"claim": false,
+"zc": 0.115,
+"q_app": 0.073,
+"captured": true,
+"wheel_clear_mm": 87.2,
+"bin_tilt_abs": 4.1,
+"seated": true,
+"dock": "tof",
+"result": "safe_miss",
+"first_result": "safe_miss",
+"knocked": false,
+"false_hold": false,
+"events": [
+[
+27.49,
+"docked: tof, bin dy 0 mm (camera 1), nib gap 3 mm, bin moved 0 mm, rim 0.951 q_app 0.071, yaw meas -1.6 true 0.4 deg"
+],
+[
+27.49,
+"back off 0.4 m and re-approach"
+],
+[
+47.44,
+"docked: tof, bin dy -3 mm (camera 2), nib gap 4 mm, bin moved 0 mm, rim 0.953 q_app 0.073, yaw meas 0.7 true 0.6 deg"
+]
+],
+"i": 25,
+"params": {
+"bin": "ESE 240 SL (200 mm wheels)",
+"bar_r": 0.0135,
+"bar_shape": "tube",
+"bar_x": 0.1648,
+"cb": 0.064,
+"bar_habs": 1.0037,
+"bar_h": 0.9037,
+"wheel_r": 0.1,
+"handle_half": 0.2047,
+"knuckles": [
+[
+0.054,
+0.005
+]
+],
+"wy": 0.2595,
+"W": 0.583,
+"D": 0.737,
+"empty": 13.0,
+"dy": 0.043,
+"dyaw": -5.25,
+"mu": 0.39,
+"mu_hook": 0.4,
+"fill": 97.0,
+"lid": [
+"closed",
+0.0
+],
+"comb_d": -0.004868535055780958
+},
+"cpu": 12.0
+},
+{
+"docked": true,
+"reapp": false,
+"dock_dy_mm": -11.5,
+"lift_rise_N": 122,
+"seat_switch": true,
+"keeper_on_bar": true,
+"keeper_deg": -17.6,
+"claim": true,
+"zc": 0.135,
+"q_app": 0.089,
+"captured": true,
+"wheel_clear_mm": 97.3,
+"bin_tilt_abs": 1.1,
+"seated": true,
+"dock": "tof",
+"result": "success",
+"first_result": "success",
+"knocked": false,
+"false_hold": false,
+"events": [
+[
+21.9,
+"docked: tof, bin dy -12 mm (camera -16), nib gap 2 mm, bin moved 0 mm, rim 0.969 q_app 0.089, yaw meas 0.3 true -0.2 deg"
+],
+[
+29.09,
+"grab: claim True captured True clear 97 mm rise 122 N tilt 1.1"
+]
+],
+"i": 26,
+"params": {
+"bin": "ESE 240 SL (200 mm wheels)",
+"bar_r": 0.0135,
+"bar_shape": "tube",
+"bar_x": 0.1561,
+"cb": 0.0792,
+"bar_habs": 1.0236,
+"bar_h": 0.9236,
+"wheel_r": 0.1,
+"handle_half": 0.2014,
+"knuckles": [
+[
+0.0485,
+0.005
+]
+],
+"wy": 0.2595,
+"W": 0.583,
+"D": 0.737,
+"empty": 13.0,
+"dy": 0.019,
+"dyaw": 3.88,
+"mu": 0.53,
+"mu_hook": 0.48,
+"fill": 0.0,
+"lid": [
+"closed",
+0.0
+],
+"comb_d": -0.006438873198420141
+},
+"cpu": 4.4
+},
+{
+"docked": true,
+"reapp": false,
+"dock_dy_mm": -6.6,
+"lift_rise_N": 1056,
+"seat_switch": true,
+"keeper_on_bar": true,
+"keeper_deg": -16.4,
+"claim": true,
+"zc": 0.135,
+"q_app": 0.087,
+"captured": true,
+"wheel_clear_mm": 89.7,
+"bin_tilt_abs": 3.0,
+"seated": true,
+"dock": "tof",
+"result": "success",
+"first_result": "success",
+"knocked": false,
+"false_hold": false,
+"events": [
+[
+24.0,
+"docked: tof, bin dy -7 mm (camera -23), nib gap 4 mm, bin moved 0 mm, rim 0.967 q_app 0.087, yaw meas -0.6 true -2.5 deg"
+],
+[
+47.95,
+"grab: claim True captured True clear 90 mm rise 1056 N tilt 3.0"
+]
+],
+"i": 29,
+"params": {
+"bin": "ESE 240 SL (200 mm wheels)",
+"bar_r": 0.0135,
+"bar_shape": "tube",
+"bar_x": 0.1525,
+"cb": 0.0792,
+"bar_habs": 1.023,
+"bar_h": 0.923,
+"wheel_r": 0.1,
+"handle_half": 0.1916,
+"knuckles": [],
+"wy": 0.2595,
+"W": 0.583,
+"D": 0.737,
+"empty": 13.0,
+"dy": 0.052,
+"dyaw": -4.01,
+"mu": 0.78,
+"mu_hook": 0.47,
+"fill": 97.0,
+"lid": [
+"ajar",
+0.132
+],
+"comb_d": -0.0034981267172384083
+},
+"cpu": 6.7
+}
+]
+}

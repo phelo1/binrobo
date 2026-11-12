@@ -1,0 +1,278 @@
+{
+ "label": "revH",
+ "total": 85.5,
+ "rows": [
+  {
+   "name": "Side rails (legs) 2 x 1.31 m 50x50x3 RHS L",
+   "kg": 5.8,
+   "p": [
+    0.2,
+    0.35500000000000004,
+    0.285
+   ],
+   "d": [
+    1.31,
+    0.05,
+    0.05
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Side rails (legs) 2 x 1.31 m 50x50x3 RHS R",
+   "kg": 5.8,
+   "p": [
+    0.2,
+    -0.35500000000000004,
+    0.285
+   ],
+   "d": [
+    1.31,
+    0.05,
+    0.05
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Nose cross-member 50x50x3 + caster outriggers",
+   "kg": 5.5,
+   "p": [
+    0.72,
+    0.0,
+    0.285
+   ],
+   "d": [
+    0.2,
+    0.4,
+    0.2
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Mast uprights 2 x 1.05 m 50x50x3 L",
+   "kg": 4.65,
+   "p": [
+    0.45,
+    0.22,
+    0.8
+   ],
+   "d": [
+    0.05,
+    0.05,
+    1.05
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Mast uprights 2 x 1.05 m 50x50x3 R",
+   "kg": 4.65,
+   "p": [
+    0.45,
+    -0.22,
+    0.8
+   ],
+   "d": [
+    0.05,
+    0.05,
+    1.05
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Mast ties and braces",
+   "kg": 3.0,
+   "p": [
+    0.52,
+    0.0,
+    0.6
+   ],
+   "d": [
+    0.2,
+    0.4,
+    0.2
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Lift actuator 3000 N / 300 mm",
+   "kg": 2.0,
+   "p": [
+    0.47,
+    0.0,
+    0.65
+   ],
+   "d": [
+    0.2,
+    0.4,
+    0.2
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Donor drive units x2 (motor, gearbox, brake, wheel), motors aft L",
+   "kg": 9.5,
+   "p": [
+    -0.08,
+    0.485,
+    0.16
+   ],
+   "d": [
+    0.3,
+    0.12,
+    0.3
+   ],
+   "g": "wheel"
+  },
+  {
+   "name": "Donor drive units x2 (motor, gearbox, brake, wheel), motors aft R",
+   "kg": 9.5,
+   "p": [
+    -0.08,
+    -0.485,
+    0.16
+   ],
+   "d": [
+    0.3,
+    0.12,
+    0.3
+   ],
+   "g": "wheel"
+  },
+  {
+   "name": "Nose casters 260 mm flat-free + forks x2 L",
+   "kg": 2.5,
+   "p": [
+    0.74,
+    0.3,
+    0.15
+   ],
+   "d": [
+    0.2,
+    0.08,
+    0.2
+   ],
+   "g": "cast"
+  },
+  {
+   "name": "Nose casters 260 mm flat-free + forks x2 R",
+   "kg": 2.5,
+   "p": [
+    0.74,
+    -0.3,
+    0.15
+   ],
+   "d": [
+    0.2,
+    0.08,
+    0.2
+   ],
+   "g": "cast"
+  },
+  {
+   "name": "Tail anti-tip wheels x2",
+   "kg": 0.8,
+   "p": [
+    -0.4,
+    0.0,
+    0.1
+   ],
+   "d": [
+    0.2,
+    0.4,
+    0.2
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Batteries 2 x 12 V 18 Ah AGM, one on each leg behind the wheel L",
+   "kg": 5.4,
+   "p": [
+    -0.24,
+    0.42,
+    0.36
+   ],
+   "d": [
+    0.18,
+    0.08,
+    0.17
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Batteries 2 x 12 V 18 Ah AGM, one on each leg behind the wheel R",
+   "kg": 5.4,
+   "p": [
+    -0.24,
+    -0.42,
+    0.36
+   ],
+   "d": [
+    0.18,
+    0.08,
+    0.17
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Electronics box, driver, contactor, harness (on the mast)",
+   "kg": 5.0,
+   "p": [
+    0.51,
+    0.0,
+    0.55
+   ],
+   "d": [
+    0.2,
+    0.4,
+    0.2
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Sensors, lights, bumpers, deck, covers",
+   "kg": 5.0,
+   "p": [
+    0.55,
+    0.0,
+    0.5
+   ],
+   "d": [
+    0.2,
+    0.4,
+    0.2
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Motor plates, brackets, fasteners",
+   "kg": 4.0,
+   "p": [
+    0.15,
+    0.0,
+    0.22
+   ],
+   "d": [
+    0.2,
+    0.4,
+    0.2
+   ],
+   "g": "chassis"
+  }
+ ],
+ "carriage": [
+  {
+   "name": "Carriage, comb blade, pads (params)",
+   "kg": 4.5,
+   "p": [
+    0.4,
+    0,
+    0.9
+   ],
+   "d": [
+    0.1,
+    0.6,
+    0.5
+   ],
+   "g": "lift"
+  }
+ ]
+}

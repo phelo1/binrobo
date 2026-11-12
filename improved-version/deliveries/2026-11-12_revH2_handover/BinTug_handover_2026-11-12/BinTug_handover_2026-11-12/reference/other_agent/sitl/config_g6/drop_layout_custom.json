@@ -1,0 +1,32 @@
+{
+ "name": "custom (week-B test): M moved up-lane to L-16.0, 0.75 m hedge clearance, handle skewed +8 deg; F 6.0 m further up (G6 handles-out: heading 180 / 188)",
+ "order": [
+  "A",
+  "M",
+  "F"
+ ],
+ "spots": {
+  "A": {
+   "s_from_end": 11.1,
+   "lat": 1.35,
+   "heading_deg": 180.0,
+   "spacing_m": 1.0,
+   "hedge_clear_m": 0.0
+  },
+  "M": {
+   "s_from_end": 16.0,
+   "lat": "auto",
+   "heading_deg": 188.0,
+   "spacing_m": 1.2,
+   "hedge_clear_m": 0.75
+  },
+  "F": {
+   "s_from_end": 22.0,
+   "lat": "auto",
+   "heading_deg": 180.0,
+   "spacing_m": 1.2,
+   "hedge_clear_m": 0.75
+  }
+ },
+ "order_semantics": "drop_first"
+}

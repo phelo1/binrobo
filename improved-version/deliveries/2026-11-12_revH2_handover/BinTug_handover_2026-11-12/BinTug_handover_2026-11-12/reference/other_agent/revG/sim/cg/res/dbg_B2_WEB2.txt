@@ -1,0 +1,53 @@
+mon t 1.0 q -0.000 F 16 nib [1.149, -0.0, 0.75] clear -0.000 tilt 0.0 seated False {}
+mon t 2.0 q -0.000 F 16 nib [1.005, -0.001, 0.75] clear -0.000 tilt 0.0 seated False {}
+mon t 3.0 q -0.000 F 16 nib [0.861, -0.002, 0.75] clear -0.000 tilt 0.0 seated False {}
+mon t 4.0 q -0.000 F 16 nib [0.722, -0.001, 0.75] clear -0.000 tilt 0.0 seated False {}
+mon t 5.0 q -0.000 F 16 nib [0.582, 0.008, 0.75] clear -0.000 tilt 0.0 seated False {}
+mon t 6.0 q -0.000 F 16 nib [0.44, 0.008, 0.75] clear -0.000 tilt 0.0 seated False {}
+mon t 7.0 q -0.000 F 16 nib [0.296, 0.001, 0.75] clear -0.000 tilt 0.0 seated False {}
+mon t 8.0 q -0.000 F 16 nib [0.219, -0.004, 0.75] clear -0.000 tilt 0.0 seated False {}
+mon t 9.0 q -0.000 F 16 nib [0.164, -0.008, 0.75] clear -0.000 tilt 0.0 seated False {}
+mon t 10.0 q -0.000 F 16 nib [0.109, -0.011, 0.75] clear -0.000 tilt 0.0 seated False {}
+mon t 11.0 q -0.000 F 16 nib [0.076, -0.012, 0.75] clear -0.000 tilt 0.0 seated False {}
+mon t 12.0 q 0.017 F 56 nib [0.076, -0.012, 0.767] clear -0.000 tilt 0.0 seated False {}
+mon t 13.0 q 0.047 F 56 nib [0.076, -0.012, 0.797] clear -0.000 tilt 0.0 seated False {}
+mon t 14.0 q 0.076 F 90 nib [0.076, -0.012, 0.826] clear -0.000 tilt 0.0 seated False {'padg-binhull': 47}
+mon t 15.0 q 0.104 F 586 nib [0.084, -0.012, 0.848] clear 0.004 tilt 1.0 seated True {'tooth-rim': 380, 'nib-rim': 296, 'padg-binhull': 173}
+mon t 16.0 q 0.133 F 702 nib [0.084, -0.011, 0.848] clear 0.034 tilt 1.1 seated True {'tooth-rim': 375, 'nib-rim': 250, 'padg-binhull': 289}
+mon t 17.0 q 0.152 F 698 nib [0.084, -0.011, 0.848] clear 0.052 tilt 1.1 seated True {'tooth-rim': 521, 'nib-rim': 165, 'padg-binhull': 298}
+mon t 18.0 q 0.152 F 697 nib [0.084, -0.011, 0.848] clear 0.052 tilt 1.1 seated True {'tooth-rim': 518, 'nib-rim': 180, 'padg-binhull': 298}
+mon t 19.0 q 0.152 F 697 nib [0.084, -0.011, 0.848] clear 0.052 tilt 1.1 seated True {'tooth-rim': 513, 'nib-rim': 195, 'padg-binhull': 297}
+mon t 20.0 q 0.152 F 697 nib [0.084, -0.011, 0.848] clear 0.052 tilt 1.1 seated True {'tooth-rim': 508, 'nib-rim': 210, 'padg-binhull': 297}
+mon t 21.0 q 0.152 F 697 nib [0.084, -0.011, 0.848] clear 0.052 tilt 1.1 seated True {'tooth-rim': 519, 'nib-rim': 207, 'padg-binhull': 296}
+mon t 22.0 q 0.152 F 697 nib [0.084, -0.011, 0.848] clear 0.052 tilt 1.1 seated True {'tooth-rim': 502, 'nib-rim': 232, 'padg-binhull': 296}
+mon t 23.0 q 0.152 F 697 nib [0.084, -0.011, 0.848] clear 0.052 tilt 1.1 seated True {'tooth-rim': 502, 'nib-rim': 234, 'padg-binhull': 296}
+mon t 24.0 q 0.152 F 697 nib [0.084, -0.011, 0.848] clear 0.052 tilt 1.1 seated True {'tooth-rim': 500, 'nib-rim': 237, 'padg-binhull': 296}
+mon t 25.0 q 0.152 F 697 nib [0.084, -0.011, 0.848] clear 0.052 tilt 1.1 seated True {'tooth-rim': 500, 'nib-rim': 237, 'padg-binhull': 296}
+mon t 26.0 q 0.152 F 697 nib [0.084, -0.011, 0.848] clear 0.052 tilt 1.1 seated True {'tooth-rim': 500, 'nib-rim': 237, 'padg-binhull': 296}
+mon t 27.0 q 0.152 F 697 nib [0.084, -0.011, 0.848] clear 0.052 tilt 1.1 seated True {'tooth-rim': 500, 'nib-rim': 237, 'padg-binhull': 296}
+mon t 28.0 q 0.152 F 697 nib [0.084, -0.011, 0.848] clear 0.052 tilt 1.1 seated True {'tooth-rim': 500, 'nib-rim': 237, 'padg-binhull': 296}
+mon t 29.0 q 0.152 F 698 nib [0.084, -0.011, 0.848] clear 0.052 tilt 1.1 seated True {'tooth-rim': 512, 'nib-rim': 222, 'padg-binhull': 295}
+mon t 30.0 q 0.152 F 698 nib [0.084, -0.011, 0.848] clear 0.052 tilt 1.1 seated True {'tooth-rim': 500, 'nib-rim': 237, 'padg-binhull': 296}
+mon t 31.0 q 0.152 F 698 nib [0.084, -0.011, 0.848] clear 0.052 tilt 1.1 seated True {'tooth-rim': 500, 'nib-rim': 237, 'padg-binhull': 296}
+mon t 32.0 q 0.152 F 697 nib [0.084, -0.011, 0.848] clear 0.052 tilt 1.1 seated True {'tooth-rim': 500, 'nib-rim': 237, 'padg-binhull': 296}
+mon t 33.0 q 0.152 F 698 nib [0.084, -0.011, 0.848] clear 0.052 tilt 1.1 seated True {'tooth-rim': 500, 'nib-rim': 237, 'padg-binhull': 296}
+mon t 34.0 q 0.152 F 697 nib [0.084, -0.011, 0.848] clear 0.052 tilt 1.1 seated True {'tooth-rim': 500, 'nib-rim': 237, 'padg-binhull': 296}
+mon t 35.0 q 0.152 F 697 nib [0.084, -0.011, 0.848] clear 0.052 tilt 1.1 seated True {'tooth-rim': 503, 'nib-rim': 229, 'padg-binhull': 297}
+{'docked': True, 'reapp': False, 'dock_dy_mm': 9.9, 'lift_rise_N': 682, 'seat_switch': True, 'keeper_on_bar': True, 'keeper_deg': -14.9, 'claim': True, 'captured': True, 'wheel_clear_mm': 51.9, 'bin_tilt_abs': 1.1, 'seated': True, 'result': 'success'}
+[(11.1, 'docked: tip, bin dy 10 mm (camera 11), nib gap 2 mm, bin moved 0 mm'), (35.93, 'grab: claim True captured True clear 52 mm rise 682 N')]
+mon t 36.0 q 0.151 F 685 nib [0.084, -0.011, 0.848] clear 0.051 tilt 1.1 seated True {'tooth-rim': 720, 'nib-rim': 185, 'bar-keeptip': 44, 'bar-keeptip2': 46, 'padg-binhull': 283}
+mon t 37.0 q 0.131 F 693 nib [0.084, -0.011, 0.848] clear 0.031 tilt 1.1 seated True {'tooth-rim': 731, 'nib-rim': 188, 'bar-keeptip': 44, 'bar-keeptip2': 46, 'padg-binhull': 293}
+mon t 38.0 q 0.111 F 693 nib [0.084, -0.011, 0.848] clear 0.011 tilt 1.1 seated True {'tooth-rim': 731, 'nib-rim': 188, 'bar-keeptip': 44, 'bar-keeptip2': 46, 'padg-binhull': 293}
+mon t 39.0 q 0.104 F 84 nib [0.084, -0.011, 0.848] clear 0.004 tilt 1.1 seated True {'tooth-rim': 116, 'nib-rim': 126, 'padg-binhull': 295}
+mon t 40.0 q 0.087 F -20 nib [0.081, -0.011, 0.832] clear 0.004 tilt 0.9 seated False {'padg-binhull': 132}
+mon t 41.0 q 0.069 F -21 nib [0.077, -0.011, 0.816] clear 0.003 tilt 0.6 seated False {'padg-binhull': 146}
+mon t 42.0 q 0.069 F 50 nib [0.141, -0.006, 0.819] clear -0.000 tilt 0.0 seated False {}
+mon t 43.0 q 0.069 F 58 nib [0.282, -0.003, 0.819] clear -0.000 tilt 0.0 seated False {}
+mon t 44.0 q 0.069 F 50 nib [0.422, -0.011, 0.819] clear -0.000 tilt 0.0 seated False {}
+mon t 45.0 q 0.069 F 50 nib [0.564, -0.018, 0.819] clear -0.000 tilt 0.0 seated False {}
+mon t 46.0 q 0.069 F 50 nib [0.672, -0.022, 0.819] clear -0.000 tilt 0.0 seated False {}
+mon t 47.0 q 0.069 F 50 nib [0.672, -0.022, 0.819] clear -0.000 tilt 0.0 seated False {}
+mon t 48.0 q 0.069 F 50 nib [0.672, -0.022, 0.819] clear -0.000 tilt 0.0 seated False {}
+{'tilt_before_withdraw': 0.6, 'released': True, 'nib_clear_m': 0.604}
+end t 48.7 q 0.069 F 50 nib [0.672, -0.022, 0.819] clear -0.000 tilt 0.0 seated False {}
+zL 0.968 xbt 0.06799999999999999

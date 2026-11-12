@@ -1,0 +1,179 @@
+{
+"bin": "ESE240CL",
+"seed": 203,
+"n": 3,
+"captured": 0,
+"false_holds": 0,
+"knocked": 0,
+"runs": [
+{
+"docked": false,
+"reapp": true,
+"dock_dy_mm": -15.2,
+"result": "no_dock",
+"claim": false,
+"captured": false,
+"first_result": "no_dock",
+"knocked": false,
+"false_hold": false,
+"events": [
+[
+22.93,
+"docked: tof, bin dy -16 mm (camera -27), nib gap 4 mm, bin moved 0 mm, rim 0.897 q_app 0.017, yaw meas 0.6 true 0.3 deg"
+],
+[
+22.93,
+"back off 0.4 m and re-approach"
+],
+[
+44.32,
+"docked: tof, bin dy -15 mm (camera -5), nib gap 2 mm, bin moved 0 mm, rim 0.907 q_app 0.027, yaw meas 3.5 true 4.5 deg"
+]
+],
+"i": 2,
+"params": {
+"bin": "ESE 240 CL (lowest handle)",
+"bar_r": 0.0135,
+"bar_shape": "tube",
+"bar_x": 0.1584,
+"cb": 0.0666,
+"bar_habs": 0.9565,
+"bar_h": 0.8565,
+"wheel_r": 0.1,
+"handle_half": 0.2019,
+"knuckles": [
+[
+0.041,
+0.005
+]
+],
+"wy": 0.2595,
+"W": 0.58,
+"D": 0.738,
+"empty": 11.0,
+"dy": 0.048,
+"dyaw": 5.1,
+"mu": 0.55,
+"mu_hook": 0.37,
+"fill": 0.0,
+"lid": [
+"ajar",
+0.091
+],
+"comb_d": 0.006533300989635364
+},
+"cpu": 7.8
+},
+{
+"docked": false,
+"reapp": true,
+"dock_dy_mm": 175.1,
+"result": "no_dock",
+"claim": false,
+"captured": false,
+"first_result": "no_dock",
+"knocked": false,
+"false_hold": false,
+"events": [
+[
+9.39,
+"docked: funnel stall at nib gap 721 mm, bin dy -98 mm"
+],
+[
+9.39,
+"back off 0.6 m and re-approach"
+],
+[
+26.65,
+"docked: funnel stall at nib gap 627 mm, bin dy 175 mm"
+]
+],
+"i": 10,
+"params": {
+"bin": "ESE 240 CL (lowest handle)",
+"bar_r": 0.0135,
+"bar_shape": "tube",
+"bar_x": 0.1541,
+"cb": 0.0663,
+"bar_habs": 0.9353,
+"bar_h": 0.8353,
+"wheel_r": 0.1,
+"handle_half": 0.2127,
+"knuckles": [],
+"wy": 0.2595,
+"W": 0.58,
+"D": 0.738,
+"empty": 11.0,
+"dy": -0.079,
+"dyaw": 2.94,
+"mu": 0.68,
+"mu_hook": 0.26,
+"fill": 0.0,
+"lid": [
+"closed",
+0.0
+],
+"comb_d": 0.00720597473943607
+},
+"cpu": 4.5
+},
+{
+"docked": false,
+"reapp": true,
+"dock_dy_mm": 134.2,
+"result": "no_dock",
+"claim": false,
+"captured": false,
+"first_result": "no_dock",
+"knocked": false,
+"false_hold": false,
+"events": [
+[
+9.73,
+"docked: funnel stall at nib gap 749 mm, bin dy -104 mm"
+],
+[
+9.73,
+"back off 0.6 m and re-approach"
+],
+[
+27.73,
+"docked: funnel stall at nib gap 780 mm, bin dy 134 mm"
+]
+],
+"i": 24,
+"params": {
+"bin": "ESE 240 CL (lowest handle)",
+"bar_r": 0.0135,
+"bar_shape": "tube",
+"bar_x": 0.1396,
+"cb": 0.0738,
+"bar_habs": 0.9621,
+"bar_h": 0.8621,
+"wheel_r": 0.1,
+"handle_half": 0.2137,
+"knuckles": [
+[
+0.0451,
+0.005
+]
+],
+"wy": 0.2595,
+"W": 0.58,
+"D": 0.738,
+"empty": 11.0,
+"dy": -0.071,
+"dyaw": 1.74,
+"mu": 0.76,
+"mu_hook": 0.28,
+"fill": 0.0,
+"lid": [
+"closed",
+0.0
+],
+"comb_d": 0.009998115426202556
+},
+"cpu": 4.7
+}
+]
+}

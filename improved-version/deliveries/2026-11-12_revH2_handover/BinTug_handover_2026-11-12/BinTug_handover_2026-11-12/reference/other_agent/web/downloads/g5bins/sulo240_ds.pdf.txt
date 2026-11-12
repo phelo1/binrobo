@@ -1,0 +1,335 @@
+[text of sulo240_ds.pdf, taken out of the PDF for the public repository; pictures and layout are not kept]
+
+CITYBAC®
+240L
+        Citybac® 240L
+        PRODUCT DETAILS
+
+
+
+
+          B                      4
+3
+
+                         2
+                                     1
+
+
+                     G       C
+                             F
+
+
+
+
+                                 D
+
+
+
+
+                                     A
+
+
+
+
+                                                                              E
+    E
+
+
+
+
+        1 Standard Lid                   A	
+                                           Body reinforced with beads
+        2 Handles 2x                     B 	Continuous handle bar (split handle option
+        3 Lid rivet 2x                     production specific)
+        4 Marking areas                  C	
+                                           DIN comb lifting system, double stage
+                                         D SULO sticker / Marking areas
+                                         E External wheels
+                                         F Chip nest as standard
+                                         G	Lateral grip surfaces with wave profile
+                                                                                                                                    2-WHEELED CITYBAC®
+
+
+
+
+                                                            A
+                                                      B
+
+
+                                                                                                                                C
+
+
+
+
+          E
+                        C                                                                          D
+
+
+
+
+ STANDARD LID                                             CLIP LID                                              SILENT LID
+
+ Dimensions (mm)                                          Dimensions (mm)                                        Dimensions (mm)
+ A Height total ~                             1068        A Height total ~                             1077      A Height total ~                           1050
+ B Upper comb edge ~                           998        B Upper comb edge ~                           998      B Upper comb edge ~                         998
+ C Bin depth ~                                 734        C Bin depth ~                                 734      C Bin depth ~                               734
+ D Width total ~                               583        D Width total ~                               583      D Width total ~                             583
+ E Wheel diameter ~                            200        E Wheel diameter ~                            200      E Wheel diameter ~                          200
+
+
+
+ Weights                                                  Weights                                                Weights
+ Tubular axle                                             Tubular axle                                           Tubular axle
+ Nominal volume (L)                           240         Nominal volume (L)                           240       Nominal volume (L)                         240
+ Empty weight (kg) ~                         10,2         Empty weight (kg) ~                          10,2      Empty weight (kg) ~                        10,2
+ Max. filling weight (kg) ~                    96         Max. filling weight (kg) ~                    96       Max. filling weight (kg) ~                  96
+ Max. total weight (kg) ~                     110         Max. total weight (kg) ~                     110       Max. total weight (kg) ~                   110
+
+
+
+Dimensions may vary due to production conditions. The specified empty weights are rounded average based on the standard specifications. The actual weight
+may be different as a result of production conditions and specifications.
+Citybac® 240L
+PRODUCT DETAILS
+
+
+COLOURING
+Bin bodies made from 100 % recycled material with a minimum of 60 % post-consumer recycled material.
+
+
+
+                                          GREY
+                                     RAL 7021
+                                       AT
+                                  ECO FRIENDLY
+
+
+
+
+Perfectly set in scene with coloured lids for fraction identification
+
+
+
+
+       GREY                    GREEN                   BROWN                       BLUE           YELLOW               RED
+       RAL                      RAL                     RAL                        RAL              RAL                RAL
+      7021                     6011                     8025                       5023           1018                3000
+       AT                       VJ                       MR                         BN             JA                  RN
+
+
+
+ALTERNATIVE COLOURS FOR THE BIN BODY
+
+
+
+
+          GREEN                                  BROWN
+           RAL                                    RAL                                   BLUE                  YELLOW
+                                                                                        RAL                     RAL
+           6011                                   8025                                 5023                    1018
+            VJ                                     MR                                   BN                      JA
+    ECO FRIENDLY                           ECO FRIENDLY                          ECO FRIENDLY              ECO FRIENDLY
+
+
+
+
+Colours may vary due to production. The colour values given according to RAL are guide colours.
+                                                                                        2-WHEELED CITYBAC®
+
+
+
+
+FRACTION MARKING
+
+
+
+
+                      Clip available in
+                      the colours
+
+
+Label for Clip Lid,
+individual printing
+possible
+
+
+LID SLOT SYSTEMS
+
+Glass                 Paper
+
+
+
+
+Round slot with       Opening Slots        Paper Inlet Hood
+rubber rosette        above                BLUE
+Ø 150 mm              300 x 60 mm
+
+
+
+
+NOISE REDUCTION SYSTEMS                                         WHEELS
+
+
+
+
+Lid Opening Noise     Lid closing damper                        Ø 200 mm Wheel
+Reduction
+
+
+
+
+LOCKING SYSTEMS
+
+
+
+
+Triangular Locks      Padlock Fixtures     Cylinder lock with   Cylinder lock without
+                                           automatic function   automatic function
+Citybac® 2-Wheel
+TECHNICAL INFORMATION
+
+                                                   240 LITRE
+
+
+MATERIAL OPTIONS
+
+Extra UV protection                                   
+
+COLOURS
+
+Standard colours                                      
+
+Other colours                                         
+
+LID SYSTEMS
+
+Standard Lid                                          
+
+Clip Lid (EURO2)                                      
+
+Silent Lid                                            
+
+Label for Clip Lid, individual printing possible      
+
+LIFTING SYSTEMS
+
+EN 840 / DIN Comb                                     
+
+LID SLOT SYSTEMS
+
+Glass
+
+Round slot with rubber rosette Ø 150 mm               
+
+Paper
+
+Opening Slots 250 x 30 mm
+
+Opening Slots 300 x 30 mm
+
+Opening Slots 300 x 60 mm                             
+
+Paper Inlet Hood Blue                                 
+
+NOISE REDUCTION SYSTEMS
+
+Lid opening noise reduction                           
+
+Lid closing damper                                    
+
+CHASSIS
+
+Tubular axle                                          
+
+Full axle                                             
+
+WHEELS
+
+Ø 200 mm                                              
+                                                  240 LITRE
+
+
+LOCKING SYSTEMS
+
+Padlock device 1x                                    
+
+Triangular Locks
+
+with open position                                   
+
+without open position                                
+
+Cylinder lock without automatic function
+
+same key locking                                     
+
+group key locking                                    
+
+different key locking                                
+
+Cylinder lock with automatic function
+
+same key locking                                     
+
+group key locking                                    
+
+different key locking                                
+
+CHIP INSTALLATION
+
+RFID chip, installation without barcode sticker      
+
+RFID chip, installation with barcode sticker         
+
+RFID CHIP
+
+Transponder 134kHz HDX + HID Inlay casted            
+
+Transponder 134kHz FDX casted                        
+
+Transponder 134kHz FDX riveted                       
+
+Transponder 134kHz HDX + glass                       
+
+Transponder 125kHz FDX casted                        
+
+Transponder 125kHz FDX riveted                       
+
+Transponder 13,56 MHz                                
+
+LABELLING
+
+Body
+
+SULO sticker                                         
+
+Customer sticker                                     
+
+Hot foil stamping                                    
+
+Running numbers (colourless / black / white)         
+
+Lid
+
+SULO sticker                                         
+
+Hot foil stamping                                    
+
+Running numbers (colourless / black / white)         
+
+Embossing insert                                     
+
+Print on Clip (Clip Lid)                             
+
+
+
+
+ Standard
+ Option
+sulo.com
+
+
+
+
+DATA-CITYBAC-240L-HF-EN-1-0-021221
+

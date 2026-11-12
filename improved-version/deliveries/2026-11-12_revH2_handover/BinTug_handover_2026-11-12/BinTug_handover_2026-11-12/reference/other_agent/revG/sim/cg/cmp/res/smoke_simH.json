@@ -1,0 +1,144 @@
+[
+{
+"bin": "WEB140",
+"full": true,
+"res": "success",
+"tilt": 8.6,
+"clear": 47.9,
+"span_mm": [
+-240,
+240
+],
+"lipF": 611,
+"pad_N": 197,
+"events": [
+[
+15.05,
+"docked: tof, bin dy 3 mm (camera 4), nib gap 1 mm, bin moved 0 mm, rim 0.943 q_app 0.078, yaw meas -0.2 true -0.9 deg"
+],
+[
+38.92,
+"grab: claim True captured True clear 48 mm rise 641 N tilt 8.6"
+]
+],
+"sd": "PASS",
+"tilt_end": 0.0
+},
+{
+"bin": "WEB140",
+"full": false,
+"res": "success",
+"tilt": 8.8,
+"clear": 49.4,
+"span_mm": [
+-240,
+240
+],
+"lipF": 198,
+"pad_N": 35,
+"events": [
+[
+15.03,
+"docked: tof, bin dy 3 mm (camera 4), nib gap 1 mm, bin moved 0 mm, rim 0.943 q_app 0.078, yaw meas -0.2 true -0.8 deg"
+],
+[
+22.19,
+"grab: claim True captured True clear 49 mm rise 92 N tilt 8.8"
+]
+],
+"sd": "PASS",
+"tilt_end": 0.0
+},
+{
+"bin": "ESE140CL",
+"full": true,
+"res": "success",
+"tilt": 9.3,
+"clear": 44.0,
+"span_mm": [
+-240,
+240
+],
+"lipF": 700,
+"pad_N": 210,
+"events": [
+[
+14.73,
+"docked: tof, bin dy 3 mm (camera 4), nib gap 1 mm, bin moved 0 mm, rim 0.927 q_app 0.062, yaw meas -0.2 true -0.8 deg"
+],
+[
+38.6,
+"grab: claim True captured True clear 44 mm rise 681 N tilt 9.3"
+]
+],
+"sd": "PASS",
+"tilt_end": 0.0
+},
+{
+"bin": "ESE140CL",
+"full": false,
+"res": "success",
+"tilt": 9.1,
+"clear": 47.9,
+"span_mm": [
+-240,
+240
+],
+"lipF": 170,
+"pad_N": 34,
+"events": [
+[
+14.72,
+"docked: tof, bin dy 3 mm (camera 4), nib gap 1 mm, bin moved 0 mm, rim 0.927 q_app 0.062, yaw meas -0.2 true -0.8 deg"
+],
+[
+21.88,
+"grab: claim True captured True clear 48 mm rise 82 N tilt 9.1"
+]
+],
+"sd": "PASS",
+"tilt_end": 0.0
+},
+{
+"bin": "ESE240SL",
+"full": true,
+"res": "false_positive",
+"tilt": 11.3,
+"clear": -0.1
+},
+{
+"bin": "ESE240SL",
+"full": false,
+"res": "false_positive",
+"tilt": 11.3,
+"clear": 3.4
+},
+{
+"bin": "ESE240CL",
+"full": true,
+"res": "false_positive",
+"tilt": 11.2,
+"clear": -0.0
+},
+{
+"bin": "ESE240CL",
+"full": false,
+"res": "false_positive",
+"tilt": 11.6,
+"clear": -0.0
+},
+{
+"bin": "ESE240SL250",
+"full": true,
+"res": "false_positive",
+"tilt": 6.2,
+"clear": -0.0
+},
+{
+"bin": "ESE240SL250",
+"full": false,
+"res": "safe_miss",
+"tilt": 6.5,
+"clear": -0.0
+}
+]

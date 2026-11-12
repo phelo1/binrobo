@@ -1,0 +1,75 @@
+id,area,item,eur,status,order_group,function,rev_g_line,note
+H-S1,Structure,"Steel: 2 x 6 m 50x50x3 RHS (side rails, cross-members, mast, carriage) + 2 m 30x30x2 braces + flat bar; zinc-rich primer and topcoat",110.00,est,LOCAL,mover,"G1, G2",Cut list ~8.5 m of 50x50x3. Replaces G1 + G2 (EUR 105) and the EUR 165 laser/press-brake/galvanise uplift the handover lists as not in the total.
+H-S2,Structure,"One laser-cut order, 4-6 mm S355: comb blade, carriage cheeks, 2 motor plates, 4 mast gussets, caster outriggers, actuator lugs, battery trays (~14 parts)",60.00,est,LOCAL,mover,G1,Rev G had 53 made parts and 34 DXF patterns; Rev H has about 14 plates and one tube size. Local quote needed (ATC [nearby town]).
+H-S3,Structure,Carriage rollers: 8 x 6202-2RS bearings on shoulder bolts,15.00,est,CN,bin handling,,"Rollers, not slides: lift force 1.2 kN instead of 1.7 kN (statics.json)."
+H-S4,Structure,"Deck, motor and battery covers: HDPE / ply offcuts",15.00,est,LOCAL,mover,G3,
+H-S5,Structure,Nose casters: 2 x 260 mm flat-free swivel casters,60.00,est,IE,mover,,CONDITIONAL: the donor chair's 200 mm casters work but lose one step case (layout A5 in mech.json). Saving EUR 60 if kept.
+H-S6,Structure,Tail anti-tip wheels 2 x 100 mm PU,8.00,est,CN,mover,,Often on the donor chair already.
+H-S7,Structure,UHMW guide strips on the inner rails 2 x 600x40x10,12.00,est,IE,bin handling,,
+G4,Drive,"Donor powerchair: matched 24 V gearmotors + spring brakes, 12.5 in wheels (DoneDeal)",160.00,G4-est,LOCAL,mover,G4,Same line and price as Rev G. RISK: used powerchair listings seen on 11 Nov were EUR 209-282 (for-sale.ie). Applies to Rev G equally.
+G5b,Drive,Tyre sealant for the donor drive tyres (Slime 473 ml),17.50,G4-checked,IE,mover,G5b,
+G6,Drive,"Dual 30 A motor driver, Cytron MDDS30 (7-35 V, 30 A cont / 80 A peak)",82.95,G4-checked,NL,mover,G6,"CONDITIONAL: Cytron MDD20A (20 A cont / 60 A peak, 6-30 V) is GBP 37 at The Pi Hut (excerpt). Saving ~EUR 38 once the donor stall current is measured."
+H-D1,Drive,"Reverse-polarity protection for the driver (ideal-diode module, 50 A)",8.00,est,CN,mover,,The handover lists this as a required substitution not yet in the Rev G total.
+G9,Drive,Wheel encoders x2 (hall quadrature kit),18.00,G4-checked,CN,navigation,G9,
+H-L1,Bin handling,"Lift actuator 24 V, 3000 N, 300 mm stroke, IP65, self-locking",45.00,excerpt-11Nov,CN,bin handling,G10,Generic 3000 N 300 mm units USD 30-55 (eBay / Alibaba excerpts). Load 1.2 kN: margin 2.5. Replaces the 450 mm tilt actuator the handover calls under-spec.
+H-L2,Bin handling,"4 x IP67 roller switches: 2 lip-seated (on the comb), 2 squaring (on the carriage face)",25.16,G4-excerpt,DE,bin handling,"G13, K2",Same Aratas D2SW-3L2H switch the G5 report priced at EUR 6.29 each (RS DE).
+H-L3,Bin handling,"2 x leg-tip side-gap sensors (VL53L1X-class ToF, potted)",10.00,est,CN,bin handling,,Closes the docking loop without relying on the camera: dock_mc.json stress case 82 % -> 99.9 % first try.
+K5,Bin handling,"Actuator current sensor INA219 (bin weight, not-collected, stall)",3.00,G4-est,CN,bin handling,K5,Reads weight directly instead of inferring it from tilt current.
+H-L4,Bin handling,Rubber rest pad + comb buffer,6.00,est,IE,bin handling,,
+H-P1,Power,"2 x 12 V 18 Ah AGM (24 V, 432 Wh nominal)",93.90,excerpt-11Nov,DE,mover,G14,"Kung Long WP18-12SHR EUR 46.95 each (ebay.de excerpt). AGM instead of the 12 Ah LiFePO4 (EUR 129.90): no BMS trip on 2 x 45 A step peaks, charges in frost, 11 kg where the layout wants it."
+H-P2,Power,"Battery trays/straps on the rails, link cable 6 mm2, Anderson SB50 pair, 60 A MIDI fuse + holder",28.00,est,CN,mover,"G16, S1",
+G15,Power,Hasp + padlock on the battery covers,7.00,G4-est,IE,theft,G15,
+S2,Safety & power dist.,6-way blade fuse box + fuses,9.00,G4-est,CN,safety,S2,
+S3,Safety & power dist.,Battery isolator key switch 100 A,10.00,G4-est,CN,safety,S3,
+S4,Safety & power dist.,"Main contactor 100 A DC, 24 V coil",28.00,G4-checked,DE,safety,S4,
+S5,Safety & power dist.,Safety latch relay K1 Finder 55.34 + socket,18.00,G4-checked,IE,safety,S5,
+S6,Safety & power dist.,"Relays: charge path, reset, actuator reversing pair",16.00,G4-est,CN,safety,S6,
+S7,Safety & power dist.,Dual hardware watchdog (missing-pulse detectors + relays),8.00,G4-est,CN,safety,S7,
+S8,Safety & power dist.,Mushroom E-stop station IP65,15.00,G4-checked,IE,safety,S8,
+S9,Safety & power dist.,4-ch opto input module + coil clamps,7.00,G4-est,CN,safety,S9,
+S10,Safety & power dist.,Tamper siren,4.00,G4-est,CN,theft,S10,
+S11,Safety & power dist.,Supercap / UPS HAT for clean Pi shutdown,12.00,G4-est,CN,safety,S11,
+S13,Safety & power dist.,Tilt switch in the stop loop,3.00,G4-est,CN,safety,S13,
+S12,Safety & power dist.,"DS18B20 x2 (ice gate, box temperature)",3.00,G4-est,CN,safety,S12,
+G18,Navigation,Flight controller F405 (ArduPilot Rover),35.00,G4-est,CN,navigation,G18,
+G19,Navigation,"RTK: LC29H rover + base core boards, 2 antennas, ESP32 NTRIP server",78.00,G4-excerpt,CN,navigation,G19,
+G21,Sensing,2D lidar LDROBOT STL-06N with drip cap,50.00,G4-excerpt,CN,obstacle sensing,G21,
+G22,Sensing,Nose bumper bar + leg-tip bump strips (tape switches),21.00,G4-est,IE,safety,G22,EUR 6 more than Rev G for the second leg tip.
+G23,Sensing,Pi Zero 2 W + rear IP67 camera + 850 nm IR illuminator,45.00,G4-est,CN,navigation,G23,
+H-N1,Sensing,High-endurance microSD 32 GB (read-only root + UPS HAT do the protecting),12.00,est,IE,navigation,G23b,Rev G: SanDisk Industrial EUR 39.90. The G3 BOM note itself says read-only root + supercap do most of the protection.
+G24,Sensing,Retro-reflective ArUco tags for 3 bins (front + back) + dock tag,10.00,G4-est,IE,navigation,G24,
+H-N2,Sensing,"2 x 24 GHz vehicle radar HLK-LD2451 (front, rear)",32.92,excerpt-11Nov,CZ,vehicle detection,,EUR 16.46 each incl. VAT at laskakit.cz (excerpt). A G4 feature that is NOT in the Rev G BOM.
+H-C1,Comms,"Industrial LTE USB dongle (SIM7600G-H / EC25-E class, -40..+85 C) + antenna",45.00,est,CN,monitoring,G25,The handover says the E3372 (EUR 35) is out of its temperature range and must be replaced. EU retail for the Waveshare SIM7600G-H dongle is EUR 78 (excerpt).
+H-C2,Comms,"Two-way audio: USB sound card, 3 W amp, IP65 horn speaker, mic capsule",30.00,est,CN,two-way audio,,G4 feature not in the Rev G BOM; the handover estimates EUR 40-70.
+G26,Enclosure & wiring,IP67 ABS electronics box + glands + vent + silica gel (on the mast),30.00,G4-est,IE,mover,G26,
+G27,Enclosure & wiring,"DC-DC 24->5 V 5 A, RTC, wire, lugs, ferrules, heat-shrink",40.00,G4-est,CN,mover,G27,
+H-W1,Enclosure & wiring,"Connectors: Anderson PP45 for motors and actuator, Superseal for lamps and sensors, glands for the rest",25.00,est,CN,mover,H1,Rev G: EUR 60 of keyed Deutsch DT / M12 so the tug could ship in 5 boxes and be plugged together. One robot built on site does not need that.
+H-W2,Enclosure & wiring,"Fasteners: M8/M10 8.8 zinc + nyloc for structure, A2 small screws, rivnuts, threadlock",30.00,est,IE,mover,F1,"Rev G: EUR 89, of which EUR 51 is Nord-Lock washers for the kingpin-loaded joints that no longer exist."
+L1,Lights,"Dipped headlamps x2, Addview Hammer E60 (cut-off beam)",35.98,G4-checked,DE,night lights,L1,
+L2,Lights,Red position markers x2,10.95,G4-checked,DE,night lights,L2,
+H-X1,Lights,Amber LED beacon 12-24 V on the motor-enable circuit,15.00,est,IE,night lights,L3,Rev G: R65/R10 type-approved beacon EUR 30.20 drawing 17 W. Type approval is for road vehicles; a plain LED beacon does the same job on a private lane at ~5 W.
+L4,Lights,Rear work lamp 3 W,6.00,G4-est,CN,night lights,L4,
+H-X2,Lights,"Reflective tape: red rear, yellow sides, white front",15.00,est,IE,night lights,L5,Rev G: ECE 104 rolls EUR 30.
+L6,Lights,MOSFET board + LDR dusk module,9.00,G4-est,CN,night lights,L6,
+H-K1,Dock,Dock post with tag plate and nose block (steel offcuts from H-S1),15.00,est,LOCAL,auto-charge,D1,
+D2,Dock,Plated wiping charge contacts (robot-mower type) on the dock post and the carriage face,26.00,G4-checked,DE,auto-charge,D2,
+H-K2,Dock,Reed switch + magnet + 10 A relay + fuse: contacts dead until the robot is seated,10.00,est,CN,auto-charge,D3,Rev G: ESP32 dock controller EUR 25. The robot already measures charge current (D4) and raises the alerts.
+D4,Dock,"Robot charge path: ideal diode, INA226",9.00,G4-est,CN,auto-charge,D4,
+D5,Dock,IP65 enclosure for the charger,25.00,G4-checked,IE,auto-charge,D5,
+H-K3,Dock,24 V 3 A 3-stage AGM charger,30.00,est,DE,auto-charge,D6,Often supplied with the donor chair.
+D7,Dock,Lean-to rain roof (scrap sheet),10.00,G4-est,IE,auto-charge,D7,
+D8,Dock,Cable lock to the dock post,15.00,G4-est,IE,theft,D8,
+D9,Dock,Concrete anchors,10.00,G4-est,IE,auto-charge,D9,
+D10,Dock,"Dock DC wiring 2.5 mm2 ~5 m, inline fuse",14.00,G4-est,IE,auto-charge,D10,
+D11,Dock,RCD-protected IP66 outdoor socket,25.00,G4-checked,IE,auto-charge,D11,CONDITIONAL: EUR 0 if an outdoor RCD socket already exists near the dock.
+SHIP-IE,Logistics,shipping,8.00,est,,,,
+SHIP-DE,Logistics,shipping,35.00,est,,,,
+SHIP-NL,Logistics,shipping,0.00,est,,,,
+SHIP-CZ,Logistics,shipping,8.00,est,,,,
+SHIP-CN,Logistics,shipping,8.00,est,,,,
+SHIP-LOCAL,Logistics,shipping,15.00,est,,,,
+DUTY,Logistics,EUR 3 customs duty per non-EU line (half of the CN lines assumed to combine),43.50,est,,,,
+,,TOTAL parts,1682.36
+,,TOTAL incl. shipping + duty,1799.86
+,,Risk-weighted contingency,190.27
+,,ALL-IN,1990.13

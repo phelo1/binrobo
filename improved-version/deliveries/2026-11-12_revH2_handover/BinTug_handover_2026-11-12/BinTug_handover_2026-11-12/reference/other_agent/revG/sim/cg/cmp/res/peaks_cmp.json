@@ -1,0 +1,74 @@
+{
+ "B1": {
+  "lift_N": [
+   3000.0,
+   "B1_step40_one_f9.json"
+  ],
+  "pad_N": [
+   1063.3,
+   "B1_step40_both_f9.json"
+  ],
+  "nib_rim_N": [
+   3838.1,
+   "B1_step40_one_f9.json"
+  ],
+  "wheel_torque_Nm": [
+   150.0,
+   "B1_climb_m22_c06_f9.json"
+  ]
+ },
+ "Hraw": {
+  "lift_N": [
+   3000.0,
+   "H_step40_one_rw318_raw.json"
+  ],
+  "pad_N": [
+   1304.07,
+   "H_step40_one_rw318_raw.json"
+  ],
+  "nib_rim_N": [
+   3043.98,
+   "H_step40_one_rw318_raw.json"
+  ],
+  "wheel_torque_Nm": [
+   150.0,
+   "H_climb_m22_c06_raw.json"
+  ]
+ },
+ "Hfx": {
+  "lift_N": [
+   3000.0,
+   "H_step40_one_rw318_fx.json"
+  ],
+  "pad_N": [
+   1480.44,
+   "H_step40_one_rw318_fx.json"
+  ],
+  "nib_rim_N": [
+   2723.47,
+   "H_step40_one_rw318_fx.json"
+  ],
+  "wheel_torque_Nm": [
+   150.0,
+   "H_climb_m22_c06_fx.json"
+  ]
+ },
+ "FW": {
+  "lift_N": [
+   1951.55,
+   "B1_step40_one_f9_fwp32.json"
+  ],
+  "pad_N": [
+   1072.71,
+   "B1_towstab_f9_fwp32.json"
+  ],
+  "nib_rim_N": [
+   2806.03,
+   "B1_step40_one_f9_fwp32.json"
+  ],
+  "wheel_torque_Nm": [
+   150.0,
+   "B1_climb_m22_c09_f9_fwp32.json"
+  ]
+ }
+}

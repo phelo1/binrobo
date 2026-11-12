@@ -1,0 +1,135 @@
+[
+{
+"bin": "WEB140",
+"full": true,
+"res": "success",
+"tilt": 1.8,
+"clear": 91.5,
+"span_mm": [
+-240,
+240
+],
+"lipF": 988,
+"yaw_deg": 0.05,
+"roll_deg": -0.61,
+"sd": "PASS",
+"tilt_end": 0.0
+},
+{
+"bin": "WEB140",
+"full": false,
+"res": "success",
+"tilt": 1.2,
+"clear": 97.1,
+"span_mm": [
+-240,
+240
+],
+"lipF": 206,
+"yaw_deg": 0.05,
+"roll_deg": -0.08,
+"sd": "PASS",
+"tilt_end": 0.0
+},
+{
+"bin": "ESE140CL",
+"full": true,
+"res": "success",
+"tilt": 2.0,
+"clear": 90.6,
+"span_mm": [
+-240,
+240
+],
+"lipF": 1054,
+"yaw_deg": 0.04,
+"roll_deg": -0.64,
+"sd": "PASS",
+"tilt_end": 0.0
+},
+{
+"bin": "ESE140CL",
+"full": false,
+"res": "success",
+"tilt": 1.3,
+"clear": 96.9,
+"span_mm": [
+-240,
+240
+],
+"lipF": 211,
+"yaw_deg": 0.05,
+"roll_deg": -0.06,
+"sd": "PASS",
+"tilt_end": 0.0
+},
+{
+"bin": "ESE240SL",
+"full": true,
+"res": "false_positive",
+"tilt": 3.3,
+"clear": 84.4
+},
+{
+"bin": "ESE240SL",
+"full": false,
+"res": "success",
+"tilt": 1.1,
+"clear": 97.1,
+"span_mm": [
+-290,
+282
+],
+"lipF": 287,
+"yaw_deg": 0.02,
+"roll_deg": 0.01,
+"sd": "PASS",
+"tilt_end": 0.0
+},
+{
+"bin": "ESE240CL",
+"full": true,
+"res": "false_positive",
+"tilt": 3.7,
+"clear": 84.2
+},
+{
+"bin": "ESE240CL",
+"full": false,
+"res": "success",
+"tilt": 1.6,
+"clear": 96.2,
+"span_mm": [
+-290,
+279
+],
+"lipF": 264,
+"yaw_deg": 0.05,
+"roll_deg": -0.06,
+"sd": "PASS",
+"tilt_end": 0.0
+},
+{
+"bin": "ESE240SL250",
+"full": true,
+"res": "false_positive",
+"tilt": 3.3,
+"clear": 78.8
+},
+{
+"bin": "ESE240SL250",
+"full": false,
+"res": "success",
+"tilt": 1.1,
+"clear": 90.5,
+"span_mm": [
+-290,
+274
+],
+"lipF": 274,
+"yaw_deg": -0.08,
+"roll_deg": 0.12,
+"sd": "PASS",
+"tilt_end": 3.8
+}
+]

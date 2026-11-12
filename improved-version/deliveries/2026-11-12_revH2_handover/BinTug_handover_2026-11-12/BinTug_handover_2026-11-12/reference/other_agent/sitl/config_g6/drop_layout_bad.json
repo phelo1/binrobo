@@ -1,0 +1,9 @@
+{
+ "name": "deliberately invalid (validator test): A on the public verge, M 0.3 m from A's dock corridor, F against the hedge",
+ "order": ["F", "M", "A"],
+ "spots": {
+  "A": {"s_from_end": 6.5, "lat": 1.35, "heading_deg": 0.0, "spacing_m": 1.0, "hedge_clear_m": 0.0},
+  "M": {"s_from_end": 9.2, "lat": 1.0, "heading_deg": 0.0, "spacing_m": 1.0, "hedge_clear_m": 0.6},
+  "F": {"s_from_end": 20.0, "lat": 1.6, "heading_deg": 25.0, "spacing_m": 1.0, "hedge_clear_m": 0.6}
+ }
+}

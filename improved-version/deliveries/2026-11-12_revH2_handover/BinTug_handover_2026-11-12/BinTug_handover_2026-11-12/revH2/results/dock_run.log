@@ -1,0 +1,31 @@
+== baseline (camera 8 mm, 1.0 deg) | mean first try 99.79 %, with one retry 99.954 %
+   Weber 140 L                    clear  90.5 mm  first  99.98 %  (guide  0.00 %)  retry->  99.985 %  miss {'lateral': 0, 'lip_out_of_travel': 0, 'lift_short': 0, 'blade_missed_channel': 3}  lift>= 163 mm
+   ESE 140 CL                     clear  91.0 mm  first  99.96 %  (guide  0.00 %)  retry->  99.960 %  miss {'lateral': 0, 'lip_out_of_travel': 0, 'lift_short': 0, 'blade_missed_channel': 8}  lift>= 193 mm
+   ESE 240 SL (200 mm wheels)     clear  45.5 mm  first  99.94 %  (guide  0.60 %)  retry->  99.970 %  miss {'lateral': 0, 'lip_out_of_travel': 0, 'lift_short': 0, 'blade_missed_channel': 6}  lift>= 158 mm
+   ESE 240 SL (250 mm wheels)     clear  40.0 mm  first  99.69 %  (guide  1.77 %)  retry->  99.925 %  miss {'lateral': 0, 'lip_out_of_travel': 0, 'lift_short': 0, 'blade_missed_channel': 15}  lift>= 132 mm
+   SULO Citybac 240               clear  42.5 mm  first  99.80 %  (guide  1.01 %)  retry->  99.930 %  miss {'lateral': 0, 'lip_out_of_travel': 0, 'lift_short': 0, 'blade_missed_channel': 14}  lift>= 172 mm
+   ESE 240 CL (lowest)            clear  45.5 mm  first  99.89 %  (guide  0.56 %)  retry->  99.940 %  miss {'lateral': 0, 'lip_out_of_travel': 0, 'lift_short': 0, 'blade_missed_channel': 12}  lift>= 225 mm
+   Craemer MGBneo 240 (tallest)   clear  35.0 mm  first  99.27 %  (guide  3.92 %)  retry->  99.970 %  miss {'lateral': 0, 'lip_out_of_travel': 0, 'lift_short': 0, 'blade_missed_channel': 6}  lift>= 136 mm
+== stress (camera 20 mm, 2.5 deg) | mean first try 81.68 %, with one retry 98.454 %
+   Weber 140 L                    clear  90.5 mm  first  99.14 %  (guide  1.11 %)  retry->  99.940 %  miss {'lateral': 0, 'lip_out_of_travel': 0, 'lift_short': 0, 'blade_missed_channel': 12}  lift>= 162 mm
+   ESE 140 CL                     clear  91.0 mm  first  99.18 %  (guide  1.05 %)  retry->  99.940 %  miss {'lateral': 0, 'lip_out_of_travel': 0, 'lift_short': 0, 'blade_missed_channel': 12}  lift>= 194 mm
+   ESE 240 SL (200 mm wheels)     clear  45.5 mm  first  79.70 %  (guide 13.69 %)  retry->  98.920 %  miss {'lateral': 205, 'lip_out_of_travel': 0, 'lift_short': 0, 'blade_missed_channel': 11}  lift>= 158 mm
+   ESE 240 SL (250 mm wheels)     clear  40.0 mm  first  72.83 %  (guide 15.94 %)  retry->  97.705 %  miss {'lateral': 446, 'lip_out_of_travel': 0, 'lift_short': 0, 'blade_missed_channel': 13}  lift>= 133 mm
+   SULO Citybac 240               clear  42.5 mm  first  75.99 %  (guide 14.51 %)  retry->  98.300 %  miss {'lateral': 330, 'lip_out_of_travel': 0, 'lift_short': 0, 'blade_missed_channel': 10}  lift>= 172 mm
+   ESE 240 CL (lowest)            clear  45.5 mm  first  79.33 %  (guide 13.15 %)  retry->  98.880 %  miss {'lateral': 219, 'lip_out_of_travel': 0, 'lift_short': 0, 'blade_missed_channel': 5}  lift>= 223 mm
+   Craemer MGBneo 240 (tallest)   clear  35.0 mm  first  65.58 %  (guide 17.51 %)  retry->  95.495 %  miss {'lateral': 891, 'lip_out_of_travel': 0, 'lift_short': 0, 'blade_missed_channel': 10}  lift>= 134 mm
+== stress + leg-tip gap sensors (4 mm) | mean first try 99.87 %, with one retry 99.948 %
+   Weber 140 L                    clear  90.5 mm  first  99.93 %  (guide  0.00 %)  retry->  99.930 %  miss {'lateral': 0, 'lip_out_of_travel': 0, 'lift_short': 0, 'blade_missed_channel': 14}  lift>= 161 mm
+   ESE 140 CL                     clear  91.0 mm  first  99.94 %  (guide  0.00 %)  retry->  99.935 %  miss {'lateral': 0, 'lip_out_of_travel': 0, 'lift_short': 0, 'blade_missed_channel': 13}  lift>= 195 mm
+   ESE 240 SL (200 mm wheels)     clear  45.5 mm  first  99.93 %  (guide  0.36 %)  retry->  99.960 %  miss {'lateral': 0, 'lip_out_of_travel': 0, 'lift_short': 0, 'blade_missed_channel': 8}  lift>= 159 mm
+   ESE 240 SL (250 mm wheels)     clear  40.0 mm  first  99.84 %  (guide  0.92 %)  retry->  99.980 %  miss {'lateral': 1, 'lip_out_of_travel': 0, 'lift_short': 0, 'blade_missed_channel': 3}  lift>= 133 mm
+   SULO Citybac 240               clear  42.5 mm  first  99.91 %  (guide  0.56 %)  retry->  99.960 %  miss {'lateral': 0, 'lip_out_of_travel': 0, 'lift_short': 0, 'blade_missed_channel': 8}  lift>= 173 mm
+   ESE 240 CL (lowest)            clear  45.5 mm  first  99.91 %  (guide  0.30 %)  retry->  99.920 %  miss {'lateral': 0, 'lip_out_of_travel': 0, 'lift_short': 0, 'blade_missed_channel': 16}  lift>= 225 mm
+   Craemer MGBneo 240 (tallest)   clear  35.0 mm  first  99.63 %  (guide  2.50 %)  retry->  99.950 %  miss {'lateral': 0, 'lip_out_of_travel': 0, 'lift_short': 0, 'blade_missed_channel': 10}  lift>= 138 mm
+  env {'bin': 'Weber 140 L', 'lateral_at_wheels_mm': 91, 'yaw_alone_deg': 8.2, 'mouth_capture_mm': 181, 'comb_mm': 1001, 'travel_below_mm': 201, 'lift_reserve_mm': 199, 'comb_cover_pct': 100}
+  env {'bin': 'ESE 140 CL', 'lateral_at_wheels_mm': 91, 'yaw_alone_deg': 8.2, 'mouth_capture_mm': 179, 'comb_mm': 969, 'travel_below_mm': 169, 'lift_reserve_mm': 231, 'comb_cover_pct': 100}
+  env {'bin': 'ESE 240 SL (200 mm wheels)', 'lateral_at_wheels_mm': 46, 'yaw_alone_deg': 4.1, 'mouth_capture_mm': 133, 'comb_mm': 1005, 'travel_below_mm': 205, 'lift_reserve_mm': 195, 'comb_cover_pct': 100}
+  env {'bin': 'ESE 240 SL (250 mm wheels)', 'lateral_at_wheels_mm': 40, 'yaw_alone_deg': 3.6, 'mouth_capture_mm': 133, 'comb_mm': 1030, 'travel_below_mm': 230, 'lift_reserve_mm': 170, 'comb_cover_pct': 100}
+  env {'bin': 'SULO Citybac 240', 'lateral_at_wheels_mm': 43, 'yaw_alone_deg': 3.9, 'mouth_capture_mm': 134, 'comb_mm': 991, 'travel_below_mm': 191, 'lift_reserve_mm': 209, 'comb_cover_pct': 100}
+  env {'bin': 'ESE 240 CL (lowest)', 'lateral_at_wheels_mm': 46, 'yaw_alone_deg': 4.1, 'mouth_capture_mm': 135, 'comb_mm': 938, 'travel_below_mm': 138, 'lift_reserve_mm': 262, 'comb_cover_pct': 100}
+  env {'bin': 'Craemer MGBneo 240 (tallest)', 'lateral_at_wheels_mm': 35, 'yaw_alone_deg': 3.2, 'mouth_capture_mm': 135, 'comb_mm': 1030, 'travel_below_mm': 230, 'lift_reserve_mm': 170, 'comb_cover_pct': 100}

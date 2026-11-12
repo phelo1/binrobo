@@ -1,0 +1,162 @@
+[
+{
+"bin": "WEB140",
+"full": true,
+"res": "no_dock",
+"tilt": null,
+"clear": null
+},
+{
+"bin": "WEB140",
+"full": false,
+"res": "no_dock",
+"tilt": null,
+"clear": null
+},
+{
+"bin": "ESE140CL",
+"full": true,
+"res": "no_dock",
+"tilt": null,
+"clear": null
+},
+{
+"bin": "ESE140CL",
+"full": false,
+"res": "no_dock",
+"tilt": null,
+"clear": null
+},
+{
+"bin": "ESE240SL",
+"full": true,
+"res": "success",
+"tilt": 5.0,
+"clear": 47.0,
+"span_mm": [
+-290,
+290
+],
+"lipF": 1402,
+"pad_N": 775,
+"events": [
+[
+15.45,
+"docked: tof, bin dy 0 mm (camera 1), nib gap 1 mm, bin moved 0 mm, rim 0.963 q_app 0.098, yaw meas -0.2 true -0.8 deg"
+],
+[
+39.32,
+"grab: claim True captured True clear 47 mm rise 1073 N tilt 5.0"
+]
+],
+"sd": "PASS",
+"tilt_end": 0.0
+},
+{
+"bin": "ESE240SL",
+"full": false,
+"res": "success",
+"tilt": 2.4,
+"clear": 75.6,
+"span_mm": [
+-290,
+290
+],
+"lipF": 216,
+"pad_N": 109,
+"events": [
+[
+15.45,
+"docked: tof, bin dy 0 mm (camera 1), nib gap 1 mm, bin moved 0 mm, rim 0.963 q_app 0.098, yaw meas -0.2 true -0.8 deg"
+],
+[
+22.6,
+"grab: claim True captured True clear 76 mm rise 122 N tilt 2.4"
+]
+],
+"sd": "PASS",
+"tilt_end": 0.0
+},
+{
+"bin": "ESE240CL",
+"full": true,
+"res": "success",
+"tilt": 5.7,
+"clear": 40.8,
+"span_mm": [
+-290,
+290
+],
+"lipF": 1373,
+"pad_N": 768,
+"events": [
+[
+14.11,
+"docked: tof, bin dy 0 mm (camera 1), nib gap 1 mm, bin moved 0 mm, rim 0.896 q_app 0.031, yaw meas -0.2 true -0.8 deg"
+],
+[
+37.98,
+"grab: claim True captured True clear 41 mm rise 1073 N tilt 5.7"
+]
+],
+"sd": "PASS",
+"tilt_end": 0.0
+},
+{
+"bin": "ESE240CL",
+"full": false,
+"res": "success",
+"tilt": 3.1,
+"clear": 69.2,
+"span_mm": [
+-290,
+290
+],
+"lipF": 184,
+"pad_N": 94,
+"events": [
+[
+14.11,
+"docked: tof, bin dy 0 mm (camera 1), nib gap 1 mm, bin moved 0 mm, rim 0.896 q_app 0.031, yaw meas -0.2 true -0.8 deg"
+],
+[
+21.26,
+"grab: claim True captured True clear 69 mm rise 102 N tilt 3.1"
+]
+],
+"sd": "PASS",
+"tilt_end": 0.0
+},
+{
+"bin": "ESE240SL250",
+"full": true,
+"res": "false_positive",
+"tilt": 5.0,
+"clear": 6.9
+},
+{
+"bin": "ESE240SL250",
+"full": false,
+"res": "success",
+"tilt": 2.4,
+"clear": 35.5,
+"span_mm": [
+-290,
+290
+],
+"lipF": 223,
+"pad_N": 114,
+"events": [
+[
+15.32,
+"docked: tof, bin dy -0 mm (camera 1), nib gap 1 mm, bin moved 0 mm, rim 0.948 q_app 0.083, yaw meas -0.2 true -0.8 deg"
+],
+[
+22.47,
+"grab: claim True captured True clear 36 mm rise 127 N tilt 2.4"
+]
+],
+"sd": "PASS",
+"tilt_end": 3.8
+}
+]

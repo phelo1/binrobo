@@ -1,0 +1,198 @@
+env CGB_F9=1 MC_IDX=2,10,24,0,1,3,4,5 IT1_TAG=_f9s python3 it1/runB_it1.py grab ESE240CL 30 203
+env CGB_F9=1 MC_IDX=22,0,1,2 IT1_TAG=_f9s python3 it1/runB_it1.py grab WEB140 30 201
+env CGB_F9=1 MC_IDX=0,3,1 IT1_TAG=_f9s python3 it1/runB_it1.py grab ESE240SL250 30 204
+env CGB_F9=1 MC_IDX=3,27,28 IT1_TAG=_f9s python3 it1/runB_it1.py grab ESE140CL 30 205
+env CGB_F9=1 IT1_TAG=_f9 python3 it1/runB_it1.py grab WEB140 30 201
+env CGB_F9=1 IT1_TAG=_f9 python3 it1/runB_it1.py grab ESE240SL 30 202
+env CGB_F9=1 IT1_TAG=_f9 python3 it1/runB_it1.py grab ESE240CL 30 203
+env CGB_F9=1 IT1_TAG=_f9 python3 it1/runB_it1.py grab ESE240SL250 30 204
+env CGB_F9=1 IT1_TAG=_f9 python3 it1/runB_it1.py grab ESE140CL 30 205
+env CGB_F9=1 IT1_TAG=_f9 python3 it1/runB_it1.py rel WEB140 flat full
+env CGB_F9=1 IT1_TAG=_f9 python3 it1/runB_it1.py rel WEB140 flat empty
+env CGB_F9=1 IT1_TAG=_f9 python3 it1/runB_it1.py rel WEB140 up12 full
+env CGB_F9=1 IT1_TAG=_f9 python3 it1/runB_it1.py rel WEB140 up12 empty
+env CGB_F9=1 IT1_TAG=_f9 python3 it1/runB_it1.py rel WEB140 dn12 full
+env CGB_F9=1 IT1_TAG=_f9 python3 it1/runB_it1.py rel WEB140 dn12 empty
+env CGB_F9=1 IT1_TAG=_f9 python3 it1/runB_it1.py rel ESE240CL flat full
+env CGB_F9=1 IT1_TAG=_f9 python3 it1/runB_it1.py rel ESE240CL flat empty
+env CGB_F9=1 IT1_TAG=_f9 python3 it1/runB_it1.py rel ESE240CL up12 full
+env CGB_F9=1 IT1_TAG=_f9 python3 it1/runB_it1.py rel ESE240CL up12 empty
+env CGB_F9=1 IT1_TAG=_f9 python3 it1/runB_it1.py rel ESE240CL dn12 full
+env CGB_F9=1 IT1_TAG=_f9 python3 it1/runB_it1.py rel ESE240CL dn12 empty
+env CGB_F9=1 IT1_TAG=_f9 python3 it1/runB_it1.py rel ESE240SL250 flat full
+env CGB_F9=1 IT1_TAG=_f9 python3 it1/runB_it1.py rel ESE240SL250 flat empty
+env CGB_F9=1 IT1_TAG=_f9 python3 it1/runB_it1.py rel ESE240SL250 up12 full
+env CGB_F9=1 IT1_TAG=_f9 python3 it1/runB_it1.py rel ESE240SL250 up12 empty
+env CGB_F9=1 IT1_TAG=_f9 python3 it1/runB_it1.py rel ESE240SL250 dn12 full
+env CGB_F9=1 IT1_TAG=_f9 python3 it1/runB_it1.py rel ESE240SL250 dn12 empty
+env CGB_F9=1 IT1_TAG=_f9 python3 it1/runB_it1.py climb 0.25 0.09
+env CGB_F9=1 IT1_TAG=_f9 python3 it1/runB_it1.py step one
+env CGB_F9=1 IT1_TAG=_f9 python3 it1/runB_it1.py estop fwd
+env CGB_F9=1 SIM_DT=0.00025 IT1_TAG=_f9 python3 it1/runB_it1.py climb 0.25 0.09
+env CGB_F9=1 SIM_DT=0.00025 IT1_TAG=_f9 python3 it1/runB_it1.py step one
+env CGB_F9=1 SIM_DT=0.00025 IT1_TAG=_f9 python3 it1/runB_it1.py estop fwd
+env CGB_F9=1 IT1_TAG=_f9 python3 it1/runB_it1.py climb 0.30 0.06
+env CGB_F9=1 IT1_TAG=_f9 python3 it1/runB_it1.py climb 0.30 0.09
+env CGB_F9=1 IT1_TAG=_f9 python3 it1/runB_it1.py climb 0.25 0.06
+env CGB_F9=1 IT1_TAG=_f9 python3 it1/runB_it1.py climb 0.22 0.06
+env CGB_F9=1 IT1_TAG=_f9 python3 it1/runB_it1.py climb 0.22 0.09
+env CGB_F9=1 IT1_TAG=_f9 python3 it1/runB_it1.py step both
+env CGB_F9=1 IT1_TAG=_f9 python3 it1/runB_it1.py estop rev
+env CGB_F9=1 IT1_TAG=_f9 python3 it1/runB_it1.py towstab
+env CGB_F9=1 IT1_TAG=_f9 python3 it1/runB_it1.py static up 110
+env CGB_F9=1 IT1_TAG=_f9 python3 it1/runB_it1.py static up 60
+env CGB_F9=1 IT1_TAG=_f9 python3 it1/runB_it1.py static dn 110
+env CGB_F9=1 IT1_TAG=_f9 python3 it1/runB_it1.py static dn 60
+env CGB_F9=1 IT1_TAG=_f9 python3 it1/runB_it1.py static crL 110
+env CGB_F9=1 IT1_TAG=_f9 python3 it1/runB_it1.py static crL 60
+env CGB_F9=1 IT1_TAG=_f9 python3 it1/runB_it1.py static crR 110
+env CGB_F9=1 IT1_TAG=_f9 python3 it1/runB_it1.py static crR 60
+env CGB_F9=1 IT1_TAG=_f9 python3 it1/runB_it1.py static flat 110
+python3 it1/dbg_app3.py ESE240CL 2 203 B1_grab_ESE240CL.json > it1/res/dbg_app3_CL2.txt 2>&1
+python3 it1/dbg_app3.py WEB140 22 201 B1_grab_WEB140.json > it1/res/dbg_app3_WEB22.txt 2>&1
+python3 it1/dbg_app2.py ESE240CL 10 203 B1_grab_ESE240CL.json > it1/res/dbg_app2_CL10.txt 2>&1
+env CGB_F8=1 MC_IDX=2,10,24 IT1_TAG=_f8 python3 it1/runB_it1.py grab ESE240CL 30 203
+env CGB_F8=1 MC_IDX=22 IT1_TAG=_f8 python3 it1/runB_it1.py grab WEB140 30 201
+env CGB_F8=1 MC_IDX=0,3 IT1_TAG=_f8 python3 it1/runB_it1.py grab ESE240SL250 30 204
+env CGB_F8=1 MC_IDX=3,27,28 IT1_TAG=_f8 python3 it1/runB_it1.py grab ESE140CL 30 205
+python3 it1/dbg_app1.py ESE240CL 10 203 B1_grab_ESE240CL.json > it1/res/dbg_app1_CL10.txt 2>&1
+python3 it1/runB_it1.py grab WEB140 30 201
+python3 it1/runB_it1.py grab ESE240SL 30 202
+python3 it1/runB_it1.py grab ESE240CL 30 203
+python3 it1/runB_it1.py grab ESE240SL250 30 204
+python3 it1/runB_it1.py grab ESE140CL 30 205
+env CGB_GEO='{"rw":0.28,"tcap":102.0,"kvs":2.88}' IT1_TAG=_tc102kv python3 it1/runB_it1.py step both
+python3 it1/runB_it1.py step both_ramp
+env CGB_GEO='{"rw":0.28}' python3 it1/runB_it1.py step both
+python3 it1/runB_it1.py step one
+python3 it1/runB_it1.py step both
+python3 it1/runB_it1.py climb 0.30 0.06
+python3 it1/runB_it1.py climb 0.30 0.09
+python3 it1/runB_it1.py climb 0.25 0.06
+python3 it1/runB_it1.py climb 0.25 0.09
+python3 it1/runB_it1.py climb 0.22 0.06
+python3 it1/runB_it1.py climb 0.22 0.09
+python3 it1/runB_it1.py estop fwd
+python3 it1/runB_it1.py estop rev
+python3 it1/runB_it1.py towstab
+python3 it1/runB_it1.py static up 110
+python3 it1/runB_it1.py static up 60
+python3 it1/runB_it1.py static dn 110
+python3 it1/runB_it1.py static dn 60
+python3 it1/runB_it1.py static crL 110
+python3 it1/runB_it1.py static crL 60
+python3 it1/runB_it1.py static crR 110
+python3 it1/runB_it1.py static crR 60
+python3 it1/runB_it1.py static flat 110
+python3 it1/runB_it1.py rel WEB140 flat full
+python3 it1/runB_it1.py rel WEB140 flat empty
+python3 it1/runB_it1.py rel WEB140 up12 full
+python3 it1/runB_it1.py rel WEB140 up12 empty
+python3 it1/runB_it1.py rel WEB140 dn12 full
+python3 it1/runB_it1.py rel WEB140 dn12 empty
+python3 it1/runB_it1.py rel ESE240CL flat full
+python3 it1/runB_it1.py rel ESE240CL flat empty
+python3 it1/runB_it1.py rel ESE240CL up12 full
+python3 it1/runB_it1.py rel ESE240CL up12 empty
+python3 it1/runB_it1.py rel ESE240CL dn12 full
+python3 it1/runB_it1.py rel ESE240CL dn12 empty
+python3 it1/runB_it1.py rel ESE240SL250 flat full
+python3 it1/runB_it1.py rel ESE240SL250 flat empty
+python3 it1/runB_it1.py rel ESE240SL250 up12 full
+python3 it1/runB_it1.py rel ESE240SL250 up12 empty
+python3 it1/runB_it1.py rel ESE240SL250 dn12 full
+python3 it1/runB_it1.py rel ESE240SL250 dn12 empty
+env SIM_DT=0.00025 python3 it1/runB_it1.py climb 0.25 0.09
+env SIM_DT=0.00025 python3 it1/runB_it1.py step one
+env SIM_DT=0.00025 python3 it1/runB_it1.py estop fwd
+env PERT_MASS=1.1 IT1_TAG=_pm110 python3 it1/runB_it1.py climb 0.22 0.09
+env PERT_MASS=1.1 IT1_TAG=_pm110 python3 it1/runB_it1.py climb 0.25 0.06
+env PERT_MASS=1.1 IT1_TAG=_pm110 python3 it1/runB_it1.py step one
+env PERT_MASS=1.1 IT1_TAG=_pm110 python3 it1/runB_it1.py estop fwd
+env PERT_MASS=1.1 IT1_TAG=_pm110 python3 it1/runB_it1.py estop rev
+env PERT_MASS=1.1 IT1_TAG=_pm110 python3 it1/runB_it1.py towstab
+env PERT_MASS=1.1 IT1_TAG=_pm110 python3 it1/runB_it1.py rel WEB140 up12 full
+env PERT_MASS=1.1 IT1_TAG=_pm110 python3 it1/runB_it1.py rel WEB140 dn12 empty
+env PERT_MASS=1.1 IT1_TAG=_pm110 python3 it1/runB_it1.py rel ESE240CL up12 full
+env PERT_MASS=1.1 IT1_TAG=_pm110 python3 it1/runB_it1.py rel ESE240CL flat empty
+env PERT_MASS=1.1 IT1_TAG=_pm110 python3 it1/runB_it1.py rel ESE240SL250 up12 empty
+env PERT_MASS=1.1 IT1_TAG=_pm110 python3 it1/runB_it1.py rel ESE240SL250 dn12 full
+env PERT_MASS=1.1 IT1_TAG=_pm110 python3 it1/runB_it1.py static up 110
+env PERT_MASS=1.1 IT1_TAG=_pm110 python3 it1/runB_it1.py static crL 110
+env PERT_MASS=1.1 IT1_TAG=_pm110 python3 it1/runB_it1.py static dn 60
+env PERT_MASS=1.1 IT1_TAG=_pm110 python3 it1/runB_it1.py grab WEB140 10 301
+env PERT_MASS=1.1 IT1_TAG=_pm110 python3 it1/runB_it1.py grab ESE240SL 10 302
+env PERT_MASS=1.1 IT1_TAG=_pm110 python3 it1/runB_it1.py grab ESE240CL 10 303
+
+env CGB_F9=1 PERT_MASS=1.1 IT1_TAG=_pm110f9 python3 it1/runB_it1.py climb 0.22 0.09
+env CGB_F9=1 PERT_MASS=1.1 IT1_TAG=_pm110f9 python3 it1/runB_it1.py climb 0.25 0.06
+env CGB_F9=1 PERT_MASS=1.1 IT1_TAG=_pm110f9 python3 it1/runB_it1.py step one
+env CGB_F9=1 PERT_MASS=1.1 IT1_TAG=_pm110f9 python3 it1/runB_it1.py estop fwd
+env CGB_F9=1 PERT_MASS=1.1 IT1_TAG=_pm110f9 python3 it1/runB_it1.py estop rev
+env CGB_F9=1 PERT_MASS=1.1 IT1_TAG=_pm110f9 python3 it1/runB_it1.py towstab
+env CGB_F9=1 PERT_MASS=1.1 IT1_TAG=_pm110f9 python3 it1/runB_it1.py rel WEB140 up12 full
+env CGB_F9=1 PERT_MASS=1.1 IT1_TAG=_pm110f9 python3 it1/runB_it1.py rel WEB140 dn12 empty
+env CGB_F9=1 PERT_MASS=1.1 IT1_TAG=_pm110f9 python3 it1/runB_it1.py rel ESE240CL up12 full
+env CGB_F9=1 PERT_MASS=1.1 IT1_TAG=_pm110f9 python3 it1/runB_it1.py rel ESE240CL flat empty
+env CGB_F9=1 PERT_MASS=1.1 IT1_TAG=_pm110f9 python3 it1/runB_it1.py rel ESE240SL250 up12 empty
+env CGB_F9=1 PERT_MASS=1.1 IT1_TAG=_pm110f9 python3 it1/runB_it1.py rel ESE240SL250 dn12 full
+env CGB_F9=1 PERT_MASS=1.1 IT1_TAG=_pm110f9 python3 it1/runB_it1.py static up 110
+env CGB_F9=1 PERT_MASS=1.1 IT1_TAG=_pm110f9 python3 it1/runB_it1.py static crL 110
+env CGB_F9=1 PERT_MASS=1.1 IT1_TAG=_pm110f9 python3 it1/runB_it1.py static dn 60
+env CGB_F9=1 PERT_MASS=1.1 IT1_TAG=_pm110f9 python3 it1/runB_it1.py grab WEB140 10 301
+env CGB_F9=1 PERT_MASS=1.1 IT1_TAG=_pm110f9 python3 it1/runB_it1.py grab ESE240SL 10 302
+env CGB_F9=1 PERT_MASS=1.1 IT1_TAG=_pm110f9 python3 it1/runB_it1.py grab ESE240CL 10 303
+env CGB_F9=1 PERT_MASS=0.9 IT1_TAG=_pm090f9 python3 it1/runB_it1.py climb 0.22 0.09
+env CGB_F9=1 PERT_MASS=0.9 IT1_TAG=_pm090f9 python3 it1/runB_it1.py climb 0.25 0.06
+env CGB_F9=1 PERT_MASS=0.9 IT1_TAG=_pm090f9 python3 it1/runB_it1.py step one
+env CGB_F9=1 PERT_MASS=0.9 IT1_TAG=_pm090f9 python3 it1/runB_it1.py estop fwd
+env CGB_F9=1 PERT_MASS=0.9 IT1_TAG=_pm090f9 python3 it1/runB_it1.py estop rev
+env CGB_F9=1 PERT_MASS=0.9 IT1_TAG=_pm090f9 python3 it1/runB_it1.py towstab
+env CGB_F9=1 PERT_MASS=0.9 IT1_TAG=_pm090f9 python3 it1/runB_it1.py rel WEB140 up12 full
+env CGB_F9=1 PERT_MASS=0.9 IT1_TAG=_pm090f9 python3 it1/runB_it1.py rel WEB140 dn12 empty
+env CGB_F9=1 PERT_MASS=0.9 IT1_TAG=_pm090f9 python3 it1/runB_it1.py rel ESE240CL up12 full
+env CGB_F9=1 PERT_MASS=0.9 IT1_TAG=_pm090f9 python3 it1/runB_it1.py rel ESE240CL flat empty
+env CGB_F9=1 PERT_MASS=0.9 IT1_TAG=_pm090f9 python3 it1/runB_it1.py rel ESE240SL250 up12 empty
+env CGB_F9=1 PERT_MASS=0.9 IT1_TAG=_pm090f9 python3 it1/runB_it1.py rel ESE240SL250 dn12 full
+env CGB_F9=1 PERT_MASS=0.9 IT1_TAG=_pm090f9 python3 it1/runB_it1.py static up 110
+env CGB_F9=1 PERT_MASS=0.9 IT1_TAG=_pm090f9 python3 it1/runB_it1.py static crL 110
+env CGB_F9=1 PERT_MASS=0.9 IT1_TAG=_pm090f9 python3 it1/runB_it1.py static dn 60
+env CGB_F9=1 PERT_MASS=0.9 IT1_TAG=_pm090f9 python3 it1/runB_it1.py grab WEB140 10 301
+env CGB_F9=1 PERT_MASS=0.9 IT1_TAG=_pm090f9 python3 it1/runB_it1.py grab ESE240SL 10 302
+env CGB_F9=1 PERT_MASS=0.9 IT1_TAG=_pm090f9 python3 it1/runB_it1.py grab ESE240CL 10 303
+env CGB_F9=1 PERT_MU=0.85 IT1_TAG=_pmu085f9 python3 it1/runB_it1.py climb 0.22 0.09
+env CGB_F9=1 PERT_MU=0.85 IT1_TAG=_pmu085f9 python3 it1/runB_it1.py climb 0.25 0.06
+env CGB_F9=1 PERT_MU=0.85 IT1_TAG=_pmu085f9 python3 it1/runB_it1.py step one
+env CGB_F9=1 PERT_MU=0.85 IT1_TAG=_pmu085f9 python3 it1/runB_it1.py estop fwd
+env CGB_F9=1 PERT_MU=0.85 IT1_TAG=_pmu085f9 python3 it1/runB_it1.py estop rev
+env CGB_F9=1 PERT_MU=0.85 IT1_TAG=_pmu085f9 python3 it1/runB_it1.py towstab
+env CGB_F9=1 PERT_MU=0.85 IT1_TAG=_pmu085f9 python3 it1/runB_it1.py rel WEB140 up12 full
+env CGB_F9=1 PERT_MU=0.85 IT1_TAG=_pmu085f9 python3 it1/runB_it1.py rel WEB140 dn12 empty
+env CGB_F9=1 PERT_MU=0.85 IT1_TAG=_pmu085f9 python3 it1/runB_it1.py rel ESE240CL up12 full
+env CGB_F9=1 PERT_MU=0.85 IT1_TAG=_pmu085f9 python3 it1/runB_it1.py rel ESE240CL flat empty
+env CGB_F9=1 PERT_MU=0.85 IT1_TAG=_pmu085f9 python3 it1/runB_it1.py rel ESE240SL250 up12 empty
+env CGB_F9=1 PERT_MU=0.85 IT1_TAG=_pmu085f9 python3 it1/runB_it1.py rel ESE240SL250 dn12 full
+env CGB_F9=1 PERT_MU=0.85 IT1_TAG=_pmu085f9 python3 it1/runB_it1.py static up 110
+env CGB_F9=1 PERT_MU=0.85 IT1_TAG=_pmu085f9 python3 it1/runB_it1.py static crL 110
+env CGB_F9=1 PERT_MU=0.85 IT1_TAG=_pmu085f9 python3 it1/runB_it1.py static dn 60
+env CGB_F9=1 PERT_MU=0.85 IT1_TAG=_pmu085f9 python3 it1/runB_it1.py grab WEB140 10 301
+env CGB_F9=1 PERT_MU=0.85 IT1_TAG=_pmu085f9 python3 it1/runB_it1.py grab ESE240SL 10 302
+env CGB_F9=1 PERT_MU=0.85 IT1_TAG=_pmu085f9 python3 it1/runB_it1.py grab ESE240CL 10 303
+env CGB_F9=1 PERT_CRR=0.09 IT1_TAG=_pcrr09f9 python3 it1/runB_it1.py climb 0.22 0.09
+env CGB_F9=1 PERT_CRR=0.09 IT1_TAG=_pcrr09f9 python3 it1/runB_it1.py climb 0.25 0.06
+env CGB_F9=1 PERT_CRR=0.09 IT1_TAG=_pcrr09f9 python3 it1/runB_it1.py step one
+env CGB_F9=1 PERT_CRR=0.09 IT1_TAG=_pcrr09f9 python3 it1/runB_it1.py estop fwd
+env CGB_F9=1 PERT_CRR=0.09 IT1_TAG=_pcrr09f9 python3 it1/runB_it1.py estop rev
+env CGB_F9=1 PERT_CRR=0.09 IT1_TAG=_pcrr09f9 python3 it1/runB_it1.py towstab
+env CGB_F9=1 PERT_CRR=0.09 IT1_TAG=_pcrr09f9 python3 it1/runB_it1.py rel WEB140 up12 full
+env CGB_F9=1 PERT_CRR=0.09 IT1_TAG=_pcrr09f9 python3 it1/runB_it1.py rel WEB140 dn12 empty
+env CGB_F9=1 PERT_CRR=0.09 IT1_TAG=_pcrr09f9 python3 it1/runB_it1.py rel ESE240CL up12 full
+env CGB_F9=1 PERT_CRR=0.09 IT1_TAG=_pcrr09f9 python3 it1/runB_it1.py rel ESE240CL flat empty
+env CGB_F9=1 PERT_CRR=0.09 IT1_TAG=_pcrr09f9 python3 it1/runB_it1.py rel ESE240SL250 up12 empty
+env CGB_F9=1 PERT_CRR=0.09 IT1_TAG=_pcrr09f9 python3 it1/runB_it1.py rel ESE240SL250 dn12 full
+env CGB_F9=1 PERT_CRR=0.09 IT1_TAG=_pcrr09f9 python3 it1/runB_it1.py static up 110
+env CGB_F9=1 PERT_CRR=0.09 IT1_TAG=_pcrr09f9 python3 it1/runB_it1.py static crL 110
+env CGB_F9=1 PERT_CRR=0.09 IT1_TAG=_pcrr09f9 python3 it1/runB_it1.py static dn 60
+env CGB_F9=1 PERT_CRR=0.09 IT1_TAG=_pcrr09f9 python3 it1/runB_it1.py grab WEB140 10 301
+env CGB_F9=1 PERT_CRR=0.09 IT1_TAG=_pcrr09f9 python3 it1/runB_it1.py grab ESE240SL 10 302
+env CGB_F9=1 PERT_CRR=0.09 IT1_TAG=_pcrr09f9 python3 it1/runB_it1.py grab ESE240CL 10 303

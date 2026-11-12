@@ -1,0 +1,11 @@
+python3 it1/runB_it1.py rel ESE240CL flat empty
+python3 it1/runB_it1.py rel ESE240CL up12 full
+python3 it1/runB_it1.py rel ESE240CL up12 empty
+python3 it1/runB_it1.py rel ESE240CL dn12 full
+python3 it1/runB_it1.py rel ESE240CL dn12 empty
+python3 it1/runB_it1.py rel ESE240SL250 flat full
+python3 it1/runB_it1.py rel ESE240SL250 flat empty
+python3 it1/runB_it1.py rel ESE240SL250 up12 full
+python3 it1/runB_it1.py rel ESE240SL250 up12 empty
+python3 it1/runB_it1.py rel ESE240SL250 dn12 full
+python3 it1/runB_it1.py rel ESE240SL250 dn12 empty

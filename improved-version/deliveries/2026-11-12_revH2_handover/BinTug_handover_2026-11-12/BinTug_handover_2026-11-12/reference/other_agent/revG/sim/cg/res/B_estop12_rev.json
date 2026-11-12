@@ -1,0 +1,80 @@
+{
+ "test": "estop12",
+ "orient": "rev",
+ "grab": "success",
+ "v0": -0.52,
+ "stop_dist_m": 0.079,
+ "stop_time_s": 0.3,
+ "slide_after_stop_m": 0.001,
+ "captured_end": true,
+ "roll": 0.004,
+ "pitch": 0.008,
+ "bin_ground": 0.0,
+ "cmin": 0.0,
+ "dmin": 0.0,
+ "seated_all": true,
+ "clear_min": 0.063,
+ "peak": {
+  "lift_N": [
+   1278.84,
+   44.06,
+   "8 E-STOP"
+  ],
+  "pad_N": [
+   609.94,
+   37.22,
+   "7a onto 12 % downhill"
+  ],
+  "drive_tyre_N": [
+   3187.22,
+   44.04,
+   "8 E-STOP"
+  ],
+  "nib_rim_N": [
+   1999.45,
+   37.24,
+   "7a onto 12 % downhill"
+  ],
+  "wheel_torque_Nm": [
+   150.0,
+   44.02,
+   "8 E-STOP"
+  ]
+ },
+ "events": [
+  [
+   11.1,
+   "docked: tip, bin dy 10 mm (camera 11), nib gap 2 mm, bin moved 0 mm"
+  ],
+  [
+   37.2,
+   "grab: claim True captured True clear 63 mm rise 1204 N"
+  ]
+ ],
+ "ok": true,
+ "cpu_s": 9,
+ "geo": {
+  "track": 0.4,
+  "rw": 0.165,
+  "ww": 0.035,
+  "cx": 0.95,
+  "cy": 0.28,
+  "guard_y": 0.358,
+  "guard_x0": -0.3,
+  "guard_x1": 0.38,
+  "face_x": 0.415,
+  "tooth_len": 0.13,
+  "nib_l": 0.012,
+  "nib_h": 0.02,
+  "tooth_hw": 0.12,
+  "approach_nib_z": 0.865,
+  "lift_range": 0.26,
+  "pad_x": 0.235,
+  "pad_z": 0.45,
+  "pad_k": 30000.0,
+  "pad_pre": 300.0,
+  "pad_stroke": 0.04,
+  "lift_extra": 0.075,
+  "act_N": 3000.0
+ }
+}

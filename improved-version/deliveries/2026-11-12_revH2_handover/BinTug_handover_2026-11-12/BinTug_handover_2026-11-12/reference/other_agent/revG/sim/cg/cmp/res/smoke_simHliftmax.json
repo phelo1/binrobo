@@ -1,0 +1,134 @@
+[
+{
+"bin": "ESE240SL",
+"full": true,
+"res": "success",
+"tilt": 11.7,
+"clear": 50.6,
+"span_mm": [
+-290,
+290
+],
+"lipF": 1236,
+"pad_N": 483,
+"events": [
+[
+15.47,
+"docked: tof, bin dy 0 mm (camera 1), nib gap 1 mm, bin moved 0 mm, rim 0.963 q_app 0.098, yaw meas -0.2 true -0.8 deg"
+],
+[
+39.34,
+"grab: claim True captured True clear 51 mm rise 1073 N tilt 11.7"
+]
+],
+"sd": "PASS",
+"tilt_end": 0.0
+},
+{
+"bin": "ESE240SL",
+"full": false,
+"res": "success",
+"tilt": 11.3,
+"clear": 57.7,
+"span_mm": [
+-290,
+290
+],
+"lipF": 223,
+"pad_N": 69,
+"events": [
+[
+15.45,
+"docked: tof, bin dy 0 mm (camera 1), nib gap 1 mm, bin moved 0 mm, rim 0.963 q_app 0.098, yaw meas -0.2 true -0.8 deg"
+],
+[
+24.41,
+"grab: claim True captured True clear 58 mm rise 122 N tilt 11.3"
+]
+],
+"sd": "PASS",
+"tilt_end": 0.0
+},
+{
+"bin": "ESE240SL250",
+"full": true,
+"res": "false_positive",
+"tilt": 11.7,
+"clear": 25.6
+},
+{
+"bin": "ESE240SL250",
+"full": false,
+"res": "success",
+"tilt": 11.3,
+"clear": 32.7,
+"span_mm": [
+-290,
+290
+],
+"lipF": 233,
+"pad_N": 72,
+"events": [
+[
+15.31,
+"docked: tof, bin dy -0 mm (camera 1), nib gap 1 mm, bin moved 0 mm, rim 0.948 q_app 0.083, yaw meas -0.2 true -0.8 deg"
+],
+[
+24.77,
+"grab: claim True captured True clear 33 mm rise 127 N tilt 11.3"
+]
+],
+"sd": "PASS",
+"tilt_end": 3.8
+},
+{
+"bin": "ESE240CL",
+"full": true,
+"res": "success",
+"tilt": 12.4,
+"clear": 111.1,
+"span_mm": [
+-290,
+290
+],
+"lipF": 1223,
+"pad_N": 488,
+"events": [
+[
+14.11,
+"docked: tof, bin dy 0 mm (camera 1), nib gap 1 mm, bin moved 0 mm, rim 0.896 q_app 0.031, yaw meas -0.2 true -0.8 deg"
+],
+[
+37.98,
+"grab: claim True captured True clear 111 mm rise 1073 N tilt 12.4"
+]
+],
+"sd": "PASS",
+"tilt_end": 0.0
+},
+{
+"bin": "ESE240CL",
+"full": false,
+"res": "success",
+"tilt": 12.0,
+"clear": 118.5,
+"span_mm": [
+-290,
+290
+],
+"lipF": 198,
+"pad_N": 60,
+"events": [
+[
+14.11,
+"docked: tof, bin dy 0 mm (camera 1), nib gap 1 mm, bin moved 0 mm, rim 0.896 q_app 0.031, yaw meas -0.2 true -0.8 deg"
+],
+[
+25.31,
+"grab: claim True captured True clear 118 mm rise 102 N tilt 12.0"
+]
+],
+"sd": "PASS",
+"tilt_end": 0.0
+}
+]

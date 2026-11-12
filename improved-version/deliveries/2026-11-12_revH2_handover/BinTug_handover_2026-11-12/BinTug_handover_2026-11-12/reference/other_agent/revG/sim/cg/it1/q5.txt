@@ -1,0 +1,2 @@
+env MC_IDX=3,10,17,20,23,24,25,26 IT1_TAG=_sub python3 it1/runB_it1.py grab WEB140 30 201
+env MC_IDX=10,11,12,19,25,26,29 IT1_TAG=_sub python3 it1/runB_it1.py grab ESE240SL 30 202

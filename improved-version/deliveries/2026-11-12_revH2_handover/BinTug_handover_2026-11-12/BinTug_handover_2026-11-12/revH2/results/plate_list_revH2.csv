@@ -1,0 +1,16 @@
+part,qty,material,nominal_size_mm,note
+Motor / gearbox plate,2,6 mm S355,170 x 140,hangs the donor gearbox under the rail; hole pattern from the donor unit
+Mast foot gusset,4,5 mm S355,150 x 150 triangle,upright to base cross-member
+Rail to cross-member joint plate,4,5 mm S355,150 x 100,nose and mast-base cross-members
+Rail-tip splice plate,2,5 mm S355,160 x 50,flared tip to rail
+Castor outrigger plate,2,8 mm S355,170 x 150,on top of rail and nose cross-member
+Actuator base lug,1,6 mm S355,80 x 60 pair,on the mast base cross-member
+Carriage horn,1,6 mm S355,250 x 45 pair,actuator rod pin 130 mm above the comb line
+Carriage roller cheek,4,6 mm S355,120 x 110,"two per upright, carry 8 bearings"
+Comb plate with teeth,1,6 mm S355,640 x 75,tooth profile to EN 840-1 Annex B: buy the standard first
+Comb pivot block and stops,1,8 mm S355,100 x 60,"yaw +/-4 deg, roll +/-3 deg, 2 bushes, 2 springs"
+"Rest-pad bracket, slotted",1,5 mm S355,400 x 100,+/-25 mm depth slots
+Battery tray,2,4 mm S355,190 x 90,on the rail beside the drive wheel
+Tail-wheel bracket,2,5 mm S355,140 x 40,under the flared tip
+Mast top tie plate,2,5 mm S355,100 x 50,
+TOTAL plates,29,,,Sizes are placeholders for costing. No DXFs exist yet.

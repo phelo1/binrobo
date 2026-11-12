@@ -1,0 +1,58 @@
+{
+ "bin": "ESE240SL",
+ "empty": false,
+ "grade": 0.12,
+ "cross": 0.0,
+ "grab": "success",
+ "tug_pitch": -1.78,
+ "roll": -0.0,
+ "bin_tilt": 44.0,
+ "drive_N": 1515.6,
+ "driveL": 772.4,
+ "driveR": 743.2,
+ "caster_N": 0.0,
+ "binwheel_ground_N": 715.7,
+ "binwheel_all_N": 715.7,
+ "stopbar_N": 0.0,
+ "hook_N": 535.6,
+ "float_mm": -100.6,
+ "flare_N": 0.0,
+ "antitip_N": 0.0,
+ "pad_comp_mm": -0.1,
+ "pad_N": 437.8,
+ "face_lo": [
+  -0.727,
+  0.0076,
+  -0.1998
+ ],
+ "face_hi": [
+  0.05,
+  0.0073,
+  0.4025
+ ],
+ "face_len": 0.983,
+ "t": [
+  0.7903,
+  -0.0003,
+  0.6127
+ ],
+ "n_tug_to_bin": [
+  0.6127,
+  -0.0,
+  -0.7903
+ ],
+ "axle_rear": [
+  0.0,
+  0.0,
+  -0.135
+ ],
+ "foot_s": 0.614,
+ "foot": [
+  -0.2415,
+  0.0074,
+  0.1765
+ ],
+ "tug_kg": 115.8,
+ "bin_kg": 110.0,
+ "captured": true
+}

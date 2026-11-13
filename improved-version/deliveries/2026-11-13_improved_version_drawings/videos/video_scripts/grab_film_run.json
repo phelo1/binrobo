@@ -1,0 +1,53 @@
+{
+ "result": "success",
+ "dy": 0.06,
+ "dyaw": 4.0,
+ "dock_dy_mm": 18.8,
+ "wheel_clear_mm": 101.7,
+ "phases": [
+  [
+   0.0,
+   ""
+  ],
+  [
+   0.3,
+   "0 Comb to approach height (lip rim - 25 mm)"
+  ],
+  [
+   2.5,
+   "1 Approach: camera-guided reversing"
+  ],
+  [
+   13.9,
+   "1b Final approach 0.06 m/s"
+  ],
+  [
+   17.0,
+   "1c-a Stop and pivot in place until the dual-ToF yaw is within 0.5 deg"
+  ],
+  [
+   25.7,
+   "1c Creep 0.03 m/s, yaw-aligned, stop on ToF / comb contact / pad contact / bin motion"
+  ],
+  [
+   29.9,
+   "2 Lift: comb rises until the load comes on"
+  ],
+  [
+   31.8,
+   "2b Lift held at load-on, pad extends to the toggle lock"
+  ],
+  [
+   32.0,
+   "2c Lift +100 mm"
+  ],
+  [
+   52.8,
+   "3 Keeper closes on the handle bar"
+  ],
+  [
+   54.0,
+   "Holding the bin"
+  ]
+ ]
+}

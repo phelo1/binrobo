@@ -1,0 +1,338 @@
+{
+ "G1": {
+  "bins": {
+   "WEB140": {
+    "n": 30,
+    "captured": 30,
+    "false_holds": 0,
+    "knocked": 0,
+    "non_success": []
+   },
+   "ESE240SL": {
+    "n": 30,
+    "captured": 30,
+    "false_holds": 0,
+    "knocked": 0,
+    "non_success": []
+   },
+   "ESE240CL": {
+    "n": 30,
+    "captured": 30,
+    "false_holds": 0,
+    "knocked": 0,
+    "non_success": []
+   }
+  },
+  "pooled": 90,
+  "n": 90,
+  "false_holds": 0,
+  "knocked": 0,
+  "PASS": true
+ },
+ "G1_extra_ESE240SL250": {
+  "n": 30,
+  "captured": 30,
+  "false_holds": 0,
+  "knocked": 0,
+  "non_success": []
+ },
+ "G1_extra_ESE140CL": {
+  "n": 30,
+  "captured": 30,
+  "false_holds": 0,
+  "knocked": 0,
+  "non_success": []
+ },
+ "G2": {
+  "runs": {
+   "mu0.30 crr0.06": {
+    "ok": true,
+    "t": 11.0,
+    "dist": 5.0,
+    "creep": 0.026,
+    "grab": "success",
+    "torque_pk": 73.02
+   },
+   "mu0.30 crr0.09": {
+    "ok": true,
+    "t": 11.0,
+    "dist": 5.0,
+    "creep": 0.026,
+    "grab": "success",
+    "torque_pk": 50.02
+   },
+   "mu0.25 crr0.06": {
+    "ok": true,
+    "t": 11.0,
+    "dist": 5.0,
+    "creep": 0.032,
+    "grab": "success",
+    "torque_pk": 150.0
+   },
+   "mu0.25 crr0.09": {
+    "ok": true,
+    "t": 11.0,
+    "dist": 5.0,
+    "creep": 0.034,
+    "grab": "success",
+    "torque_pk": 150.0
+   },
+   "mu0.22 crr0.06": {
+    "ok": true,
+    "t": 11.1,
+    "dist": 5.0,
+    "creep": 0.028,
+    "grab": "success",
+    "torque_pk": 150.0
+   },
+   "mu0.22 crr0.09": {
+    "ok": true,
+    "t": 11.1,
+    "dist": 5.0,
+    "creep": 0.026,
+    "grab": "success",
+    "torque_pk": 150.0
+   }
+  },
+  "PASS": true
+ },
+ "G3": {
+  "one": {
+   "ok": true,
+   "reached": true,
+   "dist": 4.71,
+   "roll": 2.878,
+   "pitch": 1.373,
+   "bin_ground": 0.0,
+   "seated": true,
+   "clear_min": 0.092,
+   "grab": "success",
+   "lift_pk": 2674.78
+  },
+  "both": {
+   "ok": true,
+   "reached": true,
+   "dist": 4.71,
+   "roll": 0.414,
+   "pitch": 2.558,
+   "bin_ground": 0.0,
+   "seated": true,
+   "clear_min": 0.088,
+   "grab": "success",
+   "lift_pk": 3000.0
+  },
+  "PASS": true
+ },
+ "G3_extra": {
+  "both_ramp_1to4": {
+   "ok": true,
+   "reached": true,
+   "dist": 4.71,
+   "roll": 0.001,
+   "pitch": 0.008,
+   "bin_ground": 0.0,
+   "seated": true,
+   "clear_min": 0.099,
+   "grab": "success",
+   "lift_pk": 1226.26
+  },
+  "both_rw560": null
+ },
+ "G4": {
+  "runs": {
+   "fwd": {
+    "ok": true,
+    "stop": 0.177,
+    "slide": 0.001,
+    "roll": 0.005,
+    "pitch": 0.014
+   },
+   "rev": {
+    "ok": true,
+    "stop": 0.081,
+    "slide": 0.001,
+    "roll": 0.003,
+    "pitch": 0.006
+   }
+  },
+  "PASS": true
+ },
+ "G5": {
+  "run": {
+   "ok": true,
+   "roll": 0.003,
+   "swept": 2.4,
+   "pivot": 180.0
+  },
+  "PASS": true
+ },
+ "G6": {
+  "cases": {
+   "WEB140 flat full": "PASS",
+   "WEB140 flat empty": "PASS",
+   "WEB140 up12 full": "PASS",
+   "WEB140 up12 empty": "PASS",
+   "WEB140 dn12 full": "PASS",
+   "WEB140 dn12 empty": "PASS",
+   "ESE240CL flat full": "PASS",
+   "ESE240CL flat empty": "PASS",
+   "ESE240CL up12 full": "PASS",
+   "ESE240CL up12 empty": "PASS",
+   "ESE240CL dn12 full": "PASS",
+   "ESE240CL dn12 empty": "PASS",
+   "ESE240SL250 flat full": "PASS",
+   "ESE240SL250 flat empty": "PASS",
+   "ESE240SL250 up12 full": "PASS",
+   "ESE240SL250 up12 empty": "PASS",
+   "ESE240SL250 dn12 full": "PASS",
+   "ESE240SL250 dn12 empty": "PASS"
+  },
+  "passed": 18,
+  "tips": 0,
+  "PASS": true
+ },
+ "G7": {
+  "runs": {
+   "climb_m25_c09": {
+    "base": true,
+    "dt025": true,
+    "t": [
+     11.0,
+     11.0
+    ],
+    "ok": true
+   },
+   "step40_one": {
+    "base": true,
+    "dt025": true,
+    "t": [
+     null,
+     null
+    ],
+    "ok": true
+   },
+   "estop12_fwd": {
+    "base": true,
+    "dt025": true,
+    "t": [
+     null,
+     null
+    ],
+    "ok": true
+   }
+  },
+  "PASS": true
+ },
+ "G8": {
+  "poses": {
+   "up 110": {
+    "dL": 851.0,
+    "dR": 827.5,
+    "castors": 315.5,
+    "antitip": 0.0,
+    "ok": true
+   },
+   "up 60": {
+    "dL": 585.7,
+    "dR": 574.6,
+    "castors": 346.6,
+    "antitip": 0.0,
+    "ok": true
+   },
+   "dn 110": {
+    "dL": 731.1,
+    "dR": 695.6,
+    "castors": 567.4,
+    "antitip": 0.0,
+    "ok": true
+   },
+   "dn 60": {
+    "dL": 502.0,
+    "dR": 482.3,
+    "castors": 522.7,
+    "antitip": 0.0,
+    "ok": true
+   },
+   "crL 110": {
+    "dL": 638.6,
+    "dR": 911.3,
+    "castors": 443.5,
+    "antitip": 0.0,
+    "ok": true
+   },
+   "crL 60": {
+    "dL": 436.4,
+    "dR": 636.0,
+    "castors": 434.4,
+    "antitip": 0.0,
+    "ok": true
+   },
+   "crR 110": {
+    "dL": 930.9,
+    "dR": 605.3,
+    "castors": 455.9,
+    "antitip": 0.0,
+    "ok": true
+   },
+   "crR 60": {
+    "dL": 660.2,
+    "dR": 428.2,
+    "castors": 420.4,
+    "antitip": 0.0,
+    "ok": true
+   }
+  },
+  "handcalc_min_tip_deg": 36.5,
+  "castor_liftoff_110": 23.0,
+  "handcalc_cases": [
+   {
+    "bin_kg": 110,
+    "grab": "success",
+    "M": 203.2,
+    "cg": [
+     0.207,
+     0.008,
+     0.488
+    ],
+    "tip_lateral_deg": 36.5,
+    "tip_forward_over_castors_deg": 54.9,
+    "castor_liftoff_about_drive_axle_deg": 23.0,
+    "rear_tip_on_antitip_deg": 47.7
+   },
+   {
+    "bin_kg": 60,
+    "grab": "success",
+    "M": 153.2,
+    "cg": [
+     0.275,
+     0.006,
+     0.468
+    ],
+    "tip_lateral_deg": 37.1,
+    "tip_forward_over_castors_deg": 53.2,
+    "castor_liftoff_about_drive_axle_deg": 30.4,
+    "rear_tip_on_antitip_deg": 52.3
+   },
+   {
+    "bin_kg": 0,
+    "grab": "no bin",
+    "M": 93.2,
+    "cg": [
+     0.465,
+     0.0,
+     0.378
+    ],
+    "tip_lateral_deg": 41.6,
+    "tip_forward_over_castors_deg": 49.0,
+    "castor_liftoff_about_drive_axle_deg": 50.9,
+    "rear_tip_on_antitip_deg": 64.6
+   }
+  ],
+  "PASS": true
+ },
+ "G9": {
+  "kg": 92.32,
+  "PASS": true
+ },
+ "passed": 9
+}

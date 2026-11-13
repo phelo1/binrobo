@@ -1,0 +1,49 @@
+{
+ "donor": {
+  "reproduced": {
+   "parts": 3209.29,
+   "contingency": 379.95,
+   "all_in": 3844.23,
+   "published": [
+    3209.29,
+    379.95,
+    3844.23
+   ]
+  },
+  "firm": {
+   "parts": 3010.29,
+   "all_in": 3618.91
+  },
+  "firm_plus_gated": {
+   "parts": 2865.3,
+   "all_in": 3458.41
+  },
+  "plus_agm": null,
+  "s12_pending_all_in_add": 132.25
+ },
+ "new": {
+  "reproduced": {
+   "parts": 3417.26,
+   "contingency": 363.07,
+   "all_in": 4112.32,
+   "published": [
+    3417.26,
+    363.07,
+    4112.32
+   ]
+  },
+  "firm": {
+   "parts": 3218.26,
+   "all_in": 3887.0
+  },
+  "firm_plus_gated": {
+   "parts": 3073.27,
+   "all_in": 3726.5
+  },
+  "plus_agm": {
+   "parts": 3000.52,
+   "all_in": 3649.39
+  },
+  "s12_pending_all_in_add": 132.25
+ }
+}

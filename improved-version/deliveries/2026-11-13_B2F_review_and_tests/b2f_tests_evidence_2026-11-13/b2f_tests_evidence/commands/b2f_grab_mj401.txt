@@ -1,0 +1,5 @@
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG=_mj401 python3 h2/runH2.py grab WEB140 30 201
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG=_mj401 python3 h2/runH2.py grab ESE240SL 30 202
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG=_mj401 python3 h2/runH2.py grab ESE240CL 30 203
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG=_mj401 python3 h2/runH2.py grab ESE240SL250 30 204
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG=_mj401 python3 h2/runH2.py grab ESE140CL 30 205

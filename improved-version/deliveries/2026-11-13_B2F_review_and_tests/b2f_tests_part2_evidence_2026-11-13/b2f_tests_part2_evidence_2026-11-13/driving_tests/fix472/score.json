@@ -1,0 +1,228 @@
+[
+ {
+  "key": "s1b__s7",
+  "scenario": "s1b",
+  "seed": 7,
+  "title": "One-bin night pickup (pad A -> home)",
+  "expect": "pass",
+  "result": "pass",
+  "outcome": "plan completed",
+  "verdict": "PASS",
+  "crit": {
+   "C1": "PASS",
+   "C2": "PASS",
+   "C3": "PASS",
+   "C4": "PASS",
+   "C5b": "PASS",
+   "C6": "PASS",
+   "C7": "PASS",
+   "C8": "PASS"
+  },
+  "why": {
+   "C1": "hedge min 0.238 m at t/s [1629.3, 620.7]",
+   "C2": "home:black 0.034 m 0.0 deg",
+   "C3": "first motion D0 18:00, last dock D0 18:55",
+   "C4": "boundary margin 3.151 m",
+   "C5b": "contact min 0.392 (black), at-rest gaps person None car None",
+   "C6": "trips [45.29] Wh, end SOC 0.802",
+   "C7": "result pass / plan completed",
+   "C8": "gates ['black -0.019 m 0.21 deg OK']"
+  },
+  "alerts": [],
+  "sim_s": 3315.0
+ },
+ {
+  "key": "s1b__s11",
+  "scenario": "s1b",
+  "seed": 11,
+  "title": "One-bin night pickup (pad A -> home)",
+  "expect": "pass",
+  "result": "pass",
+  "outcome": "plan completed",
+  "verdict": "PASS",
+  "crit": {
+   "C1": "PASS",
+   "C2": "PASS",
+   "C3": "PASS",
+   "C4": "PASS",
+   "C5b": "PASS",
+   "C6": "PASS",
+   "C7": "PASS",
+   "C8": "PASS"
+  },
+  "why": {
+   "C1": "hedge min 0.197 m at t/s [1330.3, 503.0]",
+   "C2": "home:black 0.083 m 0.2 deg",
+   "C3": "first motion D0 18:00, last dock D0 18:55",
+   "C4": "boundary margin 3.156 m",
+   "C5b": "contact min 0.481 (black), at-rest gaps person None car None",
+   "C6": "trips [45.43] Wh, end SOC 0.802",
+   "C7": "result pass / plan completed",
+   "C8": "gates ['black 0.020 m -0.27 deg OK']"
+  },
+  "alerts": [],
+  "sim_s": 3325.0
+ },
+ {
+  "key": "s1b__s23",
+  "scenario": "s1b",
+  "seed": 23,
+  "title": "One-bin night pickup (pad A -> home)",
+  "expect": "pass",
+  "result": "pass",
+  "outcome": "plan completed",
+  "verdict": "FAIL",
+  "crit": {
+   "C1": "FAIL",
+   "C2": "PASS",
+   "C3": "PASS",
+   "C4": "PASS",
+   "C5b": "PASS",
+   "C6": "PASS",
+   "C7": "PASS",
+   "C8": "PASS"
+  },
+  "why": {
+   "C1": "hedge min 0.106 m at t/s [1626.4, 620.7]",
+   "C2": "home:black 0.065 m 0.7 deg",
+   "C3": "first motion D0 18:00, last dock D0 18:55",
+   "C4": "boundary margin 3.144 m",
+   "C5b": "contact min 0.354 (black), at-rest gaps person None car None",
+   "C6": "trips [45.54] Wh, end SOC 0.802",
+   "C7": "result pass / plan completed",
+   "C8": "gates ['black 0.002 m 0.48 deg OK']"
+  },
+  "alerts": [],
+  "sim_s": 3344.1
+ },
+ {
+  "key": "s3a__s7",
+  "scenario": "s3a",
+  "seed": 7,
+  "title": "Three-bin night drop (140 L -> A, 240 L -> M, 240 L -> F)",
+  "expect": "pass",
+  "result": "pass",
+  "outcome": "plan completed",
+  "verdict": "PASS",
+  "crit": {
+   "C1": "PASS",
+   "C2": "PASS",
+   "C3": "PASS",
+   "C4": "PASS",
+   "C5b": "PASS",
+   "C6": "PASS",
+   "C7": "PASS",
+   "C8": "PASS"
+  },
+  "why": {
+   "C1": "hedge min 0.221 m at t/s [5611.3, 417.0]",
+   "C2": "pad:A 0.062 m 0.3 deg; pad:M 0.025 m 1.4 deg; pad:F 0.069 m 0.9 deg",
+   "C3": "first motion D-1 18:00, last dock D-1 20:45",
+   "C4": "boundary margin 3.112 m",
+   "C5b": "contact min 0.293 (brown), at-rest gaps person None car None",
+   "C6": "trips [45.54, 46.61, 46.34] Wh, end SOC 0.592",
+   "C7": "result pass / plan completed",
+   "C8": "gates ['brown -0.007 m 0.19 deg OK', 'black 0.007 m -0.44 deg OK', 'green 0.001 m 0.46 deg OK']"
+  },
+  "alerts": [],
+  "sim_s": 9929.9
+ },
+ {
+  "key": "s3b__s7",
+  "scenario": "s3b",
+  "seed": 7,
+  "title": "Three-bin night pickup (F, M, A -> home)",
+  "expect": "pass",
+  "result": "pass",
+  "outcome": "plan completed",
+  "verdict": "FAIL",
+  "crit": {
+   "C1": "FAIL",
+   "C2": "PASS",
+   "C3": "PASS",
+   "C4": "PASS",
+   "C5b": "PASS",
+   "C6": "PASS",
+   "C7": "PASS",
+   "C8": "PASS"
+  },
+  "why": {
+   "C1": "hedge min 0.106 m at t/s [8172.5, 620.7]",
+   "C2": "home:green 0.090 m 1.8 deg; home:black 0.112 m 0.6 deg; home:brown 0.079 m 2.1 deg",
+   "C3": "first motion D0 18:00, last dock D0 20:45",
+   "C4": "boundary margin 3.119 m",
+   "C5b": "contact min 0.281 (green), at-rest gaps person None car None",
+   "C6": "trips [44.84, 45.31, 46.43] Wh, end SOC 0.597",
+   "C7": "result pass / plan completed",
+   "C8": "gates ['green -0.024 m -0.02 deg OK', 'black 0.016 m 0.29 deg OK', 'brown -0.020 m 1.93 deg OK']"
+  },
+  "alerts": [],
+  "sim_s": 9905.2
+ },
+ {
+  "key": "s4b__s7",
+  "scenario": "s4b",
+  "seed": 7,
+  "title": "RTK loss under the hedge (20 m, bridged by odometry + lidar)",
+  "expect": "pass",
+  "result": "pass",
+  "outcome": "plan completed",
+  "verdict": "PASS",
+  "crit": {
+   "C1": "PASS",
+   "C5b": "PASS",
+   "C7": "PASS"
+  },
+  "why": {
+   "C1": "hedge min 0.270 m at t/s [48.2, 35.0]",
+   "C5b": "contact min None (None), at-rest gaps person None car None",
+   "C7": "result pass / plan completed"
+  },
+  "alerts": [],
+  "sim_s": 275.8
+ },
+ {
+  "key": "s4b__s11",
+  "scenario": "s4b",
+  "seed": 11,
+  "title": "RTK loss under the hedge (20 m, bridged by odometry + lidar)",
+  "expect": "pass",
+  "result": "pass",
+  "outcome": "plan completed",
+  "verdict": "PASS",
+  "crit": {
+   "C1": "PASS",
+   "C5b": "PASS",
+   "C7": "PASS"
+  },
+  "why": {
+   "C1": "hedge min 0.270 m at t/s [48.6, 35.0]",
+   "C5b": "contact min None (None), at-rest gaps person None car None",
+   "C7": "result pass / plan completed"
+  },
+  "alerts": [],
+  "sim_s": 276.2
+ },
+ {
+  "key": "s4b__s23",
+  "scenario": "s4b",
+  "seed": 23,
+  "title": "RTK loss under the hedge (20 m, bridged by odometry + lidar)",
+  "expect": "pass",
+  "result": "pass",
+  "outcome": "plan completed",
+  "verdict": "PASS",
+  "crit": {
+   "C1": "PASS",
+   "C5b": "PASS",
+   "C7": "PASS"
+  },
+  "why": {
+   "C1": "hedge min 0.271 m at t/s [48.0, 35.0]",
+   "C5b": "contact min None (None), at-rest gaps person None car None",
+   "C7": "result pass / plan completed"
+  },
+  "alerts": [],
+  "sim_s": 288.9
+ }
+]

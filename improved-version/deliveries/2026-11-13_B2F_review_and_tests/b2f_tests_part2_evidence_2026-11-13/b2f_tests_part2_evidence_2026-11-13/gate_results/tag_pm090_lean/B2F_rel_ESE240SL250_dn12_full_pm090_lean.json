@@ -1,0 +1,107 @@
+{
+ "test": "release",
+ "bin": "ESE240SL250",
+ "case": "dn12",
+ "fill": "full",
+ "grab": "success",
+ "release": {
+  "wheel_clear_at_zc_mm": -0.0,
+  "tilt_before_withdraw": 2.8,
+  "wheel_clear_before_withdraw_mm": -0.0,
+  "released": true,
+  "nib_clear_m": 0.621,
+  "sd": "SD2it1"
+ },
+ "bin_tilt_abs_end": 2.8,
+ "bin_speed_end": 0.0,
+ "bin_stable": true,
+ "ok": true,
+ "verdict": "PASS",
+ "roll": 0.006,
+ "pitch": 0.016,
+ "bin_ground": 998.654,
+ "cmin": 0.0,
+ "dmin": 0.0,
+ "seated_all": false,
+ "clear_min": -0.0,
+ "peak": {
+  "lift_N": [
+   1090.32,
+   46.98,
+   "7 carry 1 m"
+  ],
+  "pad_N": [
+   622.07,
+   46.66,
+   "7 carry 1 m"
+  ],
+  "drive_tyre_N": [
+   1182.84,
+   47.0,
+   "7 carry 1 m"
+  ],
+  "nib_rim_N": [
+   1324.5,
+   46.98,
+   "7 carry 1 m"
+  ],
+  "wheel_torque_Nm": [
+   150.0,
+   46.98,
+   "7 carry 1 m"
+  ]
+ },
+ "events": [
+  [
+   15.93,
+   "docked: tof, bin dy -0 mm (camera 1), nib gap 1 mm, bin moved 0 mm, rim 0.975 q_app 0.095, yaw meas -0.7 true -1.3 deg"
+  ],
+  [
+   39.99,
+   "grab: claim True captured True clear 74 mm rise 962 N tilt 4.0"
+  ]
+ ],
+ "cpu_s": 11,
+ "geo": {
+  "track": 0.4,
+  "rw": 0.165,
+  "ww": 0.035,
+  "cx": 0.95,
+  "cy": 0.28,
+  "guard_y": 0.358,
+  "guard_x0": -0.3,
+  "guard_x1": 0.38,
+  "face_x": 0.415,
+  "tooth_len": 0.13,
+  "nib_l": 0.008,
+  "nib_h": 0.02,
+  "tooth_hw": 0.32,
+  "approach_nib_z": 0.865,
+  "lift_range": 0.35,
+  "pad_x": 0.235,
+  "pad_z": 0.45,
+  "pad_k": 30000.0,
+  "pad_pre": 300.0,
+  "pad_stroke": 0.04,
+  "lift_extra": 0.075,
+  "act_N": 3000.0,
+  "tcap": 60.0,
+  "kvs": 1.0,
+  "car_zero": 0.855,
+  "pad_in": -0.005,
+  "pad_dz": 0.58,
+  "pad_ret": 0.0,
+  "rim_off": 0.025,
+  "creep_v": 0.03,
+  "creep_gap": 0.06,
+  "lift_extra1": 0.15,
+  "nib_l1": 0.008,
+  "tooth_hw1": 0.08,
+  "keep_l": 0.08,
+  "yaw_sigma": 1.0,
+  "yaw_ok": 1.5,
+  "pad_v": 0.0065,
+  "cr": 0.1,
+  "at_y": 0.42
+ }
+}

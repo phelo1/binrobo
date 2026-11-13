@@ -1,0 +1,14 @@
+group,line,area,eur_now,eur_proposed,change_eur,kind,what,evidence_needed
+firm,G25,Comms,121.9,81.9,-40.0,sourcing,"LTE Cat-1 HAT (Waveshare A7670E, about US$30) in place of the Cat-4 SIM7600G-H (about EUR 77 of this line). Antenna and sun shield kept. GNSS on the modem is not used (RTK receiver present)","bench test B12: alerts, clip upload, audio at both ends of the lane"
+firm,HX-G6,Enclosure & wiring,106.45,66.45,-40.0,sourcing,Harness: the 13-core and 7-core trailer cables crossed the old tug-to-trailer joint. One rigid frame can use ordinary multicore (about EUR 15 for the same runs),wiring table redrawn
+firm,K2,Hitch & grabber,5,0.0,-5.0,dead part,Second latch switch for the two tow hooks. B2-F has no hooks,none
+firm,GR-07,Hitch & grabber,14,0.0,-14.0,dead part,Tow-hitch cam gearmotor (pawl lift). The keeper it drives is inactive in B2-F,none
+firm,FAB-B2,Structure,354.12,234.12,-120.0,pricing basis,"Frame line copied from Rev G8 (FAB-D8), which includes a EUR 120 press-brake set-up. B2-F is described as tube plus flat laser-cut plates. The EUR 25 chair-frame clamp plates may also go (not counted)",confirm no folded parts; local quote
+needs gate or bench,B1-PADLS,Bin handling (B1 it1),8,0.0,-8.0,simplification,Pad position / lock switch,as above
+needs gate or bench,B2-PADACT,Bin handling (B2),59.99,0.0,-59.99,simplification,"Pad toggle actuator. On the front wall the pad is never in the way of the bin, so it need not retract. Rev H2 passed G1 89/90 and G6 18/18 in their gate with a fixed pad",G1 and G6 on B2-F with the pad fixed
+needs gate or bench,B2-TOGGLE,Bin handling (B2),12,0.0,-12.0,simplification,"Knee toggle links, pins, stop block",as above
+needs gate or bench,B-1,Bin handling (concept B),90,25.0,-65.0,simplification,Roller carriage (8 bearings + 4 side rollers) on the mast uprights in place of two HGR15 profile rails. Also removes the 10 mm backing flats that S12 asks for under the rail screws,bench test B8 (binding under load); gate unaffected
+firm,RK-1,Structure,0.0,20.0,20.0,added,"Castor rocker: castor cross-beam on a centre pivot (M16 shoulder bolt, 2 bushes) with +/-25 mm bump stops, so all four wheels keep their load on twisted ground","lane physics P2, P7 re-run"
+new-drive variant only,D6,Dock,29,25.0,-4.0,sourcing,24 V AGM charger in place of the 8S LiFePO4 charger,as above
+new-drive variant only,G14,Power,139.75,95.0,-44.75,sourcing,"2 x 12 V 18-22 Ah AGM in place of 8 x EVE C40 + BMS. Charges below 0 C, no heater, about 7 kg heavier (replaces the 5 kg ballast)",energy check: 3 trips = about 135 Wh of about 215 Wh usable cold
+new-drive variant only,HTR-L8,Power,24,0.0,-24.0,sourcing,Pack heater not needed with AGM,as above

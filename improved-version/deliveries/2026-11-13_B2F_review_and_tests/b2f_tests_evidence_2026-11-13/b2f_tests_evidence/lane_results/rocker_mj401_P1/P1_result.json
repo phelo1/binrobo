@@ -1,0 +1,177 @@
+{
+ "run": "P1",
+ "title": "P1 full 240 L (ESE 240 SL, 110 kg): home -> pad A",
+ "verdict": "FAIL",
+ "fails": [
+  "drive1 stalled at s 550.3 (no progress 12 s (stall))",
+  "set-down fail"
+ ],
+ "sim_time_s": 1374.5,
+ "t_start": 0.0,
+ "energy_Wh": 20.69,
+ "wall_s": 513,
+ "metrics": {
+  "clear_min": 0.0145,
+  "clear_at": 290.2,
+  "seated_all": true,
+  "bin_ground_N": 0.0,
+  "roll_max": 3.8745,
+  "pitch_max": 6.895,
+  "hedge_min": 0.29,
+  "hedge_at": 550.0,
+  "tip_min": 22.5901,
+  "tip_at": 550.2,
+  "liftF_max": 1889.4382,
+  "liftF_at": 550.1,
+  "gap_min": 9.0,
+  "v_max": 0.577,
+  "n_lost": 16
+ },
+ "results": {
+  "grab": {
+   "docked": true,
+   "reapp": false,
+   "dock_dy_mm": 1.8,
+   "pad_ok": true,
+   "padF_at_loadon": 0,
+   "lift_rise_N": 1073,
+   "seat_switch": true,
+   "keeper_on_bar": true,
+   "keeper_deg": -82.7,
+   "claim": true,
+   "zc": 0.146,
+   "q_app": 0.098,
+   "captured": true,
+   "wheel_clear_mm": 72.2,
+   "bin_tilt_abs": 2.0,
+   "seated": true,
+   "dock": "tof",
+   "result": "success"
+  },
+  "drive1": {
+   "reached": false,
+   "why": "no progress 12 s (stall)",
+   "s_end": 550.26,
+   "ref_end": 550.49,
+   "t": 1345.1,
+   "captured_end": true,
+   "clear_end_mm": 46.1
+  },
+  "setdown": {
+   "wheel_clear_at_zc_mm": 0.0,
+   "tilt_before_withdraw": 0.8,
+   "wheel_clear_before_withdraw_mm": 0.0,
+   "released": false,
+   "nib_clear_m": 0.097,
+   "sd": "SD2it1",
+   "tilt_end": 0.76,
+   "bin_speed": 0.0,
+   "standing": true,
+   "bin_s": 550.54,
+   "bin_lat": 0.616
+  }
+ },
+ "seg_metrics": {
+  "grab0": {
+   "clear_min": 9.0,
+   "clear_at": null,
+   "seated_all": true,
+   "bin_ground_N": 0.0,
+   "roll_max": 0.077,
+   "pitch_max": 0.5748,
+   "hedge_min": 9.0,
+   "hedge_at": null,
+   "tip_min": 39.045,
+   "tip_at": 11.4,
+   "liftF_max": 1204.102,
+   "liftF_at": 10.5,
+   "gap_min": 9.0,
+   "v_max": 0.1454,
+   "n_lost": 0
+  },
+  "drive1": {
+   "clear_min": 0.0145,
+   "clear_at": 290.2,
+   "seated_all": true,
+   "bin_ground_N": 0.0,
+   "roll_max": 3.8745,
+   "pitch_max": 6.895,
+   "hedge_min": 0.29,
+   "hedge_at": 550.0,
+   "tip_min": 22.5901,
+   "tip_at": 550.2,
+   "liftF_max": 1889.4382,
+   "liftF_at": 550.1,
+   "gap_min": 9.0,
+   "v_max": 0.577,
+   "n_lost": 16
+  },
+  "setdown2": {
+   "clear_min": 9.0,
+   "clear_at": null,
+   "seated_all": true,
+   "bin_ground_N": 0.0,
+   "roll_max": 3.0269,
+   "pitch_max": 1.9999,
+   "hedge_min": 0.5669,
+   "hedge_at": 549.4,
+   "tip_min": 37.4629,
+   "tip_at": 550.3,
+   "liftF_max": 1155.553,
+   "liftF_at": 550.3,
+   "gap_min": 9.0,
+   "v_max": 0.052,
+   "n_lost": 0
+  }
+ },
+ "events": [
+  [
+   15.55,
+   "docked: tof, bin dy 2 mm (camera 2), nib gap 2 mm, bin moved 0 mm, rim 0.978 q_app 0.098, yaw meas 0.0 true 0.3 deg"
+  ],
+  [
+   45.6,
+   "grab: claim True captured True clear 72 mm rise 1073 N tilt 2.0"
+  ],
+  [
+   45.6,
+   "grab result success"
+  ],
+  [
+   1345.1,
+   "drive1: no progress 12 s (stall) at s 550.3"
+  ],
+  [
+   1374.54,
+   "set-down: released False standing True tilt 0.8"
+  ]
+ ],
+ "cfg": {
+  "binkey": "ESE240SL",
+  "kg": 110.0,
+  "with_bin": true,
+  "variant": {
+   "step": "ramp",
+   "trench": "covered"
+  },
+  "act_N": 3000.0,
+  "pert": {},
+  "night": false,
+  "obstacles": [],
+  "title": "P1 full 240 L (ESE 240 SL, 110 kg): home -> pad A",
+  "start": "home"
+ },
+ "steps": [
+  [
+   "grab"
+  ],
+  [
+   "drive",
+   "{'to': 621.9612509503402, 'ref': 'bin', 'dirn': 1, 'knots': [(0, -1.4), (12.0, -1.4), (24.0, 0.0), (610.0, 0.0), (619.5, 1.35), (700, 1.35)], 'snaps': True}"
+  ],
+  [
+   "setdown"
+  ]
+ ],
+ "peak": {}
+}

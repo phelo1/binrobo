@@ -1,0 +1,62 @@
+[
+ {
+  "edge_mm": 40,
+  "load": "full 240 L, drive axle 1,536 N",
+  "contact_angle_deg": 40.7,
+  "friction_needed_from_rest": 0.86,
+  "barrier_J": 5.2,
+  "kinetic_J_at_0p5": 25.3,
+  "kinetic_J_after_impact_est": 14.5,
+  "passes_on_energy": true
+ },
+ {
+  "edge_mm": 40,
+  "load": "empty robot, drive axle 455 N",
+  "contact_angle_deg": 40.7,
+  "friction_needed_from_rest": 0.86,
+  "barrier_J": 1.3,
+  "kinetic_J_at_0p5": 11.5,
+  "kinetic_J_after_impact_est": 6.6,
+  "passes_on_energy": true
+ },
+ {
+  "edge_mm": 50,
+  "load": "full 240 L, drive axle 1,536 N",
+  "contact_angle_deg": 45.8,
+  "friction_needed_from_rest": 1.03,
+  "barrier_J": 10.8,
+  "kinetic_J_at_0p5": 25.3,
+  "kinetic_J_after_impact_est": 12.3,
+  "passes_on_energy": true
+ },
+ {
+  "edge_mm": 50,
+  "load": "empty robot, drive axle 455 N",
+  "contact_angle_deg": 45.8,
+  "friction_needed_from_rest": 1.03,
+  "barrier_J": 2.9,
+  "kinetic_J_at_0p5": 11.5,
+  "kinetic_J_after_impact_est": 5.6,
+  "passes_on_energy": true
+ },
+ {
+  "edge_mm": 60,
+  "load": "full 240 L, drive axle 1,536 N",
+  "contact_angle_deg": 50.5,
+  "friction_needed_from_rest": 1.21,
+  "barrier_J": 17.9,
+  "kinetic_J_at_0p5": 25.3,
+  "kinetic_J_after_impact_est": 10.2,
+  "passes_on_energy": false
+ },
+ {
+  "edge_mm": 60,
+  "load": "empty robot, drive axle 455 N",
+  "contact_angle_deg": 50.5,
+  "friction_needed_from_rest": 1.21,
+  "barrier_J": 5.0,
+  "kinetic_J_at_0p5": 11.5,
+  "kinetic_J_after_impact_est": 4.7,
+  "passes_on_energy": false
+ }
+]

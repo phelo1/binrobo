@@ -1,0 +1,3 @@
+runs_lean_ramp P2a: DONE P2a PASS [] sim 1286 s E 27.0 Wh {"clear_min": 9.0, "clear_at": null, "seated_all": true, "bin_ground_N": 0.0, "roll_max": 1.8077, "pitch_max": 6
+runs_lean_ramp P2c: DONE P2c PASS [] sim 1330 s E 28.1 Wh {"clear_min": 0.107, "clear_at": 290.9, "seated_all": true, "bin_ground_N": 0.0, "roll_max": 1.8465, "pitch_max"
+runs_lean_ramp chain done

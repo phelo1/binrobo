@@ -1,0 +1,138 @@
+{
+ "run": "P2a",
+ "title": "P2a return empty: pad A -> home",
+ "verdict": "FAIL",
+ "fails": [
+  "drive2 stalled at s 291.0 (no progress 12 s (stall))"
+ ],
+ "sim_time_s": 716.6,
+ "t_start": 0.0,
+ "energy_Wh": 12.68,
+ "wall_s": 101,
+ "metrics": {
+  "clear_min": 9.0,
+  "clear_at": null,
+  "seated_all": true,
+  "bin_ground_N": 0.0,
+  "roll_max": 1.8081,
+  "pitch_max": 2.0716,
+  "hedge_min": 0.2978,
+  "hedge_at": 621.1,
+  "tip_min": 39.5786,
+  "tip_at": 623.3,
+  "liftF_max": 211.0579,
+  "liftF_at": 622.8,
+  "gap_min": 9.0,
+  "v_max": 0.5163,
+  "n_lost": 0
+ },
+ "results": {
+  "pivot1": {
+   "ok": true
+  },
+  "drive2": {
+   "reached": false,
+   "why": "no progress 12 s (stall)",
+   "s_end": 290.98,
+   "ref_end": 290.98,
+   "t": 716.6
+  }
+ },
+ "seg_metrics": {
+  "forward0": {
+   "clear_min": 9.0,
+   "clear_at": null,
+   "seated_all": true,
+   "bin_ground_N": 0.0,
+   "roll_max": 0.0589,
+   "pitch_max": 1.8569,
+   "hedge_min": 9.0,
+   "hedge_at": null,
+   "tip_min": 41.0853,
+   "tip_at": 622.8,
+   "liftF_max": 211.0579,
+   "liftF_at": 622.8,
+   "gap_min": 9.0,
+   "v_max": 0.1474,
+   "n_lost": 0
+  },
+  "pivot1": {
+   "clear_min": 9.0,
+   "clear_at": null,
+   "seated_all": true,
+   "bin_ground_N": 0.0,
+   "roll_max": 1.8081,
+   "pitch_max": 1.8219,
+   "hedge_min": 9.0,
+   "hedge_at": null,
+   "tip_min": 39.5786,
+   "tip_at": 623.3,
+   "liftF_max": 29.6159,
+   "liftF_at": 623.3,
+   "gap_min": 9.0,
+   "v_max": 0.0164,
+   "n_lost": 0
+  },
+  "drive2": {
+   "clear_min": 9.0,
+   "clear_at": null,
+   "seated_all": true,
+   "bin_ground_N": 0.0,
+   "roll_max": 0.2411,
+   "pitch_max": 2.0716,
+   "hedge_min": 0.2978,
+   "hedge_at": 621.1,
+   "tip_min": 39.7285,
+   "tip_at": 623.3,
+   "liftF_max": 53.8293,
+   "liftF_at": 291.0,
+   "gap_min": 9.0,
+   "v_max": 0.5163,
+   "n_lost": 0
+  }
+ },
+ "events": [
+  [
+   21.45,
+   "pivot +180 deg done, axle moved 0.044 m"
+  ],
+  [
+   716.57,
+   "drive2: no progress 12 s (stall) at s 291.0"
+  ]
+ ],
+ "cfg": {
+  "binkey": "ESE240SL",
+  "kg": 0.0,
+  "with_bin": false,
+  "variant": {
+   "step": "sharp",
+   "trench": "covered",
+   "pothole": "filled"
+  },
+  "act_N": 3000.0,
+  "pert": {},
+  "night": false,
+  "obstacles": [],
+  "title": "P2a return empty: pad A -> home",
+  "start": [
+   "from",
+   "P1"
+  ]
+ },
+ "steps": [
+  [
+   "forward",
+   "0.45"
+  ],
+  [
+   "pivot",
+   "180.0"
+  ],
+  [
+   "drive",
+   "{'to': 12.0, 'ref': 'tug', 'dirn': -1, 'knots': [(0, -1.4), (12.0, -1.4), (24.0, 0.0), (610.0, 0.0), (619.5, 1.35), (700, 1.35)]}"
+  ]
+ ],
+ "peak": {}
+}

@@ -1,0 +1,265 @@
+{
+ "scenario": "s6b",
+ "seed": 7,
+ "title": "Companion freeze while reversing onto the bin",
+ "expect": "alert",
+ "result": "alert",
+ "outcome": "companion freeze -> firmware HOLD",
+ "alerts": [],
+ "sim_time_s": 114.1,
+ "chunks": [
+  {
+   "t0": 0.0,
+   "t1": 114.1,
+   "wall": 14.9,
+   "frames": 6696,
+   "status": "done"
+  }
+ ],
+ "energy_wh": 0.64,
+ "soc_start": 0.9,
+ "soc_end": 0.8986,
+ "odo_m": 5.5,
+ "hedge_min_m": 0.434,
+ "hedge_min_at": [
+  71.0,
+  620.1
+ ],
+ "legal_min_m": 3.857,
+ "legal_min_at": [
+  89.3,
+  621.0
+ ],
+ "contact_min_m": 0.441,
+ "contact_with": "black",
+ "person_rest_min_m": null,
+ "car_rest_min_m": null,
+ "collisions": [],
+ "chain_trips": [],
+ "metrics": {
+  "placements": [],
+  "grabs": [],
+  "trips": [],
+  "stops": [],
+  "gates": [
+   {
+    "bin": "black",
+    "attempt": 0,
+    "lat_m": -0.013,
+    "along_m": -0.092,
+    "yaw_deg": 0.23,
+    "ok": true
+   }
+  ],
+  "first_motion_clock": null,
+  "first_motion_t": 84.0,
+  "cam_checks": [
+   {
+    "bin": "black",
+    "k": 0,
+    "lat_cam": 0.029,
+    "lat_true": 0.029,
+    "e_est": 0.009
+   },
+   {
+    "bin": "black",
+    "k": 1,
+    "lat_cam": -0.007,
+    "lat_true": -0.013,
+    "e_est": -0.012
+   }
+  ],
+  "crash": {
+   "t": 83.97,
+   "v": -0.08,
+   "mode": "GUIDED",
+   "op": "grab",
+   "hold_t": 1.56,
+   "stop_t": 2.04,
+   "stop_m": 0.26,
+   "rolled_30s_m": 0.261
+  }
+ },
+ "events": [
+  {
+   "t": 0.0,
+   "kind": "sim",
+   "text": "chunk 0 start: SITL launched, home = checkpoint pose s=617.5"
+  },
+  {
+   "t": 1.14,
+   "kind": "fw",
+   "text": "Calibrating barometer"
+  },
+  {
+   "t": 2.82,
+   "kind": "fw",
+   "text": "Barometer 1 calibration complete"
+  },
+  {
+   "t": 2.82,
+   "kind": "fw",
+   "text": "Barometer 2 calibration complete"
+  },
+  {
+   "t": 2.82,
+   "kind": "fw",
+   "text": "Beginning INS calibration. Do not move vehicle"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "ArduPilot Ready"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "RCInput: decoding UDP (Pulses)"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "AHRS: DCM active"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "GPS 1: specified as MAV"
+  },
+  {
+   "t": 3.11,
+   "kind": "fw",
+   "text": "GPS 1: detected MAV"
+  },
+  {
+   "t": 4.99,
+   "kind": "fw",
+   "text": "EKF3 IMU0 initialised"
+  },
+  {
+   "t": 4.99,
+   "kind": "fw",
+   "text": "EKF3 IMU1 initialised"
+  },
+  {
+   "t": 6.65,
+   "kind": "fw",
+   "text": "EKF3 IMU0 tilt alignment complete"
+  },
+  {
+   "t": 6.65,
+   "kind": "fw",
+   "text": "EKF3 IMU1 tilt alignment complete"
+  },
+  {
+   "t": 6.73,
+   "kind": "fw",
+   "text": "EKF3 IMU0 MAG0 initial yaw alignment complete"
+  },
+  {
+   "t": 6.73,
+   "kind": "fw",
+   "text": "EKF3 IMU1 MAG0 initial yaw alignment complete"
+  },
+  {
+   "t": 6.73,
+   "kind": "fw",
+   "text": "AHRS: EKF3 active"
+  },
+  {
+   "t": 15.13,
+   "kind": "fw",
+   "text": "EKF3 IMU0 origin set"
+  },
+  {
+   "t": 15.13,
+   "kind": "fw",
+   "text": "EKF3 IMU1 origin set"
+  },
+  {
+   "t": 15.15,
+   "kind": "fw",
+   "text": "Field Elevation Set: 30m"
+  },
+  {
+   "t": 21.63,
+   "kind": "fw",
+   "text": "SmartRTL deactivated: bad position"
+  },
+  {
+   "t": 42.77,
+   "kind": "fw",
+   "text": "EKF3 IMU0 is using GPS"
+  },
+  {
+   "t": 42.77,
+   "kind": "fw",
+   "text": "EKF3 IMU1 is using GPS"
+  },
+  {
+   "t": 46.23,
+   "kind": "fw",
+   "text": "Fence Indexed OK"
+  },
+  {
+   "t": 46.25,
+   "kind": "pi",
+   "text": "fence upload ack=0 (81 vertices)"
+  },
+  {
+   "t": 46.29,
+   "kind": "fw",
+   "text": "Warning: Arming Checks Disabled"
+  },
+  {
+   "t": 46.29,
+   "kind": "fw",
+   "text": "Throttle armed"
+  },
+  {
+   "t": 47.25,
+   "kind": "pi",
+   "text": "boot done (GUIDED, armed, fence 81 pts)"
+  },
+  {
+   "t": 66.09,
+   "kind": "pi",
+   "text": "rear camera: bin axis -0.020 m off the estimate (camera 0.029 m) -> estimate corrected, re-aligning"
+  },
+  {
+   "t": 80.61,
+   "kind": "pi",
+   "text": "pre-grab gate OK: lateral -0.013 m, yaw 0.23 deg (truth)"
+  },
+  {
+   "t": 80.61,
+   "kind": "pi",
+   "text": "pre-motion warning (beacon, chime) (3 s)"
+  },
+  {
+   "t": 83.97,
+   "kind": "pi",
+   "text": "*** COMPANION FREEZE INJECTED (op grab, v=-0.08 m/s): heartbeat, attitude targets and lidar feed stop"
+  },
+  {
+   "t": 85.51,
+   "kind": "fw",
+   "text": "mode GUIDED -> HOLD"
+  },
+  {
+   "t": 85.51,
+   "kind": "fw",
+   "text": "GCS Failsafe"
+  },
+  {
+   "t": 85.53,
+   "kind": "fw",
+   "text": "firmware HOLD 1.56 s after the freeze"
+  },
+  {
+   "t": 114.09,
+   "kind": "pi",
+   "text": "FINISH alert: companion freeze -> firmware HOLD"
+  }
+ ]
+}

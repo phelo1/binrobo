@@ -1,0 +1,21 @@
+group,line,area,eur_now,eur_proposed,change_eur,kind,what,evidence_on_13_Nov,still_needed
+sourcing and pricing,G25,Comms,121.9,81.9,-40.0,sourcing,LTE Cat-1 board (Waveshare A7670E) in place of the Cat-4 SIM7600G-H,"Price checked: EUR 31.00 incl. tax, in stock (Botland)","Bench test of alerts, clips and two-way audio on Cat-1"
+sourcing and pricing,HX-G6,Enclosure & wiring,106.45,66.45,-40.0,sourcing,Ordinary multicore in place of the 13-core and 7-core trailer cables,none new,Wiring table redrawn
+sourcing and pricing,K2,Hitch & grabber,5,0,-5.0,dead part,Second latch switch for tow hooks that B2-F does not have,none new,Other agent to confirm it is unused
+sourcing and pricing,GR-07,Hitch & grabber,14,0,-14.0,dead part,Tow-hitch cam gearmotor; the keeper it drives is inactive in B2-F,none new,Other agent to confirm it is unused
+sourcing and pricing,FAB-B2,Structure,354.12,234.12,-120.0,pricing basis,Frame line carries a EUR 120 press-brake set-up from an older folded design,none new,Other agent to confirm no folded plates remain
+tested in simulation,RK-1,Structure,0,20,20.0,added,Castor cross-beam on a centre pivot with bump stops,Gate 9/9; lane loaded runs pass; empty wet-leaf return passes (fails without it),Bench build
+tested in simulation,LIFT-350,Bin handling,0,1,1.0,changed,350 mm lift travel on the same 400 mm actuator and 1 m rails; rails and mast uprights about 60 mm higher; carry lift 150 mm,Gate 9/9; bin-wheel clearance 40-108 mm on the lane (6-63 mm as designed),CAD redraw; check overall height with the rear camera on the mast top
+tested in simulation,B2-PADACT,Bin handling (B2),59.99,0,-59.99,simplification,Pad fixed 5 mm further back; pad toggle actuator deleted,Gate 9/9; 150/150 grabs on five bins; 24/24 stress cases; 90/90 grabs at 1.5x start offsets; lane runs pass,Bin check B0 and a bench grab test on the real bins
+tested in simulation,B2-TOGGLE,Bin handling (B2),12,0,-12.0,simplification,"Knee toggle links, pins, stop block",as above,as above
+tested in simulation,B1-PADLS,Bin handling (B1 it1),8,0,-8.0,simplification,Pad position / lock switch,as above,as above
+bench only,B-1,Bin handling (concept B),90,25,-65.0,simplification,Roller carriage on the mast uprights in place of two HGR15 profile rails,not simulated (the model has no rail detail),Bench test of play and jamming under side load
+optional,DRV-C7+,Drive,60,125,65.0,option,"260 mm puncture-proof swivel castors in place of 200 mm, only if a sharp step of 40 mm or more faces the empty return and no ramp is fitted",Gate 9/9 with 90/90 grabs; empty return over a sharp 40 mm step passes (stalls with 200 mm). Price checked: GBP 53.29 incl. VAT each (Castors-Online),Low-grip run; castor mount redraw; mass file update. On a donor chair the castors come with the chair
+optional,RAMP,Lane,0,20,20.0,option,1:4 ramp or fillet at any sharp up-step of 40 mm or more on the return leg,"Empty return and empty-bin collection pass with the ramp (both stall without it, in both versions)",Lane survey
+new-drive variant only,G14,Power,139.75,95,-44.75,sourcing,2 x 12 V 22 Ah AGM in place of the LiFePO4 pack and BMS,Price checked: EUR 42.99 to about 57 each,Energy check on the lane: 3 trips used 135-141 Wh in the driving tests
+new-drive variant only,HTR-L8,Power,24,0,-24.0,sourcing,Pack heater not needed with AGM,none new,as above
+new-drive variant only,D6,Dock,29,25,-4.0,sourcing,24 V AGM charger in place of the LiFePO4 charger,none new,as above
+"software, no cost",SW-1,Driving code,0,0,0,fix,Planned path out of the yard for bins kept far to the side,Three-bin drop 3/3 (0/3 before),Repeat on firmware 4.6.2; real yard layout
+"software, no cost",SW-2,Driving code,0,0,0,fix,Rear-camera check and re-alignment before each grab,27/27 line-ups passed first time; 5 arrivals more than 50 mm off were corrected,Camera accuracy on real bin tags
+"software, no cost",SW-3,Driving code,0,0,0,fix,Sign error in lane-keeping beside a gap in the left hedge,60/60 with the fix; the fault did not trigger in my runs of the unmodified code,Repeat on firmware 4.6.2
+"software, no cost",SW-4,Driving code,0,0,0,fix,Smooth reverse approach to the bin instead of a turn on the spot at the bin,Pad A hedge clearance 0.148 m or more (0.106 m without it on firmware 4.7.2),Repeat on firmware 4.6.2; adopt only together with SW-2

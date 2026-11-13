@@ -1,0 +1,9 @@
+{"mujoco": "3.2.7", "expected_normal_deg": 40.7, "contact_normal_deg_from_vertical": [40.7], "wheel_got_over": true, "t_over_s": 2.2, "x_end": 4.13, "z_rise_end_mm": -0.0}
+{"mujoco": "3.3.5", "expected_normal_deg": 40.7, "contact_normal_deg_from_vertical": [40.5], "wheel_got_over": true, "t_over_s": 2.19, "x_end": 4.13, "z_rise_end_mm": -0.0}
+{"mujoco": "3.8.1", "expected_normal_deg": 40.7, "contact_normal_deg_from_vertical": [40.5, 40.6, 40.4], "wheel_got_over": true, "t_over_s": 2.19, "x_end": 4.12, "z_rise_end_mm": -0.0}
+{"mujoco": "3.12.0", "expected_normal_deg": 40.7, "contact_normal_deg_from_vertical": [40.5, 40.6, 40.4], "wheel_got_over": true, "t_over_s": 2.19, "x_end": 4.13, "z_rise_end_mm": -0.0}
+{"mujoco": "3.13.0", "expected_normal_deg": 40.7, "contact_normal_deg_from_vertical": [90.0, 90.0], "wheel_got_over": false, "t_over_s": null, "x_end": 0.9, "z_rise_end_mm": -0.0}
+{"mujoco": "3.14.0", "expected_normal_deg": 40.7, "contact_normal_deg_from_vertical": [90.0, 90.0], "wheel_got_over": false, "t_over_s": null, "x_end": 0.9, "z_rise_end_mm": -0.0}
+{"mujoco": "3.16.0", "expected_normal_deg": 40.7, "contact_normal_deg_from_vertical": [90.0, 90.0], "wheel_got_over": false, "t_over_s": null, "x_end": 0.9, "z_rise_end_mm": -0.0}
+{"mujoco": "3.17.0", "expected_normal_deg": 40.7, "contact_normal_deg_from_vertical": [90.0, 90.0], "wheel_got_over": false, "t_over_s": null, "x_end": 0.9, "z_rise_end_mm": -0.0}
+{"mujoco": "4.0.1", "expected_normal_deg": 40.7, "contact_normal_deg_from_vertical": [40.5], "wheel_got_over": true, "t_over_s": 2.19, "x_end": 4.13, "z_rise_end_mm": -0.0}

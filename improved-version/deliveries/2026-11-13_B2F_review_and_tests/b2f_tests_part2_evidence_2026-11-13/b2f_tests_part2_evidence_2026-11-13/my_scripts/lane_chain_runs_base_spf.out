@@ -1,0 +1,6 @@
+runs_base_spf P1: DONE P1 PASS [] sim 1319 s E 15.2 Wh {"clear_min": 0.0106, "clear_at": 290.1, "seated_all": true, "bin_ground_N": 0.0, "roll_max": 1.6564, "pitch_max"
+runs_base_spf P7: DONE P7 PASS [] sim 1318 s E 21.4 Wh {"clear_min": 0.006, "clear_at": 290.2, "seated_all": true, "bin_ground_N": 0.0, "roll_max": 1.6696, "pitch_max":
+runs_base_spf P2c: DONE P2c FAIL ['drive2 stalled at s 291.0 (no progress 12 s (stall))', 'set-down fail'] sim 772 s E 13.6 Wh {"clear_min": 0.0842, "clear_at": 328.2, "
+runs_base_spf P3: DONE P3 PASS [] sim 1321 s E 15.2 Wh {"clear_min": 0.0632, "clear_at": 14.3, "seated_all": true, "bin_ground_N": 0.0, "roll_max": 1.6361, "pitch_max":
+runs_base_spf P2a: DONE P2a FAIL ['drive2 stalled at s 291.0 (no progress 12 s (stall))'] sim 717 s E 12.7 Wh {"clear_min": 9.0, "clear_at": null, "seated_all": true, "b
+runs_base_spf chain done

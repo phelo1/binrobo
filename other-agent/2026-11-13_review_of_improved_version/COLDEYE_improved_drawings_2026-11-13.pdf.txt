@@ -1,0 +1,418 @@
+[text of COLDEYE_improved_drawings_2026-11-13.pdf, taken out of the PDF for the public repository; pictures and layout are not kept]
+
+  Cold-eye review: BinRobo improved-version drawing set (B2-F + fixed
+                     pad, 350 mm lift, castor rocker)
+
+
+                                                13 November 2026
+
+
+Verdict
+Good concept set, not a build basis yet. Both clash claims in the other agent’s notes are correct, and I reproduced
+them from the CAD solids. The drawn version still has 3 Blockers:
+  1. The castors still hit the front bumper when they swivel forward. The other agent flagged this as an open issue,
+     but it happens on every reversing dock.
+  2. No 4 kN FDI actuator fits 350 mm of travel in the drawn mast. The 400 mm unit can also overrun into the top
+     tie.
+  3. The S12 structural fixes are not in the drawn version. This is carried over from B2-F, and the drawn 120 mm
+     rail-block pitch makes it worse.
+There are also 7 Major findings: looms through moving parts, an incomplete e-stop and fusing chain, a finger gap, the
+costs of the fixed pad, false holds, mass, and the BOM. Each finding below gives its evidence and a fix.
+Scope: geometry and drawing review only. No MuJoCo or SITL was run. All clash numbers come from Open-
+Cascade boolean intersections. The inputs were the other agent’s unchanged cad_B2F_src.py (identical to our
+work/revB2F/cad_B2F.py, checked with diff) and their build_model.py changes, posed with their rec_B2F.npz
+(improved version, lift q = 0 and 289.5 mm at carry). Scripts and raw outputs are in /workspace/work/coldeye_imp/
+(clash.py, env.py, lift.py, roll.py, loomchk.py, hand.py, plus the JSON results).
+
+
+1. Clash checks
+1a. Bay floor, walls and ballast vs the nose-castor swivel envelope: CONFIRMED
+I built the envelope as a solid of revolution about each swivel axis (x 950, y +/-280). It covers a 200 mm wheel 50 mm
+wide with 50 mm trail, plus the fork (corner radius 98.5 mm, crown at z 240-250, stem r 40 to z 260). The radius is
+152 mm at hub height and 147.5 mm at z 130. Intersection with the B2-F parts:
+
+B2-F part                               overlap per side                        overlap box (mm)
+HDPE bay floor 10 mm                    385 cm3                                 x 800-980, y 130-380, z 120-130
+Bay side walls                          19.9 cm3                                x 842-930, y 380-386, z 130-187
+Ballast plate (y +/-170)                43.9 cm3                                x 930-1048, y 132-170 (38 mm into
+                                                                                the envelope)
+Nose cross-member (missed in the        25.8 cm3                                z 243-260, against the fork crown and
+notes)                                                                          stem
+Front bumper strip and 45 deg           185 + 34.7 cm3                          see 1b
+corners
+
+
+They missed several further B2-F CAD faults, all found with the castors trailing (no swivel needed):
+  • The bay floor cuts through each castor wheel, hub and fork (28.5, 52.7 and 20.0 cm3).
+  • The 8 mm castor plate (z 235-243) and the nose cross-member (z 243-293) cut through the fork crown and stem.
+  • The battery cuts through the nose cross-member (23.4 cm3) and the ballast (81 cm3).
+
+
+                                                           1
+In the improved model the trims work. The envelope meets nothing except the bumper. That holds with the
+rocker level and with it at its roll stop (+/-4.8 deg). Their “about 1.2 kg less plastic” checks out: floor 0.94 kg plus
+walls 0.27 kg is 1.21 kg. The shortened front cover takes off a further 0.29 kg that they did not count.
+
+1b. Castors swivelled forward vs the front bumper: CONFIRMED, and worse with the
+rocker (Blocker B-1)
+With the castor swivelled forward, the wheel centre is at x 1000. Its front reaches x 1100.0 at the hub and 1095.4 at z
+130, the bumper’s lower edge. The bumper back face is at 1050, so the overlap is 45.4 mm. A solid boolean of the
+forward wheel against the bumper strip gives 78.9 cm3 per side, over x 1050-1090, z 130-187. The envelope also cuts
+the 45 deg corners (34.7 cm3, x 993-1085).
+Two things make it worse than the notes say:
+    • With the rocker at its stop the rising castor’s hub lifts to z 124. The wheel then fills the whole 40 mm
+      depth of the bumper (x 1050-1090, up to z 213; 296 cm3).
+    • It happens on every dock, not just occasionally. B2-F docks by reversing onto the bin, and get_poses.py
+      notes that “the reversing approach leaves the castors swivelled”. So each dock either jams the castor or trips the
+      bumper switches.
+Crop: coldeye_imp_figs/crop3_s09_castor_bumper.png. Computed views: fig1_castor_bumper_side.png and
+fig2_castor_envelope_plan.png.
+Fix.
+    • Bumper option. The back face must be at x >= 1100 + 10 mm clearance, about 60-65 mm forward. That
+      makes the robot about 1,566-1,572 mm long. The nose is already 16 mm over the 1.09 m spec.
+    • Castors-back option. Wheelbase 885-890 mm. The side walls must then end at x <= 725 instead of 790,
+      because the envelope reaches back to x 733.
+    • Decide this together with the castor size.
+260 mm castor option (r 130, trail 65): the forward overlap is 95 mm, so about 50 mm more than the 200 mm
+castor. The notes say about 45. It also fails in three other ways:
+    • The wheel top is at 260 mm, the same as the castor mounting plate (z 260). A 260 castor needs about 300-310
+      mm of build height, so the beam would rise to about 306-356 mm, 4 mm under the raised cross-member (360).
+    • Its swivel radius is 197 mm. That reaches y 477, beyond the 465 mm half-width of the robot.
+    • The same radius reaches inward to y 83, where it meets the ballast (+/-115), the floor tongue (+/-120) and the
+      battery (+/-90, x >= 753).
+
+1c. Other clashes they missed
+All figures are boolean overlaps in the improved model unless marked “B2-F legacy”.
+
+#         Clash                                                           Number                           Severity
+C1       Lift actuator body (drawn z 410-1000) vs carriage bracket at    84 cm3, 45 mm interference        part of B-2
+         q = 0 (z 955-985)                                               (also B2-F)
+C2       Loom L2/L3 encoder branch through the rotating drive tyre       9.4 + 21.9 cm3 per side           Major M-1
+         and hub
+C3       Loom L7: carriage-mounted branches cross both HGR15              0.6-2.3 cm3; 1.7 cm3             Major M-1
+         rails; the fixed run passes through the moving rail block and
+         the keeper motor
+C4       Loom L4 through the gearmotor bodies (item 5)                    12.3 cm3 per side                Major M-1
+C5       Carriage plate top at q = 350 is 1350, the top-tie underside     below the 25 mm finger           Major M-3
+         1370: a 20 mm gap                                                minimum of ISO 13854
+C6       UHMW guard (y 358-368) runs 3 mm into the drive tyre             92.5 cm3 per side                Minor
+         (inner face y 365) over x +/-165, z 60-330, and into the hub
+         boss (B2-F legacy)
+C7       New wheel encoder/speed sensor box (item 8) overlaps the         14.1 and 5.6 cm3                 Minor
+         guard and the hub boss
+
+
+
+                                                            2
+#        Clash                                                                Number                  Severity
+C8       Keeper cam motor (item 36) through linear rail L and mast            25.2 + 12.3 cm3        Minor
+         upright L, all along the travel (B2-F legacy)                                               (deletion
+                                                                                                     pending)
+C9       Sensor post D40 through the lidar body (lidar centre 35 mm           86 cm3                 Minor
+         ahead of the post; B2-F legacy)
+C10      Pad arm sits inside the comb pivot block, so the                     44.8 cm3                Minor
+         “self-aligning” comb cannot yaw or roll as drawn (B2-F
+         legacy)
+C11      Pad face vs spring-cup plate: 1.2 mm free gap at rest; at            104 cm3 at carry        Major M-4
+         carry the face is drawn 6.7 mm through the cup plate. The
+         sim models a 40 mm stroke.
+
+
+Checked and clear:
+    • Comb, bin and lid at full 350 mm travel vs the mast top and its devices. Bin top 1253; bin and lid x <= 309;
+      nearest mast-top device x >= 404. The keeper fingers reach z 1377, 43 mm under the rear camera, and do not
+      touch the work lamp or radar.
+    • 240 L bin wheels vs the drive wheels and bumpers at carry. Lateral gap 73 mm to the tyre and 66 mm to the
+      guard. Wheel clearance 102 mm at carry, 163 mm at q = 350.
+    • Rocker beam at +/-4.8 deg vs the frame (the beam corner reaches z 345.7 against 360).
+    • Looms L8 and L9 vs the castor envelopes and the rocker.
+
+
+2. Drawing quality
+    • Item counts. 74 robot items: 32 “their CAD”, 16 changed, 26 new. I recounted these on sheet 13. Balloons
+      are generated from the same item table as the parts list (build_model.py ITEMS -> draw_sheets.py), so item
+      numbers and balloons agree by construction. I spot-checked sheets 9, 10, 13 and 14 but did not audit every
+      balloon on all 14 sheets by eye.
+    • Parts list vs our BOM (BinRobo_B2F_BOM_2026-11-12.xlsx). Crop: crop4_s13_partslist.png.
+         – Items 10-12 cite “RK-1”, which does not exist. The castor beam, pin, hanger plates, bushes and stops
+           are uncosted.
+         – Item 27 says “400 mm stroke, ref B-0”, but our B-0 reads “FDI 24 V 300 mm 4 kN lifter, priced as
+           the 400 mm unit”, and the handover calls it a 250 mm-stroke actuator. See B-2.
+         – The fixed pad deletes B2-PADACT (EUR 59.99), B2-TOGGLE (12) and the lock-switch use of B1-PADLS
+           (8). These are still in the BOM, so about EUR 80 should come out.
+         – Item 46 (ballast) has no reference. The BOM has BT-01 (2 jerricans + about 12 kg sand) and B-6 (steel
+           plate, -7). Neither matches the drawn and simulated 5 kg plate.
+         – Item 17 cites FAB-B2; the rollers are G12.
+         – Items 38-39 cite “B1 pad lines”; the line is B-3.
+         – G16 (Anderson SB50, 10 A charge fuse, ideal diode) and HTR-L8 (pack heater) appear nowhere.
+         – Front camera: they are right that there is no BOM line. G23 covers only the rear camera.
+    • Wrong or unverified statements.
+         – “The robot weighs about 92 kg” is the B2-F gate value. Both pivot runs report G9 = 92.32 kg
+           (gate_B2F__lean*.json), so the sim mass was not updated. Recomputed from the CAD solids (steel
+           7.85, HDPE 0.95 g/cm3):
+
+Change                                                             kg
+Beam 2.85, mounting plates 1.58, hanger plates 2.71,               +7.9 to +9.0
+pivot housing 0.6-1.65, pin 0.17, stops 0.03
+Castor plates, drop plates, toggle actuator (est. 0.6), knee       -5.1
+links, lock switch
+HDPE trims                                                         -1.5
+Mast +60 mm                                                        +0.4
+Net                                                                +1.7 to +2.7, so about 94-95 kg
+
+
+                                                               3
+          With the pending S12 sections (+19 kg, per HANDOVER_Rev4.0 section 4.4) it comes to about 113-114
+          kg. I could not verify whether the newly drawn devices are inside the lumped “as B1” mass lines: the power
+          box with two 100 A contactors, the horn and the headlights.
+        – “Pad set 5 mm further back”: the GEO pad_in changes from 0.015 (B2-F) to -0.005, which is 20 mm. I
+          could not confirm the sign convention without their simB2hx. Unverified.
+        – “304 mm across” is the envelope at hub height. At the bumper’s lower edge, where sheet 9 says it is drawn,
+          it is 295 mm. Trivial.
+        – Sheet 14 loom table: the L9 route text is cut off where it overlaps the cores column.
+        – The drawings show 50x50x2 uprights and rails with no note that S12 needs heavier sections. See B-3.
+
+
+3. Engineering of the three changes
+3a. Fixed pad (Major M-4)
+At approach (q = 0) the pad face (x 284.8) stands 0.2 mm proud of the nib tip (x 285.0). The pad springs carry a
+300 N preload at 30 kN/m. A full 240 L bin rolls away with roughly 30-55 N (Crr 0.03-0.05 on 1,080 N; estimate).
+What losing the retract costs:
+  • Approach. The pad, not the comb, makes first contact. It pushes the bin before the nib is seated, so nib
+    engagement depth under the 30 mm receiver depends on each bin’s front-wall draft. With first-arrival lateral
+    errors of 15-25 mm mean and up to 47-89 mm, an off-centre push also yaws the bin.
+  • Release. As the comb lowers, the pad slides about 100 mm or more down the front wall, where the EN 840
+    markings are. At carry compression (7.9 mm in the sim) the spring force is about 540 N, which at mu 0.2 gives
+    about 110 N of scrubbing drag.
+  • The CAD cannot do what the sim assumes. The face-to-cup gap at rest is 1.2 mm against a 40 mm
+    modelled stroke (C11).
+The 90/90 pick-ups were on three catalogue bin models, not Brian’s bins.
+Fix:
+  • Design and draw a real sprung stroke of at least 45 mm.
+  • Set the pad at least 10 mm behind the nib tip so the comb seats first, or keep a passive cam retract.
+  • Add a test of the fixed-pad approach with the bin brake on and off, and on measured real bins.
+
+3b. 350 mm lift (Blocker B-2)
+The lift origin is z 834.9 at q = 0, 1124.4 at carry and 1184.9 at q = 350. The rod end sits at lift +135, so the space
+from the base pin (about 410) to the rod end at q = 0 is about 560 mm. The FDI 4 kN 6 mm/s family as fetched
+from anodas.lt on 13 Nov:
+  • 400 mm stroke: L = 620 mm, IP65, internal limit switches not adjustable, no feedback, EUR 137.10.
+    https://www.anodas.lt/en/fdi-linear-actuator-24v-400mm-6mm-s
+  • 300 mm stroke: L = 500 mm, IP42, no feedback, EUR 150.10. https://www.anodas.lt/en/fdi-24v-linear-
+    actuator-300mm-4000n-6mm-s
+So the 300 mm unit fits but cannot give 350 mm of travel. The 400 mm unit is needed but is 60 mm too long.
+Run to its internal end stop, it takes the carriage plate to z 1400, 30 mm into the top tie (underside 1370), and
+the rail blocks to 1390, 30 mm past the rail end (1360). The taller mast does not help either problem: the closed
+length is set by the bottom position, and 60 mm more of mast gives only 20 mm of overrun margin at 350.
+Fix:
+  • Lower the base pin at least 60 mm, to about z 350 on the front face of the mast-base cross-member. The rear
+    cover (x 520-720, z 300-306) needs a cut-out.
+  • Add a hard stop at 350 mm plus an external top limit switch in the actuator supply, or use an actuator with
+    position feedback. Note that L5 lists a “position signal” this unit does not have.
+  • Change B-0 to the 400 mm unit.
+  • Cycle time: 350 mm at 6 mm/s is 58 s per lift, against 42 s for 250 mm.
+Mast bending. The S12 model is M = F_comb x e_mast (e = 0.425 m) and does not depend on carriage height. The
+350 mm change therefore leaves the upright foot at SF 0.68 (comb_all, 9,634 N). The 60 mm higher carry adds
+
+
+                                                          4
+less than 1% through braking inertia (110 kg x 3 m/s2 x 0.05 m = 17 N m against 2,049 N m). It is not worse, and not
+fixed.
+The drawn rail-block pitch is 120 mm (blocks at lift -25..35 and 95..155), but S12 assumed 200 mm. At 120 mm:
+  • block load rises from 10,245 to 17,075 N, so SF on C0 drops from 2.29 to 1.37;
+  • M4 rail-screw SF drops from 1.10 to 0.66.
+
+3c. Rocker castor beam (Minor structurally; Major M-5 for the false holds)
+Structure (hand.py, S12 load conventions: 3 g on the 537 N static castor sum, and a 970 N kerb strike from the drive
+torque cap):
+  • Pivot pin, 58 mm span, 38 mm housing: M = 113 N m, giving SF 2.28 for d16 and 3.25 for d18 (8.8 grade, 640
+    MPa).
+  • Hanger plates 8 x 90, loaded on their weak axis by the kerb force over a 160 mm lever: 81 MPa, SF 2.9 (S235).
+  • Beam 50x40x3 RHS: SF 8.2.
+  • Cross-member torsion: SF 6.7.
+  • The one weak detail is the single 38 mm housing. It must carry the pitch couple from a kerb strike, 194 N m
+    at a 200 mm pin height, so each bush sees 5.1 kN, about 32 MPa on a d16 x 10 bronze bush. At a 287 mm pin
+    height this becomes 7.3 kN and the pin SF drops to 1.66. Fix: bushes at least 20 mm long and spaced at least 60
+    mm apart, using a longer housing or one bush per hanger plate.
+Roll stops. The stops touch the cross-member underside at 4.8 deg of roll. That is +/-24.2 mm at the castor, which
+matches the drawn “about +/-25”. Until a stop touches, the nose rests on a single point, which cuts the static lateral
+margin of the empty robot (CG x about 0.47 m) from 338 to 186 mm. Carrying, with the CG near x 0.2 m, it goes
+from 372 to 291 mm.
+Why 287 mm docks worse (hypothesis, not proven). I see two linked mechanisms:
+  • Load transfer. A lateral castor force F_y, for example from a castor flipping during a reversing dock, acts on
+    the pivot with lever h. The free rocker can only resist it by moving vertical load between the castors: dN = F_y
+    x h / 0.56 m, which is 43% more at 287 mm than at 200. Asymmetric castor drag then yaws the robot during
+    the final approach.
+  • Sideways play. Each degree of roll lets the castor contact patches slide sideways relative to the chassis by h x
+    theta. At the stop that is 15.8 mm at 200 mm and 22.8 mm at 287 mm.
+The extra 7 mm of play is of the same order as the measured rise in mean first-arrival error on the clip-lid bin, from
+15.8 to 24.6 mm.
+How strong the evidence is. 26/30 vs 30/30 gives a Fisher two-sided p of about 0.11, and pooled 86/90 vs 90/90
+about 0.12. The lateral-error shift is stronger evidence than the pass rate. Keeping 200 mm is prudent, and it is right
+to make it a controlled dimension.
+The false holds are a separate problem. Two runs lifted the bin 34 and 72 mm off-centre while the switches
+reported a good hold. That shows the hold detection is blind to lateral seating, whatever the pivot height. Run
+200 mm with more seeds, at least 100 on ESE240CL, and add a lateral-seating check, for example both comb ToFs
+within a band.
+
+3d. Looms and wiring (Major M-1, M-2)
+Routing faults: C2-C4 above.
+  • L2/L3 encoder drop through the drive wheel: crop crop1_s14_L2_L4_wheel.png.
+  • L7 across the rails and the moving block: crop crop2_s14_L7_rails.png.
+L7 needs a drag chain anchored on the mast, with one fixed hand-off point on the carriage. Its service loop must be
+sized for 350 mm.
+Safety chain (L10 has the two e-stop channels, and L4 and L9 carry the bumper stop loops):
+  • No loom from the pod to the power box for the KM1/KM2 coils driven by the PNOZ outputs, the contactor
+    EDM, or the SLS-L8 voltage sense. L1 carries power only, and BOM PC-G7 is not drawn. Without it the stop
+    chain stops at the pod.
+
+
+                                                          5
+     • The S13 tilt switch and the SLS-L8 box are not placed.
+     • The lift actuator has no driver in the BOM. S6 deleted KA1/KA2 because the actuator was “on Roboteq
+       ch3”, but CTL-L8 is now a 2-channel RoboClaw used by the drive. Nothing shows whether an e-stop removes
+       power from the lift. That matters with a 20 mm finger gap at the top (M-3) and a bin overhead.
+Fusing:
+     • The main fuse is drawn in the power box, but S1 says “at battery +”. That leaves about 0.22 m of unfused 10
+       mm2 trunk.
+     • No fuse is placed for the 2.5 mm2 charge pair from the exposed bumper charge contacts (G16 10 A fuse not
+       placed). This pair shares L9 with the front-bumper stop loop.
+     • The S2 fuse box is not placed.
+The other agent said wire sizes and fuses are not worked out. Even so, a route drawing without these gaps listed reads
+as more complete than it is.
+Fix: a B2-F wiring table covering protection devices, segregation, and the actuator driver with its e-stop interlock.
+
+
+4. Ranked findings
+
+ID          Sev           Finding                                     Evidence                  Fix
+B-1         Blocker       Castors swivelled forward hit the front     45.4 mm at z 130; 78.9    Bumper back face x
+                          bumper on every reversing dock; with        cm3 per side; 296 cm3     >= 1110 (+60-65 mm),
+                          the rocker at its stop they fill the full   at roll stop; sheet 9;    or castors back 60 mm
+                          bumper depth; the 260 mm option is          figs 1-2, crop 3          and walls ending at x
+                          worse (95 mm) and does not fit                                        <= 725; decide with
+                          vertically or in width                                                the castor size
+B-2         Blocker       No FDI 4 kN unit fits 350 mm travel:        anodas specs; fig 3; C1   Base pin -60 mm, hard
+                          400 mm unit L 620 vs about 560                                        stop plus external limit
+                          available; drawn body already 45 mm                                   switch or a feedback
+                          into the bracket; overrun to 400 gives                                actuator; B-0 changed
+                          30 mm into the top tie and 30 mm off                                  to the 400 mm unit
+                          the rails; no feedback
+B-3         Blocker       S12 sections not drawn: mast foot SF        s12_table.md; CAD         Draw 80x40x4 uprights
+            (carried      0.68 unchanged by the lift change;          block positions           and 50x50x4 rails,
+            over)         drawn block pitch 120 mm gives block                                  block pitch >= 200
+                          SF 1.37 and rail screws 0.66; side rail                               mm, backing flats;
+                          edge SF 0.39                                                          re-run S12
+M-1         Major         Looms through moving parts: L2/L3           booleans C2-C4; sheet     Re-route; drag chain for
+                          through the drive tyre and hub, L7          14 crops 1-2              L7
+                          across the rails and the moving block,
+                          L4 through the gearmotors
+M-2         Major         E-stop chain incomplete (no pod to          BOM S1, S6, CTL-L8,       B2-F wiring table with
+                          contactor/EDM loom; tilt switch and         PC-G7, G16; loom          protection and
+                          SLS box not placed); lift actuator has      table                     interlocks
+                          no driver or interlock; main fuse placed
+                          where the BOM does not say; charge
+                          pair unfused
+M-3         Major         20 mm crush gap, carriage to top tie, at    z 1350 vs 1370            Stop at <= 340 mm or
+                          full travel                                                           guard the gap; keep it
+                                                                                                >= 25 mm
+M-4         Major         Fixed pad: pushes the bin before the        pad 0.2 mm proud of       Real >= 45 mm stroke,
+                          nib seats; scrubs the front wall on         the nib; C11              pad >= 10 mm behind
+                          release; drawn stroke 1.2 mm against 40                               the nib, or a passive
+                          mm modelled                                                           retract; test on real bins
+
+
+
+
+                                                            6
+ID          Sev          Finding                                     Evidence                 Fix
+M-5         Major        False holds (34 and 72 mm off-centre,       gate_B2F__lean287.json; Lateral-seating check;
+                         switches OK) show hold detection is         Fisher p about 0.11     at least 100 seeds at
+                         blind to lateral seating; the 287 vs 200                            200 mm
+                         result is weak statistically
+M-6         Major        Mass stated as 92 kg; sims used 92.32       G9 in both gate files;   Update the mass model
+                         kg; true about 94-95 kg, about 113-114      CAD volumes              and re-run the
+                         kg with S12                                                          force-limited tests (3
+                                                                                              kN cap)
+M-7         Major        Parts list vs BOM: RK-1 missing; B-0        sheet 13, crop 4; BOM    Reconcile the BOM and
+                         300 vs 400 mm; pad-toggle lines not         xlsx                     sheet 13
+                         deleted; ballast mismatch; G16,
+                         HTR-L8 and front camera missing;
+                         wrong references G12 and B-3
+m-1         Minor        Legacy clashes: guard into the tyres by     C6-C10                   Fix in the next CAD
+                         3 mm; encoder box; keeper motor                                      revision
+                         through the rail; post through the lidar;
+                         pad arm locks the comb pivot
+m-2         Minor        Rocker housing: a single 38 mm bush         hand.py                  Longer or split bushes;
+                         pair carries 5.1 kN (7.3 kN at 287 mm);                              keep the stops at about
+                         static lateral margin 338 to 186 mm                                  5 deg or less
+                         until the stop
+m-3         Minor        Wording: 304 mm vs 295 mm at the            GEO; sheet 14            Correct
+                         bumper edge; pad “5 mm” vs a 20 mm
+                         pad_in change (unverified); sheet 14
+                         table text overlap
+m-4         Minor        350 mm at 6 mm/s adds about 16 s per        58 s vs 42 s             Accept, or use a faster
+                         lift                                                                 4 kN unit
+
+
+
+5. What I could not verify
+     • How the rocker, its stops and the pad spring are modelled in their simB2hx. That file is not in our tree;
+       get_poses.py points to /home/claude/b2f_run.
+     • Whether the electrical devices are in the lumped mass lines.
+     • The sign of pad_in.
+     • The FDI pin-to-pin vs body length definition of “L”. I treated L as the retracted mounting length.
+     • The real rolling resistance of the bin.
+     • Every balloon on all 14 sheets; I spot-checked four.
+Nothing here was simulated.
+
+
+
+
+                                                          7
+Figures
+
+
+
+
+                 Figure 1: Castor vs bumper, side view at y = 280 (computed)
+
+
+
+
+          Figure 2: Swivel envelopes vs B2-F and improved nose parts, plan (computed)
+
+
+
+
+                                              8
+Figure 3: Lift actuator and mast stack-up (computed)
+
+
+
+
+Figure 4: Sheet 9 crop: castor swivel room vs bumper
+
+
+
+
+                         9
+Figure 5: Sheet 14 crop: L2 through the drive wheel, L4 through the gearmotor
+
+
+
+
+                                     10
+Figure 6: Sheet 14 crop: L7 across the rails and the moving block
+
+
+
+
+                               11
+Figure 7: Sheet 13 crop: BOM references
+
+
+
+
+                  12
+

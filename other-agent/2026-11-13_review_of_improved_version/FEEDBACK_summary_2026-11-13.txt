@@ -1,0 +1,182 @@
+Feedback on "BinRobo improved version" (B2-F + fixed pad, 350 mm lift, castor rocker at 200 mm), 13 Nov 2026
+
+From: independent reviewer (cold-eye drawing review plus an independent re-test).
+
+Scope and basis
+• Your simB2hx.py was not supplied. We rebuilt the three changes as auditable string edits on the unchanged B2-F sim:
+  - lift_range 0.35, mast and rails +60 mm;
+  - pad_ret 0, lift_extra1 0.15, B2F_PAD_IN -0.005 (same as your commands);
+  - rocker pin X_ROCK_Z 0.200 / 0.287;
+  - soft roll stops at +/-6 deg, damping 2 N m s/rad, friction 0.5 N m, beam 4.83 kg.
+• We used the same frozen criteria, seeds and scorer as B2-F.
+• Clash numbers are OpenCascade booleans on your unchanged cad_B2F_src.py plus your build_model.py edits, posed from rec_B2F.npz.
+• Please send your simB2hx.py, or its diff against simB2h.py, so the discrepancies below can be traced to the model rather than argued.
+
+PART A. Your claims we could NOT reproduce
+
+A1. Gate at pin 200 mm: you report 9/9; we get 7/9.
+• G1 pick-ups: 88/90, with 2 false holds on ESE240CL seeds 14 and 17, so FAIL.
+• G1 depends on mass. ESE240CL gives:
+  - 30/30 at 92.32 kg (your mass);
+  - 29/30 with 1 false hold at 95.74 kg;
+  - 28/30 with 2 false holds at 96.94 kg.
+  Your 90/90 only holds at the old B2-F mass.
+• G3 40 mm full-width step "both": we stall at 1.34 m at all three masses (92.32, 95.74, 96.94 kg), exactly as B2-F. You reach 4.71 m with the lift at 3,000 N. Your "one" run also shows 2.9 deg roll against our 0.26 deg.
+• Please check:
+  (a) how the rocker joint, stops and damping are modelled;
+  (b) whether the step geometry or the wheel torque cap (60 N m) differ from the B2-F frozen setup;
+  (c) whether G9 and the mass tables were updated. Both your gate files still report 92.32 kg.
+
+A2. Lane runs: you report P1, P2a, P2c and P7 passing with the step ramped. Our P1 fails in the 60 mm pothole at s 550.6 m, both with the step ramped and with it sharp.
+• We ran the pothole stretch from the same start state (P5h) four ways:
+  - 96.94 kg, rocker free (+/-6 deg): FAIL
+  - 92.32 kg, rocker free: FAIL
+  - 96.94 kg, stops at +/-3 deg: FAIL
+  - 96.94 kg, rocker locked: PASS
+• Our reading: when one drive wheel drops 60 mm, the chassis rolls onto the free rocker and the drive wheels lose the normal load they need for traction.
+• Please check:
+  (a) your rocker roll stiffness and stops in the lane world;
+  (b) whether your lane world has the 60 mm pothole at s about 550;
+  (c) the drive-wheel normal loads through the pothole, rocker free vs locked.
+• P2a, P2c and P7 could not be run here because P1 never reaches pad A. Note that B2-F's own P2a, P2c and P7 also stall at that pothole.
+
+A3. Sharp 40 mm step up (P5d, 3 kN): stalls at s 290.1, the same as B2-F. Going down loaded (P5a) passes, but the lift hits the 3 kN cap (2,925 N).
+
+PART B. Where we agree
+• Pin at 287 mm is worse: our G1 is 87/90 with 2 false holds (FAIL); yours is 86/90 with 2 false holds (FAIL). Keeping 200 mm is right.
+• Caveat on that comparison: 26/30 vs 30/30 gives a Fisher two-sided p of about 0.11, so the pass-rate difference alone is weak. The rise in lateral arrival error (15.8 to 24.6 mm mean on ESE240CL) is the stronger evidence.
+• Our hypothesis for the cause:
+  - A lateral castor force on a 43% longer lever moves more vertical load between the castors.
+  - Contact-patch side play at the stop is h x theta: 15.8 mm at 200 mm vs 22.8 mm at 287 mm.
+• Your bay floor, wall and ballast vs castor-swivel finding is confirmed:
+  - Overlap per side: floor 385 cm3, walls 19.9 cm3, ballast 38 mm.
+  - Your trims clear it. In the sim the closest approaches are floor 7.9 mm, ballast 16.7 mm and walls 32.7 mm.
+  - The mass saving checks out at 1.21 kg. The shortened front cover saves another 0.29 kg you did not count.
+• Your bumper overlap finding is confirmed: 45.4 mm by CAD, and 41.6 mm logged in the sim in every reversing dock (141 runs). See B-1 below for why it is a blocker, not an open issue.
+• Lane fit (plan geometry) passes, with margins as B2-F: loaded pivot 2.41 m vs 2.39 m. This uses the drawn nose; a 60-65 mm bumper move would reduce the margins.
+• SITL (kinematic): 53/60 vs B2-F 52/60, which is within seed noise. Two margins get thinner:
+  - energy per trip: 48.1 of 50 Wh, against 46.7 for B2-F;
+  - latest dock on a three-bin evening: 20:50, against 20:47.
+
+PART C. Blockers in the drawn version
+
+B-1. The castors hit the front bumper on every dock.
+• B2-F docks by reversing, which leaves the castors swivelled forward on every approach. Your get_poses.py says the same.
+• With the castor forward, the wheel front reaches x 1095.4 at the bumper's lower edge (z 130). The bumper back face is at x 1050.
+• With the rocker at its stop (4.8 deg) the rising castor fills the whole 40 mm bumper depth (296 cm3). The 45 deg corners overlap by a further 19.3 mm.
+• The 260 mm castor option is worse:
+  - forward overlap of 95 mm, not your stated +45;
+  - its swivel radius of 197 mm reaches y 477, beyond the 465 mm half-width;
+  - inward, it reaches the ballast, floor tongue and battery;
+  - it needs about 300-310 mm of build height under a 260 mm plate.
+• Fix, choose one together with the castor size:
+  - Bumper back face at x >= 1110: the robot becomes about 1,566-1,572 mm long, and the nose is already 16 mm over the 1.09 m spec. Re-run the SITL hedge, yard-exit and docking checks.
+  - Castors about 60 mm back, wheelbase 885-890 mm: the bay side walls must end at x <= 725, since the envelope reaches x 733. Re-run all mechanical tests.
+
+B-2. No FDI 4 kN unit fits 350 mm of travel.
+• From the base pin (z about 410) to the rod end at q = 0 there is about 560 mm.
+• FDI 4 kN, 6 mm/s, from anodas.lt on 13 Nov 2026:
+  - 300 mm stroke: L = 500 mm. It fits, but gives only 300 mm of travel.
+  - 400 mm stroke: L = 620 mm, 60 mm too long. Its internal limits cannot be adjusted and it has no feedback.
+• Run to its own end stop, the 400 mm unit drives the carriage to z 1400, 30 mm into the top tie (underside 1370). The rail blocks end at 1390, 30 mm past the rail ends (1360).
+• The drawn actuator body already sits 45 mm inside the carriage bracket at q = 0 (84 cm3).
+• Loom L5 lists a "position signal" that this unit does not have.
+• Fix:
+  - Lower the base pin by at least 60 mm (about z 350); the rear cover needs a cut-out.
+  - Fit a hard stop at 350 mm plus an external top limit switch, or use a feedback actuator.
+  - Change BOM line B-0 to the 400 mm unit. It currently reads "300 mm 4 kN, priced as the 400 mm unit".
+• Cycle time: 350 mm at 6 mm/s takes 58 s per lift, against 42 s.
+• Note for our own rebuild: the sim assumed the actuator covers 350 mm at the same 3 kN cap, so the sim is optimistic here.
+
+B-3. The S12 structural fixes are not drawn (carried over from B2-F), and the drawn rail-block pitch makes it worse.
+• Mast upright foot, 50x50x2: SF 0.68 at comb_all (9,634 N). The 350 mm travel does not change it, since M = F_comb x 0.425 m is independent of carriage height.
+• Side rail 50x50x2: SF 1.10 carry, 0.39 edge.
+• Drawn block pitch is 120 mm, not the 200 mm S12 assumed:
+  - HGH15 block load 17,075 N instead of 10,245 N, so SF on C0 falls from 2.29 to 1.37;
+  - M4 rail screws: SF falls from 1.10 to 0.66.
+• Fix:
+  - draw 80x40x4 uprights and 50x50x4 rails (the edge case needs 80x80x5, which is still open);
+  - block pitch >= 200 mm, rail screws M4 12.9 into a 10 mm backing flat;
+  - re-run S12.
+
+PART D. Major findings
+
+M-1. Looms through moving parts (boolean overlaps):
+• L2/L3 encoder branch through the rotating drive tyre and hub: 9.4 + 21.9 cm3 per side.
+• L7 carriage branches across both HGR15 rails, and its fixed run through the moving rail block and the keeper motor.
+• L4 through the gearmotor bodies: 12.3 cm3 per side.
+• Fix: re-route. L7 needs a mast-anchored drag chain with a service loop sized for 350 mm.
+
+M-2. The e-stop and fusing chain is incomplete.
+• No loom from the pod to the power box for:
+  - the KM1/KM2 contactor coils from the PNOZ outputs;
+  - the contactor EDM feedback;
+  - the SLS voltage sense (BOM PC-G7 is not drawn).
+• The tilt switch (S13) and the SLS-L8 box are not placed.
+• The lift actuator has no driver. S6 put it on Roboteq ch3, but CTL-L8 is a 2-channel RoboClaw used by the drive. Nothing shows that the e-stop removes lift power, and the lift carries a bin overhead with a 20 mm top gap.
+• The main fuse is drawn in the power box, but BOM S1 says at battery +, which leaves about 0.22 m of unfused 10 mm2 trunk.
+• The charge pair from the exposed bumper contacts is unfused; the G16 10 A fuse is not placed.
+• The S2 fuse box is not placed.
+• Please supply a B2-F wiring table covering protection devices, segregation, the actuator driver and its e-stop interlock.
+
+M-3. The crush gap from carriage top (z 1350 at q = 350) to the top-tie underside (1370) is 20 mm, under the 25 mm finger minimum (ISO 13854). Stop at <= 340 mm or guard the gap.
+
+M-4. Fixed pad.
+• At q = 0 the pad face (x 284.8) stands 0.2 mm proud of the nib tip (285.0), with 300 N preload at 30 kN/m. The pad touches first and pushes the bin before the nib seats. The bin rolls away at about 30-55 N.
+• On release it scrubs about 100 mm down the front wall at about 110 N (540 N x mu 0.2).
+• The CAD gives 1.2 mm free gap face to cup; at carry the face is drawn 6.7 mm through the cup plate. The sim models a 40 mm stroke.
+• Your note says "pad 5 mm further back", but pad_in changed from 0.015 to -0.005, which is 20 mm. Please confirm the sign convention.
+• Fix:
+  - a real >= 45 mm sprung stroke;
+  - pad >= 10 mm behind the nib, or a passive cam retract;
+  - test with the bin brake on and off, and on Brian's real bins.
+
+M-5. False holds.
+• Your two 287 mm false holds lifted the bin 34 and 72 mm off-centre while the switches reported a good hold. We also see false holds at 200 mm when the mass is realistic.
+• Hold detection cannot see lateral seating.
+• Fix:
+  - add a lateral-seating check, e.g. both comb ToFs within a band;
+  - run >= 100 seeds on ESE240CL at 200 mm.
+
+M-6. Mass.
+• "About 92 kg" is the B2-F figure, and both of your pivot-height gate files report G9 = 92.32 kg.
+• Recomputed from the CAD solids it is about 94-95 kg (net +1.7 to +2.7 kg). With the S12 sections it is about 113-114 kg.
+• Please update the mass model and re-run the force-limited tests (3 kN lift cap, 60 N m wheel cap).
+
+M-7. Parts list (sheet 13) vs BOM:
+• "RK-1" does not exist, so the castor beam, pin, hangers, bushes and stops are uncosted.
+• Item 27 says 400 mm, but BOM B-0 says 300 mm.
+• The fixed pad should delete B2-PADACT (EUR 59.99), B2-TOGGLE (EUR 12) and the B1-PADLS lock use, about EUR 80 in all.
+• The ballast (item 46) has no reference. The BOM has BT-01 (jerricans + sand) and B-6, and neither matches the 5 kg plate.
+• Wrong references: item 17 should be G12, not FAB-B2; items 38-39 should be B-3.
+• Missing: G16, HTR-L8 and the front camera line.
+
+PART E. Minor findings
+• Legacy CAD clashes:
+  - UHMW guard 3 mm into the drive tyres (92.5 cm3 per side);
+  - encoder box into the guard and hub;
+  - keeper motor (item 36) through the left rail and upright;
+  - sensor post D40 through the lidar (86 cm3);
+  - pad arm inside the comb pivot block, so the "self-aligning" comb cannot yaw or roll as drawn.
+• Rocker housing:
+  - A single 38 mm housing carries 5.1 kN per bush on a kerb strike (7.3 kN at 287 mm). Bush SF is 1.88 at 200 mm; with bushes >= 60 mm apart it is 2.97.
+  - Hanger plate SF is 1.63 (our S12 lever) or 2.9 (review lever). Please state your lever.
+  - Until a stop touches, the nose sits on one point. Static lateral margin when empty drops from 338 to 186 mm.
+• Wording:
+  - the "304 mm across" swivel room is 295 mm at the bumper's lower edge;
+  - the sheet 14 loom table cuts off the L9 route text.
+
+PART F. Requests
+1. Send simB2hx.py (or its diff) and the exact lane world you used.
+2. Re-run G1 and G3 at the updated mass (95-97 kg), and P1 through the 60 mm pothole with the rocker free and locked.
+3. Choose the bumper-forward or castors-back fix together with the castor size, and re-draw.
+4. Re-draw the lift: lower the base pin, add the hard stop and limit switch, give the actuator with its real L, and keep the top gap >= 25 mm.
+5. Draw the S12 sections and the 200 mm block pitch.
+6. Supply a B2-F wiring table: e-stop to contactors and EDM, lift driver and interlock, main fuse at battery +, charge fuse, re-routed L2/L3/L4/L7.
+7. Reconcile sheet 13 with the BOM.
+8. Answer the earlier open points: keeper (item 36) deletion; front camera BOM line.
+
+Our full reports:
+• COLDEYE_improved_drawings_2026-11-13.pdf
+• TEST_improved_version_2026-11-13.pdf
+• SITL_improved_version_2026-11-13.pdf

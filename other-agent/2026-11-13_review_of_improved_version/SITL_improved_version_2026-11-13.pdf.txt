@@ -1,0 +1,166 @@
+[text of SITL_improved_version_2026-11-13.pdf, taken out of the PDF for the public repository; pictures and layout are not kept]
+
+             BinRobo improved version - ArduPilot SITL lane suite
+                        Like-for-like re-run of the B2-F 60-run suite, 2026-11-13
+
+
+
+
+Result
+Improved version: 53 / 60 PASS. B2-F baseline: 52 / 60 PASS. Net change +1, from five flipped runs
+(3 gained, 2 lost). No scenario changed its failure mechanism. Every flip happens in a run that sits on a known
+threshold race in B2-F. None of them is evidence that the improved hardware fixes or causes anything.
+The improved version is B2-F plus a fixed pad, 350 mm lift travel on a mast 60 mm taller, and the nose castors on a
+rocker beam. Footprint and bumper are unchanged. Of these changes, the kinematic SITL can represent only the
+longer lift and set-down times and the extra mass. See Section 5.
+Scoring used the frozen CRITERIA_B2F_SITL.md (sha256 586b61b8...efdefd, unchanged) with the same
+scorer logic as B2-F. Queue: 20 scenarios x seeds 7, 11 and 23. Binary: ArduPilot Rover 4.6.2 SITL
+(sitl/bin/ardurover_aarch64).
+
+
+1. Code audit: scripts_imp vs scripts (like-for-like check)
+The md5s of scripts_imp/*.py and run_chunk_imp.sh match IMP_CODE.md5. The B2-F scripts/ still matches
+FROZEN_CODE_B2F.md5, with the runner as its D1 entry.
+
+file                                   change vs B2-F                         class
+b2f_scen.py                            none (identical)                       -
+b2f_ana.py, b2f_score.py               default output dir only (imp_lane)     path
+b2f_runner.py                          default output dir; checkpoint dir     path
+                                       ckpt -> ckpt_imp
+b2f_world.py                           mass 92.3 -> 95.74 kg                  parameter
+b2f_companion.py                       T_LIFT 33 -> 46.2 s,                   parameter
+                                       T_SETDOWN 26 -> 36.4 s (x
+                                       350/250 = 1.4)
+b2f_companion.py                       DI-2: recover the bin name when a      resume infrastructure
+                                       chunk pause lands in the withdraw
+                                       phase
+run_chunk_imp.sh                       flock single-runner lock (DI-1); imp   infrastructure
+                                       output dir
+
+
+Findings:
+   • None of the known B2-F bugs was touched. The s3a 140 L home offset, the s1b/s3b lidar line-up and
+     the s4b lateral sign are all unchanged. The comparison is like-for-like.
+   • Mass is 95.74 kg, slightly above the briefed “about 94-95 kg”. The value comes from
+     revG/sim/cg/h2/mass_imp_nosecut.json (96.94 kg improved minus the 1.2 kg nose cut). In this model
+     mass affects only the energy and traction terms. It changes the per-trip energy by roughly 1 Wh and does not
+     affect any pass/fail result.
+   • The lift-time scaling is a conservative upper bound. The whole B2-F lift and set-down time is scaled
+     by 1.4, as if all of it were actuator stroke. A fixed pad would in fact remove some toggle time.
+
+
+                                                        1
+  • The castor model is NOT changed. The world keeps the 5 % turning-scrub castor term. A rocker
+    beam has no representation in a flat, kinematic, rigid-body world, so the “castor model” change in the brief
+    amounts to no code change here. The fixed pad is not modelled either: the companion still sends the pad
+    servo command, and its time is folded into the scaled lift time.
+  • DI-2 is a code change, but a behaviour-neutral one. In an uninterrupted run, the withdraw phase
+    already holds the bin name in a local variable. The fallback only runs when a run is restored from a checkpoint
+    inside that phase, where B2-F would otherwise throw a KeyError. It is not one of the B2-F performance bugs.
+    The seed-7 runs up to s3a (finished 17:41 UTC) predate the edit (17:44 UTC). That makes no difference unless
+    a resume hit that phase.
+
+
+2. Runs and resume
+The previous worker crashed after 59/60 runs had produced a result.json. The open run was s3b seed 23, with a
+checkpoint at sim ~9 470 s. I resumed it with run_chunk_imp.sh queues/scored_imp.txt 78. One foreground
+chunk (84 s wall) finished it: pass, plan completed, sim 10 224 s. A second call printed QUEUE left 0 / 60, and
+ckpt_imp/ is now empty. No finished run was redone.
+The previous worker had also set aside two voided partial sets: runs_void1 (9 runs) and runs_void2_mass92 (17
+runs, apparently made before the mass edit). These are not scored and were left untouched. The lift-time scaling
+was confirmed present in the scored seed-7 runs: the events log “lift . . . (46 s)” and “set-down (36 s)”.
+
+
+3. Per-scenario comparison (PASS out of 3 seeds)
+
+                scenario                        B2-F   improved       change
+                s1a one-bin drop                3      3              -
+                s1b one-bin pickup              1      3              +2 (s11, s23 now pass)
+                s3a three-bin drop              0      0              - (same hedge clip)
+                s3b three-bin pickup            1      1              0 (s23 now passes, s11 now fails)
+                s4a RTK float                   3      3              -
+                s4b RTK loss 20 m               2      2              - (s23 same sign-error fail)
+                s4c RTK loss 70 m               3      2              -1 (s11 fence-hold race)
+                s5a, s5b actors                 6      6              -
+                s6a, s6b companion freeze       6      6              -
+                s7 e-stop                       3      3              -
+                s8 energy guard                 3      3              -
+                s9, s10a, s10b pickup alerts    9      9              -
+                s11a, s11b no-go                6      6              -
+                s12a, s12b geofence             6      6              -
+                total                           52     53             +1
+
+
+
+4. Why each change happened
+s1b seeds 11 and 23 (FAIL -> PASS), s3b seed 23 (FAIL -> PASS), s3b seed 11 (PASS -> FAIL).
+These four runs differ only in the C8 pre-grab gate (lateral <= 0.05 m, yaw <= 3 deg), which comes from the known
+lidar line-up weakness. Across the whole suite, the gate’s lateral error sits right on the threshold in both versions:
+
+                                gate attempts    misses     median lateral     p90 lateral   max
+                   B2-F         24               9          0.028 m            0.077 m       0.082 m
+                   improved     25               7          0.024 m            0.057 m       0.079 m
+
+
+Any change to the timeline moves the robot through the same seeded RTK and odometry noise at different moments,
+and that is enough to flip a 0.05 m gate. Examples:
+
+
+                                                            2
+  • s1b seed 11: B2-F -0.061 / -0.079 m (MISS, MISS); improved -0.007 m (OK).
+  • s3b seed 11: B2-F needed a retry on brown (-0.060 MISS, then OK); improved missed black twice (-0.068,
+    -0.057).
+The longer lift adds about 13 s per lift and 10 s per set-down, so it is exactly such a timeline change. The line-up
+algorithm and lidar model are identical. Read these flips as noise around a threshold, not as an improvement. The
+miss rate drops from 9/24 to 7/25, which is within seed scatter.
+s4c seed 11 (PASS -> FAIL). The expected alert was “no fix hold”. The improved run instead ended “firmware
+fence hold” at t = 244.2 s. The truth robot was parked in HOLD (stationary from about 192 s, truth boundary not
+breached, hedge 0.267 m). With no GNSS, the EKF fell back to DCM, and its position estimate drifted at about
+0.27 m/s while the robot stood still. In the improved run the estimate reached the firmware fence polygon at 244.2 s.
+That is 3 s before the companion’s 60 s no-fix timer would have raised the expected alert; in B2-F that timer won
+at 247.4 s. The improved run stopped 0.08 m earlier along the lane, and its unaided estimate drifted on a slightly
+different heading: about 0.5 m further in x by t = 240 s. That small offset is enough to cross the polygon first.
+This is the same race in both versions, and it is a B2-F estimator and fence-logic property. It is not caused by the
+hardware change.
+s3a (0/3 in both). Same failure: the firmware fence hold after the hedge clip at the 140 L home offset. It now
+happens about 12 s later (one longer lift), at 0.020-0.026 m clearance versus 0.012-0.071 m in B2-F.
+s4b seed 23 (fail in both). Same lateral sign error, with hedge contact at 0.000 m in both.
+Margins that moved but did not flip anything:
+  • Energy per trip: mean 45.6 -> 46.7 Wh, max 46.7 -> 48.1 Wh. The 50 Wh C6 limit still holds, but the margin
+    shrinks from about 3.3 to about 1.9 Wh. The causes are the +3.7 % mass and the longer 50 W lift-actuator
+    dwell.
+  • Latest dock in a full three-bin evening: 20:50 (s3b seed 23) versus 20:47 in B2-F. The 21:00 C3 limit holds
+    with 10 min margin. The three lifts and three set-downs add about 70 s in total.
+  • Hedge clearance in passing runs: minimum 0.192 m versus 0.196 m (limit 0.124 m).
+  • C2 set-down error: maximum 0.074 m versus 0.054 m (limit 0.15 m).
+
+
+5. Caveats
+  • The SITL is kinematic and cannot see the castor/bumper clash. The world is a flat rigid-body
+    skid-steer with a 5 % scrub term. It has no castor geometry, no rocker articulation, no suspension and no 3D
+    contact. Any clash between the rocker-mounted castors and the unchanged bumper, and any benefit of the
+    rocker over kerbs or bumps, is invisible here. That has to be settled in MuJoCo or CAD.
+  • The taller mast and longer travel are modelled only as time. Stability with a raised bin, mast deflection and
+    the height of the lidar self-occlusion sector are unchanged from B2-F.
+  • The fixed pad is not modelled. The pad servo is still commanded, and its time is folded into the 1.4x scaled
+    lift time, which is conservative.
+  • The mass, 95.74 kg, is about 0.7 kg above the briefed 94-95 kg. The effect is on energy only.
+  • With 3 seeds per scenario, the +1 difference is well inside run-to-run scatter. The honest conclusion is that
+    the improved version is neutral in SITL: no new failure mechanism, and slightly thinner energy and time
+    margins.
+  • C8 hands off to the MuJoCo front-dock gate (90/90). The grab itself is not re-checked here for the new lift
+    geometry.
+
+
+Files
+  • Runs: /workspace/work/out/imp_lane/sitl/runs/ (60 runs; result.json, trace.json, SITL logs)
+  • Score: /workspace/work/out/imp_lane/sitl/score.json, score.md
+  • Baseline: /workspace/work/out/b2f_lane/sitl/score.json
+  • Progress log: P/sitl/b2f/PROGRESS_IMP.md
+  • Code: P/sitl/b2f/scripts_imp/ (md5 in IMP_CODE.md5), run_chunk_imp.sh, queues/scored_imp.txt
+
+
+
+
+                                                         3
+

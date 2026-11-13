@@ -1,0 +1,271 @@
+[text of TEST_improved_version_2026-11-13.pdf, taken out of the PDF for the public repository; pictures and layout are not kept]
+
+BinRobo improved version (B2-F + fixed pad, 350 mm lift, castor rocker) -
+                  independent mechanical test suite
+
+
+                                                     2026-11-13
+
+
+1. Summary
+Independent cold-eye rebuild and test of the “improved version”: B2-F plus (a) a fixed pad, (b) 350 mm lift travel on a
+mast 60 mm taller, (c) nose castors on a centre-pivot rocker beam, pin at 200 mm. The other agent’s simulator was
+not available, so the version was rebuilt from their stated changes (h2/make_simB2hx.py -> h2/simB2hx.py, every
+edit an auditable string replacement on the unchanged B2-F sim). Same frozen criteria, seeds and scorer as B2-F
+(h2/summarize_h2.py). No failure is hidden.
+Headline results (pin 200 mm, sim mass 96.94 kg unless stated):
+   • Frozen gate: 7 of 9 (B2-F re-scored from its own files: 8 of 9). FAIL G1 (88/90, 2 false holds) and FAIL G3
+     (step “both” stalls, as in B2-F). The other agent claims 9 of 9 at pin 200 mm.
+   • G1 at pin 287 mm: 87/90, 2 false holds -> FAIL (their claim 86/90, 2 false holds -> FAIL: same verdict).
+   • G1 is mass-sensitive: ESE240CL 30/30 at 92.32 kg (their mass), 29/30 (1 false hold) at 95.74 kg, 28/30 (2
+     false holds) at 96.94 kg. The drawn version weighs about 94-95 kg (cold-eye review), so the 90/90 claim only
+     holds at the outdated 92.32 kg.
+   • Lane: P1 FAILS with the step ramped and with the step sharp - stall in the 60 mm pothole at s 550.6
+     m. B2-F P1 passes. Cause isolated: the free rocker. Same start, rocker locked -> PASS; rocker free at 92.32 kg
+     or at +/-3 deg stops -> FAIL. The other agent claims P1, P2a, P2c and P7 pass.
+   • Sharp 40 mm step: passed going DOWN loaded (lift at the 3 kN cap); going UP (P5d, 3 kN) stalls at s 290.1,
+     as in B2-F.
+   • S12 (load envelope incl. B2-F pothole/kerb runs): mast foot SF 0.68; side rail edge 0.39; rail block SF
+     2.29 at 200 mm pitch and 1.37 at the drawn 120 mm; rail screws 1.10 / 0.66. Rocker pin bush SF 1.88 (pin
+     200 mm) / 1.31 (287 mm); hanger plate 1.63.
+   • Castor vs bumper (logged in the sim, 141 runs): wheel overlaps the bumper by 41.6 mm in every docking
+     run, and the 45 deg bumper corners by 19.3 mm. This confirms review finding B-1 (45.4 mm by CAD).
+   • Perturbations: 23 of 24 pass; mass x1.1 grab ESE240SL 4/5 with 1 false hold (B2-F 5/5).
+   • Lane fit (plan geometry): PASS, margins as B2-F (pivot loaded 2.41 m vs 2.39 m; narrowing pivot margin 0.171
+     m vs 0.181 m).
+
+
+2. Model and assumptions (checked)
+
+item                                    value in the rebuild                     comment
+Lift range                              X_LIFT_RANGE = 0.35 m                   as stated
+Mast / rails                            +60 mm (mast-face contact geom;         as stated; actuator ASSUMED to
+                                        uprights and HGR15 rails mass)          cover 350 mm at unchanged mass and
+                                                                                3 kN cap. Review B-2: no 4 kN FDI
+                                                                                unit fits, so the sim is optimistic here
+Fixed pad                               pad_ret = 0, lift_extra1 0.15,          identical to the other agent’s
+                                        B2F_PAD_IN -0.005                       command lines
+Rocker                                  x-pin at 0.200 m (0.287 m variant),     drawings say “about +/-25 mm”
+                                        soft stops +/-6 deg, damping 2 N m      (about +/-5 deg); review measured
+                                        s/rad, friction 0.5 N m, beam 4.83 kg   +/-4.8 deg. Max roll seen 6.45 deg
+
+
+                                                           1
+item                                     value in the rebuild                       comment
+Mass                                    96.94 kg (mass_imp.json, upper             review estimate 94-95 kg. 96.94 kg
+                                        bound); 95.74 kg (nose cut-back,           double-counts some removed parts
+                                        mass_imp_nosecut.json); 92.32 kg           (toggle actuator, drop plates), so it is
+                                        (X_IMP_MASS=0, the other agent’s           the conservative bound
+                                        mass)
+
+
+
+3. Frozen gate G1-G9
+
+                                                                improved, ours (pin 200,      improved, their claim (pin
+gate                           B2-F (re-scored)                 96.94 kg)                     200, 92.32 kg)
+G1 pick-ups 3 bins x 30        PASS 90/90                       FAIL 88/90, FH 2              PASS 90/90
+                                                                (ESE240CL seeds 14, 17)
+G2 climbs (6)                  PASS                             PASS (6/6)                    PASS
+G3 40 mm step one / both       FAIL (both stalls 1.34 m)        FAIL (one PASS, both          PASS (both reached 4.71
+                                                                stalls 1.34 m; wheel torque   m, lift 3000 N)
+                                                                at 60 N m cap)
+G4 e-stop fwd/rev              PASS                             PASS (stop 0.18 / 0.08 m)     PASS
+G5 tow stability               PASS (2.39 m)                    PASS (2.41 m)                 PASS
+G6 release 18 cases            PASS 18/18                       PASS 18/18                    PASS
+G7 dt halving                  PASS                             PASS                          PASS
+G8 statics + hand calc         PASS                             PASS (8/8 poses, tip >=       PASS (36.5 deg)
+                                                                20 deg)
+G9 mass <= 120 kg              PASS 92.32                       PASS 96.94                    PASS 92.32 (not updated)
+Total                          8/9                              7/9                           9/9
+
+
+G1 extras (pin 200): ESE240SL250 29/30 (0 false holds), ESE140CL 30/30.
+G3 discrepancy. Our step “both” stalls at 1.34 m at all three masses (92.32, 95.74 and 96.94 kg), exactly as B2-F
+does. Their run reaches 4.71 m with the lift at 3000 N, and their “one” run shows 2.9 deg roll against our 0.26 deg. So
+their rocker or step model differs from the stated changes. This cannot be resolved without their simB2hx.py.
+
+3.1 G1 by pin height and mass
+
+       case                           WEB140      ESE240SL       ESE240CL      pooled   false holds   G1
+       B2-F                           30/30       30/30          30/30         90/90    0             PASS
+       pin 200, 96.94 kg              30/30       30/30          28/30         88/90    2             FAIL
+       pin 287, 96.94 kg              30/30       29/30          28/30         87/90    2             FAIL
+       pin 200, 95.74 kg (cut-back)   -           -              29/30         -        1             (FAIL on FH)
+       pin 200, 92.32 kg              -           -              30/30         -        0             -
+       pin 287, 92.32 kg              -           -              29/30         -        1             -
+       their pin 200 (92.32 kg)       30/30       30/30          30/30         90/90    0             PASS
+       their pin 287 (92.32 kg)       30/30       30/30          26/30         86/90    2             FAIL
+
+
+Not run (time): pin 0.150 m and 0.250 m G1 sweeps (only 1 seed of WEB140 at 0.150 m was run), and the roll-stop
++/-3 deg and +/-10 deg G1 runs.
+
+3.2 Mass sensitivity G3 (pin 200)
+
+                                          mass       step one      step both
+                                          92.32 kg   PASS          FAIL 1.34 m
+
+
+                                                            2
+                                           mass        step one      step both
+                                           95.74 kg    PASS          FAIL 1.34 m
+                                           96.94 kg    PASS          FAIL 1.34 m
+
+
+
+4. Perturbations (pin 200, 6 lines each, against B2-F)
+
+                                                                                                               rel
+                 grab              climb                                                      rel ESE240CL     ESE240SL250
+perturbation     ESE240SL x5       0.22/0.09          step one             e-stop fwd         up12 full        dn12 full
+mass x1.1        4/5, FH 1         PASS               PASS                 PASS               PASS             PASS
+                 (B2-F 5/5)
+mass x0.9        5/5               PASS               PASS                 PASS               PASS             PASS
+mu x0.85         5/5               PASS               PASS                 PASS               PASS             PASS
+crr 0.09         5/5               PASS               PASS                 PASS               PASS             PASS
+
+
+23 of 24 pass; B2-F 24 of 24. The one failure is another false hold, consistent with the mass trend in 3.1.
+
+
+5. Lane physics (lane world, 110 kg ESE240SL, pin 200, 96.94 kg)
+
+run                            B2-F                               improved, ours                 their claim
+P1 step ramped 1:4             PASS                               FAIL: stall in the 60 mm       PASS
+                                                                  pothole, s 550.6
+P1 step SHARP                  not run                            FAIL: sharp step down          not run
+                                                                  passed (lift 3000 N cap,
+                                                                  clearance 45 mm), then the
+                                                                  same pothole stall at s
+                                                                  550.6
+P2a / P2c (start at pad A      FAIL (pothole, s 550)              not runnable: P1 never         PASS
+after P1)                                                         reaches pad A
+P7 night                       FAIL (s 550.7)                     not run (same pothole on       PASS
+                                                                  the same path)
+P5a sharp 40 mm step           PASS                               PASS (lift 2925 N)             -
+DOWN, 3 kN
+P5d sharp 40 mm step UP,       FAIL (stall s 290.1)               FAIL (stall s 290.1, lift      -
+3 kN                                                              3000 N)
+P5h pothole, from P1 at s      PASS                               FAIL (stall s 550.5)           -
+542
+
+
+Pothole diagnosis (P5h, same start state):
+
+                                      variant                                      result
+                                      96.94 kg, rocker free +/-6 deg               FAIL
+                                      92.32 kg, rocker free +/-6 deg               FAIL
+                                      96.94 kg, roll stops +/-3 deg                FAIL
+                                      96.94 kg, rocker locked (+/-0.05 deg)        PASS
+
+
+In this model the free rocker, not the mass, is what loses the pothole. With the rocker free, the chassis rolls onto the
+castor beam when the left drive wheel drops 60 mm, and the drive wheels lose the load they need for traction. Possible
+fixes are a stiff roll spring or a much tighter stop (well under +/-3 deg), which needs a check against the kerb and twist
+cases the rocker was added for, or filling the pothole on site (the lane runs already carry the filled variant).
+
+
+                                                              3
+6. S12 structure (h2/s12_imp.py -> h2/rep/s12_table_imp.md)
+The improved-version runs alone contain no pothole, kerb or trench runs. The governing case is therefore the envelope:
+improved-version runs plus the B2-F edge and comb_all loads (comb 9634 N, wheel edge 7306 N). The sections are
+B2-F’s, because the S12 fixes are not drawn.
+
+                                                                                          improved, pitch 120 mm
+element                       B2-F S12                         improved, pitch 200 mm     (as drawn)
+mast upright foot 50x50x2     0.68                             0.68                       0.68
+(comb_all)
+side rail 50x50x2, carry /    1.19 / 0.39                      1.10 / 0.39                1.10 / 0.39
+edge
+HGH15 block (comb_all)        2.29                             2.29                       1.37
+HGR15 rail screws M4          1.10                             1.10                       0.66
+(comb_all)
+rocker pin bush D16x10, 38    -                                1.88 / 1.31                same
+mm housing, pin 200 / 287
+mm
+rocker pin bush, bushes 60    -                                2.97 / 2.07                same
+mm apart, pin 200 / 287
+mm
+rocker pin M16 8.8            -                                5.0 / 3.5                  same
+bending, pin 200 / 287 mm
+rocker hanger plate 8x90      -                                1.63 / 2.35                same
+S235, pin 200 / 287 mm
+rocker beam 50x40x3 (3 g      -                                6.5                        same
+vertical)
+
+
+Using only the improved-version runs, the mast foot would read SF 2.72. That number is not valid, because those runs
+never load the edge cases.
+Rocker assumptions: kerb strike = full drive torque cap into both castors (970 N), couple = 970 N x pin height (194
+N m at 200 mm, as in the review); bronze static allowable 60 MPa; pin lever 10 mm; hanger lever from the nose
+cross-member. All are marked ASSUMED in the table.
+
+
+7. Castor and bay clearance (logged in the sim)
+The improved CAD parts around the castors were added as non-colliding check geoms. mj_geomDistance was taken
+from each castor wheel to each part every 50 steps, in all 141 improved-version runs (gate, perturbations, lane).
+
+part                                     min distance (mm)                       phase
+front bumper                             -41.6 (overlap)                         camera-guided reversing approach
+bumper 45 deg corners                    -19.3 (overlap)                         pivot in place before docking
+bay floor (cut back)                     +7.9                                    40 mm sharp step
+bay nose floor                           +9.5                                    40 mm sharp step / approach
+ballast plate                            +16.7                                   40 mm sharp step
+bay side walls                           +32.7                                   40 mm sharp step / transit
+pivot hangers / housing                  +96.5 / +111                            approach
+raised nose cross-member                 +127                                    40 mm sharp step
+
+
+Not checked: the castor forks and the rocker’s own geometry against the frame; the castor wheel against the bin.
+
+
+
+
+                                                           4
+8. Lane fit (plan geometry; work/h2lane/IMP_b2r.json)
+PASS. Sweep minimum 0.325 m (same as B2-F); pivot diameter empty 2.28 m, loaded 2.41 m; narrowing pivot margin
+0.171 m (B2-F 0.181 m); sequence minimum margin 0.175 m, all sequences OK. The plan outline is B2-F’s as drawn.
+The bumper fix the review asks for (+60-65 mm nose) is not included and would reduce the margins.
+
+
+9. Discrepancies with the other agent’s claims
+
+claim                                 ours                                    likely reason
+pin 200: 9/9, G1 90/90                7/9: G1 88/90 FH2, G3 FAIL              G1: mass (their 92.32 kg reproduces
+                                                                              30/30). G3: model difference in their
+                                                                              rocker or step
+pin 287: 8/9, G1 86/90 with 2 false   G1 87/90 with 2 false holds -> FAIL     agree on the verdict
+holds on ESE240CL
+lane P1, P2a, P2c, P7 pass (step      P1 FAIL at the pothole; P2a/P2c/P7      free rocker in our model; B2-F’s own
+ramped)                               not reachable                           P2a, P2c and P7 also stall at the
+                                                                              pothole
+mass “about 92 kg”                    95.7-96.9 kg in the sim; review 94-95   mass table not updated (review M-6)
+                                      kg
+
+
+
+10. Files
+  • Rebuild: revG/sim/cg/h2/make_simB2hx.py, simB2hx.py, mass_imp.json, mass_imp_nosecut.json
+  • Queues: h2/q_imp.txt (+ .done/.log/.cuts), q_imp_sanity.txt, q_imp_mass.txt; runner h2/qchunk_imp.py;
+    progress h2/PROGRESS_IMP.md
+  • Results: h2/res_imp/ (gate_IMP_imp200.json, IMP.json, IMP0_.json, IMP_swivel.jsonl, s12_structure_imp.json)
+  • S12: h2/s12_imp.py, h2/rep/s12_table_imp.md
+  • Lane: work/b2f_lanephys/imp_lane.sh, imp_lane_q.sh, runs_imp_sharp/, runs_imp_ramp/, runs_imp0_ramp/,
+    runs_impS0_ramp/, runs_impS3_ramp/ (B2-F runs/ untouched; lanerun.py env switches LANE_SIM /
+    LANE_RUNS / LANE_STEP, default unchanged)
+  • Lane fit: work/h2lane/IMP_b2r.json, work/h2lane/res/lanefit_IMP_b2r.json
+
+
+11. Not done
+  • Pin 0.150 m and 0.250 m G1 sweeps; roll-stop +/-3 deg and +/-10 deg G1; nose cut-back G1 for WEB140 and
+    ESE240SL (only ESE240CL was run).
+  • The full gate at pin 287 mm (only G1 was run there).
+  • P2a, P2c and P7 lane runs (P1 does not reach pad A).
+  • Sharp-step lane runs at 4 kN (P5e).
+
+
+
+
+                                                        5
+

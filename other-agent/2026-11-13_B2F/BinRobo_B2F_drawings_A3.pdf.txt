@@ -1,0 +1,85 @@
+[text of BinRobo_B2F_drawings_A3.pdf, taken out of the PDF for the public repository; pictures and layout are not kept]
+
+B2-F without bin
+BinRobo B2-F: B2 turned round to dock on the bin FRONT wall (EN 840 frontal comb receiver, opposite handle, hinge and wheels). Isometric views, orthographic projection.
+
+
+
+
+  Front-right iso (labelled)                                                                                                                       Rear-left iso (labelled)
+                                                                                                                                                                                    Key dimensions (mm, from the CAD)
+                                                                                                                                                                                    Overall length (tail bumper to front bumper)                     1503
+                                                                                                                                                                                    Overall width (over chain cases)                                 930
+                                                                                                                                                                                    Height to beacon top / mast top tie                              1450 / 1360
+                                                                                                                                                                                    Comb (nib top) height range, 250 stroke                          855 - 1105
+                                                                                                                                                                                    Pad centre below nib top                                         580
+                                                                                                                                                                                    Track / drive axle to castor                                     800 / 950
+                                                                                                                                                                                    Clear width between UHMW guards                                  716
+                                                                                                                                                                                    Drive wheels / castors                                           330 / 200 dia
+                                                                                                                                                                                    Mass (gate model, incl. 5 kg ballast)                            92.3 kg
+                                                                                                                                                                                    Notes
+                                                                                                                                                                                    Frame drawn as GATED: 50x50x2 RHS (S235) throughout.
+       Front-left iso                                                Rear-right iso                                                     Top-down iso (from front-right)             S12 section upgrades recommended but PENDING, not drawn:
+                                                                                                                                                                                     rails 50x50x4 (edge case 80x80x5), mast 80x40x4 at foot,
+                                                                                                                                                                                     through-plates at feet, backing flat for HGR15 screws,
+                                                                                                                                                                                     D20 comb pivot pin.
+                                                                                                                                                                                    Lift actuator QC FDI 4 kN in the BOM; the sim caps it at 3 kN.
+                                                                                                                                                                                    B2 handle keeper is kept but has no bar to hold on the front
+                                                                                                                                                                                    wall (inactive in B2-F). Front bay cover hidden in renders.
+
+                                 nib top
+                               855-1105
+
+                                                                     1450
+                                                                                                           716 clear
+                                                                                                           between
+                                                                                                           guards                800 track
+                                                                                                                                                                              930     BinRobo B2-F                                                                            Sheet 1 of 2
+
+                                                                                                                                                                                      B2-F without bin
+                                                                                                                                                                                      Date 2026-11-12                                        Units mm Scale NTS (iso views)
+
+                                             950 axle-castor                                                                                                                          CONCEPT, NOT FOR MANUFACTURE                           Source: work/revB2F/cad_B2F.py
+                                           1503 overall
+                                                                                                                                                                                      Docks on the bin FRONT wall (EN 840)                   Gate: docs/reviews/GATE_H2_vs_B2F.md
+        Side elevation from the right (dimensions from CAD)                                          Plan (front to the right)
+B2-F carrying 240 L bin
+ESE 240 SL, 110 kg, corrected hull (front taper 35 mm). FRONT wall + receiver face the mast; handle, hinge and wheels face out of the U. Pose from the MuJoCo grab (simB2h, B2_DOCK=front).
+
+
+
+
+  Front-right iso (labelled)                                                                                                                     Rear-left iso (labelled)
+                                                                                                                                                                                          Key dimensions (mm, from the CAD)
+                                                                                                                                                                                          Overall length, carrying (bin handle to bumper)                  1552
+                                                                                                                                                                                          Overall width (over chain cases)                                 930
+                                                                                                                                                                                          Height to beacon top                                             1450
+                                                                                                                                                                                          Comb (nib top) height range                                      855 - 1105
+                                                                                                                                                                                          Nib top in carry / bin rim (lid) top                             1094 / 1143
+                                                                                                                                                                                          Comb lift after load-on (lift_extra1)                            100
+                                                                                                                                                                                          Bin wheel clearance in carry (sim)                               69
+                                                                                                                                                                                          Bin tilt onto the pad (sim)                                      2.4 deg
+                                                                                                                                                                                          EN 840 receiver width / pad face                                 580 / 300 x 100
+                                                                                                                                                                                          Notes
+                                                                                                                                                                                          Frame drawn as GATED: 50x50x2 RHS (S235) throughout.
+       Front-left iso                                                   Rear-right iso                                                Top-down iso (from front-right)                     S12 section upgrades recommended but PENDING, not drawn:
+                                                                                                                                                                                           rails 50x50x4 (edge case 80x80x5), mast 80x40x4 at foot,
+                                                                                                                                                                                           through-plates at feet, backing flat for HGR15 screws,
+                                                                                                                                                                                           D20 comb pivot pin.
+                                                                                                                                                                                          Lift actuator QC FDI 4 kN in the BOM; the sim caps it at 3 kN.
+                                                                                                                                                                                          B2 handle keeper is kept but has no bar to hold on the front
+                                                                                                                                                                                          wall (inactive in B2-F). Front bay cover hidden in renders.
+
+                                 nib top
+                               855-1105
+
+                                                                         1450                                                                                                                 BinRobo B2-F                                                                          Sheet 2 of 2
+
+                                                                                                                                                                                              B2-F carrying 240 L bin
+                                                                                                                                                                                              Date 2026-11-12                                      Units mm Scale NTS (iso views)
+
+                                             950 axle-castor                                                                                                                                  CONCEPT, NOT FOR MANUFACTURE                         Source: work/revB2F/cad_B2F.py
+                                           1552 overall
+                                                                                                                                                                                              Docks on the bin FRONT wall (EN 840)                 Gate: docs/reviews/GATE_H2_vs_B2F.md
+        Side elevation from the right, carrying (dimensions from CAD)                           Close-up: comb in the front receiver, pad on the front wall
+

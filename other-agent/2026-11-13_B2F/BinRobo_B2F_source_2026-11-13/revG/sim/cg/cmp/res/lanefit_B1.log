@@ -1,0 +1,46 @@
+B1 pivot D empty/loaded 2.36 2.42 sweep min 0.179 {'down loaded': np.float64(0.325), 'down empty': np.float64(0.325), 'up loaded': np.float64(0.179), 'up empty': np.float64(0.179)}
+ lane pivot fraction empty/loaded 1.0 1.0
+   dock empty, 0 bins home (2.1, (6.4, 2.0))
+   yard empty, 0 bins home (np.float64(4.821), (19.5, 0.0))
+   dock loaded, 0 bins home (2.071, (6.4, 2.0))
+   yard loaded, 0 bins home (np.float64(4.792), (19.5, 0.0))
+   dock empty, 1 bins home (2.1, (6.4, 2.0))
+   yard empty, 1 bins home (np.float64(4.821), (19.5, 0.0))
+   dock loaded, 1 bins home (2.071, (6.4, 2.0))
+   yard loaded, 1 bins home (np.float64(4.792), (19.5, 0.0))
+   dock empty, 2 bins home (2.1, (6.4, 2.0))
+   yard empty, 2 bins home (np.float64(4.821), (19.5, 0.0))
+   dock loaded, 2 bins home (2.071, (6.4, 2.0))
+   yard loaded, 2 bins home (np.float64(4.792), (19.5, 0.0))
+   dock empty, 3 bins home (2.1, (6.4, 2.0))
+   yard empty, 3 bins home (np.float64(4.821), (19.5, 0.0))
+   dock loaded, 3 bins home (2.071, (6.4, 2.0))
+   yard loaded, 3 bins home (np.float64(4.792), (19.5, 0.0))
+   mouth empty, 0 bins at road (handles to lane) (1.998, (622.3, 1.2))
+   mouth loaded, 0 bins at road (handles to lane) (np.float64(1.89), (622.5, 1.4))
+   mouth empty, 0 bins at road (handles to road) (1.998, (622.3, 1.2))
+   mouth loaded, 0 bins at road (handles to road) (np.float64(1.89), (622.5, 1.4))
+   mouth empty, 1 bins at road (handles to lane) (0.908, (624.5, 2.4))
+   mouth loaded, 1 bins at road (handles to lane) (0.879, (624.5, 2.4))
+   mouth empty, 1 bins at road (handles to road) (0.908, (624.5, 2.4))
+   mouth loaded, 1 bins at road (handles to road) (0.879, (624.5, 2.4))
+   mouth empty, 2 bins at road (handles to lane) (0.908, (624.5, 2.4))
+   mouth loaded, 2 bins at road (handles to lane) (0.879, (624.5, 2.4))
+   mouth empty, 2 bins at road (handles to road) (0.908, (624.5, 2.4))
+   mouth loaded, 2 bins at road (handles to road) (0.879, (624.5, 2.4))
+   mouth empty, 3 bins at road (handles to lane) (0.908, (624.5, 2.4))
+   mouth loaded, 3 bins at road (handles to lane) (0.879, (624.5, 2.4))
+   mouth empty, 3 bins at road (handles to road) (0.908, (624.5, 2.4))
+   mouth loaded, 3 bins at road (handles to road) (0.879, (624.5, 2.4))
+   drop n1 handle-to-lane OK [('A loaded pivot 180 near the pad, then straight to it (margin, pivot ds,lat)', np.float64(0.258), (-5.0, -0.6)), ('A withdraw 0.9 m up-lane', np.float64(0.202))]
+   drop n1 handle-to-road OK [('A arrives straight, no pivot', None), ('A withdraw 0.9 m toward the road', 1.614), ('A empty pivot beyond the placed bin (margin, extra run m)', 0.104, 0.8), ('A pass the placed bin going home', 0.175)]
+   drop n2 handle-to-lane OK [('A loaded pivot 180 near the pad, then straight to it (margin, pivot ds,lat)', np.float64(0.258), (-5.0, -0.6)), ('A withdraw 0.9 m up-lane', np.float64(0.202)), ('M loaded pivot 180 near the pad, then straight to it (margin, pivot ds,lat)', np.float64(0.736), (-5.0, 0.0)), ('M withdraw 0.9 m up-lane', np.float64(0.737))]
+   drop n2 handle-to-road OK [('A arrives straight, no pivot', None), ('A withdraw 0.9 m toward the road', 1.614), ('A empty pivot beyond the placed bin (margin, extra run m)', 0.104, 0.8), ('A pass the placed bin going home', 0.175), ('M arrives straight, no pivot', None), ('M withdraw 0.9 m toward the road', np.float64(0.746)), ('M empty pivot beyond the placed bin (margin, extra run m)', np.float64(0.047), 0.8), ('M pass the placed bin going home', np.float64(0.774))]
+   drop n3 handle-to-lane OK [('A loaded pivot 180 near the pad, then straight to it (margin, pivot ds,lat)', np.float64(0.258), (-5.0, -0.6)), ('A withdraw 0.9 m up-lane', np.float64(0.202)), ('M loaded pivot 180 near the pad, then straight to it (margin, pivot ds,lat)', np.float64(0.736), (-5.0, 0.0)), ('M withdraw 0.9 m up-lane', np.float64(0.737)), ('F loaded pivot 180 near the pad, then straight to it (margin, pivot ds,lat)', np.float64(0.732), (3.0, 0.0)), ('F withdraw 0.9 m up-lane', np.float64(0.722))]
+   drop n3 handle-to-road OK [('A arrives straight, no pivot', None), ('A withdraw 0.9 m toward the road', 1.614), ('A empty pivot beyond the placed bin (margin, extra run m)', 0.104, 0.8), ('A pass the placed bin going home', 0.175), ('M arrives straight, no pivot', None), ('M withdraw 0.9 m toward the road', np.float64(0.746)), ('M empty pivot beyond the placed bin (margin, extra run m)', np.float64(0.047), 0.8), ('M pass the placed bin going home', np.float64(0.774)), ('F arrives straight, no pivot', None), ('F withdraw 0.9 m toward the road', np.float64(0.764)), ('F empty pivot beyond the placed bin (margin, extra run m)', np.float64(0.085), 1.6), ('F pass the placed bin going home', np.float64(0.799))]
+   pickup n1 handle-to-lane OK [('A empty pivot up-lane, then reverse to the approach start (margin, pivot ds,lat)', np.float64(0.207), (-5.0, -0.6)), ('A run-in 1.5 m onto the bin', np.float64(0.202))]
+   pickup n1 handle-to-road OK [('A pass the bin on the way down', 0.175), ('A run-in 1.5 m onto the bin', 1.126), ('A loaded pivot 180 near the pad (margin, pivot ds,lat)', np.float64(1.89), (0.4, 1.4))]
+   pickup n2 handle-to-lane OK [('M empty pivot up-lane, then reverse to the approach start (margin, pivot ds,lat)', 0.688, (-0.6, -0.2)), ('M run-in 1.5 m onto the bin', np.float64(0.737)), ('A empty pivot up-lane, then reverse to the approach start (margin, pivot ds,lat)', np.float64(0.207), (-5.0, -0.6)), ('A run-in 1.5 m onto the bin', np.float64(0.202))]
+   pickup n2 handle-to-road OK [('M pass the bin on the way down', np.float64(0.774)), ('M run-in 1.5 m onto the bin', 0.434), ('M loaded pivot 180 near the pad (margin, pivot ds,lat)', np.float64(0.759), (1.2, 0.0)), ('A pass the bin on the way down', 0.175), ('A run-in 1.5 m onto the bin', 1.126), ('A loaded pivot 180 near the pad (margin, pivot ds,lat)', np.float64(1.89), (0.4, 1.4))]
+   pickup n3 handle-to-lane OK [('F empty pivot up-lane, then reverse to the approach start (margin, pivot ds,lat)', 0.688, (-0.6, -0.2)), ('F run-in 1.5 m onto the bin', np.float64(0.715)), ('M empty pivot up-lane, then reverse to the approach start (margin, pivot ds,lat)', 0.688, (-0.6, -0.2)), ('M run-in 1.5 m onto the bin', np.float64(0.737)), ('A empty pivot up-lane, then reverse to the approach start (margin, pivot ds,lat)', np.float64(0.207), (-5.0, -0.6)), ('A run-in 1.5 m onto the bin', np.float64(0.202))]
+   pickup n3 handle-to-road OK [('F pass the bin on the way down', np.float64(0.799)), ('F run-in 1.5 m onto the bin', np.float64(0.764)), ('F loaded pivot 180 near the pad (margin, pivot ds,lat)', np.float64(0.762), (-5.0, 0.0)), ('M pass the bin on the way down', np.float64(0.774)), ('M run-in 1.5 m onto the bin', 0.434), ('M loaded pivot 180 near the pad (margin, pivot ds,lat)', np.float64(0.759), (1.2, 0.0)), ('A pass the bin on the way down', 0.175), ('A run-in 1.5 m onto the bin', 1.126), ('A loaded pivot 180 near the pad (margin, pivot ds,lat)', np.float64(1.89), (0.4, 1.4))]

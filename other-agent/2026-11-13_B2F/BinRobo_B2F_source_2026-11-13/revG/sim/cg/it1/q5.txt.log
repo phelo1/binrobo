@@ -1,0 +1,42 @@
+
+=== 07:38:03 START env MC_IDX=3,10,17,20,23,24,25,26 IT1_TAG=_sub python3 it1/runB_it1.py grab WEB140 30 201
+WEB140 3 success success 8.4
+WEB140 10 no_dock no_dock 6.1
+WEB140 17 success success 9.0
+WEB140 20 success success 6.7
+WEB140 23 success success 6.6
+WEB140 24 no_dock no_dock 6.4
+WEB140 25 no_dock no_dock 5.4
+WEB140 26 success success 4.2
+=== END rc=0 61s
+
+=== 07:39:04 START env MC_IDX=10,11,12,19,25,26,29 IT1_TAG=_sub python3 it1/runB_it1.py grab ESE240SL 30 202
+ESE240SL 10 no_dock no_dock 5.7
+ESE240SL 11 safe_miss safe_miss 9.8
+ESE240SL 12 success success 4.6
+ESE240SL 19 success success 9.2
+ESE240SL 25 safe_miss safe_miss 10.8
+ESE240SL 26 no_dock no_dock 5.4
+ESE240SL 29 success success 9.1
+=== END rc=0 63s
+
+=== 07:40:17 START env MC_IDX=3,10,17,20,23,24,25,26 IT1_TAG=_sub python3 it1/runB_it1.py grab WEB140 30 201
+WEB140 3 success success 7.1
+WEB140 10 success success 8.5
+WEB140 17 success success 5.9
+WEB140 20 success success 7.4
+WEB140 23 success success 7.0
+WEB140 24 success success 8.5
+WEB140 25 success success 6.8
+WEB140 26 success success 4.8
+=== END rc=0 64s
+
+=== 07:41:21 START env MC_IDX=10,11,12,19,25,26,29 IT1_TAG=_sub python3 it1/runB_it1.py grab ESE240SL 30 202
+ESE240SL 10 success success 7.6
+ESE240SL 11 success success 6.7
+ESE240SL 12 success success 5.2
+ESE240SL 19 success success 11.1
+ESE240SL 25 safe_miss safe_miss 12.0
+ESE240SL 26 success success 4.4
+ESE240SL 29 success success 6.7
+=== END rc=0 61s

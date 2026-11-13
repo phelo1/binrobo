@@ -1,0 +1,49 @@
+{
+ "name": "R1",
+ "desc": "Empty bin BACKWARDS, hedge 1.5 m behind its handle (tug needs ~2.1 m to dock from that side): swing it 180 deg round its wheels by nudging, dock, grab",
+ "bin_kg": 12.3,
+ "rotated_deg": 176.1,
+ "bin_heading_after": -3.2,
+ "t_nudge_done": 51.4,
+ "dock_lat_mm": -3,
+ "dock_head_deg": 0.3,
+ "grab_ok": true,
+ "success": true,
+ "sim_time_s": 139.8,
+ "events": [
+  [
+   1.5,
+   "perceived bin at (0.03,-0.04) heading -179 deg, upright=True -> handle side AWAY / blocked"
+  ],
+  [
+   49.14,
+   "nudge (wheels) rotated bin 176 deg, axle moved 1.25 m"
+  ],
+  [
+   77.59,
+   "pre-contact alignment: lateral -3 mm, heading 0.3 deg"
+  ],
+  [
+   78.08,
+   "wheel-stop contact"
+  ],
+  [
+   83.99,
+   "hook reached handle, offset mm [ 2.  -5.8 -3.9]"
+  ],
+  [
+   84.59,
+   "latched: float spring seated handle (residual 2 mm)"
+  ],
+  [
+   132.69,
+   "tipped to 48.0 deg, mast 70.6 deg"
+  ]
+ ],
+ "cpu_s": 25,
+ "bumper_peak_N": 390,
+ "hook_peak_N": 586,
+ "bin_tipped": false,
+ "mu": 0.6,
+ "seed": 3
+}

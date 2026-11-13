@@ -1,0 +1,15 @@
+{
+ "pos": [
+  -0.2387,
+  0.0,
+  0.1715
+ ],
+ "n": [
+  -0.6145,
+  0.7889
+ ],
+ "F_nom": 560.0,
+ "k": 5600.0,
+ "stroke": 0.025,
+ "src": "calA_ESE240SL_nopad_fl: foot of perpendicular from the drive axle (float on bottom stop, stop bar retracted); free face 27.5 mm proud of the nominal bin face; F_nom 560 N chosen from calA pad450fl2/pad650fl2 so the flat static full tow pose keeps castors ~80 N"
+}

@@ -1,0 +1,512 @@
+{
+ "assumptions": {
+  "raw_lateral_mm": 80.0,
+  "raw_yaw_deg": 6.0,
+  "steer_res_mm": 5.0,
+  "steer_res_deg": 0.5,
+  "engaged_len_m": 0.63,
+  "guide_tol_mm": 10.0,
+  "retry_gain": 0.7,
+  "comb_tol_mm": 5.0,
+  "ground_step_mm": 25.0,
+  "bin_roll_deg": 2.0,
+  "min_lift_mm": 60.0,
+  "blade_wall_tol_mm": 7.0,
+  "wall_follow_sigma_mm": 2.0,
+  "pad_switch_force_N": 6.0,
+  "body_halfwidth_frac": 0.44
+ },
+ "cases": {
+  "baseline (camera 8 mm, 1.0 deg)": {
+   "rows": [
+    {
+     "bin": "Weber 140 L",
+     "n": 20000,
+     "clear_wheels_mm": 90.5,
+     "clear_body_mm": 121.0,
+     "first_try_pct": 99.98,
+     "guide_contact_pct": 0.0,
+     "with_one_retry_pct": 99.985,
+     "safe_miss_pct": 0.015,
+     "miss_reasons": {
+      "lateral": 0,
+      "lip_out_of_travel": 0,
+      "lift_short": 0,
+      "blade_missed_channel": 3
+     },
+     "sweep_p95_mm": 34.5,
+     "lift_available_min_mm": 103,
+     "empty_bin_push_margin": 4.8
+    },
+    {
+     "bin": "ESE 140 CL",
+     "n": 20000,
+     "clear_wheels_mm": 91.0,
+     "clear_body_mm": 118.8,
+     "first_try_pct": 99.96,
+     "guide_contact_pct": 0.0,
+     "with_one_retry_pct": 99.96,
+     "safe_miss_pct": 0.04,
+     "miss_reasons": {
+      "lateral": 0,
+      "lip_out_of_travel": 0,
+      "lift_short": 0,
+      "blade_missed_channel": 8
+     },
+     "sweep_p95_mm": 34.5,
+     "lift_available_min_mm": 133,
+     "empty_bin_push_margin": 4.4
+    },
+    {
+     "bin": "ESE 240 SL (200 mm wheels)",
+     "n": 20000,
+     "clear_wheels_mm": 45.5,
+     "clear_body_mm": 73.5,
+     "first_try_pct": 99.94,
+     "guide_contact_pct": 0.6,
+     "with_one_retry_pct": 99.97,
+     "safe_miss_pct": 0.03,
+     "miss_reasons": {
+      "lateral": 0,
+      "lip_out_of_travel": 0,
+      "lift_short": 0,
+      "blade_missed_channel": 6
+     },
+     "sweep_p95_mm": 34.4,
+     "lift_available_min_mm": 98,
+     "empty_bin_push_margin": 6.1
+    },
+    {
+     "bin": "ESE 240 SL (250 mm wheels)",
+     "n": 20000,
+     "clear_wheels_mm": 40.0,
+     "clear_body_mm": 73.5,
+     "first_try_pct": 99.69,
+     "guide_contact_pct": 1.77,
+     "with_one_retry_pct": 99.925,
+     "safe_miss_pct": 0.075,
+     "miss_reasons": {
+      "lateral": 0,
+      "lip_out_of_travel": 0,
+      "lift_short": 0,
+      "blade_missed_channel": 15
+     },
+     "sweep_p95_mm": 34.5,
+     "lift_available_min_mm": 72,
+     "empty_bin_push_margin": 6.3
+    },
+    {
+     "bin": "SULO Citybac 240",
+     "n": 20000,
+     "clear_wheels_mm": 42.5,
+     "clear_body_mm": 73.9,
+     "first_try_pct": 99.8,
+     "guide_contact_pct": 1.01,
+     "with_one_retry_pct": 99.93,
+     "safe_miss_pct": 0.07,
+     "miss_reasons": {
+      "lateral": 0,
+      "lip_out_of_travel": 0,
+      "lift_short": 0,
+      "blade_missed_channel": 14
+     },
+     "sweep_p95_mm": 34.5,
+     "lift_available_min_mm": 112,
+     "empty_bin_push_margin": 4.9
+    },
+    {
+     "bin": "ESE 240 CL (lowest)",
+     "n": 20000,
+     "clear_wheels_mm": 45.5,
+     "clear_body_mm": 74.8,
+     "first_try_pct": 99.89,
+     "guide_contact_pct": 0.56,
+     "with_one_retry_pct": 99.94,
+     "safe_miss_pct": 0.06,
+     "miss_reasons": {
+      "lateral": 0,
+      "lip_out_of_travel": 0,
+      "lift_short": 0,
+      "blade_missed_channel": 12
+     },
+     "sweep_p95_mm": 34.4,
+     "lift_available_min_mm": 165,
+     "empty_bin_push_margin": 5.6
+    },
+    {
+     "bin": "Craemer MGBneo 240 (tallest)",
+     "n": 20000,
+     "clear_wheels_mm": 35.0,
+     "clear_body_mm": 74.8,
+     "first_try_pct": 99.27,
+     "guide_contact_pct": 3.92,
+     "with_one_retry_pct": 99.97,
+     "safe_miss_pct": 0.03,
+     "miss_reasons": {
+      "lateral": 0,
+      "lip_out_of_travel": 0,
+      "lift_short": 0,
+      "blade_missed_channel": 6
+     },
+     "sweep_p95_mm": 34.5,
+     "lift_available_min_mm": 76,
+     "empty_bin_push_margin": 5.6
+    }
+   ],
+   "mean_first_try_pct": 99.79,
+   "mean_with_retry_pct": 99.954
+  },
+  "stress (camera 20 mm, 2.5 deg)": {
+   "rows": [
+    {
+     "bin": "Weber 140 L",
+     "n": 20000,
+     "clear_wheels_mm": 90.5,
+     "clear_body_mm": 121.0,
+     "first_try_pct": 99.14,
+     "guide_contact_pct": 1.11,
+     "with_one_retry_pct": 99.94,
+     "safe_miss_pct": 0.06,
+     "miss_reasons": {
+      "lateral": 0,
+      "lip_out_of_travel": 0,
+      "lift_short": 0,
+      "blade_missed_channel": 12
+     },
+     "sweep_p95_mm": 77.6,
+     "lift_available_min_mm": 102,
+     "empty_bin_push_margin": 4.7
+    },
+    {
+     "bin": "ESE 140 CL",
+     "n": 20000,
+     "clear_wheels_mm": 91.0,
+     "clear_body_mm": 118.8,
+     "first_try_pct": 99.18,
+     "guide_contact_pct": 1.05,
+     "with_one_retry_pct": 99.94,
+     "safe_miss_pct": 0.06,
+     "miss_reasons": {
+      "lateral": 0,
+      "lip_out_of_travel": 0,
+      "lift_short": 0,
+      "blade_missed_channel": 12
+     },
+     "sweep_p95_mm": 77.8,
+     "lift_available_min_mm": 134,
+     "empty_bin_push_margin": 4.4
+    },
+    {
+     "bin": "ESE 240 SL (200 mm wheels)",
+     "n": 20000,
+     "clear_wheels_mm": 45.5,
+     "clear_body_mm": 73.5,
+     "first_try_pct": 79.7,
+     "guide_contact_pct": 13.69,
+     "with_one_retry_pct": 98.92,
+     "safe_miss_pct": 1.08,
+     "miss_reasons": {
+      "lateral": 205,
+      "lip_out_of_travel": 0,
+      "lift_short": 0,
+      "blade_missed_channel": 11
+     },
+     "sweep_p95_mm": 77.0,
+     "lift_available_min_mm": 98,
+     "empty_bin_push_margin": 6.1
+    },
+    {
+     "bin": "ESE 240 SL (250 mm wheels)",
+     "n": 20000,
+     "clear_wheels_mm": 40.0,
+     "clear_body_mm": 73.5,
+     "first_try_pct": 72.83,
+     "guide_contact_pct": 15.94,
+     "with_one_retry_pct": 97.705,
+     "safe_miss_pct": 2.295,
+     "miss_reasons": {
+      "lateral": 446,
+      "lip_out_of_travel": 0,
+      "lift_short": 0,
+      "blade_missed_channel": 13
+     },
+     "sweep_p95_mm": 78.3,
+     "lift_available_min_mm": 73,
+     "empty_bin_push_margin": 6.3
+    },
+    {
+     "bin": "SULO Citybac 240",
+     "n": 20000,
+     "clear_wheels_mm": 42.5,
+     "clear_body_mm": 73.9,
+     "first_try_pct": 75.99,
+     "guide_contact_pct": 14.51,
+     "with_one_retry_pct": 98.3,
+     "safe_miss_pct": 1.7,
+     "miss_reasons": {
+      "lateral": 330,
+      "lip_out_of_travel": 0,
+      "lift_short": 0,
+      "blade_missed_channel": 10
+     },
+     "sweep_p95_mm": 77.9,
+     "lift_available_min_mm": 112,
+     "empty_bin_push_margin": 4.9
+    },
+    {
+     "bin": "ESE 240 CL (lowest)",
+     "n": 20000,
+     "clear_wheels_mm": 45.5,
+     "clear_body_mm": 74.8,
+     "first_try_pct": 79.33,
+     "guide_contact_pct": 13.15,
+     "with_one_retry_pct": 98.88,
+     "safe_miss_pct": 1.12,
+     "miss_reasons": {
+      "lateral": 219,
+      "lip_out_of_travel": 0,
+      "lift_short": 0,
+      "blade_missed_channel": 5
+     },
+     "sweep_p95_mm": 78.2,
+     "lift_available_min_mm": 163,
+     "empty_bin_push_margin": 5.6
+    },
+    {
+     "bin": "Craemer MGBneo 240 (tallest)",
+     "n": 20000,
+     "clear_wheels_mm": 35.0,
+     "clear_body_mm": 74.8,
+     "first_try_pct": 65.58,
+     "guide_contact_pct": 17.51,
+     "with_one_retry_pct": 95.495,
+     "safe_miss_pct": 4.505,
+     "miss_reasons": {
+      "lateral": 891,
+      "lip_out_of_travel": 0,
+      "lift_short": 0,
+      "blade_missed_channel": 10
+     },
+     "sweep_p95_mm": 78.4,
+     "lift_available_min_mm": 74,
+     "empty_bin_push_margin": 5.6
+    }
+   ],
+   "mean_first_try_pct": 81.68,
+   "mean_with_retry_pct": 98.454
+  },
+  "stress + leg-tip gap sensors (4 mm)": {
+   "rows": [
+    {
+     "bin": "Weber 140 L",
+     "n": 20000,
+     "clear_wheels_mm": 90.5,
+     "clear_body_mm": 121.0,
+     "first_try_pct": 99.93,
+     "guide_contact_pct": 0.0,
+     "with_one_retry_pct": 99.93,
+     "safe_miss_pct": 0.07,
+     "miss_reasons": {
+      "lateral": 0,
+      "lip_out_of_travel": 0,
+      "lift_short": 0,
+      "blade_missed_channel": 14
+     },
+     "sweep_p95_mm": 32.2,
+     "lift_available_min_mm": 101,
+     "empty_bin_push_margin": 4.7
+    },
+    {
+     "bin": "ESE 140 CL",
+     "n": 20000,
+     "clear_wheels_mm": 91.0,
+     "clear_body_mm": 118.8,
+     "first_try_pct": 99.94,
+     "guide_contact_pct": 0.0,
+     "with_one_retry_pct": 99.935,
+     "safe_miss_pct": 0.065,
+     "miss_reasons": {
+      "lateral": 0,
+      "lip_out_of_travel": 0,
+      "lift_short": 0,
+      "blade_missed_channel": 13
+     },
+     "sweep_p95_mm": 31.9,
+     "lift_available_min_mm": 135,
+     "empty_bin_push_margin": 4.4
+    },
+    {
+     "bin": "ESE 240 SL (200 mm wheels)",
+     "n": 20000,
+     "clear_wheels_mm": 45.5,
+     "clear_body_mm": 73.5,
+     "first_try_pct": 99.93,
+     "guide_contact_pct": 0.36,
+     "with_one_retry_pct": 99.96,
+     "safe_miss_pct": 0.04,
+     "miss_reasons": {
+      "lateral": 0,
+      "lip_out_of_travel": 0,
+      "lift_short": 0,
+      "blade_missed_channel": 8
+     },
+     "sweep_p95_mm": 32.1,
+     "lift_available_min_mm": 99,
+     "empty_bin_push_margin": 6.2
+    },
+    {
+     "bin": "ESE 240 SL (250 mm wheels)",
+     "n": 20000,
+     "clear_wheels_mm": 40.0,
+     "clear_body_mm": 73.5,
+     "first_try_pct": 99.84,
+     "guide_contact_pct": 0.92,
+     "with_one_retry_pct": 99.98,
+     "safe_miss_pct": 0.02,
+     "miss_reasons": {
+      "lateral": 1,
+      "lip_out_of_travel": 0,
+      "lift_short": 0,
+      "blade_missed_channel": 3
+     },
+     "sweep_p95_mm": 32.0,
+     "lift_available_min_mm": 73,
+     "empty_bin_push_margin": 6.3
+    },
+    {
+     "bin": "SULO Citybac 240",
+     "n": 20000,
+     "clear_wheels_mm": 42.5,
+     "clear_body_mm": 73.9,
+     "first_try_pct": 99.91,
+     "guide_contact_pct": 0.56,
+     "with_one_retry_pct": 99.96,
+     "safe_miss_pct": 0.04,
+     "miss_reasons": {
+      "lateral": 0,
+      "lip_out_of_travel": 0,
+      "lift_short": 0,
+      "blade_missed_channel": 8
+     },
+     "sweep_p95_mm": 31.8,
+     "lift_available_min_mm": 113,
+     "empty_bin_push_margin": 4.9
+    },
+    {
+     "bin": "ESE 240 CL (lowest)",
+     "n": 20000,
+     "clear_wheels_mm": 45.5,
+     "clear_body_mm": 74.8,
+     "first_try_pct": 99.91,
+     "guide_contact_pct": 0.3,
+     "with_one_retry_pct": 99.92,
+     "safe_miss_pct": 0.08,
+     "miss_reasons": {
+      "lateral": 0,
+      "lip_out_of_travel": 0,
+      "lift_short": 0,
+      "blade_missed_channel": 16
+     },
+     "sweep_p95_mm": 32.0,
+     "lift_available_min_mm": 165,
+     "empty_bin_push_margin": 5.6
+    },
+    {
+     "bin": "Craemer MGBneo 240 (tallest)",
+     "n": 20000,
+     "clear_wheels_mm": 35.0,
+     "clear_body_mm": 74.8,
+     "first_try_pct": 99.63,
+     "guide_contact_pct": 2.5,
+     "with_one_retry_pct": 99.95,
+     "safe_miss_pct": 0.05,
+     "miss_reasons": {
+      "lateral": 0,
+      "lip_out_of_travel": 0,
+      "lift_short": 0,
+      "blade_missed_channel": 10
+     },
+     "sweep_p95_mm": 32.1,
+     "lift_available_min_mm": 78,
+     "empty_bin_push_margin": 5.6
+    }
+   ],
+   "mean_first_try_pct": 99.87,
+   "mean_with_retry_pct": 99.948
+  }
+ },
+ "envelope": [
+  {
+   "bin": "Weber 140 L",
+   "lateral_at_wheels_mm": 91,
+   "yaw_alone_deg": 8.2,
+   "mouth_capture_mm": 181,
+   "comb_mm": 1001,
+   "travel_below_mm": 161,
+   "lift_reserve_mm": 139,
+   "comb_cover_pct": 100
+  },
+  {
+   "bin": "ESE 140 CL",
+   "lateral_at_wheels_mm": 91,
+   "yaw_alone_deg": 8.2,
+   "mouth_capture_mm": 179,
+   "comb_mm": 969,
+   "travel_below_mm": 129,
+   "lift_reserve_mm": 171,
+   "comb_cover_pct": 100
+  },
+  {
+   "bin": "ESE 240 SL (200 mm wheels)",
+   "lateral_at_wheels_mm": 46,
+   "yaw_alone_deg": 4.1,
+   "mouth_capture_mm": 133,
+   "comb_mm": 1005,
+   "travel_below_mm": 165,
+   "lift_reserve_mm": 135,
+   "comb_cover_pct": 100
+  },
+  {
+   "bin": "ESE 240 SL (250 mm wheels)",
+   "lateral_at_wheels_mm": 40,
+   "yaw_alone_deg": 3.6,
+   "mouth_capture_mm": 133,
+   "comb_mm": 1030,
+   "travel_below_mm": 190,
+   "lift_reserve_mm": 110,
+   "comb_cover_pct": 100
+  },
+  {
+   "bin": "SULO Citybac 240",
+   "lateral_at_wheels_mm": 43,
+   "yaw_alone_deg": 3.9,
+   "mouth_capture_mm": 134,
+   "comb_mm": 991,
+   "travel_below_mm": 151,
+   "lift_reserve_mm": 149,
+   "comb_cover_pct": 100
+  },
+  {
+   "bin": "ESE 240 CL (lowest)",
+   "lateral_at_wheels_mm": 46,
+   "yaw_alone_deg": 4.1,
+   "mouth_capture_mm": 135,
+   "comb_mm": 938,
+   "travel_below_mm": 98,
+   "lift_reserve_mm": 202,
+   "comb_cover_pct": 100
+  },
+  {
+   "bin": "Craemer MGBneo 240 (tallest)",
+   "lateral_at_wheels_mm": 35,
+   "yaw_alone_deg": 3.2,
+   "mouth_capture_mm": 135,
+   "comb_mm": 1030,
+   "travel_below_mm": 190,
+   "lift_reserve_mm": 110,
+   "comb_cover_pct": 100
+  }
+ ],
+ "n_per_bin": 20000,
+ "note": "Tolerance Monte Carlo, not contact physics. \"Safe miss\" = robot backs out and alerts; nothing is lifted, nothing tips."
+}

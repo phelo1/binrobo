@@ -1,0 +1,83 @@
+{
+ "label": "cgA",
+ "test": "step40",
+ "tug_kg": 115.8,
+ "bin_kg": 110.0,
+ "grab": "success",
+ "reached": true,
+ "dist_m": 4.71,
+ "ok": false,
+ "hitch_yaw_max_deg": 3.2,
+ "bin_yaw_max_deg": 11.4,
+ "roll_max_deg": 3.4,
+ "antitip_peak_N": 0.0,
+ "captured_throughout": true,
+ "loads": {
+  "kp_axial": [
+   2342.6,
+   68.2,
+   "7 towing 0.5 m/s over a 40 mm "
+  ],
+  "kp_radial": [
+   1440.7,
+   68.2,
+   "7 towing 0.5 m/s over a 40 mm "
+  ],
+  "kp_bend": [
+   1333.1,
+   64.79,
+   "7 towing 0.5 m/s over a 40 mm "
+  ],
+  "kp_yaw": [
+   119.6,
+   66.2,
+   "7 towing 0.5 m/s over a 40 mm "
+  ],
+  "casterL": [
+   3046.0,
+   64.72,
+   "7 towing 0.5 m/s over a 40 mm "
+  ],
+  "casterR": [
+   691.4,
+   68.27,
+   "7 towing 0.5 m/s over a 40 mm "
+  ],
+  "driveL": [
+   2350.7,
+   67.39,
+   "7 towing 0.5 m/s over a 40 mm "
+  ],
+  "driveR": [
+   4613.1,
+   68.2,
+   "7 towing 0.5 m/s over a 40 mm "
+  ]
+ },
+ "caster_min_N": 0.0,
+ "drive_min_N": 0.0,
+ "still_captured": true,
+ "pawl_bounce": [
+  64.735,
+  "7 towing 0.5 m/s over a 40 mm sharp step (left wheels)",
+  -3.3
+ ],
+ "side": "oblique",
+ "cpu_s": 25,
+ "env": {
+  "G6_YAWRANGE": "40",
+  "G6_RATCHET_TIP": "1",
+  "G6_STANDFIX": "1",
+  "G6_STANDWORLD": "1",
+  "G6_STRAIGHTEN": "1",
+  "G6_PIVOT": "1",
+  "G6_PINLOCK": "1",
+  "G6_PINTOL": "3.0",
+  "G6_DNLOCK": "1",
+  "G6_SB2": "0.15",
+  "G6_RATCHET_STAND": "1",
+  "G6_MASSFILE": "/workspace/projects/847c6e2d-79fb-41ac-8eca-c75df6a92b0c/revG/sim/cg/mass_cgA.json",
+  "CGA_BUMPW": "1",
+  "CGA_BUMPYAW": "30"
+ }
+}

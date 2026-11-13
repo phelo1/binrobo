@@ -1,0 +1,188 @@
+[text of RESULTS_B2F_lane_physics.pdf, taken out of the PDF for the public repository; pictures and layout are not kept]
+
+                          B2-F lane physics campaign - MuJoCo digital twin of the 633 m [village] lane
+                                            Results against the frozen criteria. B2-F provisional pending bin check B0.
+
+
+
+
+                                                                                 2026-11-13
+
+Digital twin simulation - not field footage. B2-F provisional pending bin check B0. Nothing on the lane has been surveyed on site. Every chainage, depth and friction
+value below comes from public map/DEM data or is an assumption (see section 4).
+
+
+1. Summary
+  • Scenarios: P1, P3, P4, P6 PASS; P2 and P7 FAIL; P5 mixed. Scored runs: 11 PASS, 7 FAIL (plus 2 supplementary “pothole filled” runs, both FAIL).
+  • The loaded missions pass: P1 (240 L, 110 kg) and P3 (140 L, 66 kg) grab at home, carry 633 m (incl. the assumed 12 % wet-leaf pitch, the 1:4 step ramp and the
+    pothole) and set down at pad A. P4 (hold on 12 % wet leaves, both ways) and P6 (person e-stop, dog stop/resume) pass.
+  • Everything that fails is a terrain or traction limit of the drive base, not the grab/lift/receiver:
+      1. Sharp 40 mm up-step (P5d/e): drive wheels cannot climb it (needs mu 0.86, have 0.6). 4 kN lift cap does not help.
+      2. Open 200 mm x 40 mm trench (P5g/i): drive wheels wedge across it, stall; bin touches ground (458/468 N). 4 kN does not help.
+      3. 60 mm pothole under a drive-wheel track: passes loaded at mu 0.6 (P1, P3, P5h) but traps the wheel when the axle is lightly loaded (P2a empty tug, P2c 13 kg
+         empty bin) or friction is 20 % lower (P7).
+      4. Light-load slip on wet leaves (supplementary P2a_pf / P2c_pf): with no or an empty bin, a drive wheel unloads on the rigid 4-point chassis, slips, and the tug
+         yaws off the lane into the hedge line on the 4-12 % wet section.
+      5. Bin-wheel clearance geometry: on any 40 mm level drop the bin wheels (0.24 m behind the drive axle) dip to 13.6 mm (1:4 ramp), 2.9-3.2 mm (sharp drop) and
+         11.2 mm in P7. Not a gate failure (reported, not gating, as in the frozen runner) but the margin is thin.
+  • Recommended before field work: fill/ramp every edge > 25 mm on the lane (step, trench, pothole), add drive-axle load or suspension (or a rocker on the castor pair),
+    add traction control / yaw-rate limiting to the drive firmware, and keep the lane clear of wet leaves on the pitch - then re-run P2/P5/P7 with those changes declared.
+
+
+2. Per-scenario results (frozen criteria: revG/sim/cg/CRITERIA_FROZEN.md, unchanged)
+Columns: sim = simulated duration; clear = minimum bin-wheel clearance while carried (reported, gating only at segment end); hedge = minimum truth hedge clearance of the
+robot+bin footprint (S9 strict, must be >= 0); lift = peak lift actuator force (cap 3,000 N model / 4,000 N variant); tip = minimum static tip margin; E = energy (S9 constants).
+
+Run                            Result        sim s      clear mm (s)       hedge m (s)         lift N (s)         tip deg    E Wh       Key point
+P1 240 L 110 kg home->pad      PASS          1323       13.6 (290.2)       0.299 (621.1)       2,210 (550.1)      21.8       15.3       grab ok (72 mm up), set-down released,
+A                                                                                                                                       standing
+
+
+                                                                                         1
+Run                           Result       sim s     clear mm (s)       hedge m (s)        lift N (s)         tip deg    E Wh   Key point
+P2a return empty pad          FAIL         191       -                  0.297              211                38.2       3.5    stall s 550.0: wheel trapped in pothole
+A->home
+P2c collect empty 240 L (13   FAIL         344       46.1 (550.3)       0.290              300                35.7       5.4    grab ok; stall s 549.8 in pothole
+kg)
+P2a_pf (suppl., pothole       FAIL         1213      -                  -2.889 (159.8)     211                36.1       21.8   slip/yaw on wet leaves s 163-149, stall s
+filled)                                                                                                                         163.3
+P2c_pf (suppl., from s 556)   FAIL         1208      75.2 (290.9)       -1.125 (149.6)     319                32.9       25.5   reached home + set-down ok, but lane
+                                                                                                                                departure s 149
+P3 140 L 66 kg home->pad      PASS         1324      53.9 (550.1)       0.299 (621.1)      1,736 (550.1)      32.8       15.3   grab ok (86 mm up), set-down released
+A
+P4a 12 % down, 110 kg, mu     PASS         96        66.5               1.497              1,182              23.6       0.3    hold s 145: creep 0.5 mm / 3 s (limit 50
+0.35                                                                                                                            mm)
+P4b 12 % up, 110 kg, mu       PASS         122       67.3               0.889              1,350              19.6       4.8    pivot on slope ok; hold creep 0.5 mm /
+0.35                                                                                                                            3s
+P5a sharp 40 mm drop, 3 kN    PASS         35        2.9 (290.2)        1.497              3,000 (cap)        22.6       0.2    no ground contact, but 2.9 mm
+P5b sharp 40 mm drop, 4 kN    PASS         35        3.2 (290.2)        1.497              3,005              22.6       0.2    4 kN changes nothing
+P5c 40 mm drop on 1:4 ramp    PASS         35        13.6 (290.2)       1.496              1,573              23.4       0.2
+P5d sharp 40 mm up-step, 3    FAIL         60        14.4               0.795              3,000 (cap)        17.8       2.4    stall s 290.1 at the step face
+kN
+P5e sharp 40 mm up-step, 4    FAIL         60        14.5               0.795              4,000 (cap)        17.9       2.4    same stall
+kN
+P5f 40 mm up on 1:4 ramp      PASS         55        47.1               0.795              1,628              20.9       1.1
+P5g open trench 40x200 mm,    FAIL         41        -0.1 (455.1)       1.550              3,000 (cap)        18.2       0.5    stall s 455.1, bin-ground 458 N
+3 kN
+P5i open trench, 4 kN         FAIL         41        -0.2 (455.1)       1.550              4,000 (cap)        18.2       0.5    stall s 455.1, bin-ground 468 N
+(added)
+P5h 60 mm pothole, left       PASS         38        33.9 (550.1)       0.970              2,210              21.8       0.5
+track
+P6a person on 12 % wet        PASS         57        71.8               1.511              1,319              24.1       0.2    e-stop from 0.52 m/s: 0.116 m, slide 0.5
+descent                                                                                                                         mm; min gap 1.35 m
+P6b dog crossing              PASS         52        60.3               1.487              1,181              23.6       0.2    controlled stop at 1.93 m, resumed after
+                                                                                                                                2 s clear; min gap 1.75 m
+P7 night, CG +60 mm, m        FAIL         2476      11.2 (290.2)       0.274              1,829              20.4       62.5   trapped in pothole s 550.4 -> drive
+x1.1, mu x0.8                                                                                                                   timeout
+
+
+Scenario roll-up: P1 PASS; P2 FAIL (a, c); P3 PASS; P4 PASS (a, b); P5 PASS for 1:4 ramp up/down, sharp drop and pothole, FAIL for sharp up-step and open trench (3 kN
+and 4 kN); P6 PASS (a, b); P7 FAIL.
+Notes on numbers:
+  • Tug roll/pitch never exceeded 10.4 deg in any run (limit 15). No run lost the comb seat (seated_all = true everywhere).
+
+
+                                                                                      2
+  • Energy: P1/P3 carry 15.3 Wh per 633 m loaded leg. P7 reached the pothole at 19.4 Wh (night lights + mass x1.1); its 62.5 Wh total is dominated by 1,300 s of circling in
+    the pothole. P2c_pf energy (25.5 Wh) is for s 556 -> home only and includes the slip episode.
+  • The P5 runs start from P1 carried-state snapshots (trim 2), so their “sim” is the short feature window.
+
+
+3. Failures and root causes
+F1 - Sharp 40 mm up-step (P5d 3 kN, P5e 4 kN). End state (diag_trench.py): castors already on the upper level, both drive wheels (r = 165 mm) on the lower level
+bearing on the 40 mm edge. Contact angle acos((165-40)/165) = 40.7 deg, so climbing on traction alone needs mu >= tan 40.7 = 0.86; ground mu is 0.6. The drive saturates, no
+progress for 12 s -> stall. The lift actuator is not in the load path for this, which is why 4 kN changes nothing. The same step with a 1:4 ramp (P5f) passes with 47 mm
+bin-wheel clearance.
+F2 - Open trench 40 mm x 200 mm (P5g 3 kN, P5i 4 kN). The drive wheel chord at 40 mm depth is 2 x sqrt(165 x 165 - 125 x 125) = 215 mm, longer than the 200 mm
+gap, so the wheel drops in and bears on both edges (wedged); the tug pitches back (8.7 deg), the anti-tip skids land on the near level, the drive stalls at s 455.1 and the bin dips
+onto the ground (458 N / 468 N; bin wheels 16 mm at the end, not captured). Lift saturates at either cap; raising it to 4 kN does not change the outcome. (The solver reports
+very large wedge contact forces in this pose; treat those as a modelling artefact - the stall is geometric.) With the trench covered flush (prepared lane, P1/P3/P7) it is a non-event.
+F3 - 60 mm pothole under the drive-wheel track (P2a, P2c, P7). Pothole 0.40 x 0.25 m, 60 mm deep, centred on lat +0.40 m = exactly one drive-wheel track. Climbing
+its far edge needs a 50.5 deg contact angle (traction ratio 1.21). Loaded with 110 kg / 66 kg at mu 0.6 the tug gets over it (P1, P3, P5h; lift peaks 2,210 / 1,736 N there). It fails
+when:
+  • the axle is light: P2a (no bin, 93 kg tug) and P2c (13 kg empty bin) - the trapped wheel holds while the other wheel drives, the tug yaws 45 -> 97 deg and the anti-tip skid
+    lands on the pothole tile -> stall s 550.0 / 549.8;
+  • friction is 20 % lower: P7 (mu 0.48) - the left drive wheel drops in at s 550.4 and the tug circles about it in a ~24 s limit cycle (bin still captured, ~42 mm, hedge min 0.27
+    m) until the 2,400 s drive timeout.
+F4 - Light-load slip and lane departure on wet leaves (supplementary P2a_pf, P2c_pf; pothole filled). Both reach the wet-leaf patch (mu 0.35, s 128-165, the
+assumed 12 % pitch) climbing towards home. diag_slip.py from snapshot s 166: with no bin the drive axle carries only ~455 N in total and the load swaps side to side; at s 164.1
+the left drive wheel unloads to 0 N (right 437 N). The rigid 4-point chassis (2 drive wheels + 2 castors, no suspension) rocks on the lane surface warp; on mu 0.35 the remaining
+wheel’s servo torque yaws the tug, and the pure-pursuit controller has no slip/yaw-rate handling, so it slews across the lane. P2a_pf: repeated events at s 163.4, 158.7, 153.5,
+149.1, then 110 deg of yaw and > 2 m outside the mapped hedge line (hedge -2.89 m), stall s 163.3. P2c_pf (13 kg bin, 582 N on the drive axle vs 1,536 N with 110 kg): one 90
+deg yaw at s 149.4, footprint 1.13 m past the hedge line, then it recovered, reached home and set the bin down correctly - still a FAIL on hedge clearance. In the sim the hedge is
+a 0.8 m deep band of 1 m collision boxes and the tug pushed through it; real hedge resistance is not modelled, so read this as “lane departure”.
+F5 - Bin-wheel clearance on a 40 mm level drop (all outbound runs; not a gate failure). The bin wheels trail the drive axle by about 0.24 m. When the drive axle
+has stepped down 40 mm the bin wheels are still over the upper level, so their 69 mm carry clearance falls by ~40 mm plus pitch dynamics: 13.6 mm on the 1:4 ramp (P1, P5c),
+11.2 mm in P7 (bin CG +60 mm, mass x1.1), 2.9 mm (3 kN) / 3.2 mm (4 kN) on the sharp drop (P5a/b, lift at its cap). No ground contact occurred, so per the frozen runner
+(clearance >= 30 mm gated only at the end of each carry segment) these pass. The margin is thin; a 50 mm edge would very likely touch.
+Harness and model issues found and fixed during the campaign (declared before the affected re-runs; superseded runs kept): P1 v1 carry flag left on during
+set-down (runs/_P1_v1_carryflag); P1 v2 1:4 ramp box rotated the wrong way (runs/_P1_v2_rampsign); P4b v1 approach speed floor too low for the kv-150 servo on 12 %
+(runs/_P4b_v1_lowspeed); P6a/b obstacle-script fixes (runs/_P6a_v1_person_stays, _P6b_v1_dog_far, _P6b_v2_nolog); the 2,400 s drive timeout was dead code (fixed
+during P7 before it fired; P7 continued, no criteria change).
+
+
+
+
+                                                                                          3
+4. Lane features: what is data-derived, what is assumed
+Nothing has been surveyed on site.
+
+Feature                                                  Source                                                                Status
+Centreline, 633.06 m                                     OpenStreetMap way geometry (sitl/data/route.json)                     Data-derived (map, not a survey; +- a few m)
+Elevation profile                                        EU-DEM 25 m along the centreline, PCHIP                               Data-derived (remote sensing; smooths short
+                                                                                                                               features)
+12 % pitch, s 138-152                                    EU-DEM max is 7.9 %; SRTM suggests 12 % over 25 m                     Assumed overlay (worst case kept)
+Lane width 3.6 m, flat cross-section                     -                                                                     Assumed
+Hedge lines, gaps, bulges (2.9 m at s 500-516)           g6_features HEDGE_GAPS / HEDGE_BULGES / hedge_offset                  Assumed
+Wet-leaf patches mu 0.35 (s 128-165, 200-215, 470-490,   -                                                                     Assumed
+575-590)
+Ground mu 0.6                                            frozen G3/G5 value                                                    Frozen model value
+40 mm step s 290, trench 40x200 mm s 455, pothole        -                                                                     Assumed chainages and sizes
+60 mm s 550
+Prepared lane (1:4 ramp on step, trench covered;         -                                                                     Assumed remediation
+pothole as-is)
+Home spot s 10.0 lat -1.4; pad A s 621.96 lat 1.35       config_g6 / scenarios                                                 Assumed positions
+
+
+
+5. Trims and declared deviations
+  1. P2: the empty outbound leg home -> pad A is not simulated; the tug is placed at the docking start pose 1.2 m from the emptied bin left by P1.
+  2. P4/P5/P6 (and P2c_pf) start from carried-state snapshots of an earlier run instead of a fresh grab.
+  3. One seed per scenario.
+  4. The 140 L bin is drawn as a scaled 240 L CAD bin in the video (physics uses the WEB140 model).
+  5. Supplementary runs added after P2a/P2c failed (declared before running): P2a_pf, P2c_pf with the pothole filled. They are reported but do not replace the scored as-is
+     runs.
+  6. Added variant P5i (open trench, 4 kN cap). The 4 kN sharp drop is P5b.
+  7. Model: revG/sim/cg/h2/simB2h.py unchanged (only the ground replaced by the lane world); frozen contact, drive, brake and firmware (grab/set_down) terms as in the
+     gate. CRITERIA_FROZEN.md sha256 2cf3f4ec. . . 8a74, not edited.
+  8. Videos: 3D raster at 0.75 scale upscaled to 1280x720 (HUD at full resolution); near-side hedge cut away when the camera would sit inside it (labelled on frame); time-lapse
+     factors shown on every frame.
+
+
+6. Videos (1280x720, 25 fps, H.264; every frame captioned)
+
+File                                                          Content                                                                                    Length
+B2F_lane_P1.mp4                                               P1 grab x6, transit x40, set-down x6                                                       52 s
+B2F_lane_P2.mp4                                               P2a, P2c, P2a_pf, P2c_pf                                                                   82 s
+
+
+                                                                                       4
+File                                                           Content                                                                                      Length
+B2F_lane_P3.mp4                                                P3                                                                                           52 s
+B2F_lane_P4.mp4                                                P4a, P4b (x4)                                                                                67 s
+B2F_lane_P5.mp4                                                P5a-i side view (x2)                                                                         147 s
+B2F_lane_P6.mp4                                                P6a, P6b real time                                                                           85 s
+B2F_lane_P7.mp4                                                P7 night (transit x40, pothole circling x150)                                                58 s
+B2F_lane_HL.mp4                                                Highlight reel, 9 shots                                                                      85 s
+
+
+Overlays on every simulated frame: scenario label, chainage s, speed, grade, lift actuator force, bin-wheel clearance, hedge clearance, tip margin, energy, sim time, wet-leaf flag,
+live criteria light and the run’s frozen PASS/FAIL.
+Work files: project work/b2f_lanephys/ (lane_world.py, lanerun.py, render_lane.py, runs/RUN_ID/result.json + recordings, diag_*.py); log docs/reviews/PROGRESS_B2F_lane_phys.md
+and TESTLOG_B2F_lane_phys.md.
+
+
+
+
+                                                                                         5
+

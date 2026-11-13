@@ -1,0 +1,72 @@
+{
+ "s1_morning": [
+  "pass",
+  "pass",
+  46.7,
+  39.2,
+  0.161
+ ],
+ "s1n_night_drop": [
+  "pass",
+  "pass",
+  46.5,
+  44.37,
+  0.127
+ ],
+ "s3_night_pickup": [
+  "pass",
+  "pass",
+  48.9,
+  43.83,
+  0.333
+ ],
+ "s20a_three_bin_drop": [
+  "pass",
+  "pass",
+  140.5,
+  133.88,
+  -0.884
+ ],
+ "s20b_three_bin_pickup": [
+  "alert",
+  "pass",
+  48.2,
+  41.67,
+  -0.082
+ ],
+ "s24a_home_slot_car": [
+  "alert",
+  "pass",
+  3.9,
+  2.92,
+  0.448
+ ],
+ "s7_rtk_dropout": [
+  "pass",
+  "alert",
+  4.4,
+  5.28,
+  0.479
+ ],
+ "s7b_rtk_long_loss": [
+  "alert",
+  "alert",
+  10.6,
+  11.3,
+  0.432
+ ],
+ "s5_person_dog": [
+  "pass",
+  "pass",
+  4.1,
+  4.15,
+  0.543
+ ],
+ "s6_branch": [
+  "pass",
+  "pass",
+  2.5,
+  2.35,
+  0.514
+ ]
+}

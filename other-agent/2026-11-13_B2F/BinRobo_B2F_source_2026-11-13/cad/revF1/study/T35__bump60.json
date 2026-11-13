@@ -1,0 +1,101 @@
+{
+ "variant": "T35",
+ "test": "bump60",
+ "desc": "tow tilt 35 deg",
+ "reached_4m": false,
+ "events": [
+  [
+   2.72,
+   "wheel-stop contact"
+  ],
+  [
+   8.6,
+   "hook reached handle, offset mm [ 2.   0.  -0.1]"
+  ],
+  [
+   9.2,
+   "latched: float spring seated handle (residual 1 mm)"
+  ],
+  [
+   43.74,
+   "tipped to 35.0 deg, mast 50.2 deg"
+  ]
+ ],
+ "phase5": {
+  "caster_min": 0,
+  "drive_min": 166,
+  "stopbar_max": 676,
+  "antitip_max": 240,
+  "arm_max": 0,
+  "tug_hit_max": 0,
+  "hook_max": 388,
+  "act_max_N": 956,
+  "pitch_max": 4.6,
+  "roll_max": 0.0,
+  "tilt_min": 0.0,
+  "tilt_max": 35.0,
+  "bin_yaw_max": 0.0,
+  "torque_max": 29.8,
+  "dist": 0.0,
+  "v_end": 0.0,
+  "caster_p10": 0,
+  "caster_unloaded_frac": 0.79,
+  "drive_p10": 380,
+  "hook_p99": 370,
+  "pitch_p90": 4.6,
+  "hgap_max": 0.0,
+  "antitip_p90": 171
+ },
+ "phase7": {
+  "caster_min": 0,
+  "drive_min": 0,
+  "stopbar_max": 501,
+  "antitip_max": 860,
+  "arm_max": 0,
+  "tug_hit_max": 0,
+  "hook_max": 1334,
+  "act_max_N": 477,
+  "pitch_max": 4.8,
+  "roll_max": 0.2,
+  "tilt_min": 35.0,
+  "tilt_max": 41.3,
+  "bin_yaw_max": 2.0,
+  "torque_max": 60.0,
+  "dist": 0.66,
+  "v_end": -0.0,
+  "caster_p10": 0,
+  "caster_unloaded_frac": 0.94,
+  "drive_p10": 0,
+  "hook_p99": 1210,
+  "pitch_p90": 4.7,
+  "hgap_max": 0.1,
+  "antitip_p90": 361
+ },
+ "phase8": {
+  "caster_min": 0,
+  "drive_min": 0,
+  "stopbar_max": 91,
+  "antitip_max": 567,
+  "arm_max": 0,
+  "tug_hit_max": 0,
+  "hook_max": 520,
+  "act_max_N": 59,
+  "pitch_max": 4.7,
+  "roll_max": 0.2,
+  "tilt_min": 37.0,
+  "tilt_max": 37.0,
+  "bin_yaw_max": 2.0,
+  "torque_max": 150.0,
+  "dist": -0.0,
+  "v_end": -0.0,
+  "caster_p10": 0,
+  "caster_unloaded_frac": 1.0,
+  "drive_p10": 0,
+  "hook_p99": 519,
+  "pitch_p90": 4.7,
+  "hgap_max": 0.1,
+  "antitip_p90": 567
+ },
+ "pitch_flip": false,
+ "cpu_s": 13
+}

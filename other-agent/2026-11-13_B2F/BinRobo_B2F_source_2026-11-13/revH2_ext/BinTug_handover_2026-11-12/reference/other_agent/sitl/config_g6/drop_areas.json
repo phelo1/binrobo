@@ -1,0 +1,15 @@
+{
+ "note": "Rev G4 adaptive drop spot. Polygons are drawn by the user in the app, given here in lane coordinates [s, lat]; frame 'end' = s measured from the lane end (road), 'house' = s from the house. lat + = left of house->road. EXAMPLE values for the SITL.",
+ "allowed_areas": {
+  "pad_lane":  {"frame": "end",   "poly": [[23.0, 0.45], [12.6, 0.45], [12.6, 1.55], [23.0, 1.55]]},
+  "pad_mouth": {"frame": "end",   "poly": [[12.4, 0.6], [10.2, 0.6], [10.2, 2.4], [12.4, 2.4]]},
+  "yard_home": {"frame": "house", "poly": [[8.0, -5.3], [21.0, -5.3], [21.0, 3.2], [8.0, 3.2]]}
+ },
+ "slot_area": {"A": "pad_mouth", "M": "pad_lane", "F": "pad_lane", "home": "yard_home"},
+ "keepouts": [
+  {"name": "flower bed (yard)", "frame": "house", "poly": [[18.0, 4.0], [22.0, 4.0], [22.0, 5.8], [18.0, 5.8]]},
+  {"name": "neighbour's field gate (left hedge gap)", "frame": "end", "poly": [[30.0, 1.75], [27.5, 1.75], [27.5, 2.6], [30.0, 2.6]]}
+ ],
+ "alternates": {"A": "auto", "M": "auto", "F": "auto", "home": "auto"},
+ "max_alternates": 80, "grid_m": 0.4, "min_alt_separation_m": 0.8, "inflate_m": 0.3
+}

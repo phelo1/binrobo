@@ -1,0 +1,118 @@
+{
+ "variant": "F0",
+ "test": "cycle",
+ "desc": "Rev F baseline (4 plates at +0.56 m)",
+ "grab_ok": true,
+ "tug_kg": 105.6,
+ "bin_kg": 108.3,
+ "tip_s": 47.0,
+ "act_peak_raw_N": 2500,
+ "act_peak_raw_at": [
+  71.717,
+  "8 Arrived: braking"
+ ],
+ "act_peak_50ms_N": 1015,
+ "act_peak_50ms_at": [
+  71.742,
+  "8 Arrived: braking"
+ ],
+ "events": [
+  [
+   2.72,
+   "wheel-stop contact"
+  ],
+  [
+   8.63,
+   "hook reached handle, offset mm [ 2.   0.7 -4.2]"
+  ],
+  [
+   9.23,
+   "latched: float spring seated handle (residual 1 mm)"
+  ],
+  [
+   57.32,
+   "tipped to 48.0 deg, mast 70.6 deg"
+  ],
+  [
+   122.21,
+   "bin upright 0.3 deg"
+  ]
+ ],
+ "phase5": {
+  "caster_min": 0,
+  "drive_min": 306,
+  "stopbar_max": 656,
+  "antitip_max": 240,
+  "arm_max": 0,
+  "tug_hit_max": 0,
+  "hook_max": 414,
+  "act_max_N": 942,
+  "pitch_max": 4.6,
+  "roll_max": 0.0,
+  "tilt_min": 0.0,
+  "tilt_max": 48.0,
+  "bin_yaw_max": 0.0,
+  "torque_max": 29.7,
+  "dist": 0.0,
+  "v_end": -0.0,
+  "caster_p10": 0,
+  "caster_unloaded_frac": 0.55,
+  "drive_p10": 372,
+  "hook_p99": 373,
+  "pitch_p90": 4.6,
+  "hgap_max": 0.0,
+  "antitip_p90": 147
+ },
+ "phase7": {
+  "caster_min": 0,
+  "drive_min": 445,
+  "stopbar_max": 0,
+  "antitip_max": 0,
+  "arm_max": 0,
+  "tug_hit_max": 0,
+  "hook_max": 588,
+  "act_max_N": 457,
+  "pitch_max": 0.5,
+  "roll_max": 0.0,
+  "tilt_min": 48.1,
+  "tilt_max": 49.7,
+  "bin_yaw_max": 0.0,
+  "torque_max": 32.0,
+  "dist": 5.99,
+  "v_end": 0.49,
+  "caster_p10": 125,
+  "caster_unloaded_frac": 0.02,
+  "drive_p10": 471,
+  "hook_p99": 293,
+  "pitch_p90": 0.0,
+  "hgap_max": 0.0,
+  "antitip_p90": 0
+ },
+ "phase8": {
+  "caster_min": 125,
+  "drive_min": 0,
+  "stopbar_max": 277,
+  "antitip_max": 0,
+  "arm_max": 0,
+  "tug_hit_max": 0,
+  "hook_max": 236,
+  "act_max_N": 755,
+  "pitch_max": 0.0,
+  "roll_max": 0.0,
+  "tilt_min": 48.1,
+  "tilt_max": 49.2,
+  "bin_yaw_max": 0.0,
+  "torque_max": 150.0,
+  "dist": 0.03,
+  "v_end": -0.0,
+  "caster_p10": 137,
+  "caster_unloaded_frac": 0.0,
+  "drive_p10": 432,
+  "hook_p99": 232,
+  "pitch_p90": 0.0,
+  "hgap_max": 0.0,
+  "antitip_p90": 0
+ },
+ "pitch_flip": false,
+ "cpu_s": 19
+}

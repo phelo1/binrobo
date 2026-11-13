@@ -1,0 +1,111 @@
+{
+ "bin": "ESE240CL",
+ "test": "rel_up12e",
+ "gh": "B2",
+ "ghp": {
+  "hy": 130.0,
+  "lip_chamfer": true,
+  "ease": 0.6,
+  "_reapp": {
+   "k": 5.0
+  },
+  "_guard": true,
+  "_claim_and": true,
+  "throat": -34.0,
+  "lip_w": 8.0,
+  "lip_top": -2.0,
+  "pawl": {
+   "knee": [
+    -18.0,
+    35.0
+   ],
+   "tip": [
+    -33.0,
+    19.0
+   ]
+  },
+  "truth_ztop": 50.0,
+  "feel_T": 20.0,
+  "reclose": 0.6
+ },
+ "tug_kg": 115.8,
+ "bin_kg": 11.0,
+ "grab": {
+  "result": "success",
+  "claim": true,
+  "captured": true,
+  "float_mm": -60.1,
+  "bar_mm": [
+   -0.7,
+   8.0,
+   -12.6
+  ]
+ },
+ "release": {
+  "opened": true,
+  "released": true,
+  "bar_dist_mm": 728,
+  "bin_tilt_end": 0.0
+ },
+ "bin_speed_end": 0.0,
+ "bin_stable": true,
+ "ok": true,
+ "events": [
+  [
+   6.54,
+   "wheel-stop contact, both wheels True"
+  ],
+  [
+   11.87,
+   "swing end phi 8.5 seat True latch True abort None bar [-0.7, 8.0, -12.6] pawls [0.0, 0.0]"
+  ],
+  [
+   14.86,
+   "pull test rise 49 N dtilt 1.86 -> PASS"
+  ],
+  [
+   14.86,
+   "float ratchet released after claim (tip with free float)"
+  ],
+  [
+   37.42,
+   "tipped to 25.0 deg, captured throughout True"
+  ],
+  [
+   58.49,
+   "A' tow pose: stop bar retracted 60 mm, float clamped at bottom stop"
+  ],
+  [
+   109.55,
+   "bin upright 0.3 deg rel, 0.3 abs, tug pitch -0.0 deg, mast 10.8, float -9 mm vs grab"
+  ],
+  [
+   110.05,
+   "A' wheel-on-ground interlock: bin wheels on ground 89 N of 108 N"
+  ]
+ ],
+ "mon": {
+  "ryaw": 0.1,
+  "pitch_dev": 0.1,
+  "anti": 0.0,
+  "cmin": 0.0,
+  "phase_ryaw": "7 Towing 1 m"
+ },
+ "bin_tilt_abs_end": 0.0,
+ "env": {
+  "G6_YAWRANGE": "40",
+  "G6_RATCHET_TIP": "1",
+  "G6_STANDFIX": "1",
+  "G6_STANDWORLD": "1",
+  "G6_STRAIGHTEN": "1",
+  "G6_PIVOT": "1",
+  "G6_PINLOCK": "1",
+  "G6_PINTOL": "3.0",
+  "G6_DNLOCK": "1",
+  "G6_SB2": "0.15",
+  "G6_RATCHET_STAND": "1",
+  "G6_MASSFILE": "/workspace/projects/847c6e2d-79fb-41ac-8eca-c75df6a92b0c/revG/sim/cg/mass_cgA.json"
+ },
+ "verdict": "PASS",
+ "cpu_s": 49
+}

@@ -1,0 +1,29 @@
+{'docked': True, 'reapp': False, 'dock_dy_mm': 9.6, 'lift_rise_N': 1213, 'seat_switch': True, 'keeper_on_bar': True, 'keeper_deg': -15.9, 'claim': True, 'captured': True, 'wheel_clear_mm': 62.9, 'bin_tilt_abs': 4.3, 'seated': True, 'result': 'success'}
+pre-setdown t 39.6 7 carry q 0.121 F 1163 nib [0.095, -0.012, 0.803] clear 0.063 tilt 4.4 seated True tugx 0.878 {'padg-binhull': 711, 'tooth-rim': 1347, 'nib-rim': 772, 'bar-keeptip': 57, 'bar-keeptip2': 53}
+mon t 40.0 10 Set-down: c q 0.117 F 687 nib [0.095, -0.012, 0.802] clear 0.060 tilt 4.1 seated True tugx 0.878 {'padg-binhull': 658, 'tooth-rim': 907, 'nib-rim': 553, 'bar-keeptip': 58, 'bar-keeptip2': 63}
+mon t 40.5 10 Set-down: c q 0.107 F 675 nib [0.095, -0.012, 0.802] clear 0.050 tilt 4.2 seated True tugx 0.878 {'padg-binhull': 690, 'tooth-rim': 891, 'nib-rim': 590, 'bar-keeptip': 52, 'bar-keeptip2': 58}
+mon t 41.0 10 Set-down: c q 0.097 F 665 nib [0.095, -0.012, 0.802] clear 0.040 tilt 4.2 seated True tugx 0.878 {'padg-binhull': 709, 'tooth-rim': 885, 'nib-rim': 604, 'bar-keeptip': 50, 'bar-keeptip2': 56}
+mon t 41.5 10 Set-down: c q 0.087 F 656 nib [0.095, -0.012, 0.802] clear 0.030 tilt 4.2 seated True tugx 0.878 {'padg-binhull': 724, 'tooth-rim': 879, 'nib-rim': 608, 'bar-keeptip': 50, 'bar-keeptip2': 56}
+mon t 42.0 11 Keeper open q 0.085 F 174 nib [0.095, -0.012, 0.802] clear 0.028 tilt 4.2 seated True tugx 0.878 {'padg-binhull': 716, 'tooth-rim': 148, 'nib-rim': 456}
+mon t 42.5 11 Keeper open q 0.083 F -47 nib [0.095, -0.012, 0.8] clear 0.027 tilt 4.2 seated True tugx 0.879 {'padg-binhull': 707, 'nib-rim': 311}
+mon t 43.0 11 Keeper open q 0.073 F -40 nib [0.095, -0.012, 0.79] clear 0.027 tilt 4.1 seated False tugx 0.880 {'padg-binhull': 686, 'nib-rim': 327}
+mon t 43.5 11 Keeper open q 0.062 F 44 nib [0.114, -0.012, 0.775] clear 0.030 tilt 4.6 seated False tugx 0.893 {}
+mon t 44.0 11 Keeper open q 0.052 F 42 nib [0.102, -0.012, 0.775] clear 0.022 tilt 3.4 seated False tugx 0.900 {'padg-binhull': 205}
+mon t 44.5 11 Keeper open q 0.050 F 46 nib [0.102, -0.012, 0.773] clear 0.022 tilt 3.4 seated False tugx 0.900 {'padg-binhull': 175}
+mon t 45.0 12 Drive forwa q 0.050 F 46 nib [0.089, -0.012, 0.8] clear -0.000 tilt 0.0 seated True tugx 0.943 {}
+mon t 45.5 12 Drive forwa q 0.050 F 36 nib [0.096, -0.012, 0.8] clear -0.000 tilt 0.0 seated True tugx 1.007 {'nib-rim': 262}
+mon t 46.0 12 Drive forwa q 0.050 F 40 nib [0.096, -0.012, 0.8] clear -0.000 tilt 0.0 seated True tugx 1.071 {'nib-rim': 0}
+mon t 46.5 12 Drive forwa q 0.050 F 27 nib [0.096, -0.012, 0.8] clear -0.000 tilt 0.0 seated True tugx 1.135 {'nib-rim': 0}
+mon t 47.0 12 Drive forwa q 0.050 F 32 nib [0.096, -0.012, 0.8] clear -0.000 tilt 0.0 seated True tugx 1.198 {'nib-rim': 282}
+mon t 47.5 12 Drive forwa q 0.050 F 36 nib [0.096, -0.012, 0.8] clear -0.000 tilt 0.0 seated True tugx 1.262 {'nib-rim': 0}
+mon t 48.0 12 Drive forwa q 0.050 F 40 nib [0.096, -0.012, 0.8] clear -0.000 tilt 0.0 seated True tugx 1.326 {'nib-rim': 0}
+mon t 48.5 12 Drive forwa q 0.050 F 40 nib [0.096, -0.012, 0.8] clear -0.000 tilt 0.0 seated True tugx 1.389 {'nib-rim': 210}
+mon t 49.0 12 Drive forwa q 0.050 F 43 nib [0.096, -0.012, 0.8] clear -0.000 tilt 0.0 seated True tugx 1.453 {'nib-rim': 195}
+mon t 49.5 13 Bin standin q 0.050 F 46 nib [0.096, -0.012, 0.799] clear -0.000 tilt 0.0 seated True tugx 1.503 {}
+mon t 50.0 13 Bin standin q 0.050 F 46 nib [0.096, -0.012, 0.799] clear -0.000 tilt 0.0 seated True tugx 1.503 {}
+mon t 50.5 13 Bin standin q 0.050 F 46 nib [0.096, -0.012, 0.799] clear -0.000 tilt 0.0 seated True tugx 1.503 {}
+mon t 51.0 13 Bin standin q 0.050 F 46 nib [0.096, -0.012, 0.799] clear -0.000 tilt 0.0 seated True tugx 1.503 {}
+mon t 51.5 13 Bin standin q 0.050 F 46 nib [0.096, -0.012, 0.799] clear -0.000 tilt 0.0 seated True tugx 1.503 {}
+mon t 52.0 13 Bin standin q 0.050 F 46 nib [0.096, -0.012, 0.799] clear -0.000 tilt 0.0 seated True tugx 1.503 {}
+{'tilt_before_withdraw': 3.3, 'released': False, 'nib_clear_m': 0.016}
+end t 52.4 13 Bin standin q 0.050 F 46 nib [0.096, -0.012, 0.799] clear -0.000 tilt 0.0 seated True tugx 1.503 {}

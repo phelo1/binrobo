@@ -1,0 +1,11 @@
+{
+ "note": "EXAMPLE calendar for the SITL - replace with the collector's real calendar. Alternate-week rotation counted from anchor_date.",
+ "anchor_date": "2026-11-04",
+ "anchor_week": "A",
+ "collection_weekday": "Wednesday",
+ "weeks": {"A": ["black", "brown"], "B": ["green", "brown"]},
+ "drop":   {"day_offset": -1, "earliest": "18:00", "time": "18:30"},
+ "pickup": {"day_offset": 0, "time": "18:00", "deadline": "21:00"},
+ "skip_dates": ["2026-12-23"],
+ "moved_dates": {}
+}

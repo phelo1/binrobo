@@ -1,0 +1,213 @@
+env CGB_F9=1 IT1_TAG=_f9rep python3 cmp/runCMP.py climb 0.25 0.09
+env CGB_F9=1 IT1_TAG=_f9rep python3 cmp/runCMP.py step one
+env CGB_F9=1 IT1_TAG=_f9rep python3 cmp/runCMP.py estop fwd
+env CGB_F9=1 MC_IDX=0,1,2,3,4 IT1_TAG=_f9rep python3 cmp/runCMP.py grab WEB140 30 201
+env CGB_F9=1 IT1_TAG=_f9 python3 cmp/runCMP.py step both_ramp
+env CGB_F9=1 IT1_TAG=_f9 python3 cmp/runCMP.py step both
+env CMP_LIP=model CMP_COMB=narrow python3 cmp/smoke_fw.py
+env CMP_LIP=en840 CMP_COMB=narrow python3 cmp/smoke_fw.py
+env CMP_LIP=en840 CMP_COMB=fw_rigid python3 cmp/smoke_fw.py
+env CMP_LIP=en840 CMP_COMB=fw_pivot python3 cmp/smoke_fw.py
+python3 cmp/dump_fp_B1.py
+env CGB_F9=1 CMP_SIM=simB1fw CMP_LIP=en840 CMP_COMB=fw_pivot IT1_TAG=_f9_fwp32 python3 cmp/runCMP.py grab WEB140 30 201
+env CGB_F9=1 CMP_SIM=simB1fw CMP_LIP=en840 CMP_COMB=fw_pivot IT1_TAG=_f9_fwp32 python3 cmp/runCMP.py grab ESE240SL 30 202
+python3 cmp/smoke_H.py
+env CGB_F9=1 CMP_SIM=simH python3 cmp/dump_fp.py
+env CGB_F9=1 CMP_SIM=simB1fw CMP_LIP=en840 CMP_COMB=fw_pivot IT1_TAG=_f9_fwp32 python3 cmp/runCMP.py grab ESE240CL 30 203
+env REVH_FIX=liftmax python3 cmp/smoke_H.py ESE240SL,ESE240SL250,ESE240CL
+env REVH_FIX=liftmax,wheelchk python3 cmp/smoke_H.py ESE240SL,ESE240SL250
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ IT1_TAG=_raw python3 cmp/runCMP.py grab WEB140 30 201
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ IT1_TAG=_raw python3 cmp/runCMP.py grab ESE240SL 30 202
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ IT1_TAG=_raw python3 cmp/runCMP.py grab ESE240CL 30 203
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ IT1_TAG=_raw python3 cmp/runCMP.py grab ESE240SL250 30 204
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ IT1_TAG=_raw python3 cmp/runCMP.py grab ESE140CL 30 205
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ IT1_TAG=_raw python3 cmp/runCMP.py climb 0.30 0.06
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ IT1_TAG=_raw python3 cmp/runCMP.py climb 0.30 0.09
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ IT1_TAG=_raw python3 cmp/runCMP.py climb 0.25 0.06
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ IT1_TAG=_raw python3 cmp/runCMP.py climb 0.25 0.09
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ IT1_TAG=_raw python3 cmp/runCMP.py climb 0.22 0.06
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ IT1_TAG=_raw python3 cmp/runCMP.py climb 0.22 0.09
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ IT1_TAG=_raw python3 cmp/runCMP.py step one
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ IT1_TAG=_raw python3 cmp/runCMP.py step both
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ IT1_TAG=_raw python3 cmp/runCMP.py step both_ramp
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ IT1_TAG=_raw python3 cmp/runCMP.py estop fwd
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ IT1_TAG=_raw python3 cmp/runCMP.py estop rev
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ IT1_TAG=_raw python3 cmp/runCMP.py towstab
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ IT1_TAG=_raw python3 cmp/runCMP.py rel WEB140 flat full
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ IT1_TAG=_raw python3 cmp/runCMP.py rel WEB140 flat empty
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ IT1_TAG=_raw python3 cmp/runCMP.py rel WEB140 up12 full
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ IT1_TAG=_raw python3 cmp/runCMP.py rel WEB140 up12 empty
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ IT1_TAG=_raw python3 cmp/runCMP.py rel WEB140 dn12 full
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ IT1_TAG=_raw python3 cmp/runCMP.py rel WEB140 dn12 empty
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ IT1_TAG=_raw python3 cmp/runCMP.py rel ESE240CL flat full
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ IT1_TAG=_raw python3 cmp/runCMP.py rel ESE240CL flat empty
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ IT1_TAG=_raw python3 cmp/runCMP.py rel ESE240CL up12 full
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ IT1_TAG=_raw python3 cmp/runCMP.py rel ESE240CL up12 empty
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ IT1_TAG=_raw python3 cmp/runCMP.py rel ESE240CL dn12 full
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ IT1_TAG=_raw python3 cmp/runCMP.py rel ESE240CL dn12 empty
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ IT1_TAG=_raw python3 cmp/runCMP.py rel ESE240SL250 flat full
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ IT1_TAG=_raw python3 cmp/runCMP.py rel ESE240SL250 flat empty
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ IT1_TAG=_raw python3 cmp/runCMP.py rel ESE240SL250 up12 full
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ IT1_TAG=_raw python3 cmp/runCMP.py rel ESE240SL250 up12 empty
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ IT1_TAG=_raw python3 cmp/runCMP.py rel ESE240SL250 dn12 full
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ IT1_TAG=_raw python3 cmp/runCMP.py rel ESE240SL250 dn12 empty
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ SIM_DT=0.00025 IT1_TAG=_raw python3 cmp/runCMP.py climb 0.25 0.09
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ SIM_DT=0.00025 IT1_TAG=_raw python3 cmp/runCMP.py step one
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ SIM_DT=0.00025 IT1_TAG=_raw python3 cmp/runCMP.py estop fwd
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ IT1_TAG=_raw python3 cmp/runCMP.py static up 110
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ IT1_TAG=_raw python3 cmp/runCMP.py static up 60
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ IT1_TAG=_raw python3 cmp/runCMP.py static dn 110
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ IT1_TAG=_raw python3 cmp/runCMP.py static dn 60
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ IT1_TAG=_raw python3 cmp/runCMP.py static crL 110
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ IT1_TAG=_raw python3 cmp/runCMP.py static crL 60
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ IT1_TAG=_raw python3 cmp/runCMP.py static crR 110
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ IT1_TAG=_raw python3 cmp/runCMP.py static crR 60
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk IT1_TAG=_fx python3 cmp/runCMP.py grab WEB140 30 201
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk IT1_TAG=_fx python3 cmp/runCMP.py grab ESE240SL 30 202
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk IT1_TAG=_fx python3 cmp/runCMP.py grab ESE240CL 30 203
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk IT1_TAG=_fx python3 cmp/runCMP.py grab ESE240SL250 30 204
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk IT1_TAG=_fx python3 cmp/runCMP.py grab ESE140CL 30 205
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk IT1_TAG=_fx python3 cmp/runCMP.py climb 0.30 0.06
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk IT1_TAG=_fx python3 cmp/runCMP.py climb 0.30 0.09
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk IT1_TAG=_fx python3 cmp/runCMP.py climb 0.25 0.06
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk IT1_TAG=_fx python3 cmp/runCMP.py climb 0.25 0.09
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk IT1_TAG=_fx python3 cmp/runCMP.py climb 0.22 0.06
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk IT1_TAG=_fx python3 cmp/runCMP.py climb 0.22 0.09
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk IT1_TAG=_fx python3 cmp/runCMP.py step one
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk IT1_TAG=_fx python3 cmp/runCMP.py step both
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk IT1_TAG=_fx python3 cmp/runCMP.py step both_ramp
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk IT1_TAG=_fx python3 cmp/runCMP.py estop fwd
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk IT1_TAG=_fx python3 cmp/runCMP.py estop rev
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk IT1_TAG=_fx python3 cmp/runCMP.py towstab
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk IT1_TAG=_fx python3 cmp/runCMP.py rel WEB140 flat full
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk IT1_TAG=_fx python3 cmp/runCMP.py rel WEB140 flat empty
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk IT1_TAG=_fx python3 cmp/runCMP.py rel WEB140 up12 full
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk IT1_TAG=_fx python3 cmp/runCMP.py rel WEB140 up12 empty
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk IT1_TAG=_fx python3 cmp/runCMP.py rel WEB140 dn12 full
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk IT1_TAG=_fx python3 cmp/runCMP.py rel WEB140 dn12 empty
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk IT1_TAG=_fx python3 cmp/runCMP.py rel ESE240CL flat full
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk IT1_TAG=_fx python3 cmp/runCMP.py rel ESE240CL flat empty
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk IT1_TAG=_fx python3 cmp/runCMP.py rel ESE240CL up12 full
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk IT1_TAG=_fx python3 cmp/runCMP.py rel ESE240CL up12 empty
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk IT1_TAG=_fx python3 cmp/runCMP.py rel ESE240CL dn12 full
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk IT1_TAG=_fx python3 cmp/runCMP.py rel ESE240CL dn12 empty
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk IT1_TAG=_fx python3 cmp/runCMP.py rel ESE240SL250 flat full
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk IT1_TAG=_fx python3 cmp/runCMP.py rel ESE240SL250 flat empty
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk IT1_TAG=_fx python3 cmp/runCMP.py rel ESE240SL250 up12 full
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk IT1_TAG=_fx python3 cmp/runCMP.py rel ESE240SL250 up12 empty
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk IT1_TAG=_fx python3 cmp/runCMP.py rel ESE240SL250 dn12 full
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk IT1_TAG=_fx python3 cmp/runCMP.py rel ESE240SL250 dn12 empty
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk SIM_DT=0.00025 IT1_TAG=_fx python3 cmp/runCMP.py climb 0.25 0.09
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk SIM_DT=0.00025 IT1_TAG=_fx python3 cmp/runCMP.py step one
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk SIM_DT=0.00025 IT1_TAG=_fx python3 cmp/runCMP.py estop fwd
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk IT1_TAG=_fx python3 cmp/runCMP.py static up 110
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk IT1_TAG=_fx python3 cmp/runCMP.py static up 60
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk IT1_TAG=_fx python3 cmp/runCMP.py static dn 110
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk IT1_TAG=_fx python3 cmp/runCMP.py static dn 60
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk IT1_TAG=_fx python3 cmp/runCMP.py static crL 110
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk IT1_TAG=_fx python3 cmp/runCMP.py static crL 60
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk IT1_TAG=_fx python3 cmp/runCMP.py static crR 110
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk IT1_TAG=_fx python3 cmp/runCMP.py static crR 60
+env CGB_F9=1 CMP_SIM=simB1fw CMP_LIP=en840 CMP_COMB=fw_pivot IT1_TAG=_f9_fwp32 python3 cmp/runCMP.py grab ESE240SL250 30 204
+env CGB_F9=1 CMP_SIM=simB1fw CMP_LIP=en840 CMP_COMB=fw_pivot IT1_TAG=_f9_fwp32 python3 cmp/runCMP.py grab ESE140CL 30 205
+env CGB_F9=1 CMP_SIM=simB1fw CMP_LIP=en840 CMP_COMB=fw_rigid IT1_TAG=_f9_fwr32 python3 cmp/runCMP.py grab WEB140 30 201
+env CGB_F9=1 CMP_SIM=simB1fw CMP_LIP=en840 CMP_COMB=fw_rigid IT1_TAG=_f9_fwr32 python3 cmp/runCMP.py grab ESE240SL 30 202
+env CGB_F9=1 CMP_SIM=simB1fw CMP_LIP=en840 CMP_COMB=fw_rigid IT1_TAG=_f9_fwr32 python3 cmp/runCMP.py grab ESE240CL 30 203
+env CGB_F9=1 CMP_SIM=simB1fw CMP_LIP=en840 CMP_COMB=narrow IT1_TAG=_f9_en840n python3 cmp/runCMP.py grab WEB140 30 201
+env CGB_F9=1 CMP_SIM=simB1fw CMP_LIP=en840 CMP_COMB=narrow IT1_TAG=_f9_en840n python3 cmp/runCMP.py grab ESE240SL 30 202
+env CGB_F9=1 CMP_SIM=simB1fw CMP_LIP=en840 CMP_COMB=narrow IT1_TAG=_f9_en840n python3 cmp/runCMP.py grab ESE240CL 30 203
+env CGB_F9=1 CMP_SIM=simB1fw CMP_LIP=en840 CMP_COMB=fw_pivot IT1_TAG=_f9_fwp32 python3 cmp/runCMP.py rel WEB140 flat full
+env CGB_F9=1 CMP_SIM=simB1fw CMP_LIP=en840 CMP_COMB=fw_pivot IT1_TAG=_f9_fwp32 python3 cmp/runCMP.py rel WEB140 flat empty
+env CGB_F9=1 CMP_SIM=simB1fw CMP_LIP=en840 CMP_COMB=fw_pivot IT1_TAG=_f9_fwp32 python3 cmp/runCMP.py rel WEB140 up12 full
+env CGB_F9=1 CMP_SIM=simB1fw CMP_LIP=en840 CMP_COMB=fw_pivot IT1_TAG=_f9_fwp32 python3 cmp/runCMP.py rel WEB140 up12 empty
+env CGB_F9=1 CMP_SIM=simB1fw CMP_LIP=en840 CMP_COMB=fw_pivot IT1_TAG=_f9_fwp32 python3 cmp/runCMP.py rel WEB140 dn12 full
+env CGB_F9=1 CMP_SIM=simB1fw CMP_LIP=en840 CMP_COMB=fw_pivot IT1_TAG=_f9_fwp32 python3 cmp/runCMP.py rel WEB140 dn12 empty
+env CGB_F9=1 CMP_SIM=simB1fw CMP_LIP=en840 CMP_COMB=fw_pivot IT1_TAG=_f9_fwp32 python3 cmp/runCMP.py rel ESE240CL flat full
+env CGB_F9=1 CMP_SIM=simB1fw CMP_LIP=en840 CMP_COMB=fw_pivot IT1_TAG=_f9_fwp32 python3 cmp/runCMP.py rel ESE240CL flat empty
+env CGB_F9=1 CMP_SIM=simB1fw CMP_LIP=en840 CMP_COMB=fw_pivot IT1_TAG=_f9_fwp32 python3 cmp/runCMP.py rel ESE240CL up12 full
+env CGB_F9=1 CMP_SIM=simB1fw CMP_LIP=en840 CMP_COMB=fw_pivot IT1_TAG=_f9_fwp32 python3 cmp/runCMP.py rel ESE240CL up12 empty
+env CGB_F9=1 CMP_SIM=simB1fw CMP_LIP=en840 CMP_COMB=fw_pivot IT1_TAG=_f9_fwp32 python3 cmp/runCMP.py rel ESE240CL dn12 full
+env CGB_F9=1 CMP_SIM=simB1fw CMP_LIP=en840 CMP_COMB=fw_pivot IT1_TAG=_f9_fwp32 python3 cmp/runCMP.py rel ESE240CL dn12 empty
+env CGB_F9=1 CMP_SIM=simB1fw CMP_LIP=en840 CMP_COMB=fw_pivot IT1_TAG=_f9_fwp32 python3 cmp/runCMP.py rel ESE240SL250 flat full
+env CGB_F9=1 CMP_SIM=simB1fw CMP_LIP=en840 CMP_COMB=fw_pivot IT1_TAG=_f9_fwp32 python3 cmp/runCMP.py rel ESE240SL250 flat empty
+env CGB_F9=1 CMP_SIM=simB1fw CMP_LIP=en840 CMP_COMB=fw_pivot IT1_TAG=_f9_fwp32 python3 cmp/runCMP.py rel ESE240SL250 up12 full
+env CGB_F9=1 CMP_SIM=simB1fw CMP_LIP=en840 CMP_COMB=fw_pivot IT1_TAG=_f9_fwp32 python3 cmp/runCMP.py rel ESE240SL250 up12 empty
+env CGB_F9=1 CMP_SIM=simB1fw CMP_LIP=en840 CMP_COMB=fw_pivot IT1_TAG=_f9_fwp32 python3 cmp/runCMP.py rel ESE240SL250 dn12 full
+env CGB_F9=1 CMP_SIM=simB1fw CMP_LIP=en840 CMP_COMB=fw_pivot IT1_TAG=_f9_fwp32 python3 cmp/runCMP.py rel ESE240SL250 dn12 empty
+env CGB_F9=1 CMP_SIM=simB1fw CMP_LIP=en840 CMP_COMB=fw_pivot IT1_TAG=_f9_fwp32 python3 cmp/runCMP.py towstab
+env CGB_F9=1 CMP_SIM=simB1fw CMP_LIP=en840 CMP_COMB=fw_pivot IT1_TAG=_f9_fwp32 python3 cmp/runCMP.py step one
+env CGB_F9=1 CMP_SIM=simB1fw CMP_LIP=en840 CMP_COMB=fw_pivot IT1_TAG=_f9_fwp32 python3 cmp/runCMP.py estop fwd
+env CGB_F9=1 CMP_SIM=simB1fw CMP_LIP=en840 CMP_COMB=fw_pivot IT1_TAG=_f9_fwp32 python3 cmp/runCMP.py estop rev
+env CGB_F9=1 CMP_SIM=simB1fw CMP_LIP=en840 CMP_COMB=fw_pivot IT1_TAG=_f9_fwp32 python3 cmp/runCMP.py climb 0.22 0.09
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_MASS=1.1 IT1_TAG=_fxpm110 python3 cmp/runCMP.py grab WEB140 10 201
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_MASS=1.1 IT1_TAG=_fxpm110 python3 cmp/runCMP.py grab ESE240SL 10 202
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_MASS=1.1 IT1_TAG=_fxpm110 python3 cmp/runCMP.py grab ESE240CL 10 203
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_MASS=1.1 IT1_TAG=_fxpm110 python3 cmp/runCMP.py climb 0.22 0.09
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_MASS=1.1 IT1_TAG=_fxpm110 python3 cmp/runCMP.py climb 0.25 0.06
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_MASS=1.1 IT1_TAG=_fxpm110 python3 cmp/runCMP.py step one
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_MASS=1.1 IT1_TAG=_fxpm110 python3 cmp/runCMP.py estop fwd
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_MASS=1.1 IT1_TAG=_fxpm110 python3 cmp/runCMP.py estop rev
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_MASS=1.1 IT1_TAG=_fxpm110 python3 cmp/runCMP.py towstab
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_MASS=1.1 IT1_TAG=_fxpm110 python3 cmp/runCMP.py rel WEB140 up12 full
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_MASS=1.1 IT1_TAG=_fxpm110 python3 cmp/runCMP.py rel WEB140 dn12 empty
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_MASS=1.1 IT1_TAG=_fxpm110 python3 cmp/runCMP.py rel ESE240CL flat empty
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_MASS=1.1 IT1_TAG=_fxpm110 python3 cmp/runCMP.py rel ESE240CL up12 full
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_MASS=1.1 IT1_TAG=_fxpm110 python3 cmp/runCMP.py rel ESE240SL250 dn12 full
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_MASS=1.1 IT1_TAG=_fxpm110 python3 cmp/runCMP.py rel ESE240SL250 up12 empty
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_MASS=1.1 IT1_TAG=_fxpm110 python3 cmp/runCMP.py static up 110
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_MASS=1.1 IT1_TAG=_fxpm110 python3 cmp/runCMP.py static dn 60
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_MASS=1.1 IT1_TAG=_fxpm110 python3 cmp/runCMP.py static crL 110
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_MASS=0.9 IT1_TAG=_fxpm090 python3 cmp/runCMP.py grab WEB140 10 201
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_MASS=0.9 IT1_TAG=_fxpm090 python3 cmp/runCMP.py grab ESE240SL 10 202
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_MASS=0.9 IT1_TAG=_fxpm090 python3 cmp/runCMP.py grab ESE240CL 10 203
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_MASS=0.9 IT1_TAG=_fxpm090 python3 cmp/runCMP.py climb 0.22 0.09
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_MASS=0.9 IT1_TAG=_fxpm090 python3 cmp/runCMP.py climb 0.25 0.06
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_MASS=0.9 IT1_TAG=_fxpm090 python3 cmp/runCMP.py step one
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_MASS=0.9 IT1_TAG=_fxpm090 python3 cmp/runCMP.py estop fwd
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_MASS=0.9 IT1_TAG=_fxpm090 python3 cmp/runCMP.py estop rev
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_MASS=0.9 IT1_TAG=_fxpm090 python3 cmp/runCMP.py towstab
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_MASS=0.9 IT1_TAG=_fxpm090 python3 cmp/runCMP.py rel WEB140 up12 full
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_MASS=0.9 IT1_TAG=_fxpm090 python3 cmp/runCMP.py rel WEB140 dn12 empty
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_MASS=0.9 IT1_TAG=_fxpm090 python3 cmp/runCMP.py rel ESE240CL flat empty
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_MASS=0.9 IT1_TAG=_fxpm090 python3 cmp/runCMP.py rel ESE240CL up12 full
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_MASS=0.9 IT1_TAG=_fxpm090 python3 cmp/runCMP.py rel ESE240SL250 dn12 full
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_MASS=0.9 IT1_TAG=_fxpm090 python3 cmp/runCMP.py rel ESE240SL250 up12 empty
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_MASS=0.9 IT1_TAG=_fxpm090 python3 cmp/runCMP.py static up 110
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_MASS=0.9 IT1_TAG=_fxpm090 python3 cmp/runCMP.py static dn 60
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_MASS=0.9 IT1_TAG=_fxpm090 python3 cmp/runCMP.py static crL 110
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_MU=0.85 IT1_TAG=_fxpmu085 python3 cmp/runCMP.py grab WEB140 10 201
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_MU=0.85 IT1_TAG=_fxpmu085 python3 cmp/runCMP.py grab ESE240SL 10 202
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_MU=0.85 IT1_TAG=_fxpmu085 python3 cmp/runCMP.py grab ESE240CL 10 203
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_MU=0.85 IT1_TAG=_fxpmu085 python3 cmp/runCMP.py climb 0.22 0.09
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_MU=0.85 IT1_TAG=_fxpmu085 python3 cmp/runCMP.py climb 0.25 0.06
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_MU=0.85 IT1_TAG=_fxpmu085 python3 cmp/runCMP.py step one
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_MU=0.85 IT1_TAG=_fxpmu085 python3 cmp/runCMP.py estop fwd
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_MU=0.85 IT1_TAG=_fxpmu085 python3 cmp/runCMP.py estop rev
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_MU=0.85 IT1_TAG=_fxpmu085 python3 cmp/runCMP.py towstab
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_MU=0.85 IT1_TAG=_fxpmu085 python3 cmp/runCMP.py rel WEB140 up12 full
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_MU=0.85 IT1_TAG=_fxpmu085 python3 cmp/runCMP.py rel WEB140 dn12 empty
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_MU=0.85 IT1_TAG=_fxpmu085 python3 cmp/runCMP.py rel ESE240CL flat empty
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_MU=0.85 IT1_TAG=_fxpmu085 python3 cmp/runCMP.py rel ESE240CL up12 full
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_MU=0.85 IT1_TAG=_fxpmu085 python3 cmp/runCMP.py rel ESE240SL250 dn12 full
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_MU=0.85 IT1_TAG=_fxpmu085 python3 cmp/runCMP.py rel ESE240SL250 up12 empty
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_MU=0.85 IT1_TAG=_fxpmu085 python3 cmp/runCMP.py static up 110
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_MU=0.85 IT1_TAG=_fxpmu085 python3 cmp/runCMP.py static dn 60
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_MU=0.85 IT1_TAG=_fxpmu085 python3 cmp/runCMP.py static crL 110
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_CRR=0.09 IT1_TAG=_fxpcrr09 python3 cmp/runCMP.py grab WEB140 10 201
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_CRR=0.09 IT1_TAG=_fxpcrr09 python3 cmp/runCMP.py grab ESE240SL 10 202
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_CRR=0.09 IT1_TAG=_fxpcrr09 python3 cmp/runCMP.py grab ESE240CL 10 203
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_CRR=0.09 IT1_TAG=_fxpcrr09 python3 cmp/runCMP.py climb 0.22 0.09
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_CRR=0.09 IT1_TAG=_fxpcrr09 python3 cmp/runCMP.py climb 0.25 0.06
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_CRR=0.09 IT1_TAG=_fxpcrr09 python3 cmp/runCMP.py step one
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_CRR=0.09 IT1_TAG=_fxpcrr09 python3 cmp/runCMP.py estop fwd
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_CRR=0.09 IT1_TAG=_fxpcrr09 python3 cmp/runCMP.py estop rev
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_CRR=0.09 IT1_TAG=_fxpcrr09 python3 cmp/runCMP.py towstab
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_CRR=0.09 IT1_TAG=_fxpcrr09 python3 cmp/runCMP.py rel WEB140 up12 full
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_CRR=0.09 IT1_TAG=_fxpcrr09 python3 cmp/runCMP.py rel WEB140 dn12 empty
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_CRR=0.09 IT1_TAG=_fxpcrr09 python3 cmp/runCMP.py rel ESE240CL flat empty
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_CRR=0.09 IT1_TAG=_fxpcrr09 python3 cmp/runCMP.py rel ESE240CL up12 full
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_CRR=0.09 IT1_TAG=_fxpcrr09 python3 cmp/runCMP.py rel ESE240SL250 dn12 full
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_CRR=0.09 IT1_TAG=_fxpcrr09 python3 cmp/runCMP.py rel ESE240SL250 up12 empty
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_CRR=0.09 IT1_TAG=_fxpcrr09 python3 cmp/runCMP.py static up 110
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_CRR=0.09 IT1_TAG=_fxpcrr09 python3 cmp/runCMP.py static dn 60
+env CGB_F9=1 CMP_SIM=simH CMP_PREFIX=H_ REVH_FIX=liftmax,wheelchk PERT_CRR=0.09 IT1_TAG=_fxpcrr09 python3 cmp/runCMP.py static crL 110

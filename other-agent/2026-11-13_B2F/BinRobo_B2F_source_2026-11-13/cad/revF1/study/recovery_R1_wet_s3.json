@@ -1,0 +1,31 @@
+{
+ "name": "R1",
+ "desc": "Empty bin BACKWARDS, hedge 1.5 m behind its handle (tug needs ~2.1 m to dock from that side): swing it 180 deg round its wheels by nudging, dock, grab",
+ "bin_kg": 12.3,
+ "rotated_deg": 95.5,
+ "bin_heading_after": -90.2,
+ "t_nudge_done": 94.4,
+ "success": false,
+ "fail": "bin not re-oriented within 25 deg of the lane",
+ "sim_time_s": 94.4,
+ "events": [
+  [
+   1.5,
+   "perceived bin at (0.03,-0.04) heading -179 deg, upright=True -> handle side AWAY / blocked"
+  ],
+  [
+   92.2,
+   "nudge (wheels) rotated bin 96 deg, axle moved 1.47 m"
+  ],
+  [
+   94.44,
+   "FAILED: bin not re-oriented within 25 deg of the lane"
+  ]
+ ],
+ "cpu_s": 19,
+ "bumper_peak_N": 397,
+ "hook_peak_N": 0,
+ "bin_tipped": false,
+ "mu": 0.45,
+ "seed": 3
+}

@@ -1,0 +1,172 @@
+{
+ "name": "B1_srun",
+ "outline": [
+  [
+   -0.445,
+   0.485
+  ],
+  [
+   -0.445,
+   -0.485
+  ],
+  [
+   0.605,
+   -0.485
+  ],
+  [
+   1.0875,
+   -0.38
+  ],
+  [
+   1.1108,
+   -0.2074
+  ],
+  [
+   1.1053,
+   0.3944
+  ],
+  [
+   1.0707,
+   0.4305
+  ],
+  [
+   0.605,
+   0.485
+  ]
+ ],
+ "bin": [
+  [
+   -0.3614,
+   -0.2781
+  ],
+  [
+   0.2692,
+   -0.2781
+  ],
+  [
+   0.2692,
+   0.3049
+  ],
+  [
+   -0.3613,
+   0.3049
+  ]
+ ],
+ "handle_dir": 1,
+ "withdraw": 1,
+ "approach": -1,
+ "carry_dir": 1,
+ "half_w": 0.485,
+ "pivot_D_sim": 2.42,
+ "src": "revG/sim/cg/it1/simB_it1.py compiled geoms (all tug geoms incl. wheels, guards, flares, anti-tip, tray, bumper) + ESE 240 SL hull after a nominal F9 grab (cmp/dump_fp_B1.py); pivot_D_sim = G5 towstab swept diameter (B1_towstab_f9.json); side arms 80x40 RHS at y +/-0.445 (x -0.445..0.605, from mass_cgB1.json rows) added: overall width 0.97 m",
+ "parts": [
+  [
+   0.43,
+   1.05,
+   -0.38,
+   0.38,
+   "tray"
+  ],
+  [
+   1.0525,
+   1.0875,
+   -0.38,
+   0.38,
+   "bumper"
+  ],
+  [
+   -0.3,
+   0.38,
+   0.358,
+   0.368,
+   "guard0"
+  ],
+  [
+   -0.4325,
+   -0.2975,
+   0.3582,
+   0.4418,
+   "flare0"
+  ],
+  [
+   -0.37,
+   -0.29,
+   0.4,
+   0.48,
+   "antitip0"
+  ],
+  [
+   -0.3,
+   0.38,
+   -0.368,
+   -0.358,
+   "guard1"
+  ],
+  [
+   -0.4325,
+   -0.2975,
+   -0.4418,
+   -0.3582,
+   "flare1"
+  ],
+  [
+   -0.37,
+   -0.29,
+   -0.48,
+   -0.4,
+   "antitip1"
+  ],
+  [
+   -0.2023,
+   0.2023,
+   0.365,
+   0.435,
+   "driveL"
+  ],
+  [
+   -0.1981,
+   0.1981,
+   -0.435,
+   -0.365,
+   "driveR"
+  ],
+  [
+   -0.445,
+   0.605,
+   0.405,
+   0.485,
+   "side arm L (mass row, no geom)"
+  ],
+  [
+   -0.445,
+   0.605,
+   -0.485,
+   -0.405,
+   "side arm R (mass row, no geom)"
+  ],
+  [
+   0.43,
+   0.46,
+   -0.3,
+   0.3,
+   "mast/lifter face (rearface, carriage)"
+  ],
+  [
+   0.8,
+   1.1,
+   0.13,
+   0.43,
+   "castor L swivel envelope (pivot 0.95,0.28; trail 0.05 + r 0.10)"
+  ],
+  [
+   0.8,
+   1.1,
+   -0.43,
+   -0.13,
+   "castor R swivel envelope"
+  ]
+ ],
+ "pivot_strategy": "srun",
+ "guard": 0.4,
+ "kl_gap": 0.4
+}

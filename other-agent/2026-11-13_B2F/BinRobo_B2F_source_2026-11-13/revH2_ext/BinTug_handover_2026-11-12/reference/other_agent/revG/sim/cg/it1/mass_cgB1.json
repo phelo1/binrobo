@@ -1,0 +1,293 @@
+{
+ "label": "cgB1",
+ "total": 94.11,
+ "rows": [
+  {
+   "name": "Body tray 2 mm S235 folded (as G6 CH-01)",
+   "kg": 13.3,
+   "p": [
+    0.75,
+    0,
+    0.19
+   ],
+   "d": [
+    0.6,
+    0.7,
+    0.15
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Top deck 3 mm Al (as G6)",
+   "kg": 3.3,
+   "p": [
+    0.75,
+    0,
+    0.28
+   ],
+   "d": [
+    0.6,
+    0.7,
+    0.01
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Side arm L: 80x40x3 RHS 1.05 m + drive plate 6 mm",
+   "kg": 6.5,
+   "p": [
+    0.08,
+    0.445,
+    0.3
+   ],
+   "d": [
+    1.0,
+    0.08,
+    0.1
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Side arm R: 80x40x3 RHS 1.05 m + drive plate 6 mm",
+   "kg": 6.5,
+   "p": [
+    0.08,
+    -0.445,
+    0.3
+   ],
+   "d": [
+    1.0,
+    0.08,
+    0.1
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Rear cross-member + lifter base 60x60x3",
+   "kg": 3.0,
+   "p": [
+    0.45,
+    0,
+    0.25
+   ],
+   "d": [
+    0.08,
+    0.8,
+    0.08
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Drive unit L: MY1016ZL-75 gearmotor + brake + 13in wheel + hub (as G6 drive mass)",
+   "kg": 9.68,
+   "p": [
+    0.0,
+    0.4,
+    0.17
+   ],
+   "d": [
+    0.3,
+    0.1,
+    0.3
+   ],
+   "g": "wheel"
+  },
+  {
+   "name": "Drive unit R",
+   "kg": 9.68,
+   "p": [
+    0.0,
+    -0.4,
+    0.17
+   ],
+   "d": [
+    0.3,
+    0.1,
+    0.3
+   ],
+   "g": "wheel"
+  },
+  {
+   "name": "Castor 200 mm L + fork",
+   "kg": 2.3,
+   "p": [
+    0.93,
+    0.28,
+    0.1
+   ],
+   "d": [
+    0.2,
+    0.08,
+    0.2
+   ],
+   "g": "cast"
+  },
+  {
+   "name": "Castor 200 mm R + fork",
+   "kg": 2.3,
+   "p": [
+    0.93,
+    -0.28,
+    0.1
+   ],
+   "d": [
+    0.2,
+    0.08,
+    0.2
+   ],
+   "g": "cast"
+  },
+  {
+   "name": "Battery 24 V 20 Ah LiFePO4 + BMS + hatch (as G6)",
+   "kg": 5.05,
+   "p": [
+    0.8,
+    0,
+    0.18
+   ],
+   "d": [
+    0.25,
+    0.18,
+    0.15
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Electronics pod + harness (as G6)",
+   "kg": 3.39,
+   "p": [
+    0.7,
+    0,
+    0.32
+   ],
+   "d": [
+    0.2,
+    0.2,
+    0.1
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Sensors: post, lidar, cameras, radars (as G6)",
+   "kg": 1.86,
+   "p": [
+    1.0,
+    0,
+    0.6
+   ],
+   "d": [
+    0.05,
+    0.05,
+    0.6
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Bumper, lights, dock interface, safety (as G6)",
+   "kg": 1.95,
+   "p": [
+    1.05,
+    0,
+    0.22
+   ],
+   "d": [
+    0.05,
+    0.7,
+    0.1
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Lifter mast: 2 x linear rail 1.0 m + 40x40 uprights",
+   "kg": 4.0,
+   "p": [
+    0.45,
+    0,
+    0.75
+   ],
+   "d": [
+    0.05,
+    0.4,
+    1.0
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Lift actuator 24 V 3 kN 300 mm stroke, IP66",
+   "kg": 3.5,
+   "p": [
+    0.47,
+    0,
+    0.62
+   ],
+   "d": [
+    0.08,
+    0.08,
+    0.5
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Mast top plate + rear camera",
+   "kg": 1.1,
+   "p": [
+    0.45,
+    0,
+    1.25
+   ],
+   "d": [
+    0.1,
+    0.3,
+    0.02
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Anti-tip rollers + arm-end flares + UHMW guards",
+   "kg": 1.6,
+   "p": [
+    -0.25,
+    0,
+    0.18
+   ],
+   "d": [
+    0.1,
+    0.9,
+    0.1
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Ballast [D4]: 10 kg steel plate bolted in the body tray floor, forward (was 2 x 5 kg in the side arms at the drive axle)",
+   "kg": 10.0,
+   "p": [
+    0.85,
+    0,
+    0.13
+   ],
+   "d": [
+    0.3,
+    0.5,
+    0.02
+   ],
+   "g": "chassis"
+  }
+ ],
+ "carriage": [
+  {
+   "name": "Lift carriage, comb (tooth+nib), pad arm, sprung pad, bar keeper + gearmotor [D1] pad moved onto the carriage; [D2] pad retract actuator 24 V 50 mm 1 kN (+0.6 kg)",
+   "kg": 5.1,
+   "p": [
+    0.4,
+    0,
+    0.85
+   ],
+   "d": [
+    0.15,
+    0.4,
+    0.6
+   ],
+   "g": "lift"
+  }
+ ]
+}

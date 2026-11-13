@@ -1,0 +1,148 @@
+#!/usr/bin/env python3
+"""H2 campaign: tests that are not in the frozen gate (S4 is gate sub-commands; this file does S5, S6, S7 and the G8 hand calc).
+Sim module env CMP_SIM (simH2 | simB2h), design prefix CMP_PREFIX, tag IT1_TAG; results h2/res/<PREFIX><name><TAG>.json.
+Drive/brake model, grab firmware and monitors are the gate's (runB2.py definitions copied where needed; frozen terms unchanged).
+  runX.py ret <BIN> <step|trench|pothole> <v>        S5 retention: full bin carried nose-first over the feature (H2_KEEPER=1 for the keeper)
+  runX.py kerb <v> <nose|tail> [ramp]               S6 full-width sharp 40 mm step (tyre: H2_TYRE, torque/castor: CGB_GEO)
+  runX.py climbn <mu> <crr>                          S7 12 % climb nose-uphill: castor load and heading (bin CG: H2_BINCG_DZ)
+  runX.py tipcalc                                    G8 hand calc on the simulated carried CG (110 / 60 / 0 kg)
+  runX.py tyrecal                                    S6 calibration: static drive-tyre deflection for the H2_TYRE setting"""
+import os, sys, json, time, math
+H=os.path.dirname(os.path.abspath(__file__)); sys.path.insert(0,H); sys.path.insert(0,os.path.join(H,'..','..','g6'))
+import numpy as np, mujoco, importlib
+B=importlib.import_module(os.environ.get('CMP_SIM','simH2'))
+from bins_g5 import BINS
+RES=os.environ.get('H2_RES',os.path.join(H,'res')); TAG=('_dt025' if os.environ.get('SIM_DT')=='0.00025' else '')+os.environ.get('IT1_TAG',''); T0=time.time()
+PFX=os.environ.get('CMP_PREFIX','H2_')
+def dump(name,o):
+    o['cpu_s']=round(time.time()-T0); o['geo']={k:v for k,v in B.GEO.items()}; o['env']={k:v for k,v in os.environ.items() if k.startswith(('H2_','CGB_','B2_','PERT','CMP_','SIM_'))}
+    f=os.path.join(RES,PFX+name+TAG+'.json'); json.dump(o,open(f,'w'),indent=1,default=str)
+    print(name,json.dumps({k:v for k,v in o.items() if k not in('events','geo','peak','env','trace')},default=str)[:900],flush=True)
+# ---------------------------------------------------------------- terrain editing (deck at z=0, lower plane below)
+TER={}
+_bx=B.build_xml
+def build_xml2(*a,**k):
+    xml,tm,bm=_bx(*a,**k)
+    if TER:
+        i=xml.find('<geom name="ground"'); j=xml.find('/>',i)+2; g=xml[i:j]
+        fr=g.split('friction="')[1].split('"')[0]
+        dep=TER['dep']; parts=[f'<geom name="bump" type="plane" pos="0 0 {-dep}" size="80 80 0.1" friction="{fr}" condim="3"/>']
+        for n,(x0,x1,y0,y1) in enumerate(TER['decks']):
+            nm='ground' if n==0 else 'deck%d'%n
+            parts.append(f'<geom name="{nm}" type="box" pos="{(x0+x1)/2:.4f} {(y0+y1)/2:.4f} {-dep/2:.4f}" size="{(x1-x0)/2:.4f} {(y1-y0)/2:.4f} {dep/2:.4f}" friction="{fr}" condim="3"/>')
+        xml=xml[:i]+''.join(parts)+xml[j:]
+    return xml,tm,bm
+B.build_xml=build_xml2
+def tyre_post(S):
+    """S6: compliant drive tyre switched on AFTER the grab (H2_TYRE_POST='t,z'; drive geoms, priority 1 over the ground).
+    Applied after the grab so the docking dynamics stay the gate's; S6 tests the carry over the kerb only."""
+    if os.environ.get('H2_TYRE_POST'):
+        sr,_,si=os.environ['H2_TYRE_POST'].partition(';'); v=[float(x) for x in sr.split(',')]
+        for n in ('driveL','driveR'):
+            g=S.gid[n]; S.m.geom_solref[g]=v; S.m.geom_priority[g]=1
+            if si: S.m.geom_solimp[g][:3]=[float(x) for x in si.split(',')]
+def nominal(binkey,kg=None,full=True,**kw):
+    p=B.bin_params(binkey); Bn=BINS[binkey]
+    p['fill']=(kg-Bn['empty']) if kg else (Bn['fill_full'] if full else 0.0)
+    S=B.SimB(binkey,p,tug_pose=B.start_pose(p),**kw); R=B.RunnerB(S); g=B.grab(R); tyre_post(S)
+    return S,R,g
+def engagement(S):
+    """vertical engagement of the comb tooth (nib) in the receiver channel, m: nib top - rim bottom, capped at the nib height;
+    negative = the lip has lifted clear of the tooth. Also whether the nib is still inside the channel in x."""
+    q=S.nib_in_bin(); P=S.p; xl=P['xlip']; zL=P['zL_abs']-P['wheel_r']; nh=B.GEO['nib_h']; nl=B.GEO['nib_l']
+    top=q[2]+nh/2+0.005; e=min(nh,top-(zL-0.025)); inx=(xl-0.004<q[0]-nl/2) and (q[0]+nl/2<xl+0.022+0.004)
+    return float(e),bool(inx)
+def lipF(S): return S.pair('nib','ledge')+S.pair('tooth','rim')+S.pair('nib','rim')+S.pair('tooth','ledge')
+def mon_full(R,MX,every=4):
+    S=R.s
+    def mon():
+        if R.i%every: return
+        C=S.contacts(); r,p,y=S.rpy(); e,inx=engagement(S); F=lipF(S)
+        MX['roll']=max(MX['roll'],abs(r)); MX['pitch']=max(MX['pitch'],abs(p)); MX['emin']=min(MX['emin'],e); MX['inx_all']=MX['inx_all'] and inx
+        MX['lipF']=max(MX['lipF'],F); MX['padF']=max(MX['padF'],C['padg']); MX['liftF']=max(MX['liftF'],abs(S.lift_force()))
+        MX['drive_tyre']=max(MX['drive_tyre'],C['driveL'],C['driveR']); MX['cmin']=min(MX['cmin'],C['casterL']+C['casterR'])
+        MX['seated_all']=MX['seated_all'] and S.seated(); MX['clear_min']=min(MX['clear_min'],S.wheel_clear())
+        bg=sum(S.pair(a,b) for a in ('binwheelL','binwheelR','binhull') for b in ('ground','bump','deck1','deck2'))
+        MX['bin_ground']=max(MX['bin_ground'],bg); MX['kbarF']=max(MX['kbarF'],S.pair('kbar','ledge')+S.pair('kbar','rim'))
+        MX['yaw_dev']=max(MX['yaw_dev'],abs((y-MX['psi0']+180)%360-180))
+    R.mon=mon
+def MX0(psi0): return dict(roll=0.0,pitch=0.0,emin=9.0,inx_all=True,lipF=0.0,padF=0.0,liftF=0.0,drive_tyre=0.0,cmin=1e9,seated_all=True,clear_min=9.0,bin_ground=0.0,kbarF=0.0,yaw_dev=0.0,psi0=psi0)
+cmd=sys.argv[1]
+if cmd=='ret':
+    b,feat,v=sys.argv[2],sys.argv[3],float(sys.argv[4]); p=B.bin_params(b); x0=B.start_pose(p)[0]
+    # the grab ends with the tug docked ~1.2 m behind its start pose; feature edge 1.4 m ahead of the docked drive axle (castors meet it at full speed)
+    xe=x0-1.2+1.4; BIG=40.0
+    if feat=='step': TER.update(dep=0.040,decks=[(-BIG,xe,-BIG,BIG)])
+    elif feat=='trench': TER.update(dep=0.040,decks=[(-BIG,xe,-BIG,BIG),(xe+0.20,BIG,-BIG,BIG)])
+    elif feat=='pothole':   # 60 mm deep, 0.40 m long x 0.25 m wide under the LEFT drive wheel / castor track
+        yl=B.GEO['track']; TER.update(dep=0.060,decks=[(-BIG,xe,-BIG,BIG),(xe+0.40,BIG,-BIG,BIG),(xe,xe+0.40,-BIG,yl-0.125),(xe,xe+0.40,yl+0.125,BIG)])
+    S,R,g=nominal(b,full=True); psi0=S.rpy()[2]; MX=MX0(psi0); mon_full(R,MX)
+    Wb=S.bin_mass*9.81; e0,_=engagement(S); S.contacts(); F0=lipF(S)
+    xs=S.d.xpos[S.bid['tug']].copy(); dist=lambda: float(np.linalg.norm(S.d.xpos[S.bid['tug']][:2]-xs[:2]))
+    R.phase='S5 carry %.1f m/s over %s'%(v,feat); R.ctrl_fn=B.heading_hold(R,v,psi0); ok=R.until(lambda: dist()>=3.0,20.0); R.ctrl_fn=None; B.soft_stop(R); R.run_for(1.0)
+    o=dict(test='S5_retention',feature_x_ahead_of_axle_m=round(xe-float(xs[0]),3),bin=b,feature=feat,v=v,keeper=os.environ.get('H2_KEEPER')=='1',grab=g['result'],bin_weight_N=round(Wb),lip_static_N=round(F0),eng_start_mm=round(1000*e0,1),
+           reached=bool(ok),captured_end=S.captured())
+    o.update({k:(round(vv,3) if isinstance(vv,float) else vv) for k,vv in MX.items()})
+    o['eng_min_mm']=round(1000*MX['emin'],1); o['lip_peak_N']=round(MX['lipF']); o['lip_peak_x_weight']=round(MX['lipF']/Wb,2)
+    o['ok']=bool(g['result']=='success' and MX['emin']>=0.5*B.GEO['nib_h'] and MX['inx_all'] and S.captured() and MX['bin_ground']<1.0)
+    dump('S5_%s_%s_v%02d%s'%(b,feat,round(v*10),'_kp' if o['keeper'] else ''),o)
+elif cmd=='kerb':
+    v=float(sys.argv[2]); dirn=sys.argv[3]; ramp=len(sys.argv)>4 and sys.argv[4]=='ramp'
+    p=B.bin_params('ESE240SL'); bp=(30.0,0.040,0.0,2.0)+((0.16,) if ramp else ())
+    S,R,g=nominal('ESE240SL',110,terrain='bump',bump=bp)
+    gb=S.gid['bump']; xb_old=float(S.m.geom_pos[gb][0]); xt=float(S.d.xpos[S.bid['tug']][0]); sg=1 if dirn=='nose' else -1
+    if sg>0: S.m.geom_pos[gb][0]=xt+1.6+(0.16 if ramp else 0.0)
+    else:
+        S.m.geom_pos[gb][0]=xt-1.6-(0.16 if ramp else 0.0)
+    if ramp:
+        gr=mujoco.mj_name2id(S.m,mujoco.mjtObj.mjOBJ_GEOM,'ramp'); S.m.geom_pos[gr][0]+=S.m.geom_pos[gb][0]-xb_old
+        if sg<0:   # mirror the ramp to the other side of the step for tail-first approach
+            S.m.geom_pos[gr][0]=2*S.m.geom_pos[gb][0]-S.m.geom_pos[gr][0]; q=S.m.geom_quat[gr].copy(); S.m.geom_quat[gr]=[q[0],-q[1],-q[2],q[3]]
+    mujoco.mj_forward(S.m,S.d)
+    psi0=S.rpy()[2]; MX=MX0(psi0); mon_full(R,MX,every=20)
+    xs=S.d.xpos[S.bid['tug']].copy(); dist=lambda: float(np.linalg.norm(S.d.xpos[S.bid['tug']][:2]-xs[:2]))
+    R.phase='S6 %.1f m/s %s-first over a 40 mm step'%(v,dirn); R.ctrl_fn=B.heading_hold(R,sg*v,psi0); ok=R.until(lambda: dist()>=4.5,25.0); R.ctrl_fn=None; B.soft_stop(R); R.run_for(1.0)
+    o=dict(test='S6_kerb40_full_width',v=v,dirn=dirn,ramp=ramp,grab=g['result'],reached=bool(ok),dist_m=round(dist(),2),captured_end=S.captured(),
+           tcap=B.GEO['tcap'],castor_r=B.GEO['cr'],tyre=os.environ.get('H2_TYRE_POST','rigid (gate)'))
+    o.update({k:(round(vv,3) if isinstance(vv,float) else vv) for k,vv in MX.items()})
+    o['ok']=bool(ok and S.captured() and MX['seated_all'] and MX['bin_ground']<1.0 and MX['roll']<15 and MX['pitch']<15)
+    dump('S6_kerb_v%02d_%s%s'%(round(v*10),dirn,'_ramp' if ramp else ''),o)
+elif cmd=='climbn':
+    mu=float(sys.argv[2]); cb=float(sys.argv[3]); S,R,g=nominal('ESE240SL',110,crr_bin=cb)
+    for n in ('ground','bump','driveL','driveR','casterL','casterR','binwheelL','binwheelR'):
+        gg=mujoco.mj_name2id(S.m,mujoco.mjtObj.mjOBJ_GEOM,n)
+        if gg>=0: S.m.geom_friction[gg][0]=mu
+    psi0=S.rpy()[2]; MX=MX0(psi0); R.phase='7a onto 12 %'; R.ramp_grade(0.12,0,2.0); R.run_for(1.0); mon_full(R,MX,every=20)
+    x0=S.d.xpos[S.bid['tug']].copy(); dist=lambda: float(np.linalg.norm(S.d.xpos[S.bid['tug']][:2]-x0[:2])); t0=R.t
+    R.phase='7 climbing nose-uphill'; R.ctrl_fn=B.heading_hold(R,0.5,psi0); ok=R.until(lambda: dist()>=5.0,25.0); tc=R.t-t0; R.ctrl_fn=None
+    R.phase='8 brake hold'; R.hold(); xh=S.d.xpos[S.bid['tug']].copy(); R.run_for(3.0); creep=float(np.linalg.norm(S.d.xpos[S.bid['tug']][:2]-xh[:2]))
+    o=dict(test='S7_climb12_nose_up',mu=mu,crr_bin=cb,bin_cg_dz=float(os.environ.get('H2_BINCG_DZ','0')),grab=g['result'],reached=bool(ok),time_s=round(tc,1),hold_creep_m=round(creep,3),captured_end=S.captured())
+    o.update({k:(round(vv,3) if isinstance(vv,float) else vv) for k,vv in MX.items()})
+    o['castor_min_N']=round(MX['cmin'],1); o['heading_dev_deg']=round(MX['yaw_dev'],2)
+    o['ok']=bool(ok and MX['cmin']>50 and MX['yaw_dev']<=5 and S.captured())
+    dump('S7_climb_m%02d_c%02d'%(round(mu*100),round(cb*100)),o)
+elif cmd=='tipcalc':
+    # support polygon (design): drive contacts, castor contacts (swivel axis - trail), anti-tip wheels; CG from the simulated carried state
+    G=B.GEO; pts=dict(drive=(0.0,G['track']),castor=(G['cx']-0.05,G['cy']),antitip=((G.get('tail_x',G.get('guard_x0',-0.30)-0.03)),G.get('tail_y',G.get('at_y',0.42))))
+    out=[]
+    for kg in (110,60,0):
+        if kg: S,R,g=nominal('ESE240SL',kg); res=g['result']
+        else:
+            p=B.bin_params('ESE240SL'); S=B.SimB('ESE240SL',p,with_bin=False); mujoco.mj_forward(S.m,S.d); res='no bin'
+        Rt=S.d.xmat[S.bid['tug']].reshape(3,3); pt=S.d.xpos[S.bid['tug']]
+        ms=float(S.m.body_subtreemass[S.bid['tug']]); cs=S.d.subtree_com[S.bid['tug']]*ms
+        if kg: mb=float(S.m.body_subtreemass[S.bid['bin']]); cs=cs+S.d.subtree_com[S.bid['bin']]*mb; ms+=mb
+        c=Rt.T@(cs/ms-pt); X,Y,Z=float(c[0]),float(c[1]),float(c[2])
+        dx,dy=pts['drive']; cx,cy=pts['castor']; ax,ay=pts['antitip']
+        L=math.hypot(cx-dx,cy-dy); dl=abs((cx-dx)*(dy-Y)-(dx-X)*(cy-dy))/L
+        out.append(dict(bin_kg=kg,grab=res,M=round(ms,1),cg=[round(X,3),round(Y,3),round(Z,3)],tip_lateral_deg=round(math.degrees(math.atan(dl/Z)),1),
+                        tip_forward_over_castors_deg=round(math.degrees(math.atan((cx-X)/Z)),1),castor_liftoff_about_drive_axle_deg=round(math.degrees(math.atan(X/Z)),1),
+                        rear_tip_on_antitip_deg=round(math.degrees(math.atan((X-ax)/Z)),1)))
+    o=dict(test='G8_handcalc_on_sim_CG',support=pts,cases=out,tipmin=min(min(c['tip_lateral_deg'],c['tip_forward_over_castors_deg'],c['rear_tip_on_antitip_deg']) for c in out))
+    dump('tipcalc',o)
+elif cmd=='tyrecal':
+    S,R,g=nominal('ESE240SL',110); R.hold(); R.run_for(2.0); C=S.contacts()
+    pen=[B.GEO['rw']-float(S.d.xpos[S.bid[w]][2]) for w in ('wheelL','wheelR')]
+    o=dict(test='tyre calibration',tyre=os.environ.get('H2_TYRE_POST','rigid'),grab=g['result'],drive_N=[round(C['driveL']),round(C['driveR'])],deflection_mm=[round(1000*x,2) for x in pen],
+           k_secant_N_per_m=[round(C['driveL']/max(pen[0],1e-6)),round(C['driveR']/max(pen[1],1e-6))])
+    dump('tyrecal',o)

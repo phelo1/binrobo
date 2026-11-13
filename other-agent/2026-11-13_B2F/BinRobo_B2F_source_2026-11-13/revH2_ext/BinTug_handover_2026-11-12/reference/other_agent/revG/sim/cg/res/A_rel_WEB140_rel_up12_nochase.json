@@ -1,0 +1,128 @@
+{
+ "bin": "WEB140",
+ "test": "rel_up12",
+ "gh": "B2",
+ "ghp": {
+  "hy": 130.0,
+  "lip_chamfer": true,
+  "ease": 0.6,
+  "_reapp": {
+   "k": 5.0
+  },
+  "_guard": true,
+  "_claim_and": true,
+  "throat": -34.0,
+  "lip_w": 8.0,
+  "lip_top": -2.0,
+  "pawl": {
+   "knee": [
+    -18.0,
+    35.0
+   ],
+   "tip": [
+    -33.0,
+    19.0
+   ]
+  },
+  "truth_ztop": 50.0,
+  "feel_T": 20.0,
+  "reclose": 0.6
+ },
+ "tug_kg": 115.8,
+ "bin_kg": 66.0,
+ "grab": {
+  "result": "success",
+  "claim": true,
+  "captured": true,
+  "float_mm": -11.4,
+  "bar_mm": [
+   -0.9,
+   4.7,
+   -11.0
+  ]
+ },
+ "release": {
+  "opened": false,
+  "released": false,
+  "fail_reason": "pawls open but bar 1448 mm from the cup (bin not standing on its wheels / already dropped)"
+ },
+ "bin_speed_end": 0.0,
+ "bin_stable": false,
+ "ok": false,
+ "events": [
+  [
+   6.48,
+   "wheel-stop contact, both wheels True"
+  ],
+  [
+   12.66,
+   "swing end phi 7.2 seat True latch True abort None bar [-0.9, 4.7, -11.0] pawls [0.0, 0.0]"
+  ],
+  [
+   15.66,
+   "pull test rise 291 N dtilt 0.69 -> PASS"
+  ],
+  [
+   15.66,
+   "float ratchet released after claim (tip with free float)"
+  ],
+  [
+   39.77,
+   "tipped to 25.0 deg, captured throughout True"
+  ],
+  [
+   61.24,
+   "A' tow pose: stop bar retracted 60 mm, float clamped at bottom stop"
+  ],
+  [
+   114.51,
+   "bin upright 0.3 deg rel, 0.3 abs, tug pitch -0.0 deg, mast 9.2, float -6 mm vs grab"
+  ],
+  [
+   114.51,
+   "A' wheel-on-ground interlock: bin wheels on ground 652 N of 647 N"
+  ],
+  [
+   116.01,
+   "release not clear (try 1): pawls -130/-130 deg, bar z -632 mm"
+  ],
+  [
+   118.91,
+   "release not clear (try 2): pawls -130/-130 deg, bar z -653 mm"
+  ],
+  [
+   121.81,
+   "release not clear (try 3): pawls -130/-130 deg, bar z -674 mm"
+  ],
+  [
+   121.81,
+   "RELEASE FAILED: pawls open but bar 1448 mm from the cup (bin not standing on its wheels / already dropped) -> hold + alert, manual lever"
+  ]
+ ],
+ "mon": {
+  "ryaw": 0.1,
+  "pitch_dev": 5.5,
+  "anti": 0.0,
+  "cmin": 0.0,
+  "phase_ryaw": "8a A' stop bar redeploys (cam), float un"
+ },
+ "bin_tilt_abs_end": 82.8,
+ "env": {
+  "CGA_CHASE": "0",
+  "CGA_TAGX": "nochase",
+  "G6_YAWRANGE": "40",
+  "G6_RATCHET_TIP": "1",
+  "G6_STANDFIX": "1",
+  "G6_STANDWORLD": "1",
+  "G6_STRAIGHTEN": "1",
+  "G6_PIVOT": "1",
+  "G6_PINLOCK": "1",
+  "G6_PINTOL": "3.0",
+  "G6_DNLOCK": "1",
+  "G6_SB2": "0.15",
+  "G6_RATCHET_STAND": "1",
+  "G6_MASSFILE": "/workspace/projects/847c6e2d-79fb-41ac-8eca-c75df6a92b0c/revG/sim/cg/mass_cgA.json"
+ },
+ "verdict": "TIPS",
+ "cpu_s": 45
+}

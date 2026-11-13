@@ -1,0 +1,105 @@
+t 0.01            bin d_ax +0.000 d_lat -0.000 |d| 0.000 tilt 0.0 binyaw 0.0
+t 0.31 0 Comb to  bin d_ax +0.000 d_lat -0.000 |d| 0.000 tilt 0.0 binyaw 0.0
+t 0.50 0 Comb to  bin d_ax +0.000 d_lat -0.000 |d| 0.000 tilt 0.0 binyaw 0.0
+t 0.64 1 Approach bin d_ax +0.000 d_lat -0.000 |d| 0.000 tilt 0.0 binyaw 0.0
+t 1.00 1 Approach bin d_ax +0.000 d_lat -0.000 |d| 0.000 tilt 0.0 binyaw 0.0
+t 1.50 1 Approach bin d_ax +0.000 d_lat -0.000 |d| 0.000 tilt 0.0 binyaw 0.0
+t 2.00 1 Approach bin d_ax +0.000 d_lat -0.000 |d| 0.000 tilt 0.0 binyaw 0.0
+t 2.50 1 Approach bin d_ax +0.000 d_lat -0.000 |d| 0.000 tilt 0.0 binyaw 0.0
+t 3.00 1 Approach bin d_ax +0.000 d_lat -0.000 |d| 0.000 tilt 0.0 binyaw 0.0
+t 3.50 1 Approach bin d_ax +0.000 d_lat -0.000 |d| 0.000 tilt 0.0 binyaw 0.0
+t 4.00 1 Approach bin d_ax +0.000 d_lat -0.000 |d| 0.000 tilt 0.0 binyaw 0.0
+t 4.50 1 Approach bin d_ax +0.000 d_lat -0.000 |d| 0.000 tilt 0.0 binyaw 0.0
+t 5.00 1 Approach bin d_ax +0.000 d_lat -0.000 |d| 0.000 tilt 0.0 binyaw 0.0
+t 5.50 1 Approach bin d_ax +0.000 d_lat -0.000 |d| 0.000 tilt 0.0 binyaw 0.0
+t 6.00 1 Approach bin d_ax +0.000 d_lat -0.000 |d| 0.000 tilt 0.0 binyaw 0.0
+t 6.50 1 Approach bin d_ax -0.010 d_lat +0.001 |d| 0.010 tilt 0.0 binyaw -1.1
+t 7.00 1 Approach bin d_ax -0.019 d_lat +0.000 |d| 0.019 tilt 0.0 binyaw -2.2
+t 7.50 1 Approach bin d_ax -0.026 d_lat -0.002 |d| 0.027 tilt 0.0 binyaw -3.2
+t 8.00 1 Approach bin d_ax -0.036 d_lat -0.004 |d| 0.036 tilt 0.0 binyaw -4.6
+t 8.50 1 Approach bin d_ax -0.049 d_lat -0.007 |d| 0.050 tilt 0.0 binyaw -6.6
+t 9.00 1 Approach bin d_ax -0.073 d_lat -0.014 |d| 0.074 tilt 0.0 binyaw -10.2
+t 9.10 1c-a Stop  bin d_ax -0.079 d_lat -0.016 |d| 0.080 tilt 0.0 binyaw -11.1
+t 9.50 1c-a Stop  bin d_ax -0.080 d_lat -0.016 |d| 0.081 tilt 0.0 binyaw -11.3
+t 10.00 1c-a Stop  bin d_ax -0.080 d_lat -0.016 |d| 0.081 tilt 0.0 binyaw -11.3
+t 10.50 1c-a Stop  bin d_ax -0.080 d_lat -0.016 |d| 0.081 tilt 0.0 binyaw -11.3
+t 11.00 1c-a Stop  bin d_ax -0.080 d_lat -0.016 |d| 0.081 tilt 0.0 binyaw -11.3
+t 11.50 1c-a Stop  bin d_ax -0.080 d_lat -0.016 |d| 0.081 tilt 0.0 binyaw -11.3
+t 12.00 1c-a Stop  bin d_ax -0.080 d_lat -0.016 |d| 0.081 tilt 0.0 binyaw -11.3
+t 12.50 1c-a Stop  bin d_ax -0.080 d_lat -0.016 |d| 0.081 tilt 0.0 binyaw -11.3
+t 13.00 1c-a Stop  bin d_ax -0.080 d_lat -0.016 |d| 0.081 tilt 0.0 binyaw -11.3
+t 13.50 1c-a Stop  bin d_ax -0.080 d_lat -0.016 |d| 0.081 tilt 0.0 binyaw -11.3
+t 14.00 1c-a Stop  bin d_ax -0.080 d_lat -0.016 |d| 0.081 tilt 0.0 binyaw -11.3
+t 14.50 1c-a Stop  bin d_ax -0.080 d_lat -0.016 |d| 0.081 tilt 0.0 binyaw -11.3
+t 15.00 1c-a Stop  bin d_ax -0.080 d_lat -0.016 |d| 0.081 tilt 0.0 binyaw -11.3
+t 15.50 1c-a Stop  bin d_ax -0.080 d_lat -0.016 |d| 0.081 tilt 0.0 binyaw -11.3
+t 15.70 1c Creep 0 bin d_ax -0.080 d_lat -0.016 |d| 0.081 tilt 0.0 binyaw -11.3
+t 16.00 1c Creep 0 bin d_ax -0.082 d_lat -0.015 |d| 0.083 tilt 0.0 binyaw -11.5
+t 16.50 1c Creep 0 bin d_ax -0.087 d_lat -0.014 |d| 0.088 tilt 0.0 binyaw -12.0
+t 17.00 1c Creep 0 bin d_ax -0.089 d_lat -0.013 |d| 0.090 tilt 0.0 binyaw -12.2
+t 17.29 1r Back of bin d_ax -0.089 d_lat -0.013 |d| 0.090 tilt 0.0 binyaw -12.2
+t 17.50 1r Back of bin d_ax -0.089 d_lat -0.013 |d| 0.090 tilt 0.0 binyaw -12.2
+t 18.00 1r Back of bin d_ax -0.089 d_lat -0.013 |d| 0.090 tilt 0.0 binyaw -12.2
+t 18.50 1r Back of bin d_ax -0.089 d_lat -0.013 |d| 0.090 tilt 0.0 binyaw -12.2
+t 19.00 1r Back of bin d_ax -0.089 d_lat -0.013 |d| 0.090 tilt 0.0 binyaw -12.2
+t 19.50 1r Back of bin d_ax -0.089 d_lat -0.013 |d| 0.090 tilt 0.0 binyaw -12.2
+t 20.00 1r Back of bin d_ax -0.089 d_lat -0.013 |d| 0.090 tilt 0.0 binyaw -12.2
+t 20.50 1r Back of bin d_ax -0.089 d_lat -0.013 |d| 0.090 tilt 0.0 binyaw -12.2
+t 21.00 1r Back of bin d_ax -0.089 d_lat -0.013 |d| 0.090 tilt 0.0 binyaw -12.2
+t 21.50 1r Back of bin d_ax -0.089 d_lat -0.013 |d| 0.090 tilt 0.0 binyaw -12.2
+t 22.00 1r Back of bin d_ax -0.089 d_lat -0.013 |d| 0.090 tilt 0.0 binyaw -12.2
+t 22.47 0 Comb to  bin d_ax -0.089 d_lat -0.013 |d| 0.090 tilt 0.0 binyaw -12.2
+t 22.50 0 Comb to  bin d_ax -0.089 d_lat -0.013 |d| 0.090 tilt 0.0 binyaw -12.2
+t 22.77 1 Approach bin d_ax -0.089 d_lat -0.013 |d| 0.090 tilt 0.0 binyaw -12.2
+t 23.00 1 Approach bin d_ax -0.089 d_lat -0.013 |d| 0.090 tilt 0.0 binyaw -12.2
+t 23.50 1 Approach bin d_ax -0.089 d_lat -0.013 |d| 0.090 tilt 0.0 binyaw -12.2
+t 24.00 1 Approach bin d_ax -0.089 d_lat -0.013 |d| 0.090 tilt 0.0 binyaw -12.2
+t 24.50 1 Approach bin d_ax -0.089 d_lat -0.013 |d| 0.090 tilt 0.0 binyaw -12.2
+t 25.00 1 Approach bin d_ax -0.089 d_lat -0.013 |d| 0.090 tilt 0.0 binyaw -12.2
+t 25.50 1 Approach bin d_ax -0.089 d_lat -0.013 |d| 0.090 tilt 0.0 binyaw -12.2
+t 26.00 1 Approach bin d_ax -0.089 d_lat -0.013 |d| 0.090 tilt 0.0 binyaw -12.2
+t 26.50 1 Approach bin d_ax -0.103 d_lat -0.029 |d| 0.106 tilt 0.0 binyaw -13.3
+t 27.00 1 Approach bin d_ax -0.119 d_lat -0.042 |d| 0.126 tilt 0.0 binyaw -13.6
+t 27.50 1 Approach bin d_ax -0.139 d_lat -0.053 |d| 0.148 tilt 0.0 binyaw -12.9
+t 27.85 1c-a Stop  bin d_ax -0.155 d_lat -0.059 |d| 0.166 tilt 0.0 binyaw -11.7
+t 28.00 1c-a Stop  bin d_ax -0.156 d_lat -0.060 |d| 0.167 tilt 0.0 binyaw -11.6
+t 28.50 1c-a Stop  bin d_ax -0.156 d_lat -0.060 |d| 0.167 tilt 0.0 binyaw -11.6
+t 29.00 1c-a Stop  bin d_ax -0.156 d_lat -0.060 |d| 0.167 tilt 0.0 binyaw -11.6
+t 29.50 1c-a Stop  bin d_ax -0.156 d_lat -0.060 |d| 0.167 tilt 0.0 binyaw -11.6
+t 30.00 1c-a Stop  bin d_ax -0.156 d_lat -0.060 |d| 0.167 tilt 0.0 binyaw -11.6
+t 30.50 1c-a Stop  bin d_ax -0.156 d_lat -0.060 |d| 0.167 tilt 0.0 binyaw -11.6
+t 31.00 1c-a Stop  bin d_ax -0.156 d_lat -0.060 |d| 0.167 tilt 0.0 binyaw -11.6
+t 31.50 1c-a Stop  bin d_ax -0.156 d_lat -0.060 |d| 0.167 tilt 0.0 binyaw -11.6
+t 32.00 1c-a Stop  bin d_ax -0.156 d_lat -0.060 |d| 0.167 tilt 0.0 binyaw -11.6
+t 32.50 1c-a Stop  bin d_ax -0.156 d_lat -0.060 |d| 0.167 tilt 0.0 binyaw -11.6
+t 33.00 1c-a Stop  bin d_ax -0.156 d_lat -0.060 |d| 0.167 tilt 0.0 binyaw -11.6
+t 33.50 1c-a Stop  bin d_ax -0.156 d_lat -0.060 |d| 0.167 tilt 0.0 binyaw -11.6
+t 34.00 1c-a Stop  bin d_ax -0.156 d_lat -0.060 |d| 0.167 tilt 0.0 binyaw -11.6
+t 34.45 1c Creep 0 bin d_ax -0.156 d_lat -0.060 |d| 0.167 tilt 0.0 binyaw -11.6
+t 34.50 1c Creep 0 bin d_ax -0.156 d_lat -0.060 |d| 0.167 tilt 0.0 binyaw -11.6
+t 35.00 1c Creep 0 bin d_ax -0.156 d_lat -0.060 |d| 0.167 tilt 0.0 binyaw -11.6
+t 35.50 1c Creep 0 bin d_ax -0.156 d_lat -0.060 |d| 0.167 tilt 0.0 binyaw -11.6
+t 36.00 1c Creep 0 bin d_ax -0.156 d_lat -0.060 |d| 0.167 tilt 0.0 binyaw -11.6
+t 36.50 1c Creep 0 bin d_ax -0.156 d_lat -0.060 |d| 0.167 tilt 0.0 binyaw -11.6
+t 37.00 1c Creep 0 bin d_ax -0.156 d_lat -0.060 |d| 0.167 tilt 0.0 binyaw -11.6
+t 37.50 1c Creep 0 bin d_ax -0.156 d_lat -0.060 |d| 0.167 tilt 0.0 binyaw -11.6
+t 38.00 1c Creep 0 bin d_ax -0.156 d_lat -0.060 |d| 0.167 tilt 0.0 binyaw -11.6
+t 38.50 1c Creep 0 bin d_ax -0.156 d_lat -0.060 |d| 0.167 tilt 0.0 binyaw -11.6
+t 39.00 1c Creep 0 bin d_ax -0.156 d_lat -0.060 |d| 0.167 tilt 0.0 binyaw -11.6
+t 39.50 1c Creep 0 bin d_ax -0.156 d_lat -0.060 |d| 0.167 tilt 0.0 binyaw -11.6
+t 40.00 1c Creep 0 bin d_ax -0.156 d_lat -0.060 |d| 0.167 tilt 0.0 binyaw -11.6
+t 40.50 1c Creep 0 bin d_ax -0.156 d_lat -0.060 |d| 0.167 tilt 0.0 binyaw -11.6
+t 41.00 1c Creep 0 bin d_ax -0.156 d_lat -0.060 |d| 0.167 tilt 0.0 binyaw -11.6
+t 41.50 1c Creep 0 bin d_ax -0.156 d_lat -0.060 |d| 0.167 tilt 0.0 binyaw -11.6
+t 42.00 1c Creep 0 bin d_ax -0.156 d_lat -0.060 |d| 0.167 tilt 0.0 binyaw -11.6
+t 42.50 1c Creep 0 bin d_ax -0.156 d_lat -0.060 |d| 0.167 tilt 0.0 binyaw -11.6
+t 43.00 1c Creep 0 bin d_ax -0.156 d_lat -0.060 |d| 0.167 tilt 0.0 binyaw -11.6
+t 43.50 1c Creep 0 bin d_ax -0.156 d_lat -0.060 |d| 0.167 tilt 0.0 binyaw -11.6
+t 44.00 1c Creep 0 bin d_ax -0.156 d_lat -0.060 |d| 0.167 tilt 0.0 binyaw -11.6
+t 44.50 1c Creep 0 bin d_ax -0.156 d_lat -0.060 |d| 0.167 tilt 0.0 binyaw -11.6
+t 45.00 1c Creep 0 bin d_ax -0.156 d_lat -0.060 |d| 0.167 tilt 0.0 binyaw -11.6
+t 45.50 1c Creep 0 bin d_ax -0.156 d_lat -0.060 |d| 0.167 tilt 0.0 binyaw -11.6
+t 46.00 1c Creep 0 bin d_ax -0.156 d_lat -0.060 |d| 0.167 tilt 0.0 binyaw -11.6
+t 46.50 1c Creep 0 bin d_ax -0.156 d_lat -0.060 |d| 0.167 tilt 0.0 binyaw -11.6
+{'docked': False, 'reapp': True, 'dock_dy_mm': -19.2, 'result': 'no_dock', 'claim': False, 'captured': False}
+[(17.28, 'docked: moved, bin dy -110 mm (camera -109), nib gap 723 mm, bin moved 10 mm, rim 0.887 q_app 0.007, yaw meas 1.9 true 1.1 deg'), (17.28, 'back off 0.4 m and re-approach'), (46.95, 'docked: timeout, bin dy -19 mm (camera -5), nib gap 331 mm, bin moved 0 mm, rim 0.882 q_app 0.002, yaw meas -0.8 true -0.3 deg')]

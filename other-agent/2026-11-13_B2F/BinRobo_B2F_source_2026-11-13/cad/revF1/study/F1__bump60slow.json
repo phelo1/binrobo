@@ -1,0 +1,101 @@
+{
+ "variant": "F1",
+ "test": "bump60slow",
+ "desc": "Rev F.1: 4 plates fwd (+0.70 m), anti-tip rollers 100 mm, casters +100 mm fwd, rubber hook bush, soft stop, closed-loop heading + 60 deg hitch cap",
+ "reached_4m": true,
+ "events": [
+  [
+   2.72,
+   "wheel-stop contact"
+  ],
+  [
+   8.6,
+   "hook reached handle, offset mm [ 2.   0.  -0.1]"
+  ],
+  [
+   9.2,
+   "latched: float spring seated handle (residual 1 mm)"
+  ],
+  [
+   57.26,
+   "tipped to 48.0 deg, mast 70.6 deg"
+  ]
+ ],
+ "phase5": {
+  "caster_min": 0,
+  "drive_min": 307,
+  "stopbar_max": 635,
+  "antitip_max": 0,
+  "arm_max": 225,
+  "tug_hit_max": 0,
+  "hook_max": 392,
+  "act_max_N": 961,
+  "pitch_max": 5.9,
+  "roll_max": 0.0,
+  "tilt_min": 0.0,
+  "tilt_max": 48.0,
+  "bin_yaw_max": 0.0,
+  "torque_max": 28.4,
+  "dist": 0.01,
+  "v_end": -0.0,
+  "caster_p10": 0,
+  "caster_unloaded_frac": 0.56,
+  "drive_p10": 410,
+  "hook_p99": 370,
+  "pitch_p90": 5.9,
+  "hgap_max": 0.4,
+  "antitip_p90": 0
+ },
+ "phase7": {
+  "caster_min": 0,
+  "drive_min": 0,
+  "stopbar_max": 560,
+  "antitip_max": 0,
+  "arm_max": 392,
+  "tug_hit_max": 0,
+  "hook_max": 6452,
+  "act_max_N": 2500,
+  "pitch_max": 8.4,
+  "roll_max": 6.6,
+  "tilt_min": 36.9,
+  "tilt_max": 57.6,
+  "bin_yaw_max": 49.8,
+  "torque_max": 60.0,
+  "dist": 1.81,
+  "v_end": 0.24,
+  "caster_p10": 0,
+  "caster_unloaded_frac": 0.26,
+  "drive_p10": 0,
+  "hook_p99": 1774,
+  "pitch_p90": 0.6,
+  "hgap_max": 2.4,
+  "antitip_p90": 0
+ },
+ "phase8": {
+  "caster_min": 140,
+  "drive_min": 0,
+  "stopbar_max": 109,
+  "antitip_max": 0,
+  "arm_max": 0,
+  "tug_hit_max": 0,
+  "hook_max": 146,
+  "act_max_N": 514,
+  "pitch_max": 0.0,
+  "roll_max": 0.0,
+  "tilt_min": 48.1,
+  "tilt_max": 49.2,
+  "bin_yaw_max": 1.2,
+  "torque_max": 7.6,
+  "dist": 0.0,
+  "v_end": -0.0,
+  "caster_p10": 140,
+  "caster_unloaded_frac": 0.0,
+  "drive_p10": 418,
+  "hook_p99": 145,
+  "pitch_p90": 0.0,
+  "hgap_max": 0.3,
+  "antitip_p90": 0
+ },
+ "pitch_flip": false,
+ "cpu_s": 14
+}

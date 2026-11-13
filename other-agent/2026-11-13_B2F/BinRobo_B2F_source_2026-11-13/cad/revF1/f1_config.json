@@ -1,0 +1,60 @@
+{
+ "AT100": {
+  "kw": {
+   "antitip_clear": 0.1
+  },
+  "tilt": 48,
+  "desc": "anti-tip rollers raised 70 -> 100 mm clearance"
+ },
+ "B3fwd": {
+  "kw": {
+   "ballast": 3,
+   "ballast_x": 0.7
+  },
+  "tilt": 48,
+  "desc": "3 plates forward (-4.3 kg)"
+ },
+ "F1a": {
+  "kw": {
+   "ballast_x": 0.7,
+   "antitip_clear": 0.1,
+   "hook_tc": 0.015,
+   "_soft": true
+  },
+  "tilt": 48,
+  "desc": "4 plates fwd + rollers 100 mm + medium hook bush + soft stop"
+ },
+ "F1b": {
+  "kw": {
+   "ballast": 3,
+   "ballast_x": 0.7,
+   "antitip_clear": 0.1,
+   "hook_tc": 0.015,
+   "_soft": true
+  },
+  "tilt": 48,
+  "desc": "3 plates fwd + rollers 100 mm + medium hook bush + soft stop"
+ },
+ "F1c": {
+  "kw": {
+   "ballast_x": 0.7,
+   "antitip_clear": 0.1,
+   "hook_tc": 0.015,
+   "caster_x": 0.84,
+   "_soft": true
+  },
+  "tilt": 48,
+  "desc": "F1a + casters 100 mm forward"
+ },
+ "F1": {
+  "kw": {
+   "ballast_x": 0.7,
+   "antitip_clear": 0.1,
+   "hook_tc": 0.015,
+   "caster_x": 0.84,
+   "_soft": true
+  },
+  "tilt": 48,
+  "desc": "Rev F.1: 4 plates fwd (+0.70 m), anti-tip rollers 100 mm, casters +100 mm fwd, rubber hook bush, soft stop, closed-loop heading + 60 deg hitch cap"
+ }
+}

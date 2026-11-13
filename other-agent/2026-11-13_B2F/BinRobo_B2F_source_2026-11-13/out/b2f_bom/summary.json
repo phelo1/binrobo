@@ -1,0 +1,68 @@
+{
+ "donor": {
+  "base": [
+   3209.29,
+   254.99,
+   379.95,
+   3844.23
+  ],
+  "with_s12": [
+   3324.29,
+   254.99,
+   397.2,
+   3976.48
+  ],
+  "area": {
+   "Drive": 656.44,
+   "Hitch & grabber": 47.0,
+   "Power": 31,
+   "Safety & power dist.": 446.66999999999996,
+   "Navigation": 116.0,
+   "Sensing": 233.38,
+   "Comms": 197.10000000000002,
+   "Enclosure & wiring": 336.45,
+   "Lights": 124.78999999999999,
+   "Dock": 164.0,
+   "Structure": 376.1,
+   "Bin handling (concept B)": 317.37,
+   "Bin handling (B1 it1)": 34.0,
+   "Bin handling (B2)": 116.99000000000001,
+   "Sensing (B2)": 12.0
+  },
+  "n": 78,
+  "ver": 0.2795665084800688
+ },
+ "new": {
+  "base": [
+   3417.26,
+   331.99,
+   363.07,
+   4112.32
+  ],
+  "with_s12": [
+   3532.26,
+   331.99,
+   380.32,
+   4244.57
+  ],
+  "area": {
+   "Drive": 671.6600000000001,
+   "Hitch & grabber": 47.0,
+   "Power": 194.75,
+   "Safety & power dist.": 446.66999999999996,
+   "Navigation": 116.0,
+   "Sensing": 233.38,
+   "Comms": 197.10000000000002,
+   "Enclosure & wiring": 336.45,
+   "Lights": 124.78999999999999,
+   "Dock": 193.0,
+   "Structure": 376.1,
+   "Bin handling (concept B)": 317.37,
+   "Bin handling (B1 it1)": 34.0,
+   "Bin handling (B2)": 116.99000000000001,
+   "Sensing (B2)": 12.0
+  },
+  "n": 82,
+  "ver": 0.4041776159847363
+ }
+}

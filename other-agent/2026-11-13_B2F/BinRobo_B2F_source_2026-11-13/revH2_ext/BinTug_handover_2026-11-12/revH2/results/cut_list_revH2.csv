@@ -1,0 +1,14 @@
+part,qty,length_mm,section,total_mm
+"Side rail, straight part",2,1175,50x50x3 RHS S235,2350
+"Side rail, flared tip (mitre to suit)",2,209,50x50x3 RHS S235,418
+Nose cross-member,1,760,50x50x3 RHS S235,760
+Mast base cross-member,1,760,50x50x3 RHS S235,760
+Mast upright,2,1050,50x50x3 RHS S235,2100
+Mast top tie,1,490,50x50x3 RHS S235,490
+Carriage top bar,1,540,50x50x3 RHS S235,540
+Carriage lower bar,1,500,50x50x3 RHS S235,500
+Carriage side member,2,480,50x50x3 RHS S235,960
+Mast brace,2,684,30x30x2 RHS S235,1369
+TOTAL 50x50x3 RHS S235,,,50x50x3 RHS S235,8878
+TOTAL 30x30x2 RHS S235,,,30x30x2 RHS S235,1369
+NOTE,,,,Concept cut list from params.py. Check every length against the detail drawings before cutting.

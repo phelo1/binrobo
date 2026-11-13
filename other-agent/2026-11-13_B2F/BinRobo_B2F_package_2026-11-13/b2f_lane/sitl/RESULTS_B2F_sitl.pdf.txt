@@ -1,0 +1,235 @@
+[text of RESULTS_B2F_sitl.pdf, taken out of the PDF for the public repository; pictures and layout are not kept]
+
+B2-F bin carrier - ArduPilot Rover 4.6.2 SITL campaign on Brian’s lane
+      ArduPilot SITL simulation - not field footage. B2-F provisional pending bin check B0
+
+
+
+
+                                  2026-11-12 / 13 (runs 22:06-23:35 UTC)
+
+
+1. Result
+Strict score against the frozen criteria: 52 of 60 runs PASS (20 scenarios x seeds 7, 11, 23).
+All 8 failures are in the four bin-moving missions and one GNSS case. Every safety / refusal scenario passed on all
+three seeds (RTK long loss, person / dog, car, companion freeze x2, e-stop, low battery, missing / tipped / blocked
+bin, wind, frost, both geofence cases).
+
+scenario                               seeds passed                            what failed
+s1a one-bin night drop (240 L ->       3/3                                     -
+pad A)
+s1b one-bin night pickup (pad A ->     1/3                                     seeds 11, 23: pre-grab gate missed
+home)                                                                          twice -> no grab (RC-B)
+s3a three-bin drop (140 L -> A, 240    0/3                                     all seeds: hedge at s 25.7 on the way
+L -> M, 240 L -> F)                                                            out of the yard, firmware fence
+                                                                               HOLD (RC-A)
+s3b three-bin pickup (F, M, A ->       1/3                                     seed 7: gate miss at F (1st bin); seed
+home)                                                                          23: gate miss at A (3rd bin) (RC-B)
+s4a RTK float under the hedge (40      3/3                                     -
+m)
+s4b RTK loss under the hedge (20       2/3                                     seed 23: robot steered onto the right
+m)                                                                             hedge in a left-hedge gap (RC-C)
+s4c RTK long loss (70 m) -> alert      3/3                                     -
+s5a person + dog crossing              3/3                                     -
+s5b car in the bell-mouth              3/3                                     -
+s6a / s6b companion freeze             3 / 3, 3 / 3                            -
+s7 e-stop                              3/3                                     -
+s8 low battery                         3/3                                     -
+s9 / s10a / s10b missing / tipped /    3 / 3 each                              -
+blocked bin
+s11a / s11b wind / frost no-go         3 / 3 each                              -
+s12a / s12b geofence                   3 / 3 each                              -
+
+
+Plain reading: on this simulated lane the B2-F stack does the one-bin drop reliably and every safety behaviour works,
+but it is not yet good enough for unattended pickups or three-bin evenings: pickups fail about 1 time in 2
+at the line-up step, and the three-bin drop fails every time because of one path-planning bug near the house.
+
+
+2. What was run
+  • Real ArduPilot Rover 4.6.2 SITL binary (--model JSON, lock-step at 50 Hz) driving a Python digital twin of
+    the lane (skid-steer B2-F body 0.93 x 1.50 m, carried bin, hedges, lidar, RTK with canopy multipath, wheel
+
+
+                                                         1
+    odometry with scale error, energy model). Companion (Pi) code talks MAVLink to the firmware (GUIDED
+    attitude targets); firmware failsafes and the 81-vertex polygon geofence act on their own.
+  • All criteria use TRUTH (simulator) values. Criteria file P/sitl/b2f/CRITERIA_B2F_SITL.md, sha256
+    586b61b8. . . efdefd, frozen 2026-11-12 20:35 UTC, unchanged at scoring.
+  • Scorer P/sitl/b2f/scripts/b2f_score.py written and md5-frozen before any scored run; it was not edited
+    after results were seen and nothing was re-scored.
+  • Runs were chunked (<= ~100 s wall per call, full state checkpointed, SITL relaunched at the checkpoint pose).
+    One SITL at a time. G6 stack (P/sitl/scripts_g6) checked unmodified against G6_code_before.md5 before
+    and after the campaign.
+
+
+3. Dev tuning finished this session (before the freeze)
+Earlier sessions: speed loop, EKF yaw fix (EK3_MAG_CAL 0), 81-vertex fence, pivot logic, face-relative lateral
+control. This session (dev runs only, seed 5 or 7, output in dev/):
+
+item                                  finding                                fix
+lane s 330-610                        loaded tune run: min 0.307 m          none needed
+pad A (tight spot)                    clearance 0.151 / 0.173 m at the      last 0.3 m of every path holds the
+                                      hold / pre-grab pose although the     end tangent; pivot rate now brakes
+                                      aligned pose has 0.41-0.49 m. Cause: (0.4 rad/sˆ2). Pad A then 0.38-0.41
+                                      path follower aimed at its end point m
+                                      in the last cm, the heading command
+                                      swung and the firmware spun the
+                                      robot 0.9 rad/s, 20 deg past the hold
+                                      heading into the hedge end
+bin check code                        op_verify_bin overwrote its point     variable renamed
+                                      array (IndexError)
+EKF vs Pi pose                        EKF position 0.10-0.21 m off the      EK3_POSNE_M_NSE 0.5 -> 0.1
+                                      Pi’s RTK pose (Pi 0.01-0.02 m);
+                                      pad-A gate missed
+companion freeze                      HOLD 2.04 s, 1.11 m rolled (> 1.0     FS_TIMEOUT 1 -> 0.5 s (HOLD
+                                      m)                                    1.56-1.80 s, 0.26-0.88 m in the scored
+                                                                            runs)
+three-bin pickup timing               3 trips x ~55 min from 18:30 -> 3rd pickups start at 18:00, like drops
+                                      trip refused by the 21:00 guard
+
+
+Dev full-lane checks after tuning: s1a seed 5 pass (min 0.212 m), s1b seed 5 pass (0.220 m), s3b seed 5 grabs at F
+and M OK. Not dev-tested before the freeze: the three-bin drop (s3a). That gap is exactly where RC-A sits.
+
+
+4. Freeze, deviations and voided runs
+  • Code frozen 22:3x UTC; md5s in P/sitl/b2f/FROZEN_CODE_B2F.md5 (companion ae978056, scenarios b8319f15,
+    world 611242de, scorer 2c4d86d4, params 155984f5, runner ca361424).
+  • Deviation D1 (infrastructure only): SITL’s TCP ports stayed in TIME_WAIT between chunks, so one
+    chunk ran without its MAVLink link. The runner now waits for the ports and closes MAVLink first (new
+    runner md5 d8406df5). No change to robot, Pi or firmware behaviour.
+  • Voided before their results existed, then restarted fresh: s1a seed 7 (242 s of mission clock idle without
+    a link, D1) and s3b seed 7 (my error: three chunk calls dispatched at once, so extra runners shared the SITL
+    UDP port during chunk 2). Disclosure: the voided s3b seed 7 attempt had passed the F grab that the scored
+    run then failed. That is SITL timing nondeterminism, and the scored (failing) run is the one reported.
+  • s5a seed 7 had one chunk with the port fault during boot (robot never moved). It was kept and noted.
+
+
+
+
+                                                        2
+5. Failures and root causes
+RC-A, s3a on all seeds (deterministic). The 140 L brown bin’s home spot is at lateral -4.6 m in the yard.
+lane() holds the start lateral until s 12, then moves the lateral target at no more than 0.12 m/s. The loaded robot
+is therefore still at lateral -3.3 m at s 23-25.7, where the lane hedge starts. The footprint came within 0.012 / 0.071
+/ 0.033 m of the truth hedge (C1 < 0.124 m), and the firmware fence (polygon 1.6 m inside the hedge line) switched
+to HOLD (C7). C3 and C6 fail as a consequence because the mission stopped after 3 minutes. The 240 L black bin
+(lateral -1.4 m) never shows this, which is why s1a passes.
+RC-B, pickups (s1b seeds 11 and 23, s3b seeds 7 and 23). The truth pre-grab gate (lateral <= 0.05 m)
+missed twice, so the robot correctly refused to grab. The Pi refines the bin pose once, from the staging pose 4.5-8 m
+away and off the bin axis, in the EKF frame. An EKF yaw error of 0.4-0.9 deg (= 0.03-0.12 m at that range) plus
+the median of an obliquely seen front face gave refine errors of 0.03-0.12 m. Examples: s1b s11 refine +0.085 m vs
+truth +0.009 m, s3b s7 +0.098 vs -0.020 m. The retry re-uses the same estimate. s3b seed 11 passed only after one
+miss (-0.060 m, retry -0.031 m). C3, C6 and C8 failures in these runs are consequences.
+RC-C, s4b seed 23. Sign error in lane(): the branch for “only the right hedge face visible, too close to it”
+computes the wanted left move as -(KL_GAP+0.6-(dR-hw)), which steers toward the right hedge. With RTK lost
+at s 60 and the left-hedge field-gate gap at s 60-64, the robot was pushed onto the right hedge (0.000 m). The Pi
+dead-reckoning limit then held it. The EKF without GPS drifted 2-3.5 m and the firmware fence tripped on that
+estimate (the true boundary margin was fine). It shows only when the robot runs in a left-side gap without RTK.
+Scorer note. C8 is computed inconsistently for runs whose gate misses did not lead to a grab: s3b s23 shows C8
+PASS, while s1b s11 / s23 and s3b s7 show C8 FAIL. No verdict changes, because C7 fails all of these runs. The
+scorer is reported as frozen.
+
+
+6. Key measurements (truth)
+   • Hedge clearance (C1 >= 0.124 m): all moving runs except RC-A / RC-C at 0.196-0.413 m. Full-lane
+     missions 0.196-0.256 m. The tightest points are s ~417 (the assumed overgrown right-hedge bulge, loaded
+     up-lane) and s ~502 (assumed narrowing with 2.9 m between hedges). Pad A: 0.38-0.41 m.
+   • Set-down (C2 <= 0.15 m, <= 10 deg): 15 of 15 set-downs passed, 0.006-0.054 m and 0.1-6.6 deg.
+   • Bye-law clock (C3): one-bin trips 18:00 -> 18:56-18:57. Three-bin pickup (s3b s11) 18:00 -> 20:47, leaving
+     13 min of the 21:00 limit. The three-bin evening has very little time to spare.
+   • Energy (C6 <= 50 Wh per trip): 44.7-46.7 Wh per trip, about 7-10 % under the limit. The three-bin
+     end SOC is above 20 %. The low-battery guard refused the trip on all seeds.
+   • Failsafes: e-stop 0.038-0.048 m (<= 0.30). Companion freeze: HOLD after 1.56-1.80 s (<= 2.5), rolled
+     0.58-0.88 m loaded (<= 1.0, smallest margin 0.12 m) and 0.26-0.27 m while reversing. Firmware fence HOLD
+     with 0.62-0.65 m to the boundary. Car at rest 2.33-2.36 m (>= 0.50). No contact with any obstacle or bin in
+     any run.
+   • Pre-grab gate (C8): 14 OK at the first attempt, 1 OK on the retry, 9 missed attempts; 4 bins were never
+     grabbed (RC-B).
+Per-run values: metrics_summary.md. Per-run criteria: score.md and score.json.
+
+
+7. Lane features: surveyed vs assumed
+There has been no ground survey of the lane yet. “Mapped” below means taken from public map or elevation
+data, not measured on site.
+
+feature                                                       status
+lane centre-line geometry (~633 m, OSM ways 0         mapped (OpenStreetMap); route choice not confirmed
+-> 0 to the public road)                              by Brian
+elevation / grades (house end ~43 m, road end ~29 m)          mapped (EU-DEM grid); short pitches may be steeper
+                                                              than the DEM shows
+lane width 3.6 m, hedge line 2.05 m from the centre           assumed
+
+
+
+                                                          3
+feature                                                         status
+hedge gaps (field gates s 60 and 560, gateway s 140, open       assumed (G6 model; the code calls them “surveyed”, but
+field s 230-242, farm crossing s 330, driveway s 455)           no survey exists)
+hedge irregularity and overgrown narrowings (s 395-420          assumed
+right, s 500-516 both sides)
+tree canopy / RTK multipath zones                               assumed
+road carriageway 3.0 m half-width + 3.0 m verge ->              assumed (to be confirmed on the folio map)
+private boundary 6.0 m from the road centre
+bell-mouth (last 12 m open, 4.5 m half-width)                   assumed
+pads A / M / F, dock at s 4, home spots (lat -1.4 / -3.0        assumed (design layout)
+/ -4.6 at s 10)
+bin dimensions / masses, B2-F dimensions                        B2-F design file work/revB2F/dims_B2F.json; bin
+                                                                check B0 still pending
+grab success                                                    taken from the MuJoCo front-dock gate (90/90), not
+                                                                simulated here
+
+
+
+8. Videos (seed 7, 1280x720, 25 fps, H.264)
+Each video shows a top-down truth view following the robot: hedge faces, lane, pads, legal boundary, robot footprint,
+bins, people / dog / car, and lidar returns. It also has a whole-lane minimap and a status panel (ArduPilot mode,
+receiver and EKF state with the true EKF error, clock, speed, hedge clearance, SOC, PASS/FAIL), and ends with a
+3 s hold on the final state. Every frame carries the caption “ArduPilot SITL simulation - not field footage. B2-F
+provisional pending bin check B0”. An automated check found the caption in all frames, and 3 or more frames per
+video were inspected by eye.
+Files in /workspace/work/out/b2f_lane/sitl/: s1a_seed7.mp4, s1b_seed7.mp4, s3a_seed7.mp4, s3b_seed7.mp4,
+s4a_seed7.mp4, s4b_seed7.mp4, s4c_seed7.mp4, s5a_seed7.mp4, s5b_seed7.mp4, s6a_seed7.mp4, s6b_seed7.mp4,
+s7_seed7.mp4, s8_seed7.mp4, s9_seed7.mp4, s10a_seed7.mp4, s10b_seed7.mp4, s11a_seed7.mp4, s11b_seed7.mp4,
+s12a_seed7.mp4, s12b_seed7.mp4, and the highlight reel B2F_SITL_highlights_seed7.mp4 (86 s, 10 clips includ-
+ing the s3a failure). Note: s4b seed 7 passed. The RC-C failure is on seed 23 and has no video.
+
+
+9. Limits of this evidence
+   • It is a simulation of an assumed lane. Every number above depends on the assumed hedges, canopy, boundary
+     and pads in section 7.
+   • SITL is not fully deterministic between runs (see the voided s3b s7 attempt). Three seeds give an indication,
+     not a failure rate.
+   • s5a never needed a full stop: the person and dog crossed clear while the robot slowed to 0.25 m/s, so the
+     at-rest person gap (C5b) was not exercised. s5b exercised it with the car.
+   • Grab and lift come from the MuJoCo gate. The lidar, RTK, odometry and energy models are stand-ins.
+
+
+10. Fixes suggested by the failures (not applied; a new frozen run would
+be needed)
+   1. RC-A: plan the yard exit as a path to the lane entry pose (s 20, lat 0) instead of a lateral ramp, or remove the
+      0.12 m/s limit inside the yard.
+   2. RC-B: re-measure the bin face from the pre-grab pose (1.2 m, on axis) before the gate, and re-measure again
+      on the retry. Optionally take the lateral from the rear camera.
+   3. RC-C: flip the sign of the right-face keep-off branch in lane(), and add a unit test for it.
+   4. Timing: the three-bin evening uses about 165 of 180 minutes. Consider 0.5 m/s on straights or a shorter
+      staging sequence.
+
+
+
+
+                                                            4
+11. Files
+ • Results: /workspace/work/out/b2f_lane/sitl/RESULTS_B2F_sitl.md / .pdf, score.md, score.json,
+   metrics_summary.md, runs/<scenario>__s<seed>/result.json + trace.json.
+ • Voided runs: void/. Dev runs: dev/. Frame checks: frames/check/.
+ • Code: P/sitl/b2f/ (scripts, params, FROZEN_CODE_B2F.md5), renderer P/sitl/b2f/render/b2f_video.py.
+   Logs: P/docs/reviews/PROGRESS_B2F_sitl.md, TESTLOG_B2F_sitl.md. P = /workspace/projects/847c6e2d-
+   79fb-41ac-8eca-c75df6a92b0c.
+
+
+
+
+                                                 5
+

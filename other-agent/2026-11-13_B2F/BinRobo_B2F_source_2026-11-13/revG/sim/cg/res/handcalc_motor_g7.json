@@ -1,0 +1,83 @@
+{
+ "motor": {
+  "name": "peiscooter PEWM-39 pair (G7 DRV-M7)",
+  "vendor_rated_Nm": 48.0,
+  "derived_rated_Nm": 36.9,
+  "derived_kt_wheel_Nm_per_A": 1.5725,
+  "ctrl_cont_A": 40,
+  "ctrl_peak_A_30s": 60,
+  "torque_at_40A_Nm": 62.9,
+  "torque_at_60A_Nm_linear": 94.3,
+  "free_speed_mps_24V": 1.77,
+  "src": "revG/ELEC_SAFETY_G7.md s.5 (vendor 48 N m; derived 36.9 N m at 23.4 A; 62.9 N m at 40 A)"
+ },
+ "climb12": [
+  {
+   "concept": "A' tow (pad 550 N)",
+   "crr_bin": 0.06,
+   "mu_req": 0.253,
+   "torque_per_wheel_Nm": 31.5,
+   "I_per_motor_A": 20.0,
+   "frac_vendor_rated": 0.66,
+   "frac_derived_rated": 0.85,
+   "torque_x1p25": 39.4,
+   "x1p25_within_40A_limit": true
+  },
+  {
+   "concept": "A' tow (pad 550 N)",
+   "crr_bin": 0.09,
+   "mu_req": 0.272,
+   "torque_per_wheel_Nm": 33.9,
+   "I_per_motor_A": 21.6,
+   "frac_vendor_rated": 0.71,
+   "frac_derived_rated": 0.92,
+   "torque_x1p25": 42.4,
+   "x1p25_within_40A_limit": true
+  },
+  {
+   "concept": "B carrier",
+   "crr_bin": 0.06,
+   "mu_req": 0.18,
+   "torque_per_wheel_Nm": 24.6,
+   "I_per_motor_A": 15.6,
+   "frac_vendor_rated": 0.51,
+   "frac_derived_rated": 0.67,
+   "torque_x1p25": 30.8,
+   "x1p25_within_40A_limit": true
+  },
+  {
+   "concept": "B carrier",
+   "crr_bin": 0.09,
+   "mu_req": 0.18,
+   "torque_per_wheel_Nm": 24.6,
+   "I_per_motor_A": 15.6,
+   "frac_vendor_rated": 0.51,
+   "frac_derived_rated": 0.67,
+   "torque_x1p25": 30.8,
+   "x1p25_within_40A_limit": true
+  }
+ ],
+ "step40_full_width": [
+  {
+   "concept": "A'",
+   "drive_wheel_load_N": 767,
+   "lever_m": 0.1077,
+   "torque_needed_Nm": 82.6,
+   "within_60Nm_sim_cap": false,
+   "within_62p9_at_40A": false,
+   "within_60A_peak": true,
+   "x_vendor_rated": 1.72
+  },
+  {
+   "concept": "B",
+   "drive_wheel_load_N": 845,
+   "lever_m": 0.1077,
+   "torque_needed_Nm": 91.0,
+   "within_60Nm_sim_cap": false,
+   "within_62p9_at_40A": false,
+   "within_60A_peak": true,
+   "x_vendor_rated": 1.9
+  }
+ ],
+ "verdict": "PEWM-39 fits the 12 % climb for both concepts on vendor rating (A' 0.71, B 0.51 of 48 N m) but A' runs at 0.92 of the derived 36.9 N m continuous rating at crr 0.09, B at 0.67. Neither concept can climb a full-width sharp 40 mm step quasi-statically inside the 60 N m cap (needs about 80-90 N m per wheel); that needs the 60 A/30 s controller peak (~94 N m, linear, gearbox peak rating unknown) or the oblique-crossing rule."
+}

@@ -1,0 +1,92 @@
+{
+ "revH_claim": {
+  "parts": 1682.36,
+  "logistics": 117.5,
+  "duty": 43.5,
+  "contingency": 190.27,
+  "all_in": 1990.13,
+  "lines": 63
+ },
+ "revH_by_area": {
+  "Structure": 280.0,
+  "Drive": 286.45,
+  "Bin handling": 89.16,
+  "Power": 128.9,
+  "Safety & power dist.": 133.0,
+  "Navigation": 113.0,
+  "Sensing": 170.92,
+  "Comms": 75.0,
+  "Enclosure & wiring": 125.0,
+  "Lights": 91.93,
+  "Dock": 189.0
+ },
+ "g8_donor_by_area": {
+  "Safety & power dist.": 423.45,
+  "Navigation": 116.0,
+  "Sensing": 233.38,
+  "Comms": 197.1,
+  "Enclosure & wiring": 336.45,
+  "Lights": 124.79,
+  "Dock": 164.0,
+  "Structure": 354.12,
+  "Drive": 566.44,
+  "Bin handling": 0,
+  "Power": 31.0
+ },
+ "g8_lean_by_area": {
+  "Safety & power dist.": 423.45,
+  "Navigation": 116.0,
+  "Sensing": 233.38,
+  "Comms": 197.1,
+  "Enclosure & wiring": 336.45,
+  "Lights": 124.79,
+  "Dock": 193.0,
+  "Structure": 624.76,
+  "Drive": 671.66,
+  "Bin handling": 0,
+  "Power": 194.75
+ },
+ "shared_gap": {
+  "Safety & power dist.": 290.45,
+  "Navigation": 3.0,
+  "Sensing": 62.46,
+  "Comms": 122.1,
+  "Enclosure & wiring": 211.45,
+  "Lights": 32.86,
+  "Dock": -25.0
+ },
+ "revH_rebased": {
+  "parts": 2619.68,
+  "logistics": 217.0,
+  "contingency": 317.82,
+  "all_in": 3154.5
+ },
+ "contingency_rate": 0.112,
+ "B1": {
+  "all_in": 4743.26,
+  "basis": {
+   "parts": 3584.08,
+   "logistics": 312.0,
+   "contingency": 378.66,
+   "all_in": 4274.74
+  },
+  "delta": {
+   "parts": 423.0,
+   "logistics": 19.99,
+   "contingency": 25.53,
+   "all_in": 468.52
+  }
+ },
+ "B1_donor_indicative": {
+  "parts": 3467.47,
+  "logistics": 236.99,
+  "contingency": 415.05,
+  "all_in": 4119.51
+ },
+ "fw_comb_delta": {
+  "item": "640 mm comb plate (6 mm S355, laser) + yaw/roll pivot (2 bushes, 2 springs, end stops) in place of the 160 mm tooth",
+  "eur_est": 45.0,
+  "status": "est",
+  "note": "replaces a same-plate 160 mm tooth; +~1.6 kg on the carriage"
+ }
+}

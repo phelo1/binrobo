@@ -1,0 +1,21 @@
+AT100 bump60 done 11 s
+AT100 climb20 done 15 s
+AT100 estop20 done 12 s
+AT100 cycle done 19 s
+F1a bump60 done 12 s
+F1a climb20 done 14 s
+F1a estop20 done 11 s
+F1c bump60 done 21 s
+F1a cycle done 29 s
+F1c estop20 done 11 s
+F1c climb20 done 13 s
+F1b bump60 done 19 s
+F1c cycle done 28 s
+F1b climb20 done 19 s
+F1b estop20 done 17 s
+B3fwd bump60 done 16 s
+F1b cycle done 27 s
+B3fwd estop20 done 11 s
+B3fwd climb20 done 15 s
+B3fwd cycle done 20 s
+ALLDONE

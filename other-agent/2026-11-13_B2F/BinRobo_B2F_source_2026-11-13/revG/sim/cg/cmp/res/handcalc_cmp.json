@@ -1,0 +1,248 @@
+{
+ "B1": {
+  "tug_kg": 94.1,
+  "tug_cg": [
+   0.462,
+   0.296
+  ],
+  "cases": [
+   {
+    "bin_kg": 110,
+    "M": 204.1,
+    "cg_x": 0.193,
+    "cg_z": 0.451,
+    "tip_lateral_deg": 39.4,
+    "tip_forward_over_castors_deg": 57.4,
+    "castor_liftoff_about_drive_axle_deg": 23.2,
+    "rear_tip_on_antitip_deg": 50.8,
+    "drive_N_flat": 1573,
+    "castor_N_flat": 430,
+    "drive_N_12up": 1442,
+    "mu_req_12": 0.207,
+    "torque_per_wheel_12_Nm": 24.6,
+    "torque_x1p25": 30.8
+   },
+   {
+    "bin_kg": 60,
+    "M": 154.1,
+    "cg_x": 0.271,
+    "cg_z": 0.414,
+    "tip_lateral_deg": 41.0,
+    "tip_forward_over_castors_deg": 56.6,
+    "castor_liftoff_about_drive_axle_deg": 33.2,
+    "rear_tip_on_antitip_deg": 56.7,
+    "drive_N_flat": 1056,
+    "castor_N_flat": 456,
+    "drive_N_12up": 966,
+    "mu_req_12": 0.249,
+    "torque_per_wheel_12_Nm": 19.8,
+    "torque_x1p25": 24.8
+   },
+   {
+    "bin_kg": 0,
+    "M": 94.1,
+    "cg_x": 0.462,
+    "cg_z": 0.296,
+    "tip_lateral_deg": 48.6,
+    "tip_forward_over_castors_deg": 55.9,
+    "castor_liftoff_about_drive_axle_deg": 57.4,
+    "rear_tip_on_antitip_deg": 70.2,
+    "drive_N_flat": 449,
+    "castor_N_flat": 474,
+    "drive_N_12up": 409,
+    "mu_req_12": 0.415,
+    "torque_per_wheel_12_Nm": 14.0,
+    "torque_x1p25": 17.5
+   }
+  ]
+ },
+ "RevH_params": {
+  "note": "Rev H own claim (params.combined, full 240 L): 195.5 kg, CG x 0.116 z 0.564, 166.2 kg drive / 29.5 kg nose"
+ },
+ "RevH": {
+  "tug_kg": 85.5,
+  "cases": [
+   {
+    "bin_kg": 110,
+    "hang_tilt_deg": 0.0,
+    "M": 195.5,
+    "cg_x": 0.136,
+    "cg_z": 0.505,
+    "tip_lateral_deg": 40.9,
+    "tip_lateral_drive_track_only_deg": 43.9,
+    "tip_forward_over_castors_deg": 50.1,
+    "castor_liftoff_about_drive_axle_deg": 15.1,
+    "tail_touch_pitch_deg": 10.6,
+    "rear_tip_on_tail_wheels_deg": 46.7,
+    "drive_N_flat": 1565,
+    "castor_N_flat": 353,
+    "drive_N_12up": 1398,
+    "castor_N_12up": 506,
+    "castor_N_12dn": 194,
+    "mu_req_12": 0.207,
+    "torque_per_wheel_12_Nm": 23.0,
+    "torque_x1p25": 28.8
+   },
+   {
+    "bin_kg": 110,
+    "hang_tilt_deg": 11.3,
+    "M": 195.5,
+    "cg_x": 0.197,
+    "cg_z": 0.476,
+    "tip_lateral_deg": 41.6,
+    "tip_lateral_drive_track_only_deg": 45.5,
+    "tip_forward_over_castors_deg": 48.8,
+    "castor_liftoff_about_drive_axle_deg": 22.5,
+    "tail_touch_pitch_deg": 10.6,
+    "rear_tip_on_tail_wheels_deg": 51.4,
+    "drive_N_flat": 1407,
+    "castor_N_flat": 511,
+    "drive_N_12up": 1250,
+    "castor_N_12up": 654,
+    "castor_N_12dn": 360,
+    "mu_req_12": 0.232,
+    "torque_per_wheel_12_Nm": 23.0,
+    "torque_x1p25": 28.8
+   },
+   {
+    "bin_kg": 60,
+    "hang_tilt_deg": 0.0,
+    "M": 145.5,
+    "cg_x": 0.158,
+    "cg_z": 0.481,
+    "tip_lateral_deg": 41.9,
+    "tip_lateral_drive_track_only_deg": 45.2,
+    "tip_forward_over_castors_deg": 50.4,
+    "castor_liftoff_about_drive_axle_deg": 18.2,
+    "tail_touch_pitch_deg": 10.6,
+    "rear_tip_on_tail_wheels_deg": 49.3,
+    "drive_N_flat": 1122,
+    "castor_N_flat": 306,
+    "drive_N_12up": 1003,
+    "castor_N_12up": 414,
+    "castor_N_12dn": 193,
+    "mu_req_12": 0.231,
+    "torque_per_wheel_12_Nm": 18.4,
+    "torque_x1p25": 23.0
+   },
+   {
+    "bin_kg": 60,
+    "hang_tilt_deg": 11.3,
+    "M": 145.5,
+    "cg_x": 0.202,
+    "cg_z": 0.459,
+    "tip_lateral_deg": 42.6,
+    "tip_lateral_drive_track_only_deg": 46.6,
+    "tip_forward_over_castors_deg": 49.5,
+    "castor_liftoff_about_drive_axle_deg": 23.8,
+    "tail_touch_pitch_deg": 10.6,
+    "rear_tip_on_tail_wheels_deg": 52.7,
+    "drive_N_flat": 1038,
+    "castor_N_flat": 390,
+    "drive_N_12up": 925,
+    "castor_N_12up": 492,
+    "castor_N_12dn": 281,
+    "mu_req_12": 0.25,
+    "torque_per_wheel_12_Nm": 18.4,
+    "torque_x1p25": 23.0
+   },
+   {
+    "bin_kg": 0,
+    "hang_tilt_deg": 0.0,
+    "M": 85.5,
+    "cg_x": 0.233,
+    "cg_z": 0.39,
+    "tip_lateral_deg": 46.7,
+    "tip_lateral_drive_track_only_deg": 51.2,
+    "tip_forward_over_castors_deg": 52.4,
+    "castor_liftoff_about_drive_axle_deg": 30.9,
+    "tail_touch_pitch_deg": 10.6,
+    "rear_tip_on_tail_wheels_deg": 58.4,
+    "drive_N_flat": 575,
+    "castor_N_flat": 264,
+    "drive_N_12up": 518,
+    "castor_N_12up": 315,
+    "castor_N_12dn": 210,
+    "mu_req_12": 0.312,
+    "torque_per_wheel_12_Nm": 12.8,
+    "torque_x1p25": 16.0
+   }
+  ]
+ },
+ "lip_note": "Lip section is the gate-model assumption (30 x 8 mm HDPE ledge, load at the 26 mm rim) - not measured. HDPE yield ~20-25 MPa (Rev H statics uses the same). Ribbed real receivers are stronger; ratios between designs hold. EN 840-5 4.5 test load 0.4 kg/dm3 x V (96 kg for 240 L, net); GGAWB AR 03/2025 s3.5: whole receiving section supported over its full width.",
+ "lip_inputs": {},
+ "lip": {
+  "B1 160 mm comb, ESE 240 SL full, static carry": {
+   "F_N": 1578,
+   "comb_mm": 160,
+   "receiver_mm": 580,
+   "coverage_pct": 28,
+   "line_load_N_per_mm": 9.86,
+   "bearing_MPa": 1.23,
+   "ledge_bending_MPa": 24.0
+  },
+  "B1 160 mm comb, ESE 240 SL full, peak carry (G3/G5 runs)": {
+   "F_N": 2500,
+   "comb_mm": 160,
+   "receiver_mm": 580,
+   "coverage_pct": 28,
+   "line_load_N_per_mm": 15.62,
+   "bearing_MPa": 1.95,
+   "ledge_bending_MPa": 38.1
+  },
+  "B1 160 mm comb, Weber 140 full, static": {
+   "F_N": 986,
+   "comb_mm": 160,
+   "receiver_mm": 480,
+   "coverage_pct": 33,
+   "line_load_N_per_mm": 6.16,
+   "bearing_MPa": 0.77,
+   "ledge_bending_MPa": 15.0
+  },
+  "B1-FW 640 mm comb, ESE 240 SL full, static carry": {
+   "F_N": 1485,
+   "comb_mm": 640,
+   "receiver_mm": 580,
+   "coverage_pct": 100,
+   "line_load_N_per_mm": 2.56,
+   "bearing_MPa": 0.32,
+   "ledge_bending_MPa": 6.2
+  },
+  "B1-FW 640 mm comb, ESE 240 SL full, peak carry": {
+   "F_N": 2500,
+   "comb_mm": 640,
+   "receiver_mm": 580,
+   "coverage_pct": 100,
+   "line_load_N_per_mm": 4.31,
+   "bearing_MPa": 0.54,
+   "ledge_bending_MPa": 10.5
+  },
+  "Rev H 600 mm comb on the FRONT rim, Weber 140 full, static": {
+   "F_N": 611,
+   "comb_mm": 600,
+   "receiver_mm": 480,
+   "coverage_pct": 100,
+   "line_load_N_per_mm": 1.27,
+   "bearing_MPa": 0.16,
+   "ledge_bending_MPa": 3.1
+  },
+  "Rev H 600 mm comb on the FRONT rim, ESE 240 full (pad variant), static": {
+   "F_N": 1300,
+   "comb_mm": 600,
+   "receiver_mm": 580,
+   "coverage_pct": 100,
+   "line_load_N_per_mm": 2.24,
+   "bearing_MPa": 0.28,
+   "ledge_bending_MPa": 5.5
+  },
+  "Rev H own claim (statics.json): 110 kg on 390 mm x 10 mm": {
+   "F_N": 1079,
+   "comb_mm": 390,
+   "receiver_mm": 390,
+   "coverage_pct": 100,
+   "line_load_N_per_mm": 2.77,
+   "bearing_MPa": 0.35,
+   "ledge_bending_MPa": 6.7
+  }
+ }
+}

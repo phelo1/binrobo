@@ -1,0 +1,277 @@
+
+=== 07:11:20 START python3 it1/runB_it1.py step both_ramp
+B_step40_both_ramp {"test": "step40", "side": "both_ramp", "grab": "success", "reached": true, "dist_m": 4.71, "captured_end": true, "roll": 0.0, "pitch": 0.005, "bin_ground": 0.0, "cmin": 0.0, "dmin": 513.365, "seated_all": true, "clear_min": 0.09, "ok": true, "cpu_s": 9}
+=== END rc=0 15s
+
+=== 07:11:36 START env CGB_GEO='{"rw":0.28}' python3 it1/runB_it1.py step both
+Traceback (most recent call last):
+  File "/workspace/projects/847c6e2d-79fb-41ac-8eca-c75df6a92b0c/revG/sim/cg/it1/runB_it1.py", line 93, in <module>
+    S,R,g=nominal('ESE240SL',110,terrain='bump',bump=bp)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/projects/847c6e2d-79fb-41ac-8eca-c75df6a92b0c/revG/sim/cg/it1/runB_it1.py", line 35, in nominal
+    S=B.SimB(binkey,p,tug_pose=B.start_pose(p),**kw); R=B.RunnerB(S); g=B.grab(R)
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/projects/847c6e2d-79fb-41ac-8eca-c75df6a92b0c/revG/sim/cg/it1/runB_it1.py", line 21, in __init__
+    _SimB.__init__(s,binkey,p,**kw)
+  File "/workspace/projects/847c6e2d-79fb-41ac-8eca-c75df6a92b0c/revG/sim/cg/it1/simB_it1.py", line 163, in __init__
+    xml,s.tug_mass,s.bin_mass=build_xml(binkey,s.p,**kw); s.xml=xml; s.m=mujoco.MjModel.from_xml_string(xml); s.d=mujoco.MjData(s.m)
+                                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Error: inertia must satisfy A + B >= C; use 'balanceinertia' to fix
+Element name 'wheelL', id 2, line 12
+=== END rc=1 7s
+
+=== 07:11:43 START python3 it1/runB_it1.py step one
+B_step40_one {"test": "step40", "side": "one", "grab": "success", "reached": true, "dist_m": 4.69, "captured_end": true, "roll": 0.813, "pitch": 8.226, "bin_ground": 0.0, "cmin": 0.0, "dmin": 0.0, "seated_all": true, "clear_min": 0.089, "ok": true, "cpu_s": 10}
+=== END rc=0 17s
+
+=== 07:12:00 START python3 it1/runB_it1.py step both
+B_step40_both {"test": "step40", "side": "both", "grab": "success", "reached": false, "dist_m": 1.34, "captured_end": true, "roll": 0.88, "pitch": 8.187, "bin_ground": 0.0, "cmin": 0.0, "dmin": 0.0, "seated_all": true, "clear_min": 0.088, "ok": false, "cpu_s": 18}
+=== END rc=0 25s
+
+=== 07:12:25 START python3 it1/runB_it1.py climb 0.30 0.06
+B_climb_m30_c06 {"test": "climb12", "mu": 0.3, "crr_bin": 0.06, "rev": false, "grab": "success", "tug_kg": 94.1, "bin_kg": 110.0, "reached_5m": true, "dist_m": 5.0, "time_s": 11.0, "hold_creep_m": 0.029, "captured_end": true, "ok": true, "roll": 0.001, "pitch": 0.007, "bin_ground": 0.0, "cmin": 0.0, "dmin": 0.0, "seated_all": true, "clear_min": 0.089, "cpu_s": 10}
+=== END rc=0 16s
+
+=== 07:12:41 START python3 it1/runB_it1.py climb 0.30 0.09
+B_climb_m30_c09 {"test": "climb12", "mu": 0.3, "crr_bin": 0.09, "rev": false, "grab": "success", "tug_kg": 94.1, "bin_kg": 110.0, "reached_5m": true, "dist_m": 5.0, "time_s": 11.0, "hold_creep_m": 0.029, "captured_end": true, "ok": true, "roll": 0.001, "pitch": 0.007, "bin_ground": 0.0, "cmin": 0.0, "dmin": 0.0, "seated_all": true, "clear_min": 0.089, "cpu_s": 10}
+=== END rc=0 17s
+
+=== 07:12:58 START python3 it1/runB_it1.py climb 0.25 0.06
+B_climb_m25_c06 {"test": "climb12", "mu": 0.25, "crr_bin": 0.06, "rev": false, "grab": "success", "tug_kg": 94.1, "bin_kg": 110.0, "reached_5m": true, "dist_m": 5.0, "time_s": 11.0, "hold_creep_m": 0.033, "captured_end": true, "ok": true, "roll": 0.002, "pitch": 0.009, "bin_ground": 0.0, "cmin": 0.0, "dmin": 0.0, "seated_all": true, "clear_min": 0.089, "cpu_s": 10}
+=== END rc=0 17s
+
+=== 07:13:15 START python3 it1/runB_it1.py climb 0.25 0.09
+B_climb_m25_c09 {"test": "climb12", "mu": 0.25, "crr_bin": 0.09, "rev": false, "grab": "success", "tug_kg": 94.1, "bin_kg": 110.0, "reached_5m": true, "dist_m": 5.0, "time_s": 11.0, "hold_creep_m": 0.033, "captured_end": true, "ok": true, "roll": 0.002, "pitch": 0.009, "bin_ground": 0.0, "cmin": 0.0, "dmin": 0.0, "seated_all": true, "clear_min": 0.089, "cpu_s": 10}
+=== END rc=0 17s
+
+=== 07:13:31 START python3 it1/runB_it1.py climb 0.22 0.06
+B_climb_m22_c06 {"test": "climb12", "mu": 0.22, "crr_bin": 0.06, "rev": false, "grab": "success", "tug_kg": 94.1, "bin_kg": 110.0, "reached_5m": true, "dist_m": 5.0, "time_s": 11.1, "hold_creep_m": 0.034, "captured_end": true, "ok": true, "roll": 0.001, "pitch": 0.01, "bin_ground": 0.0, "cmin": 0.0, "dmin": 0.0, "seated_all": true, "clear_min": 0.089, "cpu_s": 10}
+=== END rc=0 17s
+
+=== 07:13:48 START python3 it1/runB_it1.py climb 0.22 0.09
+B_climb_m22_c09 {"test": "climb12", "mu": 0.22, "crr_bin": 0.09, "rev": false, "grab": "success", "tug_kg": 94.1, "bin_kg": 110.0, "reached_5m": true, "dist_m": 5.0, "time_s": 11.1, "hold_creep_m": 0.034, "captured_end": true, "ok": true, "roll": 0.001, "pitch": 0.01, "bin_ground": 0.0, "cmin": 0.0, "dmin": 0.0, "seated_all": true, "clear_min": 0.089, "cpu_s": 10}
+=== END rc=0 17s
+
+=== 07:14:05 START env CGB_GEO='{"rw":0.28}' IT1_TAG=_tc60 python3 it1/runB_it1.py step both
+B_step40_both_rw560 {"test": "step40", "side": "both", "grab": "safe_miss", "reached": true, "dist_m": 4.71, "captured_end": false, "roll": 2.306, "pitch": 6.378, "bin_ground": 1167.244, "cmin": 0.0, "dmin": 0.0, "seated_all": false, "clear_min": -0.0, "ok": false, "cpu_s": 12}
+=== END rc=0 18s
+
+=== 07:14:23 START env CGB_GEO='{"rw":0.28,"tcap":102.0}' IT1_TAG=_tc102 python3 it1/runB_it1.py step both
+B_step40_both_rw560 {"test": "step40", "side": "both", "grab": "safe_miss", "reached": false, "dist_m": 1.31, "captured_end": false, "roll": 1.701, "pitch": 3.745, "bin_ground": 1926.967, "cmin": 0.0, "dmin": 0.0, "seated_all": false, "clear_min": -0.0, "ok": false, "cpu_s": 15}
+=== END rc=0 22s
+
+=== 07:14:45 START python3 it1/runB_it1.py estop fwd
+B_estop12_fwd {"test": "estop12", "orient": "fwd", "grab": "success", "v0": 0.52, "stop_dist_m": 0.154, "stop_time_s": 0.59, "slide_after_stop_m": 0.001, "captured_end": true, "roll": 0.002, "pitch": 0.009, "bin_ground": 0.0, "cmin": 0.0, "dmin": 0.0, "seated_all": true, "clear_min": 0.089, "ok": true, "cpu_s": 8}
+=== END rc=0 15s
+
+=== 07:15:00 START python3 it1/runB_it1.py estop rev
+
+=== 07:16:50 START env CGB_GEO='{"rw":0.28,"tcap":102.0}' python3 it1/smoke_it1.py grab ESE240SL > it1/res/smoke_rw560.txt 2>&1
+=== END rc=0 127s
+
+=== 07:18:56 START python3 it1/runB_it1.py estop rev
+B_estop12_rev {"test": "estop12", "orient": "rev", "grab": "success", "v0": -0.52, "stop_dist_m": 0.079, "stop_time_s": 0.34, "slide_after_stop_m": 0.001, "captured_end": true, "roll": 0.004, "pitch": 0.005, "bin_ground": 0.0, "cmin": 0.0, "dmin": 0.0, "seated_all": true, "clear_min": 0.09, "ok": true, "cpu_s": 9}
+=== END rc=0 18s
+
+=== 07:19:14 START python3 it1/runB_it1.py towstab
+B_towstab {"test": "towstab", "grab": "success", "pivot_done": true, "pivot_turned_deg": 180.0, "swept_diameter_m": 2.42, "pivot_centre_drift_m": 0.082, "captured_end": true, "roll": 0.003, "pitch": 0.01, "bin_ground": 0.0, "cmin": 0.0, "dmin": 0.0, "seated_all": true, "clear_min": 0.088, "ok": true, "cpu_s": 18}
+=== END rc=0 27s
+
+=== 07:19:40 START python3 it1/runB_it1.py static up 110
+B_static_up_110 {"test": "static", "pose": "up", "kg": 110.0, "grab": "success", "driveL": 855.0, "driveR": 848.6, "caster_sum": 293.2, "antitip": 0.0, "bin_ground": 0.0, "captured": true, "roll": -0.0, "pitch": 0.0, "lift_N": 1130, "pad_N": 547, "ok": true, "cpu_s": 7}
+=== END rc=0 15s
+
+=== 07:19:56 START python3 it1/runB_it1.py static up 60
+B_static_up_60 {"test": "static", "pose": "up", "kg": 60.0, "grab": "success", "driveL": 583.3, "driveR": 592.2, "caster_sum": 334.4, "antitip": 0.0, "bin_ground": 0.0, "captured": true, "roll": 0.0, "pitch": 0.0, "lift_N": 643, "pad_N": 306, "ok": true, "cpu_s": 7}
+=== END rc=0 15s
+
+=== 07:20:11 START python3 it1/runB_it1.py static dn 110
+B_static_dn_110 {"test": "static", "pose": "dn", "kg": 110.0, "grab": "success", "driveL": 734.8, "driveR": 746.1, "caster_sum": 516.4, "antitip": 0.0, "bin_ground": 0.0, "captured": true, "roll": 0.0, "pitch": -0.0, "lift_N": 1130, "pad_N": 760, "ok": true, "cpu_s": 8}
+=== END rc=0 17s
+
+=== 07:20:28 START env CGB_GEO='{"rw":0.28,"tcap":102.0,"kvs":2.88}' python3 it1/smoke_it1.py grab ESE240SL > it1/res/smoke_rw560kv.txt 2>&1
+=== END rc=0 20s
+
+=== 07:20:48 START env CGB_GEO='{"rw":0.28,"tcap":102.0,"kvs":2.88}' IT1_TAG=_tc102kv python3 it1/runB_it1.py step both
+B_step40_both_rw560 {"test": "step40", "side": "both", "grab": "success", "reached": false, "dist_m": 1.31, "captured_end": true, "roll": 0.774, "pitch": 8.382, "bin_ground": 0.0, "cmin": 0.0, "dmin": 0.0, "seated_all": true, "clear_min": 0.088, "ok": false, "cpu_s": 18}
+=== END rc=0 27s
+
+=== 07:21:15 START python3 it1/runB_it1.py static dn 60
+B_static_dn_60 {"test": "static", "pose": "dn", "kg": 60.0, "grab": "success", "driveL": 501.5, "driveR": 519.2, "caster_sum": 489.2, "antitip": 0.0, "bin_ground": 0.0, "captured": true, "roll": 0.0, "pitch": 0.0, "lift_N": 643, "pad_N": 420, "ok": true, "cpu_s": 7}
+=== END rc=0 15s
+
+=== 07:21:30 START python3 it1/runB_it1.py static crL 110
+B_static_crL_110 {"test": "static", "pose": "crL", "kg": 110.0, "grab": "success", "driveL": 669.7, "driveR": 917.2, "caster_sum": 409.8, "antitip": 0.0, "bin_ground": 0.0, "captured": true, "roll": 0.0, "pitch": -0.0, "lift_N": 1130, "pad_N": 652, "ok": true, "cpu_s": 7}
+=== END rc=0 16s
+
+=== 07:21:47 START python3 it1/runB_it1.py static crL 60
+B_static_crL_60 {"test": "static", "pose": "crL", "kg": 60.0, "grab": "success", "driveL": 460.2, "driveR": 637.4, "caster_sum": 412.2, "antitip": 0.0, "bin_ground": 0.0, "captured": true, "roll": 0.0, "pitch": 0.0, "lift_N": 643, "pad_N": 358, "ok": true, "cpu_s": 6}
+=== END rc=0 15s
+
+=== 07:22:01 START python3 it1/runB_it1.py static crR 110
+B_static_crR_110 {"test": "static", "pose": "crR", "kg": 110.0, "grab": "success", "driveL": 914.0, "driveR": 680.4, "caster_sum": 402.6, "antitip": 0.0, "bin_ground": 0.0, "captured": true, "roll": -0.0, "pitch": 0.0, "lift_N": 1130, "pad_N": 650, "ok": true, "cpu_s": 8}
+=== END rc=0 16s
+
+=== 07:22:17 START python3 it1/runB_it1.py static crR 60
+B_static_crR_60 {"test": "static", "pose": "crR", "kg": 60.0, "grab": "success", "driveL": 627.3, "driveR": 470.7, "caster_sum": 411.9, "antitip": 0.0, "bin_ground": 0.0, "captured": true, "roll": -0.0, "pitch": 0.0, "lift_N": 643, "pad_N": 360, "ok": true, "cpu_s": 7}
+=== END rc=0 15s
+
+=== 07:22:32 START python3 it1/runB_it1.py static flat 110
+B_static_flat_110 {"test": "static", "pose": "flat", "kg": 110.0, "grab": "success", "driveL": 801.7, "driveR": 801.3, "caster_sum": 408.1, "antitip": 0.0, "bin_ground": 0.0, "captured": true, "roll": 0.0, "pitch": -0.0, "lift_N": 1138, "pad_N": 654, "ok": true, "cpu_s": 7}
+=== END rc=0 16s
+
+=== 07:22:48 START python3 it1/runB_it1.py rel WEB140 flat full
+B_rel_WEB140_flat_full {"test": "release", "bin": "WEB140", "case": "flat", "fill": "full", "grab": "success", "release": {"wheel_clear_at_zc_mm": 0.0, "tilt_before_withdraw": 0.0, "wheel_clear_before_withdraw_mm": -0.0, "released": true, "nib_clear_m": 0.611, "sd": "SD2it1"}, "bin_tilt_abs_end": 0.0, "bin_speed_end": 0.0, "bin_stable": true, "ok": true, "verdict": "PASS", "roll": 0.001, "pitch": 0.007, "bin_ground": 836.454, "cmin": 0.0, "dmin": 0.0, "seated_all": false, "clear_min": -0.0, "cpu_s": 9}
+=== END rc=0 18s
+
+=== 07:23:06 START python3 it1/runB_it1.py rel WEB140 flat empty
+B_rel_WEB140_flat_empty {"test": "release", "bin": "WEB140", "case": "flat", "fill": "empty", "grab": "success", "release": {"wheel_clear_at_zc_mm": 2.5, "tilt_before_withdraw": 0.0, "wheel_clear_before_withdraw_mm": -0.0, "released": true, "nib_clear_m": 0.606, "sd": "SD2it1"}, "bin_tilt_abs_end": 0.0, "bin_speed_end": 0.0, "bin_stable": true, "ok": true, "verdict": "PASS", "roll": 0.002, "pitch": 0.007, "bin_ground": 239.528, "cmin": 0.0, "dmin": 0.0, "seated_all": false, "clear_min": -0.0, "cpu_s": 7}
+=== END rc=0 16s
+
+=== 07:23:22 START python3 it1/runB_it1.py rel WEB140 up12 full
+B_rel_WEB140_up12_full {"test": "release", "bin": "WEB140", "case": "up12", "fill": "full", "grab": "success", "release": {"wheel_clear_at_zc_mm": 4.6, "tilt_before_withdraw": 0.0, "wheel_clear_before_withdraw_mm": -0.0, "released": true, "nib_clear_m": 0.6, "sd": "SD2it1"}, "bin_tilt_abs_end": 0.0, "bin_speed_end": 0.0, "bin_stable": true, "ok": true, "verdict": "PASS", "roll": 0.001, "pitch": 0.006, "bin_ground": 885.888, "cmin": 0.0, "dmin": 96.108, "seated_all": false, "clear_min": -0.0, "cpu_s": 11}
+=== END rc=0 19s
+
+=== 07:23:41 START python3 it1/runB_it1.py rel WEB140 up12 empty
+B_rel_WEB140_up12_empty {"test": "release", "bin": "WEB140", "case": "up12", "fill": "empty", "grab": "success", "release": {"wheel_clear_at_zc_mm": 2.6, "tilt_before_withdraw": 0.0, "wheel_clear_before_withdraw_mm": -0.0, "released": true, "nib_clear_m": 0.604, "sd": "SD2it1"}, "bin_tilt_abs_end": 0.0, "bin_speed_end": 0.0, "bin_stable": true, "ok": true, "verdict": "PASS", "roll": 0.002, "pitch": 0.006, "bin_ground": 224.801, "cmin": 0.0, "dmin": 0.0, "seated_all": false, "clear_min": -0.0, "cpu_s": 8}
+=== END rc=0 16s
+
+=== 07:23:57 START python3 it1/runB_it1.py rel WEB140 dn12 full
+B_rel_WEB140_dn12_full {"test": "release", "bin": "WEB140", "case": "dn12", "fill": "full", "grab": "success", "release": {"wheel_clear_at_zc_mm": -0.1, "tilt_before_withdraw": 0.0, "wheel_clear_before_withdraw_mm": -0.0, "released": true, "nib_clear_m": 0.618, "sd": "SD2it1"}, "bin_tilt_abs_end": 0.0, "bin_speed_end": 0.0, "bin_stable": true, "ok": true, "verdict": "PASS", "roll": 0.001, "pitch": 0.01, "bin_ground": 680.663, "cmin": 0.0, "dmin": 0.0, "seated_all": false, "clear_min": -0.0, "cpu_s": 10}
+=== END rc=0 19s
+
+=== 07:24:16 START python3 it1/runB_it1.py rel WEB140 dn12 empty
+B_rel_WEB140_dn12_empty {"test": "release", "bin": "WEB140", "case": "dn12", "fill": "empty", "grab": "success", "release": {"wheel_clear_at_zc_mm": -0.0, "tilt_before_withdraw": 0.0, "wheel_clear_before_withdraw_mm": -0.0, "released": true, "nib_clear_m": 0.618, "sd": "SD2it1"}, "bin_tilt_abs_end": 0.0, "bin_speed_end": 0.0, "bin_stable": true, "ok": true, "verdict": "PASS", "roll": 0.003, "pitch": 0.01, "bin_ground": 232.869, "cmin": 0.0, "dmin": 0.0, "seated_all": false, "clear_min": -0.0, "cpu_s": 7}
+=== END rc=0 16s
+
+=== 07:24:32 START python3 it1/runB_it1.py rel ESE240CL flat full
+B_rel_ESE240CL_flat_full {"test": "release", "bin": "ESE240CL", "case": "flat", "fill": "full", "grab": "success", "release": {"wheel_clear_at_zc_mm": -0.0, "tilt_before_withdraw": 0.0, "wheel_clear_before_withdraw_mm": -0.0, "released": true, "nib_clear_m": 0.608, "sd": "SD2it1"}, "bin_tilt_abs_end": 0.0, "bin_speed_end": 0.0, "bin_stable": true, "ok": true, "verdict": "PASS", "roll": 0.002, "pitch": 0.009, "bin_ground": 1146.062, "cmin": 0.0, "dmin": 0.0, "seated_all": false, "clear_min": -0.0, "cpu_s": 10}
+=== END rc=0 17s
+
+=== 07:24:49 START python3 it1/runB_it1.py rel ESE240CL flat empty
+B_rel_ESE240CL_flat_empty {"test": "release", "bin": "ESE240CL", "case": "flat", "fill": "empty", "grab": "success", "release": {"wheel_clear_at_zc_mm": -0.0, "tilt_before_withdraw": 0.0, "wheel_clear_before_withdraw_mm": -0.0, "released": true, "nib_clear_m": 0.609, "sd": "SD2it1"}, "bin_tilt_abs_end": 0.0, "bin_speed_end": 0.0, "bin_stable": true, "ok": true, "verdict": "PASS", "roll": 0.003, "pitch": 0.007, "bin_ground": 273.783, "cmin": 0.0, "dmin": 0.0, "seated_all": false, "clear_min": -0.0, "cpu_s": 7}
+=== END rc=0 15s
+
+=== 07:25:03 START python3 it1/runB_it1.py rel ESE240CL up12 full
+B_rel_ESE240CL_up12_full {"test": "release", "bin": "ESE240CL", "case": "up12", "fill": "full", "grab": "success", "release": {"wheel_clear_at_zc_mm": -0.0, "tilt_before_withdraw": 0.0, "wheel_clear_before_withdraw_mm": -0.0, "released": true, "nib_clear_m": 0.605, "sd": "SD2it1"}, "bin_tilt_abs_end": 0.0, "bin_speed_end": 0.0, "bin_stable": true, "ok": true, "verdict": "PASS", "roll": 0.001, "pitch": 0.008, "bin_ground": 1219.522, "cmin": 0.0, "dmin": 0.0, "seated_all": false, "clear_min": -0.0, "cpu_s": 11}
+=== END rc=0 18s
+
+=== 07:25:21 START python3 it1/runB_it1.py rel ESE240CL up12 empty
+B_rel_ESE240CL_up12_empty {"test": "release", "bin": "ESE240CL", "case": "up12", "fill": "empty", "grab": "success", "release": {"wheel_clear_at_zc_mm": -0.0, "tilt_before_withdraw": 0.0, "wheel_clear_before_withdraw_mm": -0.0, "released": true, "nib_clear_m": 0.607, "sd": "SD2it1"}, "bin_tilt_abs_end": 0.0, "bin_speed_end": 0.0, "bin_stable": true, "ok": true, "verdict": "PASS", "roll": 0.002, "pitch": 0.006, "bin_ground": 273.373, "cmin": 0.0, "dmin": 0.0, "seated_all": false, "clear_min": -0.0, "cpu_s": 8}
+=== END rc=0 15s
+
+=== 07:25:37 START python3 it1/runB_it1.py rel ESE240CL dn12 full
+B_rel_ESE240CL_dn12_full {"test": "release", "bin": "ESE240CL", "case": "dn12", "fill": "full", "grab": "success", "release": {"wheel_clear_at_zc_mm": -0.0, "tilt_before_withdraw": 0.0, "wheel_clear_before_withdraw_mm": -0.0, "released": true, "nib_clear_m": 0.623, "sd": "SD2it1"}, "bin_tilt_abs_end": 0.0, "bin_speed_end": 0.0, "bin_stable": true, "ok": true, "verdict": "PASS", "roll": 0.005, "pitch": 0.01, "bin_ground": 1120.687, "cmin": 0.0, "dmin": 0.0, "seated_all": false, "clear_min": -0.0, "cpu_s": 10}
+=== END rc=0 18s
+
+=== 07:25:54 START python3 it1/runB_it1.py rel ESE240CL dn12 empty
+B_rel_ESE240CL_dn12_empty {"test": "release", "bin": "ESE240CL", "case": "dn12", "fill": "empty", "grab": "success", "release": {"wheel_clear_at_zc_mm": -0.0, "tilt_before_withdraw": 0.0, "wheel_clear_before_withdraw_mm": -0.0, "released": true, "nib_clear_m": 0.615, "sd": "SD2it1"}, "bin_tilt_abs_end": 0.0, "bin_speed_end": 0.0, "bin_stable": true, "ok": true, "verdict": "PASS", "roll": 0.002, "pitch": 0.011, "bin_ground": 226.876, "cmin": 0.0, "dmin": 0.0, "seated_all": false, "clear_min": -0.0, "cpu_s": 7}
+=== END rc=0 15s
+
+=== 07:26:09 START python3 it1/runB_it1.py rel ESE240SL250 flat full
+B_rel_ESE240SL250_flat_full {"test": "release", "bin": "ESE240SL250", "case": "flat", "fill": "full", "grab": "success", "release": {"wheel_clear_at_zc_mm": -0.1, "tilt_before_withdraw": 3.8, "wheel_clear_before_withdraw_mm": -0.0, "released": true, "nib_clear_m": 0.607, "sd": "SD2it1"}, "bin_tilt_abs_end": 3.8, "bin_speed_end": 0.0, "bin_stable": true, "ok": true, "verdict": "PASS", "roll": 0.001, "pitch": 0.007, "bin_ground": 1324.101, "cmin": 0.0, "dmin": 0.0, "seated_all": false, "clear_min": -0.0, "cpu_s": 9}
+=== END rc=0 17s
+
+=== 07:26:26 START python3 it1/runB_it1.py rel ESE240SL250 flat empty
+B_rel_ESE240SL250_flat_empty {"test": "release", "bin": "ESE240SL250", "case": "flat", "fill": "empty", "grab": "success", "release": {"wheel_clear_at_zc_mm": 2.8, "tilt_before_withdraw": 3.8, "wheel_clear_before_withdraw_mm": -0.0, "released": true, "nib_clear_m": 0.605, "sd": "SD2it1"}, "bin_tilt_abs_end": 3.8, "bin_speed_end": 0.0, "bin_stable": true, "ok": true, "verdict": "PASS", "roll": 0.001, "pitch": 0.008, "bin_ground": 429.611, "cmin": 0.0, "dmin": 0.0, "seated_all": false, "clear_min": -0.0, "cpu_s": 7}
+=== END rc=0 15s
+
+=== 07:26:40 START python3 it1/runB_it1.py rel ESE240SL250 up12 full
+B_rel_ESE240SL250_up12_full {"test": "release", "bin": "ESE240SL250", "case": "up12", "fill": "full", "grab": "success", "release": {"wheel_clear_at_zc_mm": -0.1, "tilt_before_withdraw": 3.8, "wheel_clear_before_withdraw_mm": -0.0, "released": true, "nib_clear_m": 0.608, "sd": "SD2it1"}, "bin_tilt_abs_end": 3.8, "bin_speed_end": 0.0, "bin_stable": true, "ok": true, "verdict": "PASS", "roll": 0.006, "pitch": 0.008, "bin_ground": 2606.363, "cmin": 0.0, "dmin": 0.0, "seated_all": false, "clear_min": -0.0, "cpu_s": 10}
+=== END rc=0 18s
+
+=== 07:26:58 START python3 it1/runB_it1.py rel ESE240SL250 up12 empty
+B_rel_ESE240SL250_up12_empty {"test": "release", "bin": "ESE240SL250", "case": "up12", "fill": "empty", "grab": "success", "release": {"wheel_clear_at_zc_mm": 2.9, "tilt_before_withdraw": 3.8, "wheel_clear_before_withdraw_mm": -0.0, "released": true, "nib_clear_m": 0.606, "sd": "SD2it1"}, "bin_tilt_abs_end": 3.8, "bin_speed_end": 0.0, "bin_stable": true, "ok": true, "verdict": "PASS", "roll": 0.002, "pitch": 0.006, "bin_ground": 248.202, "cmin": 0.0, "dmin": 0.0, "seated_all": false, "clear_min": -0.0, "cpu_s": 7}
+=== END rc=0 15s
+
+=== 07:27:13 START python3 it1/runB_it1.py rel ESE240SL250 dn12 full
+B_rel_ESE240SL250_dn12_full {"test": "release", "bin": "ESE240SL250", "case": "dn12", "fill": "full", "grab": "success", "release": {"wheel_clear_at_zc_mm": -0.1, "tilt_before_withdraw": 3.8, "wheel_clear_before_withdraw_mm": -0.0, "released": true, "nib_clear_m": 0.61, "sd": "SD2it1"}, "bin_tilt_abs_end": 3.8, "bin_speed_end": 0.0, "bin_stable": true, "ok": true, "verdict": "PASS", "roll": 0.003, "pitch": 0.01, "bin_ground": 1829.707, "cmin": 0.0, "dmin": 0.0, "seated_all": false, "clear_min": -0.0, "cpu_s": 10}
+=== END rc=0 17s
+
+=== 07:27:30 START python3 it1/runB_it1.py rel ESE240SL250 dn12 empty
+B_rel_ESE240SL250_dn12_empty {"test": "release", "bin": "ESE240SL250", "case": "dn12", "fill": "empty", "grab": "success", "release": {"wheel_clear_at_zc_mm": 2.8, "tilt_before_withdraw": 3.8, "wheel_clear_before_withdraw_mm": -0.0, "released": true, "nib_clear_m": 0.61, "sd": "SD2it1"}, "bin_tilt_abs_end": 3.8, "bin_speed_end": 0.0, "bin_stable": true, "ok": true, "verdict": "PASS", "roll": 0.002, "pitch": 0.01, "bin_ground": 193.601, "cmin": 0.0, "dmin": 0.0, "seated_all": false, "clear_min": -0.0, "cpu_s": 7}
+=== END rc=0 16s
+
+=== 07:27:46 START env SIM_DT=0.00025 python3 it1/runB_it1.py climb 0.25 0.09
+B_climb_m25_c09 {"test": "climb12", "mu": 0.25, "crr_bin": 0.09, "rev": false, "grab": "success", "tug_kg": 94.1, "bin_kg": 110.0, "reached_5m": true, "dist_m": 5.0, "time_s": 11.0, "hold_creep_m": 0.031, "captured_end": true, "ok": true, "roll": 0.001, "pitch": 0.007, "bin_ground": 0.0, "cmin": 70.465, "dmin": 0.0, "seated_all": true, "clear_min": 0.089, "cpu_s": 20}
+=== END rc=0 28s
+
+=== 07:28:14 START env SIM_DT=0.00025 python3 it1/runB_it1.py step one
+B_step40_one {"test": "step40", "side": "one", "grab": "success", "reached": true, "dist_m": 4.69, "captured_end": true, "roll": 0.775, "pitch": 8.25, "bin_ground": 0.0, "cmin": 0.0, "dmin": 0.0, "seated_all": true, "clear_min": 0.089, "ok": true, "cpu_s": 21}
+=== END rc=0 29s
+
+=== 07:28:43 START env SIM_DT=0.00025 python3 it1/runB_it1.py estop fwd
+B_estop12_fwd {"test": "estop12", "orient": "fwd", "grab": "success", "v0": 0.52, "stop_dist_m": 0.148, "stop_time_s": 0.57, "slide_after_stop_m": 0.001, "captured_end": true, "roll": 0.003, "pitch": 0.008, "bin_ground": 0.0, "cmin": 346.006, "dmin": 0.0, "seated_all": true, "clear_min": 0.089, "ok": true, "cpu_s": 17}
+=== END rc=0 25s
+
+=== 07:29:09 START python3 it1/runB_it1.py grab WEB140 30 201
+WEB140 0 success success 4.1
+WEB140 1 success success 9.8
+WEB140 2 success success 3.6
+WEB140 3 bin_pushed safe_miss 17.2
+WEB140 4 success success 4.4
+WEB140 5 success success 6.0
+WEB140 6 success success 4.0
+WEB140 7 success success 5.7
+WEB140 8 success success 4.4
+WEB140 9 success success 6.3
+WEB140 10 bin_pushed safe_miss 8.0
+WEB140 11 success success 8.8
+WEB140 12 success success 3.5
+WEB140 13 success success 5.4
+WEB140 14 success success 3.9
+WEB140 15 success success 6.0
+WEB140 16 success success 3.7
+WEB140 17 bin_pushed safe_miss 17.6
+WEB140 18 success success 3.6
+WEB140 19 success success 6.6
+WEB140 20 bin_pushed safe_miss 9.4
+WEB140 21 success success 6.1
+WEB140 22 success success 6.8
+WEB140 23 bin_pushed safe_miss 19.3
+WEB140 24 safe_miss safe_miss 7.3
+WEB140 25 bin_pushed safe_miss 18.4
+WEB140 26 bin_pushed safe_miss 9.0
+WEB140 27 success success 5.4
+WEB140 28 success success 4.2
+WEB140 29 success success 9.2
+=== END rc=0 237s
+
+=== 07:33:05 START python3 it1/dbg_grab1.py WEB140 3 201 > it1/res/dbg_grab1_WEB3.txt 2>&1
+=== END rc=0 12s
+
+=== 07:33:18 START python3 it1/runB_it1.py grab ESE240SL 30 202
+ESE240SL 0 success success 3.7
+ESE240SL 1 success success 6.7
+ESE240SL 2 success success 3.7
+ESE240SL 3 success success 7.0
+ESE240SL 4 success success 4.8
+ESE240SL 5 success success 6.1
+ESE240SL 6 success success 3.7
+ESE240SL 7 success success 5.6
+ESE240SL 8 success success 4.2
+ESE240SL 9 success success 6.2
+ESE240SL 10 safe_miss safe_miss 9.0
+ESE240SL 11 success safe_miss 12.7
+ESE240SL 12 no_dock no_dock 2.9
+ESE240SL 13 success success 5.4
+ESE240SL 14 success success 3.4
+ESE240SL 15 success success 5.9
+ESE240SL 16 success success 4.7
+ESE240SL 17 success success 6.3
+ESE240SL 18 success success 4.0
+ESE240SL 19 success safe_miss 12.7
+ESE240SL 20 success success 5.0
+ESE240SL 21 success success 8.2
+ESE240SL 22 success success 4.3
+ESE240SL 23 success success 6.0
+ESE240SL 24 success success 6.1
+ESE240SL 25 success safe_miss 12.5
+ESE240SL 26 bin_pushed safe_miss 7.4
+ESE240SL 27 success success 6.1
+ESE240SL 28 success success 4.2
+ESE240SL 29 safe_miss safe_miss 8.9
+=== END rc=0 195s
+
+=== 07:36:33 START python3 it1/dbg_grab1.py WEB140 3 201 > it1/res/dbg_grab1_WEB3b.txt 2>&1
+=== END rc=0 11s

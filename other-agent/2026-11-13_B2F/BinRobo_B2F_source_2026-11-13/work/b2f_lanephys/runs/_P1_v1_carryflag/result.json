@@ -1,0 +1,123 @@
+{
+ "run": "P1",
+ "title": "P1 full 240 L (ESE 240 SL, 110 kg): home -> pad A",
+ "verdict": "FAIL",
+ "fails": [
+  "bin not held (wheel clearance min -0.1 mm, 1102 samples lost)",
+  "comb lip unseated",
+  "bin touched the ground (1084 N)",
+  "static tip margin < 0"
+ ],
+ "sim_time_s": 1322.9,
+ "energy_Wh": 15.37,
+ "wall_s": 397,
+ "metrics": {
+  "clear_min": -0.0001,
+  "clear_at": 622.2,
+  "seated_all": false,
+  "bin_ground_N": 1083.5456,
+  "roll_max": 2.9216,
+  "pitch_max": 6.8681,
+  "hedge_min": 0.2994,
+  "hedge_at": 621.1,
+  "tip_min": -15.4669,
+  "tip_at": 622.8,
+  "liftF_max": 3000.0,
+  "liftF_at": 290.3,
+  "gap_min": 9.0,
+  "v_max": 1.4751,
+  "n_lost": 1102
+ },
+ "results": {
+  "grab": {
+   "docked": true,
+   "reapp": false,
+   "dock_dy_mm": 2.3,
+   "pad_ok": true,
+   "padF_at_loadon": 0,
+   "lift_rise_N": 1073,
+   "seat_switch": true,
+   "keeper_on_bar": true,
+   "keeper_deg": -82.7,
+   "claim": true,
+   "zc": 0.146,
+   "q_app": 0.098,
+   "captured": true,
+   "wheel_clear_mm": 72.3,
+   "bin_tilt_abs": 2.0,
+   "seated": true,
+   "dock": "tof",
+   "result": "success"
+  },
+  "drive1": {
+   "reached": true,
+   "why": null,
+   "s_end": 622.19,
+   "ref_end": 621.95,
+   "t": 1299.2
+  },
+  "setdown": {
+   "wheel_clear_at_zc_mm": -0.1,
+   "tilt_before_withdraw": 1.8,
+   "wheel_clear_before_withdraw_mm": -0.1,
+   "released": true,
+   "nib_clear_m": 0.623,
+   "sd": "SD2it1",
+   "tilt_end": 1.85,
+   "bin_speed": 0.0,
+   "standing": true,
+   "bin_s": 621.91,
+   "bin_lat": 1.328
+  }
+ },
+ "events": [
+  [
+   15.47,
+   "docked: tof, bin dy 2 mm (camera 2), nib gap 2 mm, bin moved 0 mm, rim 0.978 q_app 0.098, yaw meas 0.1 true 0.4 deg"
+  ],
+  [
+   45.5,
+   "grab: claim True captured True clear 72 mm rise 1073 N tilt 2.0"
+  ],
+  [
+   45.5,
+   "grab result success"
+  ],
+  [
+   1299.22,
+   "drive1: reached at s 622.2"
+  ],
+  [
+   1322.88,
+   "set-down: released True standing True tilt 1.8"
+  ]
+ ],
+ "cfg": {
+  "binkey": "ESE240SL",
+  "kg": 110.0,
+  "with_bin": true,
+  "variant": {
+   "step": "ramp",
+   "trench": "covered"
+  },
+  "act_N": 3000.0,
+  "pert": {},
+  "night": false,
+  "obstacles": [],
+  "title": "P1 full 240 L (ESE 240 SL, 110 kg): home -> pad A",
+  "start": "home"
+ },
+ "steps": [
+  [
+   "grab"
+  ],
+  [
+   "drive",
+   "{'to': 621.9612509503402, 'ref': 'bin', 'dirn': 1, 'knots': [(0, -1.4), (12.0, -1.4), (24.0, 0.0), (610.0, 0.0), (619.5, 1.35), (700, 1.35)], 'snaps': True}"
+  ],
+  [
+   "setdown"
+  ]
+ ],
+ "peak": {}
+}

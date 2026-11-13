@@ -1,0 +1,90 @@
+[
+{
+"bin": "ESE240SL250",
+"full": true,
+"res": "success",
+"why": null,
+"padF_loadon": 0,
+"tilt": 2.6,
+"clear": 79.7,
+"pad_ok": true,
+"t_grab": 53.0,
+"pad_act_peak_N": 680,
+"pad_act_at": [
+20.4,
+518,
+33.3
+],
+"pad_contact_max_ext_N": 724.0,
+"yaw_deg": 0.04,
+"t_setdown": 24.0,
+"sd": "PASS",
+"tilt_end": 3.8
+},
+{
+"bin": "ESE240SL250",
+"full": false,
+"res": "success",
+"why": null,
+"padF_loadon": 0,
+"tilt": 0.8,
+"clear": 91.4,
+"pad_ok": true,
+"t_grab": 35.3,
+"pad_act_peak_N": 151,
+"pad_act_at": [
+12.9,
+92,
+39.3
+],
+"pad_contact_max_ext_N": 92.0,
+"yaw_deg": 0.04,
+"t_setdown": 24.5,
+"sd": "PASS",
+"tilt_end": 3.8
+},
+{
+"bin": "ESE240SL",
+"full": true,
+"res": "success",
+"why": null,
+"padF_loadon": 0,
+"tilt": 2.6,
+"clear": 85.3,
+"pad_ok": true,
+"t_grab": 51.8,
+"pad_act_peak_N": 172,
+"pad_act_at": [
+35.0,
+286,
+16.7
+],
+"pad_contact_max_ext_N": 707.3,
+"yaw_deg": 0.02,
+"t_setdown": 25.0,
+"sd": "PASS",
+"tilt_end": 0.0
+},
+{
+"bin": "ESE240SL",
+"full": false,
+"res": "success",
+"why": null,
+"padF_loadon": 0,
+"tilt": 0.8,
+"clear": 97.0,
+"pad_ok": true,
+"t_grab": 35.0,
+"pad_act_peak_N": 46,
+"pad_act_at": [
+33.2,
+65,
+19.5
+],
+"pad_contact_max_ext_N": 97.4,
+"yaw_deg": 0.04,
+"t_setdown": 24.9,
+"sd": "PASS",
+"tilt_end": 0.0
+}
+]

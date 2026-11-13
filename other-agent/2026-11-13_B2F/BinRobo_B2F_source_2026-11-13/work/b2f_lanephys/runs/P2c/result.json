@@ -1,0 +1,212 @@
+{
+ "run": "P2c",
+ "title": "P2c collect empty 240 L at pad A -> home",
+ "verdict": "FAIL",
+ "fails": [
+  "drive2 stalled at s 549.8 (no progress 12 s (stall))",
+  "set-down fail"
+ ],
+ "sim_time_s": 344.5,
+ "t_start": 0.0,
+ "energy_Wh": 5.44,
+ "wall_s": 87,
+ "metrics": {
+  "clear_min": 0.0461,
+  "clear_at": 550.3,
+  "seated_all": true,
+  "bin_ground_N": 0.0,
+  "roll_max": 3.6207,
+  "pitch_max": 2.7951,
+  "hedge_min": 0.2902,
+  "hedge_at": 550.3,
+  "tip_min": 35.7215,
+  "tip_at": 549.8,
+  "liftF_max": 299.5785,
+  "liftF_at": 550.7,
+  "gap_min": 9.0,
+  "v_max": 0.519,
+  "n_lost": 0
+ },
+ "results": {
+  "grab": {
+   "docked": true,
+   "reapp": false,
+   "dock_dy_mm": 1.9,
+   "pad_ok": true,
+   "padF_at_loadon": 0,
+   "lift_rise_N": 122,
+   "seat_switch": true,
+   "keeper_on_bar": true,
+   "keeper_deg": -82.8,
+   "claim": true,
+   "zc": 0.145,
+   "q_app": 0.101,
+   "captured": true,
+   "wheel_clear_mm": 86.6,
+   "bin_tilt_abs": 0.6,
+   "seated": true,
+   "dock": "tof",
+   "result": "success"
+  },
+  "pivot1": {
+   "ok": true
+  },
+  "drive2": {
+   "reached": false,
+   "why": "no progress 12 s (stall)",
+   "s_end": 549.82,
+   "ref_end": 549.94,
+   "t": 315.0,
+   "captured_end": true,
+   "clear_end_mm": 48.4
+  },
+  "setdown": {
+   "wheel_clear_at_zc_mm": 0.0,
+   "tilt_before_withdraw": 0.8,
+   "wheel_clear_before_withdraw_mm": -0.0,
+   "released": false,
+   "nib_clear_m": 0.073,
+   "sd": "SD2it1",
+   "tilt_end": 0.75,
+   "bin_speed": 0.0,
+   "standing": true,
+   "bin_s": 549.94,
+   "bin_lat": -0.024
+  }
+ },
+ "seg_metrics": {
+  "grab0": {
+   "clear_min": 9.0,
+   "clear_at": null,
+   "seated_all": true,
+   "bin_ground_N": 0.0,
+   "roll_max": 0.024,
+   "pitch_max": 1.8371,
+   "hedge_min": 9.0,
+   "hedge_at": null,
+   "tip_min": 38.8509,
+   "tip_at": 622.8,
+   "liftF_max": 219.7262,
+   "liftF_at": 622.2,
+   "gap_min": 9.0,
+   "v_max": 0.1426,
+   "n_lost": 0
+  },
+  "pivot1": {
+   "clear_min": 0.086,
+   "clear_at": 622.2,
+   "seated_all": true,
+   "bin_ground_N": 0.0,
+   "roll_max": 1.8482,
+   "pitch_max": 1.8526,
+   "hedge_min": 9.0,
+   "hedge_at": null,
+   "tip_min": 37.2183,
+   "tip_at": 622.2,
+   "liftF_max": 257.3779,
+   "liftF_at": 622.2,
+   "gap_min": 9.0,
+   "v_max": 0.0105,
+   "n_lost": 0
+  },
+  "drive2": {
+   "clear_min": 0.0461,
+   "clear_at": 550.3,
+   "seated_all": true,
+   "bin_ground_N": 0.0,
+   "roll_max": 3.6207,
+   "pitch_max": 2.7951,
+   "hedge_min": 0.2902,
+   "hedge_at": 550.3,
+   "tip_min": 35.7215,
+   "tip_at": 549.8,
+   "liftF_max": 299.5785,
+   "liftF_at": 550.7,
+   "gap_min": 9.0,
+   "v_max": 0.519,
+   "n_lost": 0
+  },
+  "setdown3": {
+   "clear_min": 9.0,
+   "clear_at": null,
+   "seated_all": true,
+   "bin_ground_N": 0.0,
+   "roll_max": 3.619,
+   "pitch_max": 2.1428,
+   "hedge_min": 0.55,
+   "hedge_at": 549.9,
+   "tip_min": 36.6846,
+   "tip_at": 549.8,
+   "liftF_max": 199.8445,
+   "liftF_at": 549.8,
+   "gap_min": 9.0,
+   "v_max": 0.0784,
+   "n_lost": 0
+  }
+ },
+ "events": [
+  [
+   0.0,
+   "emptied bin left by P1 at pad A; tug placed at the docking start pose 1.2 m out (outbound empty leg not simulated: trim 1)"
+  ],
+  [
+   16.12,
+   "docked: tof, bin dy 2 mm (camera 2), nib gap 3 mm, bin moved 0 mm, rim 0.981 q_app 0.101, yaw meas 0.1 true 0.4 deg"
+  ],
+  [
+   29.33,
+   "grab: claim True captured True clear 87 mm rise 122 N tilt 0.6"
+  ],
+  [
+   29.33,
+   "grab result success"
+  ],
+  [
+   46.93,
+   "pivot +180 deg done, axle moved 0.037 m"
+  ],
+  [
+   315.03,
+   "drive2: no progress 12 s (stall) at s 549.8"
+  ],
+  [
+   344.46,
+   "set-down: released False standing True tilt 0.8"
+  ]
+ ],
+ "cfg": {
+  "binkey": "ESE240SL",
+  "kg": 13.0,
+  "with_bin": true,
+  "variant": {
+   "step": "ramp",
+   "trench": "covered"
+  },
+  "act_N": 3000.0,
+  "pert": {},
+  "night": false,
+  "obstacles": [],
+  "title": "P2c collect empty 240 L at pad A -> home",
+  "start": [
+   "padA_bin",
+   "P1"
+  ]
+ },
+ "steps": [
+  [
+   "grab"
+  ],
+  [
+   "pivot",
+   "180.0"
+  ],
+  [
+   "drive",
+   "{'to': 10.0, 'ref': 'bin', 'dirn': -1, 'knots': [(0, -1.4), (12.0, -1.4), (24.0, 0.0), (610.0, 0.0), (619.5, 1.35), (700, 1.35)], 'snaps': True}"
+  ],
+  [
+   "setdown"
+  ]
+ ],
+ "peak": {}
+}

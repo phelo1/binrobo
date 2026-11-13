@@ -1,0 +1,132 @@
+{
+ "run": "P6a_person_estop",
+ "title": "P6a person steps in on the 12 % wet descent: e-stop",
+ "verdict": "PASS",
+ "fails": [],
+ "sim_time_s": 56.9,
+ "t_start": 295.301499996473,
+ "energy_Wh": 0.16,
+ "wall_s": 17,
+ "metrics": {
+  "clear_min": 0.0718,
+  "clear_at": 128.5,
+  "seated_all": true,
+  "bin_ground_N": 0.0,
+  "roll_max": 0.4532,
+  "pitch_max": 6.8682,
+  "hedge_min": 1.511,
+  "hedge_at": 133.0,
+  "tip_min": 24.1299,
+  "tip_at": 130.3,
+  "liftF_max": 1318.6786,
+  "liftF_at": 143.3,
+  "gap_min": 1.3452,
+  "v_max": 0.5253,
+  "n_lost": 0
+ },
+ "results": {
+  "estop": {
+   "stop_m": 0.116,
+   "slide_m": 0.0005,
+   "v0": 0.516,
+   "gap_at_trigger": 1.47,
+   "s": 143.3,
+   "grade_pct": -12.0,
+   "leaf": true
+  },
+  "drive0": {
+   "reached": true,
+   "why": null,
+   "s_end": 152.01,
+   "ref_end": 152.01,
+   "t": 352.2,
+   "captured_end": true,
+   "clear_end_mm": 79.8
+  }
+ },
+ "seg_metrics": {
+  "drive0": {
+   "clear_min": 0.0718,
+   "clear_at": 128.5,
+   "seated_all": true,
+   "bin_ground_N": 0.0,
+   "roll_max": 0.4532,
+   "pitch_max": 6.8682,
+   "hedge_min": 1.511,
+   "hedge_at": 133.0,
+   "tip_min": 24.1299,
+   "tip_at": 130.3,
+   "liftF_max": 1318.6786,
+   "liftF_at": 143.3,
+   "gap_min": 1.3452,
+   "v_max": 0.5253,
+   "n_lost": 0
+  }
+ },
+ "events": [
+  [
+   295.3,
+   "start from P1 snapshot s128.0.pkl (carried state)"
+  ],
+  [
+   324.21,
+   "person starts moving into the lane (bumper 2.20 m from its line)"
+  ],
+  [
+   325.2,
+   "E-STOP: obstacle 1.47 m ahead in the corridor"
+  ],
+  [
+   328.7,
+   "e-stop: stopped in 0.116 m, slide 0.0005 m in 3 s"
+  ],
+  [
+   333.7,
+   "corridor clear 2 s: resume"
+  ],
+  [
+   352.2,
+   "drive0: reached at s 152.0"
+  ]
+ ],
+ "cfg": {
+  "binkey": "ESE240SL",
+  "kg": 110.0,
+  "with_bin": true,
+  "variant": {
+   "step": "ramp",
+   "trench": "covered"
+  },
+  "act_N": 3000.0,
+  "pert": {},
+  "night": false,
+  "obstacles": [
+   {
+    "name": "person",
+    "kind": "person",
+    "r": 0.22,
+    "h": 1.75,
+    "s": 146.0,
+    "lat0": -2.3,
+    "lat1": 0.0,
+    "lat2": 2.4,
+    "wait": 5.0,
+    "v": 1.4,
+    "trig": 2.2
+   }
+  ],
+  "title": "P6a person steps in on the 12 % wet descent: e-stop",
+  "start": [
+   "snap",
+   "P1",
+   128.0
+  ]
+ },
+ "steps": [
+  [
+   "drive",
+   "{'to': 152.0, 'ref': 'tug', 'dirn': 1, 'knots': [(0, -1.4), (12.0, -1.4), (24.0, 0.0), (610.0, 0.0), (619.5, 1.35), (700, 1.35)], 'obstacle': True}"
+  ]
+ ],
+ "peak": {}
+}

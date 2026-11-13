@@ -1,0 +1,180 @@
+{
+ "massfile": "mass_cgB2_donor.json",
+ "design": {
+  "tug_kg": 105.51,
+  "tug_cg": [
+   0.498,
+   0.359
+  ],
+  "cases": [
+   {
+    "bin_kg": 110,
+    "M": 215.5,
+    "cg_x": 0.225,
+    "cg_z": 0.474,
+    "tip_lateral_deg": 37.8,
+    "tip_forward_over_castors_deg": 55.0,
+    "castor_liftoff_about_drive_axle_deg": 25.4,
+    "rear_tip_on_antitip_deg": 51.0,
+    "drive_N_flat": 1586,
+    "castor_N_flat": 528,
+    "drive_N_12up": 1442,
+    "castor_N_12up": 657,
+    "mu_req_12": 0.217,
+    "torque_per_wheel_12_Nm": 24.9,
+    "torque_x1p25": 31.1
+   },
+   {
+    "bin_kg": 60,
+    "M": 165.5,
+    "cg_x": 0.307,
+    "cg_z": 0.446,
+    "tip_lateral_deg": 38.6,
+    "tip_forward_over_castors_deg": 53.0,
+    "castor_liftoff_about_drive_axle_deg": 34.5,
+    "rear_tip_on_antitip_deg": 56.2,
+    "drive_N_flat": 1070,
+    "castor_N_flat": 554,
+    "drive_N_12up": 966,
+    "castor_N_12up": 646,
+    "mu_req_12": 0.264,
+    "torque_per_wheel_12_Nm": 20.3,
+    "torque_x1p25": 25.3
+   },
+   {
+    "bin_kg": 0,
+    "M": 105.5,
+    "cg_x": 0.498,
+    "cg_z": 0.359,
+    "tip_lateral_deg": 42.7,
+    "tip_forward_over_castors_deg": 48.3,
+    "castor_liftoff_about_drive_axle_deg": 54.2,
+    "rear_tip_on_antitip_deg": 67.3,
+    "drive_N_flat": 462,
+    "castor_N_flat": 573,
+    "drive_N_12up": 410,
+    "castor_N_12up": 618,
+    "mu_req_12": 0.451,
+    "torque_per_wheel_12_Nm": 14.7,
+    "torque_x1p25": 18.4
+   }
+  ]
+ },
+ "ballast_sweep_110kg": [
+  {
+   "kg": 0,
+   "x": 0.85,
+   "M": 215.5,
+   "castor_liftoff_about_drive_axle_deg": 25.4,
+   "castor_N_12up": 657,
+   "mu_req_12": 0.217,
+   "tug_kg": 105.51
+  },
+  {
+   "kg": 0,
+   "x": 1.0,
+   "M": 215.5,
+   "castor_liftoff_about_drive_axle_deg": 25.4,
+   "castor_N_12up": 657,
+   "mu_req_12": 0.217,
+   "tug_kg": 105.51
+  },
+  {
+   "kg": 3,
+   "x": 0.85,
+   "M": 218.5,
+   "castor_liftoff_about_drive_axle_deg": 26.4,
+   "castor_N_12up": 685,
+   "mu_req_12": 0.219,
+   "tug_kg": 108.51
+  },
+  {
+   "kg": 3,
+   "x": 1.0,
+   "M": 218.5,
+   "castor_liftoff_about_drive_axle_deg": 26.6,
+   "castor_N_12up": 690,
+   "mu_req_12": 0.22,
+   "tug_kg": 108.51
+  },
+  {
+   "kg": 5,
+   "x": 0.85,
+   "M": 220.5,
+   "castor_liftoff_about_drive_axle_deg": 27.1,
+   "castor_N_12up": 704,
+   "mu_req_12": 0.221,
+   "tug_kg": 110.51
+  },
+  {
+   "kg": 5,
+   "x": 1.0,
+   "M": 220.5,
+   "castor_liftoff_about_drive_axle_deg": 27.5,
+   "castor_N_12up": 712,
+   "mu_req_12": 0.222,
+   "tug_kg": 110.51
+  },
+  {
+   "kg": 8,
+   "x": 0.85,
+   "M": 223.5,
+   "castor_liftoff_about_drive_axle_deg": 28.1,
+   "castor_N_12up": 732,
+   "mu_req_12": 0.223,
+   "tug_kg": 113.51
+  },
+  {
+   "kg": 8,
+   "x": 1.0,
+   "M": 223.5,
+   "castor_liftoff_about_drive_axle_deg": 28.7,
+   "castor_N_12up": 745,
+   "mu_req_12": 0.225,
+   "tug_kg": 113.51
+  },
+  {
+   "kg": 10,
+   "x": 0.85,
+   "M": 225.5,
+   "castor_liftoff_about_drive_axle_deg": 28.8,
+   "castor_N_12up": 751,
+   "mu_req_12": 0.225,
+   "tug_kg": 115.51
+  },
+  {
+   "kg": 10,
+   "x": 1.0,
+   "M": 225.5,
+   "castor_liftoff_about_drive_axle_deg": 29.4,
+   "castor_N_12up": 767,
+   "mu_req_12": 0.227,
+   "tug_kg": 115.51
+  }
+ ],
+ "step40": {
+  "contact_angle_deg": 41.5,
+  "mu_edge_needed": 0.89,
+  "wheel_load_N": 793,
+  "torque_needed_Nm": 83.6,
+  "torque_cap_frozen_Nm": 60.0,
+  "max_wheel_load_for_60Nm_N": 569,
+  "note": "friction need is geometric (independent of load and CG); interlock (lugs) removes it but the torque need stays > the 60 N m frozen cap and the real motor (53 N m at 25.8 A)",
+  "wheel_330": {
+   "mu": 0.86,
+   "T_Nm": 85.4
+  },
+  "wheel_400": {
+   "mu": 0.75,
+   "T_Nm": 95.2
+  },
+  "wheel_560": {
+   "mu": 0.6,
+   "T_Nm": 114.4
+  },
+  "wheel_700": {
+   "mu": 0.52,
+   "T_Nm": 128.8
+  }
+ }
+}

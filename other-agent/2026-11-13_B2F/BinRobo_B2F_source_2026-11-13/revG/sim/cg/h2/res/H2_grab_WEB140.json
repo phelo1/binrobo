@@ -1,0 +1,2128 @@
+{
+"bin": "WEB140",
+"seed": 201,
+"n": 30,
+"captured": 30,
+"false_holds": 0,
+"knocked": 0,
+"runs": [
+{
+"docked": true,
+"reapp": false,
+"dock_dy_mm": -2.3,
+"wheel_sens_mm": [
+86.5,
+88.8
+],
+"fh1_q": 0.302,
+"lift_rise_N": 84,
+"seat_switch": true,
+"keeper_on_bar": true,
+"keeper_deg": 95.8,
+"claim": true,
+"zc": 0.2,
+"q_app": 0.156,
+"captured": true,
+"wheel_clear_mm": 86.1,
+"bin_tilt_abs": 2.1,
+"seated": true,
+"dock": "pad",
+"result": "success",
+"first_result": "success",
+"knocked": false,
+"false_hold": false,
+"events": [
+[
+20.36,
+"docked: pad, bin dy -2 mm (camera 1), nib gap 7 mm, bin moved 1 mm, rim 0.981 q_app 0.156, yaw meas 0.4 true 3.0 deg"
+],
+[
+26.33,
+"grab: claim True captured True clear 86 mm rise 84 N tilt 2.1"
+]
+],
+"i": 0,
+"params": {
+"bin": "Weber 140 L",
+"bar_r": 0.0125,
+"bar_shape": "tube",
+"bar_x": 0.1436,
+"cb": 0.0749,
+"bar_habs": 1.0059,
+"bar_h": 0.9059,
+"wheel_r": 0.1,
+"handle_half": 0.1696,
+"knuckles": [
+[
+0.045,
+0.0045
+]
+],
+"wy": 0.2145,
+"W": 0.475,
+"D": 0.545,
+"empty": 10.0,
+"dy": 0.003,
+"dyaw": -4.18,
+"mu": 0.57,
+"mu_hook": 0.47,
+"fill": 0.0,
+"lid": [
+"closed",
+0.0
+],
+"comb_d": 0.004151652647301805
+},
+"cpu": 4.4
+},
+{
+"docked": true,
+"reapp": true,
+"dock_dy_mm": 2.2,
+"wheel_sens_mm": [
+89.5,
+84.7
+],
+"fh1_q": 0.29,
+"lift_rise_N": 641,
+"seat_switch": true,
+"keeper_on_bar": true,
+"keeper_deg": 95.8,
+"claim": true,
+"zc": 0.188,
+"q_app": 0.139,
+"captured": true,
+"wheel_clear_mm": 86.1,
+"bin_tilt_abs": 2.3,
+"seated": true,
+"dock": "tof",
+"result": "success",
+"first_result": "success",
+"knocked": false,
+"false_hold": false,
+"events": [
+[
+16.5,
+"docked: tof, bin dy 14 mm (camera 30), nib gap 2 mm, bin moved 0 mm, rim 0.974 q_app 0.149, yaw meas 0.1 true 0.5 deg"
+],
+[
+16.5,
+"back off 0.4 m and re-approach"
+],
+[
+31.54,
+"docked: tof, bin dy 2 mm (camera 3), nib gap 3 mm, bin moved 0 mm, rim 0.964 q_app 0.139, yaw meas 0.2 true -0.1 deg"
+],
+[
+37.77,
+"grab: claim True captured True clear 86 mm rise 641 N tilt 2.3"
+]
+],
+"i": 1,
+"params": {
+"bin": "Weber 140 L",
+"bar_r": 0.0125,
+"bar_shape": "tube",
+"bar_x": 0.1431,
+"cb": 0.0757,
+"bar_habs": 1.0053,
+"bar_h": 0.9053,
+"wheel_r": 0.1,
+"handle_half": 0.1655,
+"knuckles": [
+[
+0.045,
+0.0045
+]
+],
+"wy": 0.2145,
+"W": 0.475,
+"D": 0.545,
+"empty": 10.0,
+"dy": 0.045,
+"dyaw": -2.95,
+"mu": 0.35,
+"mu_hook": 0.26,
+"fill": 56.0,
+"lid": [
+"closed",
+0.0
+],
+"comb_d": -0.007748670384952033
+},
+"cpu": 6.9
+},
+{
+"docked": true,
+"reapp": false,
+"dock_dy_mm": -7.3,
+"wheel_sens_mm": [
+81.4,
+84.2
+],
+"fh1_q": 0.294,
+"lift_rise_N": 92,
+"seat_switch": true,
+"keeper_on_bar": true,
+"keeper_deg": 95.8,
+"claim": true,
+"zc": 0.192,
+"q_app": 0.15,
+"captured": true,
+"wheel_clear_mm": 88.0,
+"bin_tilt_abs": 2.0,
+"seated": true,
+"dock": "tof",
+"result": "success",
+"first_result": "success",
+"knocked": false,
+"false_hold": false,
+"events": [
+[
+20.73,
+"docked: tof, bin dy -7 mm (camera -14), nib gap 7 mm, bin moved 0 mm, rim 0.975 q_app 0.150, yaw meas -0.3 true -0.4 deg"
+],
+[
+26.63,
+"grab: claim True captured True clear 88 mm rise 92 N tilt 2.0"
+]
+],
+"i": 2,
+"params": {
+"bin": "Weber 140 L",
+"bar_r": 0.015,
+"bar_shape": "tube",
+"bar_x": 0.1419,
+"cb": 0.0787,
+"bar_habs": 0.9937,
+"bar_h": 0.8937,
+"wheel_r": 0.1,
+"handle_half": 0.1666,
+"knuckles": [
+[
+0.045,
+0.0045
+]
+],
+"wy": 0.2145,
+"W": 0.475,
+"D": 0.545,
+"empty": 10.0,
+"dy": 0.001,
+"dyaw": -2.13,
+"mu": 0.59,
+"mu_hook": 0.48,
+"fill": 0.0,
+"lid": [
+"closed",
+0.0
+],
+"comb_d": -0.003912811472205893
+},
+"cpu": 4.0
+},
+{
+"docked": true,
+"reapp": false,
+"dock_dy_mm": 3.8,
+"wheel_sens_mm": [
+94.6,
+92.4
+],
+"fh1_q": 0.305,
+"lift_rise_N": 642,
+"seat_switch": true,
+"keeper_on_bar": true,
+"keeper_deg": 95.8,
+"claim": true,
+"zc": 0.204,
+"q_app": 0.157,
+"captured": true,
+"wheel_clear_mm": 86.7,
+"bin_tilt_abs": 2.3,
+"seated": true,
+"dock": "tof",
+"result": "success",
+"first_result": "success",
+"knocked": false,
+"false_hold": false,
+"events": [
+[
+20.44,
+"docked: tof, bin dy 4 mm (camera 5), nib gap 5 mm, bin moved 0 mm, rim 0.982 q_app 0.157, yaw meas -0.3 true 0.2 deg"
+],
+[
+26.59,
+"grab: claim True captured True clear 87 mm rise 642 N tilt 2.3"
+]
+],
+"i": 3,
+"params": {
+"bin": "Weber 140 L",
+"bar_r": 0.015,
+"bar_shape": "tube",
+"bar_x": 0.1434,
+"cb": 0.069,
+"bar_habs": 1.0024,
+"bar_h": 0.9024,
+"wheel_r": 0.1,
+"handle_half": 0.1657,
+"knuckles": [
+[
+0.045,
+0.0045
+]
+],
+"wy": 0.2145,
+"W": 0.475,
+"D": 0.545,
+"empty": 10.0,
+"dy": -0.043,
+"dyaw": 0.86,
+"mu": 0.54,
+"mu_hook": 0.31,
+"fill": 56.0,
+"lid": [
+"closed",
+0.0
+],
+"comb_d": 0.007620468035874484
+},
+"cpu": 4.3
+},
+{
+"docked": true,
+"reapp": false,
+"dock_dy_mm": -12.8,
+"wheel_sens_mm": [
+85.0,
+90.7
+],
+"fh1_q": 0.291,
+"lift_rise_N": 92,
+"seat_switch": true,
+"keeper_on_bar": true,
+"keeper_deg": 95.8,
+"claim": true,
+"zc": 0.19,
+"q_app": 0.142,
+"captured": true,
+"wheel_clear_mm": 87.0,
+"bin_tilt_abs": 2.1,
+"seated": true,
+"dock": "tof",
+"result": "success",
+"first_result": "success",
+"knocked": false,
+"false_hold": false,
+"events": [
+[
+16.57,
+"docked: tof, bin dy -13 mm (camera -21), nib gap 2 mm, bin moved 0 mm, rim 0.967 q_app 0.142, yaw meas 0.3 true 0.6 deg"
+],
+[
+22.68,
+"grab: claim True captured True clear 87 mm rise 92 N tilt 2.1"
+]
+],
+"i": 4,
+"params": {
+"bin": "Weber 140 L",
+"bar_r": 0.021,
+"bar_shape": "tube",
+"bar_x": 0.1383,
+"cb": 0.0756,
+"bar_habs": 1.002,
+"bar_h": 0.902,
+"wheel_r": 0.1,
+"handle_half": 0.1683,
+"knuckles": [
+[
+0.045,
+0.0045
+]
+],
+"wy": 0.2145,
+"W": 0.475,
+"D": 0.545,
+"empty": 10.0,
+"dy": 0.037,
+"dyaw": -1.46,
+"mu": 0.6,
+"mu_hook": 0.44,
+"fill": 0.0,
+"lid": [
+"closed",
+0.0
+],
+"comb_d": -0.005982207986753332
+},
+"cpu": 3.8
+},
+{
+"docked": true,
+"reapp": false,
+"dock_dy_mm": -4.4,
+"wheel_sens_mm": [
+87.0,
+96.0
+],
+"fh1_q": 0.299,
+"lift_rise_N": 641,
+"seat_switch": true,
+"keeper_on_bar": true,
+"keeper_deg": 95.8,
+"claim": true,
+"zc": 0.198,
+"q_app": 0.157,
+"captured": true,
+"wheel_clear_mm": 85.6,
+"bin_tilt_abs": 2.3,
+"seated": true,
+"dock": "tof",
+"result": "success",
+"first_result": "success",
+"knocked": false,
+"false_hold": false,
+"events": [
+[
+16.6,
+"docked: tof, bin dy -4 mm (camera -6), nib gap 1 mm, bin moved 0 mm, rim 0.982 q_app 0.157, yaw meas 0.3 true 0.8 deg"
+],
+[
+22.56,
+"grab: claim True captured True clear 86 mm rise 641 N tilt 2.3"
+]
+],
+"i": 5,
+"params": {
+"bin": "Weber 140 L",
+"bar_r": 0.021,
+"bar_shape": "tube",
+"bar_x": 0.1355,
+"cb": 0.0723,
+"bar_habs": 0.9974,
+"bar_h": 0.8974,
+"wheel_r": 0.1,
+"handle_half": 0.1668,
+"knuckles": [
+[
+0.045,
+0.0045
+]
+],
+"wy": 0.2145,
+"W": 0.475,
+"D": 0.545,
+"empty": 10.0,
+"dy": 0.015,
+"dyaw": -3.08,
+"mu": 0.49,
+"mu_hook": 0.21,
+"fill": 56.0,
+"lid": [
+"closed",
+0.0
+],
+"comb_d": 0.001621977656076537
+},
+"cpu": 3.9
+},
+{
+"docked": true,
+"reapp": false,
+"dock_dy_mm": 10.6,
+"wheel_sens_mm": [
+90.2,
+82.2
+],
+"fh1_q": 0.302,
+"lift_rise_N": 86,
+"seat_switch": true,
+"keeper_on_bar": true,
+"keeper_deg": 95.8,
+"claim": true,
+"zc": 0.201,
+"q_app": 0.16,
+"captured": true,
+"wheel_clear_mm": 87.0,
+"bin_tilt_abs": 2.1,
+"seated": true,
+"dock": "tof",
+"result": "success",
+"first_result": "success",
+"knocked": false,
+"false_hold": false,
+"events": [
+[
+20.35,
+"docked: tof, bin dy 11 mm (camera 19), nib gap 3 mm, bin moved 0 mm, rim 0.985 q_app 0.160, yaw meas -0.5 true -1.7 deg"
+],
+[
+26.23,
+"grab: claim True captured True clear 87 mm rise 86 N tilt 2.1"
+]
+],
+"i": 6,
+"params": {
+"bin": "Weber 140 L",
+"bar_r": 0.0209,
+"bar_shape": "moulded",
+"bar_x": 0.1497,
+"cb": 0.0717,
+"bar_habs": 0.9908,
+"bar_h": 0.8908,
+"wheel_r": 0.1,
+"handle_half": 0.1668,
+"knuckles": [
+[
+0.045,
+0.0045
+]
+],
+"wy": 0.2145,
+"W": 0.475,
+"D": 0.545,
+"empty": 10.0,
+"dy": 0.005,
+"dyaw": 5.67,
+"mu": 0.49,
+"mu_hook": 0.21,
+"fill": 0.0,
+"lid": [
+"closed",
+0.0
+],
+"comb_d": 0.0047597918865021575
+},
+"cpu": 4.3
+},
+{
+"docked": true,
+"reapp": true,
+"dock_dy_mm": 5.4,
+"wheel_sens_mm": [
+86.0,
+89.6
+],
+"fh1_q": 0.3,
+"lift_rise_N": 641,
+"seat_switch": true,
+"keeper_on_bar": true,
+"keeper_deg": 95.8,
+"claim": true,
+"zc": 0.199,
+"q_app": 0.151,
+"captured": true,
+"wheel_clear_mm": 86.2,
+"bin_tilt_abs": 2.3,
+"seated": true,
+"dock": "tof",
+"result": "success",
+"first_result": "success",
+"knocked": false,
+"false_hold": false,
+"events": [
+[
+16.73,
+"docked: tof, bin dy -18 mm (camera -31), nib gap 2 mm, bin moved 0 mm, rim 0.978 q_app 0.153, yaw meas 0.1 true -0.1 deg"
+],
+[
+16.73,
+"back off 0.4 m and re-approach"
+],
+[
+31.32,
+"docked: tof, bin dy 5 mm (camera 12), nib gap 3 mm, bin moved 0 mm, rim 0.976 q_app 0.151, yaw meas -0.3 true -0.3 deg"
+],
+[
+37.53,
+"grab: claim True captured True clear 86 mm rise 641 N tilt 2.3"
+]
+],
+"i": 7,
+"params": {
+"bin": "Weber 140 L",
+"bar_r": 0.0197,
+"bar_shape": "moulded",
+"bar_x": 0.1407,
+"cb": 0.0718,
+"bar_habs": 0.9943,
+"bar_h": 0.8943,
+"wheel_r": 0.1,
+"handle_half": 0.1682,
+"knuckles": [
+[
+0.045,
+0.0045
+]
+],
+"wy": 0.2145,
+"W": 0.475,
+"D": 0.545,
+"empty": 10.0,
+"dy": 0.041,
+"dyaw": -0.78,
+"mu": 0.36,
+"mu_hook": 0.49,
+"fill": 56.0,
+"lid": [
+"closed",
+0.0
+],
+"comb_d": 0.003030144451049382
+},
+"cpu": 6.8
+},
+{
+"docked": true,
+"reapp": false,
+"dock_dy_mm": -0.9,
+"wheel_sens_mm": [
+91.8,
+98.9
+],
+"fh1_q": 0.306,
+"lift_rise_N": 86,
+"seat_switch": true,
+"keeper_on_bar": true,
+"keeper_deg": 95.8,
+"claim": true,
+"zc": 0.205,
+"q_app": 0.164,
+"captured": true,
+"wheel_clear_mm": 86.7,
+"bin_tilt_abs": 2.1,
+"seated": true,
+"dock": "pad",
+"result": "success",
+"first_result": "success",
+"knocked": false,
+"false_hold": false,
+"events": [
+[
+20.22,
+"docked: pad, bin dy -1 mm (camera -2), nib gap 6 mm, bin moved 0 mm, rim 0.989 q_app 0.164, yaw meas -0.2 true -2.3 deg"
+],
+[
+26.07,
+"grab: claim True captured True clear 87 mm rise 86 N tilt 2.1"
+]
+],
+"i": 8,
+"params": {
+"bin": "Weber 140 L",
+"bar_r": 0.0125,
+"bar_shape": "tube",
+"bar_x": 0.1477,
+"cb": 0.079,
+"bar_habs": 0.9914,
+"bar_h": 0.8914,
+"wheel_r": 0.1,
+"handle_half": 0.1659,
+"knuckles": [
+[
+0.045,
+0.0045
+]
+],
+"wy": 0.2145,
+"W": 0.475,
+"D": 0.545,
+"empty": 10.0,
+"dy": 0.06,
+"dyaw": -0.43,
+"mu": 0.43,
+"mu_hook": 0.32,
+"fill": 0.0,
+"lid": [
+"closed",
+0.0
+],
+"comb_d": 0.00848940496700411
+},
+"cpu": 4.4
+},
+{
+"docked": true,
+"reapp": true,
+"dock_dy_mm": -5.3,
+"wheel_sens_mm": [
+90.3,
+86.7
+],
+"fh1_q": 0.297,
+"lift_rise_N": 642,
+"seat_switch": true,
+"keeper_on_bar": true,
+"keeper_deg": 95.8,
+"claim": true,
+"zc": 0.196,
+"q_app": 0.154,
+"captured": true,
+"wheel_clear_mm": 85.6,
+"bin_tilt_abs": 2.3,
+"seated": true,
+"dock": "tof",
+"result": "success",
+"first_result": "success",
+"knocked": false,
+"false_hold": false,
+"events": [
+[
+21.37,
+"docked: tof, bin dy -18 mm (camera -33), nib gap 2 mm, bin moved 0 mm, rim 0.976 q_app 0.151, yaw meas 0.0 true 0.6 deg"
+],
+[
+21.37,
+"back off 0.4 m and re-approach"
+],
+[
+38.44,
+"docked: tof, bin dy -5 mm (camera -11), nib gap 6 mm, bin moved 0 mm, rim 0.979 q_app 0.154, yaw meas 0.2 true 0.7 deg"
+],
+[
+44.42,
+"grab: claim True captured True clear 86 mm rise 642 N tilt 2.3"
+]
+],
+"i": 9,
+"params": {
+"bin": "Weber 140 L",
+"bar_r": 0.0125,
+"bar_shape": "tube",
+"bar_x": 0.1464,
+"cb": 0.0782,
+"bar_habs": 0.9909,
+"bar_h": 0.8909,
+"wheel_r": 0.1,
+"handle_half": 0.1663,
+"knuckles": [
+[
+0.045,
+0.0045
+]
+],
+"wy": 0.2145,
+"W": 0.475,
+"D": 0.545,
+"empty": 10.0,
+"dy": 0.011,
+"dyaw": -1.84,
+"mu": 0.58,
+"mu_hook": 0.39,
+"fill": 56.0,
+"lid": [
+"ajar",
+0.323
+],
+"comb_d": -0.0005818617526199728
+},
+"cpu": 7.6
+},
+{
+"docked": true,
+"reapp": false,
+"dock_dy_mm": -0.9,
+"wheel_sens_mm": [
+85.8,
+85.7
+],
+"fh1_q": 0.297,
+"lift_rise_N": 91,
+"seat_switch": true,
+"keeper_on_bar": true,
+"keeper_deg": 95.8,
+"claim": true,
+"zc": 0.196,
+"q_app": 0.146,
+"captured": true,
+"wheel_clear_mm": 87.6,
+"bin_tilt_abs": 2.1,
+"seated": true,
+"dock": "tof",
+"result": "success",
+"first_result": "success",
+"knocked": false,
+"false_hold": false,
+"events": [
+[
+19.08,
+"docked: tof, bin dy -1 mm (camera -1), nib gap 6 mm, bin moved 0 mm, rim 0.971 q_app 0.146, yaw meas 0.2 true 0.6 deg"
+],
+[
+25.24,
+"grab: claim True captured True clear 88 mm rise 91 N tilt 2.1"
+]
+],
+"i": 10,
+"params": {
+"bin": "Weber 140 L",
+"bar_r": 0.015,
+"bar_shape": "tube",
+"bar_x": 0.1392,
+"cb": 0.0714,
+"bar_habs": 0.9933,
+"bar_h": 0.8933,
+"wheel_r": 0.1,
+"handle_half": 0.1676,
+"knuckles": [
+[
+0.045,
+0.0045
+]
+],
+"wy": 0.2145,
+"W": 0.475,
+"D": 0.545,
+"empty": 10.0,
+"dy": 0.069,
+"dyaw": -5.25,
+"mu": 0.47,
+"mu_hook": 0.31,
+"fill": 0.0,
+"lid": [
+"closed",
+0.0
+],
+"comb_d": -0.0003674311995491668
+},
+"cpu": 4.3
+},
+{
+"docked": true,
+"reapp": false,
+"dock_dy_mm": -5.9,
+"wheel_sens_mm": [
+79.5,
+86.2
+],
+"fh1_q": 0.293,
+"lift_rise_N": 641,
+"seat_switch": true,
+"keeper_on_bar": true,
+"keeper_deg": 95.8,
+"claim": true,
+"zc": 0.192,
+"q_app": 0.141,
+"captured": true,
+"wheel_clear_mm": 85.8,
+"bin_tilt_abs": 2.3,
+"seated": true,
+"dock": "tof",
+"result": "success",
+"first_result": "success",
+"knocked": false,
+"false_hold": false,
+"events": [
+[
+16.46,
+"docked: tof, bin dy -6 mm (camera -14), nib gap 3 mm, bin moved 0 mm, rim 0.966 q_app 0.141, yaw meas -0.0 true -0.6 deg"
+],
+[
+22.76,
+"grab: claim True captured True clear 86 mm rise 641 N tilt 2.3"
+]
+],
+"i": 11,
+"params": {
+"bin": "Weber 140 L",
+"bar_r": 0.015,
+"bar_shape": "tube",
+"bar_x": 0.1389,
+"cb": 0.0737,
+"bar_habs": 0.9971,
+"bar_h": 0.8971,
+"wheel_r": 0.1,
+"handle_half": 0.1713,
+"knuckles": [
+[
+0.045,
+0.0045
+]
+],
+"wy": 0.2145,
+"W": 0.475,
+"D": 0.545,
+"empty": 10.0,
+"dy": -0.064,
+"dyaw": -3.17,
+"mu": 0.44,
+"mu_hook": 0.43,
+"fill": 56.0,
+"lid": [
+"closed",
+0.0
+],
+"comb_d": -0.003996331867689867
+},
+"cpu": 4.0
+},
+{
+"docked": true,
+"reapp": false,
+"dock_dy_mm": -8.3,
+"wheel_sens_mm": [
+84.5,
+88.1
+],
+"fh1_q": 0.291,
+"lift_rise_N": 92,
+"seat_switch": true,
+"keeper_on_bar": true,
+"keeper_deg": 95.8,
+"claim": true,
+"zc": 0.19,
+"q_app": 0.146,
+"captured": true,
+"wheel_clear_mm": 87.1,
+"bin_tilt_abs": 2.1,
+"seated": true,
+"dock": "tof",
+"result": "success",
+"first_result": "success",
+"knocked": false,
+"false_hold": false,
+"events": [
+[
+17.79,
+"docked: tof, bin dy -8 mm (camera -15), nib gap 4 mm, bin moved 0 mm, rim 0.971 q_app 0.146, yaw meas -0.1 true 1.3 deg"
+],
+[
+23.74,
+"grab: claim True captured True clear 87 mm rise 92 N tilt 2.1"
+]
+],
+"i": 12,
+"params": {
+"bin": "Weber 140 L",
+"bar_r": 0.021,
+"bar_shape": "tube",
+"bar_x": 0.138,
+"cb": 0.0738,
+"bar_habs": 0.9905,
+"bar_h": 0.8905,
+"wheel_r": 0.1,
+"handle_half": 0.1665,
+"knuckles": [
+[
+0.045,
+0.0045
+]
+],
+"wy": 0.2145,
+"W": 0.475,
+"D": 0.545,
+"empty": 10.0,
+"dy": 0.001,
+"dyaw": -0.46,
+"mu": 0.35,
+"mu_hook": 0.24,
+"fill": 0.0,
+"lid": [
+"ajar",
+0.307
+],
+"comb_d": -0.006402257072584314
+},
+"cpu": 4.0
+},
+{
+"docked": true,
+"reapp": false,
+"dock_dy_mm": 7.4,
+"wheel_sens_mm": [
+81.3,
+88.5
+],
+"fh1_q": 0.296,
+"lift_rise_N": 641,
+"seat_switch": true,
+"keeper_on_bar": true,
+"keeper_deg": 95.8,
+"claim": true,
+"zc": 0.195,
+"q_app": 0.147,
+"captured": true,
+"wheel_clear_mm": 85.6,
+"bin_tilt_abs": 2.3,
+"seated": true,
+"dock": "tof",
+"result": "success",
+"first_result": "success",
+"knocked": false,
+"false_hold": false,
+"events": [
+[
+16.27,
+"docked: tof, bin dy 7 mm (camera 10), nib gap 4 mm, bin moved 0 mm, rim 0.972 q_app 0.147, yaw meas -0.3 true -0.5 deg"
+],
+[
+22.47,
+"grab: claim True captured True clear 86 mm rise 641 N tilt 2.3"
+]
+],
+"i": 13,
+"params": {
+"bin": "Weber 140 L",
+"bar_r": 0.021,
+"bar_shape": "tube",
+"bar_x": 0.1454,
+"cb": 0.0724,
+"bar_habs": 0.9991,
+"bar_h": 0.8991,
+"wheel_r": 0.1,
+"handle_half": 0.1711,
+"knuckles": [
+[
+0.045,
+0.0045
+]
+],
+"wy": 0.2145,
+"W": 0.475,
+"D": 0.545,
+"empty": 10.0,
+"dy": -0.033,
+"dyaw": -5.11,
+"mu": 0.65,
+"mu_hook": 0.31,
+"fill": 56.0,
+"lid": [
+"closed",
+0.0
+],
+"comb_d": -0.0013791946861569874
+},
+"cpu": 4.0
+},
+{
+"docked": true,
+"reapp": true,
+"dock_dy_mm": -2.4,
+"wheel_sens_mm": [
+87.0,
+87.1
+],
+"fh1_q": 0.3,
+"lift_rise_N": 89,
+"seat_switch": true,
+"keeper_on_bar": true,
+"keeper_deg": 95.8,
+"claim": true,
+"zc": 0.199,
+"q_app": 0.152,
+"captured": true,
+"wheel_clear_mm": 88.3,
+"bin_tilt_abs": 2.1,
+"seated": true,
+"dock": "tof",
+"result": "success",
+"first_result": "success",
+"knocked": false,
+"false_hold": false,
+"events": [
+[
+18.14,
+"docked: tof, bin dy -14 mm (camera -27), nib gap 2 mm, bin moved 0 mm, rim 0.976 q_app 0.151, yaw meas -0.0 true -0.8 deg"
+],
+[
+18.14,
+"back off 0.4 m and re-approach"
+],
+[
+32.68,
+"docked: tof, bin dy -2 mm (camera -1), nib gap 1 mm, bin moved 0 mm, rim 0.977 q_app 0.152, yaw meas -0.2 true -0.9 deg"
+],
+[
+38.72,
+"grab: claim True captured True clear 88 mm rise 89 N tilt 2.1"
+]
+],
+"i": 14,
+"params": {
+"bin": "Weber 140 L",
+"bar_r": 0.0207,
+"bar_shape": "moulded",
+"bar_x": 0.1497,
+"cb": 0.0809,
+"bar_habs": 0.9993,
+"bar_h": 0.8993,
+"wheel_r": 0.1,
+"handle_half": 0.1679,
+"knuckles": [
+[
+0.045,
+0.0045
+]
+],
+"wy": 0.2145,
+"W": 0.475,
+"D": 0.545,
+"empty": 10.0,
+"dy": 0.046,
+"dyaw": 1.16,
+"mu": 0.31,
+"mu_hook": 0.49,
+"fill": 0.0,
+"lid": [
+"closed",
+0.0
+],
+"comb_d": 0.002282164251284571
+},
+"cpu": 7.0
+},
+{
+"docked": true,
+"reapp": false,
+"dock_dy_mm": 11.2,
+"wheel_sens_mm": [
+82.5,
+88.1
+],
+"fh1_q": 0.295,
+"lift_rise_N": 641,
+"seat_switch": true,
+"keeper_on_bar": true,
+"keeper_deg": 95.8,
+"claim": true,
+"zc": 0.193,
+"q_app": 0.145,
+"captured": true,
+"wheel_clear_mm": 86.7,
+"bin_tilt_abs": 2.3,
+"seated": true,
+"dock": "tof",
+"result": "success",
+"first_result": "success",
+"knocked": false,
+"false_hold": false,
+"events": [
+[
+16.3,
+"docked: tof, bin dy 11 mm (camera 17), nib gap 1 mm, bin moved 0 mm, rim 0.970 q_app 0.145, yaw meas 0.0 true -0.0 deg"
+],
+[
+22.52,
+"grab: claim True captured True clear 87 mm rise 641 N tilt 2.3"
+]
+],
+"i": 15,
+"params": {
+"bin": "Weber 140 L",
+"bar_r": 0.0207,
+"bar_shape": "moulded",
+"bar_x": 0.1456,
+"cb": 0.0751,
+"bar_habs": 1.0056,
+"bar_h": 0.9056,
+"wheel_r": 0.1,
+"handle_half": 0.1659,
+"knuckles": [
+[
+0.045,
+0.0045
+]
+],
+"wy": 0.2145,
+"W": 0.475,
+"D": 0.545,
+"empty": 10.0,
+"dy": -0.016,
+"dyaw": -0.24,
+"mu": 0.32,
+"mu_hook": 0.32,
+"fill": 56.0,
+"lid": [
+"closed",
+0.0
+],
+"comb_d": -0.002563646226362579
+},
+"cpu": 4.0
+},
+{
+"docked": true,
+"reapp": false,
+"dock_dy_mm": 0.4,
+"wheel_sens_mm": [
+94.8,
+92.2
+],
+"fh1_q": 0.307,
+"lift_rise_N": 91,
+"seat_switch": true,
+"keeper_on_bar": true,
+"keeper_deg": 95.8,
+"claim": true,
+"zc": 0.205,
+"q_app": 0.159,
+"captured": true,
+"wheel_clear_mm": 87.6,
+"bin_tilt_abs": 2.1,
+"seated": true,
+"dock": "tof",
+"result": "success",
+"first_result": "success",
+"knocked": false,
+"false_hold": false,
+"events": [
+[
+17.53,
+"docked: tof, bin dy 0 mm (camera 4), nib gap 7 mm, bin moved 0 mm, rim 0.984 q_app 0.159, yaw meas 0.5 true 0.2 deg"
+],
+[
+23.56,
+"grab: claim True captured True clear 88 mm rise 91 N tilt 2.1"
+]
+],
+"i": 16,
+"params": {
+"bin": "Weber 140 L",
+"bar_r": 0.0125,
+"bar_shape": "tube",
+"bar_x": 0.1408,
+"cb": 0.0716,
+"bar_habs": 0.9903,
+"bar_h": 0.8903,
+"wheel_r": 0.1,
+"handle_half": 0.1694,
+"knuckles": [
+[
+0.045,
+0.0045
+]
+],
+"wy": 0.2145,
+"W": 0.475,
+"D": 0.545,
+"empty": 10.0,
+"dy": 0.015,
+"dyaw": 0.29,
+"mu": 0.52,
+"mu_hook": 0.35,
+"fill": 0.0,
+"lid": [
+"ajar",
+0.287
+],
+"comb_d": 0.009185535385790979
+},
+"cpu": 3.8
+},
+{
+"docked": true,
+"reapp": false,
+"dock_dy_mm": 9.6,
+"wheel_sens_mm": [
+97.1,
+79.6
+],
+"fh1_q": 0.292,
+"lift_rise_N": 597,
+"seat_switch": true,
+"keeper_on_bar": true,
+"keeper_deg": 95.8,
+"claim": true,
+"zc": 0.191,
+"q_app": 0.148,
+"captured": true,
+"wheel_clear_mm": 84.1,
+"bin_tilt_abs": 2.4,
+"seated": true,
+"dock": "tof",
+"result": "success",
+"first_result": "success",
+"knocked": false,
+"false_hold": false,
+"events": [
+[
+21.76,
+"docked: tof, bin dy 10 mm (camera 16), nib gap 1 mm, bin moved 0 mm, rim 0.973 q_app 0.148, yaw meas -0.5 true -1.3 deg"
+],
+[
+27.79,
+"grab: claim True captured True clear 84 mm rise 597 N tilt 2.4"
+]
+],
+"i": 17,
+"params": {
+"bin": "Weber 140 L",
+"bar_r": 0.0125,
+"bar_shape": "tube",
+"bar_x": 0.1455,
+"cb": 0.0724,
+"bar_habs": 0.9933,
+"bar_h": 0.8933,
+"wheel_r": 0.1,
+"handle_half": 0.1707,
+"knuckles": [
+[
+0.045,
+0.0045
+]
+],
+"wy": 0.2145,
+"W": 0.475,
+"D": 0.545,
+"empty": 10.0,
+"dy": 0.002,
+"dyaw": 3.87,
+"mu": 0.7,
+"mu_hook": 0.44,
+"fill": 56.0,
+"lid": [
+"closed",
+0.0
+],
+"comb_d": -0.005345048054872033
+},
+"cpu": 4.8
+},
+{
+"docked": true,
+"reapp": false,
+"dock_dy_mm": 4.4,
+"wheel_sens_mm": [
+79.4,
+86.6
+],
+"fh1_q": 0.29,
+"lift_rise_N": 92,
+"seat_switch": true,
+"keeper_on_bar": true,
+"keeper_deg": 95.8,
+"claim": true,
+"zc": 0.188,
+"q_app": 0.141,
+"captured": true,
+"wheel_clear_mm": 88.0,
+"bin_tilt_abs": 2.1,
+"seated": true,
+"dock": "tof",
+"result": "success",
+"first_result": "success",
+"knocked": false,
+"false_hold": false,
+"events": [
+[
+16.28,
+"docked: tof, bin dy 4 mm (camera 8), nib gap 2 mm, bin moved 0 mm, rim 0.966 q_app 0.141, yaw meas 0.1 true 0.5 deg"
+],
+[
+22.37,
+"grab: claim True captured True clear 88 mm rise 92 N tilt 2.1"
+]
+],
+"i": 18,
+"params": {
+"bin": "Weber 140 L",
+"bar_r": 0.015,
+"bar_shape": "tube",
+"bar_x": 0.1504,
+"cb": 0.0792,
+"bar_habs": 0.9913,
+"bar_h": 0.8913,
+"wheel_r": 0.1,
+"handle_half": 0.1665,
+"knuckles": [
+[
+0.045,
+0.0045
+]
+],
+"wy": 0.2145,
+"W": 0.475,
+"D": 0.545,
+"empty": 10.0,
+"dy": 0.0,
+"dyaw": 2.34,
+"mu": 0.47,
+"mu_hook": 0.32,
+"fill": 0.0,
+"lid": [
+"closed",
+0.0
+],
+"comb_d": -0.00791952318501412
+},
+"cpu": 3.8
+},
+{
+"docked": true,
+"reapp": false,
+"dock_dy_mm": 2.5,
+"wheel_sens_mm": [
+80.3,
+84.7
+],
+"fh1_q": 0.302,
+"lift_rise_N": 641,
+"seat_switch": true,
+"keeper_on_bar": true,
+"keeper_deg": 95.8,
+"claim": true,
+"zc": 0.201,
+"q_app": 0.157,
+"captured": true,
+"wheel_clear_mm": 86.4,
+"bin_tilt_abs": 2.3,
+"seated": true,
+"dock": "tof",
+"result": "success",
+"first_result": "success",
+"knocked": false,
+"false_hold": false,
+"events": [
+[
+16.75,
+"docked: tof, bin dy 2 mm (camera 3), nib gap 2 mm, bin moved 0 mm, rim 0.982 q_app 0.157, yaw meas -0.2 true -0.2 deg"
+],
+[
+22.81,
+"grab: claim True captured True clear 86 mm rise 641 N tilt 2.3"
+]
+],
+"i": 19,
+"params": {
+"bin": "Weber 140 L",
+"bar_r": 0.015,
+"bar_shape": "tube",
+"bar_x": 0.1417,
+"cb": 0.077,
+"bar_habs": 0.9955,
+"bar_h": 0.8955,
+"wheel_r": 0.1,
+"handle_half": 0.1657,
+"knuckles": [
+[
+0.045,
+0.0045
+]
+],
+"wy": 0.2145,
+"W": 0.475,
+"D": 0.545,
+"empty": 10.0,
+"dy": -0.004,
+"dyaw": 5.8,
+"mu": 0.42,
+"mu_hook": 0.23,
+"fill": 56.0,
+"lid": [
+"closed",
+0.0
+],
+"comb_d": 0.004794384519205689
+},
+"cpu": 3.9
+},
+{
+"docked": true,
+"reapp": false,
+"dock_dy_mm": 0.5,
+"wheel_sens_mm": [
+88.3,
+86.8
+],
+"fh1_q": 0.29,
+"lift_rise_N": 92,
+"seat_switch": true,
+"keeper_on_bar": true,
+"keeper_deg": 95.8,
+"claim": true,
+"zc": 0.189,
+"q_app": 0.148,
+"captured": true,
+"wheel_clear_mm": 87.0,
+"bin_tilt_abs": 2.1,
+"seated": true,
+"dock": "tof",
+"result": "success",
+"first_result": "success",
+"knocked": false,
+"false_hold": false,
+"events": [
+[
+19.05,
+"docked: tof, bin dy 0 mm (camera -4), nib gap 5 mm, bin moved 0 mm, rim 0.973 q_app 0.148, yaw meas -0.3 true -1.4 deg"
+],
+[
+24.91,
+"grab: claim True captured True clear 87 mm rise 92 N tilt 2.1"
+]
+],
+"i": 20,
+"params": {
+"bin": "Weber 140 L",
+"bar_r": 0.021,
+"bar_shape": "tube",
+"bar_x": 0.138,
+"cb": 0.0729,
+"bar_habs": 1.0038,
+"bar_h": 0.9038,
+"wheel_r": 0.1,
+"handle_half": 0.1663,
+"knuckles": [
+[
+0.045,
+0.0045
+]
+],
+"wy": 0.2145,
+"W": 0.475,
+"D": 0.545,
+"empty": 10.0,
+"dy": -0.049,
+"dyaw": 1.33,
+"mu": 0.57,
+"mu_hook": 0.49,
+"fill": 0.0,
+"lid": [
+"closed",
+0.0
+],
+"comb_d": -0.00730435580666829
+},
+"cpu": 4.1
+},
+{
+"docked": true,
+"reapp": true,
+"dock_dy_mm": 0.5,
+"wheel_sens_mm": [
+88.4,
+84.7
+],
+"fh1_q": 0.306,
+"lift_rise_N": 641,
+"seat_switch": true,
+"keeper_on_bar": true,
+"keeper_deg": 95.8,
+"claim": true,
+"zc": 0.204,
+"q_app": 0.162,
+"captured": true,
+"wheel_clear_mm": 87.0,
+"bin_tilt_abs": 2.3,
+"seated": true,
+"dock": "tof",
+"result": "success",
+"first_result": "success",
+"knocked": false,
+"false_hold": false,
+"events": [
+[
+17.87,
+"docked: pad, bin dy 21 mm (camera 29), nib gap 1 mm, bin moved 0 mm, rim 0.987 q_app 0.162, yaw meas 0.2 true -1.1 deg"
+],
+[
+17.87,
+"back off 0.4 m and re-approach"
+],
+[
+32.8,
+"docked: tof, bin dy 0 mm (camera -6), nib gap -0 mm, bin moved 0 mm, rim 0.987 q_app 0.162, yaw meas 0.5 true 0.1 deg"
+],
+[
+38.79,
+"grab: claim True captured True clear 87 mm rise 641 N tilt 2.3"
+]
+],
+"i": 21,
+"params": {
+"bin": "Weber 140 L",
+"bar_r": 0.021,
+"bar_shape": "tube",
+"bar_x": 0.1462,
+"cb": 0.0736,
+"bar_habs": 1.0026,
+"bar_h": 0.9026,
+"wheel_r": 0.1,
+"handle_half": 0.1668,
+"knuckles": [
+[
+0.045,
+0.0045
+]
+],
+"wy": 0.2145,
+"W": 0.475,
+"D": 0.545,
+"empty": 10.0,
+"dy": -0.018,
+"dyaw": -2.09,
+"mu": 0.32,
+"mu_hook": 0.44,
+"fill": 56.0,
+"lid": [
+"ajar",
+0.394
+],
+"comb_d": 0.007890961734630721
+},
+"cpu": 7.4
+},
+{
+"docked": true,
+"reapp": true,
+"dock_dy_mm": 3.3,
+"wheel_sens_mm": [
+92.1,
+81.7
+],
+"fh1_q": 0.302,
+"lift_rise_N": 92,
+"seat_switch": true,
+"keeper_on_bar": true,
+"keeper_deg": 95.8,
+"claim": true,
+"zc": 0.201,
+"q_app": 0.152,
+"captured": true,
+"wheel_clear_mm": 87.9,
+"bin_tilt_abs": 2.1,
+"seated": true,
+"dock": "tof",
+"result": "success",
+"first_result": "success",
+"knocked": false,
+"false_hold": false,
+"events": [
+[
+16.59,
+"docked: tof, bin dy 22 mm (camera 40), nib gap 3 mm, bin moved 0 mm, rim 0.979 q_app 0.154, yaw meas -0.3 true -1.1 deg"
+],
+[
+16.59,
+"back off 0.4 m and re-approach"
+],
+[
+32.62,
+"docked: tof, bin dy 3 mm (camera 3), nib gap 4 mm, bin moved 0 mm, rim 0.977 q_app 0.152, yaw meas 0.5 true -0.2 deg"
+],
+[
+38.74,
+"grab: claim True captured True clear 88 mm rise 92 N tilt 2.1"
+]
+],
+"i": 22,
+"params": {
+"bin": "Weber 140 L",
+"bar_r": 0.0201,
+"bar_shape": "moulded",
+"bar_x": 0.136,
+"cb": 0.07,
+"bar_habs": 0.9939,
+"bar_h": 0.8939,
+"wheel_r": 0.1,
+"handle_half": 0.1696,
+"knuckles": [
+[
+0.045,
+0.0045
+]
+],
+"wy": 0.2145,
+"W": 0.475,
+"D": 0.545,
+"empty": 10.0,
+"dy": -0.054,
+"dyaw": 1.63,
+"mu": 0.51,
+"mu_hook": 0.27,
+"fill": 0.0,
+"lid": [
+"closed",
+0.0
+],
+"comb_d": 0.004313943501090172
+},
+"cpu": 7.1
+},
+{
+"docked": true,
+"reapp": false,
+"dock_dy_mm": -1.6,
+"wheel_sens_mm": [
+84.1,
+95.1
+],
+"fh1_q": 0.292,
+"lift_rise_N": 641,
+"seat_switch": true,
+"keeper_on_bar": true,
+"keeper_deg": 95.8,
+"claim": true,
+"zc": 0.191,
+"q_app": 0.149,
+"captured": true,
+"wheel_clear_mm": 85.7,
+"bin_tilt_abs": 2.3,
+"seated": true,
+"dock": "tof",
+"result": "success",
+"first_result": "success",
+"knocked": false,
+"false_hold": false,
+"events": [
+[
+16.38,
+"docked: tof, bin dy -2 mm (camera -4), nib gap 2 mm, bin moved 0 mm, rim 0.974 q_app 0.149, yaw meas 0.1 true -1.0 deg"
+],
+[
+22.37,
+"grab: claim True captured True clear 86 mm rise 641 N tilt 2.3"
+]
+],
+"i": 23,
+"params": {
+"bin": "Weber 140 L",
+"bar_r": 0.0207,
+"bar_shape": "moulded",
+"bar_x": 0.1456,
+"cb": 0.0743,
+"bar_habs": 0.9949,
+"bar_h": 0.8949,
+"wheel_r": 0.1,
+"handle_half": 0.1706,
+"knuckles": [
+[
+0.045,
+0.0045
+]
+],
+"wy": 0.2145,
+"W": 0.475,
+"D": 0.545,
+"empty": 10.0,
+"dy": -0.013,
+"dyaw": -5.86,
+"mu": 0.48,
+"mu_hook": 0.22,
+"fill": 56.0,
+"lid": [
+"closed",
+0.0
+],
+"comb_d": -0.005246522577395765
+},
+"cpu": 4.2
+},
+{
+"docked": true,
+"reapp": false,
+"dock_dy_mm": 0.3,
+"wheel_sens_mm": [
+88.7,
+83.6
+],
+"fh1_q": 0.293,
+"lift_rise_N": 92,
+"seat_switch": true,
+"keeper_on_bar": true,
+"keeper_deg": 95.8,
+"claim": true,
+"zc": 0.192,
+"q_app": 0.146,
+"captured": true,
+"wheel_clear_mm": 86.2,
+"bin_tilt_abs": 2.1,
+"seated": true,
+"dock": "tof",
+"result": "success",
+"first_result": "success",
+"knocked": false,
+"false_hold": false,
+"events": [
+[
+20.3,
+"docked: tof, bin dy 0 mm (camera 3), nib gap 5 mm, bin moved 0 mm, rim 0.971 q_app 0.146, yaw meas 0.5 true 1.8 deg"
+],
+[
+26.32,
+"grab: claim True captured True clear 86 mm rise 92 N tilt 2.1"
+]
+],
+"i": 24,
+"params": {
+"bin": "Weber 140 L",
+"bar_r": 0.0125,
+"bar_shape": "tube",
+"bar_x": 0.1393,
+"cb": 0.07,
+"bar_habs": 0.9929,
+"bar_h": 0.8929,
+"wheel_r": 0.1,
+"handle_half": 0.1672,
+"knuckles": [
+[
+0.045,
+0.0045
+]
+],
+"wy": 0.2145,
+"W": 0.475,
+"D": 0.545,
+"empty": 10.0,
+"dy": 0.072,
+"dyaw": -4.3,
+"mu": 0.51,
+"mu_hook": 0.22,
+"fill": 0.0,
+"lid": [
+"closed",
+0.0
+],
+"comb_d": -0.004160623518543805
+},
+"cpu": 4.5
+},
+{
+"docked": true,
+"reapp": false,
+"dock_dy_mm": 12.1,
+"wheel_sens_mm": [
+86.2,
+84.7
+],
+"fh1_q": 0.291,
+"lift_rise_N": 641,
+"seat_switch": true,
+"keeper_on_bar": true,
+"keeper_deg": 95.8,
+"claim": true,
+"zc": 0.189,
+"q_app": 0.147,
+"captured": true,
+"wheel_clear_mm": 85.6,
+"bin_tilt_abs": 2.3,
+"seated": true,
+"dock": "tof",
+"result": "success",
+"first_result": "success",
+"knocked": false,
+"false_hold": false,
+"events": [
+[
+20.18,
+"docked: tof, bin dy 12 mm (camera 20), nib gap 2 mm, bin moved 0 mm, rim 0.972 q_app 0.147, yaw meas -0.4 true 0.2 deg"
+],
+[
+26.18,
+"grab: claim True captured True clear 86 mm rise 641 N tilt 2.3"
+]
+],
+"i": 25,
+"params": {
+"bin": "Weber 140 L",
+"bar_r": 0.0125,
+"bar_shape": "tube",
+"bar_x": 0.1397,
+"cb": 0.0756,
+"bar_habs": 0.9984,
+"bar_h": 0.8984,
+"wheel_r": 0.1,
+"handle_half": 0.171,
+"knuckles": [
+[
+0.045,
+0.0045
+]
+],
+"wy": 0.2145,
+"W": 0.475,
+"D": 0.545,
+"empty": 10.0,
+"dy": -0.028,
+"dyaw": 1.26,
+"mu": 0.68,
+"mu_hook": 0.4,
+"fill": 56.0,
+"lid": [
+"closed",
+0.0
+],
+"comb_d": -0.006949557936733946
+},
+"cpu": 4.3
+},
+{
+"docked": true,
+"reapp": false,
+"dock_dy_mm": -3.2,
+"wheel_sens_mm": [
+88.7,
+81.4
+],
+"fh1_q": 0.291,
+"lift_rise_N": 86,
+"seat_switch": true,
+"keeper_on_bar": true,
+"keeper_deg": 95.8,
+"claim": true,
+"zc": 0.19,
+"q_app": 0.145,
+"captured": true,
+"wheel_clear_mm": 86.0,
+"bin_tilt_abs": 2.1,
+"seated": true,
+"dock": "pad",
+"result": "success",
+"first_result": "success",
+"knocked": false,
+"false_hold": false,
+"events": [
+[
+21.37,
+"docked: pad, bin dy -3 mm (camera -7), nib gap 7 mm, bin moved 0 mm, rim 0.970 q_app 0.145, yaw meas -0.3 true -2.8 deg"
+],
+[
+27.39,
+"grab: claim True captured True clear 86 mm rise 86 N tilt 2.1"
+]
+],
+"i": 26,
+"params": {
+"bin": "Weber 140 L",
+"bar_r": 0.015,
+"bar_shape": "tube",
+"bar_x": 0.1417,
+"cb": 0.0705,
+"bar_habs": 0.9911,
+"bar_h": 0.8911,
+"wheel_r": 0.1,
+"handle_half": 0.1685,
+"knuckles": [
+[
+0.045,
+0.0045
+]
+],
+"wy": 0.2145,
+"W": 0.475,
+"D": 0.545,
+"empty": 10.0,
+"dy": 0.038,
+"dyaw": -5.11,
+"mu": 0.6,
+"mu_hook": 0.26,
+"fill": 0.0,
+"lid": [
+"closed",
+0.0
+],
+"comb_d": -0.006283551475082558
+},
+"cpu": 5.2
+},
+{
+"docked": true,
+"reapp": false,
+"dock_dy_mm": 10.1,
+"wheel_sens_mm": [
+84.6,
+90.6
+],
+"fh1_q": 0.301,
+"lift_rise_N": 608,
+"seat_switch": true,
+"keeper_on_bar": true,
+"keeper_deg": 95.8,
+"claim": true,
+"zc": 0.2,
+"q_app": 0.158,
+"captured": true,
+"wheel_clear_mm": 84.0,
+"bin_tilt_abs": 2.3,
+"seated": true,
+"dock": "tof",
+"result": "success",
+"first_result": "success",
+"knocked": false,
+"false_hold": false,
+"events": [
+[
+20.62,
+"docked: tof, bin dy 10 mm (camera 16), nib gap 2 mm, bin moved 0 mm, rim 0.983 q_app 0.158, yaw meas -0.4 true -1.6 deg"
+],
+[
+26.59,
+"grab: claim True captured True clear 84 mm rise 608 N tilt 2.3"
+]
+],
+"i": 27,
+"params": {
+"bin": "Weber 140 L",
+"bar_r": 0.015,
+"bar_shape": "tube",
+"bar_x": 0.1435,
+"cb": 0.0691,
+"bar_habs": 1.0032,
+"bar_h": 0.9032,
+"wheel_r": 0.1,
+"handle_half": 0.1687,
+"knuckles": [
+[
+0.045,
+0.0045
+]
+],
+"wy": 0.2145,
+"W": 0.475,
+"D": 0.545,
+"empty": 10.0,
+"dy": -0.024,
+"dyaw": -2.62,
+"mu": 0.57,
+"mu_hook": 0.28,
+"fill": 56.0,
+"lid": [
+"ajar",
+0.136
+],
+"comb_d": 0.003504511171363571
+},
+"cpu": 4.4
+},
+{
+"docked": true,
+"reapp": false,
+"dock_dy_mm": -4.2,
+"wheel_sens_mm": [
+82.4,
+82.1
+],
+"fh1_q": 0.297,
+"lift_rise_N": 87,
+"seat_switch": true,
+"keeper_on_bar": true,
+"keeper_deg": 95.8,
+"claim": true,
+"zc": 0.196,
+"q_app": 0.152,
+"captured": true,
+"wheel_clear_mm": 87.8,
+"bin_tilt_abs": 2.1,
+"seated": true,
+"dock": "pad",
+"result": "success",
+"first_result": "success",
+"knocked": false,
+"false_hold": false,
+"events": [
+[
+19.12,
+"docked: pad, bin dy -4 mm (camera -8), nib gap 4 mm, bin moved 1 mm, rim 0.977 q_app 0.152, yaw meas -0.0 true -2.0 deg"
+],
+[
+25.09,
+"grab: claim True captured True clear 88 mm rise 87 N tilt 2.1"
+]
+],
+"i": 28,
+"params": {
+"bin": "Weber 140 L",
+"bar_r": 0.021,
+"bar_shape": "tube",
+"bar_x": 0.1506,
+"cb": 0.0784,
+"bar_habs": 1.0036,
+"bar_h": 0.9036,
+"wheel_r": 0.1,
+"handle_half": 0.1703,
+"knuckles": [
+[
+0.045,
+0.0045
+]
+],
+"wy": 0.2145,
+"W": 0.475,
+"D": 0.545,
+"empty": 10.0,
+"dy": 0.029,
+"dyaw": -3.56,
+"mu": 0.35,
+"mu_hook": 0.48,
+"fill": 0.0,
+"lid": [
+"closed",
+0.0
+],
+"comb_d": -0.0005712946916380073
+},
+"cpu": 4.2
+},
+{
+"docked": true,
+"reapp": false,
+"dock_dy_mm": -10.8,
+"wheel_sens_mm": [
+93.1,
+79.5
+],
+"fh1_q": 0.303,
+"lift_rise_N": 642,
+"seat_switch": true,
+"keeper_on_bar": true,
+"keeper_deg": 95.8,
+"claim": true,
+"zc": 0.202,
+"q_app": 0.156,
+"captured": true,
+"wheel_clear_mm": 85.6,
+"bin_tilt_abs": 2.3,
+"seated": true,
+"dock": "tof",
+"result": "success",
+"first_result": "success",
+"knocked": false,
+"false_hold": false,
+"events": [
+[
+21.2,
+"docked: tof, bin dy -11 mm (camera -23), nib gap 3 mm, bin moved 0 mm, rim 0.981 q_app 0.156, yaw meas -0.0 true 0.8 deg"
+],
+[
+27.32,
+"grab: claim True captured True clear 86 mm rise 642 N tilt 2.3"
+]
+],
+"i": 29,
+"params": {
+"bin": "Weber 140 L",
+"bar_r": 0.021,
+"bar_shape": "tube",
+"bar_x": 0.1501,
+"cb": 0.0702,
+"bar_habs": 1.0053,
+"bar_h": 0.9053,
+"wheel_r": 0.1,
+"handle_half": 0.1703,
+"knuckles": [
+[
+0.045,
+0.0045
+]
+],
+"wy": 0.2145,
+"W": 0.475,
+"D": 0.545,
+"empty": 10.0,
+"dy": -0.028,
+"dyaw": 1.27,
+"mu": 0.53,
+"mu_hook": 0.39,
+"fill": 56.0,
+"lid": [
+"ajar",
+0.199
+],
+"comb_d": 0.005500692252221858
+},
+"cpu": 4.6
+}
+]
+}

@@ -1,0 +1,29 @@
+{
+ "name": "R1a",
+ "desc": "Backwards bin, hedge only 0.80 m behind: swing round its wheels - bin rolls towards its handle and wedges (failure mode)",
+ "bin_kg": 12.3,
+ "rotated_deg": 96.1,
+ "bin_heading_after": -84.4,
+ "t_nudge_done": 95.1,
+ "success": false,
+ "fail": "bin not re-oriented within 25 deg of the lane",
+ "sim_time_s": 95.1,
+ "events": [
+  [
+   1.5,
+   "perceived bin at (0.00,0.00) heading -180 deg, upright=True -> handle side AWAY / blocked"
+  ],
+  [
+   92.91,
+   "nudge (wheels) rotated bin 96 deg, axle moved 0.59 m"
+  ],
+  [
+   95.15,
+   "FAILED: bin not re-oriented within 25 deg of the lane"
+  ]
+ ],
+ "cpu_s": 34,
+ "bumper_peak_N": 710,
+ "hook_peak_N": 0,
+ "bin_tipped": false
+}

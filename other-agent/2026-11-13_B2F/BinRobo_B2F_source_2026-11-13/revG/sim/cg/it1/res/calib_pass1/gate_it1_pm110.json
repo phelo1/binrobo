@@ -1,0 +1,98 @@
+{
+ "G1": {
+  "bins": {
+   "WEB140": "MISSING",
+   "ESE240SL": "MISSING",
+   "ESE240CL": "MISSING"
+  },
+  "pooled": 0,
+  "n": 0,
+  "false_holds": 0,
+  "knocked": 0,
+  "PASS": false
+ },
+ "G2": {
+  "runs": {
+   "mu0.30 crr0.06": null,
+   "mu0.30 crr0.09": null,
+   "mu0.25 crr0.06": null,
+   "mu0.25 crr0.09": null,
+   "mu0.22 crr0.06": null,
+   "mu0.22 crr0.09": null
+  },
+  "PASS": false
+ },
+ "G3": {
+  "one": null,
+  "both": null,
+  "PASS": false
+ },
+ "G3_extra": {
+  "both_ramp_1to4": null,
+  "both_rw560": null
+ },
+ "G4": {
+  "runs": {
+   "fwd": null,
+   "rev": null
+  },
+  "PASS": false
+ },
+ "G5": {
+  "run": null,
+  "PASS": false
+ },
+ "G6": {
+  "cases": {
+   "WEB140 flat full": null,
+   "WEB140 flat empty": null,
+   "WEB140 up12 full": null,
+   "WEB140 up12 empty": null,
+   "WEB140 dn12 full": null,
+   "WEB140 dn12 empty": null,
+   "ESE240CL flat full": null,
+   "ESE240CL flat empty": null,
+   "ESE240CL up12 full": null,
+   "ESE240CL up12 empty": null,
+   "ESE240CL dn12 full": null,
+   "ESE240CL dn12 empty": null,
+   "ESE240SL250 flat full": null,
+   "ESE240SL250 flat empty": null,
+   "ESE240SL250 up12 full": null,
+   "ESE240SL250 up12 empty": null,
+   "ESE240SL250 dn12 full": null,
+   "ESE240SL250 dn12 empty": null
+  },
+  "passed": 0,
+  "tips": 0,
+  "PASS": false
+ },
+ "G7": {
+  "runs": {
+   "climb_m25_c09": "MISSING",
+   "step40_one": "MISSING",
+   "estop12_fwd": "MISSING"
+  },
+  "PASS": false
+ },
+ "G8": {
+  "poses": {
+   "up 110": null,
+   "up 60": null,
+   "dn 110": null,
+   "dn 60": null,
+   "crL 110": null,
+   "crL 60": null,
+   "crR 110": null,
+   "crR 60": null
+  },
+  "handcalc_min_tip_deg": 39.4,
+  "castor_liftoff_110": 23.2,
+  "PASS": false
+ },
+ "G9": {
+  "kg": 94.11,
+  "PASS": true
+ },
+ "passed": 1
+}

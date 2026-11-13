@@ -1,0 +1,308 @@
+{
+ "label": "revH2",
+ "total": 91.0,
+ "rows": [
+  {
+   "name": "Side rails 2 x 1.39 m 50x50x3 RHS L",
+   "kg": 6.15,
+   "p": [
+    0.24,
+    0.35500000000000004,
+    0.285
+   ],
+   "d": [
+    1.31,
+    0.05,
+    0.05
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Side rails 2 x 1.39 m 50x50x3 RHS R",
+   "kg": 6.15,
+   "p": [
+    0.24,
+    -0.35500000000000004,
+    0.285
+   ],
+   "d": [
+    1.31,
+    0.05,
+    0.05
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Nose cross-member 50x50x3 + caster outriggers",
+   "kg": 5.5,
+   "p": [
+    0.8,
+    0.0,
+    0.285
+   ],
+   "d": [
+    0.2,
+    0.4,
+    0.2
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Mast uprights 2 x 1.05 m 50x50x3 + top tie L",
+   "kg": 4.9,
+   "p": [
+    0.53,
+    0.22,
+    0.83
+   ],
+   "d": [
+    0.05,
+    0.05,
+    1.05
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Mast uprights 2 x 1.05 m 50x50x3 + top tie R",
+   "kg": 4.9,
+   "p": [
+    0.53,
+    -0.22,
+    0.83
+   ],
+   "d": [
+    0.05,
+    0.05,
+    1.05
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Mast base cross-member and braces",
+   "kg": 3.0,
+   "p": [
+    0.6,
+    0.0,
+    0.6
+   ],
+   "d": [
+    0.2,
+    0.4,
+    0.2
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Lift actuator 4000 N / 400 mm",
+   "kg": 2.5,
+   "p": [
+    0.585,
+    0.0,
+    0.65
+   ],
+   "d": [
+    0.2,
+    0.4,
+    0.2
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Donor drive units x2 (motor, gearbox, brake, wheel), motors aft wheel/tyre/hub L",
+   "kg": 3.0,
+   "p": [
+    0.0,
+    0.485,
+    0.159
+   ],
+   "d": [
+    0.3,
+    0.12,
+    0.3
+   ],
+   "g": "wheel"
+  },
+  {
+   "name": "Donor drive units x2 (motor, gearbox, brake, wheel), motors aft motor/gearbox/brake L",
+   "kg": 6.5,
+   "p": [
+    -0.11692307692307692,
+    0.385,
+    0.1604615384615385
+   ],
+   "d": [
+    0.25,
+    0.12,
+    0.15
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Donor drive units x2 (motor, gearbox, brake, wheel), motors aft wheel/tyre/hub R",
+   "kg": 3.0,
+   "p": [
+    0.0,
+    -0.485,
+    0.159
+   ],
+   "d": [
+    0.3,
+    0.12,
+    0.3
+   ],
+   "g": "wheel"
+  },
+  {
+   "name": "Donor drive units x2 (motor, gearbox, brake, wheel), motors aft motor/gearbox/brake R",
+   "kg": 6.5,
+   "p": [
+    -0.11692307692307692,
+    -0.385,
+    0.1604615384615385
+   ],
+   "d": [
+    0.25,
+    0.12,
+    0.15
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Nose casters 260 mm + forks x2 L",
+   "kg": 2.5,
+   "p": [
+    0.82,
+    0.3,
+    0.15
+   ],
+   "d": [
+    0.2,
+    0.08,
+    0.2
+   ],
+   "g": "cast"
+  },
+  {
+   "name": "Nose casters 260 mm + forks x2 R",
+   "kg": 2.5,
+   "p": [
+    0.82,
+    -0.3,
+    0.15
+   ],
+   "d": [
+    0.2,
+    0.08,
+    0.2
+   ],
+   "g": "cast"
+  },
+  {
+   "name": "Tail anti-tip wheels x2",
+   "kg": 0.8,
+   "p": [
+    -0.4,
+    0.0,
+    0.1
+   ],
+   "d": [
+    0.2,
+    0.4,
+    0.2
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Batteries 2 x 12 V 18 Ah AGM, one on each rail beside the drive wheel L",
+   "kg": 5.4,
+   "p": [
+    -0.1,
+    0.42,
+    0.4
+   ],
+   "d": [
+    0.18,
+    0.08,
+    0.17
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Batteries 2 x 12 V 18 Ah AGM, one on each rail beside the drive wheel R",
+   "kg": 5.4,
+   "p": [
+    -0.1,
+    -0.42,
+    0.4
+   ],
+   "d": [
+    0.18,
+    0.08,
+    0.17
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Electronics box, controller, contactors, safety relay, harness (on the mast)",
+   "kg": 5.5,
+   "p": [
+    0.66,
+    0.0,
+    0.55
+   ],
+   "d": [
+    0.2,
+    0.4,
+    0.2
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Sensors, lights, 3 safety bumpers, covers",
+   "kg": 6.7,
+   "p": [
+    0.5,
+    0.0,
+    0.45
+   ],
+   "d": [
+    0.2,
+    0.4,
+    0.2
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Motor plates, brackets, fasteners",
+   "kg": 4.0,
+   "p": [
+    0.15,
+    0.0,
+    0.22
+   ],
+   "d": [
+    0.2,
+    0.4,
+    0.2
+   ],
+   "g": "chassis"
+  }
+ ],
+ "carriage": [
+  {
+   "name": "Carriage, 640 mm self-aligning comb, rest pad",
+   "kg": 6.1,
+   "p": [
+    0.48,
+    0,
+    0.9
+   ],
+   "d": [
+    0.1,
+    0.64,
+    0.6
+   ],
+   "g": "lift"
+  }
+ ]
+}

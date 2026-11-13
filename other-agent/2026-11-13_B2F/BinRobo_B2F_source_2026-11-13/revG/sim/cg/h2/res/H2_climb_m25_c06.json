@@ -1,0 +1,115 @@
+{
+ "test": "climb12",
+ "mu": 0.25,
+ "crr_bin": 0.06,
+ "rev": false,
+ "grab": "success",
+ "tug_kg": 91.0,
+ "bin_kg": 110.0,
+ "reached_5m": true,
+ "dist_m": 5.0,
+ "time_s": 11.0,
+ "hold_creep_m": 0.049,
+ "captured_end": true,
+ "ok": true,
+ "roll": 0.002,
+ "pitch": 0.009,
+ "bin_ground": 0.0,
+ "cmin": 211.312,
+ "dmin": 0.0,
+ "seated_all": true,
+ "clear_min": 0.077,
+ "peak": {
+  "lift_N": [
+   1229.68,
+   36.72,
+   "8 brake hold"
+  ],
+  "pad_N": [
+   830.68,
+   36.76,
+   "8 brake hold"
+  ],
+  "drive_tyre_N": [
+   2552.37,
+   36.7,
+   "8 brake hold"
+  ],
+  "nib_rim_N": [
+   1599.04,
+   38.56,
+   "8 brake hold"
+  ],
+  "wheel_torque_Nm": [
+   150.0,
+   36.68,
+   "8 brake hold"
+  ]
+ },
+ "events": [
+  [
+   16.49,
+   "docked: pad, bin dy 1 mm (camera 2), nib gap 8 mm, bin moved 0 mm, rim 0.980 q_app 0.155, yaw meas 0.1 true -0.6 deg"
+  ],
+  [
+   22.68,
+   "grab: claim True captured True clear 79 mm rise 1074 N tilt 2.2"
+  ]
+ ],
+ "cpu_s": 9,
+ "geo": {
+  "track": 0.485,
+  "rw": 0.159,
+  "ww": 0.035,
+  "cx": 0.82,
+  "cy": 0.3,
+  "cr": 0.13,
+  "guard_y": 0.33,
+  "guard_x0": -0.23,
+  "guard_x1": 0.5,
+  "tail_x": -0.4,
+  "tail_y": 0.405,
+  "tail_r": 0.05,
+  "tail_gap": 0.075,
+  "leg_tip": -0.43,
+  "mouth": 0.78,
+  "face_x": 0.529,
+  "tooth_len": 0.075,
+  "nib_l": 0.008,
+  "nib_h": 0.02,
+  "tooth_hw": 0.32,
+  "approach_nib_z": 0.865,
+  "lift_range": 0.4,
+  "pad_x": 0.235,
+  "pad_z": 0.45,
+  "pad_k": 300000.0,
+  "pad_pre": 0.0,
+  "pad_stroke": 0.003,
+  "lift_extra": 0.075,
+  "act_N": 4000.0,
+  "tcap": 60.0,
+  "kvs": 1.0,
+  "car_zero": 0.8,
+  "pad_in": 0.013000000000000001,
+  "pad_dz": 0.5,
+  "pad_ret": 0.0,
+  "rim_off": 0.025,
+  "creep_v": 0.03,
+  "creep_gap": 0.06,
+  "lift_extra1": 0.1,
+  "nib_l1": 0.008,
+  "tooth_hw1": 0.32,
+  "keep_l": 0.08,
+  "yaw_sigma": 1.0,
+  "yaw_ok": 1.5,
+  "pad_setback": 0.025,
+  "pad_hw": 0.2,
+  "pad_hh": 0.06,
+  "pad_mu": 0.3,
+  "wclr": 0.06,
+  "wclr_sig": 0.005,
+  "fh1_rise": 0.1,
+  "rimcatch": 0.025,
+  "car_dz": -0.18
+ }
+}

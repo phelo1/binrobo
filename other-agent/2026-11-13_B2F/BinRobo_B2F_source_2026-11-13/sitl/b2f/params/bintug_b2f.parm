@@ -1,0 +1,117 @@
+# BinRobo B2-F (front-wall comb carrier) - ArduPilot Rover 4.6.2 parameters for the lane SITL (digital twin, NOT hardware-tuned).
+# Derived from params/bintug_g6.parm (G6 towing tug). Changes are marked B2F.
+# Skid steer: left drive wheel = SERVO1 (ThrottleLeft 73), right = SERVO3 (ThrottleRight 74). Castors at the nose (x +0.95 m).
+FRAME_CLASS 1
+SERVO1_FUNCTION 73
+SERVO3_FUNCTION 74
+SERVO1_MIN 1100
+SERVO1_MAX 1900
+SERVO1_TRIM 1500
+SERVO3_MIN 1100
+SERVO3_MAX 1900
+SERVO3_TRIM 1500
+# B2F: SERVO5 = comb lift actuator, SERVO6 = pad toggle; both driven by MAV_CMD_DO_SET_SERVO from the companion
+SERVO5_FUNCTION 0
+SERVO5_MIN 1000
+SERVO5_MAX 2000
+SERVO5_TRIM 1100
+SERVO6_FUNCTION 0
+SERVO6_MIN 1000
+SERVO6_MAX 2000
+SERVO6_TRIM 1100
+MOT_THR_MIN 5
+# B2F speed: 0.80 m/s wheel speed at full throttle (ASSUMED drive), HARD CAP 0.5 m/s for the lane
+CRUISE_SPEED 0.5
+CRUISE_THROTTLE 62
+WP_SPEED 0.5
+SPEED_MAX 0.5
+WP_RADIUS 0.5
+WP_OVERSHOOT 0.5
+TURN_RADIUS 0.0
+PIVOT_TURN_ANGLE 30
+PIVOT_TURN_RATE 30
+# B2F speed loop (SITL tune, see TESTLOG): accel 0.4, decel 0.8 m/s^2 (stop from 0.5 m/s in ~0.16 m + latency)
+ATC_ACCEL_MAX 0.4
+ATC_DECEL_MAX 0.8
+ATC_SPEED_P 1.2
+ATC_SPEED_I 0.05
+ATC_SPEED_FF 0.0
+ATC_STOP_SPEED 0.05
+# B2F steering: carried bin is rigid on the comb, no hitch. Turn-rate cap 40 deg/s (loaded pivot swept dia 2.39 m: rim 0.84 m/s)
+ATC_STR_ANG_P 2.5
+ATC_STR_RAT_FF 0.8
+ATC_STR_RAT_P 0.3
+ATC_STR_RAT_I 0.2
+ATC_STR_RAT_MAX 40
+ATC_STR_ACC_MAX 120
+ATC_TURN_MAX_G 0.15
+RC1_DZ 0
+RC3_DZ 0
+PILOT_STEER_TYPE 3
+# GPS: RTK receiver modelled through MAVLink GPS_INPUT (fix 6 RTK fixed / 5 float / 1 none) as G6
+GPS1_TYPE 14
+GPS_AUTO_SWITCH 0
+SIM_GPS1_ENABLE 0
+SIM_GPS_DISABLE 1
+EK3_SRC1_YAW 1
+EK3_GPS_CHECK 0
+# B2F (SITL tune t11): with the default in-flight mag calibration states the EKF yaw ran 10-11 deg off after canopy Float /
+# wrong-fix episodes and stayed there (lane cut 0.4 m into the hedge). Earth-field heading fusion only, no compass learning:
+EK3_MAG_CAL 0
+COMPASS_LEARN 0
+# B2F (SITL tune s4a_b): EKF ground speed lagged the GPS_INPUT velocity by up to 0.4 m/s (speed loop ran 0.66 m/s);
+# trust the receiver velocity more and no GPS lag (GPS_INPUT is sent without delay by the Pi):
+EK3_VELNE_M_NSE 0.05
+GPS1_DELAY_MS 0
+GPS_HDOP_GOOD 300
+# LD06 lidar -> OBSTACLE_DISTANCE (proximity library); firmware avoidance OFF as G6 (Pi does path stops)
+PRX1_TYPE 2
+PRX1_ORIENT 0
+AVOID_ENABLE 0
+OA_TYPE 0
+# Failsafes: Pi heartbeat (SYSID_MYGCS 255) -> GCS failsafe HOLD (spring brakes) after 1 s silence, in every mode incl. GUIDED.
+FS_ACTION 2
+FS_GCS_ENABLE 1
+FS_GCS_TIMEOUT 1
+FS_OPTIONS 1
+FS_THR_ENABLE 0
+FS_EKF_ACTION 1
+FS_EKF_THRESH 1.0
+FS_TIMEOUT 0.5
+# B2F (dev s6a__s5_d1, resume run): GCS failsafe latency = FS_GCS_TIMEOUT 1 s + FS_TIMEOUT 1 s -> HOLD 2.0 s after a Pi freeze,
+# 1.11 m rolled at 0.46 m/s (C5c limit 1.0 m). Pi heartbeat is 5 Hz on a wired link, so act 0.5 s after the 1 s timeout.
+# B2F: firmware polygon geofence (inclusion polygon of private ground uploaded by the Pi), breach -> HOLD
+FENCE_ENABLE 1
+FENCE_TYPE 4
+FENCE_ACTION 2
+FENCE_MARGIN 0
+AVOID_FENCE 0
+ARMING_CHECK 0
+ARMING_REQUIRE 1
+MODE_CH 8
+INITIAL_MODE 4
+SCHED_LOOP_RATE 50
+LOG_DISARMED 0
+LOG_BITMASK 0
+SYSID_MYGCS 255
+# 8S LFP 20 Ah pack (B2-F BOM: LFP 24V 20Ah, 25.6 V nominal, 512 Wh). Voltage set live via SIM_BATT_VOLTAGE.
+BATT_MONITOR 4
+BATT_CAPACITY 20000
+BATT_LOW_VOLT 25.0
+BATT_CRT_VOLT 24.0
+BATT_FS_LOW_ACT 0
+BATT_FS_CRT_ACT 2
+BATT_LOW_TIMER 3
+BATT_ARM_VOLT 0
+SIM_BATT_VOLTAGE 26.4
+# Pi pose/attitude streams (G6 v2 lesson)
+SR0_EXTRA1 20
+SR0_POSITION 10
+SR0_EXT_STAT 2
+SR1_EXTRA1 20
+SR1_POSITION 10
+SR1_EXT_STAT 2
+# B2F (dev s1b__s5_d1, resume run): with the default EK3_POSNE_M_NSE 0.5 the EKF position followed the integrated receiver
+# velocity (odometry-scale error) and sat 0.10-0.21 m off the Pi's RTK pose (Pi pose 0.01-0.02 m off truth); the pad-A
+# pre-grab gate then missed by 0.095 / 0.140 m. The Pi forwards one smooth RTK-grade pose, so trust it:
+EK3_POSNE_M_NSE 0.1

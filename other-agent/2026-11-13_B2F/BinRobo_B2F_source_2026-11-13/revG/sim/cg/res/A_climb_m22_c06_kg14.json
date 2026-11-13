@@ -1,0 +1,85 @@
+{
+ "label": "cgA",
+ "test": "climb12_m22",
+ "tug_kg": 115.8,
+ "bin_kg": 14.0,
+ "grab": "success",
+ "mu": 0.22,
+ "reached_5m": true,
+ "dist_m": 5.0,
+ "time_s": 11.0,
+ "avg_v": 0.46,
+ "hold_creep_m": 0.042,
+ "mech_J": 1122,
+ "Wh_per_m": 0.117,
+ "ok": true,
+ "hitch_yaw_max_deg": 0.1,
+ "bin_yaw_max_deg": 0.1,
+ "roll_max_deg": 0.0,
+ "antitip_peak_N": 0.0,
+ "captured_throughout": true,
+ "loads": {
+  "kp_axial": [
+   2193.4,
+   76.03,
+   "8 brake hold on 12 %"
+  ],
+  "kp_radial": [
+   209.2,
+   76.11,
+   "8 brake hold on 12 %"
+  ],
+  "kp_bend": [
+   732.5,
+   76.03,
+   "8 brake hold on 12 %"
+  ],
+  "kp_yaw": [
+   8.4,
+   76.08,
+   "8 brake hold on 12 %"
+  ],
+  "casterL": [
+   550.4,
+   76.11,
+   "8 brake hold on 12 %"
+  ],
+  "casterR": [
+   356.0,
+   65.81,
+   "7 climbing 12 % wet leaves mu "
+  ],
+  "driveL": [
+   2236.0,
+   76.03,
+   "8 brake hold on 12 %"
+  ],
+  "driveR": [
+   2182.3,
+   76.03,
+   "8 brake hold on 12 %"
+  ]
+ },
+ "caster_min_N": 0.0,
+ "drive_min_N": 0.0,
+ "still_captured": true,
+ "pawl_bounce": null,
+ "crr_bin": 0.06,
+ "cpu_s": 31,
+ "env": {
+  "CGA_FILL": "1",
+  "CGA_TAGX": "kg14",
+  "G6_YAWRANGE": "40",
+  "G6_RATCHET_TIP": "1",
+  "G6_STANDFIX": "1",
+  "G6_STANDWORLD": "1",
+  "G6_STRAIGHTEN": "1",
+  "G6_PIVOT": "1",
+  "G6_PINLOCK": "1",
+  "G6_PINTOL": "3.0",
+  "G6_DNLOCK": "1",
+  "G6_SB2": "0.15",
+  "G6_RATCHET_STAND": "1",
+  "G6_MASSFILE": "/workspace/projects/847c6e2d-79fb-41ac-8eca-c75df6a92b0c/revG/sim/cg/mass_cgA.json"
+ }
+}

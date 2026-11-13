@@ -1,0 +1,24 @@
+
+=== 08:04:18 START env MC_IDX=4,11,17,22 IT1_TAG=_sub2 python3 it1/runB_it1.py grab ESE240SL 30 202
+ESE240SL 4 safe_miss safe_miss 11.5
+ESE240SL 11 success success 8.4
+ESE240SL 17 safe_miss safe_miss 13.8
+ESE240SL 22 safe_miss safe_miss 10.9
+=== END rc=0 55s
+
+=== 08:05:13 START env MC_IDX=3,10,17,22,24 IT1_TAG=_sub2 python3 it1/runB_it1.py grab WEB140 30 201
+WEB140 3 success success 7.6
+WEB140 10 success success 9.1
+WEB140 17 success success 6.3
+WEB140 22 no_dock no_dock 7.6
+WEB140 24 success success 8.8
+=== END rc=0 50s
+
+=== 08:06:02 START env MC_IDX=16,21,28 IT1_TAG=_sub2 python3 it1/runB_it1.py grab ESE240CL 30 203
+ESE240CL 16 safe_miss safe_miss 10.5
+ESE240CL 21 safe_miss safe_miss 16.7
+ESE240CL 28 success success 8.4
+=== END rc=0 46s
+
+=== 08:06:48 START python3 it1/dbg_keep.py ESE240SL 22 202 B1_grab_ESE240SL_sub2.json > it1/res/dbg_keep_SL22.txt 2>&1
+=== END rc=0 17s

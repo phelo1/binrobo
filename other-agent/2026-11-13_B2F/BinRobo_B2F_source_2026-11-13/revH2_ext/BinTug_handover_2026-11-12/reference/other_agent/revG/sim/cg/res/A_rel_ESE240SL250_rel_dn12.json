@@ -1,0 +1,115 @@
+{
+ "bin": "ESE240SL250",
+ "test": "rel_dn12",
+ "gh": "B2",
+ "ghp": {
+  "hy": 130.0,
+  "lip_chamfer": true,
+  "ease": 0.6,
+  "_reapp": {
+   "k": 5.0
+  },
+  "_guard": true,
+  "_claim_and": true,
+  "throat": -34.0,
+  "lip_w": 8.0,
+  "lip_top": -2.0,
+  "pawl": {
+   "knee": [
+    -18.0,
+    35.0
+   ],
+   "tip": [
+    -33.0,
+    19.0
+   ]
+  },
+  "truth_ztop": 50.0,
+  "feel_T": 20.0,
+  "reclose": 0.6
+ },
+ "tug_kg": 115.8,
+ "bin_kg": 110.0,
+ "grab": {
+  "result": "success",
+  "claim": true,
+  "captured": true,
+  "float_mm": 59.8,
+  "bar_mm": [
+   -1.3,
+   6.1,
+   -12.7
+  ]
+ },
+ "release": {
+  "opened": true,
+  "released": true,
+  "bar_dist_mm": 877,
+  "bin_tilt_end": 3.8
+ },
+ "bin_speed_end": 0.0,
+ "bin_stable": true,
+ "ok": true,
+ "events": [
+  [
+   6.18,
+   "wheel-stop contact, both wheels True"
+  ],
+  [
+   16.54,
+   "swing end phi 0.9 seat True latch True abort None bar [-1.3, 6.1, -12.7] pawls [0.0, 0.0]"
+  ],
+  [
+   19.51,
+   "pull test rise 452 N dtilt 0.76 -> PASS"
+  ],
+  [
+   19.51,
+   "float ratchet released after claim (tip with free float)"
+  ],
+  [
+   46.83,
+   "tipped to 25.0 deg, captured throughout True"
+  ],
+  [
+   68.81,
+   "A' tow pose: stop bar retracted 60 mm, float clamped at bottom stop"
+  ],
+  [
+   68.81,
+   "yaw pin engaged before descent at hitch -0.0 deg"
+  ],
+  [
+   122.16,
+   "bin upright 0.3 deg rel, 0.3 abs, tug pitch -0.0 deg, mast 7.7, float -29 mm vs grab"
+  ],
+  [
+   122.66,
+   "A' wheel-on-ground interlock: bin wheels on ground 1061 N of 1079 N"
+  ]
+ ],
+ "mon": {
+  "ryaw": 0.0,
+  "pitch_dev": 3.3,
+  "anti": 0.0,
+  "cmin": 0.0,
+  "phase_ryaw": "9 Yaw locked; standing bin up (wheel-sto"
+ },
+ "bin_tilt_abs_end": 3.8,
+ "env": {
+  "G6_YAWRANGE": "40",
+  "G6_RATCHET_TIP": "1",
+  "G6_STANDFIX": "1",
+  "G6_STANDWORLD": "1",
+  "G6_STRAIGHTEN": "1",
+  "G6_PIVOT": "1",
+  "G6_PINLOCK": "1",
+  "G6_PINTOL": "3.0",
+  "G6_DNLOCK": "1",
+  "G6_SB2": "0.15",
+  "G6_RATCHET_STAND": "1",
+  "G6_MASSFILE": "/workspace/projects/847c6e2d-79fb-41ac-8eca-c75df6a92b0c/revG/sim/cg/mass_cgA.json"
+ },
+ "verdict": "PASS",
+ "cpu_s": 52
+}

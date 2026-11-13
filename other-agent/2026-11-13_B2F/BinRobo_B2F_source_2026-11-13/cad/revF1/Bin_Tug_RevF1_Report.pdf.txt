@@ -1,0 +1,224 @@
+[text of Bin_Tug_RevF1_Report.pdf, taken out of the PDF for the public repository; pictures and layout are not kept]
+
+Bin tug Rev F.1 – optimisation of Rev F and bin-recovery strategy
+Brian · Nov 2026 · same MuJoCo model as Rev F (CAD mass table, 0.5 ms step), corrected and extended. All numbers are simulation estimates.
+
+VERDICT                                                                                                                                          Rev F.1 towing (sim frame)
+• Rev F's architecture is the right one for an unmodified wheelie bin: the optimum
+  is a TUNED Rev F, not a new concept.
+• It cannot get lighter. On 20% wet grass (μ 0.45) only the ~105 kg versions made
+  the climb; the 101, 97 and 86 kg versions stalled. Traction sets the mass, so the
+  4 ballast plates stay. Moving them forward is what helps.
+• Chain 4WD buys nothing on the climb (uphill the casters are off the ground ~90% of
+  the time), so it is not worth the cost.
+• A 48° tow tilt is best. At 35–40° it stalled on the 20% climb and the e-stop
+  distance grew 1.5–2.3×.
+• Rev F's '60 mm bump' test was really a 30 mm step. At a true 60 mm Rev F gets
+  stuck (the caster climbs, the rollers ground, the drive wheels lift). F.1 gets
+  over, but roughly, so fixed sharp steps on the lane should get a rubber ramp.
+REV F.1 CHANGES (all small)
+1 Ballast plates moved forward from +0.56 m to +0.70 m (same 4 plates, 17.3 kg).
+2 Anti-tip rollers raised from 70 to 100 mm clearance, so the tug can't high-centre
+when a caster climbs a 60 mm step.
+3 Casters moved 100 mm forward (longer outriggers): better pitch stability and
+shorter e-stops.
+4 Rubber bush in the hook carriage mount (2–3 mm give): cuts the peak spikes in
+hook load.
+5 Firmware: soft stop (ramp down, then brake), closed-loop P control of heading,
+and a 60° cap on the hitch angle.
+6 Recovery: AprilTags on the bin's front and back, plus nudge / re-dock / alert                                                           Change                                              € (est.)               Mass
+logic. Uses the existing bumper and cameras.                                                                   Ballast re-position (bracket, holes, bolts)                                5–15                   0
+                                                                                                               Anti-tip bracket re-made 30 mm higher                                      0–10                   0
+                                                                                                               Caster outriggers +100 mm (5 mm plate)                                     10–25                  +0.6 kg*
+                                                                                                               Rubber–metal hook bushes ×2                                                8–20                   +0.1 kg
+                                                                                                               Firmware: soft stop, heading loop, hitch cap                               0                      0
+                                                                                                               AprilTags ×2 (outdoor vinyl) + bumper nudge face                           5–25                   +0.3 kg
+                                                                                                               Total F.1 delta                                                            €30–95                 ≈ +1 kg
+
+
+
+
+                                                                                                     Whole tug: Rev F €670–1,030 used / €920–1,430 new
+                                                                                                              Rev F.1 €700–1,125 used / €950–1,525 new
+                                                                                                     Optional site work: a rubber kerb ramp at any sharp step of 50 mm or more on the lane, €15–40 each.
+                                                                                                     * extra outrigger steel was not added to the sim mass (≈0.6% of the total). Prices are rough € estimates.
+
+
+                                                                                                                                                        Bin tug Rev F.1 · MuJoCo sim study · figures are simulation estimates
+Optimisation study: one change at a time from Rev F, then combined
+Each variant: full grab, then the 20% wet climb (5 m in 25 s), a true 60 mm sharp step under the left wheels (μ 0.6), and a 20% downhill e-stop. Full bin, 108 kg.
+
+
+                   Variant                    Tug kg      20% wet climb     Casters off Tug riding on                      Hook peak / 99th      E-stop 20%             Actuator peak               Tow hook
+                                                         (avg m/s, of 0.5) ground uphill rollers uphill 60 mm step          pct on step (N)       down (m)             raw / 50 ms (N)             99th pct (N)
+      Rev F baseline                         105.6       0.24                93%            135 N            STUCK         1499 / 1035           0.222              2500 / 1015                    293
+      Ballast fwd (+0.70 m)                  105.6       0.32                85%            0N               STUCK         2657 / 1246           0.272              2500 / 1015                    253
+      3 plates fwd (−4.3 kg)                 101.3       STALLED             94%            132 N            STUCK         2225 / 1202           0.19               2500 / 1007                    283
+      2 plates fwd (−8.7 kg)                 96.9        STALLED             94%            211 N            STUCK         1427 / 750            0.172              2500 / 997                     264
+      No ballast + rear −20% (−20 kg)        85.7        STALLED             94%            208 N            STUCK         1184 / 1013           0.157              2500 / 988                     225
+      Chain 4WD                              105.6       0.26                92%            128 N            PASS          11600 / 1795          0.089              2500 / 1070                    284
+      Casters +100 mm fwd                    105.6       0.26                92%            11 N             PASS          7651 / 2119           0.22               2500 / 1014                    286
+      Anti-tip rollers 100 mm                105.6       STALLED             94%            0N               PASS          16327 / 2268          0.211              2500 / 1015                    293
+      Tow tilt 40°                           105.6       STALLED             93%            189 N            STUCK         1402 / 1284           0.328              1813 / 942                     234
+      Tow tilt 35°                           105.6       STALLED             90%            188 N            STUCK         1334 / 1210           0.508              1526 / 942                     204
+      Soft hook bush (very soft)             105.6       0.2                 94%            222 N            STUCK         769 / 521             0.397              2500 / 1003                    285
+      Combo: Bfwd+AT100+bush+soft stop       105.6       0.28                87%            0N               PASS          5842 / 2346           0.317              1119 / 957                     247
+      Combo with 3 plates                    101.3       STALLED             94%            0N               PASS          2060 / 1756           0.226              1111 / 915                     285
+      REV F.1 = F1a + casters fwd            105.6       0.29                86%            0N               PASS          6080 / 2715           0.19               1117 / 958                     304
+
+
+
+
+HOW TO READ IT
+• Climb: every ~105 kg version is traction-limited at 20% wet grass (wheels slip, 0.24–0.32 m/s against 0.5 commanded). The 101 kg, 97 kg and 86 kg versions stall, so the 4 plates are
+  the minimum. Moving them forward takes the tug off its anti-tip rollers uphill (roller load 135 N → 0) and raises the climb speed by about 20–30%.
+• 60 mm sharp step: Rev F, the ballast variants and the tilt variants all high-centre (caster up 60 mm → rollers 0.88 m behind the axle drop below their 70 mm clearance).
+  Raising the rollers, moving the casters forward or 4WD all clear it. 4WD and raised rollers alone gave the worst hook spikes (11.6 kN and 16.3 kN, single-step peaks).
+• Hook peaks on the step are single-timestep spikes from rigid contact (the 200 mm bin wheel hitting a sharp 60 mm edge). The 99th percentile is the better measure of load.
+  A soft bush halves them but lets the bin surge: e-stop 0.40 m. A medium bush (used in F.1) is the compromise.
+• Actuator: Rev F's logged 2,500 N was one 0.5 ms step at the instant the brakes clamped (the actuator force limit was hit briefly); filtered over 50 ms it is about 1.0 kN.
+  The F.1 soft stop removes it: 1,117 N raw. The real working load is ≤1.0 kN, so the 2.5 kN actuator has 2.5× margin.
+• Tilt 35–40°: tips faster (34–39 s) and lowers the actuator spike, but it stalled on the 20% climb and the e-stop distance grew to 0.33–0.51 m, so 48° stays.
+
+
+
+
+                                                                                                                                                         Bin tug Rev F.1 · MuJoCo sim study · figures are simulation estimates
+Rev F vs Rev F.1: key tests re-run (same code, same seeds)
+Full 108 kg bin unless noted. Wet grass μ 0.45, damp μ 0.6. "Rev F" values come from this re-run, so they can differ slightly from the Rev F report.
+
+                          Test                                                  Rev F                                                   Rev F.1                                                       Comment
+       Full cycle                                           PASS · tip 47.0 s · act raw 2500 N                      PASS · tip 47.0 s · act raw 1117 N                            Soft stop removes the 2.5 kN brake-clamp
+       (dock→latch→tip→tow→stand→release)                                                                                                                                         spike
+
+       Climb 15% wet, 5 m                                   0.44 m/s · casters off 73% · on rollers                 0.44 m/s · casters off 8% · rollers 0 N                       F.1 stays on its casters
+                                                            482 N
+
+       Climb 20% wet, 5 m                                   0.24 m/s (heavy slip)                                   0.29 m/s (slip)                                               At the traction limit: treat 20% wet
+                                                                                                                                                                                  with a full bin as marginal
+       E-stop 20% downhill wet, from 0.5 m/s                0.222 m                                                 0.19 m                                                        Spring brakes; both stop
+       True 60 mm sharp step, left wheels, 0.5              STUCK (high-centred on rollers)                         PASS · hook 6080 N peak / 2715 N p99                          Rough: bin yaws up to 50.1°; same at
+       m/s                                                                                                                                                                        0.25 m/s. Ramp fixed steps
+
+       30% side slope, drive 3 m across                     drift -0.262 m · creep 0.066 m                          drift -0.266 m · creep 0.052 m                                No roll-over; RTK heading loop corrects
+                                                                                                                                                                                  drift
+       2.5 m bend (92°), damp                               open-loop 57.3°                                         closed-loop 91.0° in 10.2 s · hitch ≤17.4°                    P controller on heading, Kp 1.5 /s
+
+       Spin-in-place request with bin                       hitch hits the 70.2° stop                               hitch held to 54.0° (cap 60°)                                 Firmware turns a spin into a tight
+                                                                                                                                                                                  creeping turn
+
+
+
+
+DESIGN-LEVEL VERDICT VS EARLIER CONCEPTS (judged from each revision's recorded behaviour; Rev A, C and E were not re-simulated here)
+• Rev A, bin jack (lifts the front lip so the bin rolls on its own wheels): the robot carries a big share of the bin's weight and needs a fork to find the lip of whatever bin model is there.
+  It needs a stronger lift and has a harder docking tolerance than F. Not better.
+• Rev C, hitch-pin tug: the cheapest mechanism IF Brian bolts a hitch fitting onto his own bin. It drops the mast float and some docking tolerance (~€60–120 and ~5 kg less).
+  But the tug mass stays (traction sets it), the bin must be modified, a crew can damage the fitting, and it only works from one face. Worth it only if modifying the bin is acceptable.
+• Rev E, vertical-slide mast: failed outright (pulling the handle rolled the bin instead of tipping it). Rev F's wheel-stop crossbeam fixed that. Superseded.
+• Rev F.1: the best fit for an unmodified, crew-handled 240 L bin. The remaining limits are physics (traction on 20% wet, sharp steps for a 200 mm bin wheel), not architecture.
+
+
+
+
+                                                                                                                                                                 Bin tug Rev F.1 · MuJoCo sim study · figures are simulation estimates
+  Task 2 – Recovery when the bin cannot be grabbed: detection and decision tree
+  Empty bin, 12.3 kg. The crew may leave it turned round, sideways, shoved against a hedge, or tipped over.
+DETECTION (existing sensors + 2 tags)
+• LD06 lidar on the bumper (~0.2 m high): fit the bin footprint                                                         ARRIVE at pickup point (RTK) · stop · 360° lidar + rear-camera scan
+  (0.58 × 0.73 m) → position + heading (±180° ambiguous).
+• Handle-side signature in the same scan: two small round returns
+  (the wheels, 0.54 m apart) at one end; flat feet face at the other.
+• Camera + AprilTag 36h11 (~150 mm) on the bin's FRONT and BACK:
+                                                                                                                                                                                            no              search spiral 5 m → none:
+                                                                                                                                                 Bin found within 5 m?                                     ALERT "bin missing" + photo
+  the tag ID says which face, the 6-DoF pose gives heading ±2° and                                                                                                                                           home, retry +30 min ×3
+  tilt → 'upright / tipped' and 'is this our bin'.                                                                                                             yes
+• Tipped = tag roll >45° or footprint >0.9 m long and <0.7 m tall.
+• Clearance map from the same lidar scan: handle-side corridor                                                                                                                              no           TIPPED: stop, 4G alert with photo,
+  needed ≈2.1 m × 0.9 m; swing room ≥0.8 m radius round the                                                                                  Upright? (tag roll / footprint)                                 home, retry next window
+                                                                                                                                                                                                            (the tug cannot right a bin)
+  wheel axle, plus ~0.6 m drift towards the handle per 90°.
+                                                                                                                                                               yes
+WHY NUDGING WORKS ON THE WHEELS (and its catch)
+• Push the FEET end sideways with the bumper at 0.1 m/s while the
+                                                                                                                                  Handle side reachable? corridor ≥2.1 m × 0.9 m
+                                                                                                            yes                   and handle within ±25° of a reachable approach
+  tug follows the arc: the bin swings round its wheel axle.
+  It needs ~40–60 N of push (feet friction), well within the drive.                                                                                                  no
+• Because the wheels roll freely, the bin also ROLLS towards its
+  handle (0.55 m per 90°, 1.1–1.25 m per 180° in sim). This decides              DRIVE ROUND to the pre-dock pose
+                                                                                 (path round the bin, 1.55 m radius)                                                                                     no     NO ROOM (hard against a
+  when nudging is allowed (the room check above).                                    → reverse on tag/lidar line                             Pick rotation 90° or 180° (handle → open side)                      hedge, handle facing it):
+                                                                                                                                               Swing room ≥0.8 m + roll-drift room clear?                       alert + photo, home, retry;
+                                                                                                                                                                                                                   after 3 tries ask Brian
+                                                                                                                                                                          yes
+
+                                                                                                                                         ORBIT-NUDGE: bumper pushes the feet end, tug follows the
+                                                                                                                                         arc at 0.1 m/s · abort if push >400 N for 2 s or drift >1.8 m
+
+                                                                                                                                                                                                                no → nudge again once;
+                                                                                                                                                                                                                still no → alert
+                                                                                                                                                     Re-scan: within ±25° of target?
+        Sim frame: bumper swinging a sideways bin round its wheels (R2)
+                                                                                                                                                               yes
+
+                                                                                                           DOCK: drive round → pre-dock pose → reverse with
+                                                                                                     line-following (lateral & heading P-loop) → wheel-stop contact
+
+
+                                                                                                                                                                     no                      hooks up, pull forward 1 m,
+                                                                                                                         Hook latch switches OK?                                             re-dock (max 2) → else alert
+
+                                                                                                                                       yes
+
+                                                                                                                  TIP to 48° → tow home on the RTK route
+
+
+                                                                                Anywhere: person/animal in the lidar safety zone, or bin heading for a ditch/lane edge (geofence) → stop + alert.
+
+                                                                                                                                                                     Bin tug Rev F.1 · MuJoCo sim study · figures are simulation estimates
+Recovery simulations (empty 12.3 kg bin, Rev F.1 geometry) and remaining risks
+Perception emulated as true bin pose + noise (σ 15 mm, 1.5°, filtered). The bumper collides with the bin. μ 0.6 unless noted. Times are simulated seconds.
+
+                     Scenario                                      Strategy                           Result                                                      Key numbers
+      R2: sideways, handle side blocked             nudge 90° round its wheels → drive         SUCCESS                         rotated 86.3° in 13.6 s of pushing · bin rolled 0.56 m · dock error 7 mm
+      by a wall                                     round → dock → grab                                                        / 0.5° · latched at 64 s · 119.0 s incl. 47 s tip
+      R1: backwards, hedge 1.5 m behind             nudge 180° round its wheels → dock         SUCCESS                         rotated 176.1° in 25 s of pushing · bin rolled 1.18 m · dock error -8 mm
+      the handle                                    → grab                                                                     · latched at 84 s · bumper peak 412 N
+      Repeat with another noise seed                R1 and R2                                  2 / 2 SUCCESS                   same outcomes, within ±1 s
+
+      R2 on wet grass μ 0.45                        nudge 90° + dock (+ auto re-dock)          SUCCESS (2nd dock)              1st reverse ended 182 mm off line → latch missed → pull forward, re-dock
+                                                                                                                               OK · 167.0 s
+
+      R1 on wet grass μ 0.45                        nudge 180°                                 FAIL → alert path               bin rolled 1.47 m, reached the hedge and wedged at 96°: wet ground needs
+                                                                                                                               more room
+      R1a: backwards, hedge only 0.8 m              nudge round its wheels                     FAIL (expected)                 rotated 96.1° then wedged against the hedge (bin rolled towards its
+      behind                                                                                                                   handle) → alert path
+
+      R1b: same, pivot on its feet                  push the wheel end sideways                FAIL                            bin slid sideways instead of pivoting (42.5°, moved 1.8 m) · rejected
+                                                                                                                               (may partly be a contact-model artefact)
+      Tipped bin                                    –                                          not simulated                   detection + alert only; righting a bin is out of scope for this hardware
+
+
+
+
+REMAINING RISKS AND CAVEATS
+• Traction: 20% wet grass with a full bin is at the limit (wheels slip, ~0.3 m/s). Measure the steepest part of the lane. If it is over ~15%, fit grippier tyres or accept
+  slow, slipping climbs in the wet.
+• Sharp steps: a 200 mm bin wheel hitting a sharp 60 mm edge gives multi-kN hook spikes and makes the bin yaw ~50°, even at 0.25 m/s. Ramp known steps; real lane bumps are
+  usually rounded (easier).
+• Rigid-contact model: tyres, grass and the hook are stiffer than real, so peak loads are pessimistic. Rolling resistance is a fixed axle friction. Bin centre of gravity and
+  wheel size are estimated: measure them.
+• Recovery: the bin's roll-towards-handle drift is the main hazard (ditches, the lane edge). The room check and geofence must be conservative. The wet-grass R1 failure shows
+  the margin is thin.
+• Docking on wet ground can miss the latch (R2 wet): the re-dock loop is required, not optional. Both cameras need tag visibility in rain, low sun and at night (IR LED or a
+  retro-reflective tag).
+• F.1 hardware changes are drawn as offsets of the Rev F CAD in the videos (rollers, ballast, outriggers). They have not been re-modelled in CAD yet.
+• The 4G alert, photo upload and retry scheduling are logic only (not simulated). The tug cannot right a tipped bin, so a person must.
+
+
+
+
+                                                                                                                                                        Bin tug Rev F.1 · MuJoCo sim study · figures are simulation estimates
+

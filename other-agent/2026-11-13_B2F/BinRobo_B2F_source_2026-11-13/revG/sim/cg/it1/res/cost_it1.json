@@ -1,0 +1,103 @@
+{
+ "basis": {
+  "parts": 3584.08,
+  "logistics": 312.0,
+  "contingency": 378.66,
+  "all_in": 4274.74
+ },
+ "added": [
+  {
+   "id": "B1-PADACT",
+   "item": "Pad retract actuator MSW Drive System Europe DSZY4-24-50-100-STD-IP65 (part 00070063): 24 V, 100 mm stroke (40 mm used), 2,500 N dynamic / 4,500 N static, IP65, self-locking ACME screw (Conrad 1386475). Replaces TRU TC24-50-1000 POT (1,000 N < 1,157 N suite peak pad load)",
+   "eur": 389.0,
+   "status": "checked-11Nov",
+   "k": 0.05,
+   "url": "https://www.conrad.com/en/brands/drive-system-europe-by-msw.html"
+  },
+  {
+   "id": "B1-PADLS",
+   "item": "Pad position switch at 40 mm extension (DSZY4-STD has end-of-stroke limits only; IP67 roller-lever switch)",
+   "eur": 8.0,
+   "status": "est",
+   "k": 0.12,
+   "url": ""
+  },
+  {
+   "id": "B1-SW",
+   "item": "Comb-plate contact switch + pad contact switch: 2 x IP67 roller-lever limit switch on 2 mm sprung travel",
+   "eur": 16.0,
+   "status": "est",
+   "k": 0.12,
+   "url": ""
+  },
+  {
+   "id": "B1-TOF2",
+   "item": "Second comb ToF (VL53L1X class) at the other tooth end for the dual-ToF yaw measurement (F6)",
+   "eur": 10.0,
+   "status": "est",
+   "k": 0.12,
+   "url": ""
+  },
+  {
+   "id": "B1-KEEP",
+   "item": "Keeper arm 68 -> 80 mm (same part, re-drawn) (D7)",
+   "eur": 0.0,
+   "status": "est",
+   "k": 0.12,
+   "url": ""
+  },
+  {
+   "id": "B1-COMB",
+   "item": "Comb tooth narrowed to 160 mm, nib shortened to 8 mm (same plate, re-drawn) (D6)",
+   "eur": 0.0,
+   "status": "est",
+   "k": 0.12,
+   "url": ""
+  },
+  {
+   "id": "B1-PADARM",
+   "item": "Pad arm moved from the body to the lift carriage (same steel, re-drawn bracket); sprung pad B-3 kept",
+   "eur": 0.0,
+   "status": "est",
+   "k": 0.12,
+   "url": ""
+  },
+  {
+   "id": "B1-BAL",
+   "item": "Ballast 10 kg steel plate moved from the side arms to the tray floor (same plate, new bolt holes)",
+   "eur": 0.0,
+   "status": "est",
+   "k": 0.12,
+   "url": ""
+  },
+  {
+   "id": "B1-ACT",
+   "item": "Lift actuator: 250 mm stroke specified (G8 B line already priced the FDI family at the 400 mm figure, upper bound) - no change",
+   "eur": 0.0,
+   "status": "checked-11Nov",
+   "k": 0.05,
+   "url": ""
+  }
+ ],
+ "logistics": [
+  {
+   "id": "B1-SHIP",
+   "item": "Conrad shipping (no other Conrad line in the G8 BOM)",
+   "eur": 19.99,
+   "k": 0.1
+  }
+ ],
+ "delta": {
+  "parts": 423.0,
+  "logistics": 19.99,
+  "contingency": 25.53,
+  "all_in": 468.52
+ },
+ "new_all_in": 4743.26,
+ "lane_prep": {
+  "item": "Rubber kerb ramp or cold-lay asphalt fillet 1:4 per surveyed full-width sharp step > 25 mm",
+  "eur_each": "20-40",
+  "count": "unknown until the lane survey",
+  "in_bom": false
+ }
+}

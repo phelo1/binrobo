@@ -1,0 +1,2 @@
+{"bin": "WEB140", "full": true, "res": "safe_miss", "tilt": null, "clear": null, "pad_ok": null, "t_grab": 31.3, "pad_act_peak_N": 14, "pad_act_at": [39.7, 86, 4.5], "pad_contact_max_ext_N": 147.1}
+{"bin": "WEB140", "full": false, "res": "safe_miss", "tilt": null, "clear": null, "pad_ok": null, "t_grab": 31.3, "pad_act_peak_N": 10, "pad_act_at": [39.1, 39, 7.3], "pad_contact_max_ext_N": 38.9}

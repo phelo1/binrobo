@@ -1,0 +1,126 @@
+{
+ "bin": "ESE240CL",
+ "test": "rel_flat",
+ "gh": "B2",
+ "ghp": {
+  "hy": 130.0,
+  "lip_chamfer": true,
+  "ease": 0.6,
+  "_reapp": {
+   "k": 5.0
+  },
+  "_guard": true,
+  "_claim_and": true,
+  "throat": -34.0,
+  "lip_w": 8.0,
+  "lip_top": -2.0,
+  "pawl": {
+   "knee": [
+    -18.0,
+    35.0
+   ],
+   "tip": [
+    -33.0,
+    19.0
+   ]
+  },
+  "truth_ztop": 50.0,
+  "feel_T": 20.0,
+  "reclose": 0.6
+ },
+ "tug_kg": 115.8,
+ "bin_kg": 110.0,
+ "grab": {
+  "result": "success",
+  "claim": true,
+  "captured": true,
+  "float_mm": -60.3,
+  "bar_mm": [
+   0.0,
+   6.8,
+   -12.7
+  ]
+ },
+ "release": {
+  "opened": false,
+  "released": false,
+  "fail_reason": "pawls open but bar 79 mm from the cup (bin not standing on its wheels / already dropped)"
+ },
+ "bin_speed_end": 0.0,
+ "bin_stable": true,
+ "ok": false,
+ "events": [
+  [
+   6.51,
+   "wheel-stop contact, both wheels True"
+  ],
+  [
+   11.83,
+   "swing end phi 8.5 seat True latch True abort None bar [0.0, 6.8, -12.7] pawls [0.0, 0.0]"
+  ],
+  [
+   14.8,
+   "pull test rise 227 N dtilt 0.78 -> PASS"
+  ],
+  [
+   14.8,
+   "float ratchet released after claim (tip with free float)"
+  ],
+  [
+   37.62,
+   "tipped to 24.9 deg, captured throughout True"
+  ],
+  [
+   59.84,
+   "A' tow pose: stop bar retracted 60 mm, float clamped at bottom stop"
+  ],
+  [
+   107.45,
+   "bin upright 2.5 deg rel, 0.3 abs, tug pitch -2.2 deg, mast 13.6, float +6 mm vs grab"
+  ],
+  [
+   107.45,
+   "A' wheel-on-ground interlock: bin wheels on ground 1200 N of 1079 N"
+  ],
+  [
+   108.95,
+   "release not clear (try 1): pawls -130/-130 deg, bar z 4 mm"
+  ],
+  [
+   111.85,
+   "release not clear (try 2): pawls -130/-130 deg, bar z 1 mm"
+  ],
+  [
+   114.75,
+   "release not clear (try 3): pawls -130/-130 deg, bar z -4 mm"
+  ],
+  [
+   114.75,
+   "RELEASE FAILED: pawls open but bar 79 mm from the cup (bin not standing on its wheels / already dropped) -> hold + alert, manual lever"
+  ]
+ ],
+ "mon": {
+  "ryaw": 0.2,
+  "pitch_dev": 5.4,
+  "anti": 0.0,
+  "cmin": 0.0,
+  "phase_ryaw": "7 Towing 1 m"
+ },
+ "bin_tilt_abs_end": 0.0,
+ "env": {
+  "G6_YAWRANGE": "40",
+  "G6_RATCHET_TIP": "1",
+  "G6_STANDFIX": "1",
+  "G6_STANDWORLD": "1",
+  "G6_STRAIGHTEN": "1",
+  "G6_PIVOT": "1",
+  "G6_PINLOCK": "1",
+  "G6_PINTOL": "3.0",
+  "G6_DNLOCK": "1",
+  "G6_SB2": "0.15",
+  "G6_RATCHET_STAND": "1",
+  "G6_MASSFILE": "/workspace/projects/847c6e2d-79fb-41ac-8eca-c75df6a92b0c/revG/sim/cg/mass_cgA.json"
+ },
+ "verdict": "STUCK",
+ "cpu_s": 64
+}

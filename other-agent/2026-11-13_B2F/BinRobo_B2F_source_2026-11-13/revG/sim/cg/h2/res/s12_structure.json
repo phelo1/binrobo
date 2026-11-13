@@ -1,0 +1,744 @@
+{
+ "H2": {
+  "loads": {
+   "wheel": {
+    "static": [
+     859,
+     "H2_static_crR_110_cg60.json"
+    ],
+    "carry": [
+     2847,
+     "H2_S7_climb_m22_c06_cg0.json"
+    ],
+    "edge": [
+     7380,
+     "H2_S5_ESE240SL_pothole_v08_lmu45.json"
+    ],
+    "rigid_step(info)": [
+     17800,
+     "H2_S5_WEB140_step_v05_kp.json"
+    ],
+    "trench(info)": [
+     869946,
+     "H2_S5_ESE240SL_trench_v05.json"
+    ]
+   },
+   "comb": {
+    "static": [
+     1079,
+     "W bin 110 kg"
+    ],
+    "carry": [
+     2055,
+     "H2_rel_ESE240CL_flat_full_g+60.json"
+    ],
+    "comb_all": [
+     7316,
+     "H2_S5_WEB140_trench_v08_kp.json"
+    ]
+   },
+   "comb_by_case": {
+    "carry": [
+     2055,
+     "H2_rel_ESE240CL_flat_full_g+60.json"
+    ],
+    "pothole": [
+     4710,
+     "H2_S5_ESE240SL_pothole_v08_kp.json"
+    ],
+    "step_rigid": [
+     6399,
+     "H2_S5_ESE240SL_step_v05_kp.json"
+    ],
+    "kerb_compliant": [
+     4703,
+     "H2_S6_kerb_v08_nose_t15.json"
+    ],
+    "kerb_rigid": [
+     4129,
+     "H2_S6_kerb_v08_nose_r.json"
+    ],
+    "trench": [
+     7316,
+     "H2_S5_WEB140_trench_v08_kp.json"
+    ]
+   },
+   "pad": {
+    "carry": [
+     1033,
+     "H2_rel_ESE240SL250_dn12_full_pcrr09.json"
+    ],
+    "all": [
+     3705,
+     "H2_S5_ESE240SL_trench_v08_kp.json"
+    ]
+   },
+   "lift": [
+    4000,
+    "H2_step40_one_rw318_dt025.json"
+   ]
+  },
+  "rows": [
+   {
+    "item": "side rail 50x50x3 S235",
+    "level": "static",
+    "load_N": 859,
+    "M_Nm": 455,
+    "stress_MPa": 54.6,
+    "SF": 4.31,
+    "fix": null
+   },
+   {
+    "item": "side rail 50x50x3 S235",
+    "level": "carry",
+    "load_N": 2847,
+    "M_Nm": 1509,
+    "stress_MPa": 180.9,
+    "SF": 1.3,
+    "fix": "S235 60x60x4 (Z >= 12843 mm3)"
+   },
+   {
+    "item": "side rail 50x50x3 S235",
+    "level": "edge",
+    "load_N": 7380,
+    "M_Nm": 3911,
+    "stress_MPa": 469.0,
+    "SF": 0.5,
+    "fix": "S235 80x80x5 (Z >= 33287 mm3)"
+   },
+   {
+    "item": "side rail 50x50x3 S235",
+    "level": "rigid_step(info)",
+    "load_N": 17800,
+    "M_Nm": 9434,
+    "stress_MPa": 1131.2,
+    "SF": 0.21,
+    "fix": null
+   },
+   {
+    "item": "mast upright at foot 50x50x3 S235",
+    "level": "static",
+    "load_N": 1079,
+    "M_Nm": 230,
+    "stress_MPa": 27.5,
+    "SF": 8.54,
+    "fix": null
+   },
+   {
+    "item": "mast-foot bolts M10 8.8 (ASSUMED 2 per row, lever 100 mm)",
+    "level": "static",
+    "load_N": 1148,
+    "M_Nm": 230,
+    "stress_MPa": 19.8,
+    "SF": 32.35,
+    "fix": null
+   },
+   {
+    "item": "  bolt pull-through 3 mm RHS wall",
+    "level": "static",
+    "load_N": 1148,
+    "M_Nm": null,
+    "stress_MPa": null,
+    "SF": 22.27,
+    "fix": null
+   },
+   {
+    "item": "mast upright at foot 50x50x3 S235",
+    "level": "carry",
+    "load_N": 2055,
+    "M_Nm": 437,
+    "stress_MPa": 52.4,
+    "SF": 4.48,
+    "fix": null
+   },
+   {
+    "item": "mast-foot bolts M10 8.8 (ASSUMED 2 per row, lever 100 mm)",
+    "level": "carry",
+    "load_N": 2186,
+    "M_Nm": 437,
+    "stress_MPa": 37.7,
+    "SF": 16.98,
+    "fix": null
+   },
+   {
+    "item": "  bolt pull-through 3 mm RHS wall",
+    "level": "carry",
+    "load_N": 2186,
+    "M_Nm": null,
+    "stress_MPa": null,
+    "SF": 11.69,
+    "fix": null
+   },
+   {
+    "item": "mast upright at foot 50x50x3 S235",
+    "level": "comb_all",
+    "load_N": 7316,
+    "M_Nm": 1556,
+    "stress_MPa": 186.6,
+    "SF": 1.26,
+    "fix": "S235 60x60x4"
+   },
+   {
+    "item": "mast-foot bolts M10 8.8 (ASSUMED 2 per row, lever 100 mm)",
+    "level": "comb_all",
+    "load_N": 7780,
+    "M_Nm": 1556,
+    "stress_MPa": 134.1,
+    "SF": 4.77,
+    "fix": null
+   },
+   {
+    "item": "  bolt pull-through 3 mm RHS wall",
+    "level": "comb_all",
+    "load_N": 7780,
+    "M_Nm": null,
+    "stress_MPa": null,
+    "SF": 3.29,
+    "fix": null
+   },
+   {
+    "item": "comb plate (symmetric)",
+    "level": "carry",
+    "load_N": 2055,
+    "M_Nm": 102,
+    "stress_MPa": 33.7,
+    "SF": 10.52,
+    "fix": null
+   },
+   {
+    "item": "comb plate (one half at the roll stop)",
+    "level": "carry",
+    "load_N": 2055,
+    "M_Nm": 247,
+    "stress_MPa": 81.5,
+    "SF": 4.35,
+    "fix": null
+   },
+   {
+    "item": "comb pivot pin D16 8.8 (ASSUMED, 20 mm cantilever)",
+    "level": "carry",
+    "load_N": 2055,
+    "M_Nm": 41,
+    "stress_MPa": 102.2,
+    "SF": 6.26,
+    "fix": null
+   },
+   {
+    "item": "comb pivot pin D20 8.8 (ASSUMED, 20 mm cantilever)",
+    "level": "carry",
+    "load_N": 2055,
+    "M_Nm": 41,
+    "stress_MPa": 52.3,
+    "SF": 12.23,
+    "fix": null
+   },
+   {
+    "item": "comb plate (symmetric)",
+    "level": "comb_all",
+    "load_N": 7316,
+    "M_Nm": 363,
+    "stress_MPa": 120.1,
+    "SF": 2.96,
+    "fix": null
+   },
+   {
+    "item": "comb plate (one half at the roll stop)",
+    "level": "comb_all",
+    "load_N": 7316,
+    "M_Nm": 878,
+    "stress_MPa": 290.2,
+    "SF": 1.22,
+    "fix": "plate 8 mm or net depth >= 70 mm"
+   },
+   {
+    "item": "comb pivot pin D16 8.8 (ASSUMED, 20 mm cantilever)",
+    "level": "comb_all",
+    "load_N": 7316,
+    "M_Nm": 146,
+    "stress_MPa": 363.9,
+    "SF": 1.76,
+    "fix": "pin D20 8.8 or double shear"
+   },
+   {
+    "item": "comb pivot pin D20 8.8 (ASSUMED, 20 mm cantilever)",
+    "level": "comb_all",
+    "load_N": 7316,
+    "M_Nm": 146,
+    "stress_MPa": 186.3,
+    "SF": 3.44,
+    "fix": null
+   },
+   {
+    "item": "carriage roller 6202-2RS, C0 3.75 kN",
+    "level": "static",
+    "load_N": 765,
+    "M_Nm": 459,
+    "stress_MPa": null,
+    "SF": 4.9,
+    "fix": null
+   },
+   {
+    "item": "  roller line contact on S235 tube face",
+    "level": "static",
+    "load_N": 765,
+    "M_Nm": null,
+    "stress_MPa": 382,
+    "SF": 1.06,
+    "fix": "hardened track strip (>= 50 HRC) on each upright face"
+   },
+   {
+    "item": "carriage roller 6202-2RS, C0 3.75 kN",
+    "level": "carry",
+    "load_N": 1457,
+    "M_Nm": 874,
+    "stress_MPa": null,
+    "SF": 2.57,
+    "fix": null
+   },
+   {
+    "item": "  roller line contact on S235 tube face",
+    "level": "carry",
+    "load_N": 1457,
+    "M_Nm": null,
+    "stress_MPa": 527,
+    "SF": 0.55,
+    "fix": "hardened track strip (>= 50 HRC) on each upright face"
+   },
+   {
+    "item": "carriage roller 6202-2RS, C0 3.75 kN",
+    "level": "comb_all",
+    "load_N": 5187,
+    "M_Nm": 3112,
+    "stress_MPa": null,
+    "SF": 0.72,
+    "fix": "two rollers per station or C0 >= 10.4 kN; roller rows 0.45 m apart"
+   },
+   {
+    "item": "  roller line contact on S235 tube face",
+    "level": "comb_all",
+    "load_N": 5187,
+    "M_Nm": null,
+    "stress_MPa": 995,
+    "SF": 0.16,
+    "fix": "hardened track strip (>= 50 HRC) on each upright face"
+   },
+   {
+    "item": "castor outrigger plate 8 mm S355 (vertical 3 g)",
+    "level": "static x3",
+    "load_N": 956,
+    "M_Nm": 29,
+    "stress_MPa": 17.9,
+    "SF": 19.8,
+    "fix": null
+   },
+   {
+    "item": "castor outrigger plate 8 mm S355 (kerb strike, 80 N m)",
+    "level": "kerb",
+    "load_N": 503,
+    "M_Nm": 161,
+    "stress_MPa": 100.6,
+    "SF": 3.53,
+    "fix": null
+   },
+   {
+    "item": "nose cross-member 50x50x3 torsion (kerb strike)",
+    "level": "kerb",
+    "load_N": 503,
+    "M_Nm": 161,
+    "stress_MPa": 12.1,
+    "SF": 11.16,
+    "fix": null
+   },
+   {
+    "item": "(bin) receiver ledge, HDPE, gate-model section",
+    "level": "carry",
+    "load_N": 2055,
+    "M_Nm": null,
+    "stress_MPa": 8.6,
+    "SF": 2.6,
+    "fix": null
+   },
+   {
+    "item": "(bin) receiver ledge, HDPE, gate-model section",
+    "level": "comb_all",
+    "load_N": 7316,
+    "M_Nm": null,
+    "stress_MPa": 30.7,
+    "SF": 0.73,
+    "fix": "comb buffer to cut the peak; measure real receivers (B0b/B1)"
+   }
+  ],
+  "castor_static_max_sum_N": 637.4
+ },
+ "B2F": {
+  "loads": {
+   "wheel": {
+    "static": [
+     931,
+     "B2F_static_crR_110_cg60.json"
+    ],
+    "carry": [
+     2385,
+     "B2F_estop12_fwd_pm110.json"
+    ],
+    "edge": [
+     7306,
+     "B2F_S6_kerb_v05_nose_t15_80cas.json"
+    ],
+    "rigid_step(info)": [
+     22136,
+     "B2F_S5_ESE240SL_step_v05.json"
+    ],
+    "trench(info)": [
+     1057024,
+     "B2F_S5_ESE240SL_trench_v05.json"
+    ]
+   },
+   "comb": {
+    "static": [
+     1079,
+     "W bin 110 kg"
+    ],
+    "carry": [
+     1873,
+     "B2F_climb_m22_c09_pm110.json"
+    ],
+    "comb_all": [
+     9634,
+     "B2F_S5_ESE240SL_step_v08_lsr004.json"
+    ]
+   },
+   "comb_by_case": {
+    "carry": [
+     1873,
+     "B2F_climb_m22_c09_pm110.json"
+    ],
+    "pothole": [
+     4927,
+     "B2F_S5_ESE240SL_pothole_v08_kp.json"
+    ],
+    "step_rigid": [
+     9634,
+     "B2F_S5_ESE240SL_step_v08_lsr004.json"
+    ],
+    "kerb_compliant": [
+     3581,
+     "B2F_S6_kerb_v05_nose_t15_80cas.json"
+    ],
+    "kerb_rigid": [
+     2901,
+     "B2F_S6_kerb_v05_nose_r80.json"
+    ],
+    "trench": [
+     4545,
+     "B2F_S5_ESE240SL_trench_v08.json"
+    ]
+   },
+   "pad": {
+    "carry": [
+     967,
+     "B2F_towstab.json"
+    ],
+    "all": [
+     1772,
+     "B2F_S5_ESE240SL_trench_v08.json"
+    ]
+   },
+   "lift": [
+    3000,
+    "B2F_S6_kerb_v05_nose_t15.json"
+   ]
+  },
+  "rows": [
+   {
+    "item": "side rail 50x50x2 S235",
+    "level": "static",
+    "load_N": 931,
+    "M_Nm": 456,
+    "stress_MPa": 77.2,
+    "SF": 3.04,
+    "fix": null
+   },
+   {
+    "item": "side rail 50x50x2 S235",
+    "level": "carry",
+    "load_N": 2385,
+    "M_Nm": 1169,
+    "stress_MPa": 197.8,
+    "SF": 1.19,
+    "fix": "S235 50x50x4 (Z >= 9947 mm3)"
+   },
+   {
+    "item": "side rail 50x50x2 S235",
+    "level": "edge",
+    "load_N": 7306,
+    "M_Nm": 3580,
+    "stress_MPa": 605.9,
+    "SF": 0.39,
+    "fix": "S235 80x80x5 (Z >= 30467 mm3)"
+   },
+   {
+    "item": "side rail 50x50x2 S235",
+    "level": "rigid_step(info)",
+    "load_N": 22136,
+    "M_Nm": 10847,
+    "stress_MPa": 1835.8,
+    "SF": 0.13,
+    "fix": null
+   },
+   {
+    "item": "mast upright at foot 50x50x2 S235",
+    "level": "static",
+    "load_N": 1079,
+    "M_Nm": 230,
+    "stress_MPa": 38.8,
+    "SF": 6.05,
+    "fix": null
+   },
+   {
+    "item": "mast-foot bolts M10 8.8 (ASSUMED 2 per row, lever 60 mm)",
+    "level": "static",
+    "load_N": 1913,
+    "M_Nm": 230,
+    "stress_MPa": 33.0,
+    "SF": 19.41,
+    "fix": null
+   },
+   {
+    "item": "  bolt pull-through 2 mm RHS wall",
+    "level": "static",
+    "load_N": 1913,
+    "M_Nm": null,
+    "stress_MPa": null,
+    "SF": 8.91,
+    "fix": null
+   },
+   {
+    "item": "mast upright at foot 50x50x2 S235",
+    "level": "carry",
+    "load_N": 1873,
+    "M_Nm": 398,
+    "stress_MPa": 67.4,
+    "SF": 3.49,
+    "fix": null
+   },
+   {
+    "item": "mast-foot bolts M10 8.8 (ASSUMED 2 per row, lever 60 mm)",
+    "level": "carry",
+    "load_N": 3320,
+    "M_Nm": 398,
+    "stress_MPa": 57.2,
+    "SF": 11.18,
+    "fix": null
+   },
+   {
+    "item": "  bolt pull-through 2 mm RHS wall",
+    "level": "carry",
+    "load_N": 3320,
+    "M_Nm": null,
+    "stress_MPa": null,
+    "SF": 5.13,
+    "fix": null
+   },
+   {
+    "item": "mast upright at foot 50x50x2 S235",
+    "level": "comb_all",
+    "load_N": 9634,
+    "M_Nm": 2049,
+    "stress_MPa": 346.8,
+    "SF": 0.68,
+    "fix": "S235 80x40x4"
+   },
+   {
+    "item": "mast-foot bolts M10 8.8 (ASSUMED 2 per row, lever 60 mm)",
+    "level": "comb_all",
+    "load_N": 17076,
+    "M_Nm": 2049,
+    "stress_MPa": 294.4,
+    "SF": 2.17,
+    "fix": null
+   },
+   {
+    "item": "  bolt pull-through 2 mm RHS wall",
+    "level": "comb_all",
+    "load_N": 17076,
+    "M_Nm": null,
+    "stress_MPa": null,
+    "SF": 1.0,
+    "fix": "through-plates / crush tubes, or 5 mm foot plates welded to the upright"
+   },
+   {
+    "item": "comb plate (symmetric)",
+    "level": "carry",
+    "load_N": 1873,
+    "M_Nm": 93,
+    "stress_MPa": 5.5,
+    "SF": 64.52,
+    "fix": null
+   },
+   {
+    "item": "comb plate (one half at the roll stop)",
+    "level": "carry",
+    "load_N": 1873,
+    "M_Nm": 225,
+    "stress_MPa": 13.3,
+    "SF": 26.7,
+    "fix": null
+   },
+   {
+    "item": "comb pivot pin D16 8.8 (ASSUMED, 20 mm cantilever)",
+    "level": "carry",
+    "load_N": 1873,
+    "M_Nm": 37,
+    "stress_MPa": 93.1,
+    "SF": 6.87,
+    "fix": null
+   },
+   {
+    "item": "comb pivot pin D20 8.8 (ASSUMED, 20 mm cantilever)",
+    "level": "carry",
+    "load_N": 1873,
+    "M_Nm": 37,
+    "stress_MPa": 47.7,
+    "SF": 13.42,
+    "fix": null
+   },
+   {
+    "item": "comb plate (symmetric)",
+    "level": "comb_all",
+    "load_N": 9634,
+    "M_Nm": 478,
+    "stress_MPa": 28.3,
+    "SF": 12.54,
+    "fix": null
+   },
+   {
+    "item": "comb plate (one half at the roll stop)",
+    "level": "comb_all",
+    "load_N": 9634,
+    "M_Nm": 1156,
+    "stress_MPa": 68.4,
+    "SF": 5.19,
+    "fix": null
+   },
+   {
+    "item": "comb pivot pin D16 8.8 (ASSUMED, 20 mm cantilever)",
+    "level": "comb_all",
+    "load_N": 9634,
+    "M_Nm": 193,
+    "stress_MPa": 479.1,
+    "SF": 1.34,
+    "fix": "pin D20 8.8 or double shear"
+   },
+   {
+    "item": "comb pivot pin D20 8.8 (ASSUMED, 20 mm cantilever)",
+    "level": "comb_all",
+    "load_N": 9634,
+    "M_Nm": 193,
+    "stress_MPa": 245.3,
+    "SF": 2.61,
+    "fix": null
+   },
+   {
+    "item": "HGH15CA block, C0 23.47 kN (pitch 0.20 m ASSUMED)",
+    "level": "static",
+    "load_N": 1148,
+    "M_Nm": 459,
+    "stress_MPa": null,
+    "SF": 20.45,
+    "fix": null
+   },
+   {
+    "item": "  HGR15 rail screws M4 8.8 (2 per block)",
+    "level": "static",
+    "load_N": 574,
+    "M_Nm": null,
+    "stress_MPa": 65,
+    "SF": 9.79,
+    "fix": null
+   },
+   {
+    "item": "HGH15CA block, C0 23.47 kN (pitch 0.20 m ASSUMED)",
+    "level": "carry",
+    "load_N": 1992,
+    "M_Nm": 797,
+    "stress_MPa": null,
+    "SF": 11.78,
+    "fix": null
+   },
+   {
+    "item": "  HGR15 rail screws M4 8.8 (2 per block)",
+    "level": "carry",
+    "load_N": 996,
+    "M_Nm": null,
+    "stress_MPa": 113,
+    "SF": 5.64,
+    "fix": null
+   },
+   {
+    "item": "HGH15CA block, C0 23.47 kN (pitch 0.20 m ASSUMED)",
+    "level": "comb_all",
+    "load_N": 10245,
+    "M_Nm": 4098,
+    "stress_MPa": null,
+    "SF": 2.29,
+    "fix": null
+   },
+   {
+    "item": "  HGR15 rail screws M4 8.8 (2 per block)",
+    "level": "comb_all",
+    "load_N": 5123,
+    "M_Nm": null,
+    "stress_MPa": 583,
+    "SF": 1.1,
+    "fix": "M4 12.9 into a 10 mm backing flat (not the 2 mm wall), 60 mm pitch"
+   },
+   {
+    "item": "nose cross-member 50x50x2 bending (vertical 3 g, castor 0.15 m from the drop plate)",
+    "level": "static x3",
+    "load_N": 806,
+    "M_Nm": 121,
+    "stress_MPa": 20.5,
+    "SF": 11.49,
+    "fix": null
+   },
+   {
+    "item": "nose cross-member 50x50x2 torsion (kerb strike, 80 N m)",
+    "level": "kerb",
+    "load_N": 485,
+    "M_Nm": 119,
+    "stress_MPa": 12.9,
+    "SF": 10.52,
+    "fix": null
+   },
+   {
+    "item": "rail drop plate 6 x 100 S355 (ASSUMED size; kerb strike, 0.12 m drop)",
+    "level": "kerb",
+    "load_N": 485,
+    "M_Nm": 58,
+    "stress_MPa": 97.0,
+    "SF": 3.66,
+    "fix": null
+   },
+   {
+    "item": "(bin) receiver ledge, HDPE, gate-model section",
+    "level": "carry",
+    "load_N": 1873,
+    "M_Nm": null,
+    "stress_MPa": 7.9,
+    "SF": 2.86,
+    "fix": null
+   },
+   {
+    "item": "(bin) receiver ledge, HDPE, gate-model section",
+    "level": "comb_all",
+    "load_N": 9634,
+    "M_Nm": null,
+    "stress_MPa": 40.5,
+    "SF": 0.56,
+    "fix": "comb buffer to cut the peak; measure real receivers (B0b/B1)"
+   }
+  ],
+  "castor_static_max_sum_N": 537.1
+ }
+}

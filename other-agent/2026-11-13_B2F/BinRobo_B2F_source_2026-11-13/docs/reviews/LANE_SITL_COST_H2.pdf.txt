@@ -1,0 +1,191 @@
+[text of LANE_SITL_COST_H2.pdf, taken out of the PDF for the public repository; pictures and layout are not kept]
+
+ Rev H2 and B2-F: lane fit, carrier SITL, energy and cost (S8, S9, S13,
+                                  S14)
+
+
+                                               12 November 2026
+
+
+Summary
+
+                                                                               B2-F (B2 turned round, front-wall
+Test                                    Rev H2                                 dock)
+S8 lane fit, cmp/lanefit.py rules       9/12 (handle-to-lane drops -0.010      12/12, worst 0.032 m
+                                        m)
+S8 lane fit, b2/lanefit_b2.py rules     9/12 (same 3 drops, -0.010 m)          12/12, worst 0.175 m
+S8 with the G6 layout (handles to       6/6, worst 0.181 m                     6/6, worst 0.236 m
+road)
+S8 pads moved 0.25 m up-lane            no change at the binding step          not run
+Pivot diameter (limit 3.2 m)            2.22-2.33 m                            2.28-2.39 m
+S9 carrier SITL, 10 scenarios, strict   10/10                                  10/10
+Tightest truth hedge gap in SITL        0.050 m                                0.003 m
+(pad A)
+S13 three-bin evening at 0 C            131 / 127 Wh, within plan              132 / 128 Wh, within plan
+S13 motor current, 12 %, 110 kg bin     24.0 A (donor 25.4 A) of 30 A          12.3 A of 30 A
+S14 all-in cost (donor / new)           EUR 3,568 / 3,836                      EUR 3,819 / 4,087
+
+
+Bottom line. With the layout G6 uses (handles toward the road), both designs fit the lane, and both run all ten
+SITL scenarios to the strict thresholds declared before the runs. Rev H2 cannot do a handle-to-lane drop at pad A:
+it misses by 1 cm under both rule sets, and moving the pads 0.25 m up-lane does not help. In the lane fit B2-F has
+more margin. In SITL, though, its rails come within 3 mm of the truth hedge at pad A. Neither design keeps the
+0.124 m p95 localisation error clear at pad A in SITL. Pad A is the place to protect, by trimming the hedge or by
+setting the pad 0.1-0.2 m off the hedge. On cost Rev H2 is about EUR 250 cheaper on both bases. That saving is
+now on a like-for-like basis, after the B2 duplicate actuator was removed and four Rev H2 prices were checked.
+
+
+S8 Lane fit
+Both rule sets were used. The cmp rules are the original comparison rules. The b2 rules add a 0.40 m hedge guard,
+the B1 centre line and S-run empty pivots. The bin outline is upright, and a sequence passes only if every step has a
+margin above 0.
+
+                        Pivot D
+Design / rules          empty/loaded             Lane sweep min         Sequences              Worst sequence step
+Rev H2, cmp             2.33 / 2.33 m            0.180 m (s 417)        9/12                   -0.010 m, A empty
+                                                                                               pivot beyond placed
+                                                                                               bin (handle-to-lane)
+Rev H2, b2              2.22 / 2.22 m            0.328 m                9/12                   -0.010 m, same step
+Rev H2, b2, pads        2.22 / 2.22 m            0.328 m                9/12                   -0.010 m, same step
++0.25 m
+
+
+                                                           1
+                        Pivot D
+Design / rules          empty/loaded            Lane sweep min           Sequences               Worst sequence step
+B2-F, cmp               2.37 / 2.39 m           0.180 m                  12/12                   0.032 m, M empty
+                                                                                                 pivot
+                                                                                                 (handle-to-lane)
+B2-F, b2                2.28 / 2.39 m           0.325 m                  12/12                   0.175 m, A empty
+                                                                                                 pivot
+                                                                                                 (handle-to-lane)
+B2 reference (handle    2.28 / 2.39 m           0.325 m                  12/12                   0.104 m
+side)
+
+
+Against the 0.124 m p95. Rev H2 with the G6 layout keeps 0.181 m, so +0.057 m above p95. That margin is set
+by the withdraw at A and by the hedge at s 417 on the cmp rules. B2-F keeps 0.236 m with handles to the road and
+0.175 m with handles to the lane under the b2 rules. Its 0.032 m under the cmp rules is below p95.
+The 0.25 m up-lane pad move was tested on Rev H2 only. It changes nothing at the binding steps, which are
+limited by the road legal boundary and the hedge laterally. It does raise the pickup “pass the bin” margin from
+0.190 m to 0.318 m.
+
+
+S9 Carrier SITL (kinematic, Python; ArduPilot is not in the loop)
+The model is a new carrier model (work/h2lane/carrier_sitl.py) on the G6 site and G6 scenario geometry. The bin
+is rigid, and there is no hitch or relay flip. The robot follows pure pursuit on its estimated pose. The localisation
+error depends on the GPS zone: fix, float, or none with dead reckoning, plus lidar corridor aid. It includes the
+obstacle stop, a resume after 2 s clear, a by-pass of static objects, and the G4 rule for an alternate home slot. Fixed
+manoeuvre times come from revH2/sim/mission.py.
+Thresholds were declared before any scored run (PROGRESS 14:27):
+  • truth hedge or region margin below 0 fails;
+  • overlap with a car, branch or dock fails;
+  • a gap to a standing bin below 0.05 m fails;
+  • a person or dog gap below 0.30 m while moving fails;
+  • a placement more than 0.60 m or 20 degrees off fails;
+  • the outcome must equal the declared expectation.
+The code was frozen (md5 70751861) and every scored run was then repeated from scratch.
+
+                                                Rev H2 min / Wh /        B2-F min / Wh /
+Scenario                Expect                  hedge min                hedge min               G6 tug (ref)
+s1 one-bin drop, day    pass                    45.4 / 28.6 / 0.091      45.4 / 28.9 / 0.036     pass 46.7 / 39.2
+s1n one-bin drop,       pass                    45.4 / 41.5 / 0.091      45.4 / 41.7 / 0.036     pass 46.5 / 44.4
+night
+s3 night pickup (bin    pass                    45.4 / 40.5 / 0.237      45.4 / 40.8 / 0.348     pass 48.9 / 43.8
+30 deg off pad)
+s20a three-bin drop     pass                    135.4 / 131.1 / 0.091    135.4 / 132.0 / 0.036   pass, hedge -0.884
+s20b three-bin          pass                    134.9 / 126.7 / 0.050    134.8 / 127.5 / 0.003   alert (relay flip)
+pickup
+s24a car on home        pass                    3.7 / 3.0, alternate     3.7 / 3.1, same         alert
+slot                                            slot 1.6 m
+s7 RTK float / no fix   pass                    5.8 / 4.1, p95 lat       5.8 / 4.2               pass (file expects
+                                                0.156                                            alert)
+s7b long no-fix         alert                   hold at 2.5 m DR,        same                    alert
+                                                alert
+s5 person + dog         pass                    4 stops, gap 1.40 m      4 stops, 1.38 m         pass
+crossing
+
+
+                                                          2
+                                               Rev H2 min / Wh /       B2-F min / Wh /
+Scenario               Expect                  hedge min               hedge min              G6 tug (ref)
+s6 branch              pass                    by-pass, obstacle       0.82 m                 pass
+                                               0.77 m
+
+
+All 20 runs pass strict. The night one-bin drop uses 41.5 Wh against 45.7 Wh in mission.json, and the three-bin
+drop 131 Wh against 135 Wh, which agree within 3-10 %.
+During development the model found five real planning faults, now fixed (PROGRESS 14:25-15:45):
+  • a withdraw that was too short;
+  • no “pass the bin” step;
+  • a second pivot that was never checked;
+  • a reverse/forward sign error;
+  • obstacle detection that looked only at the end of the stopping distance.
+Every pre-freeze output is kept in sitl_out/dev/. Not covered: about 50 G6 hitch, relay and dock-fault scenarios,
+which do not apply to a carrier. Bin and rail contact on the approach also falls outside this model, because that is
+MuJoCo territory.
+
+
+S13 Energy and motor current
+The evening is three bins at 0.5 C at night, taken from the SITL energy with the mass scaled per pack. A route
+cross-check (EU-DEM 25 m) agrees within 7 % on driving energy.
+
+                       Usable at 0 C (plan
+Pack                   / max)                  Drop eve                Pickup eve             Both, no recharge
+Rev H2 new AGM         156 / 250 Wh            131.1                   126.7                  257.8, over max
+2x18 Ah
+Rev H2 donor AGM       277 / 444 Wh            137.7                   134.2                  271.9, OK
+(40 Ah at 80 %,
+assumed)
+B2-F LFP 20 Ah         360 / 406 Wh            132.0                   127.5                  259.5, OK
+
+
+The new-AGM Rev H2 needs a recharge between the drop evening and the pickup evening. B2-F’s LFP pack cannot
+be charged below 0 C without the dock pack heater.
+For current, on a steady 12 % climb at 0.5 m/s with a 110 kg bin, Rev H2 draws 24.0 A on the new drive and 25.4
+A on the donor drive, against the RoboClaw’s 30 A continuous rating. Accelerating at 0.25 m/sˆ2 that rises to 28-30
+A. Those figures use the conservative Kt of 1.0 N m/A implied by params.py. The back-EMF Kt gives 16-17 A.
+B2-F draws 12.3 A. The real lane’s steepest grade is 7.9 % over 10 m (EU-DEM). The 12 % case comes from SRTM
+and is the project’s design case. The donor motors are still unmeasured, so test B5 is needed.
+
+
+S14 Cost on one basis
+                                       Donor                                    New
+Rev H2 as regenerated (reproduced      3,468.94                                 3,736.95
+bit-identical)
+Rev H2 after 12 Nov price checks       3,567.94 (41 % checked)                  3,835.95 (53 %)
+B2 published                           3,991.74                                 4,259.83
+B2 with duplicate ACT-L8 removed       3,819.15 (23 %)                          4,087.24 (36 %)
+
+
+The B2 bill had the same EUR 164.37 actuator twice, as ACT-L8 and B-0, with the same URL. ACT-L8 was
+removed in b2/bom_b2.py; a backup and the old outputs are kept as .pre_S14..
+
+
+                                                          3
+The 12 Nov checks covered five Rev H2 lines:
+  • Changed: BMP-L8 went from 136.88 to 160.10 (Omron D4N-4120 at EUR 24.41 ex VAT, partao.com). H2-S1
+    steel went from 110 to 168.71 (50x50x3 SHS at GBP 54.33 ex VAT per 7.5 m, bmsteel.co.uk; delivery to Ireland
+    not included).
+  • Confirmed: G25 (SIM7600G-H HAT, berrybase.at) and HX-G6 (AMC 13-core at GBP 8.46 ex VAT per m,
+    12voltplanet.co.uk).
+  • Not verified: DNR-D8, the donor chair. Both DoneDeal listings had expired, and search excerpts show EUR
+    100-800.
+
+
+Open items
+  1. Pad A clearance: trim the hedge or move the pad laterally, then re-run S8 and S9.
+  2. Rev H2 handle-to-lane drop: either accept the G6 layout as a rule or change the footprint.
+  3. Measure the donor motor Kt (B5) before relying on 25 A of 30 A.
+  4. Verify the donor chair price.
+  5. Run ArduPilot SITL with the carrier model once a carrier is chosen.
+Files. docs/reviews/TESTLOG_H2_lane.md (rows S8-1..5, S9-01..20, S13-1..5, S14-1..3); docs/reviews/PROGRESS_H2_lane.md
+work/h2lane/ (res/, sitl_out/, carrier_sitl.py, s13_energy.py, s14_cost.py, price_checks.json); revG/sim/cg/b2/res/bom_b2.json.
+Process note. For short periods several duplicate chunk calls ran in parallel, which broke the one-heavy-process
+rule. The results were not affected (see the PROGRESS note at 17:35).
+
+
+
+
+                                                        4
+

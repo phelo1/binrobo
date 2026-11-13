@@ -1,0 +1,16 @@
+{'docked': True, 'reapp': False, 'dock_dy_mm': 9.9, 'lift_rise_N': 749, 'seat_switch': True, 'keeper_on_bar': True, 'keeper_deg': -13.7, 'claim': True, 'captured': True, 'wheel_clear_mm': 67.6, 'bin_tilt_abs': 2.7, 'seated': True, 'result': 'success'}
+pre-setdown t 44.4 7 carry q 0.169 F 750 nib [0.083, -0.012, 0.849] clear 0.068 tilt 2.7 seated True tugx 0.852 {'padg-binhull': 207, 'tooth-rim': 783, 'nib-rim': 297, 'bar-keeptip': 47, 'bar-keeptip2': 41}
+mon t 44.5 10 Set-down: c q 0.169 F 528 nib [0.083, -0.012, 0.849] clear 0.067 tilt 2.8 seated True tugx 0.852 {'padg-binhull': 244, 'tooth-rim': 664, 'nib-rim': 301, 'bar-keeptip': 45, 'bar-keeptip2': 43}
+mon t 45.0 10 Set-down: c q 0.159 F 548 nib [0.083, -0.012, 0.849] clear 0.058 tilt 2.6 seated True tugx 0.852 {'padg-binhull': 204, 'tooth-rim': 681, 'nib-rim': 252, 'bar-keeptip': 46, 'bar-keeptip2': 52}
+mon t 45.5 10 Set-down: c q 0.150 F 543 nib [0.083, -0.012, 0.849] clear 0.048 tilt 2.6 seated True tugx 0.852 {'padg-binhull': 212, 'tooth-rim': 676, 'nib-rim': 227, 'bar-keeptip': 50, 'bar-keeptip2': 56}
+mon t 46.0 10 Set-down: c q 0.140 F 538 nib [0.083, -0.012, 0.849] clear 0.038 tilt 2.5 seated True tugx 0.852 {'padg-binhull': 219, 'tooth-rim': 664, 'nib-rim': 192, 'bar-keeptip': 52, 'bar-keeptip2': 58}
+mon t 46.5 10 Set-down: c q 0.130 F 533 nib [0.083, -0.012, 0.849] clear 0.028 tilt 2.4 seated True tugx 0.852 {'padg-binhull': 226, 'tooth-rim': 650, 'nib-rim': 163, 'bar-keeptip': 52, 'bar-keeptip2': 58}
+mon t 47.0 10 Set-down: c q 0.120 F 529 nib [0.083, -0.012, 0.849] clear 0.018 tilt 2.3 seated True tugx 0.852 {'padg-binhull': 231, 'tooth-rim': 624, 'nib-rim': 101, 'bar-keeptip': 51, 'bar-keeptip2': 56}
+mon t 47.5 10 Set-down: c q 0.111 F 196 nib [0.083, -0.012, 0.848] clear 0.009 tilt 2.3 seated True tugx 0.852 {'padg-binhull': 231, 'tooth-rim': 294, 'nib-rim': 117, 'bar-keeptip': 52, 'bar-keeptip2': 57}
+mon t 48.0 11 Keeper open q 0.110 F 104 nib [0.083, -0.012, 0.848] clear 0.009 tilt 2.3 seated True tugx 0.852 {'padg-binhull': 227, 'tooth-rim': 72, 'nib-rim': 120}
+mon t 48.5 11 Keeper open q 0.104 F 4 nib [0.083, -0.012, 0.842] clear 0.009 tilt 2.3 seated True tugx 0.852 {'padg-binhull': 223, 'nib-rim': 118}
+mon t 49.0 11 Keeper open q 0.094 F 10 nib [0.083, -0.012, 0.832] clear 0.009 tilt 2.3 seated False tugx 0.852 {'padg-binhull': 209, 'nib-rim': 100}
+mon t 49.5 11 Keeper open q 0.084 F 42 nib [0.108, -0.012, 0.812] clear 0.016 tilt 3.9 seated False tugx 0.852 {}
+mon t 50.0 11 Keeper open q 0.075 F 46 nib [0.304, -0.012, 0.7] clear 0.067 tilt 17.1 seated False tugx 0.852 {}
+{'tilt_before_withdraw': 72.6, 'released': False, 'hold': True, 'why': 'bin not upright before withdraw'}
+end t 50.4 11 Keeper open q 0.075 F 46 nib [0.73, -0.012, -0.106] clear 0.161 tilt 72.6 seated False tugx 0.852 {}

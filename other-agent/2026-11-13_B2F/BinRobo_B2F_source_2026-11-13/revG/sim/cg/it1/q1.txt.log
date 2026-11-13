@@ -1,0 +1,36 @@
+
+=== 07:06:31 START python3 it1/runB_it1.py rel ESE240CL flat empty
+B_rel_ESE240CL_flat_empty {"test": "release", "bin": "ESE240CL", "case": "flat", "fill": "empty", "grab": "success", "release": {"wheel_clear_at_zc_mm": -0.0, "tilt_before_withdraw": 0.0, "wheel_clear_before_withdraw_mm": -0.0, "released": true, "nib_clear_m": 0.609, "sd": "SD2it1"}, "bin_tilt_abs_end": 0.0, "bin_speed_end": 0.0, "bin_stable": true, "ok": true, "verdict": "PASS", "roll": 0.001, "pitch": 0.007, "bin_ground": 274.239, "cmin": 0.0, "dmin": 0.0, "seated_all": false, "clear_min": -0.0, "cpu_s": 6}
+=== END rc=0 13s
+
+=== 07:06:45 START python3 it1/runB_it1.py rel ESE240CL up12 full
+B_rel_ESE240CL_up12_full {"test": "release", "bin": "ESE240CL", "case": "up12", "fill": "full", "grab": "success", "release": {"wheel_clear_at_zc_mm": -0.0, "tilt_before_withdraw": 0.0, "wheel_clear_before_withdraw_mm": -0.0, "released": true, "nib_clear_m": 0.605, "sd": "SD2it1"}, "bin_tilt_abs_end": 0.0, "bin_speed_end": 0.0, "bin_stable": true, "ok": true, "verdict": "PASS", "roll": 0.004, "pitch": 0.008, "bin_ground": 1221.554, "cmin": 0.0, "dmin": 0.0, "seated_all": false, "clear_min": -0.0, "cpu_s": 10}
+=== END rc=0 17s
+
+=== 07:07:02 START python3 it1/runB_it1.py rel ESE240CL up12 empty
+B_rel_ESE240CL_up12_empty {"test": "release", "bin": "ESE240CL", "case": "up12", "fill": "empty", "grab": "success", "release": {"wheel_clear_at_zc_mm": 0.0, "tilt_before_withdraw": 0.0, "wheel_clear_before_withdraw_mm": -0.0, "released": true, "nib_clear_m": 0.607, "sd": "SD2it1"}, "bin_tilt_abs_end": 0.0, "bin_speed_end": 0.0, "bin_stable": true, "ok": true, "verdict": "PASS", "roll": 0.003, "pitch": 0.008, "bin_ground": 274.596, "cmin": 0.0, "dmin": 0.0, "seated_all": false, "clear_min": -0.0, "cpu_s": 7}
+=== END rc=0 14s
+
+=== 07:07:16 START python3 it1/runB_it1.py rel ESE240CL dn12 full
+B_rel_ESE240CL_dn12_full {"test": "release", "bin": "ESE240CL", "case": "dn12", "fill": "full", "grab": "success", "release": {"wheel_clear_at_zc_mm": -0.0, "tilt_before_withdraw": 0.0, "wheel_clear_before_withdraw_mm": -0.0, "released": true, "nib_clear_m": 0.623, "sd": "SD2it1"}, "bin_tilt_abs_end": 0.0, "bin_speed_end": 0.0, "bin_stable": true, "ok": true, "verdict": "PASS", "roll": 0.005, "pitch": 0.01, "bin_ground": 1115.709, "cmin": 0.0, "dmin": 0.0, "seated_all": false, "clear_min": -0.0, "cpu_s": 10}
+=== END rc=0 16s
+
+=== 07:07:33 START python3 it1/runB_it1.py rel ESE240CL dn12 empty
+B_rel_ESE240CL_dn12_empty {"test": "release", "bin": "ESE240CL", "case": "dn12", "fill": "empty", "grab": "success", "release": {"wheel_clear_at_zc_mm": -0.0, "tilt_before_withdraw": 0.0, "wheel_clear_before_withdraw_mm": -0.0, "released": true, "nib_clear_m": 0.615, "sd": "SD2it1"}, "bin_tilt_abs_end": 0.0, "bin_speed_end": 0.0, "bin_stable": true, "ok": true, "verdict": "PASS", "roll": 0.003, "pitch": 0.01, "bin_ground": 218.095, "cmin": 0.0, "dmin": 0.0, "seated_all": false, "clear_min": -0.0, "cpu_s": 7}
+=== END rc=0 14s
+
+=== 07:07:47 START python3 it1/runB_it1.py rel ESE240SL250 flat full
+B_rel_ESE240SL250_flat_full {"test": "release", "bin": "ESE240SL250", "case": "flat", "fill": "full", "grab": "success", "release": {"wheel_clear_at_zc_mm": -0.1, "tilt_before_withdraw": 3.8, "wheel_clear_before_withdraw_mm": -0.0, "released": false, "hold": true, "why": "bin not upright before withdraw"}, "bin_tilt_abs_end": 3.8, "bin_speed_end": 0.0, "bin_stable": true, "ok": false, "verdict": "HOLD", "roll": 0.001, "pitch": 0.005, "bin_ground": 4005.641, "cmin": 0.0, "dmin": 222.991, "seated_all": false, "clear_min": -0.0, "cpu_s": 9}
+=== END rc=0 16s
+
+=== 07:08:03 START python3 it1/runB_it1.py rel ESE240SL250 flat empty
+B_rel_ESE240SL250_flat_empty {"test": "release", "bin": "ESE240SL250", "case": "flat", "fill": "empty", "grab": "success", "release": {"wheel_clear_at_zc_mm": 2.7, "tilt_before_withdraw": 3.8, "wheel_clear_before_withdraw_mm": -0.0, "released": false, "hold": true, "why": "bin not upright before withdraw"}, "bin_tilt_abs_end": 3.8, "bin_speed_end": 0.0, "bin_stable": true, "ok": false, "verdict": "HOLD", "roll": 0.001, "pitch": 0.006, "bin_ground": 156.7, "cmin": 0.0, "dmin": 0.0, "seated_all": false, "clear_min": -0.0, "cpu_s": 7}
+=== END rc=0 14s
+
+=== 07:08:17 START python3 it1/runB_it1.py rel ESE240SL250 up12 full
+B_rel_ESE240SL250_up12_full {"test": "release", "bin": "ESE240SL250", "case": "up12", "fill": "full", "grab": "success", "release": {"wheel_clear_at_zc_mm": -0.1, "tilt_before_withdraw": 3.8, "wheel_clear_before_withdraw_mm": -0.0, "released": false, "hold": true, "why": "bin not upright before withdraw"}, "bin_tilt_abs_end": 3.8, "bin_speed_end": 0.0, "bin_stable": true, "ok": false, "verdict": "HOLD", "roll": 0.004, "pitch": 0.008, "bin_ground": 1529.379, "cmin": 0.0, "dmin": 243.79, "seated_all": false, "clear_min": -0.0, "cpu_s": 10}
+=== END rc=0 17s
+
+=== 07:08:34 START python3 it1/runB_it1.py rel ESE240SL250 up12 empty
+B_rel_ESE240SL250_up12_empty {"test": "release", "bin": "ESE240SL250", "case": "up12", "fill": "empty", "grab": "success", "release": {"wheel_clear_at_zc_mm": 2.7, "tilt_before_withdraw": 3.8, "wheel_clear_before_withdraw_mm": -0.0, "released": false, "hold": true, "why": "bin not upright before withdraw"}, "bin_tilt_abs_end": 3.8, "bin_speed_end": 0.0, "bin_stable": true, "ok": false, "verdict": "HOLD", "roll": 0.002, "pitch": 0.004, "bin_ground": 140.046, "cmin": 0.0, "dmin": 0.0, "seated_all": false, "clear_min": -0.0, "cpu_s": 7}
+=== END rc=0 14s

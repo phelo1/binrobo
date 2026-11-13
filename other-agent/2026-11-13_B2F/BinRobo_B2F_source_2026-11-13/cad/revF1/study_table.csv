@@ -1,0 +1,16 @@
+variant,desc,tug_kg,tip_s,act_50ms_N,act_raw_N,act_raw_phase,tow_hook_p99,tow_caster_p10,tip_pitch,tip_caster_unl,c20_reached,c20_v,c20_caster_unl,c20_pitch90,c20_antitip90,c20_drive_p10,c20_torque,c20_hook,c20_hold,c15_v,c15_caster_unl,bump_ok,bump_hook_max,bump_hook_p99,bump_antitip,bump_pitch,bump_hgap,estop20_slide,estop20_stops,cam30_drift,cam30_creep,cam30_roll,turn_arc,turn_time,turn_hitch,spin_hitch
+F0,Rev F baseline (4 plates at +0.56 m),105.6,47.0,1015,2500,8 Arrived: braking,293,125,4.6,0.55,True,0.24,0.93,4.6,135,0,60.0,806,-0.012,0.44,0.73,False,1499,1035,1934,5.4,0.2,0.222,True,-0.262,0.066,0.0,91.0,10.2,17.4,68.4
+Bfwd,4 ballast plates moved forward to +0.70 m,105.6,47.0,1015,2500,8 Arrived: braking,253,142,4.6,0.52,True,0.32,0.85,4.6,0,0,60.0,703,-0.016,,,False,2657,1246,385,7.1,0.5,0.272,True,,,,,,,
+B3fwd,3 plates forward (-4.3 kg),101.3,47.0,1007,2500,8 Arrived: braking,283,120,4.6,0.56,False,0,0.94,4.6,132,0,60.0,830,-0.006,,,False,2225,1202,1699,6.1,0.3,0.19,True,,,,,,,
+B2fwd,"2 plates, forward (-8.7 kg)",96.9,47.0,997,2500,8 Arrived: braking,264,99,4.6,0.62,False,0,0.94,4.6,211,0,60.0,877,-0.03,,,False,1427,750,482,5.2,0.4,0.172,True,,,,,,,
+Light,no ballast + rear frame -20% (~-20 kg),85.7,47.0,988,2500,8 Arrived: braking,225,62,4.6,0.72,False,0,0.94,4.6,208,0,60.0,865,-0.024,,,False,1184,1013,848,4.8,0.1,0.157,True,,,,,,,
+D4,"chain 4WD (front wheels chained, fixed)",105.6,47.0,1070,2500,8 Arrived: braking,284,125,4.6,0.55,True,0.26,0.92,4.6,128,0,60.0,759,0.004,,,True,11600,1795,1672,4.8,0.5,0.089,True,,,,,,,
+Clong,casters 100 mm further forward,105.6,47.0,1014,2500,8 Arrived: braking,286,112,4.6,0.55,True,0.26,0.92,4.6,11,0,60.0,750,-0.014,,,True,7651,2119,0,5.7,0.4,0.22,True,,,,,,,
+AT100,anti-tip rollers raised 70 -> 100 mm clearance,105.6,47.0,1015,2500,8 Arrived: braking,293,125,5.9,0.6,False,0,0.94,5.9,0,0,60.0,852,-0.006,,,True,16327,2268,0,7.5,0.8,0.211,True,,,,,,,
+T40,tow tilt 40 deg,105.6,38.8,942,1813,8 Arrived: braking,234,110,4.6,0.67,False,0,0.93,4.6,189,0,60.0,823,-0.012,,,False,1402,1284,443,5.2,0.2,0.328,True,,,,,,,
+T35,tow tilt 35 deg,105.6,33.5,942,1526,8 Arrived: braking,204,108,4.6,0.78,False,0,0.9,4.6,188,0,60.0,642,-0.046,,,False,1334,1210,860,4.8,0.1,0.508,True,,,,,,,
+Hsoft,compliant hook mount (rubber bush),105.6,47.0,1003,2500,8 Arrived: braking,285,125,4.6,0.55,True,0.2,0.94,4.6,222,0,60.0,1031,-0.031,,,False,769,521,389,6.2,2.5,0.397,True,,,,,,,
+F1a,4 plates fwd + rollers 100 mm + medium hook bush + soft stop,105.6,47.0,957,1119,8 Arrived: soft stop,247,142,5.9,0.56,True,0.28,0.87,5.9,0,0,60.0,778,-0.03,,,True,5842,2346,0,6.8,2.3,0.317,True,,,,,,,
+F1b,3 plates fwd + rollers 100 mm + medium hook bush + soft stop,101.3,47.0,915,1111,8 Arrived: soft stop,285,120,5.9,0.61,False,0,0.94,5.9,0,0,60.0,902,-0.082,,,True,2060,1756,0,6.7,3.6,0.226,True,,,,,,,
+F1c,F1a + casters 100 mm forward,105.6,47.0,958,1117,8 Arrived: soft stop,304,127,5.9,0.55,True,0.29,0.86,5.9,0,0,60.0,758,-0.04,,,True,6080,2715,0,8.5,3.3,0.19,True,,,,,,,
+F1,"Rev F.1: 4 plates fwd (+0.70 m), anti-tip rollers 100 mm, casters +100 mm fwd, rubber hook bush, soft stop, closed-loop heading + 60 deg hitch cap",105.6,47.0,958,1117,8 Arrived: soft stop,304,127,5.9,0.55,True,0.29,0.86,5.9,0,0,60.0,758,-0.04,0.44,0.08,True,6080,2715,0,8.5,3.3,0.19,True,-0.266,0.052,0.0,91.0,10.2,17.4,54.0

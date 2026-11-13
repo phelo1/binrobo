@@ -1,0 +1,95 @@
+{
+ "basis": {
+  "parts": 3584.08,
+  "logistics": 312.0,
+  "contingency": 378.66,
+  "all_in": 4274.74
+ },
+ "added": [
+  {
+   "id": "B1-PADACT",
+   "item": "Pad retract actuator TRU Components TC24-50-1000 POT: 24 V, 50 mm, 1,000 N, IP65, pot feedback (Conrad 3743319)",
+   "eur": 81.99,
+   "status": "checked-11Nov",
+   "k": 0.05,
+   "url": "https://www.conrad.com/en/p/tru-components-linear-actuator-tc24-50-1000-pot-tc-14973276-stroke-length-50-mm-thrust-1000-n-24-v-dc-1-pc-s-3743319.html"
+  },
+  {
+   "id": "B1-SW",
+   "item": "Comb-plate contact switch + pad contact switch: 2 x IP67 roller-lever limit switch on 2 mm sprung travel",
+   "eur": 16.0,
+   "status": "est",
+   "k": 0.12,
+   "url": ""
+  },
+  {
+   "id": "B1-TOF2",
+   "item": "Second comb ToF (VL53L1X class) at the other tooth end for the dual-ToF yaw measurement (F6)",
+   "eur": 10.0,
+   "status": "est",
+   "k": 0.12,
+   "url": ""
+  },
+  {
+   "id": "B1-KEEP",
+   "item": "Keeper arm 68 -> 80 mm (same part, re-drawn) (D7)",
+   "eur": 0.0,
+   "status": "est",
+   "k": 0.12,
+   "url": ""
+  },
+  {
+   "id": "B1-COMB",
+   "item": "Comb tooth narrowed to 160 mm, nib shortened to 8 mm (same plate, re-drawn) (D6)",
+   "eur": 0.0,
+   "status": "est",
+   "k": 0.12,
+   "url": ""
+  },
+  {
+   "id": "B1-PADARM",
+   "item": "Pad arm moved from the body to the lift carriage (same steel, re-drawn bracket); sprung pad B-3 kept",
+   "eur": 0.0,
+   "status": "est",
+   "k": 0.12,
+   "url": ""
+  },
+  {
+   "id": "B1-BAL",
+   "item": "Ballast 10 kg steel plate moved from the side arms to the tray floor (same plate, new bolt holes)",
+   "eur": 0.0,
+   "status": "est",
+   "k": 0.12,
+   "url": ""
+  },
+  {
+   "id": "B1-ACT",
+   "item": "Lift actuator: 250 mm stroke specified (G8 B line already priced the FDI family at the 400 mm figure, upper bound) - no change",
+   "eur": 0.0,
+   "status": "checked-11Nov",
+   "k": 0.05,
+   "url": ""
+  }
+ ],
+ "logistics": [
+  {
+   "id": "B1-SHIP",
+   "item": "Conrad shipping (no other Conrad line in the G8 BOM)",
+   "eur": 19.99,
+   "k": 0.1
+  }
+ ],
+ "delta": {
+  "parts": 107.99,
+  "logistics": 19.99,
+  "contingency": 9.22,
+  "all_in": 137.2
+ },
+ "new_all_in": 4411.94,
+ "lane_prep": {
+  "item": "Rubber kerb ramp or cold-lay asphalt fillet 1:4 per surveyed full-width sharp step > 25 mm",
+  "eur_each": "20-40",
+  "count": "unknown until the lane survey",
+  "in_bom": false
+ }
+}

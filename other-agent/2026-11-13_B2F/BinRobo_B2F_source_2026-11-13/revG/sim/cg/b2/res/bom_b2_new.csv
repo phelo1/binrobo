@@ -1,0 +1,114 @@
+id,area,item,eur,price_status,status,origin,contingency_rate,source,url
+G1,Structure,"Steel stock RHS/angle/flat; only hook plates, pawls and hinge lugs laser-cut; zinc-rich paint",0.00,estimated,est,LOCAL,0.12,G8 Lean-N,
+G2,Structure,"Steel RHS/tube: spine, drop leg, wheel-stop bar, funnel arms, mast rails, sensor post",0.00,estimated,est,LOCAL,0.12,G8 Lean-N,
+G3,Structure,Deck and battery hatch lid: marine ply or HDPE offcut,0.00,estimated,est,LOCAL,0.12,G8 Lean-N,
+G4,Drive,"DELETED: donor powerchair (no repeatable drive spec, conflicts with the end-product rule) -> DRV-M7 / DRV-W7 / DRV-C7",0.00,estimated,est,LOCAL,0.12,G8 Lean-N,https://www.donedeal.ie/all?words=electric+wheelchair
+G5a,Drive,DELETED: casters from donor -> DRV-C7,0.00,estimated,est,LOCAL,0.12,G8 Lean-N,https://www.donedeal.ie/electric-scooters-for-sale/mobility-chair-scooter/39948191
+G5b,Drive,DELETED: tyre sealant (solid/foam-filled tyres on DRV-W7),0.00,estimated,est,IE,0.12,G8 Lean-N,https://www.buckleycycles.ie/products/slime-prevent-and-repair-flat-tyres-tube-sealant-473ml-16oz
+CTL-L8,Drive,"Motor controller Basicmicro RoboClaw 2x30A (IMC413): 2 x 30 A cont / 60 A peak, 6-34 V, dual quadrature encoder inputs, closed-loop speed PID, per-channel current limit, voltage clamp output, USB/TTL serial. Replaces Roboteq FDCG3260T (EUR 968).",148.44,verified,checked-11Nov,EU,0.05,G8 Lean-N,https://eu.robotshop.com/products/roboclaw-2x30a-6-34vdc-regenerative-motor-controller
+G9,Drive,Wheel encoders x2: magnetic AB-quadrature hall kit on each wheel/axle (AS5047P ABI board is the alternative),18.00,verified,checked-6Nov,CN,0.05,G8 Lean-N,https://www.icstation.com/motor-phase-incremental-hall-sensor-encoder-magnetic-coding-speed-module-control-p-16006.html
+K2,Hitch & grabber,"Second latch switch (both hooks must report latched), IP67",5.00,estimated,est,CN,0.12,G8 Lean-N,
+K5,Hitch & grabber,"Actuator current sensor INA219 (full/empty bin, stall, not-collected)",3.00,estimated,est,CN,0.12,G8 Lean-N,
+G12,Hitch & grabber,Anti-tip and stop rollers (scrap / cheap PU),15.00,estimated,est,LOCAL,0.15,G8 Lean-N,
+G13,Hitch & grabber,IP67 NC switches: seat + wheel-contact (bumper switches moved to BMP-G7 safety switches),10.00,estimated,est,CN,0.12,G8 Lean-N,
+G14,Power,"Battery 24 V 20 Ah = 512 Wh: 8 x EVE C40 40135 20 Ah LiFePO4 (D40.8 x 140, 374 g, M6, 60 A) in 4x2 block + Daly Smart 8S 60 A BMS with Bluetooth and LOW-TEMP CHARGE CUT-OFF, fishpaper/foam/16 mm2 leads/case (est EUR 20). Pack ~175 x 175 x 115 mm, ~3.8 kg; fits the 260 x 193 x 138 bay with the BMS on top. Fallback: LERIAN 24 V 20 Ah ready-made EUR 369 (200 x 168 x 78, 4.0 kg, 50 A BMS, akkushop-24.de)",139.75,verified,checked-10Nov,NL,0.05,G8 Lean-N,https://www.nkon.nl/en/eve-c40-40135-20ah-3-2v.html
+G15,Power,Battery hatch hasp + padlock (lockable box deleted by lean package R4; pack sits under the top hatch),7.00,estimated,est,IE,0.12,G8 Lean-N,
+G16,Power,Reverse-polarity protection: Anderson SB50 pair + 10 A charge fuse (G4) + Pololu 5388 20 A ideal diode on the unswitched control bus + 1N5408 in the KM coil feed (KM cannot close on a reversed pack) + SMDJ33A TVS on the drive bus,24.00,verified,checked-10Nov+est,CN,0.12,G8 Lean-N,https://www.pololu.com/product/5388
+S1,Safety & power dist.,Main fuse F1 50 A MIDI (slow) + holder at battery +,12.00,estimated,est,CN,0.12,G8 Lean-N,
+S2,Safety & power dist.,6-way blade fuse box with cover + ATO fuse set,9.00,estimated,est,CN,0.12,G8 Lean-N,
+S3,Safety & power dist.,Battery isolator key switch 100 A (red key),10.00,estimated,est,CN,0.12,G8 Lean-N,
+KM-L8,Safety & power dist.,"TWO main contactors in series KM1 + KM2: 100 A DC, 24 V coil (SW100 class), each coil switched by its own safety-relay output channel",57.32,estimated,excerpt,DE,0.08,G8 Lean-N,https://jazgot.at/sch%C3%BCtze/18407-antriebssch%C3%BCtz-dc-24v-100a-sw100.html
+SR-L8,Safety & power dist.,"Safety relay Pilz PNOZ X3 774310 USED, tested, 3-month warranty (24 VAC/DC; 3 NO safety + 1 NC aux + 1 semiconductor; 1/2-channel with cross-fault detection; feedback loop; manual/auto start; Cat 4 / PL e as new)",61.25,verified,checked-11Nov,DE,0.15,G8 Lean-N,https://cncbote.de/en/product/pilz-pnoz-x3-24vac-24vdc-3n-o-1n-c-1so-sicherheitsrelais/
+S6,Safety & power dist.,Relays: KC charge path (24 V 40 A + socket) + KR reset (5 V). Actuator reversing pair KA1/KA2 DELETED (actuator on Roboteq ch3),10.00,estimated,est,CN,0.12,G8 Lean-N,
+S7,Safety & power dist.,Dual hardware watchdog WD1/WD2: charge-pump missing-pulse detectors + 2 relays (parts),8.00,estimated,est,CN,0.12,G8 Lean-N,
+S8,Safety & power dist.,"E-stop station to ISO 13850: mushroom twist-release, 2 NC positive-opening (dual channel) + 1 NO aux, IP66/67, yellow housing",35.00,estimated,est,IE,0.12,G8 Lean-N,https://www.kempstoncontrols.ie/XALK178E/Schneider/sku/2457878
+S9,Safety & power dist.,4-ch 24 V opto input module (which device tripped) + coil TVS/zener clamps,7.00,estimated,est,CN,0.12,G8 Lean-N,
+S10,Safety & power dist.,Tamper siren 12-24 V piezo (motion-while-docked alert),4.00,estimated,est,CN,0.12,G8 Lean-N,
+S11,Safety & power dist.,Supercap / UPS HAT for clean Pi shutdown (F19),12.00,estimated,est,CN,0.12,G8 Lean-N,
+S13,Safety & power dist.,"Tilt switch in the NC stop loop (opens > 35 deg; ball type, no mercury), IP67 potted",3.00,estimated,est,CN,0.12,G8 Lean-N,
+S12,Safety & power dist.,"DS18B20 x2 (air temp for ice gate, pack/box temp)",3.00,estimated,est,CN,0.12,G8 Lean-N,
+G18,Navigation,Flight controller F405 (ArduPilot Rover),35.00,estimated,est,CN,0.12,G8 Lean-N,
+G19,Navigation,RTK base only: LC29HBS base core board + L1/L5 antenna + ESP32 NTRIP server (rover LC29HDA deleted -> HDG-G7 UM982),48.00,estimated,excerpt,CN,0.08,G8 Lean-N,https://www.aliexpress.com/item/1005008988611057.html
+G21,Sensing,"2D lidar: LDROBOT STL-06N (LDROBOT successor to LD06, 12 m, 5 kHz, 60 klx sunlight) with drip cap",50.00,estimated,excerpt,CN,0.08,G8 Lean-N,https://openelab.com/collections/brand-ldrobot
+G22,Sensing,EVA foam faces for the front bumper bar and rear corner bumpers (tape switches deleted),10.00,estimated,est,IE,0.12,G8 Lean-N,
+G23,Sensing,"Companion: Radxa Zero 3W 2 GB (RK3566, 65x30 mm, 0..50 C ambient, 0.9 W idle / 2.6 W load, H.264 1080p60 enc, USB3 host) + Al heatsink pad to pod lid; rear IP67 USB camera + 850 nm IR as G4. Fallback: Raspberry Pi 4 B 2 GB EUR 71.90 (berrybase, in stock)",100.60,estimated,excerpt,SI,0.08,G8 Lean-N,https://www.neven7.eu/p/radxa-zero-3w
+G23b,Sensing,microSD high-endurance 32 GB (Samsung PRO Endurance / SanDisk High Endurance class); clean shutdown kept by the S11 UPS HAT,15.00,estimated,est,EU,0.12,G8 Lean-N,
+G24,Sensing,Retro-reflective ArUco tags for 3 bins + dock tag ID 20,10.00,estimated,est,IE,0.12,G8 Lean-N,
+G25,Comms,"4G: Waveshare SIM7600G-H 4G HAT (B) (module -40..+85 C, board -30..+80 C, LTE Cat-4 + GNSS, 65x31 mm) on its own 5 V 3 A buck; 1 x outdoor IP67 LTE antenna on the post (est EUR 20); white aluminium sun shield over the pod, 1.5 mm 5754 white powder coat, added to the local RFQ (est EUR 25). Fallback: Quectel EC25-E mPCIe EUR 83.90 (neven7.eu, -30..+75 C on that page, -40..+85 C extended) + USB adapter",121.90,estimated,excerpt+est,DE,0.12,G8 Lean-N,https://www.welectron.com/Waveshare-19485-SIM7600G-H-4G-HAT-B
+G26,Enclosure & wiring,IP67 ABS electronics box + cable glands + Gore vent + silica gel,30.00,estimated,est,IE,0.12,G8 Lean-N,
+G27,Enclosure & wiring,"DC-DC 24->5 V 5 A, DS3231 RTC, wire 4 / 1.5 / 0.75 / 0.5 mm2 (screened), lugs, ferrules, heat-shrink",40.00,estimated,est,CN,0.12,G8 Lean-N,
+H1,Enclosure & wiring,"Harness connectors per G3 table: Deutsch DT 12-pin x3 (keys A/B/C), DT 8-pin, DT 6-pin, DT 4-pin x3 (keys A/B/C), M12 A-coded 8-pin and 12-pin IP67, contacts, boots, Superseal lamp pigtails, dielectric grease",60.00,estimated,est,CN,0.12,G8 Lean-N,
+F1,Enclosure & wiring,Fasteners A4-70 set as G3 + 50 pairs generic DIN 25201 A4 M8 wedge-lock washers (Nord-Lock pattern),53.00,estimated,est,CN,0.12,G8 Lean-N,
+L1,Lights,"Dipped headlights x2: Addview Hammer E60 (StVZO/ECE cut-off), bought at radversender.de",35.98,verified,checked-7Nov,DE,0.05,G8 Lean-N,https://www.radversender.de/fahrradteile/beleuchtungen/batteriebetrieben/frontscheinwerfer
+L2,Lights,Red position markers: 2 pairs LED Global LG124 (CAD has 3 markers: mast top + 2 rear),21.90,verified,checked-7Nov,DE,0.05,G8 Lean-N,https://led-auto.eu/en/products/led-button-marker-light-pair-red
+L3,Lights,"Amber beacon LAP MLPB050 (ECE R65 + R10, IP67, 10-30 V, 0.4 A, D120 x 40, 3-bolt PCD 110 mm). SN-59 plate REDRILLED to the LAP 3-hole PCD 110 (was M10 PCD 100) and CAD envelope changed from CA7045 D130 x 100 to D120 x 40 - confirm PCD on the LAP drawing before laser cutting.",21.91,estimated,excerpt,GB,0.08,G8 Lean-N,https://www.bowerspartsonline.co.uk/lighting/beacons-warning-lights/beacons/led-beacons/compact-12v24v-3-bolt-mounting-low-profile-led-flashing-amber-beacon-ece-r10r65
+L4,Lights,"Rear work lamp 3 W white (grab/release photo, crew visibility)",6.00,estimated,est,CN,0.12,G8 Lean-N,
+L5,Lights,"Conspicuity tape ECE 104 Class C 50 mm: red rear, yellow sides, white front + bin strips",30.00,verified,checked-6Nov,NL,0.05,G8 Lean-N,https://www.tapeconcurrent.nl/en/single-sided-tape/reflective-tape/
+L6,Lights,"8-ch logic-level MOSFET board (lights, siren, IR) + LDR dusk module",9.00,estimated,est,CN,0.12,G8 Lean-N,
+D1,Dock,"Dock frame: 2 posts + rubber-faced dummy-wheel blocks + nose block + tag-20 backboard from treated timber offcuts, bolted to the paving pad",15.00,estimated,est,LOCAL,0.15,G8 Lean-N,
+D2,Dock,PLATED WIPING CONTACTS: 2 x robot-mower charge contact plates (dock) + 2 sprung nickel-plated brass blocks in HDPE (tug) + tug ID network 2.0 kOhm 2 W + 1N4007,26.00,verified,checked-6Nov,DE,0.05,G8 Lean-N,https://shop.mower24.de/en/contacts-charging-station-1p.html
+D3,Dock,"Dock controller: ESP32-C3 + INA219 + 10 A relay + reed switch & magnet + 2.2 kOhm sense source, powered from the charger via a buck (USB PSU deleted)",15.00,estimated,est,CN,0.12,G8 Lean-N,
+D4,Dock,"Tug charge path: 15 A ideal-diode module, INA226, pack NTC (charge only >= +3 C)",9.00,estimated,est,CN,0.12,G8 Lean-N,
+D5,Dock,"IP65 ABS enclosure ~255x200x120 for charger + dock controller, glands",25.00,verified,checked-6Nov,IE,0.05,G8 Lean-N,https://gleanntronics.ie/en/products/f-series-wall-mounted-abs-waterproof-ip65-electrical-junction-box-grey-4543.html
+D6,Dock,"Charger 29.2 V 5 A for 8S LiFePO4, CC/CV auto-stop (set/limit to 28.4 V if adjustable)",29.00,verified,checked-6Nov,FR,0.05,G8 Lean-N,https://clavipro.com/product/chargeur-de-batterie-lifepo4-29-2v-5a-avec-pinces
+D7,Dock,Lean-to rain roof: scrap sheet (all-new = polycarbonate door canopy),10.00,estimated,est,IE,0.12,G8 Lean-N,https://www.aosom.ie/item/outsunny-front-door-canopy-outdoor-awning-rain-shelter-110-x-60cm-grey~289OLF0O22000.html
+D8,Dock,Cable lock 1.5-2 m to a welded eye on the dock frame (tug theft),15.00,estimated,est,IE,0.12,G8 Lean-N,
+D9,Dock,Dock fixings: concrete anchors for the frame,10.00,estimated,est,IE,0.12,G8 Lean-N,
+D10,Dock,"Dock DC wiring: 2.5 mm2 H07RN-F 2-core ~5 m, 7.5 A inline fuse FD1, ferrules, glands",14.00,estimated,est,IE,0.12,G8 Lean-N,
+D11,Dock,RCD-protected IP66 2-gang outdoor socket (budget 0 = an outdoor RCD socket already exists),25.00,verified,checked-6Nov,IE,0.05,G8 Lean-N,https://www.screwfix.ie/p/british-general-ip66-13a-2-gang-sp-weatherproof-outdoor-switched-passive-rcd-socket/91095
+GR-07,Hitch & grabber,"Cam gearmotor 5840-31ZY 24 V ~10 rpm 100 kg.cm worm, self-locking + 2 limit switches + SECOND CAM LOBE for the pawl lift (laser, in FAB-L8)",14.00,estimated,excerpt,CN,0.08,G8 Lean-N,https://www.aliexpress.com/w/wholesale-12v-dc-motor-30-rpm.html
+BT-01,Structure,Ballast: 2 x 10 L HDPE jerricans (World of Bottles EUR 7.99 each) + ~12 kg dry kiln sand (~EUR 6),21.98,verified,checked-7Nov,IE,0.05,G8 Lean-N,https://www.world-of-bottles.ie/jerry-cans
+CADDY,Operations,Request a 140 L brown wheelie bin from [waste collector] instead of the 25 L food caddy (no cradle),0.00,estimated,est,IE,0.12,G8 Lean-N,
+RD-G6,Sensing,"Radar x2 HLK-LD2451 + CP2105 + ASA radomes; ADDED: factory-soldered sealed pigtail (no 2.54 mm header), acrylic conformal coat, 3 mm drain hole + IP67 M8 4-pin connector per radar (est EUR 15)",47.78,estimated,excerpt+est,DE,0.12,G8 Lean-N,https://paradisetronic.com/en/products/ld2451-24ghz-vehicle-detection-radar-zur-fahrzeugerfassung-und-geschwindigkeitsmessung-bis-100m-reichweite-fmcw-uart-gpio-integriertes-bluetooth-setup
+AU-L8,Comms,Two-way audio: Eagle P630TA IP65 8 ohm 15 W horn + MAX98357A amp + Gore vent + pod USB hub; MIC = USB mic at the mast top on a 3 m cable straight to the pod hub (HUB2 deleted),75.20,verified,checked-11Nov,NL,0.05,G8 Lean-N,https://www.eijlander.nl/hoorn-luidsprekers.html
+HX-G6,Enclosure & wiring,"Harness G6: 13-core ISO 11446 3.5 m (EUR 11.97/m) + 7-core 12S 2.9 m (EUR 4.33/m) + LiYCY screened 2.4 m + 7 M4 busbars + RJ-01/MJ-01 upsized to 160x90x60 + extra DTP/DT housings, size-12/14 AWG contacts + 6 mm2 silicone for W104-W106 + 24->5 V 3 A modem buck; less the G5 TPU/H07RN-F/single wires it replaces",106.45,estimated,excerpt+est,GB,0.12,G8 Lean-N,https://www.12voltplanet.co.uk/13-core-thin-wall-auto-cable-8-x-21amp-5-x-29-amp.html
+DRV-M8,Drive,"Drive gearmotor PAIR peiscooter PEWM82M-320W: brushed 24 V, 320 W each, 32:1 right-angle wheelchair gearbox, 4,600 rpm, electromagnetic spring brake + hand release, left + right",315.22,verified,checked-11Nov,CN,0.05,G8 Lean-N,https://www.peipeiscooter.com/categories/100020
+DRV-W8,Drive,"Drive wheels + 3.5:1 chain stage, per side: 330 mm (13 in) solid PU wheel on 2 bearings and a dead stub axle (25 mm), 42T 08B plate sprocket bolted to the hub, 12T 08B sprocket bored/keyed to the gearmotor shaft, 08B chain ~1.2 m, slotted motor plate for tension, chain guard (laser part in FAB-L8)",130.00,estimated,est,IE,0.12,G8 Lean-N,
+DRV-C7,Drive,"Swivel casters x2: 200 x 50 mm solid PU, ball-bearing fork, plate mount",60.00,estimated,est,IE,0.12,G8 Lean-N,
+PWR-G8,Enclosure & wiring,"Power path: 10 mm2 B+ trunk ISO-KM1-KM2-F1-controller, 6 mm2 motor runs, Anderson SB50 motor connectors, M8 lugs, brake leads on DT04-2P",30.00,estimated,est,CN,0.12,G8 Lean-N,
+SLS-L8,Safety & power dist.,"Dual-channel speed / standstill monitor + contactor EDM, own build: 2 x RP2040-Zero (one per channel, separate 5 V buck each), 2 x 2-pole relays (one pole in the PNOZ input loop, one read back), voltage-sense dividers on KM1/KM2 outputs, perfboard + IP65 box",30.00,estimated,est,CN,0.12,G8 Lean-N,
+SPD-S8,Safety & power dist.,Speed sensors channel A: 2 x M12 inductive PNP IP67 (LJ12A3 class) on 12-tooth target rings (rings in FAB-L8),10.00,estimated,est,CN,0.12,G8 Lean-N,
+BMP-L8,Safety & power dist.,"Safety bumpers: front bar + 2 rear corner bumpers on sprung guides, actuated by 4 x Omron D4N-4120 positive-opening safety limit switches (1NC/1NO, direct opening per IEC 60947-5-1 Annex K, IP67), NC contacts wired 2-channel into the PNOZ",136.88,estimated,excerpt,DE,0.08,G8 Lean-N,https://fluidics-equipment.com/d/FL-D4N4120.html
+RST-G7,Safety & power dist.,"Monitored reset: IP67 blue illuminated reset button on the tug + reset relay for the supervised remote reset (Pi output, camera check first)",15.00,estimated,est,IE,0.12,G8 Lean-N,
+RTK-L8,Navigation,"RTK rover single antenna: Quectel LC29HDA core board + L1/L5 active antenna (rover of the G4 LC29H pair). Heading from the EKF GSF yaw (moving), wheel odometry + gyro (pivot / standstill), and an absolute reset from the dock ArUco tag 20 at each departure",33.00,estimated,excerpt,CN,0.08,G8 Lean-N,https://www.aliexpress.com/item/1005008988611057.html
+GR-08S,Hitch & grabber,"DELETED: pawl-lift solenoid -> 2nd lobe on the GR-07 cam lifts the ratchet pawl (review M10 option, CD4)",0.00,estimated,est,CN,0.12,G8 Lean-N,
+HTR-L8,Power,"Pack heater: 2 x 24 V 15-30 W silicone pads with 3M adhesive (PWM to 15 W mean from the dock controller), KSD9700 40 C NC cutout, logic MOSFET",24.00,estimated,excerpt,CN,0.08,G8 Lean-N,https://www.jsr2.com/product/2x-7-51-x-178mm-120v-25w-w-3m-w-plug-ithermal-silicone-flexible-heater-pad
+PC-G7,Enclosure & wiring,"Pod <-> PB-01 control loom: 6 x 0.5 mm2 LiYCY (KC coil +/-, INA226 SDA/SCL/+3V3/0V) 0.6 m + DT06-6S/DT04-6P pair",12.00,estimated,est,CN,0.12,G8 Lean-N,
+FL1-G7,Enclosure & wiring,W109 protection: FL1 10 A moved to ISO-2 (origin of the 1.5 mm2 run) in a sealed inline ATO holder,5.00,estimated,est,CN,0.12,G8 Lean-N,
+B-0,Bin handling (concept B),"ACT-B (FDI 24 V 300 mm 4 kN lifter, priced as the 400 mm unit - upper bound)",164.37,verified,checked-11Nov,LT,0.05,G8 concept B,https://www.anodas.lt/en/fdi-linear-actuator-24v-400mm-6mm-s
+B-1,Bin handling (concept B),Lifter: 2 x 1 m linear rail + 4 carriages,90.00,estimated,est,LOCAL,0.15,G8 concept B,
+B-2,Bin handling (concept B),Comb tooth with 12 mm nib + keeper fingers (GR-07 reused as keeper drive),20.00,estimated,est,LOCAL,0.15,G8 concept B,
+B-3,Bin handling (concept B),Sprung lower pad,35.00,estimated,est,LOCAL,0.15,G8 concept B,
+B-4,Bin handling (concept B),Lip-root ToF sensor + nib seat switch,15.00,estimated,est,LOCAL,0.15,G8 concept B,
+B-6,Bin handling (concept B),Ballast: steel plate in the arms instead of BT-01 cans + sand,-7.00,estimated,est,LOCAL,0.15,G8 concept B,
+B1-PADLS,Bin handling (B1 it1),Pad position switch at 40 mm extension (DSZY4-STD has end-of-stroke limits only; IP67 roller-lever switch),8.00,estimated,est,CN,0.12,B1 iteration 1,
+B1-SW,Bin handling (B1 it1),Comb-plate contact switch + pad contact switch: 2 x IP67 roller-lever limit switch on 2 mm sprung travel,16.00,estimated,est,CN,0.12,B1 iteration 1,
+B1-TOF2,Bin handling (B1 it1),Second comb ToF (VL53L1X class) at the other tooth end for the dual-ToF yaw measurement (F6),10.00,estimated,est,CN,0.12,B1 iteration 1,
+B1-KEEP,Bin handling (B1 it1),"Keeper arm 68 -> 80 mm (same part, re-drawn) (D7)",0.00,estimated,est,LOCAL,0.12,B1 iteration 1,
+B1-COMB,Bin handling (B1 it1),"Comb tooth narrowed to 160 mm, nib shortened to 8 mm (same plate, re-drawn) (D6)",0.00,estimated,est,LOCAL,0.12,B1 iteration 1,
+B1-PADARM,Bin handling (B1 it1),"Pad arm moved from the body to the lift carriage (same steel, re-drawn bracket); sprung pad B-3 kept",0.00,estimated,est,LOCAL,0.12,B1 iteration 1,
+B1-BAL,Bin handling (B1 it1),"Ballast 10 kg steel plate moved from the side arms to the tray floor (same plate, new bolt holes)",0.00,estimated,est,LOCAL,0.12,B1 iteration 1,
+B1-ACT,Bin handling (B1 it1),"Lift actuator: 250 mm stroke specified (G8 B line already priced the FDI family at the 400 mm figure, upper bound) - no change",0.00,verified,checked-11Nov,CN,0.05,B1 iteration 1,
+B2-PADACT,Bin handling (B2),"Pad toggle actuator TRU COMPONENTS TC24-50-1000 (TC-13492788): 24 V, 50 mm, 1,000 N, 7 mm/s, IP65, L 155 mm, mounted upright on the pad arm; drives the knee toggle (sim need 683 N worst case, ESE 240 SL 250 mm wheels full)",59.99,verified,checked-11Nov,DE,0.05,B2,https://www.conrad.com/en/p/tru-components-linear-actuator-tc24-50-1000p-tc-13492784-stroke-length-50-mm-thrust-1000-n-24-v-dc-1-pc-s-3373197.html
+B2-TOGGLE,Bin handling (B2),"Knee toggle: 2 x 60 mm links 6 mm S355 (laser, in FAB-B2), 3 x D10 shoulder pins + bronze bushes, over-centre stop block; B1-PADLS switch reused as the lock switch",12.00,estimated,est,LOCAL,0.15,B2,
+B2-COMB,Bin handling (B2),"640 mm self-aligning comb (yaw +/-4 deg, roll +/-3 deg): 6 mm S355 comb plate (laser) + pivot block, 2 bushes, 2 centring springs, end stops; replaces the 160 mm tooth",45.00,estimated,est,LOCAL,0.15,B2,
+B2-GAP,Sensing (B2),"Leg-tip gap sensors: 2 x VL53L1X ToF boards, potted, on the flare tips (lateral offset in the last 0.5 m of the approach)",12.00,estimated,est,CN,0.12,B2,
+FAB-B2,Structure,"B2 frame, one tube size: 50x50x2 S235 RHS ~7.5 m (2 rails, 2 cross-members, 2 mast uprights, top tie) saw-cut and drilled by Brian, bolted through ~16 laser-cut 4-8 mm S355 plates (drive/motor plates, castor plates, mast gussets, actuator lugs, comb, carriage cheeks, pad arm, toggle links, battery tray); 10/6 mm HDPE bay floor and covers; Zinga cold galvanising. Priced as G8 FAB-D8 (same own-build method and plate count)",354.12,estimated,est,LOCAL,0.15,B2,revG/bom_revG8_donor.csv FAB-D8
+SHIP-PEI,Logistics,shipping/duty/collection,110.00,estimated,est,,0.10,G8 logistics,
+SHIP-CN,Logistics,shipping/duty/collection,8.00,estimated,est,,0.10,G8 logistics,
+DUTY,Logistics,shipping/duty/collection,63.00,estimated,est,,0.10,G8 logistics,
+SHIP-DE,Logistics,shipping/duty/collection,18.00,estimated,est,,0.10,G8 logistics,
+SHIP-EU,Logistics,shipping/duty/collection,15.00,estimated,est,,0.10,G8 logistics,
+SHIP-LT,Logistics,shipping/duty/collection,20.00,estimated,est,,0.10,G8 logistics,
+SHIP-NL,Logistics,shipping/duty/collection,15.00,estimated,est,,0.10,G8 logistics,
+SHIP-EU2,Logistics,shipping/duty/collection,15.00,estimated,est,,0.10,G8 logistics,
+SHIP-FR,Logistics,shipping/duty/collection,10.00,estimated,est,,0.10,G8 logistics,
+SHIP-GB,Logistics,shipping/duty/collection,15.00,estimated,est,,0.10,G8 logistics,
+SHIP-IE,Logistics,shipping/duty/collection,8.00,estimated,est,,0.10,G8 logistics,
+SHIP-LOCAL,Logistics,shipping/duty/collection,15.00,estimated,est,,0.10,G8 logistics,
+SHIP-CONRAD,Logistics,shipping/duty/collection,19.99,estimated,est,,0.10,G8 logistics,
+TOTAL,,parts,3394.04
+TOTAL,,logistics,331.99
+TOTAL,,contingency,361.21
+TOTAL,,ALL-IN,4087.24
+GAP,,"to EUR 2,000",2087.24

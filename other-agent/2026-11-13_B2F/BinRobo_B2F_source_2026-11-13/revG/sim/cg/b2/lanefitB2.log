@@ -1,0 +1,1 @@
+B2 pivot D 2.28 2.39 sweep min 0.325 {'down loaded': (np.float64(0.378), np.float64(500.6)), 'down empty': (np.float64(0.378), np.float64(500.6)), 'up loaded': (np.float64(0.325), np.float64(417.0)), 'up empty': (np.float64(0.325), np.float64(417.0))} seq min 0.104 all ok True

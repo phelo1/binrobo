@@ -1,0 +1,160 @@
+{
+ "G6_B": {
+  "tug_kg": 93.5,
+  "tug_cg": [
+   0.377,
+   0.305
+  ],
+  "cases": [
+   {
+    "bin_kg": 110,
+    "M": 203.5,
+    "cg_x": 0.153,
+    "cg_z": 0.442,
+    "tip_lateral_deg": 40.4,
+    "tip_forward_over_castors_deg": 59.4,
+    "castor_liftoff_about_drive_axle_deg": 19.1,
+    "rear_tip_on_antitip_deg": 49.2,
+    "drive_N_flat": 1657,
+    "castor_N_flat": 340,
+    "drive_N_12up": 1528,
+    "mu_req_12": 0.195,
+    "torque_per_wheel_12_Nm": 24.6,
+    "torque_x1p25": 30.7
+   },
+   {
+    "bin_kg": 60,
+    "M": 153.5,
+    "cg_x": 0.219,
+    "cg_z": 0.411,
+    "tip_lateral_deg": 41.8,
+    "tip_forward_over_castors_deg": 58.9,
+    "castor_liftoff_about_drive_axle_deg": 28.0,
+    "rear_tip_on_antitip_deg": 54.6,
+    "drive_N_flat": 1140,
+    "castor_N_flat": 366,
+    "drive_N_12up": 1050,
+    "mu_req_12": 0.228,
+    "torque_per_wheel_12_Nm": 19.8,
+    "torque_x1p25": 24.7
+   },
+   {
+    "bin_kg": 0,
+    "M": 93.5,
+    "cg_x": 0.377,
+    "cg_z": 0.305,
+    "tip_lateral_deg": 48.6,
+    "tip_forward_over_castors_deg": 59.7,
+    "castor_liftoff_about_drive_axle_deg": 51.0,
+    "rear_tip_on_antitip_deg": 67.5,
+    "drive_N_flat": 533,
+    "castor_N_flat": 385,
+    "drive_N_12up": 492,
+    "mu_req_12": 0.344,
+    "torque_per_wheel_12_Nm": 14.0,
+    "torque_x1p25": 17.5
+   }
+  ]
+ },
+ "ITER1_B1": {
+  "tug_kg": 94.1,
+  "tug_cg": [
+   0.462,
+   0.296
+  ],
+  "cases": [
+   {
+    "bin_kg": 110,
+    "M": 204.1,
+    "cg_x": 0.193,
+    "cg_z": 0.451,
+    "tip_lateral_deg": 39.4,
+    "tip_forward_over_castors_deg": 57.4,
+    "castor_liftoff_about_drive_axle_deg": 23.2,
+    "rear_tip_on_antitip_deg": 50.8,
+    "drive_N_flat": 1573,
+    "castor_N_flat": 430,
+    "drive_N_12up": 1442,
+    "mu_req_12": 0.207,
+    "torque_per_wheel_12_Nm": 24.6,
+    "torque_x1p25": 30.8
+   },
+   {
+    "bin_kg": 60,
+    "M": 154.1,
+    "cg_x": 0.271,
+    "cg_z": 0.414,
+    "tip_lateral_deg": 41.0,
+    "tip_forward_over_castors_deg": 56.6,
+    "castor_liftoff_about_drive_axle_deg": 33.2,
+    "rear_tip_on_antitip_deg": 56.7,
+    "drive_N_flat": 1056,
+    "castor_N_flat": 456,
+    "drive_N_12up": 966,
+    "mu_req_12": 0.249,
+    "torque_per_wheel_12_Nm": 19.8,
+    "torque_x1p25": 24.8
+   },
+   {
+    "bin_kg": 0,
+    "M": 94.1,
+    "cg_x": 0.462,
+    "cg_z": 0.296,
+    "tip_lateral_deg": 48.6,
+    "tip_forward_over_castors_deg": 55.9,
+    "castor_liftoff_about_drive_axle_deg": 57.4,
+    "rear_tip_on_antitip_deg": 70.2,
+    "drive_N_flat": 449,
+    "castor_N_flat": 474,
+    "drive_N_12up": 409,
+    "mu_req_12": 0.415,
+    "torque_per_wheel_12_Nm": 14.0,
+    "torque_x1p25": 17.5
+   }
+  ]
+ },
+ "ballast_sweep_110kg": [
+  {
+   "ballast_x": 0.05,
+   "tip_forward_over_castors_deg": 58.8,
+   "castor_liftoff_about_drive_axle_deg": 18.8,
+   "drive_N_12up": 1528,
+   "mu_req_12": 0.195
+  },
+  {
+   "ballast_x": 0.25,
+   "tip_forward_over_castors_deg": 58.5,
+   "castor_liftoff_about_drive_axle_deg": 19.9,
+   "drive_N_12up": 1507,
+   "mu_req_12": 0.198
+  },
+  {
+   "ballast_x": 0.45,
+   "tip_forward_over_castors_deg": 58.2,
+   "castor_liftoff_about_drive_axle_deg": 21.0,
+   "drive_N_12up": 1485,
+   "mu_req_12": 0.201
+  },
+  {
+   "ballast_x": 0.65,
+   "tip_forward_over_castors_deg": 57.8,
+   "castor_liftoff_about_drive_axle_deg": 22.1,
+   "drive_N_12up": 1463,
+   "mu_req_12": 0.204
+  },
+  {
+   "ballast_x": 0.85,
+   "tip_forward_over_castors_deg": 57.4,
+   "castor_liftoff_about_drive_axle_deg": 23.2,
+   "drive_N_12up": 1442,
+   "mu_req_12": 0.207
+  },
+  {
+   "ballast_x": 1.0,
+   "tip_forward_over_castors_deg": 57.2,
+   "castor_liftoff_about_drive_axle_deg": 24.0,
+   "drive_N_12up": 1426,
+   "mu_req_12": 0.209
+  }
+ ]
+}

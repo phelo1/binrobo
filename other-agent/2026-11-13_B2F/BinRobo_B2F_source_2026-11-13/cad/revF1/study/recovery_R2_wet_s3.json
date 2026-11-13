@@ -1,0 +1,66 @@
+{
+ "name": "R2",
+ "desc": "Empty bin SIDEWAYS, handle side blocked by a wall/gatepost: orbit-nudge 90 deg, dock, grab",
+ "bin_kg": 12.3,
+ "rotated_deg": 86.3,
+ "bin_heading_after": -2.5,
+ "t_nudge_done": 30.5,
+ "dock_attempts": 2,
+ "dock_lat_mm": 2,
+ "dock_head_deg": 0.9,
+ "grab_ok": true,
+ "success": true,
+ "sim_time_s": 167.0,
+ "events": [
+  [
+   1.5,
+   "perceived bin at (0.03,-0.04) heading -89 deg, upright=True -> handle side AWAY / blocked"
+  ],
+  [
+   28.23,
+   "nudge (wheels) rotated bin 86 deg, axle moved 0.54 m"
+  ],
+  [
+   56.95,
+   "pre-contact alignment: lateral -182 mm, heading -14.3 deg"
+  ],
+  [
+   56.95,
+   "wheel-stop contact"
+  ],
+  [
+   66.79,
+   "hook reached handle, offset mm [ 52.   -3.5 -29.1]"
+  ],
+  [
+   66.79,
+   "LATCH FAILED"
+  ],
+  [
+   104.81,
+   "pre-contact alignment: lateral 2 mm, heading 0.9 deg"
+  ],
+  [
+   105.18,
+   "wheel-stop contact"
+  ],
+  [
+   111.12,
+   "hook reached handle, offset mm [ 2. -8. -3.]"
+  ],
+  [
+   111.72,
+   "latched: float spring seated handle (residual 2 mm)"
+  ],
+  [
+   159.85,
+   "tipped to 48.0 deg, mast 70.6 deg"
+  ]
+ ],
+ "cpu_s": 32,
+ "bumper_peak_N": 140,
+ "hook_peak_N": 394,
+ "bin_tipped": false,
+ "mu": 0.45,
+ "seed": 3
+}

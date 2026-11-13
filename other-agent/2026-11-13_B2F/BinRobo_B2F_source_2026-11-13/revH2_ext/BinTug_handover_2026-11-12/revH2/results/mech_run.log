@@ -1,0 +1,13 @@
+static loads
+Rev G reference
+obstacles
+  steps unladen
+  steps empty 240 L
+  steps full 240 L (110 kg)
+  steps full 140 L (70 kg)
+wet leaves
+grades
+  grades unladen
+  grades empty 240 L
+  grades full 240 L (110 kg)
+wrote mech.json in 197 s

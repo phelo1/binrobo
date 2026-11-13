@@ -1,0 +1,91 @@
+{
+ "robot_no_bin": [
+  [
+   -397.0,
+   -465.0,
+   0.0
+  ],
+  [
+   1106.0,
+   465.0,
+   1450.0
+  ]
+ ],
+ "robot_no_bin_excl_beacon_gnss": [
+  [
+   -397.0,
+   -465.0,
+   0.0
+  ],
+  [
+   1106.0,
+   465.0,
+   1395.0
+  ]
+ ],
+ "carrying": [
+  [
+   -446.0,
+   -465.0,
+   0.0
+  ],
+  [
+   1106.0,
+   465.0,
+   1450.0
+  ]
+ ],
+ "bin_only_carrying": [
+  [
+   -446.0,
+   -279.0,
+   68.0
+  ],
+  [
+   302.0,
+   320.0,
+   1143.0
+  ]
+ ],
+ "comb_nib_top_range_mm": [
+  855,
+  1105
+ ],
+ "lift_q_carry_mm": 239,
+ "nib_top_carry_mm": 1094,
+ "bin_axle_carry": [
+  -244,
+  11,
+  171
+ ],
+ "bin_wheel_clear_mm": 68.7,
+ "bin_tilt_deg": 2.4,
+ "bin_front_dir_in_tug": [
+  0.9990000128746033,
+  0.0,
+  0.04100000113248825
+ ],
+ "receiver_ledge_in_tug_mm": [
+  271,
+  20,
+  1098
+ ],
+ "handle_bar_in_tug_mm": [
+  -433,
+  20,
+  1081
+ ],
+ "pad_face_centre_in_tug_mm": [
+  273,
+  0,
+  514
+ ],
+ "pad_in_bin_frame_mm": [
+  530.4,
+  -14.1,
+  321.7
+ ],
+ "front_wall_x_at_pad_height_bin_mm": 531.0,
+ "track_mm": 800,
+ "wheelbase_axle_to_castor_mm": 950
+}

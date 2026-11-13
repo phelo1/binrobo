@@ -1,0 +1,165 @@
+{
+ "name": "B2F_b2r",
+ "parts": [
+  [
+   0.93,
+   1.0,
+   -0.43,
+   0.43,
+   "nose cross-member 50x50 (castor plates below)"
+  ],
+  [
+   1.05,
+   1.09,
+   -0.33,
+   0.33,
+   "front bumper (chamfered corners)"
+  ],
+  [
+   0.98,
+   1.05,
+   -0.4,
+   0.4,
+   "bumper chamfer zone (inner)"
+  ],
+  [
+   -0.37,
+   0.98,
+   0.405,
+   0.455,
+   "side rail L 50x50"
+  ],
+  [
+   -0.37,
+   0.98,
+   -0.455,
+   -0.405,
+   "side rail R 50x50"
+  ],
+  [
+   -0.21,
+   0.04,
+   0.435,
+   0.465,
+   "chain case / gearmotor L"
+  ],
+  [
+   -0.21,
+   0.04,
+   -0.465,
+   -0.435,
+   "chain case / gearmotor R"
+  ],
+  [
+   -0.165,
+   0.165,
+   0.365,
+   0.435,
+   "drive wheel L 330"
+  ],
+  [
+   -0.165,
+   0.165,
+   -0.435,
+   -0.365,
+   "drive wheel R 330"
+  ],
+  [
+   -0.3,
+   0.38,
+   0.358,
+   0.368,
+   "guard0"
+  ],
+  [
+   -0.4325,
+   -0.2975,
+   0.3582,
+   0.4418,
+   "flare0"
+  ],
+  [
+   -0.3,
+   0.38,
+   -0.368,
+   -0.358,
+   "guard1"
+  ],
+  [
+   -0.4325,
+   -0.2975,
+   -0.4418,
+   -0.3582,
+   "flare1"
+  ],
+  [
+   -0.37,
+   -0.29,
+   0.395,
+   0.445,
+   "anti-tip L (y 0.42)"
+  ],
+  [
+   -0.37,
+   -0.29,
+   -0.445,
+   -0.395,
+   "anti-tip R"
+  ],
+  [
+   0.43,
+   0.52,
+   -0.3,
+   0.3,
+   "mast / carriage"
+  ],
+  [
+   0.5,
+   0.98,
+   -0.38,
+   0.38,
+   "battery/electronics bay"
+  ]
+ ],
+ "circles": [
+  [
+   0.95,
+   0.28,
+   0.152
+  ],
+  [
+   0.95,
+   -0.28,
+   0.152
+  ]
+ ],
+ "bin": [
+  [
+   -0.5028,
+   0.2915
+  ],
+  [
+   -0.5028,
+   -0.2915
+  ],
+  [
+   0.2692,
+   -0.2915
+  ],
+  [
+   0.2692,
+   0.2915
+  ]
+ ],
+ "handle_dir": -1,
+ "withdraw": 1,
+ "approach": -1,
+ "carry_dir": 1,
+ "half_w": 0.465,
+ "kl_gap": 0.42,
+ "pivot_strategy": "srun",
+ "pivot_D_sim": 2.39,
+ "src": "B2-F (S8, 12 Nov): B2 plan turned round to dock on the bin front wall; handle_dir -1; bin plumb ESE240SL incl handle, front wall at B2 comb face x 0.269; pivot_D_sim 2.39 kept from B2 G5 (handle-side bin, MuJoCo) as a floor. B2 plan (b2/simB2.py CORNERS, CAD): chamfered bumper 1.09 m nose, rails 50x50 at y +/-0.43, chain cases to +/-0.465, anti-tip y +/-0.42, castor swivel circles r 0.152 about (0.95,+/-0.28); bin polygon as B1 (same comb face x); pivot_D_sim from the B2 G5 run",
+ "note_pivot": "B2 G5 towstab swept diameter (b2/res/B2_towstab.json)",
+ "guard": 0.4
+}

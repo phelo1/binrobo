@@ -1,0 +1,82 @@
+{
+ "dry_kg": 84.5,
+ "can_L": 20.0,
+ "densities_kg_per_L": {
+  "steel": 4.1,
+  "gravel": 1.68
+ },
+ "rows": [
+  {
+   "operating_kg": 95,
+   "ballast_kg": 10.5,
+   "material": "steel",
+   "volume_L": 2.6,
+   "can_fill_pct": 13,
+   "fits": true,
+   "cg_z_mm": 132.3
+  },
+  {
+   "operating_kg": 95,
+   "ballast_kg": 10.5,
+   "material": "gravel",
+   "volume_L": 6.2,
+   "can_fill_pct": 31,
+   "fits": true,
+   "cg_z_mm": 144.3
+  },
+  {
+   "operating_kg": 100,
+   "ballast_kg": 15.5,
+   "material": "steel",
+   "volume_L": 3.8,
+   "can_fill_pct": 19,
+   "fits": true,
+   "cg_z_mm": 136.3
+  },
+  {
+   "operating_kg": 100,
+   "ballast_kg": 15.5,
+   "material": "gravel",
+   "volume_L": 9.2,
+   "can_fill_pct": 46,
+   "fits": true,
+   "cg_z_mm": 154.0
+  },
+  {
+   "operating_kg": 105,
+   "ballast_kg": 20.5,
+   "material": "steel",
+   "volume_L": 5.0,
+   "can_fill_pct": 25,
+   "fits": true,
+   "cg_z_mm": 140.2
+  },
+  {
+   "operating_kg": 105,
+   "ballast_kg": 20.5,
+   "material": "gravel",
+   "volume_L": 12.2,
+   "can_fill_pct": 61,
+   "fits": true,
+   "cg_z_mm": 163.7
+  },
+  {
+   "operating_kg": 110,
+   "ballast_kg": 25.5,
+   "material": "steel",
+   "volume_L": 6.2,
+   "can_fill_pct": 31,
+   "fits": true,
+   "cg_z_mm": 144.2
+  },
+  {
+   "operating_kg": 110,
+   "ballast_kg": 25.5,
+   "material": "gravel",
+   "volume_L": 15.2,
+   "can_fill_pct": 76,
+   "fits": true,
+   "cg_z_mm": 173.3
+  }
+ ]
+}

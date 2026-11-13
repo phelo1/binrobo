@@ -1,0 +1,895 @@
+[text of ese_manual.pdf, taken out of the PDF for the public repository; pictures and layout are not kept]
+
+OPERATING INSTRUCTIONS
+            for the correct use of
+ mobile containers for waste and recyclables
+
+                Version July 2022
+OPERATING INSTRUCTIONS FOR MOBILE
+WASTE AND RECYCLABLES CONTAINERS
+
+
+
+
+INTRODUCTION
+
+These operating instructions were created on the basis of the application guidelines for waste and
+recyclables containers of the Quality Control Association of Waste and Recycling Containers
+(www.ggawb.de) and refer to the standard versions of the ESE 2- and 4-wheel product line.
+
+
+
+
+TABLE OF CONTENTS
+
+
+         Scope ...................................................................................................................................................... 3
+         Current applicable regulations and guidelines ....................................................................................... 3
+         Dimensions table of 2-wheel ESE containers......................................................................................... 4
+         Dimensions table of 4-wheel ESE containers......................................................................................... 4
+         Castors and brake systems in 4-wheel containers ................................................................................. 5
+  5.1.      Total-stop castors ............................................................................................................................... 5
+  5.2.      Castors with direction lock (steering lock) .......................................................................................... 5
+  5.3.      castors with central brake system ...................................................................................................... 5
+         Intended use ........................................................................................................................................... 6
+  6.1       Collection of recyclables and residual waste ...................................................................................... 6
+  6.2       Max. permissible weight ..................................................................................................................... 6
+  6.3       Filling the waste and recyclables containers ...................................................................................... 7
+  6.4       Emptying of the container via lifting device ........................................................................................ 7
+  6.5       Recommendations for bio waste containers ...................................................................................... 9
+  6.6       Location and Moving of the container ...............................................................................................10
+  6.7       Cleaning the containers ....................................................................................................................10
+         Repairs .................................................................................................................................................11
+         Retrofitting additional equipment ..........................................................................................................11
+         Testing ..................................................................................................................................................11
+         Storage and transport ...........................................................................................................................12
+         General safety instructions ...................................................................................................................13
+         Recommendation for use in lifting devices ...........................................................................................14
+
+
+
+
+05.07.2022 / PD&M Rev. 02                                                                                                                                      2
+OPERATING INSTRUCTIONS FOR MOBILE
+WASTE AND RECYCLABLES CONTAINERS
+
+
+
+
+     SCOPE
+These operating instructions apply to the ESE standard versions of mobile containers for waste and
+recyclables and those standard versions that have been provided with one or more options and add-on parts
+from the table below by ESE or ESE representatives:
+
+
+OPTIONS:                                                                 ATTACHMENTS:
+Lock variants                                                            Swill metal closure for food waste
+Fraction apertures with lid                                              Foot operated lid opening
+Fraction apertures without lid                                           Highway posts
+Lid options (lid-in-lid, bio filter lid)                                 Rubbish bag holder
+Hood apertures                                                           30° lid restrictor
+Clip options                                                             Towing and lifting options
+Identification systems                                                   Handles
+Wheel and castor options
+Bio modules, sieves, bio-grid
+Lifting systems, trunnions, adapters
+Dividers, volume reduction inserts
+
+
+
+
+     CURRENT APPLICABLE REGULATIONS AND GUIDELINES
+
+DIN EN 840-1              Mobile waste and recycling containers – Part 1: Containers with 2 wheels with a capacity up to 400 l for comblifting
+                          devices –Dimensions and design
+DIN EN 840-2              Mobile waste and recycling containers - Part 2: Containers with 4 wheels with a capacity up to 1 300 l with flat
+                          lid(s), for trunnion and/or comb lifting devices - Dimensions and design
+DIN EN 840-3              Mobile waste and recycling containers - Part 3: Containers with 4 wheels with a capacity up to 1 300 l with dome
+                          lid(s), for trunnion and/or comb lifting devices - Dimensions and design
+DIN EN 840-5              Mobile waste and recycling containers - Part 5: Performance requirements and test methods
+DIN EN 840-6              Mobile waste and recycling containers - Part 6: Safety and health requirements
+DIN 30760                 Mobile waste and recycling containers - Containers with two wheels with a capacity from 60 l to 360 l for diamond
+                          lifting devices
+EN 15132                  Container shells for mobile waste containers with a capacity up to 1700 l - Performance requirements and test
+                          methods
+EN 1501-1 to -5           Refuse collection vehicles
+2009/104/EC               User guidelines accident prevention regulations
+BG Verkehr                Media for the waste collection industry / E3, E10
+90/269 EWC                Guidelines on lifting and carrying that is harmful to health. Ordinance on safety and health protection in the manual
+                          handling of loads at work (Ordinance on load handling - LasthandhabV)
+RAL-GZ 951/1              Plastic containers for waste and recycling materials - Quality assurance
+
+
+
+
+05.07.2022 / PD&M Rev. 02                                                                                                                3
+OPERATING INSTRUCTIONS FOR MOBILE
+WASTE AND RECYCLABLES CONTAINERS
+
+
+
+
+         DIMENSIONS TABLE OF 2-WHEEL ESE CONTAINERS
+      Type of container/volume
+
+
+                                 Max. permissible weight
+
+
+
+
+                                                                                                                                                                                                                                       Standard wheel / castor
+                                                                                                                                                                                                            Tipping height E (mm)
+                                                            Overall height A (mm)
+
+                                                                                            Overall width without
+
+
+
+                                                                                                                             with wheels C (mm)
+
+                                                                                                                                                             Overall depth (mm)
+      2-wheel containers
+
+
+
+
+                                                                                                                             Overall width axle
+
+
+
+
+                                                                                                                                                                                                                                       diameter F (mm)
+                                                                                            wheels B (mm)
+                                 (kg)
+
+
+
+
+40                                                  40                  930                             480                            381                              554                                             992                             200
+60                                                  50                  940                             445                            461                              520                                             990                             200
+80                                                  50                  940                             445                            378                              520                                             990                             200
+SL 120                                              60                  974                             480                            480                              555                                      1041                                   200
+CL 120                                              60                  932                             480                            478                              553                                             993                             200
+CL 140                                              70           1030                                   480                            478                              553                                      1083                                   200
+P 140                                               70           1065                                   480                            484                              550                                      1115                                   250
+SL 180                                              90           1065                                   478                            478                              744                                      1156                                   200
+CL 180                                              90           1004                                   480                            478                              737                                      1120                                   200      For the dimensions there may be deviations in the standard
+
+P 190                                               90           1075                                   549                            559                              704                                      1157                                   250      range. Drawings and technical data of the containers can
+SL 240                                         110               1079                                   583                            569                              737                                      1183                                   200      be found on our website:
+CL 240                                         110               1003                                   580                            569                              738                                      1130                                   200      www.ese.com/de/home/produkte/produktfinder/
+PL 240                                         110               1055                                   580                            575                              730                                      1190                                   250
+SL 340/360                                     160               1112                                   585                            570                              880                                      1264                                   200
+P 360/400                                      160               1070                                   750                            770                              815                                      1195                                   310
+P 363/403                                      160               1105                                   750                            770                              815                                      1230                   310/125
+
+
+
+The traction for continuous movement of the ESE 2-wheel containers is max. 60 N.
+
+
+
+
+         DIMENSIONS TABLE OF 4-WHEEL ESE CONTAINERS
+                                  Max. permissible weight
+
+
+
+
+                                                                                                                                                                                  Standard wheel / castor
+                                                                    Overall height A (mm)
+
+
+
+                                                                                                     Overall width without
+
+
+
+                                                                                                                                        Overall depth (mm)
+       4-wheel containers
+
+       container/volume
+
+
+
+
+                                                                                                                                                                                  diameter F (mm)
+                                                                                                     wheels B (mm)
+
+
+
+
+                                                                                                                                                                                                                                      brake torque
+       Type of
+
+
+
+
+                                                                                                                                                                                                                                      Preset
+                                  (kg)
+
+
+
+
+S 400                                          350                              1120                             980                               740                                        200                                   Max. 250 N
+S 500                                          430                              1260                             980                               740                                        200                                   Max. 250 N
+500                                            240                              1130                        1256                                   652                                        200                                   Max. 250 N
+SL 660                                         310                              1213                        1258                                   780                                        200                                   Max. 250 N
+P 660                                          310                              1218                        1255                                   773                                        200                                   Max. 250 N                   For the dimensions there may be deviations in the standard
+SL 770                                         360                              1365                        1258                                   780                                        200                                   Max. 250 N                   range. Drawings and technical data of the containers can
+P 770                                          360                              1368                        1255                                   773                                        200                                   Max. 250 N                   be found on our website:
+1100 FD                                        510                              1354                        1375                           1073                                               200                                   Max. 250 N
+                                                                                                                                                                                                                                                                 www.ese.com/de/home/produkte/produktfinder/
+1100 RD                                        510                              1463                        1375                           1057                                               200                                   Max. 250 N
+
+The pulling force for continuous movement of the 4-wheel containers is max. 285 N.
+
+
+
+
+05.07.2022 / PD&M Rev. 02                                                                                                                                                                                                                                                                                              4
+OPERATING INSTRUCTIONS FOR MOBILE
+WASTE AND RECYCLABLES CONTAINERS
+
+
+
+
+       CASTORS AND BRAKE SYSTEMS IN 4-WHEEL CONTAINERS
+The type of castors and brake systems can be found in the order papers.
+
+
+5.1.    TOTAL-STOP CASTORS
+The total-stop wheel system is the most common system and is the standard brake system for all 4-wheel
+containers.
+In the total-stop wheel system, each of the front castors on the container are equipped with a wheel brake as
+standard. To secure the container, both wheel brakes must always be activated. According to DIN EN 840,
+there must be 2 castors equipped with wheel brakes on each 4-wheel container.
+
+
+
+                                                                Recommendation for tow-
+Rollers                         Standard                                                For heavy duty
+                                                                bar and coupling
+
+Wheel diameter                  200 mm                          200 mm                          200 mm
+
+Static load per wheel           205 kg                          350 kg*                         1500 kg*
+
+Wheel bearing                   Sleeve bearing                  Roller or ball bearing          Roller or ball bearing
+
+
+
+
+*in accordance with DIN EN 840, the containers must not exceed a maximum speed of 4 km/h and a maximum load of 0.4 kg/L x
+volume L.
+
+
+5.2.    CASTORS WITH DIRECTION LOCK (STEERING LOCK)
+
+
+The direction locks fix two swivel castors in one direction and prevent free rotation of the steering axle.
+Direction locks are often used in combination with tow-bar and coupling. The containers can be easily pulled
+in a certain direction. Direction locks also control the movement of the container over some distance laterally.
+They can also be installed in combination with a central brake system.
+
+
+5.3.    CASTORS WITH CENTRAL BRAKE SYSTEM
+
+
+In the case of a central brake system, the two front central-brake castors are connected with a locking bar.
+The brake is activated by a foot pedal, a so-called lateral lock-grip contains a mechanism that is unlocked
+using a triangular key. The system requires a single operation compared to the total-stop system - in which
+case two castors have to be separately secured. The central brake system is tamper-proof and can only be
+unlocked with a triangular key. Therefore, it is recommended as a brake system for containers in public
+spaces. It can also be installed in combination with direction locks.
+
+
+
+
+05.07.2022 / PD&M Rev. 02                                                                                                   5
+OPERATING INSTRUCTIONS FOR MOBILE
+WASTE AND RECYCLABLES CONTAINERS
+
+
+
+
+      INTENDED USE
+
+
+6.1     COLLECTION OF RECYCLABLES AND RESIDUAL WASTE
+
+
+The container is intended for the collection of recyclables and residual waste. Only the intended categories
+(such as residual waste, waste/paper, glass, organic waste) may be thrown into the respective container. The
+containers must be handled carefully and properly and must be checked for damage and malfunctions before
+use (e.g. cracks in the containers, loose fastenings, or wheels etc.) that could result in dangerous situations.
+If damage to containers is found that could result in dangerous situations, the containers may no longer be
+used.
+
+
+No hot ashes, caustic, burning, glowing or hot substances, as well as no materials that may deform or
+damage the container, must be collected in the waste and recyclables containers. No waste materials may
+be thrown in, for which storage and transport are separately regulated by law. For example, these include
+dead creatures, lacquer and paint residues, hazardous substances, batteries, fluorescent tubes, medicines
+etc. (see GGVS, GGVE, GGVSee for Germany; ADR regulations for Europe).
+
+
+
+
+6.2     MAX. PERMISSIBLE WEIGHT
+
+
+The maximum total permissible weight of the filled container must not be exceeded (see marking on the bin).
+In accordance with DIN EN 840, the total permissible weight is calculated from the sum: the maximum waste
+density 0.4 [kg/dm³] x the nominal container volume plus the container weight. When filling the containers
+with normal household waste, it is usually not the case that the weight is exceeded.
+Exceeding the maximum total permissible weight may happen when the container is completely filled, for
+example, with building rubble, food waste or similar substances with a high specific density, but is not
+permitted
+
+
+The total permissible weights can be found in the dimensions table under points 3 and 4.
+
+
+
+
+05.07.2022 / PD&M Rev. 02                                                                                   6
+OPERATING INSTRUCTIONS FOR MOBILE
+WASTE AND RECYCLABLES CONTAINERS
+
+
+
+
+6.3       FILLING THE WASTE AND RECYCLABLES CONTAINERS
+
+
+      •   Only open the lid for filling using the lid handles or the handle strip provided.
+      •   Do not operate the lids, especially the sliding lid, from the rear. The sliding lid must also not be
+          opened from the sides.
+      •   For add-on parts such as the foot operated lid opener, only these devices for opening the lid are to
+          be used, otherwise damage can be caused to the container or it may result in dangerous situations.
+      •   Aperture options, such as glass inserts, paper inserts or other options, must be used if installed
+      •   The lid must be opened and securely arrested, so that any accidental closing during filling (caused
+          by a gust of wind or movement of the waste and recyclables container) is avoided.
+      •   The waste and recyclables must be placed in the container in such a way that no dangerous
+          situations can arise from the formation of dust, vapours, splinters or splashes.
+      •   Bending over the container is prohibited when filling or checking the filling level.
+      •   No hot ash, caustic, burning, glowing or hot substances, as well as no materials that may deform or
+          damage the container, must be thrown into the waste and recyclables containers.
+      •   Waste and recyclables must not be pressed down into the containers.
+      •   The waste and recyclables containers may only be filled to such an extent that the lids can still be
+          properly closed without the need for additional pressure. If containers with gravity locks are overfilled
+          or their lids are pressurised, this can result in the locks not working properly.
+      •   If closing systems are installed on the container, they must be operated again after filling in such a
+          way that the container is securely closed again during operation.
+      •   The lid must be closed after each filling process (protection against rainwater, insects, small
+          animals).
+
+
+
+
+6.4       EMPTYING OF THE CONTAINER VIA LIFTING DEVICE
+
+
+          The lifting device used on the waste collection vehicle must be compatible with the containers and
+          ensure that the 2- and 4-wheel containers are emptied without damage.
+
+
+          To avoid any damage to containers and injuries to employees, the following instructions must be
+          observed:
+
+
+
+
+05.07.2022 / PD&M Rev. 02                                                                                        7
+OPERATING INSTRUCTIONS FOR MOBILE
+WASTE AND RECYCLABLES CONTAINERS
+
+
+
+
+             •   The container is not intended for manual emptying. It is equipped with a comb receiver
+                 according to DIN EN 840 Form A and approved for comb lifting devices according to
+                 DIN EN 1501-5. 4- wheel containers can also be lifted with trunnions according to
+                 DIN EN 840 and with trunnion lifting devices according to DIN EN 1501-5.
+
+
+             •   When using lifting devices, it must be ensured that the entire container is securely locked
+                 onto the comb receiver of the lifting device throughout the whole emptying process. Locking
+                 tolerances in accordance with EN1501 are permitted.
+
+
+             •   Furthermore, the entire width of the upper frontal comb receiver must be completely covered
+                 throughout the whole emptying cycle by the locking bar of the filling vehicle. The dimensions
+                 of the truck lifting device must correspond to the recommendation for manufacturers of lifting
+                 devices according to DIN EN 840 and the series of standards EN 1501. This must be
+                 checked regularly and immediately adjusted if there are any deviations.
+
+
+             •   The containers are designed and tested according to RAL-GZ 951/1 for a max. expansion
+                 angle of the comb receiver of 25°. The filling standard DIN EN 1501-5 also stipulates this
+                 maximum permissible expansion angle for lifting devices. It is important to ensure that this
+                 expansion angle is not exceeded. For example, this can be due to impermissible lifting speed
+                 or acceleration or due to frequent shaking and/or incorrect container restraint device in the
+                 emptying position of the lifting device.
+
+
+             •   The container lid must be closed. The exception is
+                 the emptying of multi-chamber containers in divided
+                 lifting devices for the collection of different waste
+                 fractions in a waste collection vehicle. Only in this
+                 instance is it allowed for the employee to manually
+                 open the lid prior to the lifting process, taking into
+                 account all safety aspects.
+
+
+             •   The pushing pad of the lifting device (container restraint device) may in the final emptying
+                 position of the container only come into contact with the rear surface of the container or,
+                 ideally, with the wheels. Container restraint devices that come into contact with other
+                 container areas than the above mentioned are not permitted. For example, contact of the
+                 container restraint device with the rear container handle is not permitted for 2-wheel
+                 containers or similarly the contact with the dividers of multi-chamber containers.
+
+
+
+
+05.07.2022 / PD&M Rev. 02                                                                                      8
+OPERATING INSTRUCTIONS FOR MOBILE
+WASTE AND RECYCLABLES CONTAINERS
+
+
+
+
+              •   The container restraint device as well as other lifting components must never come into
+                  contact with the lids. This also applies to multi-chamber lifting devices.
+
+
+              •   Containers with damage to the receivers must not be emptied and may no longer be used.
+
+
+
+6.5       RECOMMENDATIONS FOR BIO WASTE CONTAINERS
+
+
+In both summer and winter it is advisable that wet bio waste is wrapped, for example in newspaper. The
+binding of moisture to the paper reduces freezing in winter and inhibits the fermentation process in summer,
+which means that the substances do not spread an unpleasant smell as quickly, they attract fewer insects
+and therefore also reduce maggot formation.
+
+
+Bio waste containers with ventilation functions and grid can also be used to reduce weight or for automatic
+fluid drainage.
+Tightly sealing systems with or without a filter lid can also be used depending on the application.
+
+
+In general, the following applies:
+
+
+      •   The bio waste container should be placed in a shady place if possible. If placed in direct sunlight, the
+          container can reach temperatures of over 60° C due to the sun's rays, making the plastic more
+          flexible and, at very high temperatures, the dimensional stability can decrease
+      •   The lid should always be closed again immediately after the filling process
+
+
+      •   Wrap wet waste in newspaper
+
+
+      •   Do not fill with pure liquids
+
+
+      •   In regions where garden and kitchen waste are disposed of together, fill both in layers. Do not fill with
+          wet lawn cuttings immediately, as this quickly leads to clumping, which can hinder the emptying
+          process.
+
+
+      •   Occasionally clean the bin with water only. Observe the total permissible weight of the container
+          (embossed on the front edge of the container). Overfilling results in risk of injury during transport and
+          emptying in the waste collection vehicle!
+
+
+
+
+05.07.2022 / PD&M Rev. 02                                                                                     9
+OPERATING INSTRUCTIONS FOR MOBILE
+WASTE AND RECYCLABLES CONTAINERS
+
+
+
+
+6.6       LOCATION AND MOVING OF THE CONTAINER
+
+
+      •   In general, the bio waste container should be placed in a shady place if possible. If placed in direct
+          sunlight, the container can reach temperatures of over 60° C due to the sun's rays, making the
+          plastic more flexible and, at very high temperatures, the dimensional stability can decrease.
+
+
+      •   For transport, the container must only be gripped and rolled using the push handles or the handle
+          bar.
+
+
+      •   The container is not intended and suitable for carrying manually.
+
+
+      •   No items may be stored on the container or lid.
+
+
+      •   Snow and ice residue must be removed before using the container.
+
+
+      •   The container must be set up on level ground, and waste and recyclables containers must always be
+          in a safe position.
+
+
+      •   The use of containers in potentially explosive areas is not permitted, due to the possible static
+          charging of plastic containers and the possible sparking of steel containers.
+
+
+      •   The containers fit into container shells according to DIN EN 15132.
+
+
+      •   Due to leaking collected materials and their gases, vapours, dusts, which may be hazardous to
+          health, the container must always be transported with the lid closed.
+
+
+
+
+6.7       CLEANING THE CONTAINERS
+
+
+      •   The waste and recyclables containers should be occasionally sprayed with water.
+
+
+      •   Waste water disposal regulations must be observed.
+
+
+      •   Do not use abrasive cleaning agents or solvents!
+
+
+
+
+05.07.2022 / PD&M Rev. 02                                                                                     10
+OPERATING INSTRUCTIONS FOR MOBILE
+WASTE AND RECYCLABLES CONTAINERS
+
+
+
+
+    REPAIRS
+
+
+    •    Only persons authorised by the manufacturer of the waste and recyclables containers are authorised
+         to carry out repairs.
+
+
+    •    Only original spare parts should be used to repair the container.
+
+
+    •    Repairing damaged receivers on the containers is not permitted. This applies to the DIN comb
+         receiver (DIN EN 840 Form A), the diamond receiver (DIN 30760), the trunnions (4-wheel) and all
+         other lifting receivers!
+
+
+
+    RETROFITTING ADDITIONAL EQUIPMENT
+
+
+In the case that the container is subsequently changed, e.g. with additional equipment such as a lock
+installation, only original parts from the manufacturer may be used. Installation may only be carried out by
+persons authorised by the manufacturer.
+
+
+
+     TESTING
+
+
+Before each emptying process or at least once a year, the waste and recyclables containers must be
+checked for their safe condition. This includes the integrity of the receivers, the condition of the wheels and
+their fastenings, the function of the brakes, the lid fastenings/hinge and, in the case of waste and recyclables
+containers with a round lid, the function of the child safety device in accordance with DIN EN 840-6.
+
+
+    •    Receiver of containers:
+         If the receiver on the container is damaged, the container must not be placed in the lifting device!
+
+
+    •    Setup of lifting device:
+         The dimensions of the vehicle’s lifting device must correspond to the recommendation for
+         manufacturers of lifting devices according to DIN EN 840 and the series of standards EN 1501.
+         If the lifting device is damaged or not properly adjusted, the container must not be placed in the lifting
+         device!
+
+
+    •    Wheels, castors and brakes:
+         The container must not be used if wheels/wheel attachments/wheel brakes are damaged!
+
+
+
+
+05.07.2022 / PD&M Rev. 02                                                                                     11
+OPERATING INSTRUCTIONS FOR MOBILE
+WASTE AND RECYCLABLES CONTAINERS
+
+
+
+
+    •    Child safety device on round lid containers:
+         Waste and recyclables containers with round lids that are equipped with a child safety device (safety
+         lid/ lid in lid, two-button solution or spring lock) must be checked with regard to the proper function of
+         the child safety device.
+
+
+         The safety lid must be checked for easy opening. A child safety gap of at least 181 mm must be
+         ensured before the lid is completely closed by means of additional, manual operation. By way of
+         derogation, the insert lid can be opened upwards when the insert lid is closed.
+         If the existing child safety device on a waste and recyclables container with a round lid does not work
+         correctly, the container must not be used!
+
+
+
+
+        STORAGE AND TRANSPORT
+
+
+    •    Unloading the containers from transport vehicles must be carried out with care.
+
+
+    •    The containers must not be dropped from the vehicle onto the floor, either individually or in stacks.
+
+
+    •    The stacking ribs on the container are not designed for continuous long-term storage. Stacks with
+         this maximum load must not be stored continuously for longer than 3 months. If the 3 month period is
+         exceeded, optical changes, e.g. warping of the stacking ribs and container side surfaces occur.
+         Functionality and usage properties of the container are however ensured for stacked storage up to 6
+         months.
+
+
+    •    The number of containers per stack in the delivered condition must never be exceeded.
+
+
+    •    If stored outside, the open containers must be protected against rainwater or snow. Not only is it
+         important to ensure that the top container is tightly sealed by a lid, but also that the entry of water into
+         the containers stacked underneath is prevented by means of suitable measures. A container or stack
+         that is filled with water far exceeds the maximum permissible load and can result in considerable
+         damage or safety deficiencies.
+
+
+    •    Special care must be taken when handling container stacks; only trained personnel may be entrusted
+         with this task.
+
+
+
+
+05.07.2022 / PD&M Rev. 02                                                                                      12
+OPERATING INSTRUCTIONS FOR MOBILE
+WASTE AND RECYCLABLES CONTAINERS
+
+
+
+
+      GENERAL SAFETY INSTRUCTIONS
+
+
+                 •    The container location and standing area in front of the container should be flat, fastened
+                      and horizontal!
+
+
+                 THE FOLLOWING APPLIES IN PARTICULAR TO 4-WHEEL CONTAINERS:
+
+
+                 •    Do not bend your upper body over the container and never put your head in the
+                      container! This applies in particular to containers with round lids, as these containers are
+                      equipped with lid release springs and the opened lid can close automatically! This also
+                      applies if the lid is locked in half or full opening position and similarly if the container is
+                      equipped with a child safety device according to EN 840-6! Containers with round lids
+                      that are equipped with a child safety device must be checked regularly (see Chapter 7). If
+                      the function of the child safety device cannot be clearly determined, the container must
+                      not be used.
+
+
+                 •    Do not sit or stand on the container!
+
+
+                 •    Do not overload the container - risk of tipping (risk of injury, damage is possible)!
+
+
+                 •    Only move waste and recyclables containers when the lid is closed!
+
+
+                 •    In the lifting device only use waste and recyclables containers with the lid closed!
+                      Separate regulations apply to multi-chamber containers.
+
+
+                 •    Be careful when moving the container manually uphill or downhill!
+
+
+                 •    Do not place near fireplaces, barbecue areas or similar heat sources!
+
+
+                 •    Do not place on sloping ground!
+
+
+                 •    Apply the brake (central brake system) or, in the case of a total- stop wheel system, the
+                      two wheel brakes, after each moving of the container. If necessary, check if the brake
+                      device is activated, especially on sloping ground! If the function of the brakes cannot be
+                      clearly determined, the container must not be used or moved.
+
+
+
+
+05.07.2022 / PD&M Rev. 02                                                                                          13
+OPERATING INSTRUCTIONS FOR MOBILE
+WASTE AND RECYCLABLES CONTAINERS
+
+
+
+
+      RECOMMENDATION FOR USE IN LIFTING DEVICES
+
+
+In order to ensure safe lifting, it is essential to ensure that the lifting device of the respective waste collection
+vehicle complies with standard EN 1501-5 on general requirements and safety requirements for lifting
+devices in waste collection vehicles. If containers are damaged due to incorrectly set up lifting devices there
+is an increased safety risk.
+
+
+Additional container options with their add-on parts must be tested by the operator on site to ascertain their
+compatibility with the lifting device. This is the only way to ensure that the additional container option
+operates fully in compliance with the standardised lifting device requirements outlined in EN 1501. For
+example, where a gravity lock is fitted as an additional option, a minimum peripheral speed must be ensured
+at the lifting device in order to achieve the required impetus to allow the gravity lock to open.
+
+
+ESE GmbH assumes no liability for damage to containers, lifting devices, people or other objects that is
+caused as a result of improper use of the 2- and 4-wheel containers.
+
+
+In particular, the provisions of these operating instructions must be strictly complied with and the
+recommendations and notes observed!
+
+
+
+
+     SEE ANNEX 1 - Examples of safe use of waste and recyclables containers in the lifting device
+
+
+
+
+05.07.2022 / PD&M Rev. 02                                                                                        14
+OPERATING INSTRUCTIONS FOR MOBILE
+WASTE AND RECYCLABLES CONTAINERS
+
+
+
+
+ANNEX 1
+
+EXAMPLES OF SAFE USE OF WASTE AND RECYCLABLES CONTAINERS IN THE LIFTING
+DEVICE
+
+
+TESTING AND POSITIONING OF THE COMB LIFTING DEVICE ON THE WASTE COLLECTION VEHICLE
+
+
+This annex describes the safe use of waste and recyclables containers in the lifting device. Only the
+standards listed in Chapter 2 shall apply to warranty- and safety-related information. All dimensions of the
+vehicle comb must comply with the recommendations for manufacturers of lifting devices according to
+EN 840 together with the general requirements and safety requirements for lifting devices of waste collection
+vehicles EN 1501-5.
+
+
+All dimensions that are relevant for the safe use of waste and recyclables containers in lifting devices should
+be checked regularly by the vehicle operators. Deviations must be immediately corrected!
+
+
+TESTING THE COMB LIFTING SYSTEM ON THE VEHICLE:
+
+
+If the container is emptied using a comb lifting system, make sure that the entire frontal receiver of each
+container is supported by the comb teeth of the lifting device across its entire width.
+
+
+
+
+05.07.2022 / PD&M Rev. 02                                                                                     15
+OPERATING INSTRUCTIONS FOR MOBILE
+WASTE AND RECYCLABLES CONTAINERS
+
+
+
+
+                                    CORRECTLY ADJUSTED!
+
+
+                                    The lifting comb and the locking bar are
+                                    correctly adjusted.
+
+
+                                    PERMITTED TOLERANCES:
+                                    Nominal dimension 23 mm
+                                    Upper deviation + 1 mm, lower deviation 0
+                                    Nominal dimension 8 mm
+                                    Upper deviation + 0.5 mm, lower deviation 0
+
+
+
+
+                                    NOT CORRECTLY ADJUSTED!
+
+
+                                    The vertical distance between
+                                    comb and locking bar is too large.
+
+
+
+
+                                    NOT CORRECTLY ADJUSTED!
+
+
+                                    The horizontal distance between
+                                    comb and locking bar is too large.
+
+
+
+
+05.07.2022 / PD&M Rev. 02                                                       16
+OPERATING INSTRUCTIONS FOR MOBILE
+WASTE AND RECYCLABLES CONTAINERS
+
+
+
+
+CONTAINER STABILISATION IN THE LIFTING DEVICE
+
+
+In order to ensure the stabilisation of the container during the tipping process, the lifting device of the vehicle
+must be in the correct position and in a technically satisfactory condition.
+
+
+The container support is made of rubber, has a minimum height of 120 mm and must be in contact with the
+container across the entire width. The container support surface must be positioned 100 mm from the bottom
+of the container and at least 450 mm from the comb. All relevant dimensions are indicated in standard
+EN 1501.
+f
+
+
+
+
+05.07.2022 / PD&M Rev. 02                                                                                      17
+OPERATING INSTRUCTIONS FOR MOBILE
+WASTE AND RECYCLABLES CONTAINERS
+
+
+
+
+                              In the end position of the tipping process the container restraint
+                              device must be set in such a way that the container cannot
+                              move more than max. 25° towards the vehicle interior, at this
+                              point at the latest the container restraint function must be
+                              activated.
+
+
+                              Under no circumstances may the container or lid be jammed by
+                              the container holder.
+
+
+
+
+CONTACT:
+
+
+ESE GmbH
+Friedrich-Bückling-Straße 8
+D-16816 Neuruppin
+
+
+Tel: +49 (0) 33 91 516 505
+Fax: +49 (0) 33 91 516 599
+E-mail: info-ws-de@ese.com
+
+
+
+
+05.07.2022 / PD&M Rev. 02                                                                    18
+

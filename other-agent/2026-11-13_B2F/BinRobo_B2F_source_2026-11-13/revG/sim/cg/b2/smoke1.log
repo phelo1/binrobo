@@ -1,0 +1,4 @@
+{"bin": "WEB140", "full": true, "res": "safe_miss", "tilt": 1.7, "clear": 92.3, "pad_ok": false, "t_grab": 60.8, "pad_act_peak_N": 623, "pad_act_at": [-0.3, 276, 48.4], "pad_contact_max_N": 330.2}
+{"bin": "WEB140", "full": false, "res": "success", "tilt": 1.2, "clear": 97.1, "pad_ok": true, "t_grab": 28.4, "pad_act_peak_N": 127, "pad_act_at": [5.0, 64, 44.9], "pad_contact_max_N": 63.8, "yaw_deg": 0.06, "t_setdown": 21.4, "sd": "PASS", "tilt_end": 0.0}
+{"bin": "ESE140CL", "full": true, "res": "safe_miss", "tilt": 5.8, "clear": 87.1, "pad_ok": false, "t_grab": 57.5, "pad_act_peak_N": 696, "pad_act_at": [-0.4, 308, 48.5], "pad_contact_max_N": 307.8}
+{"bin": "ESE140CL", "full": false, "res": "success", "tilt": 1.3, "clear": 96.8, "pad_ok": true, "t_grab": 28.1, "pad_act_peak_N": 115, "pad_act_at": [6.7, 60, 43.8], "pad_contact_max_N": 60.0, "yaw_deg": 0.04, "t_setdown": 21.4, "sd": "PASS", "tilt_end": 0.0}

@@ -1,0 +1,118 @@
+MC_IDX=21,29,5,7 python3 mc_g5.py WEB140 30 501 B2 _smokeK3 '{"hy": 130.0, "lip_chamfer": true, "ease": 0.6, "_reapp": {"k": 5.0}, "_guard": true, "_claim_and": true}'
+MC_IDX=21,29,9 python3 mc_g5.py SULO240 30 505 B2 _smokeK3 '{"hy": 130.0, "lip_chamfer": true, "ease": 0.6, "_reapp": {"k": 5.0}, "_guard": true, "_claim_and": true}'
+MC_IDX=21,29,5,7 python3 mc_g5.py WEB140 30 501 B2 _smokeH1 '{"hy": 130.0, "lip_chamfer": true, "ease": 0.6, "_reapp": {"k": 5.0}, "_guard": true, "_claim_and": true, "throat": -34.0, "lip_w": 8.0, "lip_top": 0.0, "pawl": {"knee": [-16.0, 34.0], "tip": [-33.0, 24.0]}, "truth_ztop": 50.0, "feel_T": 20.0}'
+MC_IDX=21,29,9 python3 mc_g5.py SULO240 30 505 B2 _smokeH1 '{"hy": 130.0, "lip_chamfer": true, "ease": 0.6, "_reapp": {"k": 5.0}, "_guard": true, "_claim_and": true, "throat": -34.0, "lip_w": 8.0, "lip_top": 0.0, "pawl": {"knee": [-16.0, 34.0], "tip": [-33.0, 24.0]}, "truth_ztop": 50.0, "feel_T": 20.0}'
+MC_IDX=21,29,5,7 python3 mc_g5.py WEB140 30 501 B2 _smokeH2 '{"hy": 130.0, "lip_chamfer": true, "ease": 0.6, "_reapp": {"k": 5.0}, "_guard": true, "_claim_and": true, "throat": -34.0, "lip_w": 8.0, "lip_top": -2.0, "pawl": {"knee": [-18.0, 35.0], "tip": [-33.0, 19.0]}, "truth_ztop": 50.0, "feel_T": 20.0}'
+MC_IDX=21,29,9,11 python3 mc_g5.py SULO240 30 505 B2 _smokeH2 '{"hy": 130.0, "lip_chamfer": true, "ease": 0.6, "_reapp": {"k": 5.0}, "_guard": true, "_claim_and": true, "throat": -34.0, "lip_w": 8.0, "lip_top": -2.0, "pawl": {"knee": [-18.0, 35.0], "tip": [-33.0, 19.0]}, "truth_ztop": 50.0, "feel_T": 20.0}'
+MC_IDX=17 python3 mc_g5.py ESE240SL250 30 504 B2 _smokeH2 '{"hy": 130.0, "lip_chamfer": true, "ease": 0.6, "_reapp": {"k": 5.0}, "_guard": true, "_claim_and": true, "throat": -34.0, "lip_w": 8.0, "lip_top": -2.0, "pawl": {"knee": [-18.0, 35.0], "tip": [-33.0, 19.0]}, "truth_ztop": 50.0, "feel_T": 20.0}'
+MC_IDX=21,29,9,11 python3 mc_g5.py SULO240 30 505 B2 _smokeH3 '{"hy": 130.0, "lip_chamfer": true, "ease": 0.6, "_reapp": {"k": 5.0}, "_guard": true, "_claim_and": true, "throat": -34.0, "lip_w": 8.0, "lip_top": -2.0, "pawl": {"knee": [-18.0, 35.0], "tip": [-33.0, 19.0]}, "truth_ztop": 50.0, "feel_T": 20.0, "reclose": 0.6}'
+MC_IDX=21,29,5,7 python3 mc_g5.py WEB140 30 501 B2 _smokeH3 '{"hy": 130.0, "lip_chamfer": true, "ease": 0.6, "_reapp": {"k": 5.0}, "_guard": true, "_claim_and": true, "throat": -34.0, "lip_w": 8.0, "lip_top": -2.0, "pawl": {"knee": [-18.0, 35.0], "tip": [-33.0, 19.0]}, "truth_ztop": 50.0, "feel_T": 20.0, "reclose": 0.6}'
+python3 mc_g5.py WEB140 30 501 B2 _H3 '{"hy": 130.0, "lip_chamfer": true, "ease": 0.6, "_reapp": {"k": 5.0}, "_guard": true, "_claim_and": true, "throat": -34.0, "lip_w": 8.0, "lip_top": -2.0, "pawl": {"knee": [-18.0, 35.0], "tip": [-33.0, 19.0]}, "truth_ztop": 50.0, "feel_T": 20.0, "reclose": 0.6}'
+python3 tilt_g6.py ESE240SL LA34L12
+python3 ballast_g6.py M95 climb12
+python3 mc_g5.py ESE140CL 30 502 B2 _H3 '{"hy": 130.0, "lip_chamfer": true, "ease": 0.6, "_reapp": {"k": 5.0}, "_guard": true, "_claim_and": true, "throat": -34.0, "lip_w": 8.0, "lip_top": -2.0, "pawl": {"knee": [-18.0, 35.0], "tip": [-33.0, 19.0]}, "truth_ztop": 50.0, "feel_T": 20.0, "reclose": 0.6}'
+cd ../../cad/g6 && python3 probe_g5.py
+cd ../../cad/g6 && python3 test_layer.py > test_layer.log 2>&1
+cd ../../cad/g6 && python3 fitcheck_g6.py A0 0 150 > fitA0.log 2>&1
+cd ../../cad/g6 && python3 fitcheck_g6.py B38 -38 150 > fitB38.log 2>&1
+python3 mc_g5.py ESE240SL 30 503 B2 _H3 '{"hy": 130.0, "lip_chamfer": true, "ease": 0.6, "_reapp": {"k": 5.0}, "_guard": true, "_claim_and": true, "throat": -34.0, "lip_w": 8.0, "lip_top": -2.0, "pawl": {"knee": [-18.0, 35.0], "tip": [-33.0, 19.0]}, "truth_ztop": 50.0, "feel_T": 20.0, "reclose": 0.6}'
+python3 mc_g5.py ESE240SL250 30 504 B2 _H3 '{"hy": 130.0, "lip_chamfer": true, "ease": 0.6, "_reapp": {"k": 5.0}, "_guard": true, "_claim_and": true, "throat": -34.0, "lip_w": 8.0, "lip_top": -2.0, "pawl": {"knee": [-18.0, 35.0], "tip": [-33.0, 19.0]}, "truth_ztop": 50.0, "feel_T": 20.0, "reclose": 0.6}'
+python3 mc_g5.py SULO240 30 505 B2 _H3 '{"hy": 130.0, "lip_chamfer": true, "ease": 0.6, "_reapp": {"k": 5.0}, "_guard": true, "_claim_and": true, "throat": -34.0, "lip_w": 8.0, "lip_top": -2.0, "pawl": {"knee": [-18.0, 35.0], "tip": [-33.0, 19.0]}, "truth_ztop": 50.0, "feel_T": 20.0, "reclose": 0.6}'
+python3 mc_g5.py ESE240CL 30 506 B2 _H3 '{"hy": 130.0, "lip_chamfer": true, "ease": 0.6, "_reapp": {"k": 5.0}, "_guard": true, "_claim_and": true, "throat": -34.0, "lip_w": 8.0, "lip_top": -2.0, "pawl": {"knee": [-18.0, 35.0], "tip": [-33.0, 19.0]}, "truth_ztop": 50.0, "feel_T": 20.0, "reclose": 0.6}'
+python3 mc_g5.py CRA240 30 507 B2 _H3 '{"hy": 130.0, "lip_chamfer": true, "ease": 0.6, "_reapp": {"k": 5.0}, "_guard": true, "_claim_and": true, "throat": -34.0, "lip_w": 8.0, "lip_top": -2.0, "pawl": {"knee": [-18.0, 35.0], "tip": [-33.0, 19.0]}, "truth_ztop": 50.0, "feel_T": 20.0, "reclose": 0.6}'
+python3 ballast_g6.py M100ax climb12
+python3 ballast_g6.py M110ax climb12
+python3 ballast_g6.py M110 climb12
+python3 ballast_g6.py M100 climb12
+python3 tilt_g6.py ESE240SL LA36_16H
+MC_IDX=19 python3 mc_g5.py CRA240 30 507 B2 _d19K3 '{"hy": 130.0, "lip_chamfer": true, "ease": 0.6, "_reapp": {"k": 5.0}, "_guard": true, "_claim_and": true}'
+MC_IDX=19 python3 mc_g5.py CRA240 30 507 B2 _d19H3 '{"hy": 130.0, "lip_chamfer": true, "ease": 0.6, "_reapp": {"k": 5.0}, "_guard": true, "_claim_and": true, "throat": -34.0, "lip_w": 8.0, "lip_top": -2.0, "pawl": {"knee": [-18.0, 35.0], "tip": [-33.0, 19.0]}, "truth_ztop": 50.0, "feel_T": 20.0, "reclose": 0.6}'
+MC_IDX=19 python3 mc_g5.py CRA240 30 507 B2 _d19thr '{"hy": 130.0, "lip_chamfer": true, "ease": 0.6, "_reapp": {"k": 5.0}, "_guard": true, "_claim_and": true, "throat": -34.0}'
+MC_IDX=19 python3 mc_g5.py CRA240 30 507 B2 _d19paw '{"hy": 130.0, "lip_chamfer": true, "ease": 0.6, "_reapp": {"k": 5.0}, "_guard": true, "_claim_and": true, "pawl": {"knee": [-18.0, 35.0], "tip": [-33.0, 19.0]}}'
+MC_IDX=19 python3 mc_g5.py CRA240 30 507 B2 _d19lip '{"hy": 130.0, "lip_chamfer": true, "ease": 0.6, "_reapp": {"k": 5.0}, "_guard": true, "_claim_and": true, "lip_w": 8.0, "lip_top": -2.0}'
+python3 tilt_g6.py ESE240SL250 LA36_16H
+python3 tilt_g6.py WEB140 LA36_16H
+cd ../../cad/g6 && python3 la36_rot_probe.py > la36_rot_probe.log 2>&1
+python3 tilt_g6.py ESE240CL LA36_16H
+python3 tilt_g6.py ESE240SL LA36_12H
+python3 tilt_g6.py ESE240SL250 LA36_12H
+python3 tilt_g6.py WEB140 LA36_12H
+python3 tilt_g6.py ESE240CL LA36_12H
+python3 tilt_g6.py ESE240SL LA36_12H_cold
+python3 tilt_g6.py ESE240SL250 LA36_12H_cold
+python3 tilt_g6.py ESE240SL250 XTL450_G5
+G6_COMBO=K3 python3 tilt_g6.py ESE240SL250 XTL450_G5
+G6_COMBO=H3 python3 tilt_g6.py ESE240SL250 LA36_12H
+python3 tilt_g6.py ESE240SL250 LA34L12
+cd ../../cad/g6 && python3 la36_rot_probe.py > la36_rot_probe2.log 2>&1
+python3 tilt_g6.py ESE240SL XTL450_G5
+cd ../../mfg/src && python3 drawings_g6.py > ../build/drawings_g6.log 2>&1
+python3 tilt_g6.py ESE240SL LA34L20F
+python3 tilt_g6.py ESE240SL250 LA34L20F
+python3 tilt_g6.py WEB140 XTL450_G5
+python3 tilt_g6.py WEB140 LA34L12
+python3 diag_sl250rel.py ESE240SL250 H3 > diag_sl250rel_H3.txt 2>&1
+python3 tilt_g6.py WEB140 LA34L20F
+cd ../../cad/g6 && python3 la36_rot_probe.py 215 > la36_rot_probe_y215.log 2>&1
+cd ../../cad/g6 && python3 la36_rot_probe.py 222 > la36_rot_probe_y222.log 2>&1
+python3 ballast_g6.py M100ax climb12x
+python3 ballast_g6.py M100ax step40
+cd ../../cad/g6 && python3 fit_g6_final.py 215 0 > fit_g6_final.log 2>&1
+cd ../../mfg/src && python3 drawings_g6.py > ../build/drawings_g6.log 2>&1 # v2
+python3 ballast_g6.py M100ax estop12
+python3 ballast_g6.py M105 climb12
+cd ../../cad/g6 && python3 fit_g6_final.py 215 0 noexport 130 42 > fit_g6_final_s130.log 2>&1
+cd ../../cad/g6 && python3 fit_g6_final.py 215 0 noexport 150 40 > fit_g6_final_st40.log 2>&1
+cd ../../cad/g6 && python3 fit_g6_final.py 215 0 > fit_g6_final_v2.log 2>&1
+cd ../../mfg/src && python3 drawings_g6.py > ../build/drawings_g6.log 2>&1 # v3
+python3 ballast_g6.py M105 climb12x
+python3 ballast_g6.py M105 step40
+python3 ballast_g6.py M105 estop12
+python3 ballast_g6.py M110 climb12x
+python3 ballast_g6.py M110 step40
+python3 ballast_g6.py M110 estop12
+python3 ballast_g6.py M105h climb12
+python3 ballast_g6.py M105h climb12x
+python3 ballast_g6.py M105h step40
+python3 ballast_g6.py M105h estop12
+python3 ballast_g6.py M110h climb12
+python3 ballast_g6.py M110h climb12x
+python3 ballast_g6.py M110h step40
+python3 ballast_g6.py M110h estop12
+python3 ballast_g6.py M110 climb12_m27
+python3 ballast_g6.py M110h climb12_m27
+python3 ballast_g6.py M105h climb12_m27
+python3 ballast_g6.py M105 climb12_m27
+python3 ballast_g6.py M100ax climb12_m27
+python3 ballast_g6.py M110h flat10
+python3 ballast_g6.py M110h flat10e
+python3 ballast_g6.py M105h flat10
+python3 ballast_g6.py M105h flat10e
+python3 ballast_g6.py M105h estopflat
+python3 ballast_g6.py M105h rel_up12
+python3 ballast_g6.py M105h rel_dn12
+python3 ballast_g6.py M105h rel_up12e
+python3 ballast_g6.py M105h rel_dn12e
+python3 ballast_g6.py M95 estopflat
+python3 ballast_g6.py M95 flat10e
+python3 ballast_g6.py M95 step40
+python3 ballast_g6.py M95 flat10
+python3 ballast_g6.py M95 estop12
+python3 mc_g5.py WEB140 12 501 B2 _H3i2 '{"hy": 130.0, "lip_chamfer": true, "ease": 0.6, "_reapp": {"k": 5.0}, "_guard": true, "_claim_and": true, "throat": -34.0, "lip_w": 8.0, "lip_top": -2.0, "pawl": {"knee": [-18.0, 35.0], "tip": [-33.0, 19.0]}, "truth_ztop": 50.0, "feel_T": 20.0, "reclose": 0.6, "ice": 2.0, "ice_mu": 0.1}'
+python3 mc_g5.py SULO240 12 505 B2 _H3i2 '{"hy": 130.0, "lip_chamfer": true, "ease": 0.6, "_reapp": {"k": 5.0}, "_guard": true, "_claim_and": true, "throat": -34.0, "lip_w": 8.0, "lip_top": -2.0, "pawl": {"knee": [-18.0, 35.0], "tip": [-33.0, 19.0]}, "truth_ztop": 50.0, "feel_T": 20.0, "reclose": 0.6, "ice": 2.0, "ice_mu": 0.1}'
+python3 mc_g5.py ESE240SL 12 503 B2 _H3i2 '{"hy": 130.0, "lip_chamfer": true, "ease": 0.6, "_reapp": {"k": 5.0}, "_guard": true, "_claim_and": true, "throat": -34.0, "lip_w": 8.0, "lip_top": -2.0, "pawl": {"knee": [-18.0, 35.0], "tip": [-33.0, 19.0]}, "truth_ztop": 50.0, "feel_T": 20.0, "reclose": 0.6, "ice": 2.0, "ice_mu": 0.1}'
+python3 mc_g5.py CRA240 12 507 B2 _H3i2 '{"hy": 130.0, "lip_chamfer": true, "ease": 0.6, "_reapp": {"k": 5.0}, "_guard": true, "_claim_and": true, "throat": -34.0, "lip_w": 8.0, "lip_top": -2.0, "pawl": {"knee": [-18.0, 35.0], "tip": [-33.0, 19.0]}, "truth_ztop": 50.0, "feel_T": 20.0, "reclose": 0.6, "ice": 2.0, "ice_mu": 0.1}'
+python3 mc_g5.py WEB140 12 501 B2 _H3i5 '{"hy": 130.0, "lip_chamfer": true, "ease": 0.6, "_reapp": {"k": 5.0}, "_guard": true, "_claim_and": true, "throat": -34.0, "lip_w": 8.0, "lip_top": -2.0, "pawl": {"knee": [-18.0, 35.0], "tip": [-33.0, 19.0]}, "truth_ztop": 50.0, "feel_T": 20.0, "reclose": 0.6, "ice": 5.0, "ice_mu": 0.1}'
+python3 mc_g5.py SULO240 12 505 B2 _H3i5 '{"hy": 130.0, "lip_chamfer": true, "ease": 0.6, "_reapp": {"k": 5.0}, "_guard": true, "_claim_and": true, "throat": -34.0, "lip_w": 8.0, "lip_top": -2.0, "pawl": {"knee": [-18.0, 35.0], "tip": [-33.0, 19.0]}, "truth_ztop": 50.0, "feel_T": 20.0, "reclose": 0.6, "ice": 5.0, "ice_mu": 0.1}'
+python3 mc_g5.py ESE240SL 12 503 B2 _H3i5 '{"hy": 130.0, "lip_chamfer": true, "ease": 0.6, "_reapp": {"k": 5.0}, "_guard": true, "_claim_and": true, "throat": -34.0, "lip_w": 8.0, "lip_top": -2.0, "pawl": {"knee": [-18.0, 35.0], "tip": [-33.0, 19.0]}, "truth_ztop": 50.0, "feel_T": 20.0, "reclose": 0.6, "ice": 5.0, "ice_mu": 0.1}'
+python3 mc_g5.py CRA240 12 507 B2 _H3i5 '{"hy": 130.0, "lip_chamfer": true, "ease": 0.6, "_reapp": {"k": 5.0}, "_guard": true, "_claim_and": true, "throat": -34.0, "lip_w": 8.0, "lip_top": -2.0, "pawl": {"knee": [-18.0, 35.0], "tip": [-33.0, 19.0]}, "truth_ztop": 50.0, "feel_T": 20.0, "reclose": 0.6, "ice": 5.0, "ice_mu": 0.1}'
+python3 mc_g5.py WEB140 12 501 B2 _H3g5 '{"hy": 130.0, "lip_chamfer": true, "ease": 0.6, "_reapp": {"k": 5.0}, "_guard": true, "_claim_and": true, "throat": -34.0, "lip_w": 8.0, "lip_top": -2.0, "pawl": {"knee": [-18.0, 35.0], "tip": [-33.0, 19.0]}, "truth_ztop": 50.0, "feel_T": 20.0, "reclose": 0.6, "ice": 5.0, "ice_mu": 0.6}'
+python3 mc_g5.py SULO240 12 505 B2 _H3g5 '{"hy": 130.0, "lip_chamfer": true, "ease": 0.6, "_reapp": {"k": 5.0}, "_guard": true, "_claim_and": true, "throat": -34.0, "lip_w": 8.0, "lip_top": -2.0, "pawl": {"knee": [-18.0, 35.0], "tip": [-33.0, 19.0]}, "truth_ztop": 50.0, "feel_T": 20.0, "reclose": 0.6, "ice": 5.0, "ice_mu": 0.6}'
+python3 mc_g5.py WEB140 12 501 B2 _H3ns '{"hy": 130.0, "lip_chamfer": true, "ease": 0.6, "_guard": true, "_claim_and": true, "throat": -34.0, "lip_w": 8.0, "lip_top": -2.0, "pawl": {"knee": [-18.0, 35.0], "tip": [-33.0, 19.0]}, "truth_ztop": 50.0, "feel_T": 20.0, "reclose": 0.6}'
+python3 mc_g5.py ESE140CL 12 502 B2 _H3ns '{"hy": 130.0, "lip_chamfer": true, "ease": 0.6, "_guard": true, "_claim_and": true, "throat": -34.0, "lip_w": 8.0, "lip_top": -2.0, "pawl": {"knee": [-18.0, 35.0], "tip": [-33.0, 19.0]}, "truth_ztop": 50.0, "feel_T": 20.0, "reclose": 0.6}'
+python3 mc_g5.py ESE240SL 12 503 B2 _H3ns '{"hy": 130.0, "lip_chamfer": true, "ease": 0.6, "_guard": true, "_claim_and": true, "throat": -34.0, "lip_w": 8.0, "lip_top": -2.0, "pawl": {"knee": [-18.0, 35.0], "tip": [-33.0, 19.0]}, "truth_ztop": 50.0, "feel_T": 20.0, "reclose": 0.6}'
+python3 mc_g5.py WEB140 12 501 B2 _H3ns_i5 '{"hy": 130.0, "lip_chamfer": true, "ease": 0.6, "_guard": true, "_claim_and": true, "throat": -34.0, "lip_w": 8.0, "lip_top": -2.0, "pawl": {"knee": [-18.0, 35.0], "tip": [-33.0, 19.0]}, "truth_ztop": 50.0, "feel_T": 20.0, "reclose": 0.6, "ice": 5.0, "ice_mu": 0.1}'
+python3 mc_g5.py ESE140CL 12 502 B2 _H3ns_i5 '{"hy": 130.0, "lip_chamfer": true, "ease": 0.6, "_guard": true, "_claim_and": true, "throat": -34.0, "lip_w": 8.0, "lip_top": -2.0, "pawl": {"knee": [-18.0, 35.0], "tip": [-33.0, 19.0]}, "truth_ztop": 50.0, "feel_T": 20.0, "reclose": 0.6, "ice": 5.0, "ice_mu": 0.1}'
+python3 mc_g5.py ESE240SL 12 503 B2 _H3ns_i5 '{"hy": 130.0, "lip_chamfer": true, "ease": 0.6, "_guard": true, "_claim_and": true, "throat": -34.0, "lip_w": 8.0, "lip_top": -2.0, "pawl": {"knee": [-18.0, 35.0], "tip": [-33.0, 19.0]}, "truth_ztop": 50.0, "feel_T": 20.0, "reclose": 0.6, "ice": 5.0, "ice_mu": 0.1}'
+MC_IDX=9 python3 mc_g5.py SULO240 30 505 B2 _K2feel '{"hy": 110.0, "lip_chamfer": true, "ease": 0.6, "_reapp": {"k": 5.0}, "_guard": true, "_claim_and": true}'
+MC_IDX=9 python3 mc_g5.py SULO240 30 505 B2 _K3feel '{"hy": 130.0, "lip_chamfer": true, "ease": 0.6, "_reapp": {"k": 5.0}, "_guard": true, "_claim_and": true}'

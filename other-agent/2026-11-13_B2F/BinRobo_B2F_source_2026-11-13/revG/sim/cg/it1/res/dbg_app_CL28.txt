@@ -1,0 +1,61 @@
+bin ESE240CL zL_abs 0.9139 wheel_r 0.100 bar_habs 0.9424 lip rim bottom abs 0.8889 nib top abs 0.8650
+t 0.25 1 Approach: ca gap 1.186 nib_bin [1.27, 0.051, 0.75] tilt 0.0 moved 0 mm bin_in_tug [-0.98, -0.005, 0.1] {}
+t 0.50 1 Approach: ca gap 1.159 nib_bin [1.243, 0.052, 0.75] tilt 0.0 moved 0 mm bin_in_tug [-0.953, 0.007, 0.1] {}
+t 0.75 1 Approach: ca gap 1.133 nib_bin [1.217, 0.054, 0.75] tilt 0.0 moved 0 mm bin_in_tug [-0.927, 0.019, 0.1] {}
+t 1.00 1 Approach: ca gap 1.105 nib_bin [1.19, 0.056, 0.75] tilt 0.0 moved 0 mm bin_in_tug [-0.9, 0.032, 0.1] {}
+t 1.25 1 Approach: ca gap 1.073 nib_bin [1.157, 0.059, 0.75] tilt 0.0 moved 0 mm bin_in_tug [-0.866, 0.049, 0.1] {}
+t 1.50 1 Approach: ca gap 1.038 nib_bin [1.123, 0.06, 0.75] tilt 0.0 moved 0 mm bin_in_tug [-0.831, 0.063, 0.1] {}
+t 1.75 1 Approach: ca gap 1.004 nib_bin [1.088, 0.059, 0.75] tilt 0.0 moved 0 mm bin_in_tug [-0.797, 0.07, 0.1] {}
+t 2.00 1 Approach: ca gap 0.969 nib_bin [1.053, 0.055, 0.75] tilt 0.0 moved 0 mm bin_in_tug [-0.761, 0.072, 0.1] {}
+t 2.25 1 Approach: ca gap 0.934 nib_bin [1.018, 0.05, 0.75] tilt 0.0 moved 0 mm bin_in_tug [-0.726, 0.07, 0.1] {}
+t 2.50 1 Approach: ca gap 0.899 nib_bin [0.983, 0.044, 0.75] tilt 0.0 moved 0 mm bin_in_tug [-0.691, 0.066, 0.1] {}
+t 2.75 1 Approach: ca gap 0.863 nib_bin [0.947, 0.038, 0.75] tilt 0.0 moved 0 mm bin_in_tug [-0.655, 0.059, 0.1] {}
+t 3.00 1 Approach: ca gap 0.827 nib_bin [0.911, 0.03, 0.75] tilt 0.0 moved 0 mm bin_in_tug [-0.62, 0.051, 0.1] {}
+t 3.25 1 Approach: ca gap 0.791 nib_bin [0.875, 0.023, 0.75] tilt 0.0 moved 0 mm bin_in_tug [-0.583, 0.042, 0.1] {}
+t 3.50 1 Approach: ca gap 0.755 nib_bin [0.839, 0.017, 0.75] tilt 0.0 moved 0 mm bin_in_tug [-0.547, 0.034, 0.1] {}
+t 3.75 1 Approach: ca gap 0.718 nib_bin [0.802, 0.011, 0.75] tilt 0.0 moved 0 mm bin_in_tug [-0.511, 0.026, 0.1] {}
+t 4.00 1 Approach: ca gap 0.682 nib_bin [0.766, 0.005, 0.75] tilt 0.0 moved 0 mm bin_in_tug [-0.475, 0.019, 0.1] {}
+t 4.25 1 Approach: ca gap 0.645 nib_bin [0.73, -0.001, 0.75] tilt 0.0 moved 0 mm bin_in_tug [-0.438, 0.011, 0.1] {}
+t 4.50 1 Approach: ca gap 0.610 nib_bin [0.694, -0.006, 0.75] tilt 0.0 moved 0 mm bin_in_tug [-0.403, 0.005, 0.1] {}
+t 4.75 1 Approach: ca gap 0.574 nib_bin [0.658, -0.01, 0.75] tilt 0.0 moved 0 mm bin_in_tug [-0.367, -0.001, 0.1] {}
+t 5.00 1 Approach: ca gap 0.539 nib_bin [0.623, -0.013, 0.75] tilt 0.0 moved 0 mm bin_in_tug [-0.332, -0.006, 0.1] {}
+t 5.25 1 Approach: ca gap 0.503 nib_bin [0.588, -0.014, 0.75] tilt 0.0 moved 0 mm bin_in_tug [-0.297, -0.008, 0.1] {}
+t 5.50 1 Approach: ca gap 0.468 nib_bin [0.552, -0.013, 0.75] tilt 0.0 moved 0 mm bin_in_tug [-0.261, -0.009, 0.1] {}
+t 5.75 1 Approach: ca gap 0.432 nib_bin [0.516, -0.012, 0.75] tilt 0.0 moved 0 mm bin_in_tug [-0.225, -0.009, 0.1] {}
+t 6.00 1 Approach: ca gap 0.396 nib_bin [0.48, -0.01, 0.75] tilt 0.0 moved 0 mm bin_in_tug [-0.189, -0.009, 0.1] {}
+t 6.25 1 Approach: ca gap 0.360 nib_bin [0.444, -0.008, 0.75] tilt 0.0 moved 0 mm bin_in_tug [-0.153, -0.008, 0.1] {}
+t 6.50 1 Approach: ca gap 0.324 nib_bin [0.408, -0.006, 0.75] tilt 0.0 moved 0 mm bin_in_tug [-0.117, -0.008, 0.1] {}
+t 6.75 1 Approach: ca gap 0.288 nib_bin [0.372, -0.003, 0.75] tilt 0.0 moved 0 mm bin_in_tug [-0.081, -0.007, 0.1] {}
+t 7.00 1 Approach: ca gap 0.252 nib_bin [0.336, -0.001, 0.75] tilt 0.0 moved 0 mm bin_in_tug [-0.045, -0.007, 0.1] {}
+t 7.25 1 Approach: ca gap 0.215 nib_bin [0.299, 0.002, 0.75] tilt 0.0 moved 0 mm bin_in_tug [-0.008, -0.007, 0.1] {}
+t 7.50 1b Final appro gap 0.184 nib_bin [0.268, 0.004, 0.75] tilt 0.0 moved 0 mm bin_in_tug [0.023, -0.007, 0.1] {}
+t 7.75 1b Final appro gap 0.170 nib_bin [0.254, 0.005, 0.75] tilt 0.0 moved 0 mm bin_in_tug [0.037, -0.007, 0.1] {}
+t 8.00 1b Final appro gap 0.156 nib_bin [0.24, 0.006, 0.75] tilt 0.0 moved 0 mm bin_in_tug [0.051, -0.007, 0.1] {}
+t 8.25 1b Final appro gap 0.142 nib_bin [0.226, 0.007, 0.75] tilt 0.0 moved 0 mm bin_in_tug [0.065, -0.007, 0.1] {}
+t 8.50 1b Final appro gap 0.128 nib_bin [0.212, 0.009, 0.75] tilt 0.0 moved 0 mm bin_in_tug [0.079, -0.008, 0.1] {}
+t 8.75 1b Final appro gap 0.114 nib_bin [0.198, 0.01, 0.75] tilt 0.0 moved 0 mm bin_in_tug [0.093, -0.008, 0.1] {}
+t 9.00 1b Final appro gap 0.100 nib_bin [0.184, 0.011, 0.75] tilt 0.0 moved 0 mm bin_in_tug [0.106, -0.008, 0.1] {}
+t 9.25 1b Final appro gap 0.086 nib_bin [0.171, 0.012, 0.75] tilt 0.0 moved 0 mm bin_in_tug [0.12, -0.009, 0.1] {}
+t 9.50 1b Final appro gap 0.073 nib_bin [0.157, 0.012, 0.75] tilt 0.0 moved 0 mm bin_in_tug [0.134, -0.009, 0.1] {}
+t 9.75 1b Final appro gap 0.059 nib_bin [0.143, 0.013, 0.75] tilt 0.0 moved 0 mm bin_in_tug [0.147, -0.01, 0.1] {}
+t 10.00 1b Final appro gap 0.046 nib_bin [0.13, 0.014, 0.75] tilt 0.0 moved 0 mm bin_in_tug [0.161, -0.01, 0.1] {}
+t 10.25 1b Final appro gap 0.033 nib_bin [0.117, 0.014, 0.75] tilt 0.0 moved 0 mm bin_in_tug [0.174, -0.011, 0.1] {}
+t 10.50 1b Final appro gap 0.019 nib_bin [0.104, 0.015, 0.75] tilt 0.0 moved 0 mm bin_in_tug [0.187, -0.011, 0.1] {}
+t 10.75 1b Final appro gap 0.006 nib_bin [0.09, 0.015, 0.75] tilt 0.0 moved 0 mm bin_in_tug [0.2, -0.012, 0.1] {}
+t 11.00 1b Final appro gap 0.004 nib_bin [0.088, 0.012, 0.745] tilt 0.6 moved 3 mm bin_in_tug [0.21, -0.01, 0.104] {'padg-binhull': (61, [np.float64(0.016), np.float64(0.163), np.float64(0.5)])}
+t 11.25 1b Final appro gap 0.011 nib_bin [0.095, 0.012, 0.735] tilt 1.9 moved 5 mm bin_in_tug [0.22, -0.01, 0.112] {'padg-binhull': (57, [np.float64(0.004), np.float64(0.162), np.float64(0.5)])}
+t 11.50 1b Final appro gap 0.018 nib_bin [0.102, 0.012, 0.724] tilt 3.2 moved 8 mm bin_in_tug [0.229, -0.01, 0.121] {'padg-binhull': (55, [np.float64(-0.008), np.float64(0.162), np.float64(0.5)])}
+t 11.75 1b Final appro gap 0.025 nib_bin [0.109, 0.012, 0.714] tilt 4.5 moved 11 mm bin_in_tug [0.238, -0.01, 0.13] {'padg-binhull': (52, [np.float64(-0.02), np.float64(0.162), np.float64(0.5)])}
+t 12.00 1b Final appro gap 0.032 nib_bin [0.116, 0.011, 0.703] tilt 5.9 moved 14 mm bin_in_tug [0.247, -0.01, 0.139] {'padg-binhull': (48, [np.float64(-0.032), np.float64(0.161), np.float64(0.5)])}
+t 12.25 1b Final appro gap 0.040 nib_bin [0.124, 0.011, 0.692] tilt 7.3 moved 17 mm bin_in_tug [0.256, -0.01, 0.148] {'padg-binhull': (84, [np.float64(-0.044), np.float64(0.161), np.float64(0.4)])}
+t 12.50 1b Final appro gap 0.052 nib_bin [0.136, 0.01, 0.678] tilt 9.0 moved 22 mm bin_in_tug [0.263, -0.009, 0.159] {'padg-binhull': (66, [np.float64(-0.056), np.float64(0.16), np.float64(0.4)])}
+t 12.75 1b Final appro gap 0.064 nib_bin [0.149, 0.009, 0.664] tilt 10.8 moved 27 mm bin_in_tug [0.27, -0.009, 0.17] {'padg-binhull': (57, [np.float64(-0.068), np.float64(0.16), np.float64(0.4)])}
+t 13.00 1b Final appro gap 0.077 nib_bin [0.161, 0.009, 0.648] tilt 12.8 moved 33 mm bin_in_tug [0.276, -0.008, 0.182] {'padg-binhull': (47, [np.float64(-0.081), np.float64(0.159), np.float64(0.4)])}
+t 13.25 1b Final appro gap 0.090 nib_bin [0.175, 0.008, 0.632] tilt 14.7 moved 39 mm bin_in_tug [0.283, -0.008, 0.194] {}
+t 13.50 1b Final appro gap 0.104 nib_bin [0.188, 0.007, 0.615] tilt 16.8 moved 47 mm bin_in_tug [0.289, -0.007, 0.206] {}
+t 13.75 1b Final appro gap 0.118 nib_bin [0.202, 0.006, 0.597] tilt 19.0 moved 55 mm bin_in_tug [0.294, -0.006, 0.219] {}
+t 14.00 1b Final appro gap 0.137 nib_bin [0.221, 0.005, 0.575] tilt 21.7 moved 65 mm bin_in_tug [0.297, -0.005, 0.234] {}
+t 14.25 1b Final appro gap 0.184 nib_bin [0.268, 0.004, 0.524] tilt 26.7 moved 87 mm bin_in_tug [0.287, -0.004, 0.261] {}
+t 14.50 1b Final appro gap 0.294 nib_bin [0.378, 0.004, 0.384] tilt 38.1 moved 144 mm bin_in_tug [0.23, -0.003, 0.315] {}
+{'docked': False, 'reapp': False, 'dock_dy_mm': -1.1, 'result': 'bin_pushed', 'claim': False, 'captured': False}
+[(14.69, 'docked: pushed, bin dy -1 mm (camera -2), nib gap 406 mm, bin moved 252 mm')]

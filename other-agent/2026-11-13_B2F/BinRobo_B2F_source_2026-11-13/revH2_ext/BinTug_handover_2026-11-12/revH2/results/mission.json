@@ -1,0 +1,376 @@
+{
+ "lane_m": 635.0,
+ "assumptions": {
+  "yard_len": 25.0,
+  "junction_len": 24.0,
+  "slow_v": 0.4,
+  "home_s": 10.0,
+  "pad_from_end": 15.0,
+  "hotel_w": 9.0,
+  "lights_w": 17.0,
+  "eta": 0.6,
+  "crr": 0.03,
+  "lift_w": 50.0,
+  "time_allowance": 1.05,
+  "undock": 10,
+  "to_home": 25,
+  "dock_on_bin": 25,
+  "lift": 30,
+  "warn": 3,
+  "junction_wait": 10,
+  "pivot": 8,
+  "reverse_place": 10,
+  "set_down": 26,
+  "pull_away": 5,
+  "photo": 3,
+  "dock_charge": 35,
+  "seek": 15,
+  "usable_frac_plan": 0.5,
+  "usable_frac_max": 0.8,
+  "batt_nominal_wh": 432,
+  "rate_factor": 0.85,
+  "cold_factor": 0.85
+ },
+ "revg_sitl": {
+  "one_bin_drop_min": 46.465,
+  "one_bin_drop_wh": 42.6,
+  "three_bin_drop_G3_min": 126.69666666666667,
+  "three_bin_drop_G3_wh": 107.1,
+  "three_bin_drop_G4_min": 149.24833333333333,
+  "three_bin_drop_G4_wh": 163.0,
+  "three_bin_pickup_G3_min": 101.0,
+  "three_bin_pickup_G3_wh": 82.7,
+  "cruise": 0.5,
+  "placement_error_m": "0.45-0.65",
+  "placement_yaw_deg": "11-17"
+ },
+ "evenings": [
+  {
+   "v_cruise": 0.5,
+   "bins": 1,
+   "kind": "drop",
+   "minutes": 46.8,
+   "wh": 45.7,
+   "battery_plan_wh": 156,
+   "battery_max_wh": 250,
+   "within_plan": true,
+   "finish_clock_if_start_1800": "18:46"
+  },
+  {
+   "v_cruise": 0.5,
+   "bins": 1,
+   "kind": "pickup",
+   "minutes": 47.1,
+   "wh": 42.2,
+   "battery_plan_wh": 156,
+   "battery_max_wh": 250,
+   "within_plan": true,
+   "finish_clock_if_start_1800": "18:47",
+   "margin_to_2100_min": 132.9
+  },
+  {
+   "v_cruise": 0.5,
+   "bins": 2,
+   "kind": "drop",
+   "minutes": 93.6,
+   "wh": 91.4,
+   "battery_plan_wh": 156,
+   "battery_max_wh": 250,
+   "within_plan": true,
+   "finish_clock_if_start_1800": "19:33"
+  },
+  {
+   "v_cruise": 0.5,
+   "bins": 2,
+   "kind": "pickup",
+   "minutes": 94.2,
+   "wh": 84.0,
+   "battery_plan_wh": 156,
+   "battery_max_wh": 250,
+   "within_plan": true,
+   "finish_clock_if_start_1800": "19:34",
+   "margin_to_2100_min": 85.8
+  },
+  {
+   "v_cruise": 0.5,
+   "bins": 3,
+   "kind": "drop",
+   "minutes": 140.4,
+   "wh": 135.0,
+   "battery_plan_wh": 156,
+   "battery_max_wh": 250,
+   "within_plan": true,
+   "finish_clock_if_start_1800": "20:20"
+  },
+  {
+   "v_cruise": 0.5,
+   "bins": 3,
+   "kind": "pickup",
+   "minutes": 141.3,
+   "wh": 125.6,
+   "battery_plan_wh": 156,
+   "battery_max_wh": 250,
+   "within_plan": true,
+   "finish_clock_if_start_1800": "20:21",
+   "margin_to_2100_min": 38.7
+  },
+  {
+   "v_cruise": 0.8,
+   "bins": 1,
+   "kind": "drop",
+   "minutes": 31.5,
+   "wh": 39.0,
+   "battery_plan_wh": 156,
+   "battery_max_wh": 250,
+   "within_plan": true,
+   "finish_clock_if_start_1800": "18:31"
+  },
+  {
+   "v_cruise": 0.8,
+   "bins": 1,
+   "kind": "pickup",
+   "minutes": 31.7,
+   "wh": 35.5,
+   "battery_plan_wh": 156,
+   "battery_max_wh": 250,
+   "within_plan": true,
+   "finish_clock_if_start_1800": "18:31",
+   "margin_to_2100_min": 148.3
+  },
+  {
+   "v_cruise": 0.8,
+   "bins": 2,
+   "kind": "drop",
+   "minutes": 63.0,
+   "wh": 78.0,
+   "battery_plan_wh": 156,
+   "battery_max_wh": 250,
+   "within_plan": true,
+   "finish_clock_if_start_1800": "19:03"
+  },
+  {
+   "v_cruise": 0.8,
+   "bins": 2,
+   "kind": "pickup",
+   "minutes": 63.4,
+   "wh": 70.6,
+   "battery_plan_wh": 156,
+   "battery_max_wh": 250,
+   "within_plan": true,
+   "finish_clock_if_start_1800": "19:03",
+   "margin_to_2100_min": 116.6
+  },
+  {
+   "v_cruise": 0.8,
+   "bins": 3,
+   "kind": "drop",
+   "minutes": 94.5,
+   "wh": 114.9,
+   "battery_plan_wh": 156,
+   "battery_max_wh": 250,
+   "within_plan": true,
+   "finish_clock_if_start_1800": "19:34"
+  },
+  {
+   "v_cruise": 0.8,
+   "bins": 3,
+   "kind": "pickup",
+   "minutes": 95.1,
+   "wh": 105.5,
+   "battery_plan_wh": 156,
+   "battery_max_wh": 250,
+   "within_plan": true,
+   "finish_clock_if_start_1800": "19:35",
+   "margin_to_2100_min": 84.9
+  }
+ ],
+ "one_bin_drop_detail": {
+  "kind": "drop",
+  "bin": "ESE 240 SL (200 mm wheels)",
+  "v_cruise": 0.5,
+  "minutes": 46.8,
+  "wh": 45.7,
+  "steps": [
+   {
+    "step": "undock + to home slot",
+    "s": 35,
+    "wh": 0.25
+   },
+   {
+    "step": "pivot, reverse onto bin, square",
+    "s": 33,
+    "wh": 0.24
+   },
+   {
+    "step": "lift + pre-motion warning",
+    "s": 33,
+    "wh": 0.7
+   },
+   {
+    "step": "carry full bin down",
+    "s": 1209,
+    "wh": 18.88
+   },
+   {
+    "step": "junction wait check",
+    "s": 10,
+    "wh": 0.07
+   },
+   {
+    "step": "to pad",
+    "s": 22,
+    "wh": 0.17
+   },
+   {
+    "step": "pivot 180, reverse to slot",
+    "s": 18,
+    "wh": 0.13
+   },
+   {
+    "step": "set down, pull away, photo",
+    "s": 34,
+    "wh": 0.72
+   },
+   {
+    "step": "return unladen",
+    "s": 1247,
+    "wh": 22.12
+   },
+   {
+    "step": "dock + charge check",
+    "s": 35,
+    "wh": 0.25
+   }
+  ]
+ },
+ "one_bin_pickup_detail": {
+  "kind": "pickup",
+  "bin": "ESE 240 SL (200 mm wheels)",
+  "v_cruise": 0.5,
+  "minutes": 47.1,
+  "wh": 42.2,
+  "steps": [
+   {
+    "step": "undock",
+    "s": 10,
+    "wh": 0.07
+   },
+   {
+    "step": "drive down unladen",
+    "s": 1224,
+    "wh": 13.53
+   },
+   {
+    "step": "junction wait check",
+    "s": 10,
+    "wh": 0.07
+   },
+   {
+    "step": "to pad, find bin",
+    "s": 22,
+    "wh": 0.17
+   },
+   {
+    "step": "identify + pivot + reverse onto bin",
+    "s": 48,
+    "wh": 0.35
+   },
+   {
+    "step": "lift + pre-motion warning",
+    "s": 33,
+    "wh": 0.7
+   },
+   {
+    "step": "carry empty bin up",
+    "s": 1232,
+    "wh": 23.82
+   },
+   {
+    "step": "pivot, reverse to home slot, set down",
+    "s": 49,
+    "wh": 1.03
+   },
+   {
+    "step": "dock + charge check",
+    "s": 60,
+    "wh": 0.43
+   }
+  ]
+ },
+ "placement": {
+  "cases": {
+   "RTK fixed (25 mm, 1.5 deg)": {
+    "p50_mm": 31,
+    "p95_mm": 64,
+    "p999_mm": 97,
+    "yaw_p95_deg": 2.9,
+    "over_0p6m_pct": 0.0
+   },
+   "RTK fixed, poor heading (25 mm, 4 deg)": {
+    "p50_mm": 37,
+    "p95_mm": 82,
+    "p999_mm": 131,
+    "yaw_p95_deg": 7.8,
+    "over_0p6m_pct": 0.0
+   },
+   "RTK float (0.25 m, 2 deg)": {
+    "p50_mm": 294,
+    "p95_mm": 613,
+    "p999_mm": 937,
+    "yaw_p95_deg": 3.9,
+    "over_0p6m_pct": 5.639
+   }
+  },
+  "lever_m": 0.425,
+  "revg_g4_sitl": "0.45-0.65 m and 11-17 deg off (sitl/out/G4/report/open_issues.md, PROGRESS.md)",
+  "rule": "Set down only on RTK fixed; on float, hold 20 s for a fix, else use the pad tag or alert."
+ },
+ "turning": {
+  "Rev G, CAD hitch length 0.67 m, hitch cap 28 deg": {
+   "tug_axle_radius_m": 1.43,
+   "outer_swept_radius_m": 2.04,
+   "u_turn_width_m": 3.85,
+   "fits_3p6m_lane": false
+  },
+  "Rev G, CAD hitch length 0.67 m, hitch cap 60 deg": {
+   "tug_axle_radius_m": 0.77,
+   "outer_swept_radius_m": 1.5,
+   "u_turn_width_m": 2.65,
+   "fits_3p6m_lane": true
+  },
+  "Rev G, SITL trailer length 1.35 m, hitch cap 28 deg": {
+   "tug_axle_radius_m": 2.88,
+   "outer_swept_radius_m": 3.39,
+   "u_turn_width_m": 6.65,
+   "fits_3p6m_lane": false
+  },
+  "Rev G, SITL trailer length 1.35 m, hitch cap 60 deg": {
+   "tug_axle_radius_m": 1.56,
+   "outer_swept_radius_m": 2.16,
+   "u_turn_width_m": 4.1,
+   "fits_3p6m_lane": false
+  },
+  "Rev H2 pivot": {
+   "swept_radius_m": 1.11,
+   "u_turn_width_m": 2.22,
+   "set_by": "castor swivel circle",
+   "frame_only_m": 2.02,
+   "fits_3p6m_lane": true,
+   "free_side_margin_in_3p6m_lane_m": 0.69,
+   "fits_2p9m_narrowing": true,
+   "margin_at_2p9m_narrowing_m": 0.34
+  },
+  "reference_other_agent_lanefit": {
+   "note": "cmp/lanefit.py with truth hedge faces (2.9 m face to face at s 500-516). Pivot diameters, empty / loaded: Rev H 2.16 / 2.16, B1 2.36 / 2.42, B2 2.28 / 2.39; all three pass every station and all 12 pad sequences. Rev H2 lies between Rev H and B2. RE-RUN lanefit.py with reference/RevH2_lanefit_design.json before relying on this."
+  }
+ },
+ "car_on_home_slot": {
+  "rev_h_clear_patch_m": {
+   "length": 3.41,
+   "width": 2.22
+  },
+  "closest_approach_to_car_m": 0.5,
+  "note": "Pivot centre is kept >= swept radius + 0.5 m from any lidar return; no swept arc crosses the slot row. Rev G needed a U-turn through the slot row (tug axle radius 1.43 m at the 28 deg CAD cap) and struck the car (open_issues.md)."
+ },
+ "note": "Estimate, not SITL. Speeds: slow zones 0.4 m/s in the yard and from the junction wait point to the pad."
+}

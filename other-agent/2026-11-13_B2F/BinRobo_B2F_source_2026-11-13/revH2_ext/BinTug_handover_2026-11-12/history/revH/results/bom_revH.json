@@ -1,0 +1,977 @@
+{
+ "lines": [
+  {
+   "id": "H-S1",
+   "area": "Structure",
+   "item": "Steel: 2 x 6 m 50x50x3 RHS (side rails, cross-members, mast, carriage) + 2 m 30x30x2 braces + flat bar; zinc-rich primer and topcoat",
+   "eur": 110.0,
+   "status": "est",
+   "group": "LOCAL",
+   "function": "mover",
+   "note": "Cut list ~8.5 m of 50x50x3. Replaces G1 + G2 (EUR 105) and the EUR 165 laser/press-brake/galvanise uplift the handover lists as not in the total.",
+   "revg_line": "G1, G2"
+  },
+  {
+   "id": "H-S2",
+   "area": "Structure",
+   "item": "One laser-cut order, 4-6 mm S355: comb blade, carriage cheeks, 2 motor plates, 4 mast gussets, caster outriggers, actuator lugs, battery trays (~14 parts)",
+   "eur": 60.0,
+   "status": "est",
+   "group": "LOCAL",
+   "function": "mover",
+   "note": "Rev G had 53 made parts and 34 DXF patterns; Rev H has about 14 plates and one tube size. Local quote needed (ATC [nearby town]).",
+   "revg_line": "G1"
+  },
+  {
+   "id": "H-S3",
+   "area": "Structure",
+   "item": "Carriage rollers: 8 x 6202-2RS bearings on shoulder bolts",
+   "eur": 15.0,
+   "status": "est",
+   "group": "CN",
+   "function": "bin handling",
+   "note": "Rollers, not slides: lift force 1.2 kN instead of 1.7 kN (statics.json).",
+   "revg_line": ""
+  },
+  {
+   "id": "H-S4",
+   "area": "Structure",
+   "item": "Deck, motor and battery covers: HDPE / ply offcuts",
+   "eur": 15.0,
+   "status": "est",
+   "group": "LOCAL",
+   "function": "mover",
+   "note": "",
+   "revg_line": "G3"
+  },
+  {
+   "id": "H-S5",
+   "area": "Structure",
+   "item": "Nose casters: 2 x 260 mm flat-free swivel casters",
+   "eur": 60.0,
+   "status": "est",
+   "group": "IE",
+   "function": "mover",
+   "note": "CONDITIONAL: the donor chair's 200 mm casters work but lose one step case (layout A5 in mech.json). Saving EUR 60 if kept.",
+   "revg_line": ""
+  },
+  {
+   "id": "H-S6",
+   "area": "Structure",
+   "item": "Tail anti-tip wheels 2 x 100 mm PU",
+   "eur": 8.0,
+   "status": "est",
+   "group": "CN",
+   "function": "mover",
+   "note": "Often on the donor chair already.",
+   "revg_line": ""
+  },
+  {
+   "id": "H-S7",
+   "area": "Structure",
+   "item": "UHMW guide strips on the inner rails 2 x 600x40x10",
+   "eur": 12.0,
+   "status": "est",
+   "group": "IE",
+   "function": "bin handling",
+   "note": "",
+   "revg_line": ""
+  },
+  {
+   "id": "G4",
+   "area": "Drive",
+   "item": "Donor powerchair: matched 24 V gearmotors + spring brakes, 12.5 in wheels (DoneDeal)",
+   "eur": 160.0,
+   "status": "G4-est",
+   "group": "LOCAL",
+   "function": "mover",
+   "note": "Same line and price as Rev G. RISK: used powerchair listings seen on 11 Nov were EUR 209-282 (for-sale.ie). Applies to Rev G equally.",
+   "revg_line": "G4"
+  },
+  {
+   "id": "G5b",
+   "area": "Drive",
+   "item": "Tyre sealant for the donor drive tyres (Slime 473 ml)",
+   "eur": 17.5,
+   "status": "G4-checked",
+   "group": "IE",
+   "function": "mover",
+   "note": "",
+   "revg_line": "G5b"
+  },
+  {
+   "id": "G6",
+   "area": "Drive",
+   "item": "Dual 30 A motor driver, Cytron MDDS30 (7-35 V, 30 A cont / 80 A peak)",
+   "eur": 82.95,
+   "status": "G4-checked",
+   "group": "NL",
+   "function": "mover",
+   "note": "CONDITIONAL: Cytron MDD20A (20 A cont / 60 A peak, 6-30 V) is GBP 37 at The Pi Hut (excerpt). Saving ~EUR 38 once the donor stall current is measured.",
+   "revg_line": "G6"
+  },
+  {
+   "id": "H-D1",
+   "area": "Drive",
+   "item": "Reverse-polarity protection for the driver (ideal-diode module, 50 A)",
+   "eur": 8.0,
+   "status": "est",
+   "group": "CN",
+   "function": "mover",
+   "note": "The handover lists this as a required substitution not yet in the Rev G total.",
+   "revg_line": ""
+  },
+  {
+   "id": "G9",
+   "area": "Drive",
+   "item": "Wheel encoders x2 (hall quadrature kit)",
+   "eur": 18.0,
+   "status": "G4-checked",
+   "group": "CN",
+   "function": "navigation",
+   "note": "",
+   "revg_line": "G9"
+  },
+  {
+   "id": "H-L1",
+   "area": "Bin handling",
+   "item": "Lift actuator 24 V, 3000 N, 300 mm stroke, IP65, self-locking",
+   "eur": 45.0,
+   "status": "excerpt-11Nov",
+   "group": "CN",
+   "function": "bin handling",
+   "note": "Generic 3000 N 300 mm units USD 30-55 (eBay / Alibaba excerpts). Load 1.2 kN: margin 2.5. Replaces the 450 mm tilt actuator the handover calls under-spec.",
+   "revg_line": "G10"
+  },
+  {
+   "id": "H-L2",
+   "area": "Bin handling",
+   "item": "4 x IP67 roller switches: 2 lip-seated (on the comb), 2 squaring (on the carriage face)",
+   "eur": 25.16,
+   "status": "G4-excerpt",
+   "group": "DE",
+   "function": "bin handling",
+   "note": "Same Aratas D2SW-3L2H switch the G5 report priced at EUR 6.29 each (RS DE).",
+   "revg_line": "G13, K2"
+  },
+  {
+   "id": "H-L3",
+   "area": "Bin handling",
+   "item": "2 x leg-tip side-gap sensors (VL53L1X-class ToF, potted)",
+   "eur": 10.0,
+   "status": "est",
+   "group": "CN",
+   "function": "bin handling",
+   "note": "Closes the docking loop without relying on the camera: dock_mc.json stress case 82 % -> 99.9 % first try.",
+   "revg_line": ""
+  },
+  {
+   "id": "K5",
+   "area": "Bin handling",
+   "item": "Actuator current sensor INA219 (bin weight, not-collected, stall)",
+   "eur": 3.0,
+   "status": "G4-est",
+   "group": "CN",
+   "function": "bin handling",
+   "note": "Reads weight directly instead of inferring it from tilt current.",
+   "revg_line": "K5"
+  },
+  {
+   "id": "H-L4",
+   "area": "Bin handling",
+   "item": "Rubber rest pad + comb buffer",
+   "eur": 6.0,
+   "status": "est",
+   "group": "IE",
+   "function": "bin handling",
+   "note": "",
+   "revg_line": ""
+  },
+  {
+   "id": "H-P1",
+   "area": "Power",
+   "item": "2 x 12 V 18 Ah AGM (24 V, 432 Wh nominal)",
+   "eur": 93.9,
+   "status": "excerpt-11Nov",
+   "group": "DE",
+   "function": "mover",
+   "note": "Kung Long WP18-12SHR EUR 46.95 each (ebay.de excerpt). AGM instead of the 12 Ah LiFePO4 (EUR 129.90): no BMS trip on 2 x 45 A step peaks, charges in frost, 11 kg where the layout wants it.",
+   "revg_line": "G14"
+  },
+  {
+   "id": "H-P2",
+   "area": "Power",
+   "item": "Battery trays/straps on the rails, link cable 6 mm2, Anderson SB50 pair, 60 A MIDI fuse + holder",
+   "eur": 28.0,
+   "status": "est",
+   "group": "CN",
+   "function": "mover",
+   "note": "",
+   "revg_line": "G16, S1"
+  },
+  {
+   "id": "G15",
+   "area": "Power",
+   "item": "Hasp + padlock on the battery covers",
+   "eur": 7.0,
+   "status": "G4-est",
+   "group": "IE",
+   "function": "theft",
+   "note": "",
+   "revg_line": "G15"
+  },
+  {
+   "id": "S2",
+   "area": "Safety & power dist.",
+   "item": "6-way blade fuse box + fuses",
+   "eur": 9.0,
+   "status": "G4-est",
+   "group": "CN",
+   "function": "safety",
+   "note": "",
+   "revg_line": "S2"
+  },
+  {
+   "id": "S3",
+   "area": "Safety & power dist.",
+   "item": "Battery isolator key switch 100 A",
+   "eur": 10.0,
+   "status": "G4-est",
+   "group": "CN",
+   "function": "safety",
+   "note": "",
+   "revg_line": "S3"
+  },
+  {
+   "id": "S4",
+   "area": "Safety & power dist.",
+   "item": "Main contactor 100 A DC, 24 V coil",
+   "eur": 28.0,
+   "status": "G4-checked",
+   "group": "DE",
+   "function": "safety",
+   "note": "",
+   "revg_line": "S4"
+  },
+  {
+   "id": "S5",
+   "area": "Safety & power dist.",
+   "item": "Safety latch relay K1 Finder 55.34 + socket",
+   "eur": 18.0,
+   "status": "G4-checked",
+   "group": "IE",
+   "function": "safety",
+   "note": "",
+   "revg_line": "S5"
+  },
+  {
+   "id": "S6",
+   "area": "Safety & power dist.",
+   "item": "Relays: charge path, reset, actuator reversing pair",
+   "eur": 16.0,
+   "status": "G4-est",
+   "group": "CN",
+   "function": "safety",
+   "note": "",
+   "revg_line": "S6"
+  },
+  {
+   "id": "S7",
+   "area": "Safety & power dist.",
+   "item": "Dual hardware watchdog (missing-pulse detectors + relays)",
+   "eur": 8.0,
+   "status": "G4-est",
+   "group": "CN",
+   "function": "safety",
+   "note": "",
+   "revg_line": "S7"
+  },
+  {
+   "id": "S8",
+   "area": "Safety & power dist.",
+   "item": "Mushroom E-stop station IP65",
+   "eur": 15.0,
+   "status": "G4-checked",
+   "group": "IE",
+   "function": "safety",
+   "note": "",
+   "revg_line": "S8"
+  },
+  {
+   "id": "S9",
+   "area": "Safety & power dist.",
+   "item": "4-ch opto input module + coil clamps",
+   "eur": 7.0,
+   "status": "G4-est",
+   "group": "CN",
+   "function": "safety",
+   "note": "",
+   "revg_line": "S9"
+  },
+  {
+   "id": "S10",
+   "area": "Safety & power dist.",
+   "item": "Tamper siren",
+   "eur": 4.0,
+   "status": "G4-est",
+   "group": "CN",
+   "function": "theft",
+   "note": "",
+   "revg_line": "S10"
+  },
+  {
+   "id": "S11",
+   "area": "Safety & power dist.",
+   "item": "Supercap / UPS HAT for clean Pi shutdown",
+   "eur": 12.0,
+   "status": "G4-est",
+   "group": "CN",
+   "function": "safety",
+   "note": "",
+   "revg_line": "S11"
+  },
+  {
+   "id": "S13",
+   "area": "Safety & power dist.",
+   "item": "Tilt switch in the stop loop",
+   "eur": 3.0,
+   "status": "G4-est",
+   "group": "CN",
+   "function": "safety",
+   "note": "",
+   "revg_line": "S13"
+  },
+  {
+   "id": "S12",
+   "area": "Safety & power dist.",
+   "item": "DS18B20 x2 (ice gate, box temperature)",
+   "eur": 3.0,
+   "status": "G4-est",
+   "group": "CN",
+   "function": "safety",
+   "note": "",
+   "revg_line": "S12"
+  },
+  {
+   "id": "G18",
+   "area": "Navigation",
+   "item": "Flight controller F405 (ArduPilot Rover)",
+   "eur": 35.0,
+   "status": "G4-est",
+   "group": "CN",
+   "function": "navigation",
+   "note": "",
+   "revg_line": "G18"
+  },
+  {
+   "id": "G19",
+   "area": "Navigation",
+   "item": "RTK: LC29H rover + base core boards, 2 antennas, ESP32 NTRIP server",
+   "eur": 78.0,
+   "status": "G4-excerpt",
+   "group": "CN",
+   "function": "navigation",
+   "note": "",
+   "revg_line": "G19"
+  },
+  {
+   "id": "G21",
+   "area": "Sensing",
+   "item": "2D lidar LDROBOT STL-06N with drip cap",
+   "eur": 50.0,
+   "status": "G4-excerpt",
+   "group": "CN",
+   "function": "obstacle sensing",
+   "note": "",
+   "revg_line": "G21"
+  },
+  {
+   "id": "G22",
+   "area": "Sensing",
+   "item": "Nose bumper bar + leg-tip bump strips (tape switches)",
+   "eur": 21.0,
+   "status": "G4-est",
+   "group": "IE",
+   "function": "safety",
+   "note": "EUR 6 more than Rev G for the second leg tip.",
+   "revg_line": "G22"
+  },
+  {
+   "id": "G23",
+   "area": "Sensing",
+   "item": "Pi Zero 2 W + rear IP67 camera + 850 nm IR illuminator",
+   "eur": 45.0,
+   "status": "G4-est",
+   "group": "CN",
+   "function": "navigation",
+   "note": "",
+   "revg_line": "G23"
+  },
+  {
+   "id": "H-N1",
+   "area": "Sensing",
+   "item": "High-endurance microSD 32 GB (read-only root + UPS HAT do the protecting)",
+   "eur": 12.0,
+   "status": "est",
+   "group": "IE",
+   "function": "navigation",
+   "note": "Rev G: SanDisk Industrial EUR 39.90. The G3 BOM note itself says read-only root + supercap do most of the protection.",
+   "revg_line": "G23b"
+  },
+  {
+   "id": "G24",
+   "area": "Sensing",
+   "item": "Retro-reflective ArUco tags for 3 bins (front + back) + dock tag",
+   "eur": 10.0,
+   "status": "G4-est",
+   "group": "IE",
+   "function": "navigation",
+   "note": "",
+   "revg_line": "G24"
+  },
+  {
+   "id": "H-N2",
+   "area": "Sensing",
+   "item": "2 x 24 GHz vehicle radar HLK-LD2451 (front, rear)",
+   "eur": 32.92,
+   "status": "excerpt-11Nov",
+   "group": "CZ",
+   "function": "vehicle detection",
+   "note": "EUR 16.46 each incl. VAT at laskakit.cz (excerpt). A G4 feature that is NOT in the Rev G BOM.",
+   "revg_line": ""
+  },
+  {
+   "id": "H-C1",
+   "area": "Comms",
+   "item": "Industrial LTE USB dongle (SIM7600G-H / EC25-E class, -40..+85 C) + antenna",
+   "eur": 45.0,
+   "status": "est",
+   "group": "CN",
+   "function": "monitoring",
+   "note": "The handover says the E3372 (EUR 35) is out of its temperature range and must be replaced. EU retail for the Waveshare SIM7600G-H dongle is EUR 78 (excerpt).",
+   "revg_line": "G25"
+  },
+  {
+   "id": "H-C2",
+   "area": "Comms",
+   "item": "Two-way audio: USB sound card, 3 W amp, IP65 horn speaker, mic capsule",
+   "eur": 30.0,
+   "status": "est",
+   "group": "CN",
+   "function": "two-way audio",
+   "note": "G4 feature not in the Rev G BOM; the handover estimates EUR 40-70.",
+   "revg_line": ""
+  },
+  {
+   "id": "G26",
+   "area": "Enclosure & wiring",
+   "item": "IP67 ABS electronics box + glands + vent + silica gel (on the mast)",
+   "eur": 30.0,
+   "status": "G4-est",
+   "group": "IE",
+   "function": "mover",
+   "note": "",
+   "revg_line": "G26"
+  },
+  {
+   "id": "G27",
+   "area": "Enclosure & wiring",
+   "item": "DC-DC 24->5 V 5 A, RTC, wire, lugs, ferrules, heat-shrink",
+   "eur": 40.0,
+   "status": "G4-est",
+   "group": "CN",
+   "function": "mover",
+   "note": "",
+   "revg_line": "G27"
+  },
+  {
+   "id": "H-W1",
+   "area": "Enclosure & wiring",
+   "item": "Connectors: Anderson PP45 for motors and actuator, Superseal for lamps and sensors, glands for the rest",
+   "eur": 25.0,
+   "status": "est",
+   "group": "CN",
+   "function": "mover",
+   "note": "Rev G: EUR 60 of keyed Deutsch DT / M12 so the tug could ship in 5 boxes and be plugged together. One robot built on site does not need that.",
+   "revg_line": "H1"
+  },
+  {
+   "id": "H-W2",
+   "area": "Enclosure & wiring",
+   "item": "Fasteners: M8/M10 8.8 zinc + nyloc for structure, A2 small screws, rivnuts, threadlock",
+   "eur": 30.0,
+   "status": "est",
+   "group": "IE",
+   "function": "mover",
+   "note": "Rev G: EUR 89, of which EUR 51 is Nord-Lock washers for the kingpin-loaded joints that no longer exist.",
+   "revg_line": "F1"
+  },
+  {
+   "id": "L1",
+   "area": "Lights",
+   "item": "Dipped headlamps x2, Addview Hammer E60 (cut-off beam)",
+   "eur": 35.98,
+   "status": "G4-checked",
+   "group": "DE",
+   "function": "night lights",
+   "note": "",
+   "revg_line": "L1"
+  },
+  {
+   "id": "L2",
+   "area": "Lights",
+   "item": "Red position markers x2",
+   "eur": 10.95,
+   "status": "G4-checked",
+   "group": "DE",
+   "function": "night lights",
+   "note": "",
+   "revg_line": "L2"
+  },
+  {
+   "id": "H-X1",
+   "area": "Lights",
+   "item": "Amber LED beacon 12-24 V on the motor-enable circuit",
+   "eur": 15.0,
+   "status": "est",
+   "group": "IE",
+   "function": "night lights",
+   "note": "Rev G: R65/R10 type-approved beacon EUR 30.20 drawing 17 W. Type approval is for road vehicles; a plain LED beacon does the same job on a private lane at ~5 W.",
+   "revg_line": "L3"
+  },
+  {
+   "id": "L4",
+   "area": "Lights",
+   "item": "Rear work lamp 3 W",
+   "eur": 6.0,
+   "status": "G4-est",
+   "group": "CN",
+   "function": "night lights",
+   "note": "",
+   "revg_line": "L4"
+  },
+  {
+   "id": "H-X2",
+   "area": "Lights",
+   "item": "Reflective tape: red rear, yellow sides, white front",
+   "eur": 15.0,
+   "status": "est",
+   "group": "IE",
+   "function": "night lights",
+   "note": "Rev G: ECE 104 rolls EUR 30.",
+   "revg_line": "L5"
+  },
+  {
+   "id": "L6",
+   "area": "Lights",
+   "item": "MOSFET board + LDR dusk module",
+   "eur": 9.0,
+   "status": "G4-est",
+   "group": "CN",
+   "function": "night lights",
+   "note": "",
+   "revg_line": "L6"
+  },
+  {
+   "id": "H-K1",
+   "area": "Dock",
+   "item": "Dock post with tag plate and nose block (steel offcuts from H-S1)",
+   "eur": 15.0,
+   "status": "est",
+   "group": "LOCAL",
+   "function": "auto-charge",
+   "note": "",
+   "revg_line": "D1"
+  },
+  {
+   "id": "D2",
+   "area": "Dock",
+   "item": "Plated wiping charge contacts (robot-mower type) on the dock post and the carriage face",
+   "eur": 26.0,
+   "status": "G4-checked",
+   "group": "DE",
+   "function": "auto-charge",
+   "note": "",
+   "revg_line": "D2"
+  },
+  {
+   "id": "H-K2",
+   "area": "Dock",
+   "item": "Reed switch + magnet + 10 A relay + fuse: contacts dead until the robot is seated",
+   "eur": 10.0,
+   "status": "est",
+   "group": "CN",
+   "function": "auto-charge",
+   "note": "Rev G: ESP32 dock controller EUR 25. The robot already measures charge current (D4) and raises the alerts.",
+   "revg_line": "D3"
+  },
+  {
+   "id": "D4",
+   "area": "Dock",
+   "item": "Robot charge path: ideal diode, INA226",
+   "eur": 9.0,
+   "status": "G4-est",
+   "group": "CN",
+   "function": "auto-charge",
+   "note": "",
+   "revg_line": "D4"
+  },
+  {
+   "id": "D5",
+   "area": "Dock",
+   "item": "IP65 enclosure for the charger",
+   "eur": 25.0,
+   "status": "G4-checked",
+   "group": "IE",
+   "function": "auto-charge",
+   "note": "",
+   "revg_line": "D5"
+  },
+  {
+   "id": "H-K3",
+   "area": "Dock",
+   "item": "24 V 3 A 3-stage AGM charger",
+   "eur": 30.0,
+   "status": "est",
+   "group": "DE",
+   "function": "auto-charge",
+   "note": "Often supplied with the donor chair.",
+   "revg_line": "D6"
+  },
+  {
+   "id": "D7",
+   "area": "Dock",
+   "item": "Lean-to rain roof (scrap sheet)",
+   "eur": 10.0,
+   "status": "G4-est",
+   "group": "IE",
+   "function": "auto-charge",
+   "note": "",
+   "revg_line": "D7"
+  },
+  {
+   "id": "D8",
+   "area": "Dock",
+   "item": "Cable lock to the dock post",
+   "eur": 15.0,
+   "status": "G4-est",
+   "group": "IE",
+   "function": "theft",
+   "note": "",
+   "revg_line": "D8"
+  },
+  {
+   "id": "D9",
+   "area": "Dock",
+   "item": "Concrete anchors",
+   "eur": 10.0,
+   "status": "G4-est",
+   "group": "IE",
+   "function": "auto-charge",
+   "note": "",
+   "revg_line": "D9"
+  },
+  {
+   "id": "D10",
+   "area": "Dock",
+   "item": "Dock DC wiring 2.5 mm2 ~5 m, inline fuse",
+   "eur": 14.0,
+   "status": "G4-est",
+   "group": "IE",
+   "function": "auto-charge",
+   "note": "",
+   "revg_line": "D10"
+  },
+  {
+   "id": "D11",
+   "area": "Dock",
+   "item": "RCD-protected IP66 outdoor socket",
+   "eur": 25.0,
+   "status": "G4-checked",
+   "group": "IE",
+   "function": "auto-charge",
+   "note": "CONDITIONAL: EUR 0 if an outdoor RCD socket already exists near the dock.",
+   "revg_line": "D11"
+  }
+ ],
+ "logistics": [
+  [
+   "SHIP-IE",
+   8
+  ],
+  [
+   "SHIP-DE",
+   35
+  ],
+  [
+   "SHIP-NL",
+   0
+  ],
+  [
+   "SHIP-CZ",
+   8
+  ],
+  [
+   "SHIP-CN",
+   8
+  ],
+  [
+   "SHIP-LOCAL",
+   15
+  ]
+ ],
+ "summary": {
+  "rev_h": {
+   "parts": 1682.36,
+   "logistics": 117.5,
+   "duty": 43.5,
+   "contingency": 190.27,
+   "all_in": 1990.13,
+   "lines": 63
+  },
+  "rev_h_by_area": {
+   "Structure": 280.0,
+   "Drive": 286.45,
+   "Bin handling": 89.16,
+   "Power": 128.9,
+   "Safety & power dist.": 133.0,
+   "Navigation": 113.0,
+   "Sensing": 170.92,
+   "Comms": 75.0,
+   "Enclosure & wiring": 125.0,
+   "Lights": 91.93,
+   "Dock": 189.0
+  },
+  "rev_h_by_function": {
+   "mover": 768.35,
+   "bin handling": 116.16,
+   "navigation": 198.0,
+   "theft": 26.0,
+   "safety": 150.0,
+   "obstacle sensing": 50.0,
+   "vehicle detection": 32.92,
+   "monitoring": 45.0,
+   "two-way audio": 30.0,
+   "night lights": 91.93,
+   "auto-charge": 174.0
+  },
+  "rev_g_published": {
+   "parts": 1817.92,
+   "logistics": 124.21,
+   "contingency": 189.1,
+   "all_in": 2131.23,
+   "by_area": {
+    "Structure": 136.98,
+    "Drive": 278.45,
+    "Hitch & grabber": 247.0,
+    "Power": 151.0,
+    "Safety & power dist.": 142.0,
+    "Navigation": 113.0,
+    "Sensing": 159.9,
+    "Comms": 35.0,
+    "Enclosure & wiring": 219.46,
+    "Lights": 122.13,
+    "Dock": 213.0
+   }
+  },
+  "rev_g_owed": [
+   [
+    "GH-B5F-130 grabber change",
+    15,
+    15,
+    15,
+    "HANDOVER Rev 3.0 s.6"
+   ],
+   [
+    "Tilt actuator to spec (1,500-2,500 N, IP66, 411 mm stroke): EU-stock units EUR 132-145 vs EUR 90 budgeted",
+    42,
+    48,
+    55,
+    "HANDOVER s.3; bom_revG.py note on G10"
+   ],
+   [
+    "BMS rated >= 20 A continuous",
+    0,
+    20,
+    40,
+    "HANDOVER s.5 (no price given: estimate)"
+   ],
+   [
+    "Industrial 4G modem to +75 C",
+    10,
+    25,
+    43,
+    "HANDOVER s.3; EUR 45 est to EUR 78 retail vs EUR 35"
+   ],
+   [
+    "Driver reverse-polarity protection",
+    5,
+    8,
+    10,
+    "HANDOVER s.3"
+   ],
+   [
+    "Frame as drawn in CAD (laser + press-brake + hot-dip galvanise)",
+    165,
+    165,
+    165,
+    "COSTDOWN_G4 s.5 R1; HANDOVER s.6"
+   ],
+   [
+    "Lane ramps for sharp lips over 40 mm in the bin-wheel track (EUR 15-40 each, count unknown: 0 / 3 / 6 assumed)",
+    0,
+    75,
+    200,
+    "HANDOVER s.4.2, s.6"
+   ],
+   [
+    "24 GHz radars front + rear (G4 feature, no BOM line)",
+    20,
+    33,
+    33,
+    "HANDOVER s.3; bom_revG4.csv has no radar line"
+   ],
+   [
+    "Two-way audio (G4 feature, no BOM line)",
+    40,
+    55,
+    70,
+    "HANDOVER s.3"
+   ]
+  ],
+  "rev_g_owed_totals": {
+   "low": 297,
+   "mid": 444,
+   "high": 631
+  },
+  "rev_g_completed_all_in": {
+   "low": 2458.0,
+   "mid": 2620.0,
+   "high": 2825.0
+  },
+  "rev_h_conditional": [
+   [
+    "Keep the donor chair's 200 mm nose casters",
+    60,
+    "Accept one lost step case: unladen, 60 mm square step at 0.5 m/s (layout A5)."
+   ],
+   [
+    "Cytron MDD20A instead of MDDS30",
+    38,
+    "Bench-measure donor stall current first: needs < 60 A peak, < 20 A continuous per motor."
+   ],
+   [
+    "Outdoor RCD socket already at the dock",
+    25,
+    "Brian to confirm (open item in the handover)."
+   ],
+   [
+    "Donor chair comes with a working 24 V charger",
+    30,
+    "Check on viewing."
+   ],
+   [
+    "Tail wheels from the donor anti-tippers, steel offcuts from a local fabricator",
+    30,
+    "Sourcing."
+   ]
+  ],
+  "rev_h_conditional_total": 183,
+  "rev_h_lean_all_in": 1789.0,
+  "upside_risk": [
+   [
+    "Donor powerchair costs EUR 220-280 instead of EUR 160",
+    90
+   ],
+   [
+    "Laser plates + steel at retail one-off prices",
+    50
+   ],
+   [
+    "Industrial LTE dongle bought in the EU (EUR 78)",
+    33
+   ]
+  ],
+  "stages": {
+   "Stage 1: mover + lift, driven by hand controller": {
+    "parts": 885,
+    "cumulative_parts": 885
+   },
+   "Stage 2: autonomy and safety chain": {
+    "parts": 398,
+    "cumulative_parts": 1283
+   },
+   "Stage 3: unattended extras": {
+    "parts": 400,
+    "cumulative_parts": 1682
+   }
+  },
+  "revg_deleted": [
+   [
+    "G8",
+    "Yaw-lock solenoid + yaw encoder + tilt IMU",
+    18
+   ],
+   [
+    "G10",
+    "Tilt actuator 450 mm (under-spec per the handover)",
+    90
+   ],
+   [
+    "G11",
+    "Floating twin-hook carriage",
+    25
+   ],
+   [
+    "K1",
+    "Latch pawls + release cam",
+    12
+   ],
+   [
+    "K3",
+    "Mast rest stop + catch",
+    10
+   ],
+   [
+    "K4",
+    "Lid hold-down finger",
+    8
+   ],
+   [
+    "G12",
+    "Anti-tip and stop rollers",
+    15
+   ],
+   [
+    "RF-10/11/12",
+    "Kingpin kit",
+    19
+   ],
+   [
+    "GR-07",
+    "Release cam gearmotor",
+    14
+   ],
+   [
+    "GR-10",
+    "Release cord",
+    4
+   ],
+   [
+    "GR-08",
+    "Float ratchet rack",
+    6
+   ],
+   [
+    "BT-01",
+    "Sand ballast cans",
+    21.98
+   ]
+  ],
+  "revg_deleted_total": 242.98,
+  "lines_carried_from_revg": 39,
+  "lines_new_or_changed": 24,
+  "target_1200_gap": 790,
+  "date": "2026-11-11"
+ }
+}

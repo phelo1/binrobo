@@ -1,0 +1,10 @@
+{
+ "name": "default (= G3 pad: A mouth, M L-14.6, F L-20.0)",
+ "note": "heading_deg = handle direction relative to the up-lane direction (+ = CCW). spacing_m = min clear gap bin-to-bin, hedge_clear_m = min clear gap bin-to-hedge line. lat 'auto' = as far left as hedge_clear_m allows.",
+ "order": ["F", "M", "A"],
+ "spots": {
+  "A": {"s_from_end": 11.1, "lat": 1.35, "heading_deg": 0.0, "spacing_m": 1.0, "hedge_clear_m": 0.0},
+  "M": {"s_from_end": 14.6, "lat": 0.85, "heading_deg": 0.0, "spacing_m": 1.0, "hedge_clear_m": 0.6},
+  "F": {"s_from_end": 20.0, "lat": 0.85, "heading_deg": 0.0, "spacing_m": 1.0, "hedge_clear_m": 0.6}
+ }
+}

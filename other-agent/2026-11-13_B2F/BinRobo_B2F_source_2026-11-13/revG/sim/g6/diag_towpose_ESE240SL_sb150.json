@@ -1,0 +1,214 @@
+{
+ "bin": "ESE240SL",
+ "empty": false,
+ "massfile": "mass_g6_M110h.json",
+ "grab": "success",
+ "tug_pitch_deg": -5.44,
+ "mast_deg": 70.4,
+ "bin_tilt_deg": 44.8,
+ "tug_subtree_kg": 112.7,
+ "tug_subtree_com_x_from_axle_m": 0.146,
+ "bin_kg": 110.0,
+ "drive_N": 1672.7,
+ "caster_N": 0.0,
+ "antitip_N": 0.0,
+ "flare_N": 511.7,
+ "binwheel_N": 773.1,
+ "stopbar_N": 0.0,
+ "spine_N": 0.0,
+ "hookF_N": 761.4,
+ "pairs": [
+  {
+   "a": "ground",
+   "b": "driveR",
+   "N": 432.6,
+   "Fworld": [
+    -0.7,
+    -0.0,
+    432.6
+   ],
+   "x_from_axle_m": -0.016,
+   "z_m": -0.0
+  },
+  {
+   "a": "ground",
+   "b": "driveR",
+   "N": 429.5,
+   "Fworld": [
+    -1.4,
+    -0.1,
+    429.5
+   ],
+   "x_from_axle_m": -0.016,
+   "z_m": -0.0
+  },
+  {
+   "a": "stopbar2",
+   "b": "binwheelR",
+   "N": 409.2,
+   "Fworld": [
+    -288.8,
+    -3.7,
+    289.9
+   ],
+   "x_from_axle_m": -0.564,
+   "z_m": 0.113
+  },
+  {
+   "a": "ground",
+   "b": "driveL",
+   "N": 406.8,
+   "Fworld": [
+    1.6,
+    -0.3,
+    406.8
+   ],
+   "x_from_axle_m": -0.016,
+   "z_m": -0.0
+  },
+  {
+   "a": "ground",
+   "b": "driveL",
+   "N": 403.7,
+   "Fworld": [
+    1.0,
+    -0.0,
+    403.7
+   ],
+   "x_from_axle_m": -0.016,
+   "z_m": -0.0
+  },
+  {
+   "a": "stopbar2",
+   "b": "binwheelL",
+   "N": 363.9,
+   "Fworld": [
+    -256.6,
+    -4.0,
+    258.1
+   ],
+   "x_from_axle_m": -0.564,
+   "z_m": 0.113
+  },
+  {
+   "a": "ground",
+   "b": "flareL",
+   "N": 292.7,
+   "Fworld": [
+    -2.3,
+    -5.1,
+    292.7
+   ],
+   "x_from_axle_m": -0.847,
+   "z_m": -0.0
+  },
+  {
+   "a": "ground",
+   "b": "flareR",
+   "N": 219.0,
+   "Fworld": [
+    2.0,
+    -5.0,
+    219.0
+   ],
+   "x_from_axle_m": -0.847,
+   "z_m": -0.0
+  },
+  {
+   "a": "bar",
+   "b": "hk6",
+   "N": 184.7,
+   "Fworld": [
+    -167.8,
+    0.6,
+    -77.1
+   ],
+   "x_from_axle_m": 0.162,
+   "z_m": 0.723
+  },
+  {
+   "a": "bar",
+   "b": "hk6",
+   "N": 184.3,
+   "Fworld": [
+    -167.8,
+    0.6,
+    -76.4
+   ],
+   "x_from_axle_m": 0.162,
+   "z_m": 0.723
+  },
+  {
+   "a": "bar",
+   "b": "hk0",
+   "N": 176.2,
+   "Fworld": [
+    -161.6,
+    1.2,
+    -70.4
+   ],
+   "x_from_axle_m": 0.162,
+   "z_m": 0.723
+  },
+  {
+   "a": "bar",
+   "b": "hk0",
+   "N": 175.9,
+   "Fworld": [
+    -161.1,
+    0.6,
+    -70.7
+   ],
+   "x_from_axle_m": 0.162,
+   "z_m": 0.723
+  },
+  {
+   "a": "bar",
+   "b": "hk7",
+   "N": 67.7,
+   "Fworld": [
+    30.0,
+    0.4,
+    -60.7
+   ],
+   "x_from_axle_m": 0.179,
+   "z_m": 0.716
+  },
+  {
+   "a": "bar",
+   "b": "hk7",
+   "N": 67.5,
+   "Fworld": [
+    29.6,
+    0.4,
+    -60.7
+   ],
+   "x_from_axle_m": 0.179,
+   "z_m": 0.716
+  },
+  {
+   "a": "bar",
+   "b": "hk1",
+   "N": 63.4,
+   "Fworld": [
+    26.5,
+    0.4,
+    -57.6
+   ],
+   "x_from_axle_m": 0.179,
+   "z_m": 0.716
+  },
+  {
+   "a": "bar",
+   "b": "hk1",
+   "N": 63.3,
+   "Fworld": [
+    26.6,
+    0.4,
+    -57.4
+   ],
+   "x_from_axle_m": 0.179,
+   "z_m": 0.716
+  }
+ ]
+}

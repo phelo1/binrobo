@@ -1,0 +1,32 @@
+mon t 1.0 q -0.000 F 16 nib [1.149, -0.0, 0.75] clear -0.000 tilt 0.0 seated False {}
+mon t 2.0 q -0.000 F 16 nib [1.005, -0.001, 0.75] clear -0.000 tilt 0.0 seated False {}
+mon t 3.0 q -0.000 F 16 nib [0.861, -0.002, 0.75] clear -0.000 tilt 0.0 seated False {}
+mon t 4.0 q -0.000 F 16 nib [0.722, -0.001, 0.75] clear -0.000 tilt 0.0 seated False {}
+mon t 5.0 q -0.000 F 16 nib [0.582, 0.008, 0.75] clear -0.000 tilt 0.0 seated False {}
+mon t 6.0 q -0.000 F 16 nib [0.44, 0.008, 0.75] clear -0.000 tilt 0.0 seated False {}
+mon t 7.0 q -0.000 F 16 nib [0.296, 0.001, 0.75] clear -0.000 tilt 0.0 seated False {}
+mon t 8.0 q -0.000 F 16 nib [0.219, -0.004, 0.75] clear -0.000 tilt 0.0 seated False {}
+mon t 9.0 q -0.000 F 16 nib [0.164, -0.008, 0.75] clear -0.000 tilt 0.0 seated False {}
+mon t 10.0 q -0.000 F 16 nib [0.109, -0.011, 0.75] clear -0.000 tilt 0.0 seated False {}
+mon t 11.0 q -0.000 F 16 nib [0.076, -0.012, 0.75] clear -0.000 tilt 0.0 seated False {}
+mon t 12.0 q 0.017 F 56 nib [0.076, -0.012, 0.767] clear -0.000 tilt 0.0 seated False {}
+mon t 13.0 q 0.047 F 56 nib [0.076, -0.012, 0.797] clear -0.000 tilt 0.0 seated False {}
+mon t 14.0 q 0.075 F 50 nib [0.076, -0.012, 0.825] clear -0.000 tilt 0.0 seated False {}
+mon t 15.0 q 0.075 F -29 nib [0.076, -0.012, 0.825] clear -0.000 tilt 0.0 seated False {'bar-keeptip': 99, 'padg-binhull': 13}
+mon t 16.0 q 0.075 F 49 nib [0.076, -0.012, 0.825] clear -0.000 tilt 0.0 seated False {'padg-binhull': 2}
+mon t 17.0 q 0.044 F 42 nib [0.076, -0.012, 0.794] clear -0.000 tilt 0.0 seated False {}
+mon t 18.0 q 0.004 F 42 nib [0.076, -0.012, 0.754] clear -0.000 tilt 0.0 seated False {}
+{'docked': True, 'reapp': False, 'dock_dy_mm': 9.9, 'lift_rise_N': -45, 'seat_switch': False, 'keeper_on_bar': True, 'keeper_deg': 2.5, 'claim': False, 'captured': False, 'wheel_clear_mm': -0.0, 'bin_tilt_abs': 0.0, 'seated': False, 'result': 'safe_miss'}
+[(11.1, 'docked: tip, bin dy 10 mm (camera 11), nib gap 2 mm, bin moved 0 mm')]
+mon t 19.0 q -0.000 F 16 nib [0.076, -0.012, 0.75] clear -0.000 tilt 0.0 seated False {}
+mon t 20.0 q -0.000 F 16 nib [0.104, -0.011, 0.75] clear -0.000 tilt 0.0 seated False {}
+mon t 21.0 q -0.000 F 16 nib [0.246, -0.008, 0.75] clear -0.000 tilt 0.0 seated False {}
+mon t 22.0 q -0.000 F 16 nib [0.384, -0.017, 0.75] clear -0.000 tilt 0.0 seated False {}
+mon t 23.0 q -0.000 F 16 nib [0.526, -0.029, 0.75] clear -0.000 tilt 0.0 seated False {}
+mon t 24.0 q -0.000 F 16 nib [0.669, -0.038, 0.75] clear -0.000 tilt 0.0 seated False {}
+mon t 25.0 q -0.000 F 16 nib [0.684, -0.039, 0.75] clear -0.000 tilt 0.0 seated False {}
+mon t 26.0 q -0.000 F 16 nib [0.684, -0.039, 0.75] clear -0.000 tilt 0.0 seated False {}
+mon t 27.0 q -0.000 F 16 nib [0.684, -0.039, 0.75] clear -0.000 tilt 0.0 seated False {}
+{'tilt_before_withdraw': 0.0, 'released': True, 'nib_clear_m': 0.616}
+end t 27.0 q -0.000 F 16 nib [0.684, -0.039, 0.75] clear -0.000 tilt 0.0 seated False {}
+zL 0.968 xbt 0.06799999999999999

@@ -1,0 +1,101 @@
+{
+ "bin": "ESE240SL",
+ "test": "towstab",
+ "gh": "B2",
+ "ghp": {
+  "hy": 130.0,
+  "lip_chamfer": true,
+  "ease": 0.6,
+  "_reapp": {
+   "k": 5.0
+  },
+  "_guard": true,
+  "_claim_and": true,
+  "throat": -34.0,
+  "lip_w": 8.0,
+  "lip_top": -2.0,
+  "pawl": {
+   "knee": [
+    -18.0,
+    35.0
+   ],
+   "tip": [
+    -33.0,
+    19.0
+   ]
+  },
+  "truth_ztop": 50.0,
+  "feel_T": 20.0,
+  "reclose": 0.6
+ },
+ "tug_kg": 115.8,
+ "bin_kg": 110.0,
+ "grab": {
+  "result": "success",
+  "claim": true,
+  "captured": true,
+  "float_mm": 8.2,
+  "bar_mm": [
+   -1.0,
+   7.3,
+   -12.5
+  ]
+ },
+ "dist_m": 8.94,
+ "reached": true,
+ "still_captured": true,
+ "pawl_bounce": null,
+ "pawl_min_deg": -140.5,
+ "peak_hook": 747,
+ "max_roll_deg": 0.0,
+ "antitip_peak_N": 0.0,
+ "caster_min_N": 0.0,
+ "max_bin_yaw_deg": 10.6,
+ "ok": true,
+ "hitch_max_deg": 10.4,
+ "events": [
+  [
+   6.51,
+   "wheel-stop contact, both wheels True"
+  ],
+  [
+   12.34,
+   "swing end phi 7.7 seat True latch True abort None bar [-1.0, 7.3, -12.5] pawls [0.0, 0.0]"
+  ],
+  [
+   15.33,
+   "pull test rise 574 N dtilt 0.50 -> PASS"
+  ],
+  [
+   15.33,
+   "float ratchet released after claim (tip with free float)"
+  ],
+  [
+   40.2,
+   "tipped to 25.0 deg, captured throughout True"
+  ],
+  [
+   62.1,
+   "A' tow pose: stop bar retracted 60 mm, float clamped at bottom stop"
+  ],
+  [
+   62.1,
+   "rest stop + catch engaged at mast 74.8 deg, actuator unloaded"
+  ]
+ ],
+ "cpu_s": 55,
+ "env": {
+  "G6_YAWRANGE": "40",
+  "G6_RATCHET_TIP": "1",
+  "G6_STANDFIX": "1",
+  "G6_STANDWORLD": "1",
+  "G6_STRAIGHTEN": "1",
+  "G6_PIVOT": "1",
+  "G6_PINLOCK": "1",
+  "G6_PINTOL": "3.0",
+  "G6_DNLOCK": "1",
+  "G6_SB2": "0.15",
+  "G6_RATCHET_STAND": "1",
+  "G6_MASSFILE": "/workspace/projects/847c6e2d-79fb-41ac-8eca-c75df6a92b0c/revG/sim/cg/mass_cgA.json"
+ }
+}

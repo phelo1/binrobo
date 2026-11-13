@@ -1,0 +1,101 @@
+{
+ "variant": "Bfwd",
+ "test": "bump60",
+ "desc": "4 ballast plates moved forward to +0.70 m",
+ "reached_4m": false,
+ "events": [
+  [
+   2.72,
+   "wheel-stop contact"
+  ],
+  [
+   8.6,
+   "hook reached handle, offset mm [ 2.   0.  -0.1]"
+  ],
+  [
+   9.2,
+   "latched: float spring seated handle (residual 1 mm)"
+  ],
+  [
+   57.27,
+   "tipped to 48.0 deg, mast 70.6 deg"
+  ]
+ ],
+ "phase5": {
+  "caster_min": 0,
+  "drive_min": 323,
+  "stopbar_max": 641,
+  "antitip_max": 212,
+  "arm_max": 0,
+  "tug_hit_max": 0,
+  "hook_max": 381,
+  "act_max_N": 960,
+  "pitch_max": 4.6,
+  "roll_max": 0.0,
+  "tilt_min": 0.0,
+  "tilt_max": 48.0,
+  "bin_yaw_max": 0.0,
+  "torque_max": 47.2,
+  "dist": 0.0,
+  "v_end": -0.0,
+  "caster_p10": 0,
+  "caster_unloaded_frac": 0.52,
+  "drive_p10": 397,
+  "hook_p99": 370,
+  "pitch_p90": 4.6,
+  "hgap_max": 0.0,
+  "antitip_p90": 120
+ },
+ "phase7": {
+  "caster_min": 0,
+  "drive_min": 0,
+  "stopbar_max": 159,
+  "antitip_max": 385,
+  "arm_max": 0,
+  "tug_hit_max": 0,
+  "hook_max": 2657,
+  "act_max_N": 2500,
+  "pitch_max": 7.1,
+  "roll_max": 0.3,
+  "tilt_min": 48.1,
+  "tilt_max": 53.2,
+  "bin_yaw_max": 3.4,
+  "torque_max": 60.0,
+  "dist": 0.68,
+  "v_end": -0.0,
+  "caster_p10": 0,
+  "caster_unloaded_frac": 0.94,
+  "drive_p10": 0,
+  "hook_p99": 1246,
+  "pitch_p90": 4.7,
+  "hgap_max": 0.5,
+  "antitip_p90": 363
+ },
+ "phase8": {
+  "caster_min": 0,
+  "drive_min": 0,
+  "stopbar_max": 18,
+  "antitip_max": 198,
+  "arm_max": 0,
+  "tug_hit_max": 0,
+  "hook_max": 790,
+  "act_max_N": 380,
+  "pitch_max": 4.7,
+  "roll_max": 0.0,
+  "tilt_min": 51.0,
+  "tilt_max": 51.0,
+  "bin_yaw_max": 0.1,
+  "torque_max": 150.0,
+  "dist": -0.0,
+  "v_end": -0.0,
+  "caster_p10": 0,
+  "caster_unloaded_frac": 1.0,
+  "drive_p10": 0,
+  "hook_p99": 788,
+  "pitch_p90": 4.7,
+  "hgap_max": 0.1,
+  "antitip_p90": 194
+ },
+ "pitch_flip": false,
+ "cpu_s": 14
+}

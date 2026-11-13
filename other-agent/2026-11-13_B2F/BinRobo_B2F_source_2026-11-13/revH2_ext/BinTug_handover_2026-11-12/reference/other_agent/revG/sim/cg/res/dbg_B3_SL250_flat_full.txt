@@ -1,0 +1,21 @@
+{'docked': False, 'reapp': True, 'dock_dy_mm': -3.3, 'result': 'bin_pushed', 'claim': False, 'captured': False}
+pre-setdown t 43.4 7 carry q -0.000 F 15 nib [1.141, 0.023, 0.651] clear -0.000 tilt 3.8 seated False tugx 0.843 {}
+mon t 43.5 11 Keeper open q -0.000 F 15 nib [1.141, 0.023, 0.651] clear -0.000 tilt 3.8 seated False tugx 0.843 {}
+mon t 44.0 11 Keeper open q -0.000 F 15 nib [1.141, 0.023, 0.651] clear -0.000 tilt 3.8 seated False tugx 0.843 {}
+mon t 44.5 11 Keeper open q -0.000 F 15 nib [1.141, 0.023, 0.651] clear -0.000 tilt 3.8 seated False tugx 0.843 {}
+mon t 45.0 12 Drive forwa q -0.000 F 15 nib [1.19, 0.024, 0.648] clear -0.000 tilt 3.8 seated False tugx 0.893 {}
+mon t 45.5 12 Drive forwa q -0.000 F 15 nib [1.262, 0.025, 0.643] clear -0.000 tilt 3.8 seated False tugx 0.965 {}
+mon t 46.0 12 Drive forwa q -0.000 F 15 nib [1.335, 0.026, 0.638] clear -0.000 tilt 3.8 seated False tugx 1.038 {}
+mon t 46.5 12 Drive forwa q -0.000 F 15 nib [1.407, 0.027, 0.633] clear -0.000 tilt 3.8 seated False tugx 1.110 {}
+mon t 47.0 12 Drive forwa q -0.000 F 15 nib [1.479, 0.028, 0.629] clear -0.000 tilt 3.8 seated False tugx 1.182 {}
+mon t 47.5 12 Drive forwa q -0.000 F 15 nib [1.551, 0.03, 0.624] clear -0.000 tilt 3.8 seated False tugx 1.254 {}
+mon t 48.0 12 Drive forwa q -0.000 F 15 nib [1.623, 0.031, 0.619] clear -0.000 tilt 3.8 seated False tugx 1.326 {}
+mon t 48.5 12 Drive forwa q -0.000 F 15 nib [1.695, 0.033, 0.614] clear -0.000 tilt 3.8 seated False tugx 1.399 {}
+mon t 49.0 13 Bin standin q -0.000 F 15 nib [1.745, 0.034, 0.611] clear -0.000 tilt 3.8 seated False tugx 1.449 {}
+mon t 49.5 13 Bin standin q -0.000 F 15 nib [1.745, 0.034, 0.611] clear -0.000 tilt 3.8 seated False tugx 1.449 {}
+mon t 50.0 13 Bin standin q -0.000 F 15 nib [1.745, 0.034, 0.611] clear -0.000 tilt 3.8 seated False tugx 1.449 {}
+mon t 50.5 13 Bin standin q -0.000 F 15 nib [1.745, 0.034, 0.611] clear -0.000 tilt 3.8 seated False tugx 1.449 {}
+mon t 51.0 13 Bin standin q -0.000 F 15 nib [1.745, 0.034, 0.611] clear -0.000 tilt 3.8 seated False tugx 1.449 {}
+mon t 51.5 13 Bin standin q -0.000 F 15 nib [1.745, 0.034, 0.611] clear -0.000 tilt 3.8 seated False tugx 1.449 {}
+{'tilt_before_withdraw': 3.8, 'released': True, 'nib_clear_m': 1.665}
+end t 51.8 13 Bin standin q -0.000 F 15 nib [1.745, 0.034, 0.611] clear -0.000 tilt 3.8 seated False tugx 1.449 {}

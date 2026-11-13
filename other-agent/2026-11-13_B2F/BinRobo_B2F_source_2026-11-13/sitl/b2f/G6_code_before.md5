@@ -1,0 +1,17 @@
+70666ca6bf95c0f9800b82c3f4c1edbb  scripts_g6/audio_api.py
+3b917f6e40948ea3674eb1225724cd5a  scripts_g6/companion.py
+2ee798f9067fe436694b557c9ab87f8c  scripts_g6/energy_replay.py
+d53629e5ce35a25f1da8df8c8de3d062  scripts_g6/figures_g4.py
+3c2ffbf2fc2b70e4a356cc83f2675ea8  scripts_g6/figures_g6.py
+dc6a3425598ad1c81cb24d611de9ffcc  scripts_g6/g4_features.py
+2d4a5c44bd13d79875b554bce04aba9c  scripts_g6/g6_features.py
+4db4b239cd50e52bbbe33764056d4ad8  scripts_g6/make_video_g4.py
+f3c0a4dc0662e65e70c0e72e15043243  scripts_g6/render.py
+a6848204f19d47289cdcb815503eeb2a  scripts_g6/report_g4.py
+ef77373b91ebdf2323b7492e66949cfd  scripts_g6/scenarios.py
+6cb3073370e433fd3364374442c4a15e  scripts_g6/scene.py
+4b01cbb4e81d8d7911ed778aea76bbda  scripts_g6/score_g4.py
+131cc0494880c000afcc9446a391b006  scripts_g6/score_g6.py
+85b6d18487efc044d1e6cfb58d2881f7  scripts_g6/sim_runner.py
+8ba9f4dc90c2aa7c468dca060afd24c4  scripts_g6/world.py
+729381b4921faf9cf8dc9af921bf6462  params/bintug_g6.parm

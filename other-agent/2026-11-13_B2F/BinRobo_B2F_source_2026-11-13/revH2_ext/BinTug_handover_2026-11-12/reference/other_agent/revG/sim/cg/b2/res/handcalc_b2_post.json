@@ -1,0 +1,81 @@
+{
+ "peaks_nominal_carry": {
+  "lift_N": [
+   3000.0,
+   "step40_both"
+  ],
+  "pad_N": [
+   1095.93,
+   "towstab"
+  ],
+  "drive_tyre_N": [
+   5189.4,
+   "step40_both"
+  ],
+  "nib_rim_N": [
+   2880.69,
+   "step40_both"
+  ],
+  "wheel_torque_Nm": [
+   150.0,
+   "climb_m22_c06"
+  ]
+ },
+ "static_110kg_lift_N": 1150,
+ "static_110kg_pad_N": 761,
+ "lip": {
+  "B2 640 mm comb, ESE 240 SL full, static carry (lift force on 12 % static poses)": {
+   "F_N": 1150,
+   "comb_mm": 640,
+   "receiver_mm": 580,
+   "coverage_pct": 100,
+   "line_load_N_per_mm": 1.98,
+   "bearing_MPa": 0.25,
+   "ledge_bending_MPa": 4.8
+  },
+  "B2 640 mm comb, peak nib/rim force over the nominal carry runs": {
+   "F_N": 2881,
+   "comb_mm": 640,
+   "receiver_mm": 580,
+   "coverage_pct": 100,
+   "line_load_N_per_mm": 4.97,
+   "bearing_MPa": 0.62,
+   "ledge_bending_MPa": 12.1
+  },
+  "B1 160 mm comb, peak 3838 N (COMPARE s.9) - reference": {
+   "F_N": 3838,
+   "comb_mm": 160,
+   "receiver_mm": 580,
+   "coverage_pct": 28,
+   "line_load_N_per_mm": 23.99,
+   "bearing_MPa": 3.0,
+   "ledge_bending_MPa": 58.5
+  }
+ },
+ "lift_actuator": {
+  "peak_N": 3000.0,
+  "static_N": 1150,
+  "unit": "QC FDI 24 V 4,000 N IP65 (ACT-B)",
+  "margin_peak": 1.33,
+  "margin_static": 3.48,
+  "note": "sim actuator force cap 3,000 N (as B1); generic 3 kN option would give 1.00 x on the peak"
+ },
+ "pad_toggle": {
+  "actuator": "TRU TC24-50-1000, 1,000 N",
+  "need_worst_N": 680,
+  "case": "ESE 240 SL 250 mm wheels full, extension at load-on (smoke6)",
+  "margin": 1.47,
+  "locked_stop_peak_N": 1095.93,
+  "note": "in the carry the pad load goes into the over-centre stop, not the actuator"
+ },
+ "frame": {
+  "section": "50x50x2 RHS S235, I 147712 mm4, Z 5908 mm3",
+  "rail_load_N": 869,
+  "M_static_Nm": 206,
+  "sigma_static_MPa": 34.9,
+  "sigma_dyn_x2p5_MPa": 87.3,
+  "allow_MPa": 157,
+  "mast_upright_M_Nm": 118,
+  "mast_sigma_dyn_MPa": 49.9
+ }
+}

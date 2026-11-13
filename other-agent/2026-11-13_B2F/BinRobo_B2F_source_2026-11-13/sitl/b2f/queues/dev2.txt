@@ -1,0 +1,17 @@
+s8 7
+s11a 7
+s11b 7
+s12a 7
+s12b 7
+s7 7
+s6a 7
+s9 7
+s10a 7
+s10b 7
+s6b 7
+s4b 7
+s4c 7
+s5a 7
+s5b 7
+s1b 7
+s5a 7

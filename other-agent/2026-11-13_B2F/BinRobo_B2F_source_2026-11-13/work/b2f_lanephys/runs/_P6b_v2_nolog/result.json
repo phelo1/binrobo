@@ -1,0 +1,109 @@
+{
+ "run": "P6b_dog_crossing",
+ "title": "P6b dog runs across: stop, wait, resume",
+ "verdict": "PASS",
+ "fails": [],
+ "sim_time_s": 53.7,
+ "t_start": 481.50149999206997,
+ "energy_Wh": 0.17,
+ "wall_s": 17,
+ "metrics": {
+  "clear_min": 0.0603,
+  "clear_at": 246.0,
+  "seated_all": true,
+  "bin_ground_N": 0.0,
+  "roll_max": 0.0213,
+  "pitch_max": 3.1011,
+  "hedge_min": 1.4869,
+  "hedge_at": 237.1,
+  "tip_min": 23.6389,
+  "tip_at": 246.0,
+  "liftF_max": 1182.2982,
+  "liftF_at": 232.3,
+  "gap_min": 1.7396,
+  "v_max": 0.506,
+  "n_lost": 0
+ },
+ "results": {
+  "drive0": {
+   "reached": true,
+   "why": null,
+   "s_end": 246.0,
+   "ref_end": 246.0,
+   "t": 535.2,
+   "captured_end": true,
+   "clear_end_mm": 62.1
+  }
+ },
+ "seg_metrics": {
+  "drive0": {
+   "clear_min": 0.0603,
+   "clear_at": 246.0,
+   "seated_all": true,
+   "bin_ground_N": 0.0,
+   "roll_max": 0.0213,
+   "pitch_max": 3.1011,
+   "hedge_min": 1.4869,
+   "hedge_at": 237.1,
+   "tip_min": 23.6389,
+   "tip_at": 246.0,
+   "liftF_max": 1182.2982,
+   "liftF_at": 232.3,
+   "gap_min": 1.7396,
+   "v_max": 0.506,
+   "n_lost": 0
+  }
+ },
+ "events": [
+  [
+   481.5,
+   "start from P1 snapshot s222.0.pkl (carried state)"
+  ],
+  [
+   504.39,
+   "dog starts moving into the lane (bumper 2.40 m from its line)"
+  ],
+  [
+   535.2,
+   "drive0: reached at s 246.0"
+  ]
+ ],
+ "cfg": {
+  "binkey": "ESE240SL",
+  "kg": 110.0,
+  "with_bin": true,
+  "variant": {
+   "step": "ramp",
+   "trench": "covered"
+  },
+  "act_N": 3000.0,
+  "pert": {},
+  "night": false,
+  "obstacles": [
+   {
+    "name": "dog",
+    "kind": "dog",
+    "r": 0.17,
+    "h": 0.55,
+    "s": 236.0,
+    "lat0": -2.3,
+    "lat1": 2.6,
+    "v": 2.5,
+    "trig": 2.4
+   }
+  ],
+  "title": "P6b dog runs across: stop, wait, resume",
+  "start": [
+   "snap",
+   "P1",
+   222.0
+  ]
+ },
+ "steps": [
+  [
+   "drive",
+   "{'to': 246.0, 'ref': 'tug', 'dirn': 1, 'knots': [(0, -1.4), (12.0, -1.4), (24.0, 0.0), (610.0, 0.0), (619.5, 1.35), (700, 1.35)], 'obstacle': True}"
+  ]
+ ],
+ "peak": {}
+}

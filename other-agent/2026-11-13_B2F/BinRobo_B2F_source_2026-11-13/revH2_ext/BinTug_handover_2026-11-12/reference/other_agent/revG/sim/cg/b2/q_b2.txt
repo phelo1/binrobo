@@ -1,0 +1,265 @@
+python3 ../../../work/revB2/rec_B2.py
+env CGB_F9=1 IT1_TAG= python3 b2/runB2.py grab WEB140 30 201
+env CGB_F9=1 IT1_TAG= python3 b2/runB2.py grab ESE240SL 30 202
+env CGB_F9=1 IT1_TAG= python3 b2/runB2.py grab ESE240CL 30 203
+env CGB_F9=1 IT1_TAG= python3 b2/runB2.py climb 0.30 0.06
+env CGB_F9=1 IT1_TAG= python3 b2/runB2.py climb 0.30 0.09
+env CGB_F9=1 IT1_TAG= python3 b2/runB2.py climb 0.25 0.06
+env CGB_F9=1 IT1_TAG= python3 b2/runB2.py climb 0.25 0.09
+env CGB_F9=1 IT1_TAG= python3 b2/runB2.py climb 0.22 0.06
+env CGB_F9=1 IT1_TAG= python3 b2/runB2.py climb 0.22 0.09
+env CGB_F9=1 IT1_TAG= python3 b2/runB2.py step one
+env CGB_F9=1 IT1_TAG= python3 b2/runB2.py step both
+env CGB_F9=1 IT1_TAG= python3 b2/runB2.py step both_ramp
+env CGB_F9=1 IT1_TAG= python3 b2/runB2.py estop fwd
+env CGB_F9=1 IT1_TAG= python3 b2/runB2.py estop rev
+env CGB_F9=1 IT1_TAG= python3 b2/runB2.py towstab
+env CGB_F9=1 IT1_TAG= python3 b2/runB2.py rel WEB140 flat full
+env CGB_F9=1 IT1_TAG= python3 b2/runB2.py rel WEB140 flat empty
+env CGB_F9=1 IT1_TAG= python3 b2/runB2.py rel WEB140 up12 full
+env CGB_F9=1 IT1_TAG= python3 b2/runB2.py rel WEB140 up12 empty
+env CGB_F9=1 IT1_TAG= python3 b2/runB2.py rel WEB140 dn12 full
+env CGB_F9=1 IT1_TAG= python3 b2/runB2.py rel WEB140 dn12 empty
+env CGB_F9=1 IT1_TAG= python3 b2/runB2.py rel ESE240CL flat full
+env CGB_F9=1 IT1_TAG= python3 b2/runB2.py rel ESE240CL flat empty
+env CGB_F9=1 IT1_TAG= python3 b2/runB2.py rel ESE240CL up12 full
+env CGB_F9=1 IT1_TAG= python3 b2/runB2.py rel ESE240CL up12 empty
+env CGB_F9=1 IT1_TAG= python3 b2/runB2.py rel ESE240CL dn12 full
+env CGB_F9=1 IT1_TAG= python3 b2/runB2.py rel ESE240CL dn12 empty
+env CGB_F9=1 IT1_TAG= python3 b2/runB2.py rel ESE240SL250 flat full
+env CGB_F9=1 IT1_TAG= python3 b2/runB2.py rel ESE240SL250 flat empty
+env CGB_F9=1 IT1_TAG= python3 b2/runB2.py rel ESE240SL250 up12 full
+env CGB_F9=1 IT1_TAG= python3 b2/runB2.py rel ESE240SL250 up12 empty
+env CGB_F9=1 IT1_TAG= python3 b2/runB2.py rel ESE240SL250 dn12 full
+env CGB_F9=1 IT1_TAG= python3 b2/runB2.py rel ESE240SL250 dn12 empty
+env CGB_F9=1 SIM_DT=0.00025 IT1_TAG= python3 b2/runB2.py climb 0.25 0.09
+env CGB_F9=1 SIM_DT=0.00025 IT1_TAG= python3 b2/runB2.py step one
+env CGB_F9=1 SIM_DT=0.00025 IT1_TAG= python3 b2/runB2.py estop fwd
+env CGB_F9=1 IT1_TAG= python3 b2/runB2.py static up 110
+env CGB_F9=1 IT1_TAG= python3 b2/runB2.py static up 60
+env CGB_F9=1 IT1_TAG= python3 b2/runB2.py static dn 110
+env CGB_F9=1 IT1_TAG= python3 b2/runB2.py static dn 60
+env CGB_F9=1 IT1_TAG= python3 b2/runB2.py static crL 110
+env CGB_F9=1 IT1_TAG= python3 b2/runB2.py static crL 60
+env CGB_F9=1 IT1_TAG= python3 b2/runB2.py static crR 110
+env CGB_F9=1 IT1_TAG= python3 b2/runB2.py static crR 60
+env CGB_F9=1 IT1_TAG= python3 b2/runB2.py grab ESE240SL250 30 204
+env CGB_F9=1 IT1_TAG= python3 b2/runB2.py grab ESE140CL 30 205
+env CGB_F9=1 CGB_GEO='{"cr":0.125}' IT1_TAG=_cr250 python3 b2/runB2.py step both
+env CGB_F9=1 B2_LUG=1 IT1_TAG=_lug python3 b2/runB2.py step both
+env CGB_F9=1 CGB_MASSF=b2/mass_cgB2_cgfwd.json IT1_TAG=_cgfwd python3 b2/runB2.py step both
+env CGB_F9=1 B2_LUG=1 CGB_MASSF=b2/mass_cgB2_cgfwd.json IT1_TAG=_lugcgfwd python3 b2/runB2.py step both
+env CGB_F9=1 CGB_MASSF=b2/mass_cgB2_donor.json CGB_GEO='{"rw":0.159}' IT1_TAG=_donor python3 b2/runB2.py climb 0.30 0.06
+env CGB_F9=1 CGB_MASSF=b2/mass_cgB2_donor.json CGB_GEO='{"rw":0.159}' IT1_TAG=_donor python3 b2/runB2.py climb 0.30 0.09
+env CGB_F9=1 CGB_MASSF=b2/mass_cgB2_donor.json CGB_GEO='{"rw":0.159}' IT1_TAG=_donor python3 b2/runB2.py climb 0.25 0.06
+env CGB_F9=1 CGB_MASSF=b2/mass_cgB2_donor.json CGB_GEO='{"rw":0.159}' IT1_TAG=_donor python3 b2/runB2.py climb 0.25 0.09
+env CGB_F9=1 CGB_MASSF=b2/mass_cgB2_donor.json CGB_GEO='{"rw":0.159}' IT1_TAG=_donor python3 b2/runB2.py climb 0.22 0.06
+env CGB_F9=1 CGB_MASSF=b2/mass_cgB2_donor.json CGB_GEO='{"rw":0.159}' IT1_TAG=_donor python3 b2/runB2.py climb 0.22 0.09
+env CGB_F9=1 CGB_MASSF=b2/mass_cgB2_donor.json CGB_GEO='{"rw":0.159}' IT1_TAG=_donor python3 b2/runB2.py step one
+env CGB_F9=1 CGB_MASSF=b2/mass_cgB2_donor.json CGB_GEO='{"rw":0.159}' IT1_TAG=_donor python3 b2/runB2.py step both
+env CGB_F9=1 CGB_MASSF=b2/mass_cgB2_donor.json CGB_GEO='{"rw":0.159}' IT1_TAG=_donor python3 b2/runB2.py step both_ramp
+env CGB_F9=1 CGB_MASSF=b2/mass_cgB2_donor.json CGB_GEO='{"rw":0.159}' IT1_TAG=_donor python3 b2/runB2.py estop fwd
+env CGB_F9=1 CGB_MASSF=b2/mass_cgB2_donor.json CGB_GEO='{"rw":0.159}' IT1_TAG=_donor python3 b2/runB2.py estop rev
+env CGB_F9=1 CGB_MASSF=b2/mass_cgB2_donor.json CGB_GEO='{"rw":0.159}' IT1_TAG=_donor python3 b2/runB2.py towstab
+env CGB_F9=1 CGB_MASSF=b2/mass_cgB2_donor.json CGB_GEO='{"rw":0.159}' IT1_TAG=_donor python3 b2/runB2.py static up 110
+env CGB_F9=1 CGB_MASSF=b2/mass_cgB2_donor.json CGB_GEO='{"rw":0.159}' IT1_TAG=_donor python3 b2/runB2.py static dn 60
+env CGB_F9=1 CGB_MASSF=b2/mass_cgB2_donor.json CGB_GEO='{"rw":0.159}' IT1_TAG=_donor python3 b2/runB2.py static crL 110
+env CGB_F9=1 CGB_MASSF=b2/mass_cgB2_donor.json CGB_GEO='{"rw":0.159}' IT1_TAG=_donor python3 b2/runB2.py static crR 110
+env CGB_F9=1 CGB_MASSF=b2/mass_cgB2_donor.json CGB_GEO='{"rw":0.159}' IT1_TAG=_donor python3 b2/runB2.py grab ESE240SL 10 202
+env CGB_F9=1 B2_LUG=1 IT1_TAG=_lug python3 b2/runB2.py grab WEB140 30 201
+env CGB_F9=1 B2_LUG=1 IT1_TAG=_lug python3 b2/runB2.py grab ESE240SL 30 202
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 IT1_TAG=_lug python3 b2/runB2.py grab ESE240CL 30 203
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 IT1_TAG=_lug python3 b2/runB2.py climb 0.30 0.06
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 IT1_TAG=_lug python3 b2/runB2.py climb 0.30 0.09
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 IT1_TAG=_lug python3 b2/runB2.py climb 0.25 0.06
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 IT1_TAG=_lug python3 b2/runB2.py climb 0.25 0.09
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 IT1_TAG=_lug python3 b2/runB2.py climb 0.22 0.06
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 IT1_TAG=_lug python3 b2/runB2.py climb 0.22 0.09
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 IT1_TAG=_lug python3 b2/runB2.py step one
+env CGB_F9=1 B2_LUG=1 IT1_TAG=_lug python3 b2/runB2.py step both
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 IT1_TAG=_lug python3 b2/runB2.py step both_ramp
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 IT1_TAG=_lug python3 b2/runB2.py estop fwd
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 IT1_TAG=_lug python3 b2/runB2.py estop rev
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 IT1_TAG=_lug python3 b2/runB2.py towstab
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 IT1_TAG=_lug python3 b2/runB2.py rel WEB140 flat full
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 IT1_TAG=_lug python3 b2/runB2.py rel WEB140 flat empty
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 IT1_TAG=_lug python3 b2/runB2.py rel WEB140 up12 full
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 IT1_TAG=_lug python3 b2/runB2.py rel WEB140 up12 empty
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 IT1_TAG=_lug python3 b2/runB2.py rel WEB140 dn12 full
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 IT1_TAG=_lug python3 b2/runB2.py rel WEB140 dn12 empty
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 IT1_TAG=_lug python3 b2/runB2.py rel ESE240CL flat full
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 IT1_TAG=_lug python3 b2/runB2.py rel ESE240CL flat empty
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 IT1_TAG=_lug python3 b2/runB2.py rel ESE240CL up12 full
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 IT1_TAG=_lug python3 b2/runB2.py rel ESE240CL up12 empty
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 IT1_TAG=_lug python3 b2/runB2.py rel ESE240CL dn12 full
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 IT1_TAG=_lug python3 b2/runB2.py rel ESE240CL dn12 empty
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 IT1_TAG=_lug python3 b2/runB2.py rel ESE240SL250 flat full
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 IT1_TAG=_lug python3 b2/runB2.py rel ESE240SL250 flat empty
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 IT1_TAG=_lug python3 b2/runB2.py rel ESE240SL250 up12 full
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 IT1_TAG=_lug python3 b2/runB2.py rel ESE240SL250 up12 empty
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 IT1_TAG=_lug python3 b2/runB2.py rel ESE240SL250 dn12 full
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 IT1_TAG=_lug python3 b2/runB2.py rel ESE240SL250 dn12 empty
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 SIM_DT=0.00025 IT1_TAG=_lug python3 b2/runB2.py climb 0.25 0.09
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 SIM_DT=0.00025 IT1_TAG=_lug python3 b2/runB2.py step one
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 SIM_DT=0.00025 IT1_TAG=_lug python3 b2/runB2.py estop fwd
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 IT1_TAG=_lug python3 b2/runB2.py static up 110
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 IT1_TAG=_lug python3 b2/runB2.py static up 60
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 IT1_TAG=_lug python3 b2/runB2.py static dn 110
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 IT1_TAG=_lug python3 b2/runB2.py static dn 60
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 IT1_TAG=_lug python3 b2/runB2.py static crL 110
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 IT1_TAG=_lug python3 b2/runB2.py static crL 60
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 IT1_TAG=_lug python3 b2/runB2.py static crR 110
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 IT1_TAG=_lug python3 b2/runB2.py static crR 60
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 SIM_DT=0.00025 IT1_TAG=_lug python3 b2/runB2.py step both
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_MASS=1.1 IT1_TAG=_lug_pm110 python3 b2/runB2.py step both
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_MASS=0.9 IT1_TAG=_lug_pm090 python3 b2/runB2.py step both
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_MU=0.85 IT1_TAG=_lug_pmu085 python3 b2/runB2.py step both
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_CRR=0.09 IT1_TAG=_lug_pcrr09 python3 b2/runB2.py step both
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_MASS=1.1 IT1_TAG=_lug_pm110 python3 b2/runB2.py grab WEB140 10 201
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_MASS=1.1 IT1_TAG=_lug_pm110 python3 b2/runB2.py grab ESE240SL 10 202
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_MASS=1.1 IT1_TAG=_lug_pm110 python3 b2/runB2.py grab ESE240CL 10 203
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_MASS=1.1 IT1_TAG=_lug_pm110 python3 b2/runB2.py climb 0.22 0.09
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_MASS=1.1 IT1_TAG=_lug_pm110 python3 b2/runB2.py climb 0.25 0.06
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_MASS=1.1 IT1_TAG=_lug_pm110 python3 b2/runB2.py step one
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_MASS=1.1 IT1_TAG=_lug_pm110 python3 b2/runB2.py estop fwd
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_MASS=1.1 IT1_TAG=_lug_pm110 python3 b2/runB2.py estop rev
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_MASS=1.1 IT1_TAG=_lug_pm110 python3 b2/runB2.py towstab
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_MASS=1.1 IT1_TAG=_lug_pm110 python3 b2/runB2.py rel WEB140 up12 full
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_MASS=1.1 IT1_TAG=_lug_pm110 python3 b2/runB2.py rel WEB140 dn12 empty
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_MASS=1.1 IT1_TAG=_lug_pm110 python3 b2/runB2.py rel ESE240CL flat empty
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_MASS=1.1 IT1_TAG=_lug_pm110 python3 b2/runB2.py rel ESE240CL up12 full
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_MASS=1.1 IT1_TAG=_lug_pm110 python3 b2/runB2.py rel ESE240SL250 dn12 full
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_MASS=1.1 IT1_TAG=_lug_pm110 python3 b2/runB2.py rel ESE240SL250 up12 empty
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_MASS=1.1 IT1_TAG=_lug_pm110 python3 b2/runB2.py static up 110
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_MASS=1.1 IT1_TAG=_lug_pm110 python3 b2/runB2.py static dn 60
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_MASS=1.1 IT1_TAG=_lug_pm110 python3 b2/runB2.py static crL 110
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_MASS=0.9 IT1_TAG=_lug_pm090 python3 b2/runB2.py grab WEB140 10 201
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_MASS=0.9 IT1_TAG=_lug_pm090 python3 b2/runB2.py grab ESE240SL 10 202
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_MASS=0.9 IT1_TAG=_lug_pm090 python3 b2/runB2.py grab ESE240CL 10 203
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_MASS=0.9 IT1_TAG=_lug_pm090 python3 b2/runB2.py climb 0.22 0.09
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_MASS=0.9 IT1_TAG=_lug_pm090 python3 b2/runB2.py climb 0.25 0.06
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_MASS=0.9 IT1_TAG=_lug_pm090 python3 b2/runB2.py step one
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_MASS=0.9 IT1_TAG=_lug_pm090 python3 b2/runB2.py estop fwd
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_MASS=0.9 IT1_TAG=_lug_pm090 python3 b2/runB2.py estop rev
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_MASS=0.9 IT1_TAG=_lug_pm090 python3 b2/runB2.py towstab
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_MASS=0.9 IT1_TAG=_lug_pm090 python3 b2/runB2.py rel WEB140 up12 full
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_MASS=0.9 IT1_TAG=_lug_pm090 python3 b2/runB2.py rel WEB140 dn12 empty
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_MASS=0.9 IT1_TAG=_lug_pm090 python3 b2/runB2.py rel ESE240CL flat empty
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_MASS=0.9 IT1_TAG=_lug_pm090 python3 b2/runB2.py rel ESE240CL up12 full
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_MASS=0.9 IT1_TAG=_lug_pm090 python3 b2/runB2.py rel ESE240SL250 dn12 full
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_MASS=0.9 IT1_TAG=_lug_pm090 python3 b2/runB2.py rel ESE240SL250 up12 empty
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_MASS=0.9 IT1_TAG=_lug_pm090 python3 b2/runB2.py static up 110
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_MASS=0.9 IT1_TAG=_lug_pm090 python3 b2/runB2.py static dn 60
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_MASS=0.9 IT1_TAG=_lug_pm090 python3 b2/runB2.py static crL 110
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_MU=0.85 IT1_TAG=_lug_pmu085 python3 b2/runB2.py grab WEB140 10 201
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_MU=0.85 IT1_TAG=_lug_pmu085 python3 b2/runB2.py grab ESE240SL 10 202
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_MU=0.85 IT1_TAG=_lug_pmu085 python3 b2/runB2.py grab ESE240CL 10 203
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_MU=0.85 IT1_TAG=_lug_pmu085 python3 b2/runB2.py climb 0.22 0.09
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_MU=0.85 IT1_TAG=_lug_pmu085 python3 b2/runB2.py climb 0.25 0.06
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_MU=0.85 IT1_TAG=_lug_pmu085 python3 b2/runB2.py step one
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_MU=0.85 IT1_TAG=_lug_pmu085 python3 b2/runB2.py estop fwd
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_MU=0.85 IT1_TAG=_lug_pmu085 python3 b2/runB2.py estop rev
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_MU=0.85 IT1_TAG=_lug_pmu085 python3 b2/runB2.py towstab
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_MU=0.85 IT1_TAG=_lug_pmu085 python3 b2/runB2.py rel WEB140 up12 full
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_MU=0.85 IT1_TAG=_lug_pmu085 python3 b2/runB2.py rel WEB140 dn12 empty
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_MU=0.85 IT1_TAG=_lug_pmu085 python3 b2/runB2.py rel ESE240CL flat empty
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_MU=0.85 IT1_TAG=_lug_pmu085 python3 b2/runB2.py rel ESE240CL up12 full
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_MU=0.85 IT1_TAG=_lug_pmu085 python3 b2/runB2.py rel ESE240SL250 dn12 full
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_MU=0.85 IT1_TAG=_lug_pmu085 python3 b2/runB2.py rel ESE240SL250 up12 empty
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_MU=0.85 IT1_TAG=_lug_pmu085 python3 b2/runB2.py static up 110
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_MU=0.85 IT1_TAG=_lug_pmu085 python3 b2/runB2.py static dn 60
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_MU=0.85 IT1_TAG=_lug_pmu085 python3 b2/runB2.py static crL 110
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_CRR=0.09 IT1_TAG=_lug_pcrr09 python3 b2/runB2.py grab WEB140 10 201
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_CRR=0.09 IT1_TAG=_lug_pcrr09 python3 b2/runB2.py grab ESE240SL 10 202
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_CRR=0.09 IT1_TAG=_lug_pcrr09 python3 b2/runB2.py grab ESE240CL 10 203
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_CRR=0.09 IT1_TAG=_lug_pcrr09 python3 b2/runB2.py climb 0.22 0.09
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_CRR=0.09 IT1_TAG=_lug_pcrr09 python3 b2/runB2.py climb 0.25 0.06
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_CRR=0.09 IT1_TAG=_lug_pcrr09 python3 b2/runB2.py step one
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_CRR=0.09 IT1_TAG=_lug_pcrr09 python3 b2/runB2.py estop fwd
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_CRR=0.09 IT1_TAG=_lug_pcrr09 python3 b2/runB2.py estop rev
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_CRR=0.09 IT1_TAG=_lug_pcrr09 python3 b2/runB2.py towstab
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_CRR=0.09 IT1_TAG=_lug_pcrr09 python3 b2/runB2.py rel WEB140 up12 full
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_CRR=0.09 IT1_TAG=_lug_pcrr09 python3 b2/runB2.py rel WEB140 dn12 empty
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_CRR=0.09 IT1_TAG=_lug_pcrr09 python3 b2/runB2.py rel ESE240CL flat empty
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_CRR=0.09 IT1_TAG=_lug_pcrr09 python3 b2/runB2.py rel ESE240CL up12 full
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_CRR=0.09 IT1_TAG=_lug_pcrr09 python3 b2/runB2.py rel ESE240SL250 dn12 full
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_CRR=0.09 IT1_TAG=_lug_pcrr09 python3 b2/runB2.py rel ESE240SL250 up12 empty
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_CRR=0.09 IT1_TAG=_lug_pcrr09 python3 b2/runB2.py static up 110
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_CRR=0.09 IT1_TAG=_lug_pcrr09 python3 b2/runB2.py static dn 60
+# round-3 lug suite stopped (G1 fails with lugs): env CGB_F9=1 B2_LUG=1 PERT_CRR=0.09 IT1_TAG=_lug_pcrr09 python3 b2/runB2.py static crL 110
+env CGB_F9=1 B2_CAMSIG=0.016 IT1_TAG=_cam16 python3 b2/runB2.py grab ESE240SL 20 212
+env CGB_F9=1 B2_CAMSIG=0.016 B2_GAPSENS=1 IT1_TAG=_cam16gap python3 b2/runB2.py grab ESE240SL 20 212
+env CGB_F9=1 B2_CAMSIG=0.016 IT1_TAG=_cam16 python3 b2/runB2.py grab ESE240CL 20 213
+env CGB_F9=1 B2_CAMSIG=0.016 B2_GAPSENS=1 IT1_TAG=_cam16gap python3 b2/runB2.py grab ESE240CL 20 213
+env CGB_F9=1 PERT_MASS=1.1 IT1_TAG=_pm110 python3 b2/runB2.py grab WEB140 10 201
+env CGB_F9=1 PERT_MASS=1.1 IT1_TAG=_pm110 python3 b2/runB2.py grab ESE240SL 10 202
+env CGB_F9=1 PERT_MASS=1.1 IT1_TAG=_pm110 python3 b2/runB2.py grab ESE240CL 10 203
+env CGB_F9=1 PERT_MASS=1.1 IT1_TAG=_pm110 python3 b2/runB2.py climb 0.22 0.09
+env CGB_F9=1 PERT_MASS=1.1 IT1_TAG=_pm110 python3 b2/runB2.py climb 0.25 0.06
+env CGB_F9=1 PERT_MASS=1.1 IT1_TAG=_pm110 python3 b2/runB2.py step one
+env CGB_F9=1 PERT_MASS=1.1 IT1_TAG=_pm110 python3 b2/runB2.py estop fwd
+env CGB_F9=1 PERT_MASS=1.1 IT1_TAG=_pm110 python3 b2/runB2.py estop rev
+env CGB_F9=1 PERT_MASS=1.1 IT1_TAG=_pm110 python3 b2/runB2.py towstab
+env CGB_F9=1 PERT_MASS=1.1 IT1_TAG=_pm110 python3 b2/runB2.py rel WEB140 up12 full
+env CGB_F9=1 PERT_MASS=1.1 IT1_TAG=_pm110 python3 b2/runB2.py rel WEB140 dn12 empty
+env CGB_F9=1 PERT_MASS=1.1 IT1_TAG=_pm110 python3 b2/runB2.py rel ESE240CL flat empty
+env CGB_F9=1 PERT_MASS=1.1 IT1_TAG=_pm110 python3 b2/runB2.py rel ESE240CL up12 full
+env CGB_F9=1 PERT_MASS=1.1 IT1_TAG=_pm110 python3 b2/runB2.py rel ESE240SL250 dn12 full
+env CGB_F9=1 PERT_MASS=1.1 IT1_TAG=_pm110 python3 b2/runB2.py rel ESE240SL250 up12 empty
+env CGB_F9=1 PERT_MASS=1.1 IT1_TAG=_pm110 python3 b2/runB2.py static up 110
+env CGB_F9=1 PERT_MASS=1.1 IT1_TAG=_pm110 python3 b2/runB2.py static dn 60
+env CGB_F9=1 PERT_MASS=1.1 IT1_TAG=_pm110 python3 b2/runB2.py static crL 110
+env CGB_F9=1 PERT_MASS=0.9 IT1_TAG=_pm090 python3 b2/runB2.py grab WEB140 10 201
+env CGB_F9=1 PERT_MASS=0.9 IT1_TAG=_pm090 python3 b2/runB2.py grab ESE240SL 10 202
+env CGB_F9=1 PERT_MASS=0.9 IT1_TAG=_pm090 python3 b2/runB2.py grab ESE240CL 10 203
+env CGB_F9=1 PERT_MASS=0.9 IT1_TAG=_pm090 python3 b2/runB2.py climb 0.22 0.09
+env CGB_F9=1 PERT_MASS=0.9 IT1_TAG=_pm090 python3 b2/runB2.py climb 0.25 0.06
+env CGB_F9=1 PERT_MASS=0.9 IT1_TAG=_pm090 python3 b2/runB2.py step one
+env CGB_F9=1 PERT_MASS=0.9 IT1_TAG=_pm090 python3 b2/runB2.py estop fwd
+env CGB_F9=1 PERT_MASS=0.9 IT1_TAG=_pm090 python3 b2/runB2.py estop rev
+env CGB_F9=1 PERT_MASS=0.9 IT1_TAG=_pm090 python3 b2/runB2.py towstab
+env CGB_F9=1 PERT_MASS=0.9 IT1_TAG=_pm090 python3 b2/runB2.py rel WEB140 up12 full
+env CGB_F9=1 PERT_MASS=0.9 IT1_TAG=_pm090 python3 b2/runB2.py rel WEB140 dn12 empty
+env CGB_F9=1 PERT_MASS=0.9 IT1_TAG=_pm090 python3 b2/runB2.py rel ESE240CL flat empty
+env CGB_F9=1 PERT_MASS=0.9 IT1_TAG=_pm090 python3 b2/runB2.py rel ESE240CL up12 full
+env CGB_F9=1 PERT_MASS=0.9 IT1_TAG=_pm090 python3 b2/runB2.py rel ESE240SL250 dn12 full
+env CGB_F9=1 PERT_MASS=0.9 IT1_TAG=_pm090 python3 b2/runB2.py rel ESE240SL250 up12 empty
+env CGB_F9=1 PERT_MASS=0.9 IT1_TAG=_pm090 python3 b2/runB2.py static up 110
+env CGB_F9=1 PERT_MASS=0.9 IT1_TAG=_pm090 python3 b2/runB2.py static dn 60
+env CGB_F9=1 PERT_MASS=0.9 IT1_TAG=_pm090 python3 b2/runB2.py static crL 110
+env CGB_F9=1 PERT_MU=0.85 IT1_TAG=_pmu085 python3 b2/runB2.py grab WEB140 10 201
+env CGB_F9=1 PERT_MU=0.85 IT1_TAG=_pmu085 python3 b2/runB2.py grab ESE240SL 10 202
+env CGB_F9=1 PERT_MU=0.85 IT1_TAG=_pmu085 python3 b2/runB2.py grab ESE240CL 10 203
+env CGB_F9=1 PERT_MU=0.85 IT1_TAG=_pmu085 python3 b2/runB2.py climb 0.22 0.09
+env CGB_F9=1 PERT_MU=0.85 IT1_TAG=_pmu085 python3 b2/runB2.py climb 0.25 0.06
+env CGB_F9=1 PERT_MU=0.85 IT1_TAG=_pmu085 python3 b2/runB2.py step one
+env CGB_F9=1 PERT_MU=0.85 IT1_TAG=_pmu085 python3 b2/runB2.py estop fwd
+env CGB_F9=1 PERT_MU=0.85 IT1_TAG=_pmu085 python3 b2/runB2.py estop rev
+env CGB_F9=1 PERT_MU=0.85 IT1_TAG=_pmu085 python3 b2/runB2.py towstab
+env CGB_F9=1 PERT_MU=0.85 IT1_TAG=_pmu085 python3 b2/runB2.py rel WEB140 up12 full
+env CGB_F9=1 PERT_MU=0.85 IT1_TAG=_pmu085 python3 b2/runB2.py rel WEB140 dn12 empty
+env CGB_F9=1 PERT_MU=0.85 IT1_TAG=_pmu085 python3 b2/runB2.py rel ESE240CL flat empty
+env CGB_F9=1 PERT_MU=0.85 IT1_TAG=_pmu085 python3 b2/runB2.py rel ESE240CL up12 full
+env CGB_F9=1 PERT_MU=0.85 IT1_TAG=_pmu085 python3 b2/runB2.py rel ESE240SL250 dn12 full
+env CGB_F9=1 PERT_MU=0.85 IT1_TAG=_pmu085 python3 b2/runB2.py rel ESE240SL250 up12 empty
+env CGB_F9=1 PERT_MU=0.85 IT1_TAG=_pmu085 python3 b2/runB2.py static up 110
+env CGB_F9=1 PERT_MU=0.85 IT1_TAG=_pmu085 python3 b2/runB2.py static dn 60
+env CGB_F9=1 PERT_MU=0.85 IT1_TAG=_pmu085 python3 b2/runB2.py static crL 110
+env CGB_F9=1 PERT_CRR=0.09 IT1_TAG=_pcrr09 python3 b2/runB2.py grab WEB140 10 201
+env CGB_F9=1 PERT_CRR=0.09 IT1_TAG=_pcrr09 python3 b2/runB2.py grab ESE240SL 10 202
+env CGB_F9=1 PERT_CRR=0.09 IT1_TAG=_pcrr09 python3 b2/runB2.py grab ESE240CL 10 203
+env CGB_F9=1 PERT_CRR=0.09 IT1_TAG=_pcrr09 python3 b2/runB2.py climb 0.22 0.09
+env CGB_F9=1 PERT_CRR=0.09 IT1_TAG=_pcrr09 python3 b2/runB2.py climb 0.25 0.06
+env CGB_F9=1 PERT_CRR=0.09 IT1_TAG=_pcrr09 python3 b2/runB2.py step one
+env CGB_F9=1 PERT_CRR=0.09 IT1_TAG=_pcrr09 python3 b2/runB2.py estop fwd
+env CGB_F9=1 PERT_CRR=0.09 IT1_TAG=_pcrr09 python3 b2/runB2.py estop rev
+env CGB_F9=1 PERT_CRR=0.09 IT1_TAG=_pcrr09 python3 b2/runB2.py towstab
+env CGB_F9=1 PERT_CRR=0.09 IT1_TAG=_pcrr09 python3 b2/runB2.py rel WEB140 up12 full
+env CGB_F9=1 PERT_CRR=0.09 IT1_TAG=_pcrr09 python3 b2/runB2.py rel WEB140 dn12 empty
+env CGB_F9=1 PERT_CRR=0.09 IT1_TAG=_pcrr09 python3 b2/runB2.py rel ESE240CL flat empty
+env CGB_F9=1 PERT_CRR=0.09 IT1_TAG=_pcrr09 python3 b2/runB2.py rel ESE240CL up12 full
+env CGB_F9=1 PERT_CRR=0.09 IT1_TAG=_pcrr09 python3 b2/runB2.py rel ESE240SL250 dn12 full
+env CGB_F9=1 PERT_CRR=0.09 IT1_TAG=_pcrr09 python3 b2/runB2.py rel ESE240SL250 up12 empty
+env CGB_F9=1 PERT_CRR=0.09 IT1_TAG=_pcrr09 python3 b2/runB2.py static up 110
+env CGB_F9=1 PERT_CRR=0.09 IT1_TAG=_pcrr09 python3 b2/runB2.py static dn 60
+env CGB_F9=1 PERT_CRR=0.09 IT1_TAG=_pcrr09 python3 b2/runB2.py static crL 110

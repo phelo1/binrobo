@@ -1,0 +1,131 @@
+{
+ "rev_h2": {
+  "donor_as_regenerated": {
+   "parts": 2917.14,
+   "logistics": 217.0,
+   "contingency": 334.8,
+   "all_in": 3468.94,
+   "verified_share": 0.231,
+   "lines": 77
+  },
+  "donor_after_12nov_checks": {
+   "parts": 2999.07,
+   "logistics": 217.0,
+   "contingency": 351.87,
+   "all_in": 3567.94,
+   "verified_share": 0.41,
+   "lines": 77
+  },
+  "new_as_regenerated": {
+   "parts": 3102.61,
+   "logistics": 312.0,
+   "contingency": 322.34,
+   "all_in": 3736.95,
+   "verified_share": 0.367,
+   "lines": 78
+  },
+  "new_after_12nov_checks": {
+   "parts": 3184.54,
+   "logistics": 312.0,
+   "contingency": 339.41,
+   "all_in": 3835.95,
+   "verified_share": 0.533,
+   "lines": 78
+  }
+ },
+ "b2": {
+  "new_published": {
+   "parts": 3558.41,
+   "logistics": 331.99,
+   "contingency": 369.43,
+   "all_in": 4259.83,
+   "gap_to_2000": 2259.83,
+   "verified_parts_eur": 1385.45,
+   "verified_share": 0.389,
+   "n_lines": 96
+  },
+  "new_corrected_no_ACT-L8": {
+   "parts": 3394.04,
+   "logistics": 331.99,
+   "contingency": 361.21,
+   "all_in": 4087.24,
+   "gap_to_2000": 2087.24,
+   "verified_parts_eur": 1221.08,
+   "verified_share": 0.36,
+   "n_lines": 95
+  },
+  "donor_published": {
+   "parts": 3350.44,
+   "logistics": 254.99,
+   "contingency": 386.31,
+   "all_in": 3991.74,
+   "gap_to_2000": 1991.74,
+   "verified_parts_eur": 901.48,
+   "verified_share": 0.269,
+   "n_lines": 93
+  },
+  "donor_corrected_no_ACT-L8": {
+   "parts": 3186.07,
+   "logistics": 254.99,
+   "contingency": 378.09,
+   "all_in": 3819.15,
+   "gap_to_2000": 1819.15,
+   "verified_parts_eur": 737.11,
+   "verified_share": 0.231,
+   "n_lines": 92
+  }
+ },
+ "price_checks": {
+  "DNR-D8": {
+   "id": "DNR-D8",
+   "eur_before": 400.0,
+   "result": "NOT VERIFIED - both fetched DoneDeal listings expired ('ad no longer available'): donedeal.ie/otherhome-for-sale/motorised-wheelchair/39937324 (EUR 800, Invacare Kite) and .../electric-wheelchair/39259857 (EUR 600). Search excerpts 12 Nov show working chairs listed EUR 100-800 (Omeath EUR 100, Dublin EUR 380, Galway EUR 600, Tuam EUR 800). Status stays excerpt; value kept EUR 400",
+   "eur_after": 400.0,
+   "status_after": "excerpt",
+   "urls": [
+    "https://www.donedeal.ie/otherhome-for-sale/motorised-wheelchair/39937324",
+    "https://www.donedeal.ie/otherhome-for-sale/electric-wheelchair/39259857"
+   ]
+  },
+  "BMP-L8": {
+   "id": "BMP-L8",
+   "eur_before": 136.88,
+   "result": "Omron D4N-4120 fetched at partao.com: EUR 24.41 ex VAT (EUR 28.56 incl LU VAT), in stock. Line assumed EUR 19.69 net. Re-priced: 4 x 24.41 x 1.23 = 120.10 + bars/guides/springs est 40 = 160.10",
+   "eur_after": 160.1,
+   "status_after": "checked-12Nov+est",
+   "urls": [
+    "https://partao.com/omron-d4n4120-limit-switch-with-roller-lever.html"
+   ]
+  },
+  "G25": {
+   "id": "G25",
+   "eur_before": 121.9,
+   "result": "Waveshare SIM7600G-H 4G HAT (B) fetched at berrybase.at: EUR 74.90 incl AT VAT 20 % (currently not deliverable) = 62.42 ex VAT -> 76.78 at IE VAT; line uses 76.90. HAT part confirmed; antenna/buck remain est",
+   "eur_after": 121.9,
+   "status_after": "checked-12Nov+est",
+   "urls": [
+    "https://www.berrybase.at/sim7600g-h-4g-hat-b-fuer-raspberry-pi-mobilfunk-und-gnss"
+   ]
+  },
+  "H2-S1": {
+   "id": "H2-S1",
+   "eur_before": 110.0,
+   "result": "50x50x3 S235 SHS 7.5 m fetched at BM Steel (UK): GBP 65.20 incl UK VAT = 54.33 ex VAT. Need ~8.3 m of 50x50x3 (cut list) -> 2 x 7.5 m = 2 x 54.33 x 1.15 x 1.23 = EUR 153.71, + 30x30x2 braces and flat bar est EUR 15 = EUR 168.71 (delivery to IE not included; an Irish stockholder may be cheaper). Line was EUR 110 est",
+   "eur_after": 168.71,
+   "status_after": "checked-12Nov+est",
+   "urls": [
+    "https://www.bmsteel.co.uk/50-x-50-x-3mm-75m-square-hollow-section-bsen10219/p375"
+   ]
+  },
+  "HX-G6": {
+   "id": "HX-G6",
+   "eur_before": 106.45,
+   "result": "AMC 13-core ISO 11446 thin-wall cable fetched at 12voltplanet: GBP 10.15 incl VAT (GBP 8.46 ex VAT) per metre, 50 in stock: exactly the figure the line uses. Other harness parts remain est",
+   "eur_after": 106.45,
+   "status_after": "checked-12Nov+est",
+   "urls": [
+    "https://www.12voltplanet.co.uk/13-core-thin-wall-auto-cable-8-x-21amp-5-x-29-amp.html"
+   ]
+  }
+ }
+}

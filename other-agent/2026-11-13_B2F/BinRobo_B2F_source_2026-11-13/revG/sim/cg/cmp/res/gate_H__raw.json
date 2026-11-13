@@ -1,0 +1,717 @@
+{
+ "G1": {
+  "bins": {
+   "WEB140": {
+    "n": 30,
+    "captured": 30,
+    "false_holds": 0,
+    "knocked": 0,
+    "non_success": []
+   },
+   "ESE240SL": {
+    "n": 30,
+    "captured": 0,
+    "false_holds": 29,
+    "knocked": 0,
+    "non_success": [
+     [
+      0,
+      "false_positive",
+      "false_positive"
+     ],
+     [
+      1,
+      "false_positive",
+      "false_positive"
+     ],
+     [
+      2,
+      "false_positive",
+      "false_positive"
+     ],
+     [
+      3,
+      "false_positive",
+      "false_positive"
+     ],
+     [
+      4,
+      "false_positive",
+      "false_positive"
+     ],
+     [
+      5,
+      "false_positive",
+      "false_positive"
+     ],
+     [
+      6,
+      "false_positive",
+      "false_positive"
+     ],
+     [
+      7,
+      "false_positive",
+      "false_positive"
+     ],
+     [
+      8,
+      "false_positive",
+      "safe_miss"
+     ],
+     [
+      9,
+      "false_positive",
+      "false_positive"
+     ],
+     [
+      10,
+      "false_positive",
+      "false_positive"
+     ],
+     [
+      11,
+      "false_positive",
+      "false_positive"
+     ],
+     [
+      12,
+      "false_positive",
+      "false_positive"
+     ],
+     [
+      13,
+      "false_positive",
+      "false_positive"
+     ],
+     [
+      14,
+      "false_positive",
+      "false_positive"
+     ],
+     [
+      15,
+      "false_positive",
+      "false_positive"
+     ],
+     [
+      16,
+      "false_positive",
+      "false_positive"
+     ],
+     [
+      17,
+      "false_positive",
+      "false_positive"
+     ],
+     [
+      18,
+      "false_positive",
+      "false_positive"
+     ],
+     [
+      19,
+      "false_positive",
+      "false_positive"
+     ],
+     [
+      20,
+      "false_positive",
+      "false_positive"
+     ],
+     [
+      21,
+      "false_positive",
+      "false_positive"
+     ],
+     [
+      22,
+      "false_positive",
+      "false_positive"
+     ],
+     [
+      23,
+      "false_positive",
+      "false_positive"
+     ],
+     [
+      24,
+      "false_positive",
+      "false_positive"
+     ],
+     [
+      25,
+      "safe_miss",
+      "safe_miss"
+     ],
+     [
+      26,
+      "false_positive",
+      "false_positive"
+     ],
+     [
+      27,
+      "false_positive",
+      "false_positive"
+     ],
+     [
+      28,
+      "false_positive",
+      "false_positive"
+     ],
+     [
+      29,
+      "false_positive",
+      "false_positive"
+     ]
+    ]
+   },
+   "ESE240CL": {
+    "n": 30,
+    "captured": 0,
+    "false_holds": 21,
+    "knocked": 0,
+    "non_success": [
+     [
+      0,
+      "safe_miss",
+      "safe_miss"
+     ],
+     [
+      1,
+      "false_positive",
+      "false_positive"
+     ],
+     [
+      2,
+      "safe_miss",
+      "safe_miss"
+     ],
+     [
+      3,
+      "false_positive",
+      "false_positive"
+     ],
+     [
+      4,
+      "false_positive",
+      "false_positive"
+     ],
+     [
+      5,
+      "false_positive",
+      "false_positive"
+     ],
+     [
+      6,
+      "safe_miss",
+      "safe_miss"
+     ],
+     [
+      7,
+      "false_positive",
+      "false_positive"
+     ],
+     [
+      8,
+      "false_positive",
+      "false_positive"
+     ],
+     [
+      9,
+      "false_positive",
+      "false_positive"
+     ],
+     [
+      10,
+      "false_positive",
+      "safe_miss"
+     ],
+     [
+      11,
+      "false_positive",
+      "false_positive"
+     ],
+     [
+      12,
+      "safe_miss",
+      "safe_miss"
+     ],
+     [
+      13,
+      "false_positive",
+      "false_positive"
+     ],
+     [
+      14,
+      "false_positive",
+      "false_positive"
+     ],
+     [
+      15,
+      "false_positive",
+      "false_positive"
+     ],
+     [
+      16,
+      "safe_miss",
+      "safe_miss"
+     ],
+     [
+      17,
+      "safe_miss",
+      "safe_miss"
+     ],
+     [
+      18,
+      "false_positive",
+      "false_positive"
+     ],
+     [
+      19,
+      "false_positive",
+      "false_positive"
+     ],
+     [
+      20,
+      "safe_miss",
+      "safe_miss"
+     ],
+     [
+      21,
+      "false_positive",
+      "safe_miss"
+     ],
+     [
+      22,
+      "safe_miss",
+      "safe_miss"
+     ],
+     [
+      23,
+      "false_positive",
+      "false_positive"
+     ],
+     [
+      24,
+      "false_positive",
+      "false_positive"
+     ],
+     [
+      25,
+      "false_positive",
+      "false_positive"
+     ],
+     [
+      26,
+      "safe_miss",
+      "safe_miss"
+     ],
+     [
+      27,
+      "false_positive",
+      "false_positive"
+     ],
+     [
+      28,
+      "false_positive",
+      "false_positive"
+     ],
+     [
+      29,
+      "false_positive",
+      "false_positive"
+     ]
+    ]
+   }
+  },
+  "pooled": 30,
+  "n": 90,
+  "false_holds": 50,
+  "knocked": 0,
+  "PASS": false
+ },
+ "G1_extra_ESE240SL250": {
+  "n": 30,
+  "captured": 0,
+  "false_holds": 14,
+  "knocked": 0,
+  "non_success": [
+   [
+    0,
+    "safe_miss"
+   ],
+   [
+    1,
+    "false_positive"
+   ],
+   [
+    2,
+    "safe_miss"
+   ],
+   [
+    3,
+    "false_positive"
+   ],
+   [
+    4,
+    "safe_miss"
+   ],
+   [
+    5,
+    "false_positive"
+   ],
+   [
+    6,
+    "safe_miss"
+   ],
+   [
+    7,
+    "false_positive"
+   ],
+   [
+    8,
+    "safe_miss"
+   ],
+   [
+    9,
+    "false_positive"
+   ],
+   [
+    10,
+    "safe_miss"
+   ],
+   [
+    11,
+    "false_positive"
+   ],
+   [
+    12,
+    "safe_miss"
+   ],
+   [
+    13,
+    "false_positive"
+   ],
+   [
+    14,
+    "safe_miss"
+   ],
+   [
+    15,
+    "false_positive"
+   ],
+   [
+    16,
+    "safe_miss"
+   ],
+   [
+    17,
+    "safe_miss"
+   ],
+   [
+    18,
+    "safe_miss"
+   ],
+   [
+    19,
+    "false_positive"
+   ],
+   [
+    20,
+    "safe_miss"
+   ],
+   [
+    21,
+    "false_positive"
+   ],
+   [
+    22,
+    "safe_miss"
+   ],
+   [
+    23,
+    "false_positive"
+   ],
+   [
+    24,
+    "safe_miss"
+   ],
+   [
+    25,
+    "false_positive"
+   ],
+   [
+    26,
+    "safe_miss"
+   ],
+   [
+    27,
+    "false_positive"
+   ],
+   [
+    28,
+    "safe_miss"
+   ],
+   [
+    29,
+    "false_positive"
+   ]
+  ]
+ },
+ "G1_extra_ESE140CL": {
+  "n": 30,
+  "captured": 30,
+  "false_holds": 0,
+  "knocked": 0,
+  "non_success": []
+ },
+ "G2": {
+  "runs": {
+   "mu0.30 crr0.06": {
+    "ok": false,
+    "t": 11.1,
+    "dist": 5.0,
+    "creep": 0.044,
+    "grab": "false_positive",
+    "torque_pk": 150.0
+   },
+   "mu0.30 crr0.09": {
+    "ok": false,
+    "t": 11.1,
+    "dist": 5.0,
+    "creep": 0.04,
+    "grab": "false_positive",
+    "torque_pk": 150.0
+   },
+   "mu0.25 crr0.06": {
+    "ok": false,
+    "t": 13.7,
+    "dist": 5.0,
+    "creep": 0.031,
+    "grab": "false_positive",
+    "torque_pk": 150.0
+   },
+   "mu0.25 crr0.09": {
+    "ok": false,
+    "t": 14.4,
+    "dist": 5.0,
+    "creep": 0.029,
+    "grab": "false_positive",
+    "torque_pk": 150.0
+   },
+   "mu0.22 crr0.06": {
+    "ok": false,
+    "t": 25.0,
+    "dist": 4.48,
+    "creep": 0.019,
+    "grab": "false_positive",
+    "torque_pk": 150.0
+   },
+   "mu0.22 crr0.09": {
+    "ok": false,
+    "t": 25.0,
+    "dist": 1.65,
+    "creep": 0.008,
+    "grab": "false_positive",
+    "torque_pk": 150.0
+   }
+  },
+  "PASS": false
+ },
+ "G3": {
+  "one": {
+   "ok": false,
+   "reached": true,
+   "dist": 4.69,
+   "roll": 0.408,
+   "pitch": 8.015,
+   "bin_ground": 2318.597,
+   "seated": true,
+   "clear_min": -0.001,
+   "grab": "false_positive",
+   "lift_pk": 3000.0
+  },
+  "both": {
+   "ok": false,
+   "reached": false,
+   "dist": 1.35,
+   "roll": 0.407,
+   "pitch": 8.456,
+   "bin_ground": 2875.727,
+   "seated": true,
+   "clear_min": -0.0,
+   "grab": "false_positive",
+   "lift_pk": 2264.64
+  },
+  "PASS": false
+ },
+ "G3_extra": {
+  "both_ramp_1to4": {
+   "ok": false,
+   "reached": true,
+   "dist": 4.71,
+   "roll": 0.002,
+   "pitch": 0.005,
+   "bin_ground": 673.719,
+   "seated": true,
+   "clear_min": -0.0,
+   "grab": "false_positive",
+   "lift_pk": 882.15
+  },
+  "both_rw560": null
+ },
+ "G4": {
+  "runs": {
+   "fwd": {
+    "ok": false,
+    "stop": 0.341,
+    "slide": 0.003,
+    "roll": 0.002,
+    "pitch": 0.009
+   },
+   "rev": {
+    "ok": false,
+    "stop": 0.098,
+    "slide": 0.001,
+    "roll": 0.004,
+    "pitch": 0.006
+   }
+  },
+  "PASS": false
+ },
+ "G5": {
+  "run": {
+   "ok": false,
+   "roll": 0.002,
+   "swept": 2.1,
+   "pivot": 180.0
+  },
+  "PASS": false
+ },
+ "G6": {
+  "cases": {
+   "WEB140 flat full": "PASS",
+   "WEB140 flat empty": "PASS",
+   "WEB140 up12 full": "PASS",
+   "WEB140 up12 empty": "PASS",
+   "WEB140 dn12 full": "PASS",
+   "WEB140 dn12 empty": "PASS",
+   "ESE240CL flat full": "FAIL",
+   "ESE240CL flat empty": "FAIL",
+   "ESE240CL up12 full": "FAIL",
+   "ESE240CL up12 empty": "FAIL",
+   "ESE240CL dn12 full": "FAIL",
+   "ESE240CL dn12 empty": "FAIL",
+   "ESE240SL250 flat full": "FAIL",
+   "ESE240SL250 flat empty": "FAIL",
+   "ESE240SL250 up12 full": "FAIL",
+   "ESE240SL250 up12 empty": "FAIL",
+   "ESE240SL250 dn12 full": "FAIL",
+   "ESE240SL250 dn12 empty": "FAIL"
+  },
+  "passed": 6,
+  "tips": 0,
+  "PASS": false
+ },
+ "G7": {
+  "runs": {
+   "climb_m25_c09": {
+    "base": false,
+    "dt025": false,
+    "t": [
+     14.4,
+     14.3
+    ],
+    "ok": true
+   },
+   "step40_one": {
+    "base": false,
+    "dt025": false,
+    "t": [
+     null,
+     null
+    ],
+    "ok": true
+   },
+   "estop12_fwd": {
+    "base": false,
+    "dt025": false,
+    "t": [
+     null,
+     null
+    ],
+    "ok": true
+   }
+  },
+  "PASS": true
+ },
+ "G8": {
+  "poses": {
+   "up 110": {
+    "dL": 594.9,
+    "dR": 716.5,
+    "castors": 333.2,
+    "antitip": 0.0,
+    "ok": false
+   },
+   "up 60": {
+    "dL": 578.9,
+    "dR": 574.5,
+    "castors": 272.5,
+    "antitip": 0.0,
+    "ok": false
+   },
+   "dn 110": {
+    "dL": 361.8,
+    "dR": 548.6,
+    "castors": 592.4,
+    "antitip": 0.0,
+    "ok": false
+   },
+   "dn 60": {
+    "dL": 461.1,
+    "dR": 431.9,
+    "castors": 458.6,
+    "antitip": 0.0,
+    "ok": false
+   },
+   "crL 110": {
+    "dL": 382.6,
+    "dR": 730.7,
+    "castors": 464.9,
+    "antitip": 0.0,
+    "ok": false
+   },
+   "crL 60": {
+    "dL": 441.8,
+    "dR": 584.5,
+    "castors": 367.0,
+    "antitip": 0.0,
+    "ok": false
+   },
+   "crR 110": {
+    "dL": 575.1,
+    "dR": 534.6,
+    "castors": 461.2,
+    "antitip": 0.0,
+    "ok": false
+   },
+   "crR 60": {
+    "dL": 595.1,
+    "dR": 433.4,
+    "castors": 364.2,
+    "antitip": 0.0,
+    "ok": false
+   }
+  },
+  "handcalc_min_tip_deg": 40.9,
+  "castor_liftoff_110": 15.1,
+  "PASS": false
+ },
+ "G9": {
+  "kg": 85.5,
+  "PASS": true
+ },
+ "passed": 2
+}

@@ -1,0 +1,81 @@
+{
+ "test": "step40",
+ "side": "both",
+ "grab": "safe_miss",
+ "reached": false,
+ "dist_m": 1.31,
+ "captured_end": false,
+ "roll": 1.701,
+ "pitch": 3.745,
+ "bin_ground": 1926.967,
+ "cmin": 0.0,
+ "dmin": 0.0,
+ "seated_all": false,
+ "clear_min": -0.0,
+ "peak": {
+  "lift_N": [
+   432.88,
+   67.26,
+   "7 0.5 m/s over a 40 mm sharp step"
+  ],
+  "drive_tyre_N": [
+   9633.62,
+   67.26,
+   "7 0.5 m/s over a 40 mm sharp step"
+  ],
+  "wheel_torque_Nm": [
+   102.0,
+   65.0,
+   "7 0.5 m/s over a 40 mm sharp step"
+  ]
+ },
+ "events": [
+  [
+   20.7,
+   "docked: contact, bin dy 30 mm (camera 31), nib gap 4 mm, bin moved 0 mm, rim 0.963 q_app 0.083"
+  ],
+  [
+   20.7,
+   "back off 0.4 m and re-approach"
+  ],
+  [
+   35.7,
+   "docked: tof, bin dy 14 mm (camera 11), nib gap 3 mm, bin moved 0 mm, rim 0.962 q_app 0.082"
+  ]
+ ],
+ "ok": false,
+ "cpu_s": 15,
+ "geo": {
+  "track": 0.4,
+  "rw": 0.28,
+  "ww": 0.035,
+  "cx": 0.95,
+  "cy": 0.28,
+  "guard_y": 0.358,
+  "guard_x0": -0.3,
+  "guard_x1": 0.38,
+  "face_x": 0.415,
+  "tooth_len": 0.13,
+  "nib_l": 0.012,
+  "nib_h": 0.02,
+  "tooth_hw": 0.12,
+  "approach_nib_z": 0.865,
+  "lift_range": 0.25,
+  "pad_x": 0.235,
+  "pad_z": 0.45,
+  "pad_k": 30000.0,
+  "pad_pre": 300.0,
+  "pad_stroke": 0.04,
+  "lift_extra": 0.075,
+  "act_N": 3000.0,
+  "tcap": 102.0,
+  "car_zero": 0.855,
+  "pad_in": 0.063,
+  "pad_dz": 0.58,
+  "pad_ret": 0.04,
+  "rim_off": 0.025,
+  "creep_v": 0.03,
+  "creep_gap": 0.06,
+  "lift_extra1": 0.1
+ }
+}

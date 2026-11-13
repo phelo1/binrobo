@@ -1,0 +1,126 @@
+{
+ "run": "P5c_drop_ramp14",
+ "title": "P5 40 mm step DOWN (1:4 ramp), 110 kg, lift cap 3000 N",
+ "verdict": "PASS",
+ "fails": [],
+ "sim_time_s": 635.8,
+ "energy_Wh": 0.17,
+ "wall_s": 12,
+ "metrics": {
+  "clear_min": 0.0136,
+  "clear_at": 290.2,
+  "seated_all": true,
+  "bin_ground_N": 0.0,
+  "roll_max": 0.198,
+  "pitch_max": 4.264,
+  "hedge_min": 1.4961,
+  "hedge_at": 296.2,
+  "tip_min": 23.4191,
+  "tip_at": 297.0,
+  "liftF_max": 1572.8855,
+  "liftF_at": 290.2,
+  "gap_min": 9.0,
+  "v_max": 0.5328,
+  "n_lost": 15
+ },
+ "results": {
+  "drive0": {
+   "reached": true,
+   "why": null,
+   "s_end": 296.99,
+   "ref_end": 296.99,
+   "t": 632.6,
+   "captured_end": true,
+   "clear_end_mm": 58.8,
+   "binwheels_past_far_edge": true
+  },
+  "hold1": {
+   "creep3_m": 9.93129022175446e-05,
+   "creepT_m": 9.93129022175446e-05,
+   "T": 3.0,
+   "s": 296.99,
+   "grade_pct": -2.6,
+   "leaf": false
+  }
+ },
+ "seg_metrics": {
+  "drive0": {
+   "clear_min": 0.0136,
+   "clear_at": 290.2,
+   "seated_all": true,
+   "bin_ground_N": 0.0,
+   "roll_max": 0.198,
+   "pitch_max": 4.264,
+   "hedge_min": 1.4961,
+   "hedge_at": 296.2,
+   "tip_min": 23.4191,
+   "tip_at": 297.0,
+   "liftF_max": 1572.8855,
+   "liftF_at": 290.2,
+   "gap_min": 9.0,
+   "v_max": 0.5328,
+   "n_lost": 15
+  },
+  "hold1": {
+   "clear_min": 0.0587,
+   "clear_at": 297.0,
+   "seated_all": true,
+   "bin_ground_N": 0.0,
+   "roll_max": 0.0032,
+   "pitch_max": 1.4537,
+   "hedge_min": 1.4968,
+   "hedge_at": 296.8,
+   "tip_min": 23.4244,
+   "tip_at": 297.0,
+   "liftF_max": 1156.8843,
+   "liftF_at": 297.0,
+   "gap_min": 9.0,
+   "v_max": 0.0,
+   "n_lost": 0
+  }
+ },
+ "events": [
+  [
+   601.3,
+   "start from P1 snapshot s282.0.pkl (carried state)"
+  ],
+  [
+   632.62,
+   "drive0: reached at s 297.0"
+  ],
+  [
+   635.82,
+   "hold at s 297.0 (-2.6 %): creep 0.0001 m in 3 s, 0.0001 m in 3 s"
+  ]
+ ],
+ "cfg": {
+  "binkey": "ESE240SL",
+  "kg": 110.0,
+  "with_bin": true,
+  "variant": {
+   "step": "ramp",
+   "trench": "covered"
+  },
+  "act_N": 3000.0,
+  "pert": {},
+  "night": false,
+  "obstacles": [],
+  "title": "P5 40 mm step DOWN (1:4 ramp), 110 kg, lift cap 3000 N",
+  "start": [
+   "snap",
+   "P1",
+   282.0
+  ]
+ },
+ "steps": [
+  [
+   "drive",
+   "{'to': 297.0, 'ref': 'tug', 'dirn': 1, 'knots': [(0, -1.4), (12.0, -1.4), (24.0, 0.0), (610.0, 0.0), (619.5, 1.35), (700, 1.35)], 'feature': 'step'}"
+  ],
+  [
+   "hold",
+   "3.0"
+  ]
+ ],
+ "peak": {}
+}

@@ -1,0 +1,57 @@
+t 0.25            q -0.000 F 17 gap 1.200 nibz_bin 0.740 zL 0.872 tilt 0.0 clear -0.000 seated False padext 0.040 keeper 96 {}
+t 13.75 1c Creep 0 q 0.066 F 54 gap 0.058 nibz_bin 0.806 zL 0.872 tilt 0.0 clear -0.000 seated False padext 0.040 keeper 96 {}
+t 14.00 1c Creep 0 q 0.066 F 60 gap 0.053 nibz_bin 0.806 zL 0.872 tilt 0.0 clear -0.000 seated False padext 0.040 keeper 96 {}
+t 14.25 1c Creep 0 q 0.066 F 60 gap 0.048 nibz_bin 0.806 zL 0.872 tilt 0.0 clear -0.000 seated False padext 0.040 keeper 96 {}
+t 14.50 1c Creep 0 q 0.066 F 59 gap 0.043 nibz_bin 0.806 zL 0.872 tilt 0.0 clear -0.000 seated False padext 0.040 keeper 96 {}
+t 14.75 1c Creep 0 q 0.066 F 59 gap 0.037 nibz_bin 0.806 zL 0.872 tilt 0.0 clear -0.000 seated False padext 0.040 keeper 96 {}
+t 15.00 1c Creep 0 q 0.066 F 59 gap 0.031 nibz_bin 0.806 zL 0.872 tilt 0.0 clear -0.000 seated False padext 0.040 keeper 96 {}
+t 15.25 1c Creep 0 q 0.066 F 59 gap 0.024 nibz_bin 0.806 zL 0.872 tilt 0.0 clear -0.000 seated False padext 0.040 keeper 96 {}
+t 15.50 1c Creep 0 q 0.066 F 59 gap 0.018 nibz_bin 0.806 zL 0.872 tilt 0.0 clear -0.000 seated False padext 0.040 keeper 96 {}
+t 15.75 1c Creep 0 q 0.066 F 59 gap 0.012 nibz_bin 0.806 zL 0.872 tilt 0.0 clear -0.000 seated False padext 0.040 keeper 96 {}
+t 16.00 1c Creep 0 q 0.066 F 59 gap 0.006 nibz_bin 0.806 zL 0.872 tilt 0.0 clear -0.000 seated False padext 0.040 keeper 96 {}
+t 16.25 1c Creep 0 q 0.066 F 59 gap 0.006 nibz_bin 0.806 zL 0.872 tilt 0.0 clear -0.000 seated False padext 0.040 keeper 96 {}
+t 16.50 2 Lift: co q 0.066 F 59 gap 0.006 nibz_bin 0.806 zL 0.872 tilt 0.0 clear -0.000 seated False padext 0.040 keeper 96 {}
+t 16.75 2 Lift: co q 0.066 F 59 gap 0.006 nibz_bin 0.806 zL 0.872 tilt 0.0 clear -0.000 seated False padext 0.040 keeper 96 {}
+t 17.00 2 Lift: co q 0.072 F 65 gap 0.006 nibz_bin 0.812 zL 0.872 tilt 0.0 clear -0.000 seated False padext 0.040 keeper 96 {}
+t 17.25 2 Lift: co q 0.079 F 65 gap 0.006 nibz_bin 0.819 zL 0.872 tilt 0.0 clear -0.000 seated False padext 0.040 keeper 96 {}
+t 17.50 2 Lift: co q 0.087 F 65 gap 0.006 nibz_bin 0.827 zL 0.872 tilt 0.0 clear -0.000 seated False padext 0.040 keeper 96 {}
+t 17.75 2 Lift: co q 0.093 F 537 gap 0.006 nibz_bin 0.832 zL 0.872 tilt 0.0 clear 0.000 seated False padext 0.040 keeper 96 {'nib-rim': 474}
+t 18.00 2 Lift: co q 0.100 F 515 gap 0.010 nibz_bin 0.833 zL 0.872 tilt 1.3 clear 0.005 seated False padext 0.040 keeper 96 {'nib-rim': 441}
+t 18.25 2 Lift: co q 0.107 F 520 gap 0.013 nibz_bin 0.833 zL 0.872 tilt 2.7 clear 0.011 seated False padext 0.040 keeper 96 {'nib-rim': 444}
+t 18.50 2 Lift: co q 0.115 F 524 gap 0.015 nibz_bin 0.833 zL 0.872 tilt 4.2 clear 0.017 seated False padext 0.040 keeper 96 {'nib-rim': 467}
+t 18.75 2 Lift: co q 0.122 F 600 gap 0.018 nibz_bin 0.832 zL 0.872 tilt 5.9 clear 0.024 seated False padext 0.040 keeper 96 {'nib-rim': 528, 'padg-binhull': 150}
+t 19.00 2 Lift: co q 0.131 F 64 gap 0.037 nibz_bin 0.832 zL 0.872 tilt 7.5 clear 0.031 seated False padext 0.040 keeper 96 {}
+t 19.25 2 Lift: co q 0.139 F 65 gap 0.055 nibz_bin 0.833 zL 0.872 tilt 8.6 clear 0.035 seated False padext 0.040 keeper 96 {}
+t 19.50 2 Lift: co q 0.147 F 65 gap 0.064 nibz_bin 0.838 zL 0.872 tilt 9.1 clear 0.037 seated False padext 0.040 keeper 96 {}
+t 19.75 2 Lift: co q 0.154 F 65 gap 0.072 nibz_bin 0.843 zL 0.872 tilt 9.5 clear 0.038 seated False padext 0.040 keeper 96 {}
+t 20.00 2 Lift: co q 0.162 F 65 gap 0.084 nibz_bin 0.845 zL 0.872 tilt 10.1 clear 0.041 seated False padext 0.040 keeper 96 {}
+t 20.25 2 Lift: co q 0.169 F 65 gap 0.111 nibz_bin 0.841 zL 0.872 tilt 11.7 clear 0.047 seated False padext 0.040 keeper 96 {}
+t 20.50 2 Lift: co q 0.177 F 65 gap 0.180 nibz_bin 0.815 zL 0.872 tilt 15.9 clear 0.062 seated False padext 0.040 keeper 96 {}
+t 20.75 2 Lift: co q 0.184 F 65 gap 0.348 nibz_bin 0.709 zL 0.872 tilt 26.8 clear 0.098 seated False padext 0.040 keeper 96 {}
+t 21.00 2 Lift: co q 0.192 F 58 gap 0.660 nibz_bin 0.294 zL 0.872 tilt 55.4 clear 0.156 seated False padext 0.040 keeper 96 {}
+t 21.25 2 Lift: co q 0.192 F 59 gap 0.733 nibz_bin -0.214 zL 0.872 tilt 82.9 clear 0.152 seated False padext 0.040 keeper 96 {}
+t 21.50 2 Lift: co q 0.192 F 59 gap 0.733 nibz_bin -0.214 zL 0.872 tilt 82.9 clear 0.152 seated False padext 0.040 keeper 96 {}
+t 21.75 2 Lift: co q 0.192 F 59 gap 0.733 nibz_bin -0.214 zL 0.872 tilt 82.9 clear 0.152 seated False padext 0.040 keeper 96 {}
+t 22.00 3 Keeper c q 0.192 F 60 gap 0.733 nibz_bin -0.214 zL 0.872 tilt 82.9 clear 0.152 seated False padext 0.000 keeper -63 {}
+t 22.25 3 Keeper c q 0.192 F 59 gap 0.733 nibz_bin -0.214 zL 0.872 tilt 82.9 clear 0.152 seated False padext 0.000 keeper -83 {}
+t 22.50 3 Keeper c q 0.192 F 59 gap 0.733 nibz_bin -0.214 zL 0.872 tilt 82.9 clear 0.152 seated False padext 0.000 keeper -83 {}
+t 22.75 3 Keeper c q 0.192 F 59 gap 0.733 nibz_bin -0.214 zL 0.872 tilt 82.9 clear 0.152 seated False padext 0.000 keeper -83 {}
+t 23.00 3x No clai q 0.192 F 60 gap 0.733 nibz_bin -0.214 zL 0.872 tilt 82.9 clear 0.152 seated False padext 0.018 keeper -63 {}
+t 23.25 3x No clai q 0.192 F 59 gap 0.733 nibz_bin -0.214 zL 0.872 tilt 82.9 clear 0.152 seated False padext 0.040 keeper 93 {}
+t 23.50 3x No clai q 0.192 F 50 gap 0.732 nibz_bin -0.214 zL 0.872 tilt 82.9 clear 0.152 seated False padext 0.040 keeper 96 {}
+t 23.75 3x No clai q 0.183 F 51 gap 0.723 nibz_bin -0.215 zL 0.872 tilt 82.9 clear 0.152 seated False padext 0.040 keeper 96 {}
+t 24.00 3x No clai q 0.173 F 51 gap 0.713 nibz_bin -0.216 zL 0.872 tilt 82.9 clear 0.152 seated False padext 0.040 keeper 96 {}
+t 24.25 3x No clai q 0.163 F 51 gap 0.703 nibz_bin -0.218 zL 0.872 tilt 82.9 clear 0.152 seated False padext 0.040 keeper 96 {}
+t 24.50 3x No clai q 0.153 F 51 gap 0.693 nibz_bin -0.219 zL 0.872 tilt 82.9 clear 0.152 seated False padext 0.040 keeper 96 {}
+t 24.75 3x No clai q 0.143 F 51 gap 0.684 nibz_bin -0.220 zL 0.872 tilt 82.9 clear 0.152 seated False padext 0.040 keeper 96 {}
+t 25.00 3x No clai q 0.133 F 51 gap 0.674 nibz_bin -0.221 zL 0.872 tilt 82.9 clear 0.152 seated False padext 0.040 keeper 96 {}
+t 25.25 3x No clai q 0.123 F 51 gap 0.664 nibz_bin -0.223 zL 0.872 tilt 82.9 clear 0.152 seated False padext 0.040 keeper 96 {}
+t 25.50 3x No clai q 0.113 F 51 gap 0.654 nibz_bin -0.224 zL 0.872 tilt 82.9 clear 0.152 seated False padext 0.040 keeper 96 {}
+t 25.75 3x No clai q 0.103 F 51 gap 0.644 nibz_bin -0.225 zL 0.872 tilt 82.9 clear 0.152 seated False padext 0.040 keeper 96 {}
+t 26.00 3x No clai q 0.093 F 51 gap 0.634 nibz_bin -0.226 zL 0.872 tilt 82.9 clear 0.152 seated False padext 0.040 keeper 96 {}
+t 26.25 3x No clai q 0.083 F 51 gap 0.624 nibz_bin -0.228 zL 0.872 tilt 82.9 clear 0.152 seated False padext 0.040 keeper 96 {}
+t 26.50 3x No clai q 0.073 F 51 gap 0.614 nibz_bin -0.229 zL 0.872 tilt 82.9 clear 0.152 seated False padext 0.040 keeper 96 {}
+t 26.75 3x No clai q 0.066 F 59 gap 0.607 nibz_bin -0.230 zL 0.872 tilt 82.9 clear 0.152 seated False padext 0.040 keeper 96 {}
+t 27.00 3x No clai q 0.066 F 59 gap 0.607 nibz_bin -0.230 zL 0.872 tilt 82.9 clear 0.152 seated False padext 0.040 keeper 96 {}
+{'docked': True, 'reapp': False, 'dock_dy_mm': -9.4, 'lift_rise_N': -6, 'seat_switch': False, 'keeper_on_bar': False, 'keeper_deg': -82.8, 'claim': False, 'zc': 0.093, 'q_app': 0.066, 'captured': False, 'wheel_clear_mm': 151.9, 'bin_tilt_abs': 82.9, 'seated': False, 'dock': 'tof', 'result': 'safe_miss'}
+[(16.45, 'docked: tof, bin dy -9 mm (camera -9), nib gap 6 mm, bin moved 0 mm, rim 0.946 q_app 0.066')]

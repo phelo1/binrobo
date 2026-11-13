@@ -1,0 +1,171 @@
+{
+ "baseline_G7_allin": 8218.08,
+ "A_delta_parts": 250,
+ "B_delta_parts": -147.73,
+ "A_delta_with_cont": 275,
+ "B_delta_with_cont": -163,
+ "A_total": 8493,
+ "B_total": 8056,
+ "B_minus_A": -438,
+ "B_option_TA23_total": 7690,
+ "fab_uncertainty_eur": 150,
+ "lines": {
+  "A": [
+   [
+    "A' sprung load-transfer pad: 2 rollers, slide, 2 die springs, bracket",
+    55,
+    "est"
+   ],
+   [
+    "A' yaw centring spring-damper 859 N m/rad + 280 N m s/rad (torsion bar + gas damper)",
+    60,
+    "est"
+   ],
+   [
+    "Tapered-roller trailer hub replacing the M16 kingpin kit RF-10/11/12 (net)",
+    25,
+    "est"
+   ],
+   [
+    "Upper wheel-stop roller 150 mm (sim G6_SB2, not in G7 CAD/BOM)",
+    15,
+    "est"
+   ],
+   [
+    "Wheel-stop bar 60 mm retract cam + linkage (tow)",
+    45,
+    "est"
+   ],
+   [
+    "Float clamp in tow: 2nd pawl + sealed 24 V solenoid + driver channel",
+    30,
+    "est"
+   ],
+   [
+    "Wheel-on-ground load sensor for the chase stand-up interlock (G13 switch is not a load sensor)",
+    20,
+    "est"
+   ]
+  ],
+  "B": [
+   [
+    "removed G10: Mast actuator Ewellix CAHB-20-F3E (24 V, manual override, 4,500 N rate",
+    -622.63,
+    "bom_revG7.csv"
+   ],
+   [
+    "removed RF-10/11/12: Kingpin kit: M16x110 8.8 bolt + castle nut + split pin + hardened wash",
+    -19.0,
+    "bom_revG7.csv"
+   ],
+   [
+    "removed G8: Yaw-lock solenoid pin + AS5600 yaw encoder (crossbar tilt IMU DELETED ",
+    -13.0,
+    "bom_revG7.csv"
+   ],
+   [
+    "removed YS-G7: Yaw stops: YS-01 4 x UHMW-PE blocks (machined) + YS-02 2 x M10 A4 pins",
+    -18.0,
+    "bom_revG7.csv"
+   ],
+   [
+    "removed G11: Floating twin-hook carriage: UHMW pads, rubber bushes, return springs",
+    -25.0,
+    "bom_revG7.csv"
+   ],
+   [
+    "removed K1: Gravity latch pawls x2 (laser-cut 6 mm) + release cam at mast-upright ",
+    -12.0,
+    "bom_revG7.csv"
+   ],
+   [
+    "removed K3: Mast rest stop: ~25 mm 60 Sh A rubber pad + gravity catch + lost-motio",
+    -10.0,
+    "bom_revG7.csv"
+   ],
+   [
+    "removed K4: Sprung lid hold-down finger on mast top (stainless spring + UHMW tip)",
+    -8.0,
+    "bom_revG7.csv"
+   ],
+   [
+    "removed GR-10: Release cord 150 N working pull, A4 7x7 2 mm wire rope + 2 swaged ferr",
+    -4.0,
+    "bom_revG7.csv"
+   ],
+   [
+    "removed GR-08: Float ratchet rack 8 mm pitch + sprung pawl (6 mm S355, laser cut)",
+    -6.0,
+    "bom_revG7.csv"
+   ],
+   [
+    "removed GR-08S: Ratchet-pawl lift solenoid GR-08S, SEALED: Landa TU2551 24 V DC tubula",
+    -34.73,
+    "bom_revG7.csv"
+   ],
+   [
+    "removed GR-08D: GR-08S drive + interlock: 1 channel of the L6 MOSFET board (logic-leve",
+    -32.0,
+    "bom_revG7.csv"
+   ],
+   [
+    "removed GR-G6: Grabber GH-B5F-130 upgrade over GH-B2 (hooks from below +/-130, 45 deg",
+    -15.0,
+    "bom_revG7.csv"
+   ],
+   [
+    "removed IND-OPEN: B-GR-62 feeler sensors x2: M8 inductive PNP 3-wire IP67 (closes IND-OP",
+    -24.0,
+    "bom_revG7.csv"
+   ],
+   [
+    "removed SHIP-LANDA: ",
+    -20.0,
+    "bom_revG7.csv"
+   ],
+   [
+    "Lift actuator: Ewellix CAHB-20-F3E carried over as the vertical lift (4,500 N vs 1.2 kN static / 2.4 kN sim peak), shorter stroke",
+    622.63,
+    "bom_revG7.csv G10 price (stroke code to quote)"
+   ],
+   [
+    "Lifter: 2 x 1 m linear rail + 4 carriages",
+    90,
+    "est"
+   ],
+   [
+    "Comb tooth with 12 mm nib (laser) + keeper fingers; GR-07 cam motor reused as keeper drive",
+    20,
+    "est"
+   ],
+   [
+    "Sprung lower pad (2 die springs + bracket)",
+    35,
+    "est"
+   ],
+   [
+    "Lip-root ToF sensor (VL53L1X class) + nib seat switch",
+    15,
+    "est"
+   ],
+   [
+    "Fabrication net: no rear frame / tilting mast / funnel arms; adds side arms, lifter mast, 0.80 m track axle beam",
+    -60,
+    "est +/-150"
+   ],
+   [
+    "Ballast: steel plate in the arms instead of BT-01 jerricans + sand",
+    -7,
+    "est"
+   ]
+  ],
+  "B_option": [
+   [
+    "Option: TiMOTION TA23 4,000 N instead of CAHB-20 (EUR 236.22 ex VAT; IP/cold rating NOT verified)",
+    -332.08,
+    "shop.atti.it search excerpt"
+   ]
+  ]
+ },
+ "note": "Both concepts keep the G7 drive (PEWM-39 + Roboteq), safety chain, sensing and dock unchanged; only mechanism lines differ."
+}

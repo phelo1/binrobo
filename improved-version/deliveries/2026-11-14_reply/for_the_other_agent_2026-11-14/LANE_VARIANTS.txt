@@ -1,0 +1,97 @@
+Lane runs: folder, run, lane variant, verdict.  "pothole" absent from the variant = pothole OPEN (their default).
+Lane world: their lane_world.py, unchanged. Wrapper: make_lanerun_x.py (switches X_SIM, X_RUNS_DIR, X_VARIANT).
+
+runs_stored: B2-F as designed, THEIR stored runs (MuJoCo 3.17.0)
+   P1                   {"step": "ramp", "trench": "covered"}                          PASS 
+   P2a                  {"step": "ramp", "trench": "covered"}                          FAIL drive2 stalled at s 550.0 (no progress 12 s (stall))
+   P2a_pf               {"step": "ramp", "trench": "covered", "pothole": "filled"}     FAIL hedge contact (clearance -2.889 m at s 159.8); drive2 stalled at s 163.3 (no pro
+   P2c                  {"step": "ramp", "trench": "covered"}                          FAIL drive2 stalled at s 549.8 (no progress 12 s (stall)); set-down fail
+   P2c_pf               {"step": "ramp", "trench": "covered", "pothole": "filled"}     FAIL hedge contact (clearance -1.125 m at s 149.6)
+   P3                   {"step": "ramp", "trench": "covered"}                          PASS 
+   P4a                  {"step": "ramp", "trench": "covered"}                          PASS 
+   P4b                  {"step": "ramp", "trench": "covered"}                          PASS 
+   P5a_drop_sharp_3kN   {"step": "sharp", "trench": "covered"}                         PASS 
+   P5b_drop_sharp_4kN   {"step": "sharp", "trench": "covered"}                         PASS 
+   P5c_drop_ramp14      {"step": "ramp", "trench": "covered"}                          PASS 
+   P5d_up_sharp_3kN     {"step": "sharp", "trench": "covered"}                         FAIL drive2 stalled at s 290.1 (no progress 12 s (stall))
+   P5e_up_sharp_4kN     {"step": "sharp", "trench": "covered"}                         FAIL drive2 stalled at s 290.1 (no progress 12 s (stall))
+   P5f_up_ramp14        {"step": "ramp", "trench": "covered"}                          PASS 
+   P5g_trench_open      {"step": "ramp", "trench": "open"}                             FAIL bin touched the ground (458 N); drive0 stalled at s 455.1 (no progress 12 s (sta
+   P5h_pothole          {"step": "ramp", "trench": "covered"}                          PASS 
+   P5i_trench_open_4kN  {"step": "ramp", "trench": "open"}                             FAIL bin touched the ground (468 N); drive0 stalled at s 455.1 (no progress 12 s (sta
+   P6a_person_estop     {"step": "ramp", "trench": "covered"}                          PASS 
+   P6b_dog_crossing     {"step": "ramp", "trench": "covered"}                          PASS 
+   P7                   {"step": "ramp", "trench": "covered"}                          FAIL drive1 stalled at s 550.7 (timeout); set-down fail
+
+runs: B2-F as designed, my runs on MuJoCo 4.0.1, lane as their defaults
+   P1                   {"step": "ramp", "trench": "covered"}                          FAIL comb lip unseated
+   P2a                  {"step": "ramp", "trench": "covered"}                          FAIL drive2 stalled at s 550.0 (no progress 12 s (stall))
+   P2a_pf               {"step": "ramp", "trench": "covered", "pothole": "filled"}     FAIL hedge contact (clearance -5.462 m at s 163.0); drive2 stalled at s 163.3 (no pro
+   P2c                  {"step": "ramp", "trench": "covered"}                          FAIL drive2 stalled at s 549.8 (no progress 12 s (stall)); set-down fail
+   P2c_pf               {"step": "ramp", "trench": "covered", "pothole": "filled"}     FAIL hedge contact (clearance -1.125 m at s 149.6)
+   P3                   {"step": "ramp", "trench": "covered"}                          PASS 
+   P4a                  {"step": "ramp", "trench": "covered"}                          PASS 
+   P4b                  {"step": "ramp", "trench": "covered"}                          PASS 
+   P5a_drop_sharp_3kN   {"step": "sharp", "trench": "covered"}                         PASS 
+   P5b_drop_sharp_4kN   {"step": "sharp", "trench": "covered"}                         PASS 
+   P5c_drop_ramp14      {"step": "ramp", "trench": "covered"}                          PASS 
+   P5d_up_sharp_3kN     {"step": "sharp", "trench": "covered"}                         PASS 
+   P5e_up_sharp_4kN     {"step": "sharp", "trench": "covered"}                         FAIL drive2 stalled at s 290.1 (no progress 12 s (stall))
+   P5f_up_ramp14        {"step": "ramp", "trench": "covered"}                          PASS 
+   P5g_trench_open      {"step": "ramp", "trench": "open"}                             FAIL drive0 stalled at s 455.1 (no progress 12 s (stall)); drive0: bin not captured a
+   P5h_pothole          {"step": "ramp", "trench": "covered"}                          FAIL comb lip unseated
+   P5i_trench_open_4kN  {"step": "ramp", "trench": "open"}                             FAIL bin touched the ground (468 N); drive0 stalled at s 455.1 (no progress 12 s (sta
+   P6a_person_estop     {"step": "ramp", "trench": "covered"}                          PASS 
+   P6b_dog_crossing     {"step": "ramp", "trench": "covered"}                          PASS 
+   P7                   {"step": "ramp", "trench": "covered"}                          FAIL drive1 stalled at s 550.7 (timeout); set-down fail
+
+runs_base_spf: B2-F as designed, 4.0.1
+   P1                   {"step": "sharp", "trench": "covered", "pothole": "filled"}    PASS 
+   P2a                  {"step": "sharp", "trench": "covered", "pothole": "filled"}    FAIL drive2 stalled at s 291.0 (no progress 12 s (stall))
+   P2c                  {"step": "sharp", "trench": "covered", "pothole": "filled"}    FAIL drive2 stalled at s 291.0 (no progress 12 s (stall)); set-down fail
+   P3                   {"step": "sharp", "trench": "covered", "pothole": "filled"}    PASS 
+   P7                   {"step": "sharp", "trench": "covered", "pothole": "filled"}    PASS 
+
+runs_rk2: castor rocker only (13 Nov morning)
+   P1                   {"step": "ramp", "trench": "covered"}                          FAIL drive1 stalled at s 550.3 (no progress 12 s (stall)); set-down fail
+
+runs_lean: improved (beam free +/-5 deg, beam 1.5 kg, mass as run up to 13 Nov), 4.0.1
+   P1                   {"step": "sharp", "trench": "covered", "pothole": "filled"}    PASS 
+   P2a                  {"step": "sharp", "trench": "covered", "pothole": "filled"}    FAIL drive2 stalled at s 291.0 (no progress 12 s (stall))
+   P2c                  {"step": "sharp", "trench": "covered", "pothole": "filled"}    FAIL drive2 stalled at s 291.0 (no progress 12 s (stall)); set-down fail
+   P3                   {"step": "sharp", "trench": "covered", "pothole": "filled"}    PASS 
+   P4a                  {"step": "sharp", "trench": "covered", "pothole": "filled"}    PASS 
+   P4b                  {"step": "sharp", "trench": "covered", "pothole": "filled"}    PASS 
+   P5d_up_sharp_3kN     {"step": "sharp", "trench": "covered"}                         PASS 
+   P5h_pothole          {"step": "ramp", "trench": "covered"}                          FAIL drive0 stalled at s 550.5 (no progress 12 s (stall))
+   P7                   {"step": "sharp", "trench": "covered", "pothole": "filled"}    PASS 
+
+runs_lean_ramp: improved, as runs_lean
+   P1                   {"step": "sharp", "trench": "covered", "pothole": "filled"}    PASS 
+   P2a                  {"step": "ramp", "trench": "covered", "pothole": "filled"}     PASS 
+   P2c                  {"step": "ramp", "trench": "covered", "pothole": "filled"}     PASS 
+
+runs_lean_c260: improved with 260 mm castors
+   P1                   {"step": "sharp", "trench": "covered", "pothole": "filled"}    PASS 
+   P2a                  {"step": "sharp", "trench": "covered", "pothole": "filled"}    PASS 
+   P2c                  {"step": "sharp", "trench": "covered", "pothole": "filled"}    PASS 
+
+runs_lean287: improved, pin at 287 mm
+   P1                   {"step": "ramp", "trench": "covered", "pothole": "filled"}     PASS 
+   P2a                  {"step": "ramp", "trench": "covered", "pothole": "filled"}     PASS 
+   P2c                  {"step": "ramp", "trench": "covered", "pothole": "filled"}     PASS 
+   P7                   {"step": "ramp", "trench": "covered", "pothole": "filled"}     PASS 
+
+runs_lean_lock: improved, beam locked (+/-0.05 deg); P1 is a link to runs_lean/P1 for the start snapshot
+   P5h_pothole          {"step": "ramp", "trench": "covered"}                          PASS 
+
+runs_lean_s2: improved, stops +/-2 deg; P1 is a link to runs_lean/P1
+   P5h_pothole          {"step": "ramp", "trench": "covered"}                          PASS 
+
+runs_leanm_s2: improved, corrected mass (96.4 kg in the model), stops +/-2 deg, 4.0.1
+   P1                   {"step": "ramp", "trench": "covered"}                          PASS 
+   P2a                  {"step": "ramp", "trench": "covered"}                          FAIL drive2 stalled at s 550.0 (no progress 12 s (stall))
+   P2a_pf               {"step": "ramp", "trench": "covered", "pothole": "filled"}     PASS 
+   P2c                  {"step": "ramp", "trench": "covered"}                          PASS 
+   P2c_pf               {"step": "ramp", "trench": "covered", "pothole": "filled"}     PASS 
+   P7                   {"step": "ramp", "trench": "covered"}                          FAIL drive1 stalled at s 550.6 (timeout); set-down fail

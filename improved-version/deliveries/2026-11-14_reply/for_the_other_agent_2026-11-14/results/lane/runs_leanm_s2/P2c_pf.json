@@ -1,0 +1,131 @@
+{
+ "run": "P2c_pf",
+ "title": "P2c-pf collect empty 240 L, pothole filled (supplementary)",
+ "verdict": "PASS",
+ "fails": [],
+ "sim_time_s": 1147.1,
+ "t_start": 183.1969999991239,
+ "energy_Wh": 24.83,
+ "wall_s": 453,
+ "metrics": {
+  "clear_min": 0.1068,
+  "clear_at": 290.9,
+  "seated_all": true,
+  "bin_ground_N": 0.0,
+  "roll_max": 1.2718,
+  "pitch_max": 6.8445,
+  "hedge_min": 0.8961,
+  "hedge_at": 504.0,
+  "tip_min": 36.9955,
+  "tip_at": 15.4,
+  "liftF_max": 400.947,
+  "liftF_at": 290.2,
+  "gap_min": 9.0,
+  "v_max": 0.506,
+  "n_lost": 0
+ },
+ "results": {
+  "drive0": {
+   "reached": true,
+   "why": null,
+   "s_end": 9.48,
+   "ref_end": 9.71,
+   "t": 1310.9,
+   "captured_end": true,
+   "clear_end_mm": 118.0
+  },
+  "setdown": {
+   "wheel_clear_at_zc_mm": 0.0,
+   "tilt_before_withdraw": 0.0,
+   "wheel_clear_before_withdraw_mm": 0.0,
+   "released": true,
+   "nib_clear_m": 0.623,
+   "sd": "SD2it1",
+   "tilt_end": 0.04,
+   "bin_speed": 0.0053,
+   "standing": true,
+   "bin_s": 9.76,
+   "bin_lat": -1.451
+  }
+ },
+ "seg_metrics": {
+  "drive0": {
+   "clear_min": 0.1068,
+   "clear_at": 290.9,
+   "seated_all": true,
+   "bin_ground_N": 0.0,
+   "roll_max": 1.2718,
+   "pitch_max": 6.8445,
+   "hedge_min": 0.8961,
+   "hedge_at": 504.0,
+   "tip_min": 36.9955,
+   "tip_at": 15.4,
+   "liftF_max": 400.947,
+   "liftF_at": 290.2,
+   "gap_min": 9.0,
+   "v_max": 0.506,
+   "n_lost": 0
+  },
+  "setdown1": {
+   "clear_min": 9.0,
+   "clear_at": null,
+   "seated_all": true,
+   "bin_ground_N": 0.0,
+   "roll_max": 0.0479,
+   "pitch_max": 0.4249,
+   "hedge_min": 9.0,
+   "hedge_at": null,
+   "tip_min": 39.2969,
+   "tip_at": 9.5,
+   "liftF_max": 192.9381,
+   "liftF_at": 9.5,
+   "gap_min": 9.0,
+   "v_max": 0.1453,
+   "n_lost": 0
+  }
+ },
+ "events": [
+  [
+   183.2,
+   "start from P2c snapshot s556.0.pkl (carried state)"
+  ],
+  [
+   1310.9,
+   "drive0: reached at s 9.5"
+  ],
+  [
+   1330.28,
+   "set-down: released True standing True tilt 0.0"
+  ]
+ ],
+ "cfg": {
+  "binkey": "ESE240SL",
+  "kg": 13.0,
+  "with_bin": true,
+  "variant": {
+   "step": "ramp",
+   "trench": "covered",
+   "pothole": "filled"
+  },
+  "act_N": 3000.0,
+  "pert": {},
+  "night": false,
+  "obstacles": [],
+  "title": "P2c-pf collect empty 240 L, pothole filled (supplementary)",
+  "start": [
+   "snap",
+   "P2c",
+   556.0
+  ]
+ },
+ "steps": [
+  [
+   "drive",
+   "{'to': 10.0, 'ref': 'bin', 'dirn': -1, 'knots': [(0, -1.4), (12.0, -1.4), (24.0, 0.0), (610.0, 0.0), (619.5, 1.35), (700, 1.35)]}"
+  ],
+  [
+   "setdown"
+  ]
+ ],
+ "peak": {}
+}

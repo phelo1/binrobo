@@ -1,0 +1,127 @@
+{
+ "run": "P5h_pothole",
+ "title": "P5 pothole 60 mm under the left wheel, 110 kg",
+ "verdict": "PASS",
+ "fails": [],
+ "sim_time_s": 38.9,
+ "t_start": 1122.7014999993496,
+ "energy_Wh": 0.52,
+ "wall_s": 16,
+ "metrics": {
+  "clear_min": 0.0686,
+  "clear_at": 550.1,
+  "seated_all": true,
+  "bin_ground_N": 0.0,
+  "roll_max": 3.1294,
+  "pitch_max": 0.8113,
+  "hedge_min": 0.8721,
+  "hedge_at": 551.7,
+  "tip_min": 22.544,
+  "tip_at": 550.2,
+  "liftF_max": 2193.8161,
+  "liftF_at": 550.1,
+  "gap_min": 9.0,
+  "v_max": 0.5858,
+  "n_lost": 0
+ },
+ "results": {
+  "drive0": {
+   "reached": true,
+   "why": null,
+   "s_end": 556.99,
+   "ref_end": 556.99,
+   "t": 1158.4,
+   "captured_end": true,
+   "clear_end_mm": 93.7,
+   "binwheels_past_far_edge": true
+  },
+  "hold1": {
+   "creep3_m": 0.00031692449587531374,
+   "creepT_m": 0.00031692449587531374,
+   "T": 3.0,
+   "s": 556.99,
+   "grade_pct": -1.3,
+   "leaf": false
+  }
+ },
+ "seg_metrics": {
+  "drive0": {
+   "clear_min": 0.0686,
+   "clear_at": 550.1,
+   "seated_all": true,
+   "bin_ground_N": 0.0,
+   "roll_max": 3.1294,
+   "pitch_max": 0.8113,
+   "hedge_min": 0.8721,
+   "hedge_at": 551.7,
+   "tip_min": 22.544,
+   "tip_at": 550.2,
+   "liftF_max": 2193.8161,
+   "liftF_at": 550.1,
+   "gap_min": 9.0,
+   "v_max": 0.5858,
+   "n_lost": 0
+  },
+  "hold1": {
+   "clear_min": 0.0924,
+   "clear_at": 557.0,
+   "seated_all": true,
+   "bin_ground_N": 0.0,
+   "roll_max": 0.0083,
+   "pitch_max": 0.7475,
+   "hedge_min": 1.5857,
+   "hedge_at": 556.8,
+   "tip_min": 23.6249,
+   "tip_at": 557.0,
+   "liftF_max": 1173.7507,
+   "liftF_at": 557.0,
+   "gap_min": 9.0,
+   "v_max": 0.0001,
+   "n_lost": 0
+  }
+ },
+ "events": [
+  [
+   1122.7,
+   "start from P1 snapshot s542.0.pkl (carried state)"
+  ],
+  [
+   1158.4,
+   "drive0: reached at s 557.0"
+  ],
+  [
+   1161.6,
+   "hold at s 557.0 (-1.3 %): creep 0.0003 m in 3 s, 0.0003 m in 3 s"
+  ]
+ ],
+ "cfg": {
+  "binkey": "ESE240SL",
+  "kg": 110.0,
+  "with_bin": true,
+  "variant": {
+   "step": "ramp",
+   "trench": "covered"
+  },
+  "act_N": 3000.0,
+  "pert": {},
+  "night": false,
+  "obstacles": [],
+  "title": "P5 pothole 60 mm under the left wheel, 110 kg",
+  "start": [
+   "snap",
+   "P1",
+   542.0
+  ]
+ },
+ "steps": [
+  [
+   "drive",
+   "{'to': 557.0, 'ref': 'tug', 'dirn': 1, 'knots': [(0, -1.4), (12.0, -1.4), (24.0, 0.0), (610.0, 0.0), (619.5, 1.35), (700, 1.35)], 'feature': 'pothole'}"
+  ],
+  [
+   "hold",
+   "3.0"
+  ]
+ ],
+ "peak": {}
+}

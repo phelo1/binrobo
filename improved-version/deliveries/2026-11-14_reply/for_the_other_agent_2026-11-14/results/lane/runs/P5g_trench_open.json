@@ -1,0 +1,130 @@
+{
+ "run": "P5g_trench_open",
+ "title": "P5 trench 40 x 200 mm as-is, 110 kg",
+ "verdict": "FAIL",
+ "fails": [
+  "drive0 stalled at s 455.1 (no progress 12 s (stall))",
+  "drive0: bin not captured at the end (wheels < 30 mm or unseated)"
+ ],
+ "sim_time_s": 41.1,
+ "t_start": 934.0909999813676,
+ "energy_Wh": 0.49,
+ "wall_s": 14,
+ "metrics": {
+  "clear_min": 0.0033,
+  "clear_at": 455.1,
+  "seated_all": true,
+  "bin_ground_N": 0.0,
+  "roll_max": 0.0925,
+  "pitch_max": 2.8418,
+  "hedge_min": 1.55,
+  "hedge_at": 445.8,
+  "tip_min": 20.7574,
+  "tip_at": 455.1,
+  "liftF_max": 2851.3142,
+  "liftF_at": 455.1,
+  "gap_min": 9.0,
+  "v_max": 0.7325,
+  "n_lost": 1129
+ },
+ "results": {
+  "drive0": {
+   "reached": false,
+   "why": "no progress 12 s (stall)",
+   "s_end": 455.11,
+   "ref_end": 455.11,
+   "t": 972.0,
+   "captured_end": false,
+   "clear_end_mm": 18.8,
+   "binwheels_past_far_edge": false
+  },
+  "hold1": {
+   "creep3_m": 0.0002751143758788881,
+   "creepT_m": 0.0002751143758788881,
+   "T": 3.0,
+   "s": 455.11,
+   "grade_pct": 0.7,
+   "leaf": false
+  }
+ },
+ "seg_metrics": {
+  "drive0": {
+   "clear_min": 0.0033,
+   "clear_at": 455.1,
+   "seated_all": true,
+   "bin_ground_N": 0.0,
+   "roll_max": 0.0925,
+   "pitch_max": 2.8418,
+   "hedge_min": 1.55,
+   "hedge_at": 445.8,
+   "tip_min": 20.7574,
+   "tip_at": 455.1,
+   "liftF_max": 2851.3142,
+   "liftF_at": 455.1,
+   "gap_min": 9.0,
+   "v_max": 0.7325,
+   "n_lost": 969
+  },
+  "hold1": {
+   "clear_min": 0.0184,
+   "clear_at": 455.1,
+   "seated_all": true,
+   "bin_ground_N": 0.0,
+   "roll_max": 0.0003,
+   "pitch_max": 2.564,
+   "hedge_min": 1.61,
+   "hedge_at": 454.9,
+   "tip_min": 21.7635,
+   "tip_at": 455.1,
+   "liftF_max": 1156.5715,
+   "liftF_at": 455.1,
+   "gap_min": 9.0,
+   "v_max": 0.0,
+   "n_lost": 160
+  }
+ },
+ "events": [
+  [
+   934.09,
+   "start from P1 snapshot s446.0.pkl (carried state)"
+  ],
+  [
+   972.01,
+   "drive0: no progress 12 s (stall) at s 455.1"
+  ],
+  [
+   975.21,
+   "hold at s 455.1 (0.7 %): creep 0.0003 m in 3 s, 0.0003 m in 3 s"
+  ]
+ ],
+ "cfg": {
+  "binkey": "ESE240SL",
+  "kg": 110.0,
+  "with_bin": true,
+  "variant": {
+   "step": "ramp",
+   "trench": "open"
+  },
+  "act_N": 3000.0,
+  "pert": {},
+  "night": false,
+  "obstacles": [],
+  "title": "P5 trench 40 x 200 mm as-is, 110 kg",
+  "start": [
+   "snap",
+   "P1",
+   446.0
+  ]
+ },
+ "steps": [
+  [
+   "drive",
+   "{'to': 462.0, 'ref': 'tug', 'dirn': 1, 'knots': [(0, -1.4), (12.0, -1.4), (24.0, 0.0), (610.0, 0.0), (619.5, 1.35), (700, 1.35)], 'feature': 'trench'}"
+  ],
+  [
+   "hold",
+   "3.0"
+  ]
+ ],
+ "peak": {}
+}

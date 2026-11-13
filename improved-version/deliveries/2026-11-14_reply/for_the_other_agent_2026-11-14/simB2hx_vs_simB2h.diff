@@ -1,0 +1,29 @@
+42c42,43
+< GEO.update(json.loads(os.environ.get('CGB_GEO','{}'))); GEO['lift_range']=0.25
+---
+> GEO.update(json.loads(os.environ.get('CGB_GEO','{}'))); GEO['lift_range']=float(os.environ.get('X_LIFT_RANGE','0.25')); XTRIES=int(os.environ.get('X_DOCK_TRIES','1')); XDYMAX=float(os.environ.get('X_DOCK_DYMAX','0'))
+> ROCK=os.environ.get('X_ROCKER')=='1'; ROCK_DEG=float(os.environ.get('X_ROCK_DEG','5')); ROCK_Z=float(os.environ.get('X_ROCK_Z','0.20')); ROCK_M=float(os.environ.get('X_ROCK_M','1.5'))
+118c119
+<         return f'''<body name="cfork{side}" pos="{G['cx']} {s*G['cy']} 0.1"><joint name="swivel{side}" type="hinge" axis="0 0 1" damping="0.05"/>
+---
+>         return f'''<body name="cfork{side}" pos="{0.0 if ROCK else G['cx']} {s*G['cy']} {0.1-ROCK_Z if ROCK else 0.1}"><joint name="swivel{side}" type="hinge" axis="0 0 1" damping="0.05"/>
+195c196
+< {drive('L',1)}{drive('R',-1)}{caster('L',1)}{caster('R',-1)}{'' if PADCAR else padb}{lift}</body>
+---
+> {drive('L',1)}{drive('R',-1)}{('<body name="rocker" pos="%s 0 %s"><joint name="rock" type="hinge" axis="1 0 0" range="%s %s" limited="true" damping="20" solreflimit="0.004 1"/><inertial mass="%s" pos="0 0 %s" diaginertia="%s 0.004 %s"/>'%(G['cx'],ROCK_Z,-ROCK_DEG,ROCK_DEG,ROCK_M,(0.0 if ROCK_M==1.5 else 0.27-ROCK_Z),0.04*ROCK_M/1.5,0.04*ROCK_M/1.5)) if ROCK else ''}{caster('L',1)}{caster('R',-1)}{'</body>' if ROCK else ''}{'' if PADCAR else padb}{lift}</body>
+388c389
+<     ok=approach(R,seed=seed); out['docked']=ok; out['reapp']=bool(getattr(R,'reapp',False)); out['dock_dy_mm']=getattr(R,'dock_dy',None)
+---
+>     ok=approach(R,seed=seed,retry=(XTRIES if XTRIES>1 else True)); out['docked']=ok; out['reapp']=bool(getattr(R,'reapp',False)); out['dock_dy_mm']=getattr(R,'dock_dy',None)
+511c512
+<         R.reapp=True; return approach(R,cam_sigma,thr,seed+1000,retry=False)
+---
+>         R.reapp=True; return approach(R,cam_sigma,thr,seed+1000,retry=(int(retry)-1 if XTRIES>1 else False))
+513c514
+<     return bool(good)
+---
+>     return bool(good and (XDYMAX<=0 or abs(dy)<=XDYMAX))
+519c520
+<     ok=approach(R,seed=seed); out['docked']=ok; out['reapp']=bool(getattr(R,'reapp',False)); out['dock_dy_mm']=getattr(R,'dock_dy',None)
+---
+>     ok=approach(R,seed=seed,retry=(XTRIES if XTRIES>1 else True)); out['docked']=ok; out['reapp']=bool(getattr(R,'reapp',False)); out['dock_dy_mm']=getattr(R,'dock_dy',None)

@@ -1,0 +1,161 @@
+{
+ "run": "P4a",
+ "title": "P4a 12 % pitch DOWN, 110 kg, wet leaves mu 0.35, stop + hold",
+ "verdict": "PASS",
+ "fails": [],
+ "sim_time_s": 95.4,
+ "t_start": 281.3219999968036,
+ "energy_Wh": 0.26,
+ "wall_s": 27,
+ "metrics": {
+  "clear_min": 0.0954,
+  "clear_at": 166.0,
+  "seated_all": true,
+  "bin_ground_N": 0.0,
+  "roll_max": 0.4892,
+  "pitch_max": 6.8985,
+  "hedge_min": 1.5008,
+  "hedge_at": 155.1,
+  "tip_min": 25.9225,
+  "tip_at": 166.0,
+  "liftF_max": 1217.3633,
+  "liftF_at": 166.0,
+  "gap_min": 9.0,
+  "v_max": 0.5242,
+  "n_lost": 0
+ },
+ "results": {
+  "drive0": {
+   "reached": true,
+   "why": null,
+   "s_end": 145.0,
+   "ref_end": 145.0,
+   "t": 323.6,
+   "captured_end": true,
+   "clear_end_mm": 110.4
+  },
+  "hold1": {
+   "creep3_m": 0.0005520060956444555,
+   "creepT_m": 0.0018204660228412432,
+   "T": 10.0,
+   "s": 145.0,
+   "grade_pct": -12.0,
+   "leaf": true
+  },
+  "drive2": {
+   "reached": true,
+   "why": null,
+   "s_end": 165.99,
+   "ref_end": 165.99,
+   "t": 376.7,
+   "captured_end": true,
+   "clear_end_mm": 97.4
+  }
+ },
+ "seg_metrics": {
+  "drive0": {
+   "clear_min": 0.1052,
+   "clear_at": 128.5,
+   "seated_all": true,
+   "bin_ground_N": 0.0,
+   "roll_max": 0.1874,
+   "pitch_max": 6.8689,
+   "hedge_min": 1.5101,
+   "hedge_at": 133.0,
+   "tip_min": 26.566,
+   "tip_at": 130.3,
+   "liftF_max": 1180.0358,
+   "liftF_at": 125.5,
+   "gap_min": 9.0,
+   "v_max": 0.5218,
+   "n_lost": 0
+  },
+  "hold1": {
+   "clear_min": 0.1087,
+   "clear_at": 145.0,
+   "seated_all": true,
+   "bin_ground_N": 0.0,
+   "roll_max": 0.006,
+   "pitch_max": 6.8611,
+   "hedge_min": 1.6586,
+   "hedge_at": 146.1,
+   "tip_min": 27.9096,
+   "tip_at": 145.0,
+   "liftF_max": 1163.0431,
+   "liftF_at": 145.0,
+   "gap_min": 9.0,
+   "v_max": 0.0003,
+   "n_lost": 0
+  },
+  "drive2": {
+   "clear_min": 0.0954,
+   "clear_at": 166.0,
+   "seated_all": true,
+   "bin_ground_N": 0.0,
+   "roll_max": 0.4892,
+   "pitch_max": 6.8985,
+   "hedge_min": 1.5008,
+   "hedge_at": 155.1,
+   "tip_min": 25.9225,
+   "tip_at": 166.0,
+   "liftF_max": 1217.3633,
+   "liftF_at": 166.0,
+   "gap_min": 9.0,
+   "v_max": 0.5242,
+   "n_lost": 0
+  }
+ },
+ "events": [
+  [
+   281.32,
+   "start from P1 snapshot s124.0.pkl (carried state)"
+  ],
+  [
+   323.62,
+   "drive0: reached at s 145.0"
+  ],
+  [
+   333.82,
+   "hold at s 145.0 (-12.0 %): creep 0.0006 m in 3 s, 0.0018 m in 10 s"
+  ],
+  [
+   376.72,
+   "drive2: reached at s 166.0"
+  ]
+ ],
+ "cfg": {
+  "binkey": "ESE240SL",
+  "kg": 110.0,
+  "with_bin": true,
+  "variant": {
+   "step": "ramp",
+   "trench": "covered",
+   "pothole": "filled"
+  },
+  "act_N": 3000.0,
+  "pert": {},
+  "night": false,
+  "obstacles": [],
+  "title": "P4a 12 % pitch DOWN, 110 kg, wet leaves mu 0.35, stop + hold",
+  "start": [
+   "snap",
+   "P1",
+   124.0
+  ]
+ },
+ "steps": [
+  [
+   "drive",
+   "{'to': 145.0, 'ref': 'tug', 'dirn': 1, 'knots': [(0, -1.4), (12.0, -1.4), (24.0, 0.0), (610.0, 0.0), (619.5, 1.35), (700, 1.35)]}"
+  ],
+  [
+   "hold",
+   "10.0"
+  ],
+  [
+   "drive",
+   "{'to': 166.0, 'ref': 'tug', 'dirn': 1, 'knots': [(0, -1.4), (12.0, -1.4), (24.0, 0.0), (610.0, 0.0), (619.5, 1.35), (700, 1.35)]}"
+  ]
+ ],
+ "peak": {}
+}

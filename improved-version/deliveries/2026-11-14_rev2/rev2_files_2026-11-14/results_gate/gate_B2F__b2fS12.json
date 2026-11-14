@@ -1,0 +1,253 @@
+{
+ "G1": {
+  "bins": {
+   "WEB140": {
+    "n": 30,
+    "captured": 30,
+    "false_holds": 0,
+    "knocked": 0,
+    "non_success": []
+   },
+   "ESE240SL": {
+    "n": 30,
+    "captured": 30,
+    "false_holds": 0,
+    "knocked": 0,
+    "non_success": []
+   },
+   "ESE240CL": {
+    "n": 30,
+    "captured": 29,
+    "false_holds": 0,
+    "knocked": 0,
+    "non_success": [
+     [
+      24,
+      "safe_miss",
+      "safe_miss"
+     ]
+    ]
+   }
+  },
+  "pooled": 89,
+  "n": 90,
+  "false_holds": 0,
+  "knocked": 0,
+  "PASS": true
+ },
+ "G2": {
+  "runs": {
+   "mu0.30 crr0.06": {
+    "ok": true,
+    "t": 11.1,
+    "dist": 5.0,
+    "creep": 0.03,
+    "grab": "success",
+    "torque_pk": 150.0
+   },
+   "mu0.30 crr0.09": {
+    "ok": true,
+    "t": 11.1,
+    "dist": 5.0,
+    "creep": 0.03,
+    "grab": "success",
+    "torque_pk": 150.0
+   },
+   "mu0.25 crr0.06": {
+    "ok": true,
+    "t": 11.1,
+    "dist": 5.0,
+    "creep": 0.033,
+    "grab": "success",
+    "torque_pk": 150.0
+   },
+   "mu0.25 crr0.09": {
+    "ok": true,
+    "t": 11.1,
+    "dist": 5.0,
+    "creep": 0.034,
+    "grab": "success",
+    "torque_pk": 150.0
+   },
+   "mu0.22 crr0.06": {
+    "ok": true,
+    "t": 11.2,
+    "dist": 5.0,
+    "creep": 0.034,
+    "grab": "success",
+    "torque_pk": 150.0
+   },
+   "mu0.22 crr0.09": {
+    "ok": true,
+    "t": 11.2,
+    "dist": 5.0,
+    "creep": 0.034,
+    "grab": "success",
+    "torque_pk": 150.0
+   }
+  },
+  "PASS": true
+ },
+ "G3": {
+  "one": {
+   "ok": true,
+   "reached": true,
+   "dist": 4.71,
+   "roll": 2.867,
+   "pitch": 2.548,
+   "bin_ground": 0.0,
+   "seated": true,
+   "clear_min": 0.048,
+   "grab": "success",
+   "lift_pk": 2291.6
+  },
+  "both": {
+   "ok": true,
+   "reached": true,
+   "dist": 4.71,
+   "roll": 0.655,
+   "pitch": 2.555,
+   "bin_ground": 0.0,
+   "seated": true,
+   "clear_min": 0.048,
+   "grab": "success",
+   "lift_pk": 3000.0
+  },
+  "PASS": true
+ },
+ "G3_extra": {
+  "both_ramp_1to4": {
+   "ok": true,
+   "reached": true,
+   "dist": 4.71,
+   "roll": 0.001,
+   "pitch": 0.005,
+   "bin_ground": 0.0,
+   "seated": true,
+   "clear_min": 0.065,
+   "grab": "success",
+   "lift_pk": 1207.25
+  },
+  "both_rw560": null
+ },
+ "G4": {
+  "runs": {
+   "fwd": {
+    "ok": true,
+    "stop": 0.183,
+    "slide": 0.001,
+    "roll": 0.004,
+    "pitch": 0.01
+   },
+   "rev": {
+    "ok": true,
+    "stop": 0.089,
+    "slide": 0.001,
+    "roll": 0.004,
+    "pitch": 0.004
+   }
+  },
+  "PASS": true
+ },
+ "G5": {
+  "run": null,
+  "PASS": false
+ },
+ "G6": {
+  "cases": {
+   "WEB140 flat full": null,
+   "WEB140 flat empty": null,
+   "WEB140 up12 full": null,
+   "WEB140 up12 empty": null,
+   "WEB140 dn12 full": null,
+   "WEB140 dn12 empty": null,
+   "ESE240CL flat full": null,
+   "ESE240CL flat empty": null,
+   "ESE240CL up12 full": null,
+   "ESE240CL up12 empty": null,
+   "ESE240CL dn12 full": null,
+   "ESE240CL dn12 empty": null,
+   "ESE240SL250 flat full": null,
+   "ESE240SL250 flat empty": null,
+   "ESE240SL250 up12 full": null,
+   "ESE240SL250 up12 empty": null,
+   "ESE240SL250 dn12 full": null,
+   "ESE240SL250 dn12 empty": null
+  },
+  "passed": 0,
+  "tips": 0,
+  "PASS": false
+ },
+ "G7": {
+  "runs": {
+   "climb_m25_c09": "MISSING",
+   "step40_one": "MISSING",
+   "estop12_fwd": "MISSING"
+  },
+  "PASS": false
+ },
+ "G8": {
+  "poses": {
+   "up 110": null,
+   "up 60": null,
+   "dn 110": null,
+   "dn 60": null,
+   "crL 110": null,
+   "crL 60": null,
+   "crR 110": null,
+   "crR 60": null
+  },
+  "handcalc_min_tip_deg": 36.5,
+  "castor_liftoff_110": 23.0,
+  "handcalc_cases": [
+   {
+    "bin_kg": 110,
+    "grab": "success",
+    "M": 203.2,
+    "cg": [
+     0.207,
+     0.008,
+     0.488
+    ],
+    "tip_lateral_deg": 36.5,
+    "tip_forward_over_castors_deg": 54.9,
+    "castor_liftoff_about_drive_axle_deg": 23.0,
+    "rear_tip_on_antitip_deg": 47.7
+   },
+   {
+    "bin_kg": 60,
+    "grab": "success",
+    "M": 153.2,
+    "cg": [
+     0.275,
+     0.006,
+     0.468
+    ],
+    "tip_lateral_deg": 37.1,
+    "tip_forward_over_castors_deg": 53.2,
+    "castor_liftoff_about_drive_axle_deg": 30.4,
+    "rear_tip_on_antitip_deg": 52.3
+   },
+   {
+    "bin_kg": 0,
+    "grab": "no bin",
+    "M": 93.2,
+    "cg": [
+     0.465,
+     0.0,
+     0.378
+    ],
+    "tip_lateral_deg": 41.6,
+    "tip_forward_over_castors_deg": 49.0,
+    "castor_liftoff_about_drive_axle_deg": 50.9,
+    "rear_tip_on_antitip_deg": 64.6
+   }
+  ],
+  "PASS": false
+ },
+ "G9": {
+  "kg": 111.01,
+  "PASS": true
+ },
+ "passed": 5
+}

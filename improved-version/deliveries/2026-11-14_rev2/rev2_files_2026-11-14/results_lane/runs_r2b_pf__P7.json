@@ -1,0 +1,179 @@
+{
+ "run": "P7",
+ "title": "P7 night: P1 with bin CG +60 mm, mass x1.1, mu x0.8",
+ "verdict": "PASS",
+ "fails": [],
+ "sim_time_s": 1306.9,
+ "t_start": 0.0,
+ "energy_Wh": 21.47,
+ "wall_s": 337,
+ "metrics": {
+  "clear_min": 0.0488,
+  "clear_at": 290.2,
+  "seated_all": true,
+  "bin_ground_N": 0.0,
+  "roll_max": 1.7769,
+  "pitch_max": 6.8985,
+  "hedge_min": 0.3051,
+  "hedge_at": 621.1,
+  "tip_min": 23.9682,
+  "tip_at": 55.9,
+  "liftF_max": 1896.8456,
+  "liftF_at": 290.2,
+  "gap_min": 9.0,
+  "v_max": 0.5758,
+  "n_lost": 0
+ },
+ "results": {
+  "grab": {
+   "docked": true,
+   "reapp": false,
+   "dock_dy_mm": 1.6,
+   "pad_ok": true,
+   "padF_at_loadon": 0,
+   "lift_rise_N": 1181,
+   "seat_switch": true,
+   "keeper_on_bar": true,
+   "keeper_deg": -81.5,
+   "claim": true,
+   "zc": 0.146,
+   "q_app": 0.098,
+   "captured": true,
+   "wheel_clear_mm": 95.5,
+   "bin_tilt_abs": 4.9,
+   "seated": true,
+   "dock": "tof",
+   "result": "success"
+  },
+  "drive1": {
+   "reached": true,
+   "why": null,
+   "s_end": 622.14,
+   "ref_end": 621.95,
+   "t": 1287.6,
+   "captured_end": true,
+   "clear_end_mm": 88.1
+  },
+  "setdown": {
+   "wheel_clear_at_zc_mm": -0.1,
+   "tilt_before_withdraw": 1.8,
+   "wheel_clear_before_withdraw_mm": -0.1,
+   "released": true,
+   "nib_clear_m": 0.624,
+   "sd": "SD2it1",
+   "tilt_end": 1.85,
+   "bin_speed": 0.0,
+   "standing": true,
+   "bin_s": 621.87,
+   "bin_lat": 1.301
+  }
+ },
+ "seg_metrics": {
+  "grab0": {
+   "clear_min": 9.0,
+   "clear_at": null,
+   "seated_all": true,
+   "bin_ground_N": 0.0,
+   "roll_max": 0.2086,
+   "pitch_max": 0.6198,
+   "hedge_min": 9.0,
+   "hedge_at": null,
+   "tip_min": 34.9482,
+   "tip_at": 11.4,
+   "liftF_max": 1309.1534,
+   "liftF_at": 10.5,
+   "gap_min": 9.0,
+   "v_max": 0.1443,
+   "n_lost": 0
+  },
+  "drive1": {
+   "clear_min": 0.0488,
+   "clear_at": 290.2,
+   "seated_all": true,
+   "bin_ground_N": 0.0,
+   "roll_max": 1.7769,
+   "pitch_max": 6.8985,
+   "hedge_min": 0.3051,
+   "hedge_at": 621.1,
+   "tip_min": 23.9682,
+   "tip_at": 55.9,
+   "liftF_max": 1896.8456,
+   "liftF_at": 290.2,
+   "gap_min": 9.0,
+   "v_max": 0.5758,
+   "n_lost": 0
+  },
+  "setdown2": {
+   "clear_min": 9.0,
+   "clear_at": null,
+   "seated_all": true,
+   "bin_ground_N": 0.0,
+   "roll_max": 0.0785,
+   "pitch_max": 1.8553,
+   "hedge_min": 9.0,
+   "hedge_at": null,
+   "tip_min": 36.1239,
+   "tip_at": 622.1,
+   "liftF_max": 1282.2995,
+   "liftF_at": 622.1,
+   "gap_min": 9.0,
+   "v_max": 0.1487,
+   "n_lost": 0
+  }
+ },
+ "events": [
+  [
+   15.57,
+   "docked: tof, bin dy 2 mm (camera 2), nib gap 1 mm, bin moved 0 mm, rim 0.978 q_app 0.098, yaw meas 0.1 true 0.3 deg"
+  ],
+  [
+   39.72,
+   "grab: claim True captured True clear 96 mm rise 1181 N tilt 4.9"
+  ],
+  [
+   39.72,
+   "grab result success"
+  ],
+  [
+   1287.62,
+   "drive1: reached at s 622.1"
+  ],
+  [
+   1306.92,
+   "set-down: released True standing True tilt 1.8"
+  ]
+ ],
+ "cfg": {
+  "binkey": "ESE240SL",
+  "kg": 110.0,
+  "with_bin": true,
+  "variant": {
+   "step": "ramp",
+   "trench": "covered",
+   "pothole": "filled"
+  },
+  "act_N": 3000.0,
+  "pert": {
+   "mass": 1.1,
+   "mu": 0.8,
+   "cg_dz": 0.06
+  },
+  "night": true,
+  "obstacles": [],
+  "title": "P7 night: P1 with bin CG +60 mm, mass x1.1, mu x0.8",
+  "start": "home"
+ },
+ "steps": [
+  [
+   "grab"
+  ],
+  [
+   "drive",
+   "{'to': 621.9612509503402, 'ref': 'bin', 'dirn': 1, 'knots': [(0, -1.4), (12.0, -1.4), (24.0, 0.0), (610.0, 0.0), (619.5, 1.35), (700, 1.35)], 'snaps': True}"
+  ],
+  [
+   "setdown"
+  ]
+ ],
+ "peak": {}
+}

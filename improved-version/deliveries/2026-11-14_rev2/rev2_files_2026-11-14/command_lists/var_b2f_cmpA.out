@@ -1,0 +1,10 @@
+  0 rc 0    21 s  step one
+  1 rc 0    20 s  step both
+  2 rc 0    20 s  step both_ramp
+  3 rc 0   283 s  grab WEB140 30 201
+  4 rc 0   247 s  grab ESE240SL 30 202
+  5 rc 0   245 s  grab ESE240CL 30 203
+  6 rc 0   275 s  grab ESE240CL 30 303
+  7 rc 0   256 s  grab ESE240CL 30 403
+  8 rc 0   266 s  grab ESE240CL 30 503
+batch done in 1633 s

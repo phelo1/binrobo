@@ -1,0 +1,175 @@
+{
+ "run": "P5d_up_sharp_3kN",
+ "title": "P5 40 mm step UP (sharp), 110 kg, lift cap 3000 N",
+ "verdict": "PASS",
+ "fails": [],
+ "sim_time_s": 55.9,
+ "t_start": 626.5539999886399,
+ "energy_Wh": 1.23,
+ "wall_s": 14,
+ "metrics": {
+  "clear_min": 0.0772,
+  "clear_at": 291.0,
+  "seated_all": true,
+  "bin_ground_N": 0.0,
+  "roll_max": 1.4321,
+  "pitch_max": 4.2364,
+  "hedge_min": 0.7473,
+  "hedge_at": 298.3,
+  "tip_min": 23.6993,
+  "tip_at": 290.9,
+  "liftF_max": 2191.9927,
+  "liftF_at": 291.0,
+  "gap_min": 9.0,
+  "v_max": 0.5046,
+  "n_lost": 0
+ },
+ "results": {
+  "pivot1": {
+   "ok": true
+  },
+  "drive2": {
+   "reached": true,
+   "why": null,
+   "s_end": 283.01,
+   "ref_end": 283.01,
+   "t": 679.2,
+   "captured_end": true,
+   "clear_end_mm": 98.2,
+   "binwheels_past_far_edge": true
+  },
+  "hold3": {
+   "creep3_m": 0.0001431619613076521,
+   "creepT_m": 0.0001431619613076521,
+   "T": 3.0,
+   "s": 283.01,
+   "grade_pct": -3.1,
+   "leaf": false
+  }
+ },
+ "seg_metrics": {
+  "softstop0": {
+   "clear_min": 0.0922,
+   "clear_at": 298.1,
+   "seated_all": true,
+   "bin_ground_N": 0.0,
+   "roll_max": 0.0065,
+   "pitch_max": 1.4452,
+   "hedge_min": 1.5,
+   "hedge_at": 297.9,
+   "tip_min": 26.589,
+   "tip_at": 298.3,
+   "liftF_max": 1187.5796,
+   "liftF_at": 298.3,
+   "gap_min": 9.0,
+   "v_max": 0.4939,
+   "n_lost": 0
+  },
+  "pivot1": {
+   "clear_min": 0.0942,
+   "clear_at": 298.3,
+   "seated_all": true,
+   "bin_ground_N": 0.0,
+   "roll_max": 1.4321,
+   "pitch_max": 1.4401,
+   "hedge_min": 0.7473,
+   "hedge_at": 298.3,
+   "tip_min": 25.4829,
+   "tip_at": 298.3,
+   "liftF_max": 1176.6598,
+   "liftF_at": 298.3,
+   "gap_min": 9.0,
+   "v_max": 0.0139,
+   "n_lost": 0
+  },
+  "drive2": {
+   "clear_min": 0.0772,
+   "clear_at": 291.0,
+   "seated_all": true,
+   "bin_ground_N": 0.0,
+   "roll_max": 0.2022,
+   "pitch_max": 4.2364,
+   "hedge_min": 1.4785,
+   "hedge_at": 298.2,
+   "tip_min": 23.6993,
+   "tip_at": 290.9,
+   "liftF_max": 2191.9927,
+   "liftF_at": 291.0,
+   "gap_min": 9.0,
+   "v_max": 0.5046,
+   "n_lost": 0
+  },
+  "hold3": {
+   "clear_min": 0.0983,
+   "clear_at": 283.0,
+   "seated_all": true,
+   "bin_ground_N": 0.0,
+   "roll_max": 0.0123,
+   "pitch_max": 1.7958,
+   "hedge_min": 1.598,
+   "hedge_at": 283.2,
+   "tip_min": 25.2062,
+   "tip_at": 283.0,
+   "liftF_max": 1167.4766,
+   "liftF_at": 283.0,
+   "gap_min": 9.0,
+   "v_max": 0.0001,
+   "n_lost": 0
+  }
+ },
+ "events": [
+  [
+   626.55,
+   "start from P1 snapshot s298.0.pkl (carried state)"
+  ],
+  [
+   645.73,
+   "pivot +180 deg done, axle moved 0.057 m"
+  ],
+  [
+   679.23,
+   "drive2: reached at s 283.0"
+  ],
+  [
+   682.43,
+   "hold at s 283.0 (-3.1 %): creep 0.0001 m in 3 s, 0.0001 m in 3 s"
+  ]
+ ],
+ "cfg": {
+  "binkey": "ESE240SL",
+  "kg": 110.0,
+  "with_bin": true,
+  "variant": {
+   "step": "sharp",
+   "trench": "covered"
+  },
+  "act_N": 3000.0,
+  "pert": {},
+  "night": false,
+  "obstacles": [],
+  "title": "P5 40 mm step UP (sharp), 110 kg, lift cap 3000 N",
+  "start": [
+   "snap",
+   "P1",
+   298.0
+  ]
+ },
+ "steps": [
+  [
+   "softstop"
+  ],
+  [
+   "pivot",
+   "180.0"
+  ],
+  [
+   "drive",
+   "{'to': 283.0, 'ref': 'tug', 'dirn': -1, 'knots': [(0, -1.4), (12.0, -1.4), (24.0, 0.0), (610.0, 0.0), (619.5, 1.35), (700, 1.35)], 'feature': 'step'}"
+  ],
+  [
+   "hold",
+   "3.0"
+  ]
+ ],
+ "peak": {}
+}

@@ -1,0 +1,242 @@
+[
+[
+"nobin",
+"L1",
+0,
+"EL Power box: 2 contactors, lift driver, char",
+"tug",
+1072
+],
+[
+"nobin",
+"L1",
+1,
+"EL Electronics pod",
+"tug",
+679
+],
+[
+"nobin",
+"L1",
+1,
+"EL Power box: 2 contactors, lift driver, char",
+"tug",
+1072
+],
+[
+"nobin",
+"L2",
+0,
+"BY HDPE rear cover (fixed)",
+"tug",
+679
+],
+[
+"nobin",
+"L2",
+0,
+"EL Electronics pod",
+"tug",
+18
+],
+[
+"nobin",
+"L2",
+1,
+"FR Side rail L 50x50x2 RHS",
+"tug",
+898
+],
+[
+"nobin",
+"L2",
+1,
+"SN Wheel encoder + speed sensor L",
+"tug",
+67
+],
+[
+"nobin",
+"L3",
+0,
+"BY HDPE rear cover (fixed)",
+"tug",
+679
+],
+[
+"nobin",
+"L3",
+0,
+"EL Electronics pod",
+"tug",
+18
+],
+[
+"nobin",
+"L3",
+1,
+"FR Side rail R 50x50x2 RHS",
+"tug",
+898
+],
+[
+"nobin",
+"L3",
+1,
+"SN Wheel encoder + speed sensor R",
+"tug",
+67
+],
+[
+"nobin",
+"L4",
+0,
+"FR Side rail L 50x50x2 RHS",
+"tug",
+388
+],
+[
+"nobin",
+"L4",
+0,
+"BY HDPE rear cover (fixed)",
+"tug",
+679
+],
+[
+"nobin",
+"L4",
+0,
+"EL Electronics pod",
+"tug",
+18
+],
+[
+"nobin",
+"L4",
+2,
+"FR Side rail R 50x50x2 RHS",
+"tug",
+388
+],
+[
+"nobin",
+"L4",
+2,
+"BY HDPE rear cover (fixed)",
+"tug",
+679
+],
+[
+"nobin",
+"L4",
+2,
+"EL Electronics pod",
+"tug",
+18
+],
+[
+"nobin",
+"L5",
+0,
+"LA Lift actuator motor",
+"tug",
+1437
+],
+[
+"nobin",
+"L5",
+0,
+"BY HDPE rear cover (fixed)",
+"tug",
+924
+],
+[
+"nobin",
+"L6",
+0,
+"LM Mast top tie 50x50x2",
+"tug",
+3131
+],
+[
+"nobin",
+"L6",
+0,
+"SF Amber beacon",
+"tug",
+1437
+],
+[
+"nobin",
+"L6",
+0,
+"BY HDPE rear cover (fixed)",
+"tug",
+924
+],
+[
+"nobin",
+"L6",
+0,
+"EL Electronics pod",
+"tug",
+718
+],
+[
+"nobin",
+"L6",
+0,
+"LT Mast-top red marker",
+"tug",
+2178
+],
+[
+"nobin",
+"L6",
+1,
+"LM Mast top tie 50x50x2",
+"tug",
+3025
+],
+[
+"nobin",
+"L6",
+2,
+"LM Mast top tie 50x50x2",
+"tug",
+44
+],
+[
+"nobin",
+"L6",
+2,
+"LT Rear work lamp 3 W",
+"tug",
+1343
+],
+[
+"nobin",
+"L6",
+3,
+"LM Mast top tie 50x50x2",
+"tug",
+3131
+],
+[
+"nobin",
+"L6",
+4,
+"LM Mast top tie 50x50x2",
+"tug",
+83
+],
+[
+"nobin",
+"L6",
+4,
+"SN Radar, rear",
+"tug",
+21
+]
+]

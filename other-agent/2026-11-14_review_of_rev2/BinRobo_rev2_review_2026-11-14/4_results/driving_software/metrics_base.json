@@ -1,0 +1,2611 @@
+[
+ {
+  "key": "s10a__s11",
+  "scenario": "s10a",
+  "seed": 11,
+  "result": "alert",
+  "outcome": "bin tipped",
+  "hedge_min_m": 0.379,
+  "trips_wh": [],
+  "trip_min": [],
+  "soc_end": 0.8973,
+  "energy_wh": 1.25,
+  "last_dock": null,
+  "first_motion": null,
+  "placements": [],
+  "dock_lat_mm": [],
+  "bins": [],
+  "refusals": 0,
+  "guard": null,
+  "yard_exit": null,
+  "verdict": "PASS",
+  "fails": {}
+ },
+ {
+  "key": "s10a__s23",
+  "scenario": "s10a",
+  "seed": 23,
+  "result": "alert",
+  "outcome": "bin tipped",
+  "hedge_min_m": 0.378,
+  "trips_wh": [],
+  "trip_min": [],
+  "soc_end": 0.8971,
+  "energy_wh": 1.36,
+  "last_dock": null,
+  "first_motion": null,
+  "placements": [],
+  "dock_lat_mm": [],
+  "bins": [],
+  "refusals": 0,
+  "guard": null,
+  "yard_exit": null,
+  "verdict": "PASS",
+  "fails": {}
+ },
+ {
+  "key": "s10a__s7",
+  "scenario": "s10a",
+  "seed": 7,
+  "result": "alert",
+  "outcome": "bin tipped",
+  "hedge_min_m": 0.376,
+  "trips_wh": [],
+  "trip_min": [],
+  "soc_end": 0.8972,
+  "energy_wh": 1.29,
+  "last_dock": null,
+  "first_motion": null,
+  "placements": [],
+  "dock_lat_mm": [],
+  "bins": [],
+  "refusals": 0,
+  "guard": null,
+  "yard_exit": null,
+  "verdict": "PASS",
+  "fails": {}
+ },
+ {
+  "key": "s10b__s11",
+  "scenario": "s10b",
+  "seed": 11,
+  "result": "alert",
+  "outcome": "bin blocked",
+  "hedge_min_m": 0.379,
+  "trips_wh": [],
+  "trip_min": [],
+  "soc_end": 0.8973,
+  "energy_wh": 1.25,
+  "last_dock": null,
+  "first_motion": null,
+  "placements": [],
+  "dock_lat_mm": [],
+  "bins": [],
+  "refusals": 0,
+  "guard": null,
+  "yard_exit": null,
+  "verdict": "PASS",
+  "fails": {}
+ },
+ {
+  "key": "s10b__s23",
+  "scenario": "s10b",
+  "seed": 23,
+  "result": "alert",
+  "outcome": "bin blocked",
+  "hedge_min_m": 0.379,
+  "trips_wh": [],
+  "trip_min": [],
+  "soc_end": 0.8971,
+  "energy_wh": 1.36,
+  "last_dock": null,
+  "first_motion": null,
+  "placements": [],
+  "dock_lat_mm": [],
+  "bins": [],
+  "refusals": 0,
+  "guard": null,
+  "yard_exit": null,
+  "verdict": "PASS",
+  "fails": {}
+ },
+ {
+  "key": "s10b__s7",
+  "scenario": "s10b",
+  "seed": 7,
+  "result": "alert",
+  "outcome": "bin blocked",
+  "hedge_min_m": 0.374,
+  "trips_wh": [],
+  "trip_min": [],
+  "soc_end": 0.8972,
+  "energy_wh": 1.29,
+  "last_dock": null,
+  "first_motion": null,
+  "placements": [],
+  "dock_lat_mm": [],
+  "bins": [],
+  "refusals": 0,
+  "guard": null,
+  "yard_exit": null,
+  "verdict": "PASS",
+  "fails": {}
+ },
+ {
+  "key": "s11a__s11",
+  "scenario": "s11a",
+  "seed": 11,
+  "result": "alert",
+  "outcome": "wind no-go",
+  "hedge_min_m": null,
+  "trips_wh": [],
+  "trip_min": [],
+  "soc_end": 0.8997,
+  "energy_wh": 0.12,
+  "last_dock": null,
+  "first_motion": null,
+  "placements": [],
+  "dock_lat_mm": [],
+  "bins": [],
+  "refusals": 0,
+  "guard": null,
+  "yard_exit": null,
+  "verdict": "PASS",
+  "fails": {}
+ },
+ {
+  "key": "s11a__s23",
+  "scenario": "s11a",
+  "seed": 23,
+  "result": "alert",
+  "outcome": "wind no-go",
+  "hedge_min_m": null,
+  "trips_wh": [],
+  "trip_min": [],
+  "soc_end": 0.8997,
+  "energy_wh": 0.12,
+  "last_dock": null,
+  "first_motion": null,
+  "placements": [],
+  "dock_lat_mm": [],
+  "bins": [],
+  "refusals": 0,
+  "guard": null,
+  "yard_exit": null,
+  "verdict": "PASS",
+  "fails": {}
+ },
+ {
+  "key": "s11a__s7",
+  "scenario": "s11a",
+  "seed": 7,
+  "result": "alert",
+  "outcome": "wind no-go",
+  "hedge_min_m": null,
+  "trips_wh": [],
+  "trip_min": [],
+  "soc_end": 0.8997,
+  "energy_wh": 0.12,
+  "last_dock": null,
+  "first_motion": null,
+  "placements": [],
+  "dock_lat_mm": [],
+  "bins": [],
+  "refusals": 0,
+  "guard": null,
+  "yard_exit": null,
+  "verdict": "PASS",
+  "fails": {}
+ },
+ {
+  "key": "s11b__s11",
+  "scenario": "s11b",
+  "seed": 11,
+  "result": "alert",
+  "outcome": "frost no-go",
+  "hedge_min_m": null,
+  "trips_wh": [],
+  "trip_min": [],
+  "soc_end": 0.8997,
+  "energy_wh": 0.12,
+  "last_dock": null,
+  "first_motion": null,
+  "placements": [],
+  "dock_lat_mm": [],
+  "bins": [],
+  "refusals": 0,
+  "guard": null,
+  "yard_exit": null,
+  "verdict": "PASS",
+  "fails": {}
+ },
+ {
+  "key": "s11b__s23",
+  "scenario": "s11b",
+  "seed": 23,
+  "result": "alert",
+  "outcome": "frost no-go",
+  "hedge_min_m": null,
+  "trips_wh": [],
+  "trip_min": [],
+  "soc_end": 0.8997,
+  "energy_wh": 0.12,
+  "last_dock": null,
+  "first_motion": null,
+  "placements": [],
+  "dock_lat_mm": [],
+  "bins": [],
+  "refusals": 0,
+  "guard": null,
+  "yard_exit": null,
+  "verdict": "PASS",
+  "fails": {}
+ },
+ {
+  "key": "s11b__s7",
+  "scenario": "s11b",
+  "seed": 7,
+  "result": "alert",
+  "outcome": "frost no-go",
+  "hedge_min_m": null,
+  "trips_wh": [],
+  "trip_min": [],
+  "soc_end": 0.8997,
+  "energy_wh": 0.12,
+  "last_dock": null,
+  "first_motion": null,
+  "placements": [],
+  "dock_lat_mm": [],
+  "bins": [],
+  "refusals": 0,
+  "guard": null,
+  "yard_exit": null,
+  "verdict": "PASS",
+  "fails": {}
+ },
+ {
+  "key": "s12a__s11",
+  "scenario": "s12a",
+  "seed": 11,
+  "result": "alert",
+  "outcome": "pad outside geofence",
+  "hedge_min_m": 0.362,
+  "trips_wh": [],
+  "trip_min": [],
+  "soc_end": 0.8997,
+  "energy_wh": 0.12,
+  "last_dock": null,
+  "first_motion": null,
+  "placements": [],
+  "dock_lat_mm": [],
+  "bins": [],
+  "refusals": 0,
+  "guard": null,
+  "yard_exit": null,
+  "verdict": "PASS",
+  "fails": {}
+ },
+ {
+  "key": "s12a__s23",
+  "scenario": "s12a",
+  "seed": 23,
+  "result": "alert",
+  "outcome": "pad outside geofence",
+  "hedge_min_m": 0.362,
+  "trips_wh": [],
+  "trip_min": [],
+  "soc_end": 0.8997,
+  "energy_wh": 0.12,
+  "last_dock": null,
+  "first_motion": null,
+  "placements": [],
+  "dock_lat_mm": [],
+  "bins": [],
+  "refusals": 0,
+  "guard": null,
+  "yard_exit": null,
+  "verdict": "PASS",
+  "fails": {}
+ },
+ {
+  "key": "s12a__s7",
+  "scenario": "s12a",
+  "seed": 7,
+  "result": "alert",
+  "outcome": "pad outside geofence",
+  "hedge_min_m": 0.362,
+  "trips_wh": [],
+  "trip_min": [],
+  "soc_end": 0.8997,
+  "energy_wh": 0.12,
+  "last_dock": null,
+  "first_motion": null,
+  "placements": [],
+  "dock_lat_mm": [],
+  "bins": [],
+  "refusals": 0,
+  "guard": null,
+  "yard_exit": null,
+  "verdict": "PASS",
+  "fails": {}
+ },
+ {
+  "key": "s12b__s11",
+  "scenario": "s12b",
+  "seed": 11,
+  "result": "alert",
+  "outcome": "firmware fence hold",
+  "hedge_min_m": 0.314,
+  "trips_wh": [],
+  "trip_min": [],
+  "soc_end": 0.8988,
+  "energy_wh": 0.54,
+  "last_dock": null,
+  "first_motion": null,
+  "placements": [],
+  "dock_lat_mm": [],
+  "bins": [],
+  "refusals": 0,
+  "guard": null,
+  "yard_exit": null,
+  "verdict": "PASS",
+  "fails": {}
+ },
+ {
+  "key": "s12b__s23",
+  "scenario": "s12b",
+  "seed": 23,
+  "result": "alert",
+  "outcome": "firmware fence hold",
+  "hedge_min_m": 0.31,
+  "trips_wh": [],
+  "trip_min": [],
+  "soc_end": 0.8988,
+  "energy_wh": 0.54,
+  "last_dock": null,
+  "first_motion": null,
+  "placements": [],
+  "dock_lat_mm": [],
+  "bins": [],
+  "refusals": 0,
+  "guard": null,
+  "yard_exit": null,
+  "verdict": "PASS",
+  "fails": {}
+ },
+ {
+  "key": "s12b__s7",
+  "scenario": "s12b",
+  "seed": 7,
+  "result": "alert",
+  "outcome": "firmware fence hold",
+  "hedge_min_m": 0.314,
+  "trips_wh": [],
+  "trip_min": [],
+  "soc_end": 0.8988,
+  "energy_wh": 0.54,
+  "last_dock": null,
+  "first_motion": null,
+  "placements": [],
+  "dock_lat_mm": [],
+  "bins": [],
+  "refusals": 0,
+  "guard": null,
+  "yard_exit": null,
+  "verdict": "PASS",
+  "fails": {}
+ },
+ {
+  "key": "s1a__s11",
+  "scenario": "s1a",
+  "seed": 11,
+  "result": "pass",
+  "outcome": "plan completed",
+  "hedge_min_m": 0.203,
+  "trips_wh": [
+   52.5
+  ],
+  "trip_min": [
+   56.5
+  ],
+  "soc_end": 0.7868,
+  "energy_wh": 52.62,
+  "last_dock": "D-1 18:57",
+  "first_motion": "D-1 18:00",
+  "placements": [
+   [
+    "pad:A",
+    0.087,
+    0.32
+   ]
+  ],
+  "dock_lat_mm": [
+   -3.7
+  ],
+  "bins": [
+   {
+    "bin": "black",
+    "lineup_m": -0.051,
+    "cam": [
+     [
+      -0.056,
+      -0.051
+     ],
+     [
+      -0.029,
+      -0.025
+     ]
+    ],
+    "cam_err": [
+     -0.005,
+     -0.004
+    ],
+    "cam_miss": 0,
+    "cam_reapp": 2,
+    "gate_reapp": 0,
+    "gate": [
+     [
+      0.008,
+      0.33,
+      true
+     ]
+    ],
+    "grabbed": true
+   }
+  ],
+  "refusals": 0,
+  "guard": [
+   {
+    "t": 47.4,
+    "soc": 0.9,
+    "avail_wh": 371.8,
+    "budget_wh": 50.0,
+    "kind": "drop black->A"
+   }
+  ],
+  "yard_exit": null,
+  "verdict": "FAIL",
+  "fails": {
+   "C6": "trips [52.5] Wh, end SOC 0.787"
+  }
+ },
+ {
+  "key": "s1a__s23",
+  "scenario": "s1a",
+  "seed": 23,
+  "result": "pass",
+  "outcome": "plan completed",
+  "hedge_min_m": 0.227,
+  "trips_wh": [
+   52.86
+  ],
+  "trip_min": [
+   57.2
+  ],
+  "soc_end": 0.786,
+  "energy_wh": 52.98,
+  "last_dock": "D-1 18:57",
+  "first_motion": "D-1 18:00",
+  "placements": [
+   [
+    "pad:A",
+    0.048,
+    0.05
+   ]
+  ],
+  "dock_lat_mm": [
+   -6.9
+  ],
+  "bins": [
+   {
+    "bin": "black",
+    "lineup_m": -0.064,
+    "cam": [
+     [
+      -0.059,
+      -0.064
+     ],
+     [
+      0.006,
+      0.015
+     ]
+    ],
+    "cam_err": [
+     0.005,
+     -0.009
+    ],
+    "cam_miss": 0,
+    "cam_reapp": 1,
+    "gate_reapp": 0,
+    "gate": [
+     [
+      0.015,
+      0.8,
+      true
+     ]
+    ],
+    "grabbed": true
+   }
+  ],
+  "refusals": 0,
+  "guard": [
+   {
+    "t": 47.4,
+    "soc": 0.9,
+    "avail_wh": 371.8,
+    "budget_wh": 50.0,
+    "kind": "drop black->A"
+   }
+  ],
+  "yard_exit": null,
+  "verdict": "FAIL",
+  "fails": {
+   "C6": "trips [52.86] Wh, end SOC 0.786"
+  }
+ },
+ {
+  "key": "s1a__s7",
+  "scenario": "s1a",
+  "seed": 7,
+  "result": "pass",
+  "outcome": "plan completed",
+  "hedge_min_m": 0.236,
+  "trips_wh": [
+   52.68
+  ],
+  "trip_min": [
+   56.9
+  ],
+  "soc_end": 0.7864,
+  "energy_wh": 52.8,
+  "last_dock": "D-1 18:57",
+  "first_motion": "D-1 18:00",
+  "placements": [
+   [
+    "pad:A",
+    0.041,
+    0.24
+   ]
+  ],
+  "dock_lat_mm": [
+   -14.8
+  ],
+  "bins": [
+   {
+    "bin": "black",
+    "lineup_m": -0.063,
+    "cam": [
+     [
+      -0.063,
+      -0.063
+     ],
+     [
+      -0.014,
+      -0.02
+     ]
+    ],
+    "cam_err": [
+     0.0,
+     0.006
+    ],
+    "cam_miss": 0,
+    "cam_reapp": 1,
+    "gate_reapp": 0,
+    "gate": [
+     [
+      -0.02,
+      0.52,
+      true
+     ]
+    ],
+    "grabbed": true
+   }
+  ],
+  "refusals": 0,
+  "guard": [
+   {
+    "t": 47.5,
+    "soc": 0.9,
+    "avail_wh": 371.8,
+    "budget_wh": 50.0,
+    "kind": "drop black->A"
+   }
+  ],
+  "yard_exit": null,
+  "verdict": "FAIL",
+  "fails": {
+   "C6": "trips [52.68] Wh, end SOC 0.786"
+  }
+ },
+ {
+  "key": "s1b__s11",
+  "scenario": "s1b",
+  "seed": 11,
+  "result": "pass",
+  "outcome": "plan completed",
+  "hedge_min_m": 0.214,
+  "trips_wh": [
+   51.58
+  ],
+  "trip_min": [
+   56.8
+  ],
+  "soc_end": 0.7888,
+  "energy_wh": 51.7,
+  "last_dock": "D0 18:57",
+  "first_motion": "D0 18:00",
+  "placements": [
+   [
+    "home:black",
+    0.022,
+    1.02
+   ]
+  ],
+  "dock_lat_mm": [
+   11.5
+  ],
+  "bins": [
+   {
+    "bin": "black",
+    "lineup_m": 0.032,
+    "cam": [
+     [
+      0.026,
+      0.032
+     ],
+     [
+      0.032,
+      0.036
+     ]
+    ],
+    "cam_err": [
+     -0.006,
+     -0.004
+    ],
+    "cam_miss": 0,
+    "cam_reapp": 2,
+    "gate_reapp": 0,
+    "gate": [
+     [
+      0.029,
+      -0.74,
+      true
+     ]
+    ],
+    "grabbed": true
+   }
+  ],
+  "refusals": 0,
+  "guard": [
+   {
+    "t": 47.7,
+    "soc": 0.9,
+    "avail_wh": 371.8,
+    "budget_wh": 50.0,
+    "kind": "pickup black<-A"
+   }
+  ],
+  "yard_exit": null,
+  "verdict": "FAIL",
+  "fails": {
+   "C6": "trips [51.58] Wh, end SOC 0.789"
+  }
+ },
+ {
+  "key": "s1b__s23",
+  "scenario": "s1b",
+  "seed": 23,
+  "result": "pass",
+  "outcome": "plan completed",
+  "hedge_min_m": 0.195,
+  "trips_wh": [
+   51.84
+  ],
+  "trip_min": [
+   57.2
+  ],
+  "soc_end": 0.7882,
+  "energy_wh": 51.96,
+  "last_dock": "D0 18:57",
+  "first_motion": "D0 18:00",
+  "placements": [
+   [
+    "home:black",
+    0.024,
+    0.84
+   ]
+  ],
+  "dock_lat_mm": [
+   -14.8
+  ],
+  "bins": [
+   {
+    "bin": "black",
+    "lineup_m": 0.039,
+    "cam": [
+     [
+      0.043,
+      0.039
+     ],
+     [
+      -0.02,
+      -0.01
+     ]
+    ],
+    "cam_err": [
+     0.004,
+     -0.01
+    ],
+    "cam_miss": 0,
+    "cam_reapp": 1,
+    "gate_reapp": 0,
+    "gate": [
+     [
+      -0.01,
+      1.13,
+      true
+     ]
+    ],
+    "grabbed": true
+   }
+  ],
+  "refusals": 0,
+  "guard": [
+   {
+    "t": 47.3,
+    "soc": 0.9,
+    "avail_wh": 371.8,
+    "budget_wh": 50.0,
+    "kind": "pickup black<-A"
+   }
+  ],
+  "yard_exit": null,
+  "verdict": "FAIL",
+  "fails": {
+   "C6": "trips [51.84] Wh, end SOC 0.788"
+  }
+ },
+ {
+  "key": "s1b__s7",
+  "scenario": "s1b",
+  "seed": 7,
+  "result": "pass",
+  "outcome": "plan completed",
+  "hedge_min_m": 0.212,
+  "trips_wh": [
+   51.91
+  ],
+  "trip_min": [
+   58.1
+  ],
+  "soc_end": 0.7881,
+  "energy_wh": 52.03,
+  "last_dock": "D0 18:58",
+  "first_motion": "D0 18:00",
+  "placements": [
+   [
+    "home:black",
+    0.031,
+    1.09
+   ]
+  ],
+  "dock_lat_mm": [
+   -9.3
+  ],
+  "bins": [
+   {
+    "bin": "black",
+    "lineup_m": 0.064,
+    "cam": [
+     [
+      0.064,
+      0.064
+     ],
+     [
+      -0.009,
+      -0.015
+     ]
+    ],
+    "cam_err": [
+     0.0,
+     0.006
+    ],
+    "cam_miss": 0,
+    "cam_reapp": 1,
+    "gate_reapp": 0,
+    "gate": [
+     [
+      -0.015,
+      0.17,
+      true
+     ]
+    ],
+    "grabbed": true
+   }
+  ],
+  "refusals": 0,
+  "guard": [
+   {
+    "t": 47.4,
+    "soc": 0.9,
+    "avail_wh": 371.8,
+    "budget_wh": 50.0,
+    "kind": "pickup black<-A"
+   }
+  ],
+  "yard_exit": null,
+  "verdict": "FAIL",
+  "fails": {
+   "C6": "trips [51.91] Wh, end SOC 0.788"
+  }
+ },
+ {
+  "key": "s3a__s11",
+  "scenario": "s3a",
+  "seed": 11,
+  "result": "pass",
+  "outcome": "plan completed",
+  "hedge_min_m": 0.197,
+  "trips_wh": [
+   51.62,
+   52.56,
+   52.18
+  ],
+  "trip_min": [
+   57.0,
+   56.6,
+   56.5
+  ],
+  "soc_end": 0.5527,
+  "energy_wh": 156.48,
+  "last_dock": "D-1 20:50",
+  "first_motion": "D-1 18:00",
+  "placements": [
+   [
+    "pad:A",
+    0.027,
+    1.38
+   ],
+   [
+    "pad:M",
+    0.024,
+    1.82
+   ],
+   [
+    "pad:F",
+    0.048,
+    2.39
+   ]
+  ],
+  "dock_lat_mm": [
+   -1.6,
+   5.9,
+   4.6
+  ],
+  "bins": [
+   {
+    "bin": "brown",
+    "lineup_m": -0.029,
+    "cam": [
+     [
+      -0.034,
+      -0.029
+     ],
+     [
+      -0.037,
+      -0.033
+     ]
+    ],
+    "cam_err": [
+     -0.005,
+     -0.004
+    ],
+    "cam_miss": 0,
+    "cam_reapp": 2,
+    "gate_reapp": 0,
+    "gate": [
+     [
+      0.019,
+      0.18,
+      true
+     ]
+    ],
+    "grabbed": true
+   },
+   {
+    "bin": "black",
+    "lineup_m": -0.083,
+    "cam": [
+     [
+      -0.088,
+      -0.083
+     ],
+     [
+      0.025,
+      0.029
+     ]
+    ],
+    "cam_err": [
+     -0.005,
+     -0.004
+    ],
+    "cam_miss": 0,
+    "cam_reapp": 1,
+    "gate_reapp": 0,
+    "gate": [
+     [
+      0.001,
+      -0.4,
+      true
+     ]
+    ],
+    "grabbed": true
+   },
+   {
+    "bin": "green",
+    "lineup_m": -0.047,
+    "cam": [
+     [
+      -0.053,
+      -0.047
+     ],
+     [
+      0.029,
+      0.033
+     ]
+    ],
+    "cam_err": [
+     -0.006,
+     -0.004
+    ],
+    "cam_miss": 0,
+    "cam_reapp": 2,
+    "gate_reapp": 0,
+    "gate": [
+     [
+      -0.019,
+      -0.58,
+      true
+     ]
+    ],
+    "grabbed": true
+   }
+  ],
+  "refusals": 0,
+  "guard": [
+   {
+    "t": 47.2,
+    "soc": 0.9,
+    "avail_wh": 360.3,
+    "budget_wh": 50.0,
+    "kind": "drop brown->A"
+   },
+   {
+    "t": 3470.1,
+    "soc": 0.785,
+    "avail_wh": 308.7,
+    "budget_wh": 50.0,
+    "kind": "drop black->M"
+   },
+   {
+    "t": 6868.8,
+    "soc": 0.669,
+    "avail_wh": 256.2,
+    "budget_wh": 50.0,
+    "kind": "drop green->F"
+   }
+  ],
+  "yard_exit": [
+   {
+    "from_s": 7.8,
+    "from_lat": -4.33,
+    "path_m": 9.4,
+    "sweep_m": 0.71,
+    "used": true
+   },
+   {
+    "from_s": 9.4,
+    "from_lat": -2.96,
+    "path_m": 8.6,
+    "sweep_m": 2.98,
+    "used": true
+   }
+  ],
+  "verdict": "FAIL",
+  "fails": {
+   "C6": "trips [51.62, 52.56, 52.18] Wh, end SOC 0.553"
+  }
+ },
+ {
+  "key": "s3a__s23",
+  "scenario": "s3a",
+  "seed": 23,
+  "result": "pass",
+  "outcome": "plan completed",
+  "hedge_min_m": 0.201,
+  "trips_wh": [
+   51.96,
+   52.59,
+   52.39
+  ],
+  "trip_min": [
+   57.8,
+   57.2,
+   56.4
+  ],
+  "soc_end": 0.5514,
+  "energy_wh": 157.06,
+  "last_dock": "D-1 20:52",
+  "first_motion": "D-1 18:00",
+  "placements": [
+   [
+    "pad:A",
+    0.038,
+    2.21
+   ],
+   [
+    "pad:M",
+    0.073,
+    2.43
+   ],
+   [
+    "pad:F",
+    0.023,
+    0.02
+   ]
+  ],
+  "dock_lat_mm": [
+   -4.7,
+   6.4,
+   11.1
+  ],
+  "bins": [
+   {
+    "bin": "brown",
+    "lineup_m": -0.009,
+    "cam": [
+     [
+      -0.005,
+      -0.009
+     ]
+    ],
+    "cam_err": [
+     0.004
+    ],
+    "cam_miss": 0,
+    "cam_reapp": 0,
+    "gate_reapp": 0,
+    "gate": [
+     [
+      -0.009,
+      -0.76,
+      true
+     ]
+    ],
+    "grabbed": true
+   },
+   {
+    "bin": "black",
+    "lineup_m": -0.082,
+    "cam": [
+     [
+      -0.078,
+      -0.082
+     ],
+     [
+      0.009,
+      0.019
+     ]
+    ],
+    "cam_err": [
+     0.004,
+     -0.01
+    ],
+    "cam_miss": 0,
+    "cam_reapp": 1,
+    "gate_reapp": 0,
+    "gate": [
+     [
+      0.019,
+      -0.22,
+      true
+     ]
+    ],
+    "grabbed": true
+   },
+   {
+    "bin": "green",
+    "lineup_m": -0.037,
+    "cam": [
+     [
+      -0.033,
+      -0.037
+     ],
+     [
+      -0.032,
+      -0.022
+     ]
+    ],
+    "cam_err": [
+     0.004,
+     -0.01
+    ],
+    "cam_miss": 0,
+    "cam_reapp": 2,
+    "gate_reapp": 0,
+    "gate": [
+     [
+      0.017,
+      -0.67,
+      true
+     ]
+    ],
+    "grabbed": true
+   }
+  ],
+  "refusals": 0,
+  "guard": [
+   {
+    "t": 47.2,
+    "soc": 0.9,
+    "avail_wh": 360.3,
+    "budget_wh": 50.0,
+    "kind": "drop brown->A"
+   },
+   {
+    "t": 3512.8,
+    "soc": 0.784,
+    "avail_wh": 308.4,
+    "budget_wh": 50.0,
+    "kind": "drop black->M"
+   },
+   {
+    "t": 6943.1,
+    "soc": 0.668,
+    "avail_wh": 255.8,
+    "budget_wh": 50.0,
+    "kind": "drop green->F"
+   }
+  ],
+  "yard_exit": [
+   {
+    "from_s": 7.8,
+    "from_lat": -4.32,
+    "path_m": 9.4,
+    "sweep_m": 0.7,
+    "used": true
+   },
+   {
+    "from_s": 9.4,
+    "from_lat": -2.94,
+    "path_m": 8.6,
+    "sweep_m": 2.98,
+    "used": true
+   }
+  ],
+  "verdict": "FAIL",
+  "fails": {
+   "C6": "trips [51.96, 52.59, 52.39] Wh, end SOC 0.551"
+  }
+ },
+ {
+  "key": "s3a__s7",
+  "scenario": "s3a",
+  "seed": 7,
+  "result": "pass",
+  "outcome": "plan completed",
+  "hedge_min_m": 0.152,
+  "trips_wh": [
+   51.78,
+   52.26,
+   52.2
+  ],
+  "trip_min": [
+   57.5,
+   56.2,
+   56.2
+  ],
+  "soc_end": 0.553,
+  "energy_wh": 156.36,
+  "last_dock": "D-1 20:50",
+  "first_motion": "D-1 18:00",
+  "placements": [
+   [
+    "pad:A",
+    0.044,
+    0.68
+   ],
+   [
+    "pad:M",
+    0.039,
+    2.2
+   ],
+   [
+    "pad:F",
+    0.057,
+    0.75
+   ]
+  ],
+  "dock_lat_mm": [
+   -5.7,
+   4.1,
+   4.9
+  ],
+  "bins": [
+   {
+    "bin": "brown",
+    "lineup_m": -0.033,
+    "cam": [
+     [
+      -0.034,
+      -0.033
+     ],
+     [
+      -0.002,
+      -0.008
+     ]
+    ],
+    "cam_err": [
+     -0.001,
+     0.006
+    ],
+    "cam_miss": 0,
+    "cam_reapp": 1,
+    "gate_reapp": 0,
+    "gate": [
+     [
+      -0.008,
+      -0.07,
+      true
+     ]
+    ],
+    "grabbed": true
+   },
+   {
+    "bin": "black",
+    "lineup_m": -0.06,
+    "cam": [
+     [
+      -0.06,
+      -0.06
+     ],
+     [
+      -0.013,
+      -0.019
+     ]
+    ],
+    "cam_err": [
+     0.0,
+     0.006
+    ],
+    "cam_miss": 0,
+    "cam_reapp": 1,
+    "gate_reapp": 0,
+    "gate": [
+     [
+      -0.019,
+      -0.64,
+      true
+     ]
+    ],
+    "grabbed": true
+   },
+   {
+    "bin": "green",
+    "lineup_m": -0.023,
+    "cam": [
+     [
+      -0.024,
+      -0.023
+     ]
+    ],
+    "cam_err": [
+     -0.001
+    ],
+    "cam_miss": 0,
+    "cam_reapp": 0,
+    "gate_reapp": 0,
+    "gate": [
+     [
+      -0.023,
+      -1.85,
+      true
+     ]
+    ],
+    "grabbed": true
+   }
+  ],
+  "refusals": 0,
+  "guard": [
+   {
+    "t": 47.5,
+    "soc": 0.9,
+    "avail_wh": 360.3,
+    "budget_wh": 50.0,
+    "kind": "drop brown->A"
+   },
+   {
+    "t": 3495.6,
+    "soc": 0.785,
+    "avail_wh": 308.5,
+    "budget_wh": 50.0,
+    "kind": "drop black->M"
+   },
+   {
+    "t": 6867.6,
+    "soc": 0.669,
+    "avail_wh": 256.3,
+    "budget_wh": 50.0,
+    "kind": "drop green->F"
+   }
+  ],
+  "yard_exit": [
+   {
+    "from_s": 9.3,
+    "from_lat": -4.55,
+    "path_m": 7.8,
+    "sweep_m": 0.82,
+    "used": true
+   },
+   {
+    "from_s": 9.5,
+    "from_lat": -2.95,
+    "path_m": 8.6,
+    "sweep_m": 2.98,
+    "used": true
+   }
+  ],
+  "verdict": "FAIL",
+  "fails": {
+   "C6": "trips [51.78, 52.26, 52.2] Wh, end SOC 0.553"
+  }
+ },
+ {
+  "key": "s3b__s11",
+  "scenario": "s3b",
+  "seed": 11,
+  "result": "pass",
+  "outcome": "plan completed",
+  "hedge_min_m": 0.209,
+  "trips_wh": [
+   50.78,
+   51.48,
+   50.76
+  ],
+  "trip_min": [
+   55.8,
+   57.1,
+   56.1
+  ],
+  "soc_end": 0.5601,
+  "energy_wh": 153.15,
+  "last_dock": "D0 20:49",
+  "first_motion": "D0 18:00",
+  "placements": [
+   [
+    "home:green",
+    0.048,
+    0.31
+   ],
+   [
+    "home:black",
+    0.017,
+    0.0
+   ],
+   [
+    "home:brown",
+    0.053,
+    4.54
+   ]
+  ],
+  "dock_lat_mm": [
+   7.3,
+   -0.4,
+   -8.7
+  ],
+  "bins": [
+   {
+    "bin": "green",
+    "lineup_m": 0.001,
+    "cam": [
+     [
+      -0.005,
+      0.001
+     ]
+    ],
+    "cam_err": [
+     -0.006
+    ],
+    "cam_miss": 0,
+    "cam_reapp": 0,
+    "gate_reapp": 0,
+    "gate": [
+     [
+      0.001,
+      -0.28,
+      true
+     ]
+    ],
+    "grabbed": true
+   },
+   {
+    "bin": "black",
+    "lineup_m": -0.038,
+    "cam": [
+     [
+      -0.044,
+      -0.038
+     ],
+     [
+      -0.024,
+      -0.02
+     ]
+    ],
+    "cam_err": [
+     -0.006,
+     -0.004
+    ],
+    "cam_miss": 0,
+    "cam_reapp": 1,
+    "gate_reapp": 0,
+    "gate": [
+     [
+      -0.02,
+      -0.79,
+      true
+     ]
+    ],
+    "grabbed": true
+   },
+   {
+    "bin": "brown",
+    "lineup_m": 0.07,
+    "cam": [
+     [
+      0.064,
+      0.07
+     ],
+     [
+      0.01,
+      0.014
+     ]
+    ],
+    "cam_err": [
+     -0.006,
+     -0.004
+    ],
+    "cam_miss": 0,
+    "cam_reapp": 1,
+    "gate_reapp": 0,
+    "gate": [
+     [
+      0.014,
+      1.25,
+      true
+     ]
+    ],
+    "grabbed": true
+   }
+  ],
+  "refusals": 0,
+  "guard": [
+   {
+    "t": 48.0,
+    "soc": 0.9,
+    "avail_wh": 360.3,
+    "budget_wh": 50.0,
+    "kind": "pickup green<-F"
+   },
+   {
+    "t": 3396.6,
+    "soc": 0.787,
+    "avail_wh": 309.5,
+    "budget_wh": 50.0,
+    "kind": "pickup black<-M"
+   },
+   {
+    "t": 6825.6,
+    "soc": 0.673,
+    "avail_wh": 258.1,
+    "budget_wh": 50.0,
+    "kind": "pickup brown<-A"
+   }
+  ],
+  "yard_exit": null,
+  "verdict": "FAIL",
+  "fails": {
+   "C6": "trips [50.78, 51.48, 50.76] Wh, end SOC 0.560"
+  }
+ },
+ {
+  "key": "s3b__s23",
+  "scenario": "s3b",
+  "seed": 23,
+  "result": "pass",
+  "outcome": "plan completed",
+  "hedge_min_m": 0.195,
+  "trips_wh": [
+   51.06,
+   51.49,
+   51.34
+  ],
+  "trip_min": [
+   56.3,
+   56.4,
+   56.9
+  ],
+  "soc_end": 0.5582,
+  "energy_wh": 154.01,
+  "last_dock": "D0 20:50",
+  "first_motion": "D0 18:00",
+  "placements": [
+   [
+    "home:green",
+    0.058,
+    1.18
+   ],
+   [
+    "home:black",
+    0.026,
+    1.94
+   ],
+   [
+    "home:brown",
+    0.046,
+    5.59
+   ]
+  ],
+  "dock_lat_mm": [
+   4.3,
+   -2.2,
+   -9.7
+  ],
+  "bins": [
+   {
+    "bin": "green",
+    "lineup_m": -0.012,
+    "cam": [
+     [
+      -0.008,
+      -0.012
+     ]
+    ],
+    "cam_err": [
+     0.004
+    ],
+    "cam_miss": 0,
+    "cam_reapp": 0,
+    "gate_reapp": 0,
+    "gate": [
+     [
+      -0.012,
+      0.37,
+      true
+     ]
+    ],
+    "grabbed": true
+   },
+   {
+    "bin": "black",
+    "lineup_m": 0.047,
+    "cam": [
+     [
+      0.051,
+      0.047
+     ],
+     [
+      -0.034,
+      -0.025
+     ]
+    ],
+    "cam_err": [
+     0.004,
+     -0.009
+    ],
+    "cam_miss": 0,
+    "cam_reapp": 2,
+    "gate_reapp": 0,
+    "gate": [
+     [
+      -0.001,
+      -0.83,
+      true
+     ]
+    ],
+    "grabbed": true
+   },
+   {
+    "bin": "brown",
+    "lineup_m": 0.017,
+    "cam": [
+     [
+      0.021,
+      0.017
+     ]
+    ],
+    "cam_err": [
+     0.004
+    ],
+    "cam_miss": 0,
+    "cam_reapp": 0,
+    "gate_reapp": 0,
+    "gate": [
+     [
+      0.017,
+      1.32,
+      true
+     ]
+    ],
+    "grabbed": true
+   }
+  ],
+  "refusals": 0,
+  "guard": [
+   {
+    "t": 47.4,
+    "soc": 0.9,
+    "avail_wh": 360.3,
+    "budget_wh": 50.0,
+    "kind": "pickup green<-F"
+   },
+   {
+    "t": 3424.1,
+    "soc": 0.786,
+    "avail_wh": 309.3,
+    "budget_wh": 50.0,
+    "kind": "pickup black<-M"
+   },
+   {
+    "t": 6810.3,
+    "soc": 0.672,
+    "avail_wh": 257.8,
+    "budget_wh": 50.0,
+    "kind": "pickup brown<-A"
+   }
+  ],
+  "yard_exit": null,
+  "verdict": "FAIL",
+  "fails": {
+   "C6": "trips [51.06, 51.49, 51.34] Wh, end SOC 0.558"
+  }
+ },
+ {
+  "key": "s3b__s7",
+  "scenario": "s3b",
+  "seed": 7,
+  "result": "pass",
+  "outcome": "plan completed",
+  "hedge_min_m": 0.235,
+  "trips_wh": [
+   50.73,
+   51.35,
+   51.14
+  ],
+  "trip_min": [
+   54.9,
+   57.1,
+   56.7
+  ],
+  "soc_end": 0.5597,
+  "energy_wh": 153.34,
+  "last_dock": "D0 20:49",
+  "first_motion": "D0 18:00",
+  "placements": [
+   [
+    "home:green",
+    0.041,
+    2.48
+   ],
+   [
+    "home:black",
+    0.013,
+    1.38
+   ],
+   [
+    "home:brown",
+    0.006,
+    5.34
+   ]
+  ],
+  "dock_lat_mm": [
+   2.6,
+   11.3,
+   4.7
+  ],
+  "bins": [
+   {
+    "bin": "green",
+    "lineup_m": -0.014,
+    "cam": [
+     [
+      -0.015,
+      -0.014
+     ]
+    ],
+    "cam_err": [
+     -0.001
+    ],
+    "cam_miss": 0,
+    "cam_reapp": 0,
+    "gate_reapp": 0,
+    "gate": [
+     [
+      -0.014,
+      0.37,
+      true
+     ]
+    ],
+    "grabbed": true
+   },
+   {
+    "bin": "black",
+    "lineup_m": 0.002,
+    "cam": [
+     [
+      0.002,
+      0.002
+     ]
+    ],
+    "cam_err": [
+     0.0
+    ],
+    "cam_miss": 0,
+    "cam_reapp": 0,
+    "gate_reapp": 0,
+    "gate": [
+     [
+      0.002,
+      -0.67,
+      true
+     ]
+    ],
+    "grabbed": true
+   },
+   {
+    "bin": "brown",
+    "lineup_m": -0.013,
+    "cam": [
+     [
+      -0.014,
+      -0.013
+     ]
+    ],
+    "cam_err": [
+     -0.001
+    ],
+    "cam_miss": 0,
+    "cam_reapp": 0,
+    "gate_reapp": 0,
+    "gate": [
+     [
+      -0.013,
+      0.56,
+      true
+     ]
+    ],
+    "grabbed": true
+   }
+  ],
+  "refusals": 0,
+  "guard": [
+   {
+    "t": 47.4,
+    "soc": 0.9,
+    "avail_wh": 360.3,
+    "budget_wh": 50.0,
+    "kind": "pickup green<-F"
+   },
+   {
+    "t": 3344.6,
+    "soc": 0.787,
+    "avail_wh": 309.6,
+    "budget_wh": 50.0,
+    "kind": "pickup black<-M"
+   },
+   {
+    "t": 6770.9,
+    "soc": 0.673,
+    "avail_wh": 258.3,
+    "budget_wh": 50.0,
+    "kind": "pickup brown<-A"
+   }
+  ],
+  "yard_exit": null,
+  "verdict": "FAIL",
+  "fails": {
+   "C6": "trips [50.73, 51.35, 51.14] Wh, end SOC 0.560"
+  }
+ },
+ {
+  "key": "s4a__s11",
+  "scenario": "s4a",
+  "seed": 11,
+  "result": "pass",
+  "outcome": "plan completed",
+  "hedge_min_m": 0.267,
+  "trips_wh": [],
+  "trip_min": [],
+  "soc_end": 0.8934,
+  "energy_wh": 3.08,
+  "last_dock": null,
+  "first_motion": null,
+  "placements": [],
+  "dock_lat_mm": [],
+  "bins": [],
+  "refusals": 0,
+  "guard": null,
+  "yard_exit": null,
+  "verdict": "PASS",
+  "fails": {}
+ },
+ {
+  "key": "s4a__s23",
+  "scenario": "s4a",
+  "seed": 23,
+  "result": "pass",
+  "outcome": "plan completed",
+  "hedge_min_m": 0.271,
+  "trips_wh": [],
+  "trip_min": [],
+  "soc_end": 0.8932,
+  "energy_wh": 3.18,
+  "last_dock": null,
+  "first_motion": null,
+  "placements": [],
+  "dock_lat_mm": [],
+  "bins": [],
+  "refusals": 0,
+  "guard": null,
+  "yard_exit": null,
+  "verdict": "PASS",
+  "fails": {}
+ },
+ {
+  "key": "s4a__s7",
+  "scenario": "s4a",
+  "seed": 7,
+  "result": "pass",
+  "outcome": "plan completed",
+  "hedge_min_m": 0.269,
+  "trips_wh": [],
+  "trip_min": [],
+  "soc_end": 0.8934,
+  "energy_wh": 3.09,
+  "last_dock": null,
+  "first_motion": null,
+  "placements": [],
+  "dock_lat_mm": [],
+  "bins": [],
+  "refusals": 0,
+  "guard": null,
+  "yard_exit": null,
+  "verdict": "PASS",
+  "fails": {}
+ },
+ {
+  "key": "s4b__s11",
+  "scenario": "s4b",
+  "seed": 11,
+  "result": "pass",
+  "outcome": "plan completed",
+  "hedge_min_m": 0.271,
+  "trips_wh": [],
+  "trip_min": [],
+  "soc_end": 0.8936,
+  "energy_wh": 2.99,
+  "last_dock": null,
+  "first_motion": null,
+  "placements": [],
+  "dock_lat_mm": [],
+  "bins": [],
+  "refusals": 0,
+  "guard": null,
+  "yard_exit": null,
+  "verdict": "PASS",
+  "fails": {}
+ },
+ {
+  "key": "s4b__s23",
+  "scenario": "s4b",
+  "seed": 23,
+  "result": "pass",
+  "outcome": "plan completed",
+  "hedge_min_m": 0.272,
+  "trips_wh": [],
+  "trip_min": [],
+  "soc_end": 0.8934,
+  "energy_wh": 3.07,
+  "last_dock": null,
+  "first_motion": null,
+  "placements": [],
+  "dock_lat_mm": [],
+  "bins": [],
+  "refusals": 0,
+  "guard": null,
+  "yard_exit": null,
+  "verdict": "PASS",
+  "fails": {}
+ },
+ {
+  "key": "s4b__s7",
+  "scenario": "s4b",
+  "seed": 7,
+  "result": "pass",
+  "outcome": "plan completed",
+  "hedge_min_m": 0.271,
+  "trips_wh": [],
+  "trip_min": [],
+  "soc_end": 0.8937,
+  "energy_wh": 2.95,
+  "last_dock": null,
+  "first_motion": null,
+  "placements": [],
+  "dock_lat_mm": [],
+  "bins": [],
+  "refusals": 0,
+  "guard": null,
+  "yard_exit": null,
+  "verdict": "PASS",
+  "fails": {}
+ },
+ {
+  "key": "s4c__s11",
+  "scenario": "s4c",
+  "seed": 11,
+  "result": "alert",
+  "outcome": "no fix hold",
+  "hedge_min_m": 0.268,
+  "trips_wh": [],
+  "trip_min": [],
+  "soc_end": 0.8944,
+  "energy_wh": 2.6,
+  "last_dock": null,
+  "first_motion": null,
+  "placements": [],
+  "dock_lat_mm": [],
+  "bins": [],
+  "refusals": 0,
+  "guard": null,
+  "yard_exit": null,
+  "verdict": "PASS",
+  "fails": {}
+ },
+ {
+  "key": "s4c__s23",
+  "scenario": "s4c",
+  "seed": 23,
+  "result": "alert",
+  "outcome": "no fix hold",
+  "hedge_min_m": 0.273,
+  "trips_wh": [],
+  "trip_min": [],
+  "soc_end": 0.8944,
+  "energy_wh": 2.62,
+  "last_dock": null,
+  "first_motion": null,
+  "placements": [],
+  "dock_lat_mm": [],
+  "bins": [],
+  "refusals": 0,
+  "guard": null,
+  "yard_exit": null,
+  "verdict": "PASS",
+  "fails": {}
+ },
+ {
+  "key": "s4c__s7",
+  "scenario": "s4c",
+  "seed": 7,
+  "result": "alert",
+  "outcome": "no fix hold",
+  "hedge_min_m": 0.269,
+  "trips_wh": [],
+  "trip_min": [],
+  "soc_end": 0.8944,
+  "energy_wh": 2.61,
+  "last_dock": null,
+  "first_motion": null,
+  "placements": [],
+  "dock_lat_mm": [],
+  "bins": [],
+  "refusals": 0,
+  "guard": null,
+  "yard_exit": null,
+  "verdict": "PASS",
+  "fails": {}
+ },
+ {
+  "key": "s5a__s11",
+  "scenario": "s5a",
+  "seed": 11,
+  "result": "pass",
+  "outcome": "plan completed",
+  "hedge_min_m": 0.379,
+  "trips_wh": [],
+  "trip_min": [],
+  "soc_end": 0.8904,
+  "energy_wh": 4.45,
+  "last_dock": null,
+  "first_motion": null,
+  "placements": [],
+  "dock_lat_mm": [],
+  "bins": [],
+  "refusals": 0,
+  "guard": null,
+  "yard_exit": null,
+  "verdict": "PASS",
+  "fails": {}
+ },
+ {
+  "key": "s5a__s23",
+  "scenario": "s5a",
+  "seed": 23,
+  "result": "pass",
+  "outcome": "plan completed",
+  "hedge_min_m": 0.384,
+  "trips_wh": [],
+  "trip_min": [],
+  "soc_end": 0.8903,
+  "energy_wh": 4.51,
+  "last_dock": null,
+  "first_motion": null,
+  "placements": [],
+  "dock_lat_mm": [],
+  "bins": [],
+  "refusals": 0,
+  "guard": null,
+  "yard_exit": null,
+  "verdict": "PASS",
+  "fails": {}
+ },
+ {
+  "key": "s5a__s7",
+  "scenario": "s5a",
+  "seed": 7,
+  "result": "pass",
+  "outcome": "plan completed",
+  "hedge_min_m": 0.383,
+  "trips_wh": [],
+  "trip_min": [],
+  "soc_end": 0.8906,
+  "energy_wh": 4.37,
+  "last_dock": null,
+  "first_motion": null,
+  "placements": [],
+  "dock_lat_mm": [],
+  "bins": [],
+  "refusals": 0,
+  "guard": null,
+  "yard_exit": null,
+  "verdict": "PASS",
+  "fails": {}
+ },
+ {
+  "key": "s5b__s11",
+  "scenario": "s5b",
+  "seed": 11,
+  "result": "pass",
+  "outcome": "plan completed",
+  "hedge_min_m": 0.363,
+  "trips_wh": [],
+  "trip_min": [],
+  "soc_end": 0.8944,
+  "energy_wh": 2.62,
+  "last_dock": null,
+  "first_motion": null,
+  "placements": [
+   [
+    "pad:A",
+    0.029,
+    1.87
+   ]
+  ],
+  "dock_lat_mm": [],
+  "bins": [],
+  "refusals": 0,
+  "guard": null,
+  "yard_exit": null,
+  "verdict": "PASS",
+  "fails": {}
+ },
+ {
+  "key": "s5b__s23",
+  "scenario": "s5b",
+  "seed": 23,
+  "result": "pass",
+  "outcome": "plan completed",
+  "hedge_min_m": 0.292,
+  "trips_wh": [],
+  "trip_min": [],
+  "soc_end": 0.8941,
+  "energy_wh": 2.76,
+  "last_dock": null,
+  "first_motion": null,
+  "placements": [
+   [
+    "pad:A",
+    0.052,
+    0.85
+   ]
+  ],
+  "dock_lat_mm": [],
+  "bins": [],
+  "refusals": 0,
+  "guard": null,
+  "yard_exit": null,
+  "verdict": "PASS",
+  "fails": {}
+ },
+ {
+  "key": "s5b__s7",
+  "scenario": "s5b",
+  "seed": 7,
+  "result": "pass",
+  "outcome": "plan completed",
+  "hedge_min_m": 0.363,
+  "trips_wh": [],
+  "trip_min": [],
+  "soc_end": 0.8946,
+  "energy_wh": 2.51,
+  "last_dock": null,
+  "first_motion": null,
+  "placements": [
+   [
+    "pad:A",
+    0.032,
+    2.4
+   ]
+  ],
+  "dock_lat_mm": [],
+  "bins": [],
+  "refusals": 0,
+  "guard": null,
+  "yard_exit": null,
+  "verdict": "PASS",
+  "fails": {}
+ },
+ {
+  "key": "s6a__s11",
+  "scenario": "s6a",
+  "seed": 11,
+  "result": "alert",
+  "outcome": "companion freeze -> firmware HOLD",
+  "hedge_min_m": 0.367,
+  "trips_wh": [],
+  "trip_min": [],
+  "soc_end": 0.898,
+  "energy_wh": 0.92,
+  "last_dock": null,
+  "first_motion": null,
+  "placements": [],
+  "dock_lat_mm": [],
+  "bins": [],
+  "refusals": 0,
+  "guard": null,
+  "yard_exit": null,
+  "verdict": "PASS",
+  "fails": {}
+ },
+ {
+  "key": "s6a__s23",
+  "scenario": "s6a",
+  "seed": 23,
+  "result": "alert",
+  "outcome": "companion freeze -> firmware HOLD",
+  "hedge_min_m": 0.287,
+  "trips_wh": [],
+  "trip_min": [],
+  "soc_end": 0.8979,
+  "energy_wh": 0.99,
+  "last_dock": null,
+  "first_motion": null,
+  "placements": [],
+  "dock_lat_mm": [],
+  "bins": [],
+  "refusals": 0,
+  "guard": null,
+  "yard_exit": null,
+  "verdict": "PASS",
+  "fails": {}
+ },
+ {
+  "key": "s6a__s7",
+  "scenario": "s6a",
+  "seed": 7,
+  "result": "alert",
+  "outcome": "companion freeze -> firmware HOLD",
+  "hedge_min_m": 0.367,
+  "trips_wh": [],
+  "trip_min": [],
+  "soc_end": 0.8982,
+  "energy_wh": 0.82,
+  "last_dock": null,
+  "first_motion": null,
+  "placements": [],
+  "dock_lat_mm": [],
+  "bins": [],
+  "refusals": 0,
+  "guard": null,
+  "yard_exit": null,
+  "verdict": "PASS",
+  "fails": {}
+ },
+ {
+  "key": "s6b__s11",
+  "scenario": "s6b",
+  "seed": 11,
+  "result": "alert",
+  "outcome": "companion freeze -> firmware HOLD",
+  "hedge_min_m": 0.452,
+  "trips_wh": [],
+  "trip_min": [],
+  "soc_end": 0.8986,
+  "energy_wh": 0.64,
+  "last_dock": null,
+  "first_motion": null,
+  "placements": [],
+  "dock_lat_mm": [],
+  "bins": [
+   {
+    "bin": "black",
+    "lineup_m": 0.035,
+    "cam": [
+     [
+      0.03,
+      0.035
+     ],
+     [
+      0.002,
+      0.006
+     ]
+    ],
+    "cam_err": [
+     -0.005,
+     -0.004
+    ],
+    "cam_miss": 0,
+    "cam_reapp": 1,
+    "gate_reapp": 0,
+    "gate": [
+     [
+      0.006,
+      0.37,
+      true
+     ]
+    ],
+    "grabbed": false
+   }
+  ],
+  "refusals": 0,
+  "guard": null,
+  "yard_exit": null,
+  "verdict": "PASS",
+  "fails": {}
+ },
+ {
+  "key": "s6b__s23",
+  "scenario": "s6b",
+  "seed": 23,
+  "result": "alert",
+  "outcome": "companion freeze -> firmware HOLD",
+  "hedge_min_m": 0.477,
+  "trips_wh": [],
+  "trip_min": [],
+  "soc_end": 0.8986,
+  "energy_wh": 0.64,
+  "last_dock": null,
+  "first_motion": null,
+  "placements": [],
+  "dock_lat_mm": [],
+  "bins": [
+   {
+    "bin": "black",
+    "lineup_m": 0.035,
+    "cam": [
+     [
+      0.039,
+      0.035
+     ],
+     [
+      0.004,
+      0.014
+     ]
+    ],
+    "cam_err": [
+     0.004,
+     -0.01
+    ],
+    "cam_miss": 0,
+    "cam_reapp": 1,
+    "gate_reapp": 0,
+    "gate": [
+     [
+      0.014,
+      0.57,
+      true
+     ]
+    ],
+    "grabbed": false
+   }
+  ],
+  "refusals": 0,
+  "guard": null,
+  "yard_exit": null,
+  "verdict": "PASS",
+  "fails": {}
+ },
+ {
+  "key": "s6b__s7",
+  "scenario": "s6b",
+  "seed": 7,
+  "result": "alert",
+  "outcome": "companion freeze -> firmware HOLD",
+  "hedge_min_m": 0.437,
+  "trips_wh": [],
+  "trip_min": [],
+  "soc_end": 0.8986,
+  "energy_wh": 0.65,
+  "last_dock": null,
+  "first_motion": null,
+  "placements": [],
+  "dock_lat_mm": [],
+  "bins": [
+   {
+    "bin": "black",
+    "lineup_m": 0.053,
+    "cam": [
+     [
+      0.053,
+      0.053
+     ],
+     [
+      -0.005,
+      -0.011
+     ]
+    ],
+    "cam_err": [
+     0.0,
+     0.006
+    ],
+    "cam_miss": 0,
+    "cam_reapp": 1,
+    "gate_reapp": 0,
+    "gate": [
+     [
+      -0.011,
+      -0.19,
+      true
+     ]
+    ],
+    "grabbed": false
+   }
+  ],
+  "refusals": 0,
+  "guard": null,
+  "yard_exit": null,
+  "verdict": "PASS",
+  "fails": {}
+ },
+ {
+  "key": "s7__s11",
+  "scenario": "s7",
+  "seed": 11,
+  "result": "alert",
+  "outcome": "e-stop",
+  "hedge_min_m": 0.366,
+  "trips_wh": [],
+  "trip_min": [],
+  "soc_end": 0.8983,
+  "energy_wh": 0.81,
+  "last_dock": null,
+  "first_motion": null,
+  "placements": [],
+  "dock_lat_mm": [],
+  "bins": [],
+  "refusals": 0,
+  "guard": null,
+  "yard_exit": null,
+  "verdict": "PASS",
+  "fails": {}
+ },
+ {
+  "key": "s7__s23",
+  "scenario": "s7",
+  "seed": 23,
+  "result": "alert",
+  "outcome": "e-stop",
+  "hedge_min_m": 0.285,
+  "trips_wh": [],
+  "trip_min": [],
+  "soc_end": 0.8982,
+  "energy_wh": 0.86,
+  "last_dock": null,
+  "first_motion": null,
+  "placements": [],
+  "dock_lat_mm": [],
+  "bins": [],
+  "refusals": 0,
+  "guard": null,
+  "yard_exit": null,
+  "verdict": "PASS",
+  "fails": {}
+ },
+ {
+  "key": "s7__s7",
+  "scenario": "s7",
+  "seed": 7,
+  "result": "alert",
+  "outcome": "e-stop",
+  "hedge_min_m": 0.367,
+  "trips_wh": [],
+  "trip_min": [],
+  "soc_end": 0.8986,
+  "energy_wh": 0.65,
+  "last_dock": null,
+  "first_motion": null,
+  "placements": [],
+  "dock_lat_mm": [],
+  "bins": [],
+  "refusals": 0,
+  "guard": null,
+  "yard_exit": null,
+  "verdict": "PASS",
+  "fails": {}
+ },
+ {
+  "key": "s8__s11",
+  "scenario": "s8",
+  "seed": 11,
+  "result": "alert",
+  "outcome": "energy guard",
+  "hedge_min_m": null,
+  "trips_wh": [],
+  "trip_min": [],
+  "soc_end": 0.1697,
+  "energy_wh": 0.12,
+  "last_dock": null,
+  "first_motion": null,
+  "placements": [],
+  "dock_lat_mm": [],
+  "bins": [],
+  "refusals": 0,
+  "guard": [
+   {
+    "t": 47.3,
+    "soc": 0.17,
+    "avail_wh": 32.4,
+    "budget_wh": 50.0,
+    "kind": "drop black->A"
+   }
+  ],
+  "yard_exit": null,
+  "verdict": "PASS",
+  "fails": {}
+ },
+ {
+  "key": "s8__s23",
+  "scenario": "s8",
+  "seed": 23,
+  "result": "alert",
+  "outcome": "energy guard",
+  "hedge_min_m": null,
+  "trips_wh": [],
+  "trip_min": [],
+  "soc_end": 0.1697,
+  "energy_wh": 0.12,
+  "last_dock": null,
+  "first_motion": null,
+  "placements": [],
+  "dock_lat_mm": [],
+  "bins": [],
+  "refusals": 0,
+  "guard": [
+   {
+    "t": 47.2,
+    "soc": 0.17,
+    "avail_wh": 32.4,
+    "budget_wh": 50.0,
+    "kind": "drop black->A"
+   }
+  ],
+  "yard_exit": null,
+  "verdict": "PASS",
+  "fails": {}
+ },
+ {
+  "key": "s8__s7",
+  "scenario": "s8",
+  "seed": 7,
+  "result": "alert",
+  "outcome": "energy guard",
+  "hedge_min_m": null,
+  "trips_wh": [],
+  "trip_min": [],
+  "soc_end": 0.1697,
+  "energy_wh": 0.12,
+  "last_dock": null,
+  "first_motion": null,
+  "placements": [],
+  "dock_lat_mm": [],
+  "bins": [],
+  "refusals": 0,
+  "guard": [
+   {
+    "t": 48.0,
+    "soc": 0.17,
+    "avail_wh": 32.4,
+    "budget_wh": 50.0,
+    "kind": "drop black->A"
+   }
+  ],
+  "yard_exit": null,
+  "verdict": "PASS",
+  "fails": {}
+ },
+ {
+  "key": "s9__s11",
+  "scenario": "s9",
+  "seed": 11,
+  "result": "alert",
+  "outcome": "bin missing",
+  "hedge_min_m": 0.379,
+  "trips_wh": [],
+  "trip_min": [],
+  "soc_end": 0.8949,
+  "energy_wh": 2.36,
+  "last_dock": null,
+  "first_motion": null,
+  "placements": [],
+  "dock_lat_mm": [],
+  "bins": [],
+  "refusals": 0,
+  "guard": null,
+  "yard_exit": null,
+  "verdict": "PASS",
+  "fails": {}
+ },
+ {
+  "key": "s9__s23",
+  "scenario": "s9",
+  "seed": 23,
+  "result": "alert",
+  "outcome": "bin missing",
+  "hedge_min_m": 0.378,
+  "trips_wh": [],
+  "trip_min": [],
+  "soc_end": 0.8947,
+  "energy_wh": 2.47,
+  "last_dock": null,
+  "first_motion": null,
+  "placements": [],
+  "dock_lat_mm": [],
+  "bins": [],
+  "refusals": 0,
+  "guard": null,
+  "yard_exit": null,
+  "verdict": "PASS",
+  "fails": {}
+ },
+ {
+  "key": "s9__s7",
+  "scenario": "s9",
+  "seed": 7,
+  "result": "alert",
+  "outcome": "bin missing",
+  "hedge_min_m": 0.376,
+  "trips_wh": [],
+  "trip_min": [],
+  "soc_end": 0.8948,
+  "energy_wh": 2.4,
+  "last_dock": null,
+  "first_motion": null,
+  "placements": [],
+  "dock_lat_mm": [],
+  "bins": [],
+  "refusals": 0,
+  "guard": null,
+  "yard_exit": null,
+  "verdict": "PASS",
+  "fails": {}
+ }
+]

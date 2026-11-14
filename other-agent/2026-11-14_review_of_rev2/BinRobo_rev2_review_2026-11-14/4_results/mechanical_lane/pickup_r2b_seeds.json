@@ -1,0 +1,229 @@
+{
+ "ESE240CL_s203": {
+  "bin": "ESE240CL",
+  "seed": 203,
+  "n": 30,
+  "captured": 29,
+  "refusals": 1,
+  "other": 0,
+  "other_results": [],
+  "retried": 0,
+  "claims": 29,
+  "false_holds_80mm": 0,
+  "false_holds_50mm": 1,
+  "captured_50mm": 28,
+  "claimed_but_outside_50mm": 1,
+  "knocked": 0,
+  "dock_dy_first_abs_mm": {
+   "mean": 20.5,
+   "p95": 54.6,
+   "max": 73.4
+  },
+  "nib_y_end_abs_mm_success": {
+   "mean": 12.4,
+   "max": 50.6
+  },
+  "nib_y_end_abs_mm_all_max": 50.6,
+  "refusal_idx": [
+   14
+  ],
+  "over50_idx": [
+   17
+  ]
+ },
+ "ESE240CL_s303": {
+  "bin": "ESE240CL",
+  "seed": 303,
+  "n": 30,
+  "captured": 30,
+  "refusals": 0,
+  "other": 0,
+  "other_results": [],
+  "retried": 0,
+  "claims": 30,
+  "false_holds_80mm": 0,
+  "false_holds_50mm": 0,
+  "captured_50mm": 30,
+  "claimed_but_outside_50mm": 0,
+  "knocked": 0,
+  "dock_dy_first_abs_mm": {
+   "mean": 24.8,
+   "p95": 66.5,
+   "max": 69.0
+  },
+  "nib_y_end_abs_mm_success": {
+   "mean": 14.3,
+   "max": 31.7
+  },
+  "nib_y_end_abs_mm_all_max": 31.7,
+  "refusal_idx": [],
+  "over50_idx": []
+ },
+ "ESE240CL_s403": {
+  "bin": "ESE240CL",
+  "seed": 403,
+  "n": 30,
+  "captured": 30,
+  "refusals": 0,
+  "other": 0,
+  "other_results": [],
+  "retried": 0,
+  "claims": 30,
+  "false_holds_80mm": 0,
+  "false_holds_50mm": 0,
+  "captured_50mm": 30,
+  "claimed_but_outside_50mm": 0,
+  "knocked": 0,
+  "dock_dy_first_abs_mm": {
+   "mean": 17.8,
+   "p95": 39.4,
+   "max": 48.2
+  },
+  "nib_y_end_abs_mm_success": {
+   "mean": 11.3,
+   "max": 28.8
+  },
+  "nib_y_end_abs_mm_all_max": 28.8,
+  "refusal_idx": [],
+  "over50_idx": []
+ },
+ "ESE240CL_s503": {
+  "bin": "ESE240CL",
+  "seed": 503,
+  "n": 30,
+  "captured": 29,
+  "refusals": 1,
+  "other": 0,
+  "other_results": [],
+  "retried": 0,
+  "claims": 29,
+  "false_holds_80mm": 0,
+  "false_holds_50mm": 0,
+  "captured_50mm": 29,
+  "claimed_but_outside_50mm": 0,
+  "knocked": 0,
+  "dock_dy_first_abs_mm": {
+   "mean": 20.9,
+   "p95": 44.6,
+   "max": 73.4
+  },
+  "nib_y_end_abs_mm_success": {
+   "mean": 11.2,
+   "max": 22.9
+  },
+  "nib_y_end_abs_mm_all_max": 22.9,
+  "refusal_idx": [
+   6
+  ],
+  "over50_idx": []
+ },
+ "ESE240CL_s603": {
+  "bin": "ESE240CL",
+  "seed": 603,
+  "n": 30,
+  "captured": 30,
+  "refusals": 0,
+  "other": 0,
+  "other_results": [],
+  "retried": 0,
+  "claims": 30,
+  "false_holds_80mm": 0,
+  "false_holds_50mm": 0,
+  "captured_50mm": 30,
+  "claimed_but_outside_50mm": 0,
+  "knocked": 0,
+  "dock_dy_first_abs_mm": {
+   "mean": 19.8,
+   "p95": 51.5,
+   "max": 69.8
+  },
+  "nib_y_end_abs_mm_success": {
+   "mean": 9.5,
+   "max": 39.0
+  },
+  "nib_y_end_abs_mm_all_max": 39.0,
+  "refusal_idx": [],
+  "over50_idx": []
+ },
+ "WEB140_s201": {
+  "bin": "WEB140",
+  "seed": 201,
+  "n": 30,
+  "captured": 30,
+  "refusals": 0,
+  "other": 0,
+  "other_results": [],
+  "retried": 0,
+  "claims": 30,
+  "false_holds_80mm": 0,
+  "false_holds_50mm": 0,
+  "captured_50mm": 30,
+  "claimed_but_outside_50mm": 0,
+  "knocked": 0,
+  "dock_dy_first_abs_mm": {
+   "mean": 14.5,
+   "p95": 34.2,
+   "max": 40.8
+  },
+  "nib_y_end_abs_mm_success": {
+   "mean": 11.4,
+   "max": 35.4
+  },
+  "nib_y_end_abs_mm_all_max": 35.4,
+  "refusal_idx": [],
+  "over50_idx": []
+ },
+ "ESE240SL_s202": {
+  "bin": "ESE240SL",
+  "seed": 202,
+  "n": 30,
+  "captured": 30,
+  "refusals": 0,
+  "other": 0,
+  "other_results": [],
+  "retried": 0,
+  "claims": 30,
+  "false_holds_80mm": 0,
+  "false_holds_50mm": 0,
+  "captured_50mm": 30,
+  "claimed_but_outside_50mm": 0,
+  "knocked": 0,
+  "dock_dy_first_abs_mm": {
+   "mean": 19.9,
+   "p95": 39.0,
+   "max": 51.0
+  },
+  "nib_y_end_abs_mm_success": {
+   "mean": 11.6,
+   "max": 27.2
+  },
+  "nib_y_end_abs_mm_all_max": 27.2,
+  "refusal_idx": [],
+  "over50_idx": []
+ },
+ "ESE240CL_all": {
+  "sets": [
+   203,
+   303,
+   403,
+   503,
+   603
+  ],
+  "n": 150,
+  "captured": 148,
+  "refusals": 2,
+  "other": 0,
+  "false_holds_80mm": 0,
+  "false_holds_50mm": 1,
+  "captured_50mm": 147,
+  "claimed_but_outside_50mm": 1,
+  "knocked": 0,
+  "extra_120": {
+   "n": 120,
+   "captured": 119,
+   "refusals": 1,
+   "false_holds_80mm": 0,
+   "false_holds_50mm": 0
+  }
+ }
+}

@@ -1,0 +1,33 @@
+Setting SIM_SPEEDUP=200.000000
+Setting SIM_RATE_HZ=50.000000
+Starting SITL: JSON
+Home: 52.996165 -8.003081 alt=31.210000m hdg=160.899994
+JSON control interface set to 127.0.0.1:9032
+Starting sketch 'Rover'
+Starting SITL input
+Using Irlock at port : 9035
+bind port 5790 for SERIAL0
+SERIAL0 on TCP port 5790
+Waiting for connection ....
+Connection on serial port 5790
+Loaded defaults from /workspace/projects/847c6e2d-79fb-41ac-8eca-c75df6a92b0c/sitl/b2f/params/bintug_b2f.parm
+bind port 5792 for SERIAL1
+SERIAL1 on TCP port 5792
+bind port 5793 for SERIAL2
+SERIAL2 on TCP port 5793
+
+JSON received:
+	timestamp
+	imu: gyro
+	imu: accel_body
+	position
+	attitude
+	velocity
+
+validate_structures:516: Validating structures
+Loaded defaults from /workspace/projects/847c6e2d-79fb-41ac-8eca-c75df6a92b0c/sitl/b2f/params/bintug_b2f.parm
+New connection on SERIAL1
+No JSON sensor message received, resending servos
+No JSON sensor message received, resending servos
+No JSON sensor message received, resending servos
+No JSON sensor message received, resending servos

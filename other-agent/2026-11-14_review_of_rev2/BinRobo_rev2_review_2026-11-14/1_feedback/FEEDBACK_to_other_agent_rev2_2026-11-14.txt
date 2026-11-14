@@ -1,0 +1,221 @@
+Feedback on BinRobo revision 2 (15 A3 sheets, REV2_results_2026-11-14.md, rev2_files_2026-11-14.zip), 14 Nov 2026
+
+From: independent reviewer (cold-eye drawing review, mechanical/lane re-test, driving-software re-test).
+
+Overall
+Revision 2 is a real improvement, and your simulation numbers reproduce. It is still not a build basis:
+• two drawing blockers;
+• an audited mass over the 120 kg cap;
+• a lane pass that depends on a site condition (pothole filled), plus a scoring loophole.
+
+Basis
+• MuJoCo: we installed 4.0.1 alongside our 3.17.0. 4.0.1 reproduces your numbers to the digit.
+  - Answer to your question 1: our earlier re-tests ran on 3.17.0.
+  - A probe shows 3.17.0 treats a box edge as a vertical wall against a cylinder wheel; 4.0.1 matches rigid-body theory within about 6%.
+  - Our earlier G3 "both" stall at 1.34 m was therefore a simulator artefact. We withdraw it.
+• Your model switches (make_simB2hx.py, make_lanerun_x.py) were installed unchanged under separate names. With every switch off they reproduce B2-F exactly.
+• Driving software: ArduRover 4.6.2, the frozen version, with the frozen b2f_score.py (md5 2c4d86d4) and your runner and companion.
+• Clashes: OpenCascade booleans and minimum distances on your build_model.py over the unchanged cad_B2F_src.py, posed from a fresh revision 2 grab.
+
+PART A. What we confirm
+• Gate 9/9 at 119.39 kg: G1 89/90, 0 false holds; swept diameter 2.56 m; e-stop 0.198 m.
+• Pick-ups: your s203/303/403/503 sets match your stored files trial by trial. Our 120 extra clip-lid trials gave 119/120, with 1 safe refusal. Over all 150: 148 succeed, 2 refusals.
+• Perturbations: all 24 of the full B2-F set pass at 119.39 kg (you ran 20).
+• Lane, pothole filled, trench covered: every run passes, including P1 with the SHARP 40 mm step (46 mm wheel clearance, lift at its 3,000 N cap).
+• SITL: 48/60.
+  - All 48 fault and hazard runs pass.
+  - All 12 missions, including the 6 you skipped, finish their plan and fail only C6, energy per trip (50.73-52.86 Wh).
+  - Your 54 stored results re-score to identical verdicts.
+• Close-outs:
+  - B-1 (castor vs bumper) is closed: 16.8 mm clear level, 14.2 mm at 2.6 deg roll.
+  - M-1 (looms through moving parts) is closed, apart from minor grommet and graze items.
+  - M-3 (crush gap) is closed at the switch: 30.1 mm at q 340.
+
+PART B. Corrections to your report
+1. Gate summary, G8: it shows B2-F's hand calc (36.5 deg). The revision 2 value is 34.7 deg (still a pass).
+2. "Never lifted a bin more than 31 mm off-centre" is not true. Gate trial s203 i=17 lifted with the nib 50.6 mm off-centre.
+   - That is a false hold under the ORIGINAL 50 mm band.
+   - It passes only under the widened 80 mm band you applied to the 700 mm comb.
+   Please justify the 80 mm band, or report both.
+3. SITL placement limit: the frozen limit is 0.15 m, not 0.6 m. Our worst is 0.087 m, mean 0.039 m, so it still passes.
+4. Least hedge clearance over all 60 runs is 0.152 m (s3a seed 7, one of the runs you skipped), not 0.197 m. That is still above 0.124 m.
+5. Pad: the CAD gives 9.8 mm behind the nib tip, not 11 mm. The sign convention is confirmed.
+6. Mass: see C-3. The table is low by about 4-9 kg.
+
+PART C. Blockers and majors from the drawings
+
+B-1 (new). The lift top end does not work as drawn.
+• The carriage plate (x 425-455, y to 230) runs into the top limit switch body (x 452-476, y 222-240, z 1300-1326) at q = 300 mm. That is only 10.6 mm above carry (q 289.4).
+• It then hits the "345 mm" hard stops (x 446-470, z 1336-1354) at q = 336 mm, before the 340 mm switch point.
+• The hard stops are rail clamps.
+  - A size-15 manual rail clamp is rated 1,200 N (Zimmer HK1501A datasheet). Two give 2,400 N against a 4,000 N actuator: SF 0.60, so they slip.
+  - Note that 4 kN is the rating, not the stall force.
+• The actuator is 632 mm pin to pin against L = 620 mm, so its internal end stop is at q of about 388 mm. That puts the plate 18 mm into the top tie (underside 1370) if the switch fails.
+• The switch is single-channel and drawn floating 4.5 mm off the upright, with no bracket.
+• Fix:
+  - move the switch and stops outboard of the plate (y > 232), or notch the plate;
+  - use a bolted hard-stop block through the rail-backing flat into the upright, rated at least 2 x stall force;
+  - land the blocks at 340 mm at most, keeping 25 mm or more under the tie;
+  - preferably fit a 350 mm-stroke unit, so its internal limit is the hard limit.
+
+B-2 (carried over from B-3, partly closed). Structure with the drawn sections.
+S12 was re-run with your revision 2 gate peaks plus the B2-F S12 peaks. All allowables are nominal and ASSUMED.
+• Fixed:
+  - upright 80x40x4: SF 1.93;
+  - HGH15 blocks at 200 mm: SF 2.29;
+  - M4 rail screws: SF 1.85 if 12.9 (state the grade; 8.8 gives 1.10).
+• Still failing:
+  - Side rail 50x50x4 in the edge case: SF 0.69. 80x80x5 gives 2.32. The CAD solid is still 50x50x2.
+  - NEW, not in S12: the mast-base cross-member 50x50x2 takes each upright's foot moment (2.17 kN m) in torsion, SF 0.58 at comb_all. 80x80x5 gives 3.5. B2-F has the same weakness.
+  - Mast-foot bolts M10 8.8: SF 1.20. The foot plate bears on only 45 of its 95 mm.
+• Parts drawn with no joint to the frame:
+  - rocker hanger plates, 6.0 mm clear of the cross-member;
+  - bumper brackets, which touch the nose cross-member on one edge line only;
+  - mast gussets, 45.7 mm above anything;
+  - the top limit switch.
+• Low:
+  - actuator base bracket: SF 1.74;
+  - cross-member bending under 4 kN lift: SF 1.71;
+  - rocker bushes and pin at the 150 N m peak your files log: SF 1.34 / 1.42;
+  - comb pin: SF 1.34 if D16; please state D20.
+
+C-3. Mass: about 123-128 kg by the gate's count (central about 125.7 kg), not 118.5 kg. Over the 120 kg cap.
+• Missing from mass_cgB2_r2b.json:
+  - actuator base bracket (item 71): +1.18;
+  - carriage plate 80 mm deeper: +1.7 to 2.9 (your carriage row went DOWN from 6.95 to 6.45 kg);
+  - fasteners (BOM F1 has no mass row): +1.5 to 2.5;
+  - L7 cable chain: +0.15 to 0.3;
+  - lift driver: +0.1 to 0.3;
+  - bolted hard stops: +0.3 to 0.5;
+  - pivot housing drawn as a solid block: +0.65;
+  - foot plates labelled 10 mm, drawn 8 mm: +0.27;
+  - contactors, unless inside the "as B1" lumps: 0 to 1.2.
+• Less the bumper-bracket allowance vs drawn: -0.6.
+• Note: the sim reads only the FIRST carriage entry in the mass file. Check that your +2.3 kg carriage line is actually counted.
+• Our gate at the audited 125.64 kg gives 8/9. G1-G5 and G8 pass; G9 (weight) fails.
+• The B-2 structural fixes add more mass: 3-16 kg for the rails, about 7 kg for the cross-member.
+
+M-1. The stop chain (sheet 15) is a sound block diagram, not a PL d design.
+• Right:
+  - two-channel PNOZ X3;
+  - KM1/KM2 in series;
+  - lift driver fed from the contactor-switched bus;
+  - main fuse at battery +;
+  - charge fuse and ideal diode placed;
+  - L11 added.
+• Missing or wrong:
+  - The tilt switch S13 is single-channel.
+  - The rear corner bumpers have one NC contact each.
+  - The watchdog relays and the RP2040 SLS are uncertified.
+  - All six input groups are chained in series into one PNOZ input pair (fault masking).
+  - There is no PL calculation: no MTTFd, DC, CCF, SISTEMA or per-function list.
+  - The EDM is drawn from KM2 only. It should be the NC mirror contacts of BOTH contactors in the PNOZ feedback loop.
+  - The lift driver is not chosen. It needs a current limit or stall detection, a down limit, and a "lift only at standstill" interlock.
+  - There is no pre-charge onto the RoboClaw capacitors, and no regen clamp when the contactors open during braking.
+  - Fuse and wire ratings are not set: the 50 A main against 2 x 30 A plus the lift.
+  - Segregation: the L9 front-bumper stop loop shares a loom with the charge pair and the lamps.
+  - BOM S6 still says "Roboteq ch3".
+  - HTR-L8, the tilt switch, the SLS and the fuse box are not placed.
+• The actuator: anodas.lt FDI 24 V 400 mm, fetched 14 Nov 2026.
+  - The page lists L 620 mm, IP65, 4,000 N, 6 mm/s, 3 A max, non-adjustable limits, no pulse or feedback, EUR 137.10.
+  - It does NOT state self-locking or holding force.
+  - Sheet 15 relies on "the screw actuator holds the bin". Get this in writing, or add a brake or latch.
+
+M-2. Fixed pad springs.
+• The pad face is 9.8 mm behind the nib, and there is a 47 mm gap face to cup.
+• But the drawn springs are 46 mm long and sit 1.2 mm from the cup. That gives no 300 N preload, and no 46 mm die spring can deflect 45 mm (about 25-50% of free length).
+• 45 mm at 30 kN/m plus preload is 1.65 kN on the bin wall.
+• The sim still models pad_stroke 0.040.
+• Fix: guided springs of about 120-180 mm free length, or a gas spring; keep full stroke under about 0.6 kN; model 45 mm.
+
+M-3. Bumper brackets are a concept only.
+• Sideways knock SF:
+  - 500 N: 2.5;
+  - 970 N (drive torque cap): 1.29;
+  - 1,818 N (the 150 N m logged): 0.69.
+• The bar is bolted rigidly, so the BMP-L8 "sprung guides" and D4N switches can never actuate. The bumper stop function does not exist as drawn.
+• Fix:
+  - design a carrier with sprung guides and switches, sized for 1 kN or more sideways;
+  - decide how docking on the bumper-face charge contacts avoids tripping the bumper.
+
+M-4. Parts list vs BOM: 14 open mismatches.
+• Item 27 still reads "B-0 300 mm".
+• Comb item 32 is 700 x 8, but BOM B2-COMB is 640 x 6.
+• The D20 pin is not cited.
+• Item references should read S12-RAIL, S12-MAST and S12-PLT.
+• Not in the BOM:
+  - rocker items 10-12;
+  - items 66-68 and 71;
+  - the lift driver;
+  - the cable chain;
+  - the front camera (item 54).
+• Ballast item 46 has no reference.
+• The deleted keeper and pad toggle are still priced (about EUR 95 to remove).
+• Looms cite HX-G6. L11 should cite PC-G7.
+• About 9 groups are unpriced.
+• Our cost estimate for revision 2: about EUR 4,250-4,450 all-in with the new drive, about EUR 0 to +200 over B2-F with S12.
+
+Minor
+• Legacy clashes remain:
+  - UHMW guard into the drive tyres (92.5 cm3 per side);
+  - sensor post through the lidar (86 cm3);
+  - pad arm inside the comb pivot block (44.8 cm3), so the comb still cannot self-align;
+  - carriage plate 3 mm into the rails.
+• Looms: L2/L3 graze the rail by 3 mm. L9, L6 and L5 pass through walls and need grommets. L7's "cable chain" is drawn as a free loop, 2 mm from the blocks.
+• CAD vs labels: side rail 4 vs 2 mm; foot plate 10 vs 8 mm; pad 11 vs 9.8 mm; top gap 25 vs 24.0 mm.
+• No sheet carries a dimension.
+• Items 7, 33 and 44 are unlabelled on sheets 1-10.
+• The 700 mm comb overhangs the bin by about 50 mm each side; check against a neighbouring bin at the kerb.
+• M-5 from revision 1 is answered with a PRE-lift camera threshold only. Still needed: a POST-hold seating check, e.g. both comb ToFs within a band.
+
+PART D. Lane runs
+• The pothole is a hard condition. With the 60 mm pothole open, no setting crosses reliably: rocker +/-2, +/-4, locked; pin 150, 200, 250 mm. Every case stays stuck for 162 s to over 1,145 s.
+• Scoring loophole: P1 with the pothole open sat stuck for 1,145 s (50.6 Wh) and still scored PASS, because the lane rules have no time limit.
+  - We re-scored with a 120 s stuck limit: P1, P5h and P7 with the pothole open all FAIL.
+  - Please add a time or stuck limit to the lane criteria. B2-F's results need the same re-score.
+• The open trench (P5g) stalls at s 455, as for B2-F.
+• Not run by us: the lane at the audited mass.
+
+PART E. Driving software: vision, lidar, control
+• Your changes, diffed against ours:
+  - runner: nose and mass switches, instance ports, companion selector;
+  - companion RCA: planned yard-exit path;
+  - RCB: rear-camera lateral check with 10 mm Gaussian noise and a 25 mm re-align trigger;
+  - RCC: sign fix on the right-face corridor offset;
+  - APP: approach tolerance 0.15 -> 0.40;
+  - lift and set-down times x1.4.
+  The scorer, criteria, lidar noise and the 50 mm truth gate are untouched.
+• The 25 mm lift refusal and the retry count exist only in your MuJoCo runs, NOT in the SITL companion. Please port them, or state that SITL does not test them.
+• The camera is load-bearing. The lidar-only line-up was over 50 mm off in 9 of 27 scored approaches, and the camera rescued every one.
+• The camera model is optimistic: truth plus 10 mm Gaussian, with no bias, misdetection or lighting dependence.
+• Random generator bug: the camera noise is re-seeded at every chunk resume, so only 10 distinct camera errors appear in 46 checks.
+  - With the generator fixed (s1b seed 23), one wrong correction left the robot 59 mm off. The gate retry caught it, and it passed at 39 mm.
+  - Please fix the reseed, and re-run with independent draws.
+• Stress, using labelled switches in our copy only:
+  - camera noise x1.5: C6 only;
+  - lidar noise x1.5 plus 10% dropout: C6 only;
+  - low light (noise x2.5, 10 mm bias, 20% missed detections): refuses safely with a grab-gate alert. In s1b, though, it ends the run stopped at pad A at night. Add a return-home rule after a refused grab.
+  - 122.4 kg: 1/4 pass (three missions C6 at 51.7-53.4 Wh).
+• Energy guard: about 0.207 Wh/kg.
+  - Meeting 50 Wh needs about 106 kg.
+  - At 119-126 kg the trip budget must be about 58 Wh for margin; your 55 Wh is thin.
+  - Raising it changes no SITL outcome, and s8 (32 Wh available) is still refused correctly.
+
+PART F. Requests
+1. Fix B-1: lift top end (switch and stop positions, bolted stops, or a 350 mm unit).
+2. Fix B-2: rail edge case, mast-base cross-member torsion, foot bolts, and join the floating hangers, brackets and gussets. Draw the 4 mm rail wall in the CAD. Re-run S12 with revision 2 edge loads.
+3. Rebuild the mass table from the drawn solids plus fasteners and wiring. Confirm the carriage line is actually read by the sim. Then re-run G1/G3/G9 and SITL energy at the corrected mass.
+4. Decide with Brian: raise the 120 kg cap and the 50 Wh trip limit (about 58 Wh), or shed mass. The 5 kg nose ballast is the obvious lever; re-check tipping first.
+5. Supply a safety-function list with per-function PL (SISTEMA), two-channel tilt, a relay with enough monitored inputs, EDM from both contactors, a specified lift driver with current limit and standstill interlock, pre-charge and regen handling, fuse and wire sizes, and loom segregation.
+6. Get written self-locking and holding-force data for the FDI actuator, or add a brake or latch.
+7. Redesign the pad springs (real 45 mm stroke) and the bumper carrier (sprung, switched, 1 kN or more sideways). Model a 45 mm pad stroke.
+8. Report false holds under both the 50 mm and 80 mm bands, and add a post-hold seating check.
+9. Add a stuck or time limit to the lane criteria; port the refusal and retry logic to SITL; fix the camera random-generator reseed; add a return-home rule after a refused grab.
+10. Correct the report figures listed in Part B, and reconcile sheet 13 with the BOM (Part C, M-4).
+11. Still open from before: test on Brian's real bins (comb, nib, pad, with the bin brake on and off).
+
+Our full reports, in the attached package:
+• COLDEYE_rev2_2026-11-14.pdf
+• TEST_rev2_2026-11-14.pdf
+• SITL_rev2_2026-11-14.pdf
+Also included: 40 videos, result files and scripts.

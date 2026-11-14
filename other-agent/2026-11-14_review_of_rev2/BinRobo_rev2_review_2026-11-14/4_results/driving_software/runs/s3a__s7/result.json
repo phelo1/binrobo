@@ -1,0 +1,1547 @@
+{
+ "scenario": "s3a",
+ "seed": 7,
+ "title": "Three-bin night drop (140 L -> A, 240 L -> M, 240 L -> F)",
+ "expect": "pass",
+ "result": "pass",
+ "outcome": "plan completed",
+ "alerts": [],
+ "sim_time_s": 10238.0,
+ "chunks": [
+  {
+   "t0": 0.0,
+   "t1": 1365.5,
+   "wall": 90.4,
+   "frames": 69268,
+   "status": "paused"
+  },
+  {
+   "t0": 1365.5,
+   "t1": 2947.1,
+   "wall": 93.4,
+   "frames": 80068,
+   "status": "paused"
+  },
+  {
+   "t0": 2947.1,
+   "t1": 4493.7,
+   "wall": 93.5,
+   "frames": 78324,
+   "status": "paused"
+  },
+  {
+   "t0": 4493.7,
+   "t1": 5798.9,
+   "wall": 93.4,
+   "frames": 66251,
+   "status": "paused"
+  },
+  {
+   "t0": 5798.9,
+   "t1": 7365.5,
+   "wall": 90.4,
+   "frames": 79321,
+   "status": "paused"
+  },
+  {
+   "t0": 7365.5,
+   "t1": 8886.0,
+   "wall": 90.4,
+   "frames": 77016,
+   "status": "paused"
+  },
+  {
+   "t0": 8886.0,
+   "t1": 10238.0,
+   "wall": 92.7,
+   "frames": 68591,
+   "status": "done"
+  }
+ ],
+ "energy_wh": 156.36,
+ "soc_start": 0.9,
+ "soc_end": 0.553,
+ "odo_m": 3673.1,
+ "hedge_min_m": 0.152,
+ "hedge_min_at": [
+  1458.7,
+  503.0
+ ],
+ "legal_min_m": 3.087,
+ "legal_min_at": [
+  1798.6,
+  621.9
+ ],
+ "contact_min_m": 0.337,
+ "contact_with": "brown",
+ "person_rest_min_m": null,
+ "car_rest_min_m": null,
+ "collisions": [],
+ "chain_trips": [],
+ "metrics": {
+  "placements": [
+   {
+    "bin": "brown",
+    "where": "pad:A",
+    "err_m": 0.044,
+    "handle_err_deg": 0.68,
+    "clock": "D-1 18:30",
+    "t": 1831.7
+   },
+   {
+    "bin": "black",
+    "where": "pad:M",
+    "err_m": 0.039,
+    "handle_err_deg": 2.2,
+    "clock": "D-1 19:27",
+    "t": 5262.7
+   },
+   {
+    "bin": "green",
+    "where": "pad:F",
+    "err_m": 0.057,
+    "handle_err_deg": 0.75,
+    "clock": "D-1 20:23",
+    "t": 8621.4
+   }
+  ],
+  "grabs": [
+   {
+    "bin": "brown",
+    "lat_mm": -5.7,
+    "yaw_deg": 0.26,
+    "result": "success (MuJoCo gate)"
+   },
+   {
+    "bin": "black",
+    "lat_mm": 4.1,
+    "yaw_deg": -0.44,
+    "result": "success (MuJoCo gate)"
+   },
+   {
+    "bin": "green",
+    "lat_mm": 4.9,
+    "yaw_deg": -0.57,
+    "result": "success (MuJoCo gate)"
+   }
+  ],
+  "trips": [
+   {
+    "kind": "drop brown->A",
+    "t0": 47.5,
+    "wh0": 0.119,
+    "clk0": "D-1 18:00",
+    "t1": 3495.4,
+    "wh": 51.78,
+    "clk1": "D-1 18:58",
+    "min": 57.5
+   },
+   {
+    "kind": "drop black->M",
+    "t0": 3495.6,
+    "wh0": 51.904,
+    "clk0": "D-1 18:58",
+    "t1": 6867.4,
+    "wh": 52.26,
+    "clk1": "D-1 19:54",
+    "min": 56.2
+   },
+   {
+    "kind": "drop green->F",
+    "t0": 6867.6,
+    "wh0": 104.166,
+    "clk0": "D-1 19:54",
+    "t1": 10237.8,
+    "wh": 52.2,
+    "clk1": "D-1 20:50",
+    "min": 56.2
+   }
+  ],
+  "stops": [],
+  "gates": [
+   {
+    "bin": "brown",
+    "attempt": 0,
+    "lat_m": -0.008,
+    "along_m": 0.016,
+    "yaw_deg": -0.07,
+    "ok": true
+   },
+   {
+    "bin": "black",
+    "attempt": 0,
+    "lat_m": -0.019,
+    "along_m": 0.006,
+    "yaw_deg": -0.64,
+    "ok": true
+   },
+   {
+    "bin": "green",
+    "attempt": 0,
+    "lat_m": -0.023,
+    "along_m": 0.043,
+    "yaw_deg": -1.85,
+    "ok": true
+   }
+  ],
+  "guard": [
+   {
+    "t": 47.5,
+    "soc": 0.9,
+    "avail_wh": 360.3,
+    "budget_wh": 50.0,
+    "kind": "drop brown->A"
+   },
+   {
+    "t": 3495.6,
+    "soc": 0.785,
+    "avail_wh": 308.5,
+    "budget_wh": 50.0,
+    "kind": "drop black->M"
+   },
+   {
+    "t": 6867.6,
+    "soc": 0.669,
+    "avail_wh": 256.3,
+    "budget_wh": 50.0,
+    "kind": "drop green->F"
+   }
+  ],
+  "pad_check": {
+   "pad": "F",
+   "margin_m": 10.26
+  },
+  "first_motion_clock": "D-1 18:00",
+  "first_motion_t": 58.1,
+  "cam_checks": [
+   {
+    "bin": "brown",
+    "k": 0,
+    "lat_cam": -0.034,
+    "lat_true": -0.033,
+    "e_est": -0.031
+   },
+   {
+    "bin": "brown",
+    "k": 1,
+    "lat_cam": -0.002,
+    "lat_true": -0.008,
+    "e_est": -0.023
+   },
+   {
+    "bin": "black",
+    "k": 0,
+    "lat_cam": -0.06,
+    "lat_true": -0.06,
+    "e_est": -0.057
+   },
+   {
+    "bin": "black",
+    "k": 1,
+    "lat_cam": -0.013,
+    "lat_true": -0.019,
+    "e_est": -0.024
+   },
+   {
+    "bin": "green",
+    "k": 0,
+    "lat_cam": -0.024,
+    "lat_true": -0.023,
+    "e_est": -0.034
+   }
+  ],
+  "yard_exit": [
+   {
+    "from_s": 9.3,
+    "from_lat": -4.55,
+    "path_m": 7.8,
+    "sweep_m": 0.82,
+    "used": true
+   },
+   {
+    "from_s": 9.5,
+    "from_lat": -2.95,
+    "path_m": 8.6,
+    "sweep_m": 2.98,
+    "used": true
+   }
+  ],
+  "waits": [
+   {
+    "pad": "A",
+    "wait_s": 3.2
+   },
+   {
+    "pad": "M",
+    "wait_s": 3.1
+   },
+   {
+    "pad": "F",
+    "wait_s": 3.1
+   }
+  ],
+  "last_dock_clock": "D-1 20:50"
+ },
+ "events": [
+  {
+   "t": 0.0,
+   "kind": "sim",
+   "text": "chunk 0 start: SITL launched, home = checkpoint pose s=5.2"
+  },
+  {
+   "t": 1.15,
+   "kind": "fw",
+   "text": "Calibrating barometer"
+  },
+  {
+   "t": 2.82,
+   "kind": "fw",
+   "text": "Barometer 1 calibration complete"
+  },
+  {
+   "t": 2.82,
+   "kind": "fw",
+   "text": "Barometer 2 calibration complete"
+  },
+  {
+   "t": 2.85,
+   "kind": "fw",
+   "text": "Beginning INS calibration. Do not move vehicle"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "ArduPilot Ready"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "AHRS: DCM active"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "GPS 1: specified as MAV"
+  },
+  {
+   "t": 3.09,
+   "kind": "fw",
+   "text": "GPS 1: detected MAV"
+  },
+  {
+   "t": 5.01,
+   "kind": "fw",
+   "text": "EKF3 IMU0 initialised"
+  },
+  {
+   "t": 5.01,
+   "kind": "fw",
+   "text": "EKF3 IMU1 initialised"
+  },
+  {
+   "t": 6.67,
+   "kind": "fw",
+   "text": "EKF3 IMU0 tilt alignment complete"
+  },
+  {
+   "t": 6.67,
+   "kind": "fw",
+   "text": "EKF3 IMU1 tilt alignment complete"
+  },
+  {
+   "t": 6.75,
+   "kind": "fw",
+   "text": "EKF3 IMU0 MAG0 initial yaw alignment complete"
+  },
+  {
+   "t": 6.75,
+   "kind": "fw",
+   "text": "EKF3 IMU1 MAG0 initial yaw alignment complete"
+  },
+  {
+   "t": 15.15,
+   "kind": "fw",
+   "text": "EKF3 IMU0 origin set"
+  },
+  {
+   "t": 15.15,
+   "kind": "fw",
+   "text": "EKF3 IMU1 origin set"
+  },
+  {
+   "t": 15.17,
+   "kind": "fw",
+   "text": "Field Elevation Set: 43m"
+  },
+  {
+   "t": 42.77,
+   "kind": "fw",
+   "text": "EKF3 IMU0 is using GPS"
+  },
+  {
+   "t": 42.77,
+   "kind": "fw",
+   "text": "EKF3 IMU1 is using GPS"
+  },
+  {
+   "t": 42.77,
+   "kind": "fw",
+   "text": "AHRS: EKF3 active"
+  },
+  {
+   "t": 46.43,
+   "kind": "fw",
+   "text": "Fence Indexed OK"
+  },
+  {
+   "t": 46.45,
+   "kind": "pi",
+   "text": "fence upload ack=0 (81 vertices)"
+  },
+  {
+   "t": 46.49,
+   "kind": "fw",
+   "text": "Warning: Arming Checks Disabled"
+  },
+  {
+   "t": 46.49,
+   "kind": "fw",
+   "text": "Throttle armed"
+  },
+  {
+   "t": 47.45,
+   "kind": "pi",
+   "text": "boot done (GUIDED, armed, fence 81 pts)"
+  },
+  {
+   "t": 47.55,
+   "kind": "pi",
+   "text": "preflight OK (drop brown->A): 360 Wh available, clock D-1 18:00"
+  },
+  {
+   "t": 47.95,
+   "kind": "pi",
+   "text": "undock: charger off, beacon + pre-motion warning (10 s)"
+  },
+  {
+   "t": 98.25,
+   "kind": "pi",
+   "text": "rear camera: bin axis 0.003 m off the estimate (camera -0.034 m) -> estimate corrected, re-aligning"
+  },
+  {
+   "t": 111.09,
+   "kind": "pi",
+   "text": "pre-grab gate OK: lateral -0.008 m, yaw -0.07 deg (truth)"
+  },
+  {
+   "t": 111.09,
+   "kind": "pi",
+   "text": "pre-motion warning (beacon, chime) (3 s)"
+  },
+  {
+   "t": 123.93,
+   "kind": "pi",
+   "text": "pre-motion warning before the lift (3 s)"
+  },
+  {
+   "t": 127.05,
+   "kind": "pi",
+   "text": "comb engage + lift + pad lock (MuJoCo G1 front dock: 90/90) (46 s)"
+  },
+  {
+   "t": 173.31,
+   "kind": "pi",
+   "text": "bin brown lifted: comb seated, pad locked, 32 kg on board"
+  },
+  {
+   "t": 185.41,
+   "kind": "pi",
+   "text": "yard exit path 7.8 m from lateral -4.55 m, map / known-object clearance 0.82 m"
+  },
+  {
+   "t": 745.97,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 1006.23,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 1365.53,
+   "kind": "sim",
+   "text": "chunk 1 start: SITL launched, home = checkpoint pose s=490.2"
+  },
+  {
+   "t": 1366.67,
+   "kind": "fw",
+   "text": "Calibrating barometer"
+  },
+  {
+   "t": 1368.34,
+   "kind": "fw",
+   "text": "Barometer 1 calibration complete"
+  },
+  {
+   "t": 1368.34,
+   "kind": "fw",
+   "text": "Barometer 2 calibration complete"
+  },
+  {
+   "t": 1368.35,
+   "kind": "fw",
+   "text": "Beginning INS calibration. Do not move vehicle"
+  },
+  {
+   "t": 1368.48,
+   "kind": "fw",
+   "text": "ArduPilot Ready"
+  },
+  {
+   "t": 1368.48,
+   "kind": "fw",
+   "text": "AHRS: DCM active"
+  },
+  {
+   "t": 1368.48,
+   "kind": "fw",
+   "text": "GPS 1: specified as MAV"
+  },
+  {
+   "t": 1368.64,
+   "kind": "fw",
+   "text": "GPS 1: detected MAV"
+  },
+  {
+   "t": 1370.5,
+   "kind": "fw",
+   "text": "EKF3 IMU0 initialised"
+  },
+  {
+   "t": 1370.5,
+   "kind": "fw",
+   "text": "EKF3 IMU1 initialised"
+  },
+  {
+   "t": 1372.5,
+   "kind": "fw",
+   "text": "EKF3 IMU0 tilt alignment complete"
+  },
+  {
+   "t": 1372.5,
+   "kind": "fw",
+   "text": "EKF3 IMU1 tilt alignment complete"
+  },
+  {
+   "t": 1372.62,
+   "kind": "fw",
+   "text": "EKF3 IMU0 MAG0 initial yaw alignment complete"
+  },
+  {
+   "t": 1372.62,
+   "kind": "fw",
+   "text": "EKF3 IMU1 MAG0 initial yaw alignment complete"
+  },
+  {
+   "t": 1380.54,
+   "kind": "fw",
+   "text": "EKF3 IMU0 origin set"
+  },
+  {
+   "t": 1380.54,
+   "kind": "fw",
+   "text": "EKF3 IMU1 origin set"
+  },
+  {
+   "t": 1380.6,
+   "kind": "fw",
+   "text": "Field Elevation Set: 32m"
+  },
+  {
+   "t": 1414.86,
+   "kind": "fw",
+   "text": "EKF3 IMU0 is using GPS"
+  },
+  {
+   "t": 1414.86,
+   "kind": "fw",
+   "text": "EKF3 IMU1 is using GPS"
+  },
+  {
+   "t": 1414.86,
+   "kind": "fw",
+   "text": "AHRS: EKF3 active"
+  },
+  {
+   "t": 1419.82,
+   "kind": "fw",
+   "text": "Fence Indexed OK"
+  },
+  {
+   "t": 1419.84,
+   "kind": "pi",
+   "text": "fence upload ack=0 (81 vertices)"
+  },
+  {
+   "t": 1419.9,
+   "kind": "fw",
+   "text": "Warning: Arming Checks Disabled"
+  },
+  {
+   "t": 1419.9,
+   "kind": "fw",
+   "text": "Throttle armed"
+  },
+  {
+   "t": 1421.04,
+   "kind": "pi",
+   "text": "boot done (GUIDED, armed, fence 81 pts)"
+  },
+  {
+   "t": 1792.08,
+   "kind": "pi",
+   "text": "pre-motion warning before the set-down (3 s)"
+  },
+  {
+   "t": 1795.2,
+   "kind": "pi",
+   "text": "lower bin + pad release (36 s)"
+  },
+  {
+   "t": 1831.68,
+   "kind": "pi",
+   "text": "bin brown set down at A: 0.044 m / 0.7 deg from the spot (truth)"
+  },
+  {
+   "t": 1839.12,
+   "kind": "pi",
+   "text": "photo of the placed bin (app) (5 s)"
+  },
+  {
+   "t": 1921.64,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 2077.38,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 2111.92,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 2534.76,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 2907.88,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 2947.06,
+   "kind": "sim",
+   "text": "chunk 2 start: SITL launched, home = checkpoint pose s=194.9"
+  },
+  {
+   "t": 2948.19,
+   "kind": "fw",
+   "text": "Calibrating barometer"
+  },
+  {
+   "t": 2949.86,
+   "kind": "fw",
+   "text": "Barometer 1 calibration complete"
+  },
+  {
+   "t": 2949.86,
+   "kind": "fw",
+   "text": "Barometer 2 calibration complete"
+  },
+  {
+   "t": 2949.88,
+   "kind": "fw",
+   "text": "Beginning INS calibration. Do not move vehicle"
+  },
+  {
+   "t": 2950.01,
+   "kind": "fw",
+   "text": "ArduPilot Ready"
+  },
+  {
+   "t": 2950.01,
+   "kind": "fw",
+   "text": "AHRS: DCM active"
+  },
+  {
+   "t": 2950.01,
+   "kind": "fw",
+   "text": "GPS 1: specified as MAV"
+  },
+  {
+   "t": 2950.17,
+   "kind": "fw",
+   "text": "GPS 1: detected MAV"
+  },
+  {
+   "t": 2952.03,
+   "kind": "fw",
+   "text": "EKF3 IMU0 initialised"
+  },
+  {
+   "t": 2952.03,
+   "kind": "fw",
+   "text": "EKF3 IMU1 initialised"
+  },
+  {
+   "t": 2954.03,
+   "kind": "fw",
+   "text": "EKF3 IMU0 tilt alignment complete"
+  },
+  {
+   "t": 2954.03,
+   "kind": "fw",
+   "text": "EKF3 IMU1 tilt alignment complete"
+  },
+  {
+   "t": 2954.17,
+   "kind": "fw",
+   "text": "EKF3 IMU0 MAG0 initial yaw alignment complete"
+  },
+  {
+   "t": 2954.17,
+   "kind": "fw",
+   "text": "EKF3 IMU1 MAG0 initial yaw alignment complete"
+  },
+  {
+   "t": 2962.09,
+   "kind": "fw",
+   "text": "EKF3 IMU0 origin set"
+  },
+  {
+   "t": 2962.09,
+   "kind": "fw",
+   "text": "EKF3 IMU1 origin set"
+  },
+  {
+   "t": 2962.11,
+   "kind": "fw",
+   "text": "Field Elevation Set: 34m"
+  },
+  {
+   "t": 2996.63,
+   "kind": "fw",
+   "text": "EKF3 IMU0 is using GPS"
+  },
+  {
+   "t": 2996.63,
+   "kind": "fw",
+   "text": "EKF3 IMU1 is using GPS"
+  },
+  {
+   "t": 2996.63,
+   "kind": "fw",
+   "text": "AHRS: EKF3 active"
+  },
+  {
+   "t": 3001.59,
+   "kind": "fw",
+   "text": "Fence Indexed OK"
+  },
+  {
+   "t": 3001.61,
+   "kind": "pi",
+   "text": "fence upload ack=0 (81 vertices)"
+  },
+  {
+   "t": 3001.65,
+   "kind": "fw",
+   "text": "Warning: Arming Checks Disabled"
+  },
+  {
+   "t": 3001.65,
+   "kind": "fw",
+   "text": "Throttle armed"
+  },
+  {
+   "t": 3002.81,
+   "kind": "pi",
+   "text": "boot done (GUIDED, armed, fence 81 pts)"
+  },
+  {
+   "t": 3263.81,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 3490.25,
+   "kind": "pi",
+   "text": "dock contacts closed, charging (5 s)"
+  },
+  {
+   "t": 3495.41,
+   "kind": "pi",
+   "text": "trip done: 51.8 Wh, 57.5 min, back D-1 18:58"
+  },
+  {
+   "t": 3495.65,
+   "kind": "pi",
+   "text": "preflight OK (drop black->M): 309 Wh available, clock D-1 18:58"
+  },
+  {
+   "t": 3496.13,
+   "kind": "pi",
+   "text": "undock: charger off, beacon + pre-motion warning (10 s)"
+  },
+  {
+   "t": 3526.61,
+   "kind": "pi",
+   "text": "rear camera: bin axis 0.003 m off the estimate (camera -0.060 m) -> estimate corrected, re-aligning"
+  },
+  {
+   "t": 3539.81,
+   "kind": "pi",
+   "text": "pre-grab gate OK: lateral -0.019 m, yaw -0.64 deg (truth)"
+  },
+  {
+   "t": 3539.81,
+   "kind": "pi",
+   "text": "pre-motion warning (beacon, chime) (3 s)"
+  },
+  {
+   "t": 3552.41,
+   "kind": "pi",
+   "text": "pre-motion warning before the lift (3 s)"
+  },
+  {
+   "t": 3555.53,
+   "kind": "pi",
+   "text": "comb engage + lift + pad lock (MuJoCo G1 front dock: 90/90) (46 s)"
+  },
+  {
+   "t": 3601.85,
+   "kind": "pi",
+   "text": "bin black lifted: comb seated, pad locked, 55 kg on board"
+  },
+  {
+   "t": 3712.83,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 3796.87,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 4437.85,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 4493.71,
+   "kind": "sim",
+   "text": "chunk 3 start: SITL launched, home = checkpoint pose s=353.3"
+  },
+  {
+   "t": 4494.85,
+   "kind": "fw",
+   "text": "Calibrating barometer"
+  },
+  {
+   "t": 4496.51,
+   "kind": "fw",
+   "text": "Barometer 1 calibration complete"
+  },
+  {
+   "t": 4496.51,
+   "kind": "fw",
+   "text": "Barometer 2 calibration complete"
+  },
+  {
+   "t": 4496.53,
+   "kind": "fw",
+   "text": "Beginning INS calibration. Do not move vehicle"
+  },
+  {
+   "t": 4496.66,
+   "kind": "fw",
+   "text": "ArduPilot Ready"
+  },
+  {
+   "t": 4496.66,
+   "kind": "fw",
+   "text": "AHRS: DCM active"
+  },
+  {
+   "t": 4496.66,
+   "kind": "fw",
+   "text": "GPS 1: specified as MAV"
+  },
+  {
+   "t": 4496.82,
+   "kind": "fw",
+   "text": "GPS 1: detected MAV"
+  },
+  {
+   "t": 4498.67,
+   "kind": "fw",
+   "text": "EKF3 IMU0 initialised"
+  },
+  {
+   "t": 4498.67,
+   "kind": "fw",
+   "text": "EKF3 IMU1 initialised"
+  },
+  {
+   "t": 4500.29,
+   "kind": "fw",
+   "text": "EKF3 IMU0 tilt alignment complete"
+  },
+  {
+   "t": 4500.29,
+   "kind": "fw",
+   "text": "EKF3 IMU1 tilt alignment complete"
+  },
+  {
+   "t": 4500.37,
+   "kind": "fw",
+   "text": "EKF3 IMU0 MAG0 initial yaw alignment complete"
+  },
+  {
+   "t": 4500.37,
+   "kind": "fw",
+   "text": "EKF3 IMU1 MAG0 initial yaw alignment complete"
+  },
+  {
+   "t": 4508.83,
+   "kind": "fw",
+   "text": "EKF3 IMU0 origin set"
+  },
+  {
+   "t": 4508.83,
+   "kind": "fw",
+   "text": "EKF3 IMU1 origin set"
+  },
+  {
+   "t": 4508.89,
+   "kind": "fw",
+   "text": "Field Elevation Set: 30m"
+  },
+  {
+   "t": 4536.31,
+   "kind": "fw",
+   "text": "EKF3 IMU0 is using GPS"
+  },
+  {
+   "t": 4536.31,
+   "kind": "fw",
+   "text": "EKF3 IMU1 is using GPS"
+  },
+  {
+   "t": 4536.31,
+   "kind": "fw",
+   "text": "AHRS: EKF3 active"
+  },
+  {
+   "t": 4539.67,
+   "kind": "fw",
+   "text": "Fence Indexed OK"
+  },
+  {
+   "t": 4539.69,
+   "kind": "pi",
+   "text": "fence upload ack=0 (81 vertices)"
+  },
+  {
+   "t": 4539.73,
+   "kind": "fw",
+   "text": "Warning: Arming Checks Disabled"
+  },
+  {
+   "t": 4539.73,
+   "kind": "fw",
+   "text": "Throttle armed"
+  },
+  {
+   "t": 4540.69,
+   "kind": "pi",
+   "text": "boot done (GUIDED, armed, fence 81 pts)"
+  },
+  {
+   "t": 5223.29,
+   "kind": "pi",
+   "text": "pre-motion warning before the set-down (3 s)"
+  },
+  {
+   "t": 5226.29,
+   "kind": "pi",
+   "text": "lower bin + pad release (36 s)"
+  },
+  {
+   "t": 5262.69,
+   "kind": "pi",
+   "text": "bin black set down at M: 0.039 m / 2.2 deg from the spot (truth)"
+  },
+  {
+   "t": 5269.79,
+   "kind": "pi",
+   "text": "photo of the placed bin (app) (5 s)"
+  },
+  {
+   "t": 5328.35,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 5798.89,
+   "kind": "sim",
+   "text": "chunk 4 start: SITL launched, home = checkpoint pose s=403.4"
+  },
+  {
+   "t": 5800.03,
+   "kind": "fw",
+   "text": "Calibrating barometer"
+  },
+  {
+   "t": 5801.7,
+   "kind": "fw",
+   "text": "Barometer 1 calibration complete"
+  },
+  {
+   "t": 5801.7,
+   "kind": "fw",
+   "text": "Barometer 2 calibration complete"
+  },
+  {
+   "t": 5801.71,
+   "kind": "fw",
+   "text": "Beginning INS calibration. Do not move vehicle"
+  },
+  {
+   "t": 5801.85,
+   "kind": "fw",
+   "text": "ArduPilot Ready"
+  },
+  {
+   "t": 5801.85,
+   "kind": "fw",
+   "text": "AHRS: DCM active"
+  },
+  {
+   "t": 5801.85,
+   "kind": "fw",
+   "text": "GPS 1: specified as MAV"
+  },
+  {
+   "t": 5802.0,
+   "kind": "fw",
+   "text": "GPS 1: detected MAV"
+  },
+  {
+   "t": 5803.86,
+   "kind": "fw",
+   "text": "EKF3 IMU0 initialised"
+  },
+  {
+   "t": 5803.86,
+   "kind": "fw",
+   "text": "EKF3 IMU1 initialised"
+  },
+  {
+   "t": 5805.48,
+   "kind": "fw",
+   "text": "EKF3 IMU0 tilt alignment complete"
+  },
+  {
+   "t": 5805.48,
+   "kind": "fw",
+   "text": "EKF3 IMU1 tilt alignment complete"
+  },
+  {
+   "t": 5805.56,
+   "kind": "fw",
+   "text": "EKF3 IMU0 MAG0 initial yaw alignment complete"
+  },
+  {
+   "t": 5805.56,
+   "kind": "fw",
+   "text": "EKF3 IMU1 MAG0 initial yaw alignment complete"
+  },
+  {
+   "t": 5814.02,
+   "kind": "fw",
+   "text": "EKF3 IMU0 origin set"
+  },
+  {
+   "t": 5814.02,
+   "kind": "fw",
+   "text": "EKF3 IMU1 origin set"
+  },
+  {
+   "t": 5814.08,
+   "kind": "fw",
+   "text": "Field Elevation Set: 31m"
+  },
+  {
+   "t": 5841.5,
+   "kind": "fw",
+   "text": "EKF3 IMU0 is using GPS"
+  },
+  {
+   "t": 5841.5,
+   "kind": "fw",
+   "text": "EKF3 IMU1 is using GPS"
+  },
+  {
+   "t": 5841.5,
+   "kind": "fw",
+   "text": "AHRS: EKF3 active"
+  },
+  {
+   "t": 5844.86,
+   "kind": "fw",
+   "text": "Fence Indexed OK"
+  },
+  {
+   "t": 5844.88,
+   "kind": "pi",
+   "text": "fence upload ack=0 (81 vertices)"
+  },
+  {
+   "t": 5844.94,
+   "kind": "fw",
+   "text": "Warning: Arming Checks Disabled"
+  },
+  {
+   "t": 5844.94,
+   "kind": "fw",
+   "text": "Throttle armed"
+  },
+  {
+   "t": 5845.88,
+   "kind": "pi",
+   "text": "boot done (GUIDED, armed, fence 81 pts)"
+  },
+  {
+   "t": 5899.54,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 6350.94,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 6601.34,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 6684.54,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 6862.28,
+   "kind": "pi",
+   "text": "dock contacts closed, charging (5 s)"
+  },
+  {
+   "t": 6867.38,
+   "kind": "pi",
+   "text": "trip done: 52.3 Wh, 56.2 min, back D-1 19:54"
+  },
+  {
+   "t": 6867.58,
+   "kind": "pi",
+   "text": "preflight OK (drop green->F): 256 Wh available, clock D-1 19:54"
+  },
+  {
+   "t": 6867.98,
+   "kind": "pi",
+   "text": "undock: charger off, beacon + pre-motion warning (10 s)"
+  },
+  {
+   "t": 6909.68,
+   "kind": "pi",
+   "text": "pre-grab gate OK: lateral -0.023 m, yaw -1.85 deg (truth)"
+  },
+  {
+   "t": 6909.68,
+   "kind": "pi",
+   "text": "pre-motion warning (beacon, chime) (3 s)"
+  },
+  {
+   "t": 6922.18,
+   "kind": "pi",
+   "text": "pre-motion warning before the lift (3 s)"
+  },
+  {
+   "t": 6925.18,
+   "kind": "pi",
+   "text": "comb engage + lift + pad lock (MuJoCo G1 front dock: 90/90) (46 s)"
+  },
+  {
+   "t": 6971.38,
+   "kind": "pi",
+   "text": "bin green lifted: comb seated, pad locked, 55 kg on board"
+  },
+  {
+   "t": 6983.48,
+   "kind": "pi",
+   "text": "yard exit path 8.6 m from lateral -2.95 m, map / known-object clearance 2.98 m"
+  },
+  {
+   "t": 7104.54,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 7132.54,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 7365.48,
+   "kind": "sim",
+   "text": "chunk 5 start: SITL launched, home = checkpoint pose s=161.2"
+  },
+  {
+   "t": 7366.62,
+   "kind": "fw",
+   "text": "Calibrating barometer"
+  },
+  {
+   "t": 7368.29,
+   "kind": "fw",
+   "text": "Barometer 1 calibration complete"
+  },
+  {
+   "t": 7368.29,
+   "kind": "fw",
+   "text": "Barometer 2 calibration complete"
+  },
+  {
+   "t": 7368.32,
+   "kind": "fw",
+   "text": "Beginning INS calibration. Do not move vehicle"
+  },
+  {
+   "t": 7368.45,
+   "kind": "fw",
+   "text": "ArduPilot Ready"
+  },
+  {
+   "t": 7368.45,
+   "kind": "fw",
+   "text": "AHRS: DCM active"
+  },
+  {
+   "t": 7368.45,
+   "kind": "fw",
+   "text": "GPS 1: specified as MAV"
+  },
+  {
+   "t": 7368.59,
+   "kind": "fw",
+   "text": "GPS 1: detected MAV"
+  },
+  {
+   "t": 7370.45,
+   "kind": "fw",
+   "text": "EKF3 IMU0 initialised"
+  },
+  {
+   "t": 7370.45,
+   "kind": "fw",
+   "text": "EKF3 IMU1 initialised"
+  },
+  {
+   "t": 7372.07,
+   "kind": "fw",
+   "text": "EKF3 IMU0 tilt alignment complete"
+  },
+  {
+   "t": 7372.07,
+   "kind": "fw",
+   "text": "EKF3 IMU1 tilt alignment complete"
+  },
+  {
+   "t": 7372.15,
+   "kind": "fw",
+   "text": "EKF3 IMU0 MAG0 initial yaw alignment complete"
+  },
+  {
+   "t": 7372.15,
+   "kind": "fw",
+   "text": "EKF3 IMU1 MAG0 initial yaw alignment complete"
+  },
+  {
+   "t": 7380.61,
+   "kind": "fw",
+   "text": "EKF3 IMU0 origin set"
+  },
+  {
+   "t": 7380.61,
+   "kind": "fw",
+   "text": "EKF3 IMU1 origin set"
+  },
+  {
+   "t": 7380.67,
+   "kind": "fw",
+   "text": "Field Elevation Set: 36m"
+  },
+  {
+   "t": 7408.29,
+   "kind": "fw",
+   "text": "EKF3 IMU0 is using GPS"
+  },
+  {
+   "t": 7408.29,
+   "kind": "fw",
+   "text": "EKF3 IMU1 is using GPS"
+  },
+  {
+   "t": 7408.29,
+   "kind": "fw",
+   "text": "AHRS: EKF3 active"
+  },
+  {
+   "t": 7411.87,
+   "kind": "fw",
+   "text": "Fence Indexed OK"
+  },
+  {
+   "t": 7411.87,
+   "kind": "pi",
+   "text": "fence upload ack=0 (81 vertices)"
+  },
+  {
+   "t": 7411.93,
+   "kind": "fw",
+   "text": "Warning: Arming Checks Disabled"
+  },
+  {
+   "t": 7411.93,
+   "kind": "fw",
+   "text": "Throttle armed"
+  },
+  {
+   "t": 7412.87,
+   "kind": "pi",
+   "text": "boot done (GUIDED, armed, fence 81 pts)"
+  },
+  {
+   "t": 7865.13,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 7950.73,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 8252.33,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 8487.13,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 8581.97,
+   "kind": "pi",
+   "text": "pre-motion warning before the set-down (3 s)"
+  },
+  {
+   "t": 8584.97,
+   "kind": "pi",
+   "text": "lower bin + pad release (36 s)"
+  },
+  {
+   "t": 8621.37,
+   "kind": "pi",
+   "text": "bin green set down at F: 0.057 m / 0.7 deg from the spot (truth)"
+  },
+  {
+   "t": 8628.57,
+   "kind": "pi",
+   "text": "photo of the placed bin (app) (5 s)"
+  },
+  {
+   "t": 8798.73,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 8885.97,
+   "kind": "sim",
+   "text": "chunk 6 start: SITL launched, home = checkpoint pose s=508.8"
+  },
+  {
+   "t": 8887.11,
+   "kind": "fw",
+   "text": "Calibrating barometer"
+  },
+  {
+   "t": 8888.79,
+   "kind": "fw",
+   "text": "Barometer 1 calibration complete"
+  },
+  {
+   "t": 8888.79,
+   "kind": "fw",
+   "text": "Barometer 2 calibration complete"
+  },
+  {
+   "t": 8888.82,
+   "kind": "fw",
+   "text": "Beginning INS calibration. Do not move vehicle"
+  },
+  {
+   "t": 8888.96,
+   "kind": "fw",
+   "text": "ArduPilot Ready"
+  },
+  {
+   "t": 8888.96,
+   "kind": "fw",
+   "text": "AHRS: DCM active"
+  },
+  {
+   "t": 8888.96,
+   "kind": "fw",
+   "text": "GPS 1: specified as MAV"
+  },
+  {
+   "t": 8889.06,
+   "kind": "fw",
+   "text": "GPS 1: detected MAV"
+  },
+  {
+   "t": 8890.96,
+   "kind": "fw",
+   "text": "EKF3 IMU0 initialised"
+  },
+  {
+   "t": 8890.96,
+   "kind": "fw",
+   "text": "EKF3 IMU1 initialised"
+  },
+  {
+   "t": 8892.58,
+   "kind": "fw",
+   "text": "EKF3 IMU0 tilt alignment complete"
+  },
+  {
+   "t": 8892.58,
+   "kind": "fw",
+   "text": "EKF3 IMU1 tilt alignment complete"
+  },
+  {
+   "t": 8892.66,
+   "kind": "fw",
+   "text": "EKF3 IMU0 MAG0 initial yaw alignment complete"
+  },
+  {
+   "t": 8892.66,
+   "kind": "fw",
+   "text": "EKF3 IMU1 MAG0 initial yaw alignment complete"
+  },
+  {
+   "t": 8901.1,
+   "kind": "fw",
+   "text": "EKF3 IMU0 origin set"
+  },
+  {
+   "t": 8901.1,
+   "kind": "fw",
+   "text": "EKF3 IMU1 origin set"
+  },
+  {
+   "t": 8901.18,
+   "kind": "fw",
+   "text": "Field Elevation Set: 32m"
+  },
+  {
+   "t": 8928.58,
+   "kind": "fw",
+   "text": "EKF3 IMU0 is using GPS"
+  },
+  {
+   "t": 8928.58,
+   "kind": "fw",
+   "text": "EKF3 IMU1 is using GPS"
+  },
+  {
+   "t": 8928.58,
+   "kind": "fw",
+   "text": "AHRS: EKF3 active"
+  },
+  {
+   "t": 8932.0,
+   "kind": "fw",
+   "text": "Fence Indexed OK"
+  },
+  {
+   "t": 8932.06,
+   "kind": "pi",
+   "text": "fence upload ack=0 (81 vertices)"
+  },
+  {
+   "t": 8932.1,
+   "kind": "fw",
+   "text": "Warning: Arming Checks Disabled"
+  },
+  {
+   "t": 8932.1,
+   "kind": "fw",
+   "text": "Throttle armed"
+  },
+  {
+   "t": 8933.06,
+   "kind": "pi",
+   "text": "boot done (GUIDED, armed, fence 81 pts)"
+  },
+  {
+   "t": 8938.02,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 9364.22,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 9667.5,
+   "kind": "fw",
+   "text": "Battery 1 is low 24.99V used 4018 mAh"
+  },
+  {
+   "t": 10232.66,
+   "kind": "pi",
+   "text": "dock contacts closed, charging (5 s)"
+  },
+  {
+   "t": 10237.76,
+   "kind": "pi",
+   "text": "trip done: 52.2 Wh, 56.2 min, back D-1 20:50"
+  },
+  {
+   "t": 10237.96,
+   "kind": "pi",
+   "text": "FINISH pass: plan completed"
+  }
+ ]
+}

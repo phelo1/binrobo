@@ -1,0 +1,87 @@
+{
+ "bin": "ESE240CL",
+ "seed": 203,
+ "i": 14,
+ "result": {
+  "docked": false,
+  "reapp": true,
+  "dock_dy_mm": -55.7,
+  "result": "no_dock",
+  "claim": false,
+  "captured": false,
+  "dock_dys_mm": [
+   -55.1,
+   -50.6,
+   -35.5,
+   -55.7
+  ],
+  "nib_y_mm": 48.0,
+  "seated50": false,
+  "captured50": false,
+  "false_hold50": false,
+  "first_result": "no_dock",
+  "false_hold": false,
+  "params": {
+   "bin": "ESE 240 CL (lowest handle)",
+   "bar_r": 0.0135,
+   "bar_shape": "tube",
+   "bar_x": 0.1645,
+   "cb": 0.0735,
+   "bar_habs": 0.9467,
+   "bar_h": 0.8467,
+   "wheel_r": 0.1,
+   "handle_half": 0.2044,
+   "knuckles": [
+    [
+     0.0463,
+     0.005
+    ]
+   ],
+   "wy": 0.2595,
+   "W": 0.58,
+   "D": 0.738,
+   "empty": 11.0,
+   "dy": -0.066,
+   "dyaw": 2.57,
+   "mu": 0.39,
+   "mu_hook": 0.24,
+   "fill": 0.0,
+   "lid": [
+    "closed",
+    0.0
+   ],
+   "comb_d": 0.0002475710909535748
+  }
+ },
+ "events": [
+  [
+   31.64,
+   "docked: tof, bin dy -55 mm (camera -64), nib gap 1 mm, bin moved 0 mm, rim 0.912 q_app 0.032, yaw meas -0.7 true 0.1 deg"
+  ],
+  [
+   31.64,
+   "back off 0.4 m and re-approach"
+  ],
+  [
+   48.48,
+   "docked: tof, bin dy -51 mm (camera -47), nib gap 2 mm, bin moved 0 mm, rim 0.909 q_app 0.029, yaw meas -0.5 true 0.1 deg"
+  ],
+  [
+   48.48,
+   "back off 0.4 m and re-approach"
+  ],
+  [
+   68.03,
+   "docked: tof, bin dy -36 mm (camera -50), nib gap 2 mm, bin moved 0 mm, rim 0.912 q_app 0.032, yaw meas 0.5 true 0.8 deg"
+  ],
+  [
+   68.03,
+   "back off 0.4 m and re-approach"
+  ],
+  [
+   91.91,
+   "docked: tof, bin dy -56 mm (camera -41), nib gap 5 mm, bin moved 0 mm, rim 0.913 q_app 0.033, yaw meas -0.9 true -0.8 deg"
+  ]
+ ],
+ "mass_tug": 112.434
+}

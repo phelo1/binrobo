@@ -1,0 +1,776 @@
+{
+ "envelope": [
+  {
+   "roll": 0,
+   "side": 1,
+   "part": "BY HDPE bay floor 10 mm, cut back at the front corners for t",
+   "vol_mm3": 0,
+   "gap_mm": 9.8
+  },
+  {
+   "roll": 0,
+   "side": 1,
+   "part": "BL Ballast plate 5 kg, narrower and thicker to clear the cas",
+   "vol_mm3": 0,
+   "gap_mm": 16.8
+  },
+  {
+   "roll": 0,
+   "side": 1,
+   "part": "SF Front bumper (switch strip)",
+   "vol_mm3": 0,
+   "gap_mm": 16.8
+  },
+  {
+   "roll": 0,
+   "side": -1,
+   "part": "BY HDPE bay floor 10 mm, cut back at the front corners for t",
+   "vol_mm3": 0,
+   "gap_mm": 9.8
+  },
+  {
+   "roll": 0,
+   "side": -1,
+   "part": "BL Ballast plate 5 kg, narrower and thicker to clear the cas",
+   "vol_mm3": 0,
+   "gap_mm": 16.8
+  },
+  {
+   "roll": 0,
+   "side": -1,
+   "part": "SF Front bumper (switch strip)",
+   "vol_mm3": 0,
+   "gap_mm": 16.8
+  },
+  {
+   "roll": 2.0,
+   "side": 1,
+   "part": "BY HDPE bay floor 10 mm, cut back at the front corners for t",
+   "vol_mm3": 0,
+   "gap_mm": 8.4
+  },
+  {
+   "roll": 2.0,
+   "side": 1,
+   "part": "BL Ballast plate 5 kg, narrower and thicker to clear the cas",
+   "vol_mm3": 0,
+   "gap_mm": 18.3
+  },
+  {
+   "roll": 2.0,
+   "side": 1,
+   "part": "SF Front bumper (switch strip)",
+   "vol_mm3": 0,
+   "gap_mm": 14.7
+  },
+  {
+   "roll": 2.0,
+   "side": -1,
+   "part": "BY HDPE bay floor 10 mm, cut back at the front corners for t",
+   "vol_mm3": 0,
+   "gap_mm": 7.9
+  },
+  {
+   "roll": 2.0,
+   "side": -1,
+   "part": "BL Ballast plate 5 kg, narrower and thicker to clear the cas",
+   "vol_mm3": 0,
+   "gap_mm": 15.6
+  },
+  {
+   "roll": 2.0,
+   "side": -1,
+   "part": "SF Front bumper (switch strip)",
+   "vol_mm3": 0,
+   "gap_mm": 19.6
+  },
+  {
+   "roll": -2.0,
+   "side": 1,
+   "part": "BY HDPE bay floor 10 mm, cut back at the front corners for t",
+   "vol_mm3": 0,
+   "gap_mm": 7.9
+  },
+  {
+   "roll": -2.0,
+   "side": 1,
+   "part": "BL Ballast plate 5 kg, narrower and thicker to clear the cas",
+   "vol_mm3": 0,
+   "gap_mm": 15.6
+  },
+  {
+   "roll": -2.0,
+   "side": 1,
+   "part": "SF Front bumper (switch strip)",
+   "vol_mm3": 0,
+   "gap_mm": 19.6
+  },
+  {
+   "roll": -2.0,
+   "side": -1,
+   "part": "BY HDPE bay floor 10 mm, cut back at the front corners for t",
+   "vol_mm3": 0,
+   "gap_mm": 8.4
+  },
+  {
+   "roll": -2.0,
+   "side": -1,
+   "part": "BL Ballast plate 5 kg, narrower and thicker to clear the cas",
+   "vol_mm3": 0,
+   "gap_mm": 18.3
+  },
+  {
+   "roll": -2.0,
+   "side": -1,
+   "part": "SF Front bumper (switch strip)",
+   "vol_mm3": 0,
+   "gap_mm": 14.7
+  },
+  {
+   "roll": 2.6,
+   "side": 1,
+   "part": "BY HDPE bay floor 10 mm, cut back at the front corners for t",
+   "vol_mm3": 0,
+   "gap_mm": 8.2
+  },
+  {
+   "roll": 2.6,
+   "side": 1,
+   "part": "BL Ballast plate 5 kg, narrower and thicker to clear the cas",
+   "vol_mm3": 0,
+   "gap_mm": 18.8
+  },
+  {
+   "roll": 2.6,
+   "side": 1,
+   "part": "SF Front bumper (switch strip)",
+   "vol_mm3": 0,
+   "gap_mm": 14.2
+  },
+  {
+   "roll": 2.6,
+   "side": 1,
+   "part": "SF Bumper corner L 45 deg",
+   "vol_mm3": 0,
+   "gap_mm": 19.2
+  },
+  {
+   "roll": 2.6,
+   "side": -1,
+   "part": "BY HDPE bay floor 10 mm, cut back at the front corners for t",
+   "vol_mm3": 0,
+   "gap_mm": 7.5
+  },
+  {
+   "roll": 2.6,
+   "side": -1,
+   "part": "BL Ballast plate 5 kg, narrower and thicker to clear the cas",
+   "vol_mm3": 0,
+   "gap_mm": 15.3
+  },
+  {
+   "roll": -2.6,
+   "side": 1,
+   "part": "BY HDPE bay floor 10 mm, cut back at the front corners for t",
+   "vol_mm3": 0,
+   "gap_mm": 7.5
+  },
+  {
+   "roll": -2.6,
+   "side": 1,
+   "part": "BL Ballast plate 5 kg, narrower and thicker to clear the cas",
+   "vol_mm3": 0,
+   "gap_mm": 15.3
+  },
+  {
+   "roll": -2.6,
+   "side": -1,
+   "part": "BY HDPE bay floor 10 mm, cut back at the front corners for t",
+   "vol_mm3": 0,
+   "gap_mm": 8.2
+  },
+  {
+   "roll": -2.6,
+   "side": -1,
+   "part": "BL Ballast plate 5 kg, narrower and thicker to clear the cas",
+   "vol_mm3": 0,
+   "gap_mm": 18.8
+  },
+  {
+   "roll": -2.6,
+   "side": -1,
+   "part": "SF Front bumper (switch strip)",
+   "vol_mm3": 0,
+   "gap_mm": 14.2
+  },
+  {
+   "roll": -2.6,
+   "side": -1,
+   "part": "SF Bumper corner R 45 deg",
+   "vol_mm3": 0,
+   "gap_mm": 19.2
+  }
+ ],
+ "fwd_wheel": [
+  {
+   "roll": 0,
+   "side": 1,
+   "part": "SF Front bumper (switch strip)",
+   "gap_mm": 18.8,
+   "vol": 0
+  },
+  {
+   "roll": 0,
+   "side": 1,
+   "part": "SF Bumper corner L 45 deg",
+   "gap_mm": 51.9,
+   "vol": 0
+  },
+  {
+   "roll": 0,
+   "side": 1,
+   "part": "SF Bumper corner R 45 deg",
+   "gap_mm": 589.3,
+   "vol": 0
+  },
+  {
+   "roll": 0,
+   "side": 1,
+   "part": "SF Front bumper stripe",
+   "gap_mm": 69.2,
+   "vol": 0
+  },
+  {
+   "roll": 0,
+   "side": 1,
+   "part": "DK Dock charge contact L",
+   "gap_mm": 121.0,
+   "vol": 0
+  },
+  {
+   "roll": 0,
+   "side": 1,
+   "part": "DK Dock charge contact R",
+   "gap_mm": 350.2,
+   "vol": 0
+  },
+  {
+   "roll": 0,
+   "side": 1,
+   "part": "SF Bumper bracket L 8 mm plate from the ",
+   "gap_mm": 181.0,
+   "vol": 0
+  },
+  {
+   "roll": 0,
+   "side": 1,
+   "part": "SF Bumper bracket R 8 mm plate from the ",
+   "gap_mm": 321.0,
+   "vol": 0
+  },
+  {
+   "roll": 0,
+   "side": -1,
+   "part": "SF Front bumper (switch strip)",
+   "gap_mm": 18.8,
+   "vol": 0
+  },
+  {
+   "roll": 0,
+   "side": -1,
+   "part": "SF Bumper corner L 45 deg",
+   "gap_mm": 589.3,
+   "vol": 0
+  },
+  {
+   "roll": 0,
+   "side": -1,
+   "part": "SF Bumper corner R 45 deg",
+   "gap_mm": 51.9,
+   "vol": 0
+  },
+  {
+   "roll": 0,
+   "side": -1,
+   "part": "SF Front bumper stripe",
+   "gap_mm": 69.2,
+   "vol": 0
+  },
+  {
+   "roll": 0,
+   "side": -1,
+   "part": "DK Dock charge contact L",
+   "gap_mm": 350.2,
+   "vol": 0
+  },
+  {
+   "roll": 0,
+   "side": -1,
+   "part": "DK Dock charge contact R",
+   "gap_mm": 121.0,
+   "vol": 0
+  },
+  {
+   "roll": 0,
+   "side": -1,
+   "part": "SF Bumper bracket L 8 mm plate from the ",
+   "gap_mm": 321.0,
+   "vol": 0
+  },
+  {
+   "roll": 0,
+   "side": -1,
+   "part": "SF Bumper bracket R 8 mm plate from the ",
+   "gap_mm": 181.0,
+   "vol": 0
+  },
+  {
+   "roll": 2.0,
+   "side": 1,
+   "part": "SF Front bumper (switch strip)",
+   "gap_mm": 16.6,
+   "vol": 0
+  },
+  {
+   "roll": 2.0,
+   "side": 1,
+   "part": "SF Bumper corner L 45 deg",
+   "gap_mm": 48.5,
+   "vol": 0
+  },
+  {
+   "roll": 2.0,
+   "side": 1,
+   "part": "SF Bumper corner R 45 deg",
+   "gap_mm": 591.7,
+   "vol": 0
+  },
+  {
+   "roll": 2.0,
+   "side": 1,
+   "part": "SF Front bumper stripe",
+   "gap_mm": 65.0,
+   "vol": 0
+  },
+  {
+   "roll": 2.0,
+   "side": 1,
+   "part": "DK Dock charge contact L",
+   "gap_mm": 122.3,
+   "vol": 0
+  },
+  {
+   "roll": 2.0,
+   "side": 1,
+   "part": "DK Dock charge contact R",
+   "gap_mm": 352.3,
+   "vol": 0
+  },
+  {
+   "roll": 2.0,
+   "side": 1,
+   "part": "SF Bumper bracket L 8 mm plate from the ",
+   "gap_mm": 182.3,
+   "vol": 0
+  },
+  {
+   "roll": 2.0,
+   "side": 1,
+   "part": "SF Bumper bracket R 8 mm plate from the ",
+   "gap_mm": 322.2,
+   "vol": 0
+  },
+  {
+   "roll": 2.0,
+   "side": -1,
+   "part": "SF Front bumper (switch strip)",
+   "gap_mm": 21.4,
+   "vol": 0
+  },
+  {
+   "roll": 2.0,
+   "side": -1,
+   "part": "SF Bumper corner L 45 deg",
+   "gap_mm": 586.6,
+   "vol": 0
+  },
+  {
+   "roll": 2.0,
+   "side": -1,
+   "part": "SF Bumper corner R 45 deg",
+   "gap_mm": 55.6,
+   "vol": 0
+  },
+  {
+   "roll": 2.0,
+   "side": -1,
+   "part": "SF Front bumper stripe",
+   "gap_mm": 73.0,
+   "vol": 0
+  },
+  {
+   "roll": 2.0,
+   "side": -1,
+   "part": "DK Dock charge contact L",
+   "gap_mm": 347.9,
+   "vol": 0
+  },
+  {
+   "roll": 2.0,
+   "side": -1,
+   "part": "DK Dock charge contact R",
+   "gap_mm": 119.9,
+   "vol": 0
+  },
+  {
+   "roll": 2.0,
+   "side": -1,
+   "part": "SF Bumper bracket L 8 mm plate from the ",
+   "gap_mm": 319.4,
+   "vol": 0
+  },
+  {
+   "roll": 2.0,
+   "side": -1,
+   "part": "SF Bumper bracket R 8 mm plate from the ",
+   "gap_mm": 179.5,
+   "vol": 0
+  },
+  {
+   "roll": -2.0,
+   "side": 1,
+   "part": "SF Front bumper (switch strip)",
+   "gap_mm": 21.4,
+   "vol": 0
+  },
+  {
+   "roll": -2.0,
+   "side": 1,
+   "part": "SF Bumper corner L 45 deg",
+   "gap_mm": 55.6,
+   "vol": 0
+  },
+  {
+   "roll": -2.0,
+   "side": 1,
+   "part": "SF Bumper corner R 45 deg",
+   "gap_mm": 586.6,
+   "vol": 0
+  },
+  {
+   "roll": -2.0,
+   "side": 1,
+   "part": "SF Front bumper stripe",
+   "gap_mm": 73.0,
+   "vol": 0
+  },
+  {
+   "roll": -2.0,
+   "side": 1,
+   "part": "DK Dock charge contact L",
+   "gap_mm": 119.9,
+   "vol": 0
+  },
+  {
+   "roll": -2.0,
+   "side": 1,
+   "part": "DK Dock charge contact R",
+   "gap_mm": 347.9,
+   "vol": 0
+  },
+  {
+   "roll": -2.0,
+   "side": 1,
+   "part": "SF Bumper bracket L 8 mm plate from the ",
+   "gap_mm": 179.5,
+   "vol": 0
+  },
+  {
+   "roll": -2.0,
+   "side": 1,
+   "part": "SF Bumper bracket R 8 mm plate from the ",
+   "gap_mm": 319.4,
+   "vol": 0
+  },
+  {
+   "roll": -2.0,
+   "side": -1,
+   "part": "SF Front bumper (switch strip)",
+   "gap_mm": 16.6,
+   "vol": 0
+  },
+  {
+   "roll": -2.0,
+   "side": -1,
+   "part": "SF Bumper corner L 45 deg",
+   "gap_mm": 591.7,
+   "vol": 0
+  },
+  {
+   "roll": -2.0,
+   "side": -1,
+   "part": "SF Bumper corner R 45 deg",
+   "gap_mm": 48.5,
+   "vol": 0
+  },
+  {
+   "roll": -2.0,
+   "side": -1,
+   "part": "SF Front bumper stripe",
+   "gap_mm": 65.0,
+   "vol": 0
+  },
+  {
+   "roll": -2.0,
+   "side": -1,
+   "part": "DK Dock charge contact L",
+   "gap_mm": 352.3,
+   "vol": 0
+  },
+  {
+   "roll": -2.0,
+   "side": -1,
+   "part": "DK Dock charge contact R",
+   "gap_mm": 122.3,
+   "vol": 0
+  },
+  {
+   "roll": -2.0,
+   "side": -1,
+   "part": "SF Bumper bracket L 8 mm plate from the ",
+   "gap_mm": 322.2,
+   "vol": 0
+  },
+  {
+   "roll": -2.0,
+   "side": -1,
+   "part": "SF Bumper bracket R 8 mm plate from the ",
+   "gap_mm": 182.3,
+   "vol": 0
+  },
+  {
+   "roll": 2.6,
+   "side": 1,
+   "part": "SF Front bumper (switch strip)",
+   "gap_mm": 16.1,
+   "vol": 0
+  },
+  {
+   "roll": 2.6,
+   "side": 1,
+   "part": "SF Bumper corner L 45 deg",
+   "gap_mm": 47.6,
+   "vol": 0
+  },
+  {
+   "roll": 2.6,
+   "side": 1,
+   "part": "SF Bumper corner R 45 deg",
+   "gap_mm": 592.2,
+   "vol": 0
+  },
+  {
+   "roll": 2.6,
+   "side": 1,
+   "part": "SF Front bumper stripe",
+   "gap_mm": 63.9,
+   "vol": 0
+  },
+  {
+   "roll": 2.6,
+   "side": 1,
+   "part": "DK Dock charge contact L",
+   "gap_mm": 122.7,
+   "vol": 0
+  },
+  {
+   "roll": 2.6,
+   "side": 1,
+   "part": "DK Dock charge contact R",
+   "gap_mm": 353.0,
+   "vol": 0
+  },
+  {
+   "roll": 2.6,
+   "side": 1,
+   "part": "SF Bumper bracket L 8 mm plate from the ",
+   "gap_mm": 182.5,
+   "vol": 0
+  },
+  {
+   "roll": 2.6,
+   "side": 1,
+   "part": "SF Bumper bracket R 8 mm plate from the ",
+   "gap_mm": 322.4,
+   "vol": 0
+  },
+  {
+   "roll": 2.6,
+   "side": -1,
+   "part": "SF Front bumper (switch strip)",
+   "gap_mm": 22.3,
+   "vol": 0
+  },
+  {
+   "roll": 2.6,
+   "side": -1,
+   "part": "SF Bumper corner L 45 deg",
+   "gap_mm": 585.7,
+   "vol": 0
+  },
+  {
+   "roll": 2.6,
+   "side": -1,
+   "part": "SF Bumper corner R 45 deg",
+   "gap_mm": 56.8,
+   "vol": 0
+  },
+  {
+   "roll": 2.6,
+   "side": -1,
+   "part": "SF Front bumper stripe",
+   "gap_mm": 74.2,
+   "vol": 0
+  },
+  {
+   "roll": 2.6,
+   "side": -1,
+   "part": "DK Dock charge contact L",
+   "gap_mm": 347.3,
+   "vol": 0
+  },
+  {
+   "roll": 2.6,
+   "side": -1,
+   "part": "DK Dock charge contact R",
+   "gap_mm": 119.7,
+   "vol": 0
+  },
+  {
+   "roll": 2.6,
+   "side": -1,
+   "part": "SF Bumper bracket L 8 mm plate from the ",
+   "gap_mm": 318.9,
+   "vol": 0
+  },
+  {
+   "roll": 2.6,
+   "side": -1,
+   "part": "SF Bumper bracket R 8 mm plate from the ",
+   "gap_mm": 179.1,
+   "vol": 0
+  },
+  {
+   "roll": -2.6,
+   "side": 1,
+   "part": "SF Front bumper (switch strip)",
+   "gap_mm": 22.3,
+   "vol": 0
+  },
+  {
+   "roll": -2.6,
+   "side": 1,
+   "part": "SF Bumper corner L 45 deg",
+   "gap_mm": 56.8,
+   "vol": 0
+  },
+  {
+   "roll": -2.6,
+   "side": 1,
+   "part": "SF Bumper corner R 45 deg",
+   "gap_mm": 585.7,
+   "vol": 0
+  },
+  {
+   "roll": -2.6,
+   "side": 1,
+   "part": "SF Front bumper stripe",
+   "gap_mm": 74.2,
+   "vol": 0
+  },
+  {
+   "roll": -2.6,
+   "side": 1,
+   "part": "DK Dock charge contact L",
+   "gap_mm": 119.7,
+   "vol": 0
+  },
+  {
+   "roll": -2.6,
+   "side": 1,
+   "part": "DK Dock charge contact R",
+   "gap_mm": 347.3,
+   "vol": 0
+  },
+  {
+   "roll": -2.6,
+   "side": 1,
+   "part": "SF Bumper bracket L 8 mm plate from the ",
+   "gap_mm": 179.1,
+   "vol": 0
+  },
+  {
+   "roll": -2.6,
+   "side": 1,
+   "part": "SF Bumper bracket R 8 mm plate from the ",
+   "gap_mm": 318.9,
+   "vol": 0
+  },
+  {
+   "roll": -2.6,
+   "side": -1,
+   "part": "SF Front bumper (switch strip)",
+   "gap_mm": 16.1,
+   "vol": 0
+  },
+  {
+   "roll": -2.6,
+   "side": -1,
+   "part": "SF Bumper corner L 45 deg",
+   "gap_mm": 592.2,
+   "vol": 0
+  },
+  {
+   "roll": -2.6,
+   "side": -1,
+   "part": "SF Bumper corner R 45 deg",
+   "gap_mm": 47.6,
+   "vol": 0
+  },
+  {
+   "roll": -2.6,
+   "side": -1,
+   "part": "SF Front bumper stripe",
+   "gap_mm": 63.9,
+   "vol": 0
+  },
+  {
+   "roll": -2.6,
+   "side": -1,
+   "part": "DK Dock charge contact L",
+   "gap_mm": 353.0,
+   "vol": 0
+  },
+  {
+   "roll": -2.6,
+   "side": -1,
+   "part": "DK Dock charge contact R",
+   "gap_mm": 122.7,
+   "vol": 0
+  },
+  {
+   "roll": -2.6,
+   "side": -1,
+   "part": "SF Bumper bracket L 8 mm plate from the ",
+   "gap_mm": 322.4,
+   "vol": 0
+  },
+  {
+   "roll": -2.6,
+   "side": -1,
+   "part": "SF Bumper bracket R 8 mm plate from the ",
+   "gap_mm": 182.5,
+   "vol": 0
+  }
+ ]
+}

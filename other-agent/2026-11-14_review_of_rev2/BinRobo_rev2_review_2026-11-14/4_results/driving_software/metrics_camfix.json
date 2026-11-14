@@ -1,0 +1,307 @@
+[
+ {
+  "key": "s1a__s11",
+  "scenario": "s1a",
+  "seed": 11,
+  "result": "pass",
+  "outcome": "plan completed",
+  "hedge_min_m": 0.2,
+  "trips_wh": [
+   52.34
+  ],
+  "trip_min": [
+   56.2
+  ],
+  "soc_end": 0.7872,
+  "energy_wh": 52.46,
+  "last_dock": "D-1 18:56",
+  "first_motion": "D-1 18:00",
+  "placements": [
+   [
+    "pad:A",
+    0.016,
+    1.93
+   ]
+  ],
+  "dock_lat_mm": [
+   3.0
+  ],
+  "bins": [
+   {
+    "bin": "black",
+    "lineup_m": -0.058,
+    "cam": [
+     [
+      -0.036,
+      -0.058
+     ],
+     [
+      0.022,
+      0.012
+     ]
+    ],
+    "cam_err": [
+     0.022,
+     0.01
+    ],
+    "cam_miss": 0,
+    "cam_reapp": 1,
+    "gate_reapp": 0,
+    "gate": [
+     [
+      0.012,
+      -0.02,
+      true
+     ]
+    ],
+    "grabbed": true
+   }
+  ],
+  "refusals": 0,
+  "guard": [
+   {
+    "t": 47.4,
+    "soc": 0.9,
+    "avail_wh": 371.8,
+    "budget_wh": 50.0,
+    "kind": "drop black->A"
+   }
+  ],
+  "yard_exit": null,
+  "verdict": "FAIL",
+  "fails": {
+   "C6": "trips [52.34] Wh, end SOC 0.787"
+  }
+ },
+ {
+  "key": "s1b__s23",
+  "scenario": "s1b",
+  "seed": 23,
+  "result": "pass",
+  "outcome": "plan completed",
+  "hedge_min_m": 0.194,
+  "trips_wh": [
+   51.96
+  ],
+  "trip_min": [
+   57.5
+  ],
+  "soc_end": 0.788,
+  "energy_wh": 52.08,
+  "last_dock": "D0 18:58",
+  "first_motion": "D0 18:00",
+  "placements": [
+   [
+    "home:black",
+    0.032,
+    0.21
+   ]
+  ],
+  "dock_lat_mm": [
+   -19.0
+  ],
+  "bins": [
+   {
+    "bin": "black",
+    "lineup_m": 0.076,
+    "cam": [
+     [
+      0.086,
+      0.076
+     ],
+     [
+      0.032,
+      0.004
+     ]
+    ],
+    "cam_err": [
+     0.01,
+     0.028
+    ],
+    "cam_miss": 0,
+    "cam_reapp": 2,
+    "gate_reapp": 1,
+    "gate": [
+     [
+      -0.059,
+      1.19,
+      false
+     ],
+     [
+      -0.039,
+      1.03,
+      true
+     ]
+    ],
+    "grabbed": true
+   }
+  ],
+  "refusals": 0,
+  "guard": [
+   {
+    "t": 48.0,
+    "soc": 0.9,
+    "avail_wh": 371.8,
+    "budget_wh": 50.0,
+    "kind": "pickup black<-A"
+   }
+  ],
+  "yard_exit": null,
+  "verdict": "FAIL",
+  "fails": {
+   "C6": "trips [51.96] Wh, end SOC 0.788"
+  }
+ },
+ {
+  "key": "s3b__s7",
+  "scenario": "s3b",
+  "seed": 7,
+  "result": "pass",
+  "outcome": "plan completed",
+  "hedge_min_m": 0.2,
+  "trips_wh": [
+   50.77,
+   51.24,
+   51.1
+  ],
+  "trip_min": [
+   55.8,
+   56.2,
+   56.0
+  ],
+  "soc_end": 0.5599,
+  "energy_wh": 153.23,
+  "last_dock": "D0 20:48",
+  "first_motion": "D0 18:00",
+  "placements": [
+   [
+    "home:green",
+    0.045,
+    0.27
+   ],
+   [
+    "home:black",
+    0.026,
+    0.19
+   ],
+   [
+    "home:brown",
+    0.004,
+    6.04
+   ]
+  ],
+  "dock_lat_mm": [
+   -5.9,
+   2.1,
+   -0.4
+  ],
+  "bins": [
+   {
+    "bin": "green",
+    "lineup_m": 0.02,
+    "cam": [
+     [
+      0.018,
+      0.02
+     ]
+    ],
+    "cam_err": [
+     -0.002
+    ],
+    "cam_miss": 0,
+    "cam_reapp": 0,
+    "gate_reapp": 0,
+    "gate": [
+     [
+      0.02,
+      1.23,
+      true
+     ]
+    ],
+    "grabbed": true
+   },
+   {
+    "bin": "black",
+    "lineup_m": 0.035,
+    "cam": [
+     [
+      0.031,
+      0.035
+     ],
+     [
+      0.02,
+      0.018
+     ]
+    ],
+    "cam_err": [
+     -0.004,
+     0.002
+    ],
+    "cam_miss": 0,
+    "cam_reapp": 1,
+    "gate_reapp": 0,
+    "gate": [
+     [
+      0.018,
+      -0.24,
+      true
+     ]
+    ],
+    "grabbed": true
+   },
+   {
+    "bin": "brown",
+    "lineup_m": 0.01,
+    "cam": [
+     [
+      -0.001,
+      0.01
+     ]
+    ],
+    "cam_err": [
+     -0.011
+    ],
+    "cam_miss": 0,
+    "cam_reapp": 0,
+    "gate_reapp": 0,
+    "gate": [
+     [
+      0.01,
+      1.55,
+      true
+     ]
+    ],
+    "grabbed": true
+   }
+  ],
+  "refusals": 0,
+  "guard": [
+   {
+    "t": 47.9,
+    "soc": 0.9,
+    "avail_wh": 360.3,
+    "budget_wh": 50.0,
+    "kind": "pickup green<-F"
+   },
+   {
+    "t": 3398.3,
+    "soc": 0.787,
+    "avail_wh": 309.6,
+    "budget_wh": 50.0,
+    "kind": "pickup black<-M"
+   },
+   {
+    "t": 6772.5,
+    "soc": 0.673,
+    "avail_wh": 258.3,
+    "budget_wh": 50.0,
+    "kind": "pickup brown<-A"
+   }
+  ],
+  "yard_exit": null,
+  "verdict": "FAIL",
+  "fails": {
+   "C6": "trips [50.77, 51.24, 51.1] Wh, end SOC 0.560"
+  }
+ }
+]

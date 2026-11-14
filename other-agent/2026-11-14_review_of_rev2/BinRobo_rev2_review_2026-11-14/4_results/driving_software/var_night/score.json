@@ -1,0 +1,62 @@
+[
+ {
+  "key": "s1a__s7",
+  "scenario": "s1a",
+  "seed": 7,
+  "title": "One-bin night drop (240 L black -> pad A)",
+  "expect": "pass",
+  "result": "alert",
+  "outcome": "grab gate",
+  "verdict": "FAIL",
+  "crit": {
+   "C3": "FAIL",
+   "C5b": "PASS",
+   "C6": "FAIL",
+   "C7": "FAIL",
+   "C8": "FAIL"
+  },
+  "why": {
+   "C3": "first motion D-1 18:00, last dock None",
+   "C5b": "contact min 0.531 (black), at-rest gaps person None car None",
+   "C6": "trips [] Wh, end SOC 0.898",
+   "C7": "result alert / grab gate",
+   "C8": "gates ['black -0.079 m 0.29 deg MISS', 'black -0.072 m 0.26 deg MISS']"
+  },
+  "alerts": [
+   "could not line up on bin black (pre-grab gate missed twice) - not grabbing"
+  ],
+  "sim_s": 116.2
+ },
+ {
+  "key": "s1b__s7",
+  "scenario": "s1b",
+  "seed": 7,
+  "title": "One-bin night pickup (pad A -> home)",
+  "expect": "pass",
+  "result": "alert",
+  "outcome": "grab gate",
+  "verdict": "FAIL",
+  "crit": {
+   "C1": "PASS",
+   "C3": "FAIL",
+   "C4": "PASS",
+   "C5b": "PASS",
+   "C6": "FAIL",
+   "C7": "FAIL",
+   "C8": "FAIL"
+  },
+  "why": {
+   "C1": "hedge min 0.223 m at t/s [1301.2, 502.3]",
+   "C3": "first motion D0 18:00, last dock None",
+   "C4": "boundary margin 4.137 m",
+   "C5b": "contact min 0.495 (black), at-rest gaps person None car None",
+   "C6": "trips [] Wh, end SOC 0.860",
+   "C7": "result alert / grab gate",
+   "C8": "gates ['black -0.073 m 0.88 deg MISS', 'black -0.058 m 0.97 deg MISS']"
+  },
+  "alerts": [
+   "could not line up on bin black (pre-grab gate missed twice) - not grabbing"
+  ],
+  "sim_s": 1716.4
+ }
+]

@@ -1,0 +1,262 @@
+{
+ "scenario": "s1a",
+ "seed": 7,
+ "title": "One-bin night drop (240 L black -> pad A)",
+ "expect": "pass",
+ "result": "alert",
+ "outcome": "grab gate",
+ "alerts": [
+  "could not line up on bin black (pre-grab gate missed twice) - not grabbing"
+ ],
+ "sim_time_s": 116.2,
+ "chunks": [
+  {
+   "t0": 0.0,
+   "t1": 116.2,
+   "wall": 12.8,
+   "frames": 6804,
+   "status": "done"
+  }
+ ],
+ "energy_wh": 0.72,
+ "soc_start": 0.9,
+ "soc_end": 0.8985,
+ "odo_m": 8.3,
+ "hedge_min_m": null,
+ "hedge_min_at": null,
+ "legal_min_m": null,
+ "legal_min_at": null,
+ "contact_min_m": 0.531,
+ "contact_with": "black",
+ "person_rest_min_m": null,
+ "car_rest_min_m": null,
+ "collisions": [],
+ "chain_trips": [],
+ "metrics": {
+  "placements": [],
+  "grabs": [],
+  "trips": [],
+  "stops": [],
+  "gates": [
+   {
+    "bin": "black",
+    "attempt": 0,
+    "lat_m": -0.079,
+    "along_m": -0.0,
+    "yaw_deg": 0.29,
+    "ok": false
+   },
+   {
+    "bin": "black",
+    "attempt": 1,
+    "lat_m": -0.072,
+    "along_m": 0.031,
+    "yaw_deg": 0.26,
+    "ok": false
+   }
+  ],
+  "guard": [
+   {
+    "t": 47.3,
+    "soc": 0.9,
+    "avail_wh": 371.8,
+    "budget_wh": 50.0,
+    "kind": "drop black->A"
+   }
+  ],
+  "pad_check": {
+   "pad": "A",
+   "margin_m": 3.17
+  },
+  "first_motion_clock": "D-1 18:00",
+  "first_motion_t": 57.8,
+  "cam_checks": [
+   {
+    "bin": "black",
+    "k": 0,
+    "lat_cam": -0.04,
+    "lat_true": -0.049,
+    "e_est": -0.06
+   },
+   {
+    "bin": "black",
+    "k": 1,
+    "lat_cam": 0.048,
+    "lat_true": -0.036,
+    "e_est": 0.001
+   }
+  ]
+ },
+ "events": [
+  {
+   "t": 0.0,
+   "kind": "sim",
+   "text": "chunk 0 start: SITL launched, home = checkpoint pose s=5.2"
+  },
+  {
+   "t": 1.15,
+   "kind": "fw",
+   "text": "Calibrating barometer"
+  },
+  {
+   "t": 2.83,
+   "kind": "fw",
+   "text": "Barometer 1 calibration complete"
+  },
+  {
+   "t": 2.83,
+   "kind": "fw",
+   "text": "Barometer 2 calibration complete"
+  },
+  {
+   "t": 2.85,
+   "kind": "fw",
+   "text": "Beginning INS calibration. Do not move vehicle"
+  },
+  {
+   "t": 2.99,
+   "kind": "fw",
+   "text": "ArduPilot Ready"
+  },
+  {
+   "t": 2.99,
+   "kind": "fw",
+   "text": "AHRS: DCM active"
+  },
+  {
+   "t": 2.99,
+   "kind": "fw",
+   "text": "GPS 1: specified as MAV"
+  },
+  {
+   "t": 3.11,
+   "kind": "fw",
+   "text": "GPS 1: detected MAV"
+  },
+  {
+   "t": 5.01,
+   "kind": "fw",
+   "text": "EKF3 IMU0 initialised"
+  },
+  {
+   "t": 5.01,
+   "kind": "fw",
+   "text": "EKF3 IMU1 initialised"
+  },
+  {
+   "t": 6.69,
+   "kind": "fw",
+   "text": "EKF3 IMU0 tilt alignment complete"
+  },
+  {
+   "t": 6.69,
+   "kind": "fw",
+   "text": "EKF3 IMU1 tilt alignment complete"
+  },
+  {
+   "t": 6.77,
+   "kind": "fw",
+   "text": "EKF3 IMU0 MAG0 initial yaw alignment complete"
+  },
+  {
+   "t": 6.77,
+   "kind": "fw",
+   "text": "EKF3 IMU1 MAG0 initial yaw alignment complete"
+  },
+  {
+   "t": 15.15,
+   "kind": "fw",
+   "text": "EKF3 IMU0 origin set"
+  },
+  {
+   "t": 15.15,
+   "kind": "fw",
+   "text": "EKF3 IMU1 origin set"
+  },
+  {
+   "t": 15.19,
+   "kind": "fw",
+   "text": "Field Elevation Set: 43m"
+  },
+  {
+   "t": 42.79,
+   "kind": "fw",
+   "text": "EKF3 IMU0 is using GPS"
+  },
+  {
+   "t": 42.79,
+   "kind": "fw",
+   "text": "EKF3 IMU1 is using GPS"
+  },
+  {
+   "t": 42.79,
+   "kind": "fw",
+   "text": "AHRS: EKF3 active"
+  },
+  {
+   "t": 46.19,
+   "kind": "fw",
+   "text": "Fence Indexed OK"
+  },
+  {
+   "t": 46.25,
+   "kind": "pi",
+   "text": "fence upload ack=0 (81 vertices)"
+  },
+  {
+   "t": 46.29,
+   "kind": "fw",
+   "text": "Warning: Arming Checks Disabled"
+  },
+  {
+   "t": 46.29,
+   "kind": "fw",
+   "text": "Throttle armed"
+  },
+  {
+   "t": 47.25,
+   "kind": "pi",
+   "text": "boot done (GUIDED, armed, fence 81 pts)"
+  },
+  {
+   "t": 47.35,
+   "kind": "pi",
+   "text": "preflight OK (drop black->A): 372 Wh available, clock D-1 18:00"
+  },
+  {
+   "t": 47.75,
+   "kind": "pi",
+   "text": "undock: charger off, beacon + pre-motion warning (10 s)"
+  },
+  {
+   "t": 79.05,
+   "kind": "pi",
+   "text": "rear camera: bin axis -0.020 m off the estimate (camera -0.040 m) -> estimate corrected, re-aligning"
+  },
+  {
+   "t": 91.89,
+   "kind": "pi",
+   "text": "rear camera: bin axis -0.047 m off the estimate (camera 0.048 m) -> estimate corrected, re-aligning"
+  },
+  {
+   "t": 104.73,
+   "kind": "pi",
+   "text": "pre-grab gate MISS: lateral -0.079 m, yaw 0.29 deg (truth)"
+  },
+  {
+   "t": 116.25,
+   "kind": "pi",
+   "text": "pre-grab gate MISS: lateral -0.072 m, yaw 0.26 deg (truth)"
+  },
+  {
+   "t": 116.25,
+   "kind": "ALERT",
+   "text": "could not line up on bin black (pre-grab gate missed twice) - not grabbing"
+  },
+  {
+   "t": 116.25,
+   "kind": "pi",
+   "text": "FINISH alert: grab gate"
+  }
+ ]
+}

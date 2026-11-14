@@ -1,0 +1,583 @@
+{
+ "mass_kg_sim": 119.39,
+ "n": 24,
+ "passed": 24,
+ "cases": {
+  "mass x1.1": {
+   "grab ESE240SL x5": {
+    "ours_r2b": {
+     "n": 5,
+     "captured": 5,
+     "false_holds": 0,
+     "knocked": 0,
+     "fh50": 0,
+     "ok": true
+    },
+    "theirs_r2_115kg": {
+     "n": 5,
+     "captured": 5,
+     "false_holds": 0,
+     "knocked": 0,
+     "fh50": 0,
+     "ok": true
+    }
+   },
+   "climb mu0.22 crr0.09": {
+    "ours_r2b": {
+     "ok": true,
+     "reached_5m": true,
+     "dist_m": 5.0,
+     "time_s": 11.4,
+     "hold_creep_m": 0.03,
+     "roll": 0.005,
+     "pitch": 0.014,
+     "clear_min": 0.084,
+     "seated_all": true,
+     "bin_ground": 0.0,
+     "lift_pk_N": 1465.62
+    },
+    "theirs_r2_115kg": {
+     "ok": true,
+     "reached_5m": true,
+     "dist_m": 5.0,
+     "time_s": 11.4,
+     "hold_creep_m": 0.026,
+     "roll": 0.005,
+     "pitch": 0.014,
+     "clear_min": 0.084,
+     "seated_all": true,
+     "bin_ground": 0.0,
+     "lift_pk_N": 1453.12
+    }
+   },
+   "step one side": {
+    "ours_r2b": {
+     "ok": true,
+     "reached": true,
+     "dist_m": 4.72,
+     "roll": 2.87,
+     "pitch": 1.951,
+     "clear_min": 0.083,
+     "seated_all": true,
+     "bin_ground": 0.0,
+     "lift_pk_N": 2148.75
+    },
+    "theirs_r2_115kg": {
+     "ok": true,
+     "reached": true,
+     "dist_m": 4.71,
+     "roll": 2.871,
+     "pitch": 1.951,
+     "clear_min": 0.083,
+     "seated_all": true,
+     "bin_ground": 0.0,
+     "lift_pk_N": 2376.45
+    }
+   },
+   "estop fwd": {
+    "ours_r2b": {
+     "ok": true,
+     "stop_dist_m": 0.206,
+     "slide_after_stop_m": 0.001,
+     "roll": 0.004,
+     "pitch": 0.018,
+     "clear_min": 0.087,
+     "seated_all": true,
+     "bin_ground": 0.0,
+     "lift_pk_N": 1421.83
+    },
+    "theirs_r2_115kg": {
+     "ok": true,
+     "stop_dist_m": 0.201,
+     "slide_after_stop_m": 0.001,
+     "roll": 0.006,
+     "pitch": 0.018,
+     "clear_min": 0.087,
+     "seated_all": true,
+     "bin_ground": 0.0,
+     "lift_pk_N": 1369.15
+    }
+   },
+   "release CL up12 full": {
+    "ours_r2b": {
+     "ok": true,
+     "verdict": "PASS",
+     "roll": 0.003,
+     "pitch": 0.014,
+     "clear_min": -0.0,
+     "seated_all": false,
+     "bin_ground": 1178.961,
+     "bin_stable": true,
+     "lift_pk_N": 1358.23
+    },
+    "theirs_r2_115kg": {
+     "ok": true,
+     "verdict": "PASS",
+     "roll": 0.003,
+     "pitch": 0.013,
+     "clear_min": -0.0,
+     "seated_all": false,
+     "bin_ground": 1178.958,
+     "bin_stable": true,
+     "lift_pk_N": 1286.54
+    }
+   },
+   "release SL250 dn12 full": {
+    "ours_r2b": {
+     "ok": true,
+     "verdict": "PASS",
+     "roll": 0.005,
+     "pitch": 0.017,
+     "clear_min": -0.0,
+     "seated_all": false,
+     "bin_ground": 1217.63,
+     "bin_stable": true,
+     "lift_pk_N": 1320.31
+    },
+    "theirs_r2_115kg": {
+     "ok": true,
+     "verdict": "PASS",
+     "roll": 0.004,
+     "pitch": 0.017,
+     "clear_min": -0.0,
+     "seated_all": false,
+     "bin_ground": 1218.964,
+     "bin_stable": true,
+     "lift_pk_N": 1298.99
+    }
+   }
+  },
+  "mass x0.9": {
+   "grab ESE240SL x5": {
+    "ours_r2b": {
+     "n": 5,
+     "captured": 5,
+     "false_holds": 0,
+     "knocked": 0,
+     "fh50": 0,
+     "ok": true
+    },
+    "theirs_r2_115kg": {
+     "n": 5,
+     "captured": 5,
+     "false_holds": 0,
+     "knocked": 0,
+     "fh50": 0,
+     "ok": true
+    }
+   },
+   "climb mu0.22 crr0.09": {
+    "ours_r2b": {
+     "ok": true,
+     "reached_5m": true,
+     "dist_m": 5.0,
+     "time_s": 11.3,
+     "hold_creep_m": 0.029,
+     "roll": 0.005,
+     "pitch": 0.015,
+     "clear_min": 0.088,
+     "seated_all": true,
+     "bin_ground": 0.0,
+     "lift_pk_N": 1189.08
+    },
+    "theirs_r2_115kg": {
+     "ok": true,
+     "reached_5m": true,
+     "dist_m": 5.0,
+     "time_s": 11.2,
+     "hold_creep_m": 0.029,
+     "roll": 0.005,
+     "pitch": 0.014,
+     "clear_min": 0.088,
+     "seated_all": true,
+     "bin_ground": 0.0,
+     "lift_pk_N": 1187.08
+    }
+   },
+   "step one side": {
+    "ours_r2b": {
+     "ok": true,
+     "reached": true,
+     "dist_m": 4.71,
+     "roll": 2.87,
+     "pitch": 1.962,
+     "clear_min": 0.086,
+     "seated_all": true,
+     "bin_ground": 0.0,
+     "lift_pk_N": 2721.89
+    },
+    "theirs_r2_115kg": {
+     "ok": true,
+     "reached": true,
+     "dist_m": 4.71,
+     "roll": 2.871,
+     "pitch": 1.965,
+     "clear_min": 0.086,
+     "seated_all": true,
+     "bin_ground": 0.0,
+     "lift_pk_N": 2479.96
+    }
+   },
+   "estop fwd": {
+    "ours_r2b": {
+     "ok": true,
+     "stop_dist_m": 0.207,
+     "slide_after_stop_m": 0.001,
+     "roll": 0.006,
+     "pitch": 0.016,
+     "clear_min": 0.092,
+     "seated_all": true,
+     "bin_ground": 0.0,
+     "lift_pk_N": 1198.85
+    },
+    "theirs_r2_115kg": {
+     "ok": true,
+     "stop_dist_m": 0.189,
+     "slide_after_stop_m": 0.001,
+     "roll": 0.004,
+     "pitch": 0.016,
+     "clear_min": 0.091,
+     "seated_all": true,
+     "bin_ground": 0.0,
+     "lift_pk_N": 1198.58
+    }
+   },
+   "release CL up12 full": {
+    "ours_r2b": {
+     "ok": true,
+     "verdict": "PASS",
+     "roll": 0.011,
+     "pitch": 0.017,
+     "clear_min": -0.0,
+     "seated_all": false,
+     "bin_ground": 964.934,
+     "bin_stable": true,
+     "lift_pk_N": 1219.4
+    },
+    "theirs_r2_115kg": {
+     "ok": true,
+     "verdict": "PASS",
+     "roll": 0.012,
+     "pitch": 0.019,
+     "clear_min": -0.0,
+     "seated_all": false,
+     "bin_ground": 964.991,
+     "bin_stable": true,
+     "lift_pk_N": 1074.48
+    }
+   },
+   "release SL250 dn12 full": {
+    "ours_r2b": {
+     "ok": true,
+     "verdict": "PASS",
+     "roll": 0.004,
+     "pitch": 0.017,
+     "clear_min": -0.0,
+     "seated_all": false,
+     "bin_ground": 996.015,
+     "bin_stable": true,
+     "lift_pk_N": 1080.47
+    },
+    "theirs_r2_115kg": {
+     "ok": true,
+     "verdict": "PASS",
+     "roll": 0.004,
+     "pitch": 0.016,
+     "clear_min": -0.0,
+     "seated_all": false,
+     "bin_ground": 999.255,
+     "bin_stable": true,
+     "lift_pk_N": 1151.66
+    }
+   }
+  },
+  "friction x0.85": {
+   "grab ESE240SL x5": {
+    "ours_r2b": {
+     "n": 5,
+     "captured": 5,
+     "false_holds": 0,
+     "knocked": 0,
+     "fh50": 0,
+     "ok": true
+    },
+    "theirs_r2_115kg": {
+     "n": 5,
+     "captured": 5,
+     "false_holds": 0,
+     "knocked": 0,
+     "fh50": 0,
+     "ok": true
+    }
+   },
+   "climb mu0.22 crr0.09": {
+    "ours_r2b": {
+     "ok": true,
+     "reached_5m": true,
+     "dist_m": 5.0,
+     "time_s": 12.3,
+     "hold_creep_m": 0.031,
+     "roll": 0.005,
+     "pitch": 0.014,
+     "clear_min": 0.087,
+     "seated_all": true,
+     "bin_ground": 0.0,
+     "lift_pk_N": 1292.5
+    },
+    "theirs_r2_115kg": {
+     "ok": true,
+     "reached_5m": true,
+     "dist_m": 5.0,
+     "time_s": 12.1,
+     "hold_creep_m": 0.029,
+     "roll": 0.005,
+     "pitch": 0.014,
+     "clear_min": 0.086,
+     "seated_all": true,
+     "bin_ground": 0.0,
+     "lift_pk_N": 1301.17
+    }
+   },
+   "step one side": {
+    "ours_r2b": {
+     "ok": true,
+     "reached": true,
+     "dist_m": 4.71,
+     "roll": 2.871,
+     "pitch": 1.958,
+     "clear_min": 0.084,
+     "seated_all": true,
+     "bin_ground": 0.0,
+     "lift_pk_N": 2498.15
+    },
+    "theirs_r2_115kg": {
+     "ok": true,
+     "reached": true,
+     "dist_m": 4.71,
+     "roll": 2.871,
+     "pitch": 1.958,
+     "clear_min": 0.084,
+     "seated_all": true,
+     "bin_ground": 0.0,
+     "lift_pk_N": 2641.62
+    }
+   },
+   "estop fwd": {
+    "ours_r2b": {
+     "ok": true,
+     "stop_dist_m": 0.302,
+     "slide_after_stop_m": 0.001,
+     "roll": 0.004,
+     "pitch": 0.016,
+     "clear_min": 0.091,
+     "seated_all": true,
+     "bin_ground": 0.0,
+     "lift_pk_N": 1245.05
+    },
+    "theirs_r2_115kg": {
+     "ok": true,
+     "stop_dist_m": 0.291,
+     "slide_after_stop_m": 0.001,
+     "roll": 0.005,
+     "pitch": 0.015,
+     "clear_min": 0.09,
+     "seated_all": true,
+     "bin_ground": 0.0,
+     "lift_pk_N": 1302.2
+    }
+   },
+   "release CL up12 full": {
+    "ours_r2b": {
+     "ok": true,
+     "verdict": "PASS",
+     "roll": 0.013,
+     "pitch": 0.018,
+     "clear_min": -0.0,
+     "seated_all": false,
+     "bin_ground": 1071.911,
+     "bin_stable": true,
+     "lift_pk_N": 1178.49
+    },
+    "theirs_r2_115kg": {
+     "ok": true,
+     "verdict": "PASS",
+     "roll": 0.003,
+     "pitch": 0.014,
+     "clear_min": -0.0,
+     "seated_all": false,
+     "bin_ground": 1071.988,
+     "bin_stable": true,
+     "lift_pk_N": 1175.79
+    }
+   },
+   "release SL250 dn12 full": {
+    "ours_r2b": {
+     "ok": true,
+     "verdict": "PASS",
+     "roll": 0.006,
+     "pitch": 0.017,
+     "clear_min": -0.0,
+     "seated_all": false,
+     "bin_ground": 1095.33,
+     "bin_stable": true,
+     "lift_pk_N": 1222.75
+    },
+    "theirs_r2_115kg": {
+     "ok": true,
+     "verdict": "PASS",
+     "roll": 0.006,
+     "pitch": 0.017,
+     "clear_min": -0.0,
+     "seated_all": false,
+     "bin_ground": 1098.999,
+     "bin_stable": true,
+     "lift_pk_N": 1187.81
+    }
+   }
+  },
+  "bin crr 0.09": {
+   "grab ESE240SL x5": {
+    "ours_r2b": {
+     "n": 5,
+     "captured": 5,
+     "false_holds": 0,
+     "knocked": 0,
+     "fh50": 0,
+     "ok": true
+    },
+    "theirs_r2_115kg": {
+     "n": 5,
+     "captured": 5,
+     "false_holds": 0,
+     "knocked": 0,
+     "fh50": 0,
+     "ok": true
+    }
+   },
+   "climb mu0.22 crr0.09": {
+    "ours_r2b": {
+     "ok": true,
+     "reached_5m": true,
+     "dist_m": 5.0,
+     "time_s": 11.3,
+     "hold_creep_m": 0.027,
+     "roll": 0.005,
+     "pitch": 0.015,
+     "clear_min": 0.087,
+     "seated_all": true,
+     "bin_ground": 0.0,
+     "lift_pk_N": 1328.79
+    },
+    "theirs_r2_115kg": {
+     "ok": true,
+     "reached_5m": true,
+     "dist_m": 5.0,
+     "time_s": 11.3,
+     "hold_creep_m": 0.027,
+     "roll": 0.004,
+     "pitch": 0.014,
+     "clear_min": 0.086,
+     "seated_all": true,
+     "bin_ground": 0.0,
+     "lift_pk_N": 1326.04
+    }
+   },
+   "step one side": {
+    "ours_r2b": {
+     "ok": true,
+     "reached": true,
+     "dist_m": 4.71,
+     "roll": 2.872,
+     "pitch": 1.959,
+     "clear_min": 0.084,
+     "seated_all": true,
+     "bin_ground": 0.0,
+     "lift_pk_N": 2186.11
+    },
+    "theirs_r2_115kg": {
+     "ok": true,
+     "reached": true,
+     "dist_m": 4.71,
+     "roll": 2.872,
+     "pitch": 1.96,
+     "clear_min": 0.085,
+     "seated_all": true,
+     "bin_ground": 0.0,
+     "lift_pk_N": 2937.92
+    }
+   },
+   "estop fwd": {
+    "ours_r2b": {
+     "ok": true,
+     "stop_dist_m": 0.198,
+     "slide_after_stop_m": 0.001,
+     "roll": 0.004,
+     "pitch": 0.017,
+     "clear_min": 0.091,
+     "seated_all": true,
+     "bin_ground": 0.0,
+     "lift_pk_N": 1261.99
+    },
+    "theirs_r2_115kg": {
+     "ok": true,
+     "stop_dist_m": 0.191,
+     "slide_after_stop_m": 0.001,
+     "roll": 0.005,
+     "pitch": 0.017,
+     "clear_min": 0.09,
+     "seated_all": true,
+     "bin_ground": 0.0,
+     "lift_pk_N": 1286.26
+    }
+   },
+   "release CL up12 full": {
+    "ours_r2b": {
+     "ok": true,
+     "verdict": "PASS",
+     "roll": 0.003,
+     "pitch": 0.018,
+     "clear_min": -0.0,
+     "seated_all": false,
+     "bin_ground": 1071.413,
+     "bin_stable": true,
+     "lift_pk_N": 1183.56
+    },
+    "theirs_r2_115kg": {
+     "ok": true,
+     "verdict": "PASS",
+     "roll": 0.006,
+     "pitch": 0.015,
+     "clear_min": -0.0,
+     "seated_all": false,
+     "bin_ground": 1071.857,
+     "bin_stable": true,
+     "lift_pk_N": 1273.8
+    }
+   },
+   "release SL250 dn12 full": {
+    "ours_r2b": {
+     "ok": true,
+     "verdict": "PASS",
+     "roll": 0.005,
+     "pitch": 0.017,
+     "clear_min": -0.0,
+     "seated_all": false,
+     "bin_ground": 1106.423,
+     "bin_stable": true,
+     "lift_pk_N": 1236.19
+    },
+    "theirs_r2_115kg": {
+     "ok": true,
+     "verdict": "PASS",
+     "roll": 0.004,
+     "pitch": 0.016,
+     "clear_min": -0.0,
+     "seated_all": false,
+     "bin_ground": 1108.367,
+     "bin_stable": true,
+     "lift_pk_N": 1180.18
+    }
+   }
+  }
+ }
+}

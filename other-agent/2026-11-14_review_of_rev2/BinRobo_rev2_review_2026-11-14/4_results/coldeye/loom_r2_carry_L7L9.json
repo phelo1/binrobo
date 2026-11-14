@@ -1,0 +1,82 @@
+[
+[
+"carry",
+"L7",
+0,
+"BY HDPE rear cover (fixed)",
+"tug",
+679
+],
+[
+"carry",
+"L7",
+0,
+"EL Electronics pod",
+"tug",
+452
+],
+[
+"carry",
+"L7",
+3,
+"SN Comb ToF (gap + yaw) L",
+"lift",
+235
+],
+[
+"carry",
+"L7",
+4,
+"SN Comb ToF (gap + yaw) R",
+"lift",
+235
+],
+[
+"carry",
+"L7",
+5,
+"SW Comb contact switch (roller lever, 30 N)",
+"lift",
+235
+],
+[
+"carry",
+"L9",
+0,
+"FR Nose cross-member 50x50x2, raised to rail ",
+"tug",
+677
+],
+[
+"carry",
+"L9",
+0,
+"BY HDPE front cover (removable, shortened)",
+"tug",
+924
+],
+[
+"carry",
+"L9",
+0,
+"EL Electronics pod",
+"tug",
+718
+],
+[
+"carry",
+"L9",
+1,
+"LT Headlight L (dipped)",
+"tug",
+5558
+],
+[
+"carry",
+"L9",
+1,
+"LT Headlight R (dipped)",
+"tug",
+5558
+]
+]

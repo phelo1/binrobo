@@ -1,0 +1,334 @@
+[
+ {
+  "key": "s1a__s7",
+  "scenario": "s1a",
+  "seed": 7,
+  "result": "pass",
+  "outcome": "plan completed",
+  "hedge_min_m": 0.243,
+  "trips_wh": [
+   53.41
+  ],
+  "trip_min": [
+   57.1
+  ],
+  "soc_end": 0.7849,
+  "energy_wh": 53.53,
+  "last_dock": "D-1 18:57",
+  "first_motion": "D-1 18:00",
+  "placements": [
+   [
+    "pad:A",
+    0.078,
+    1.01
+   ]
+  ],
+  "dock_lat_mm": [
+   -3.1
+  ],
+  "bins": [
+   {
+    "bin": "black",
+    "lineup_m": -0.059,
+    "cam": [
+     [
+      -0.06,
+      -0.059
+     ],
+     [
+      0.006,
+      -0.0
+     ]
+    ],
+    "cam_err": [
+     -0.001,
+     0.006
+    ],
+    "cam_miss": 0,
+    "cam_reapp": 1,
+    "gate_reapp": 0,
+    "gate": [
+     [
+      -0.0,
+      0.05,
+      true
+     ]
+    ],
+    "grabbed": true
+   }
+  ],
+  "refusals": 0,
+  "guard": [
+   {
+    "t": 47.3,
+    "soc": 0.9,
+    "avail_wh": 371.8,
+    "budget_wh": 50.0,
+    "kind": "drop black->A"
+   }
+  ],
+  "yard_exit": null,
+  "verdict": "FAIL",
+  "fails": {
+   "C6": "trips [53.41] Wh, end SOC 0.785"
+  }
+ },
+ {
+  "key": "s1b__s7",
+  "scenario": "s1b",
+  "seed": 7,
+  "result": "pass",
+  "outcome": "plan completed",
+  "hedge_min_m": 0.175,
+  "trips_wh": [
+   51.68
+  ],
+  "trip_min": [
+   55.9
+  ],
+  "soc_end": 0.7886,
+  "energy_wh": 51.8,
+  "last_dock": "D0 18:56",
+  "first_motion": "D0 18:00",
+  "placements": [
+   [
+    "home:black",
+    0.038,
+    0.76
+   ]
+  ],
+  "dock_lat_mm": [
+   5.0
+  ],
+  "bins": [
+   {
+    "bin": "black",
+    "lineup_m": 0.006,
+    "cam": [
+     [
+      0.005,
+      0.006
+     ]
+    ],
+    "cam_err": [
+     -0.001
+    ],
+    "cam_miss": 0,
+    "cam_reapp": 0,
+    "gate_reapp": 0,
+    "gate": [
+     [
+      0.006,
+      0.84,
+      true
+     ]
+    ],
+    "grabbed": true
+   }
+  ],
+  "refusals": 0,
+  "guard": [
+   {
+    "t": 47.7,
+    "soc": 0.9,
+    "avail_wh": 371.8,
+    "budget_wh": 50.0,
+    "kind": "pickup black<-A"
+   }
+  ],
+  "yard_exit": null,
+  "verdict": "FAIL",
+  "fails": {
+   "C6": "trips [51.68] Wh, end SOC 0.789"
+  }
+ },
+ {
+  "key": "s3a__s7",
+  "scenario": "s3a",
+  "seed": 7,
+  "result": "pass",
+  "outcome": "plan completed",
+  "hedge_min_m": 0.209,
+  "trips_wh": [
+   52.0,
+   52.78,
+   52.76
+  ],
+  "trip_min": [
+   56.8,
+   56.1,
+   56.0
+  ],
+  "soc_end": 0.5501,
+  "energy_wh": 157.66,
+  "last_dock": "D-1 20:49",
+  "first_motion": "D-1 18:00",
+  "placements": [
+   [
+    "pad:A",
+    0.034,
+    2.41
+   ],
+   [
+    "pad:M",
+    0.064,
+    0.89
+   ],
+   [
+    "pad:F",
+    0.035,
+    1.26
+   ]
+  ],
+  "dock_lat_mm": [
+   -6.8,
+   -3.7,
+   7.2
+  ],
+  "bins": [
+   {
+    "bin": "brown",
+    "lineup_m": -0.019,
+    "cam": [
+     [
+      -0.02,
+      -0.019
+     ]
+    ],
+    "cam_err": [
+     -0.001
+    ],
+    "cam_miss": 0,
+    "cam_reapp": 0,
+    "gate_reapp": 0,
+    "gate": [
+     [
+      -0.019,
+      -0.8,
+      true
+     ]
+    ],
+    "grabbed": true
+   },
+   {
+    "bin": "black",
+    "lineup_m": -0.034,
+    "cam": [
+     [
+      -0.034,
+      -0.034
+     ],
+     [
+      -0.023,
+      -0.029
+     ]
+    ],
+    "cam_err": [
+     0.0,
+     0.006
+    ],
+    "cam_miss": 0,
+    "cam_reapp": 1,
+    "gate_reapp": 0,
+    "gate": [
+     [
+      -0.029,
+      -0.18,
+      true
+     ]
+    ],
+    "grabbed": true
+   },
+   {
+    "bin": "green",
+    "lineup_m": -0.024,
+    "cam": [
+     [
+      -0.024,
+      -0.024
+     ]
+    ],
+    "cam_err": [
+     0.0
+    ],
+    "cam_miss": 0,
+    "cam_reapp": 0,
+    "gate_reapp": 0,
+    "gate": [
+     [
+      -0.024,
+      -1.81,
+      true
+     ]
+    ],
+    "grabbed": true
+   }
+  ],
+  "refusals": 0,
+  "guard": [
+   {
+    "t": 47.2,
+    "soc": 0.9,
+    "avail_wh": 360.3,
+    "budget_wh": 50.0,
+    "kind": "drop brown->A"
+   },
+   {
+    "t": 3456.3,
+    "soc": 0.784,
+    "avail_wh": 308.3,
+    "budget_wh": 50.0,
+    "kind": "drop black->M"
+   },
+   {
+    "t": 6819.7,
+    "soc": 0.667,
+    "avail_wh": 255.5,
+    "budget_wh": 50.0,
+    "kind": "drop green->F"
+   }
+  ],
+  "yard_exit": [
+   {
+    "from_s": 9.3,
+    "from_lat": -4.56,
+    "path_m": 7.8,
+    "sweep_m": 0.83,
+    "used": true
+   },
+   {
+    "from_s": 9.5,
+    "from_lat": -2.97,
+    "path_m": 8.5,
+    "sweep_m": 2.94,
+    "used": true
+   }
+  ],
+  "verdict": "FAIL",
+  "fails": {
+   "C6": "trips [52.0, 52.78, 52.76] Wh, end SOC 0.550"
+  }
+ },
+ {
+  "key": "s4b__s7",
+  "scenario": "s4b",
+  "seed": 7,
+  "result": "pass",
+  "outcome": "plan completed",
+  "hedge_min_m": 0.268,
+  "trips_wh": [],
+  "trip_min": [],
+  "soc_end": 0.8936,
+  "energy_wh": 2.97,
+  "last_dock": null,
+  "first_motion": null,
+  "placements": [],
+  "dock_lat_mm": [],
+  "bins": [],
+  "refusals": 0,
+  "guard": null,
+  "yard_exit": null,
+  "verdict": "PASS",
+  "fails": {}
+ }
+]

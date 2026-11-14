@@ -1,0 +1,3 @@
+file '/workspace/projects/847c6e2d-79fb-41ac-8eca-c75df6a92b0c/work/rev2_vid/vid/grab_grab_CL203_i14/seg_000.mp4'
+file '/workspace/projects/847c6e2d-79fb-41ac-8eca-c75df6a92b0c/work/rev2_vid/vid/grab_grab_CL203_i14/seg_001.mp4'
+file '/workspace/projects/847c6e2d-79fb-41ac-8eca-c75df6a92b0c/work/rev2_vid/vid/grab_grab_CL203_i14/seg_002.mp4'

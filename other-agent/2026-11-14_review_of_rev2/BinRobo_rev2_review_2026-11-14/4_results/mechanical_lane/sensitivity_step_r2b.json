@@ -1,0 +1,163 @@
+{
+ "rocker stops +/-2 deg, pin 200 mm (as designed)": {
+  "step_one": {
+   "ok": true,
+   "reached": true,
+   "dist_m": 4.71,
+   "roll": 2.873,
+   "pitch": 1.957,
+   "clear_min": 0.084,
+   "seated_all": true,
+   "bin_ground": 0.0,
+   "lift_pk_N": 1894.43
+  },
+  "step_both": {
+   "ok": true,
+   "reached": true,
+   "dist_m": 4.71,
+   "roll": 0.082,
+   "pitch": 2.561,
+   "clear_min": 0.074,
+   "seated_all": true,
+   "bin_ground": 0.0,
+   "lift_pk_N": 3000.0
+  },
+  "grab_CL_i0_i14": null
+ },
+ "rocker stops +/-4 deg": {
+  "step_one": {
+   "ok": true,
+   "reached": true,
+   "dist_m": 4.71,
+   "roll": 2.877,
+   "pitch": 1.375,
+   "clear_min": 0.086,
+   "seated_all": true,
+   "bin_ground": 0.0,
+   "lift_pk_N": 2598.9
+  },
+  "step_both": {
+   "ok": true,
+   "reached": true,
+   "dist_m": 4.71,
+   "roll": 0.082,
+   "pitch": 2.561,
+   "clear_min": 0.074,
+   "seated_all": true,
+   "bin_ground": 0.0,
+   "lift_pk_N": 3000.0
+  },
+  "grab_CL_i0_i14": [
+   [
+    0,
+    "success"
+   ],
+   [
+    14,
+    "no_dock"
+   ]
+  ]
+ },
+ "rocker locked (+/-0.05 deg)": {
+  "step_one": {
+   "ok": true,
+   "reached": true,
+   "dist_m": 4.71,
+   "roll": 2.869,
+   "pitch": 2.532,
+   "clear_min": 0.079,
+   "seated_all": true,
+   "bin_ground": 0.0,
+   "lift_pk_N": 2568.82
+  },
+  "step_both": {
+   "ok": true,
+   "reached": true,
+   "dist_m": 4.71,
+   "roll": 0.214,
+   "pitch": 2.561,
+   "clear_min": 0.075,
+   "seated_all": true,
+   "bin_ground": 0.0,
+   "lift_pk_N": 3000.0
+  },
+  "grab_CL_i0_i14": [
+   [
+    0,
+    "success"
+   ],
+   [
+    14,
+    "no_dock"
+   ]
+  ]
+ },
+ "pivot pin 150 mm": {
+  "step_one": {
+   "ok": true,
+   "reached": true,
+   "dist_m": 4.71,
+   "roll": 2.87,
+   "pitch": 1.964,
+   "clear_min": 0.084,
+   "seated_all": true,
+   "bin_ground": 0.0,
+   "lift_pk_N": 2043.0
+  },
+  "step_both": {
+   "ok": true,
+   "reached": true,
+   "dist_m": 4.71,
+   "roll": 0.466,
+   "pitch": 2.56,
+   "clear_min": 0.081,
+   "seated_all": true,
+   "bin_ground": 0.0,
+   "lift_pk_N": 3000.0
+  },
+  "grab_CL_i0_i14": [
+   [
+    0,
+    "success"
+   ],
+   [
+    14,
+    "success"
+   ]
+  ]
+ },
+ "pivot pin 250 mm": {
+  "step_one": {
+   "ok": true,
+   "reached": true,
+   "dist_m": 4.71,
+   "roll": 2.872,
+   "pitch": 1.946,
+   "clear_min": 0.085,
+   "seated_all": true,
+   "bin_ground": 0.0,
+   "lift_pk_N": 2289.23
+  },
+  "step_both": {
+   "ok": true,
+   "reached": true,
+   "dist_m": 4.71,
+   "roll": 0.159,
+   "pitch": 2.561,
+   "clear_min": 0.08,
+   "seated_all": true,
+   "bin_ground": 0.0,
+   "lift_pk_N": 2834.95
+  },
+  "grab_CL_i0_i14": [
+   [
+    0,
+    "success"
+   ],
+   [
+    14,
+    "success"
+   ]
+  ]
+ }
+}

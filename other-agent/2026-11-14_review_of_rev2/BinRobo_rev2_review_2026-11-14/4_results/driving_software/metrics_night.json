@@ -1,0 +1,142 @@
+[
+ {
+  "key": "s1a__s7",
+  "scenario": "s1a",
+  "seed": 7,
+  "result": "alert",
+  "outcome": "grab gate",
+  "hedge_min_m": null,
+  "trips_wh": [],
+  "trip_min": [],
+  "soc_end": 0.8985,
+  "energy_wh": 0.72,
+  "last_dock": null,
+  "first_motion": "D-1 18:00",
+  "placements": [],
+  "dock_lat_mm": [],
+  "bins": [
+   {
+    "bin": "black",
+    "lineup_m": -0.049,
+    "cam": [
+     [
+      -0.04,
+      -0.049
+     ],
+     [
+      0.048,
+      -0.036
+     ]
+    ],
+    "cam_err": [
+     0.009,
+     0.084
+    ],
+    "cam_miss": 0,
+    "cam_reapp": 2,
+    "gate_reapp": 1,
+    "gate": [
+     [
+      -0.079,
+      0.29,
+      false
+     ],
+     [
+      -0.072,
+      0.26,
+      false
+     ]
+    ],
+    "grabbed": false
+   }
+  ],
+  "refusals": 1,
+  "guard": [
+   {
+    "t": 47.3,
+    "soc": 0.9,
+    "avail_wh": 371.8,
+    "budget_wh": 50.0,
+    "kind": "drop black->A"
+   }
+  ],
+  "yard_exit": null,
+  "verdict": "FAIL",
+  "fails": {
+   "C3": "first motion D-1 18:00, last dock None",
+   "C6": "trips [] Wh, end SOC 0.898",
+   "C7": "result alert / grab gate",
+   "C8": "gates ['black -0.079 m 0.29 deg MISS', 'black -0.072 m 0.26 deg MISS']"
+  }
+ },
+ {
+  "key": "s1b__s7",
+  "scenario": "s1b",
+  "seed": 7,
+  "result": "alert",
+  "outcome": "grab gate",
+  "hedge_min_m": 0.223,
+  "trips_wh": [],
+  "trip_min": [],
+  "soc_end": 0.8599,
+  "energy_wh": 18.63,
+  "last_dock": null,
+  "first_motion": "D0 18:00",
+  "placements": [],
+  "dock_lat_mm": [],
+  "bins": [
+   {
+    "bin": "black",
+    "lineup_m": 0.016,
+    "cam": [
+     [
+      0.026,
+      0.016
+     ],
+     [
+      0.052,
+      -0.031
+     ]
+    ],
+    "cam_err": [
+     0.01,
+     0.083
+    ],
+    "cam_miss": 0,
+    "cam_reapp": 2,
+    "gate_reapp": 1,
+    "gate": [
+     [
+      -0.073,
+      0.88,
+      false
+     ],
+     [
+      -0.058,
+      0.97,
+      false
+     ]
+    ],
+    "grabbed": false
+   }
+  ],
+  "refusals": 1,
+  "guard": [
+   {
+    "t": 47.2,
+    "soc": 0.9,
+    "avail_wh": 371.8,
+    "budget_wh": 50.0,
+    "kind": "pickup black<-A"
+   }
+  ],
+  "yard_exit": null,
+  "verdict": "FAIL",
+  "fails": {
+   "C3": "first motion D0 18:00, last dock None",
+   "C6": "trips [] Wh, end SOC 0.860",
+   "C7": "result alert / grab gate",
+   "C8": "gates ['black -0.073 m 0.88 deg MISS', 'black -0.058 m 0.97 deg MISS']"
+  }
+ }
+]

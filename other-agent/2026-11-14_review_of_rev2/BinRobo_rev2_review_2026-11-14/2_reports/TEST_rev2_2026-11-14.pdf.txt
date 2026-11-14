@@ -1,0 +1,344 @@
+[text of TEST_rev2_2026-11-14.pdf, taken out of the PDF for the public repository; pictures and layout are not kept]
+
+                 BinRobo revision 2 - independent mechanical re-test (MuJoCo gate, pick-ups, lane)
+            Re-run of the other agent’s revision 2 claims with their own scripts and frozen pass rules, 14 Nov 2026
+
+
+
+
+Verdict
+Revision 2 reproduces as claimed at the weight it was modelled at, but it does not pass at its real weight, and two
+lane conditions are harder than the report says.
+     1. At 119.39 kg (their table, 118.49 kg by the gate’s count) the claims hold. The gate passes 9 of 9, the results match
+        their stored files digit for digit, and all 24 stress cases pass. Of 150 clip-lid pick-ups, 148 succeed and 2 are safe refusals. Every
+        filled-pothole lane run passes, including P1 with the sharp 40 mm step, which they did not run.
+     2. At the audited weight the gate fails G9. The cold-eye audit gives about 125.6 kg by the gate’s count. At that weight the
+        robot still drives every test we ran (G1-G5, G8), but G9 fails because 125.6 kg is over the 120 kg limit, so the result is 8
+        of 9. The weight table, not the physics, is what fails.
+     3. The pothole must be filled; that is a hard site rule, not an option. With the 60 mm pothole open, P1 is scored PASS
+        by the frozen lane rules, yet the robot is stuck in the hole for 1,145 s (19 minutes) and uses 50.6 Wh instead of 15.2 Wh.
+        The frozen lane verdict has no time limit. With a 120 s stuck limit, P1, P5h and P7 all FAIL. No rocker or pin setting fixes this.
+     4. Two of their statements are wrong in detail.
+           • “Never lifted a bin more than 31 mm off-centre” is false for the gate set. Trial s203 i=17 was lifted with the nib 50.6 mm
+              off-centre. That is 1 false hold under the ORIGINAL 50 mm band, and 0 under the 80 mm band they now use.
+           • Their gate summary quotes G8 = 36.5 deg. That is B2-F’s figure, read by mistake. Revision 2’s own value is 34.7 deg
+              (still a pass).
+     5. Simulator version matters. On MuJoCo 3.17.0 a cylinder wheel meets a box edge as a vertical wall. G3 (the two-wheel
+        step) then stalls at 1.34 m. Their numbers need MuJoCo 4.0.1, which reproduces them exactly. We treat 4.0.1 as the valid
+        result and 3.17 as an artefact (section 5).
+Nothing here is field data. Every number is from simulation (MuJoCo digital twin, frozen B2-F criteria).
+
+1. Their claims against ours
+The Ours column was re-run in this test on MuJoCo 4.0.1 with their switches. Unless stated, it is at 119.39 kg in the sim (118.49 kg
+by the gate’s count). “Same” means equal to the digits shown.
+
+#         Item                              Their claim                          Ours                                                Agree?
+1         Gate tests at 119.4 kg            9 of 9                               9 of 9 (res_r2/gate_B2F__r2b.json)                  yes
+2         Gate pick-ups, 3 bins x 30        89 of 90                             89 of 90 (CL i=14 refused, no_dock)                 yes
+3         Least bin-wheel clearance in      74 mm                                74 mm (G3 two-wheel step)                           yes
+          the gate
+4         E-stop on 12 % slope              0.20 m                               0.198 m fwd, 0.092 m rev                            yes
+5         Turn on the spot with a bin       2.56 m                               2.56 m                                              yes
+6         G8 least tip angle (hand calc     36.5 deg (gate summary)              34.7 deg (36.5 is B2-F’s untagged file)             no (still PASS)
+          on the sim CG)
+7         Weight, gate count                118.5 kg (limit 120)                 118.49 as tabled; cold-eye audit 122.8-127.7,       no
+                                                                                 central 125.6
+8         Clip-lid bin, 4 sets x 30         118 of 120                           118 of 120, the same trial results trial by trial   yes
+          (s203/303/403/503)
+9         Extra clip-lid seed s603 (ours)   -                                    30 of 30                                            -
+10        120 extra pick-ups                -                                    119 of 120; 1 refusal (s503 i=6)                    -
+          (s303/403/503/603)
+11        False holds, 80 mm band (700      0                                    0 of 150                                            yes
+          mm comb)
+12        False holds, ORIGINAL 50          “does not lean on the wider band”    1 of 150 (s203 i=17, nib 50.6 mm)                   no
+          mm band
+13        Largest off-centre lift           31 mm                                50.6 mm (gate set); 31.7 mm in s303-503 only        no
+14        Mean sideways error, first        18-24 mm                             17.8-24.8 mm per set                                yes
+          arrival, clip-lid
+15        Refusals at 119.4 kg              2 in 180                             2 in 150 CL (s203 i=14, s503 i=6), safe, bin not    yes
+                                                                                 knocked
+16        Stress cases (mass +/-10 %,       20/20 driving + 20/20 pick-ups, at   24 of 24 at 119.39 kg (incl. 8 release cases);      yes (stronger)
+          mu x0.85, bin crr 0.09)           115.8 kg                             20/20 pick-ups
+17        Lane P1, pothole filled           pass, 50 mm, 0.305 m, 15.2 Wh        PASS, 50.2 mm, 0.305 m, 15.2 Wh                     yes
+18        Lane P2a                          pass, 0.325 m, 28.6 Wh               PASS, 0.311 m, 28.64 Wh                             yes (hedge -14
+                                                                                                                                     mm)
+
+
+
+                                                                           1
+BinRobo revision 2                                                                                                  mechanical re-test, 14 Nov 2026
+
+
+
+#          Item                             Their claim                              Ours                                              Agree?
+19         Lane P2c                         pass, 98 mm, 0.362 m, 29.7 Wh            PASS, 99.4 mm, 0.336 m, 29.7 Wh                   yes (hedge -26
+                                                                                                                                       mm)
+20         Lane P3                          pass, 100 mm, 0.306 m, 15.1 Wh           PASS, 100 mm, 0.306 m, 15.08 Wh                   yes
+21         Lane P4a / P4b                   pass, 100 mm                             PASS 97.6 mm / PASS 98.0 mm                       yes
+22         Lane P7 night, x1.1, mu x0.8     pass, 49 mm, 0.305 m, 21.5 Wh            PASS, 48.7 mm, 0.305 m, 21.47 Wh                  yes
+23         Sharp 40 mm kerb down (P5a)      pass, 46 mm                              PASS, 46.4 mm, lift at 3,000 N cap                yes
+24         Sharp 40 mm kerb up (P5d)        pass, 77 mm                              PASS, 75.8 mm                                     yes
+25         Person steps out (P6a)           pass, 108 mm                             PASS, 102.3 mm                                    yes
+26         Least tip margin, any lane run   22.6 deg                                 22.6 deg (P4b)                                    yes
+27         Full P1 with the SHARP step,     not run                                  PASS, 46.3 mm, 15.2 Wh, lift 3,000 N cap at       -
+           pothole filled                                                            the step
+28         Pothole open                     “fails all four runs” (tested at 115.8   at 119.39 kg: P1 frozen PASS after 1,145 s        partly; see section
+                                            kg only)                                 stuck; P2a FAIL (stall s 550); P2c crossed        3
+                                                                                     cleanly; P7 stuck > 769 s
+29         Open trench (P5g)                stalls                                   FAIL, stall at s 455.1, lift at 3 kN cap          yes
+30         Lift reaches 3,000 N on the      yes, passes                              yes (G3 both, 3,000 N), passes                    yes
+           two-wheel kerb
+31         MuJoCo version                   4.0.1                                    4.0.1 reproduces; 3.17.0 fails G3 (1.34 m)        see section 5
+32         Gate at audited weight (about    not run                                  G1 30/30, G2-G5 and G8 pass; G9 FAIL              -
+           125.6 kg count)
+
+
+
+Not re-tested here: the driving-software (SITL) score, lane-fit and turning margins, and costs. SITL is covered by the separate SITL
+re-test report of the same date.
+
+2. Pick-ups (G1 clip-lid bin) at 119.39 kg
+We re-ran their three seed sets, s303, s403 and s503, and added our own s603. Each set is 30 trials of the frozen G1 Monte Carlo.
+Every pick-up was logged with simB2hx_r2m.py, a logging-only wrapper with no change to the dynamics. It records, for each trial:
+      • the true sideways bin offset at every docking attempt;
+      • the nib’s sideways position in the bin at the end of the grab;
+      • seated() re-evaluated with the ORIGINAL 640 mm comb band (50 mm on this bin) next to the 700 mm comb band (80 mm)
+        the model now uses.
+
+                                                                                                                      First-arrival
+                                                                                                                      mean / max abs     Max end nib
+Set                   Captured          Refusals            FH 80 mm              FH 50 mm         Knocked            dy                 offset (success)
+s203 (gate)           29/30             1 (i=14)            0                     1 (i=17)         0                  20.5 / 73.4 mm     50.6 mm
+s303                  30/30             0                   0                     0                0                  24.8 / 69.0 mm     31.7 mm
+s403                  30/30             0                   0                     0                0                  17.8 / 48.2 mm     28.8 mm
+s503                  29/30             1 (i=6)             0                     0                0                  20.9 / 73.4 mm     22.9 mm
+s603 (ours)           30/30             0                   0                     0                0                  19.8 / 69.8 mm     39.0 mm
+All 150               148               2                   0                     1                0
+Extra 120             119               1                   0                     0                0
+
+
+      • The results are identical to their stored files, trial for trial, for s203, s303, s403 and s503.
+           – One small difference: s503 i=6 logs a different last dock dy (-20.5 mm here, -33.3 mm in theirs). The outcome is the same
+              refusal.
+      • The 50 mm false hold (s203 i=17). The robot docked at 53.9 mm off, re-approached, and accepted at 22.5 mm (the limit
+        is 25 mm). It ended with the nib 50.6 mm off-centre in the bin.
+           – The dock-offset check and the final nib position therefore differ by about 28 mm.
+           – The 25 mm refuse-to-lift rule does not bound where the nib ends up.
+           – The trial passes under the 80 mm band only.
+           – It is marginal (0.6 mm), but it contradicts “never more than 31 mm off-centre”.
+      • Refusals are safe. In both refusals the bin was left standing and not knocked. The robot made three docking attempts and
+        one re-dock, and the offsets never came under 25 mm.
+      • At the audited weight, the same s203 set gave 30/30 with no false holds under either band. Trial i=14 succeeded at 126.5
+        kg. The difference comes from chaotic docking, not from a better design.
+Files:
+      • summary: /workspace/work/out/rev2/mech/pickup_r2b_seeds.json (script work/rev2_vid/pickup_summary.py);
+      • raw: /workspace/work/out/rev2/mech/raw/B2F_grab_ESE240CL_r2b*.json.
+
+3. The pothole time-limit loophole
+The frozen lane verdict checks clearance, hedge, tip, seating and stall (12 s with no progress). It has no limit on total time or
+energy. A robot that keeps moving inside the pothole never trips the 12 s stall rule.
+
+
+                                                                              2
+BinRobo revision 2                                                                                                mechanical re-test, 14 Nov 2026
+
+
+
+That is what happens in P1 with the pothole open:
+   • the robot reaches s 549 at t = 1,136 s;
+   • it slews sideways between lat 0 and 0.8 m in a limit cycle of about 450 s, with the hedge as close as 0.238 m;
+   • it escapes at t = 2,282 s, just before the 2,400 s drive timeout;
+   • the verdict is PASS after 50.6 Wh, against 15.2 Wh with the pothole filled.
+Tester re-score (work/rev2_vid/lane_timelimit.py -> /workspace/work/out/rev2/mech/lane_timelimit_r2b.json). “Stuck”
+is the longest time the robot needs to gain 5 m of net chainage. This includes the grab, the set-down and planned stops, which are
+all under 60 s. Any run stuck for more than 120 s FAILS in practice. This rule is ours, not part of the frozen criteria.
+
+Run (4.0.1 unless stated)       Frozen verdict                Stuck (s)                       Where                           Time-limit verdict
+Every filled-pothole run        PASS                          14-58                           grab / set-down                 PASS
+(P1, P2a, P2c, P3, P4a,
+P4b, P5a/c/d/f, P6a, P7,
+P1 sharp)
+P5g open trench                 FAIL                          33                              s 455                           FAIL
+P1, pothole open                PASS                          1,145                           s 550                           FAIL
+P5h pothole stretch             PASS                          1,145                           s 550                           FAIL
+(snapshot of P1)
+P7, pothole open                truncated                     > 776, still stuck              s 550                           FAIL
+P2a, pothole open (empty)       FAIL (stall s 550)            -                               s 550                           FAIL
+P2c, pothole open (13 kg        truncated after crossing      57                              grab                            pass in practice
+bin)
+P5h, +3 kg                      PASS                          162                             s 550                           FAIL
+P5h on MuJoCo 3.17.0            PASS                          15                              -                               PASS (artefact, section 5)
+
+
+
+Fix for the scoring: add a per-run time limit, for example the filled-run time + 120 s, and an energy limit to the frozen lane
+criteria. Without them a trapped robot can score PASS.
+
+4. Sensitivity: rocker stops and pivot-pin height
+4a. Pothole stretch (P5h, 110 kg, 4.0.1)
+
+Setting                                             Result                                             Stuck in the pothole
+Rocker stops +/-2 deg, pin 200 mm (as               escaped after 1,145 s                              FAIL (time)
+designed)
+Rocker stops +/-4 deg                               still stuck when truncated                         > 624 s, FAIL
+Rocker locked (+/-0.05 deg)                         still stuck when truncated                         > 319 s, FAIL
+Pivot pin 150 mm                                    still stuck when truncated                         > 319 s, FAIL
+Pivot pin 250 mm                                    escaped                                            282 s, FAIL
++3 kg (mass proxy)                                  escaped                                            162 s, FAIL
+
+
+
+No setting gives a reliable crossing. Escape or trap depends chaotically on the setting. The pothole has to be filled.
+
+4b. Sharp 40 mm step (G3, gate runner, 4.0.1)
+
+Setting                                             One side: reached / roll / pitch / lift peak       Both sides: reached / roll / clearance / lift peak
++/-2 deg, pin 200 mm (as designed)                  yes / 2.87 / 1.96 deg / 1,894 N                    yes / 0.08 deg / 74 mm / 3,000 N
++/-4 deg                                            yes / 2.88 / 1.38 deg / 2,599 N                    yes / 0.08 deg / 74 mm
+Locked                                              yes / 2.87 / 2.53 deg / 2,569 N                    yes / 0.21 deg / 75 mm
+Pin 150 mm                                          yes / 2.87 / 1.96 deg / 2,043 N                    yes / 0.47 deg / 81 mm
+Pin 250 mm                                          yes / 2.87 / 1.95 deg / 2,289 N                    yes / 0.16 deg / 80 mm
+
+
+   • The step passes with every setting.
+   • The rocker is not what gets the robot over the step. Under MuJoCo 4.0.1 the plain wheel climbs it.
+   • G1 at i=0 and i=14 for each setting is in sensitivity_step_r2b.json.
+   • Lane P5a/P5d at 3.17 vs 4.0.1: P5a passes on both, with clearance 37.6 mm on 3.17 and 46.4 mm on 4.0.1.
+
+5. MuJoCo 3.17.0 vs 4.0.1
+
+Check                                               3.17.0                                             4.0.1
+G3 step, both sides, 119.4 kg                       stalls at 1.34 m (FAIL)                            reaches 4.71 m, roll 0.082 deg (their 0.079)
+G3 step, one side                                   -                                                  roll 2.873 / pitch 1.957 deg, same as theirs
+G1 CL trial i=14                                    success after 3 re-approaches                      no_dock refusal, same as theirs
+
+
+
+                                                                            3
+BinRobo revision 2                                                                                               mechanical re-test, 14 Nov 2026
+
+
+
+Check                                               3.17.0                                            4.0.1
+Probe: 330 mm cylinder vs 40 mm box edge            normal at the edge horizontal (1,0,0): a wall.    climbs at 380 N (castor; theory 405 N) and 400
+(h2/stepedge_probe.py)                              Penetrates 15 mm, then the wheel pops up          N (drive; theory 430 N), and rises exactly 40 mm
+                                                    104-150 mm at any push from 300 N. Not
+                                                    physical.
+Same probe with a sphere                            correct 37 deg edge normal                        correct
+Lane P5h pothole                                    crosses cleanly in 15 s                           trapped 1,145 s
+
+
+   • Conclusion. The 3.17 cylinder-box edge contact is an artefact, so 4.0.1 is the valid result. All primary numbers in this report
+     use 4.0.1.
+   • Earlier B2-F results scored on 3.17 that involve sharp edges are suspect in both directions:
+       – G3 failures may be artefacts;
+       – pothole and trench passes may be too easy.
+
+6. Gate at the audited mass (about 125.6 kg by the gate’s count)
+   • Mass file. revG/sim/cg/h2/mass_cgB2_r2b_aud2.json (copy in /workspace/work/out/rev2/mech/). It adds the cold-eye
+     M-1 central items, +7.15 kg, to their r2b table. This gives 125.64 kg by the gate’s count and 126.5 kg in the sim. Items added:
+       – actuator base bracket +1.18 kg;
+       – fasteners +2.0 kg;
+       – cable chain, lift driver and bolted hard stops +0.75 kg;
+       – solid pivot housing +0.65 kg;
+       – 10 mm foot plates +0.27 kg;
+       – contactors +0.6 kg;
+       – bumper brackets -0.6 kg;
+       – carriage plate 80 mm deeper +2.3 kg.
+   • A trap in the earlier audit file. The earlier session’s mass_cgB2_r2b_aud.json listed the carriage item as a second carriage
+     row. The sim reads carriage[0] only, so that file silently ran at 124.2 kg. The _r2baud2 runs merge the item and do carry
+     126.5 kg. Both sets pass the same tests.
+
+Gate test (aud2, 126.5 kg sim)                      Result                                            At 119.39 kg
+G1 ESE240CL x30                                     30/30, FH 0 (80 mm) and 0 (50 mm), max nib        29/30, FH50 = 1
+                                                    48.1 mm
+G2 climb 12 %, mu 0.22, crr 0.09                    PASS, 11.3 s, creep 0.028 m                       PASS 11.3 s
+G3 step one / both                                  PASS / PASS, clearance 84 / 74 mm, lift 2,653 /   PASS / PASS
+                                                    3,000 N (cap)
+G4 e-stop fwd                                       PASS, 0.208 m                                     0.198 m
+G5 turn with bin                                    PASS, 2.56 m                                      2.56 m
+G8 static cross-slope 110 kg; tip hand calc         PASS; least 34.1 deg, castor lift-off 26.6 deg    34.7 / 26.2 deg
+G9 weight <= 120 kg                                 FAIL, 125.64 kg                                   PASS 118.49 kg
+
+
+   • The _r2baud set at 124.2 kg in the sim also passed G2 (mu 0.22 crr 0.06), G4 rev, G6 release up and down 12 %, and G8 crR
+     and dn. G1 there was 30/30.
+   • Not run at the audited mass: the other G2/G6 cases, G7 (dt check) and the lane.
+   • Verdict at the audited mass: 8 of 9. The physics passes; the weight limit fails. To pass G9, revision 2 must lose about 5.6
+     kg or the 120 kg limit must be re-justified.
+
+7. Perturbations at 119.39 kg (full B2-F set of 24)
+
+                                                                                                                                   Release SL250
+Case                  Grab SL x5              Climb 12 %          Step one side         E-stop fwd            Release CL up12      dn12
+mass x1.1 (131 kg     5/5                     PASS 11.4 s         PASS                  0.206 m               PASS                 PASS
+robot)
+mass x0.9             5/5                     PASS 11.3 s         PASS                  0.207 m               PASS                 PASS
+friction x0.85        5/5                     PASS 12.3 s         PASS                  0.302 m               PASS                 PASS
+bin crr 0.09          5/5                     PASS 11.3 s         PASS                  0.198 m               PASS                 PASS
+
+
+   • 24 of 24 pass, 0 false holds under both bands. Their 20/20 was at 115.8 kg; this result is at 119.39 kg.
+   • Friction x0.85 lengthens the e-stop by half, to 0.30 m. It is still within the limit.
+   • File: /workspace/work/out/rev2/mech/perturbations_r2b.json.
+
+8. Videos
+All are mp4, H.264, 1280x720 at 25 fps, rendered with the software rasteriser (no OpenGL), in /workspace/work/out/rev2/videos/.
+Each carries the caption “Digital twin simulation - not field footage”.
+
+
+                                                                          4
+BinRobo revision 2                                                                                 mechanical re-test, 14 Nov 2026
+
+
+
+File                                        Length                                      Shows
+rev2_P1_filled.mp4                          50 s                                        P1 full 240 L, 110 kg, pothole filled: grab,
+                                                                                        transit at x40, set-down. PASS
+rev2_P1_pothole_open.mp4                    50 s                                        P1 with the pothole open: the 1,145 s limit cycle
+                                                                                        at s 550 (x20/x100). End card shows the frozen
+                                                                                        PASS against the time-limit FAIL
+rev2_P5g_trench_open.mp4                    36 s                                        Open 200 mm trench: stall at s 455.1. FAIL
+rev2_step_sharp_up_down.mp4                 49 s                                        Sharp 40 mm step down (P5a) and up (P5d),
+                                                                                        110 kg. Both PASS
+rev2_P4a_wet_descent_stop.mp4               33 s                                        12 % wet-leaf descent, stop and hold 10 s. PASS
+rev2_pickup_success_CL203_i0.mp4            37 s                                        Clip-lid pick-up, gate trial s203 i=0: docked 0.1
+                                                                                        mm off, captured
+rev2_pickup_refusal_CL203_i14.mp4           56 s                                        Gate trial s203 i=14: four docking attempts at
+                                                                                        55/51/36/56 mm off, refuse to lift, bin left
+                                                                                        standing
+
+
+
+How the videos were made:
+   • The lane videos re-use the B2-F lane tooling (work/b2f_lanephys/render_lane.py) unchanged.              The wrapper is
+     work/rev2_vid/render_r2.py, run on the rev2 recordings in work/b2f_lanephys/runs_r2b_*.
+   • The pick-up videos come from a new recorder, work/rev2_vid/rec_r2_grab.py. It replays the exact runB2 trial with
+     simB2hx_r2m, and its result was checked against the queue result. The renderer is work/rev2_vid/grab_video.py.
+   • The B2-F CAD meshes are posed from the rev2 body poses. Rev2-only detail parts (rocker hangers, bumper brackets) are not
+     drawn, and the clip-lid bin is drawn as the 240 L CAD bin.
+
+9. Caveats and what was not run
+   • Not run:
+       – the B2-F S12 comparison (only G3 one side was run, as instructed when time was short);
+       – the +3 kg proxy full gate;
+       – the full 3.17 gate (A/B only);
+       – G6/G7 and lane runs at the audited mass;
+       – pothole-open P2c to the end (truncated after a clean crossing).
+   • The pothole sensitivity runs were truncated while still stuck. They are lower bounds, already over 120 s.
+   • Chaos. Docking and pothole escape change outcome with small changes: s203 i=14 refuses at 119.4 kg but succeeds at 126.5
+     kg, and some pothole runs trap while others escape. Single runs are not statistics. Only the pick-up counts (150 trials) are.
+   • The time-limit rule (stuck over 120 s = FAIL) is our addition, not a frozen criterion.
+   • The audited mass is the cold-eye’s central estimate. The range is 122.8-127.7 kg, and every value in the range fails G9.
+   • No structural check was made here. Strength (B-2 in the cold-eye) is not covered by these simulations.
+   • The 12 % pitch and the feature chainages are assumed overlays on the lane profile, as in B2-F.
+   • Files:
+       – progress log: revG/sim/cg/h2/PROGRESS_REV2.md;
+       – queues: h2/q_r2.txt, h2/q_r2_aud2.txt;
+       – results: h2/res_r2/ and /workspace/work/out/rev2/mech/ (summaries plus raw/).
+
+
+
+
+                                                                5
+

@@ -1,0 +1,156 @@
+# PROGRESS rev2 SITL independent re-test (2026-11-14)
+Rules: one SITL at a time (flock /tmp/rev2_sitl.lock), chunked foreground calls of run_chunk_rev2.sh, kill by PID only.
+Code: P/sitl/b2f/scripts_rev2 (frozen world/scen/score/ana/ck copies, md5 = FROZEN; their runner_x/companion_x verbatim;
+companion_xr = companion_x + DI-2 resume-only fix; companion_xs = xr + labelled STRESS switches, off by default).
+Binary: ArduRover 4.6.2 (bin/ardurover_aarch64). Instance -I3 (ports 5790/5792/5793, sim 9032) to stay off other agents' ports.
+Out: /workspace/work/out/rev2/sitl/runs (60 scored), runs_var (m122, stress). Ckpt: P/sitl/b2f/ckpt_rev2.
+Resume: `cd P/sitl/b2f; ./run_chunk_rev2.sh base queues/scored_rev2.txt` until QUEUE left 0 / 60;
+then m122 queues/rev2_m122.txt; cam15/lid15/night queues/rev2_stress.txt.
+
+## Done
+- Diff audit; their stored 54 results re-scored with the frozen scorer: 48/54, identical verdicts (their score.json matches).
+
+## Chunk log
+- (chunk 1, 07:5x UTC) base: SAVED s8,s11a,s11b,s12a,s12b,s7,s6a,s6b seed 7; QUEUE left 52/60
+- 07:45 UTC base: [    0.0] sim  chunk 0 start: SITL launched, home = checkpoint pose s=565.0;SAVED s9__s7 alert outcome=bin missing sim 237 s;QUEUE left 51 / 60, wall 16 s;
+- 07:47 UTC base: [    0.0] sim  chunk 0 start: SITL launched, home = checkpoint pose s=565.0;SAVED s10a__s7 alert outcome=bin tipped sim 178 s;[    0.0] sim  chunk 0 start: SITL launched, home = checkpoint pose s=565.0;SAVED s10b__s7 alert outcome=bin blocked sim 177 s;[    0.0] sim  chunk 0 start: SITL launched, home = checkpoint pose s=34.9;SAVED s4a__s7 pass outcome=plan completed sim 296 s;[    0.0] sim  chunk 0 start: SITL launched, home = checkpoint pose s=34.9;SAVED s4b__s7 pass outcome=plan completed sim 276 s;[    0.0] sim  chunk 0 start: SITL launched, home = checkpoint pose s=34.9;SAVED s4c__s7 alert outcome=no fix hold sim 251 s;QUEUE left 46 / 60, wall 93 s;
+- 07:49 UTC base: [    0.0] sim  chunk 0 start: SITL launched, home = checkpoint pose s=295.0;SAVED s5a__s7 pass outcome=plan completed sim 258 s;[    0.0] sim  chunk 0 start: SITL launched, home = checkpoint pose s=585.0;SAVED s5b__s7 pass outcome=plan completed sim 259 s;[    0.0] sim  chunk 0 start: SITL launched, home = checkpoint pose s=5.2;checkpoint s1a__s7 t=744 wall 43;QUEUE left 44 / 60, wall 98 s;
+- 07:49 UTC base: BUSY: another rev2 runner is still alive;
+- 07:50 UTC base: [  743.7] sim  chunk 1 start: SITL launched, home = checkpoint pose s=240.2;checkpoint s1a__s7 t=2656 wall 99;QUEUE left 44 / 60, wall 99 s;
+- 07:52 UTC base: [ 2656.2] sim  chunk 2 start: SITL launched, home = checkpoint pose s=298.0;SAVED s1a__s7 pass outcome=plan completed sim 3459 s;[    0.0] sim  chunk 0 start: SITL launched, home = checkpoint pose s=5.2;checkpoint s1b__s7 t=279 wall 27;QUEUE left 43 / 60, wall 91 s;
+- 07:54 UTC base: [  279.2] sim  chunk 1 start: SITL launched, home = checkpoint pose s=87.8;checkpoint s1b__s7 t=1607 wall 91;QUEUE left 43 / 60, wall 91 s;
+- 07:55 UTC base: [ 1607.3] sim  chunk 2 start: SITL launched, home = checkpoint pose s=594.7;checkpoint s1b__s7 t=2680 wall 92;QUEUE left 43 / 60, wall 92 s;
+- 07:56 UTC base: BUSY: another rev2 runner is still alive;
+- 07:57 UTC base: [ 2680.0] sim  chunk 3 start: SITL launched, home = checkpoint pose s=296.1;SAVED s1b__s7 pass outcome=plan completed sim 3536 s;QUEUE left 42 / 60, wall 77 s;
+- 07:58 UTC base: [    0.0] sim  chunk 0 start: SITL launched, home = checkpoint pose s=5.2;checkpoint s3a__s7 t=1366 wall 91;QUEUE left 42 / 60, wall 91 s;
+- 07:59 UTC base: BUSY: another rev2 runner is still alive;
+- 07:59 UTC base: BUSY: another rev2 runner is still alive;
+- 08:00 UTC base: [ 1365.5] sim  chunk 1 start: SITL launched, home = checkpoint pose s=490.2;checkpoint s3a__s7 t=2947 wall 94;QUEUE left 42 / 60, wall 95 s;
+- 08:02 UTC base: [ 2947.1] sim  chunk 2 start: SITL launched, home = checkpoint pose s=194.9;checkpoint s3a__s7 t=4494 wall 95;QUEUE left 42 / 60, wall 95 s;
+- 08:02 UTC base: BUSY: another rev2 runner is still alive;
+- 08:02 UTC base: BUSY: another rev2 runner is still alive;
+- 08:02 UTC base: BUSY: another rev2 runner is still alive;
+- 08:03 UTC base: [ 4493.7] sim  chunk 3 start: SITL launched, home = checkpoint pose s=353.3;checkpoint s3a__s7 t=5799 wall 95;QUEUE left 42 / 60, wall 96 s;
+- 08:07 UTC base: [ 5798.9] sim  chunk 4 start: SITL launched, home = checkpoint pose s=403.4;checkpoint s3a__s7 t=7365 wall 93;QUEUE left 42 / 60, wall 94 s;
+- 08:08 UTC base: BUSY: rev2 runner alive (pid 3744;
+- 08:09 UTC base: [ 7365.5] sim  chunk 5 start: SITL launched, home = checkpoint pose s=161.2;checkpoint s3a__s7 t=8886 wall 93;QUEUE left 42 / 60, wall 94 s;
+- 08:11 UTC base: [ 8886.0] sim  chunk 6 start: SITL launched, home = checkpoint pose s=508.8;Traceback (most recent call last):;
+- 08:13 UTC NOTE: s3a__s7 SAVED pass (sim 10238 s) but the INT timeout hit after the 175 MB trace.json write, before the ckpt was removed (Traceback = KeyboardInterrupt). result/trace complete; stale ckpt removed by hand. Timeout margin raised to budget+30 s, budget 80.
+- s3a__s7 trace.json is TRUNCATED (killed mid-write) -> no video from it; result.json valid.
+- 08:14 UTC base: [ 1759.4] sim  chunk 1 start: SITL launched, home = checkpoint pose s=573.9;checkpoint s3b__s7 t=3406 wall 86;QUEUE left 41 / 60, wall 87 s;
+- 08:14 UTC base: BUSY: rev2 runner alive (pid 4191;
+- 08:16 UTC base: BUSY: rev2 runner alive (pid 4191;
+- 08:16 UTC base: BUSY: rev2 runner alive (pid 4191;
+- 08:16 UTC base: BUSY: rev2 runner alive (pid 4191;
+- 08:16 UTC base: BUSY: rev2 runner alive (pid 4191;
+- 08:16 UTC base: BUSY: rev2 runner alive (pid 4191;
+- 08:16 UTC base: [ 3405.8] sim  chunk 2 start: SITL launched, home = checkpoint pose s=16.1;checkpoint s3b__s7 t=5069 wall 88;QUEUE left 41 / 60, wall 88 s;
+- 08:18 UTC base: [ 5068.5] sim  chunk 3 start: SITL launched, home = checkpoint pose s=618.4;checkpoint s3b__s7 t=6498 wall 89;QUEUE left 41 / 60, wall 90 s;
+- 08:19 UTC base: [ 6497.7] sim  chunk 4 start: SITL launched, home = checkpoint pose s=61.6;checkpoint s3b__s7 t=7915 wall 88;QUEUE left 41 / 60, wall 89 s;
+- 08:21 UTC base: [ 7914.7] sim  chunk 5 start: SITL launched, home = checkpoint pose s=454.2;checkpoint s3b__s7 t=9438 wall 90;QUEUE left 41 / 60, wall 91 s;
+- 08:22 UTC base: [ 9438.5] sim  chunk 6 start: SITL launched, home = checkpoint pose s=237.9;SAVED s3b__s7 pass outcome=plan completed sim 10170 s;QUEUE left 40 / 60, wall 63 s;
+- 08:23 UTC base: BUSY: rev2 runner alive (pid 5414;
+- 08:23 UTC base: BUSY: rev2 runner alive (pid 5414;
+- 08:23 UTC base: BUSY: rev2 runner alive (pid 5414;
+- 08:23 UTC base: BUSY: rev2 runner alive (pid 5414;
+- 08:23 UTC base: BUSY: rev2 runner alive (pid 5414;
+- 08:23 UTC base: BUSY: rev2 runner alive (pid 5414;
+- 08:23 UTC base: BUSY: rev2 runner alive (pid 5414;
+- 08:23 UTC base: BUSY: rev2 runner alive (pid 5414;
+- 08:23 UTC base: [    0.0] sim  chunk 0 start: SITL launched, home = checkpoint pose s=5.2;SAVED s8__s11 alert outcome=energy guard sim 47 s;[    0.0] sim  chunk 0 start: SITL launched, home = checkpoint pose s=5.2;SAVED s11a__s11 alert outcome=wind no-go sim 47 s;[    0.0] sim  chunk 0 start: SITL launched, home = checkpoint pose s=5.2;SAVED s11b__s11 alert outcome=frost no-go sim 47 s;[    0.0] sim  chunk 0 start: SITL launched, home = checkpoint pose s=585.0;SAVED s12a__s11 alert outcome=pad outside geofence sim 47 s;[    0.0] sim  chunk 0 start: SITL launched, home = checkpoint pose s=600.0;SAVED s12b__s11 alert outcome=firmware fence hold sim 95 s;[    0.0] sim  chunk 0 start: SITL launched, home = checkpoint pose s=200.0;SAVED s7__s11 alert outcome=e-stop sim 139 s;[    0.0] sim  chunk 0 start: SITL launched, home = checkpoint pose s=200.0;SAVED s6a__s11 alert outcome=companion freeze -> firmware HOLD sim 153 s;QUEUE left 33 / 60, wall 76 s;
+- NOTE: the BUSY lines are from chunk calls I issued in parallel by mistake; the pgrep guard refused them, so no two runners overlapped. One call at a time from here.
+- 08:25 UTC base: [    0.0] sim  chunk 0 start: SITL launched, home = checkpoint pose s=617.5;SAVED s6b__s11 alert outcome=companion freeze -> firmware HOLD sim 113 s;[    0.0] sim  chunk 0 start: SITL launched, home = checkpoint pose s=565.0;SAVED s9__s11 alert outcome=bin missing sim 232 s;[    0.0] sim  chunk 0 start: SITL launched, home = checkpoint pose s=565.0;SAVED s10a__s11 alert outcome=bin tipped sim 173 s;[    0.0] sim  chunk 0 start: SITL launched, home = checkpoint pose s=565.0;SAVED s10b__s11 alert outcome=bin blocked sim 173 s;[    0.0] sim  chunk 0 start: SITL launched, home = checkpoint pose s=34.9;SAVED s4a__s11 pass outcome=plan completed sim 293 s;QUEUE left 28 / 60, wall 85 s;
+- 08:26 UTC base: [    0.0] sim  chunk 0 start: SITL launched, home = checkpoint pose s=34.9;SAVED s4b__s11 pass outcome=plan completed sim 276 s;[    0.0] sim  chunk 0 start: SITL launched, home = checkpoint pose s=34.9;SAVED s4c__s11 alert outcome=no fix hold sim 247 s;[    0.0] sim  chunk 0 start: SITL launched, home = checkpoint pose s=295.0;SAVED s5a__s11 pass outcome=plan completed sim 266 s;[    0.0] sim  chunk 0 start: SITL launched, home = checkpoint pose s=585.0;checkpoint s5b__s11 t=170 wall 23;QUEUE left 25 / 60, wall 85 s;
+- 08:28 UTC base: [  170.2] sim  chunk 1 start: SITL launched, home = checkpoint pose s=618.7;SAVED s5b__s11 pass outcome=plan completed sim 307 s;[    0.0] sim  chunk 0 start: SITL launched, home = checkpoint pose s=5.2;checkpoint s1a__s11 t=1473 wall 72;QUEUE left 24 / 60, wall 86 s;
+- 08:29 UTC base: [ 1472.6] sim  chunk 1 start: SITL launched, home = checkpoint pose s=527.6;checkpoint s1a__s11 t=3065 wall 86;QUEUE left 24 / 60, wall 86 s;
+- 08:31 UTC base: [ 3064.8] sim  chunk 2 start: SITL launched, home = checkpoint pose s=119.8;SAVED s1a__s11 pass outcome=plan completed sim 3436 s;[    0.0] sim  chunk 0 start: SITL launched, home = checkpoint pose s=5.2;checkpoint s1b__s11 t=764 wall 45;QUEUE left 23 / 60, wall 81 s;
+- 08:32 UTC base: [  763.6] sim  chunk 1 start: SITL launched, home = checkpoint pose s=281.7;checkpoint s1b__s11 t=2359 wall 86;QUEUE left 23 / 60, wall 86 s;
+- 08:33 UTC base: [ 2358.8] sim  chunk 2 start: SITL launched, home = checkpoint pose s=397.7;SAVED s1b__s11 pass outcome=plan completed sim 3454 s;QUEUE left 22 / 60, wall 68 s;
+- 08:35 UTC base: [    0.0] sim  chunk 0 start: SITL launched, home = checkpoint pose s=5.2;checkpoint s3a__s11 t=1541 wall 88;QUEUE left 22 / 60, wall 88 s;
+- 08:36 UTC base: [ 1541.4] sim  chunk 1 start: SITL launched, home = checkpoint pose s=542.2;checkpoint s3a__s11 t=3083 wall 88;QUEUE left 22 / 60, wall 88 s;
+- 08:38 UTC base: [ 3083.3] sim  chunk 2 start: SITL launched, home = checkpoint pose s=126.0;checkpoint s3a__s11 t=4393 wall 90;QUEUE left 22 / 60, wall 90 s;
+- 08:40 UTC base: [ 4392.9] sim  chunk 3 start: SITL launched, home = checkpoint pose s=326.8;checkpoint s3a__s11 t=5778 wall 89;QUEUE left 22 / 60, wall 90 s;
+- 08:41 UTC base: [ 5778.1] sim  chunk 4 start: SITL launched, home = checkpoint pose s=405.6;checkpoint s3a__s11 t=7312 wall 90;QUEUE left 22 / 60, wall 90 s;
+- 08:43 UTC base: [ 7312.2] sim  chunk 5 start: SITL launched, home = checkpoint pose s=127.8;checkpoint s3a__s11 t=8701 wall 90;QUEUE left 22 / 60, wall 91 s;
+- 08:44 UTC base: [ 8701.0] sim  chunk 6 start: SITL launched, home = checkpoint pose s=597.0;checkpoint s3a__s11 t=10005 wall 83;QUEUE left 22 / 60, wall 85 s;
+- 08:46 UTC base: [10005.2] sim  chunk 7 start: SITL launched, home = checkpoint pose s=75.0;SAVED s3a__s11 pass outcome=plan completed sim 10258 s;[    0.0] sim  chunk 0 start: SITL launched, home = checkpoint pose s=5.2;checkpoint s3b__s11 t=723 wall 45;QUEUE left 21 / 60, wall 81 s;
+- 08:47 UTC base: [  722.8] sim  chunk 1 start: SITL launched, home = checkpoint pose s=263.1;checkpoint s3b__s11 t=2267 wall 88;QUEUE left 21 / 60, wall 88 s;
+- 08:49 UTC base: [ 2266.7] sim  chunk 2 start: SITL launched, home = checkpoint pose s=407.4;checkpoint s3b__s11 t=3767 wall 89;QUEUE left 21 / 60, wall 89 s;
+- 08:50 UTC base: [ 3767.0] sim  chunk 3 start: SITL launched, home = checkpoint pose s=141.9;checkpoint s3b__s11 t=5259 wall 89;QUEUE left 21 / 60, wall 89 s;
+- 08:52 UTC base: [ 5258.9] sim  chunk 4 start: SITL launched, home = checkpoint pose s=552.8;checkpoint s3b__s11 t=6667 wall 89;QUEUE left 21 / 60, wall 90 s;
+- 08:53 UTC base: [ 6666.9] sim  chunk 5 start: SITL launched, home = checkpoint pose s=18.1;checkpoint s3b__s11 t=8236 wall 89;QUEUE left 21 / 60, wall 90 s;
+- 08:55 UTC base: [ 8236.4] sim  chunk 6 start: SITL launched, home = checkpoint pose s=557.1;checkpoint s3b__s11 t=9560 wall 83;QUEUE left 21 / 60, wall 84 s;
+- 08:56 UTC base: [ 9559.5] sim  chunk 7 start: SITL launched, home = checkpoint pose s=210.2;SAVED s3b__s11 pass outcome=plan completed sim 10190 s;[    0.0] sim  chunk 0 start: SITL launched, home = checkpoint pose s=5.2;SAVED s8__s23 alert outcome=energy guard sim 47 s;QUEUE left 19 / 60, wall 66 s;
+- 08:57 UTC base: [    0.0] sim  chunk 0 start: SITL launched, home = checkpoint pose s=5.2;SAVED s11a__s23 alert outcome=wind no-go sim 47 s;[    0.0] sim  chunk 0 start: SITL launched, home = checkpoint pose s=5.2;SAVED s11b__s23 alert outcome=frost no-go sim 47 s;[    0.0] sim  chunk 0 start: SITL launched, home = checkpoint pose s=585.0;SAVED s12a__s23 alert outcome=pad outside geofence sim 47 s;[    0.0] sim  chunk 0 start: SITL launched, home = checkpoint pose s=600.0;SAVED s12b__s23 alert outcome=firmware fence hold sim 95 s;[    0.0] sim  chunk 0 start: SITL launched, home = checkpoint pose s=200.0;SAVED s7__s23 alert outcome=e-stop sim 144 s;[    0.0] sim  chunk 0 start: SITL launched, home = checkpoint pose s=200.0;SAVED s6a__s23 alert outcome=companion freeze -> firmware HOLD sim 161 s;[    0.0] sim  chunk 0 start: SITL launched, home = checkpoint pose s=617.5;SAVED s6b__s23 alert outcome=companion freeze -> firmware HOLD sim 113 s;QUEUE left 12 / 60, wall 78 s;
+- 08:59 UTC base: [    0.0] sim  chunk 0 start: SITL launched, home = checkpoint pose s=565.0;SAVED s9__s23 alert outcome=bin missing sim 244 s;[    0.0] sim  chunk 0 start: SITL launched, home = checkpoint pose s=565.0;SAVED s10a__s23 alert outcome=bin tipped sim 184 s;[    0.0] sim  chunk 0 start: SITL launched, home = checkpoint pose s=565.0;SAVED s10b__s23 alert outcome=bin blocked sim 184 s;[    0.0] sim  chunk 0 start: SITL launched, home = checkpoint pose s=34.9;SAVED s4a__s23 pass outcome=plan completed sim 305 s;QUEUE left 8 / 60, wall 78 s;
+- 09:00 UTC base: [    0.0] sim  chunk 0 start: SITL launched, home = checkpoint pose s=34.9;SAVED s4b__s23 pass outcome=plan completed sim 289 s;[    0.0] sim  chunk 0 start: SITL launched, home = checkpoint pose s=34.9;SAVED s4c__s23 alert outcome=no fix hold sim 252 s;[    0.0] sim  chunk 0 start: SITL launched, home = checkpoint pose s=295.0;SAVED s5a__s23 pass outcome=plan completed sim 277 s;[    0.0] sim  chunk 0 start: SITL launched, home = checkpoint pose s=585.0;checkpoint s5b__s23 t=179 wall 24;QUEUE left 5 / 60, wall 91 s;
+- 09:02 UTC base: [  179.4] sim  chunk 1 start: SITL launched, home = checkpoint pose s=617.9;SAVED s5b__s23 pass outcome=plan completed sim 322 s;[    0.0] sim  chunk 0 start: SITL launched, home = checkpoint pose s=5.2;checkpoint s1a__s23 t=1340 wall 77;QUEUE left 4 / 60, wall 92 s;
+- 09:03 UTC base: [ 1340.2] sim  chunk 1 start: SITL launched, home = checkpoint pose s=488.0;checkpoint s1a__s23 t=2998 wall 91;QUEUE left 4 / 60, wall 91 s;
+- 09:05 UTC base: [ 2997.7] sim  chunk 2 start: SITL launched, home = checkpoint pose s=162.1;SAVED s1a__s23 pass outcome=plan completed sim 3479 s;[    0.0] sim  chunk 0 start: SITL launched, home = checkpoint pose s=5.2;checkpoint s1b__s23 t=911 wall 52;QUEUE left 3 / 60, wall 87 s;
+- 09:06 UTC base: [  911.1] sim  chunk 1 start: SITL launched, home = checkpoint pose s=335.3;checkpoint s1b__s23 t=2632 wall 91;QUEUE left 3 / 60, wall 91 s;
+- 09:08 UTC base: [ 2631.8] sim  chunk 2 start: SITL launched, home = checkpoint pose s=282.6;SAVED s1b__s23 pass outcome=plan completed sim 3479 s;[    0.0] sim  chunk 0 start: SITL launched, home = checkpoint pose s=5.2;checkpoint s3a__s23 t=452 wall 32;QUEUE left 2 / 60, wall 84 s;
+- 09:10 UTC base: [  451.6] sim  chunk 1 start: SITL launched, home = checkpoint pose s=108.9;checkpoint s3a__s23 t=1930 wall 91;QUEUE left 2 / 60, wall 91 s;
+- 09:11 UTC base: [ 1930.4] sim  chunk 2 start: SITL launched, home = checkpoint pose s=588.0;checkpoint s3a__s23 t=3672 wall 92;QUEUE left 2 / 60, wall 92 s;
+- 09:13 UTC base: [ 3671.7] sim  chunk 3 start: SITL launched, home = checkpoint pose s=22.9;checkpoint s3a__s23 t=5054 wall 92;QUEUE left 2 / 60, wall 92 s;
+- 09:15 UTC base: [ 5054.3] sim  chunk 4 start: SITL launched, home = checkpoint pose s=544.1;checkpoint s3a__s23 t=6600 wall 92;QUEUE left 2 / 60, wall 93 s;
+- 09:16 UTC base: [ 6599.8] sim  chunk 5 start: SITL launched, home = checkpoint pose s=109.9;checkpoint s3a__s23 t=8175 wall 93;QUEUE left 2 / 60, wall 94 s;
+- 09:18 UTC base: [ 8174.5] sim  chunk 6 start: SITL launched, home = checkpoint pose s=445.9;checkpoint s3a__s23 t=9623 wall 86;QUEUE left 2 / 60, wall 87 s;
+- 09:19 UTC base: [ 9623.4] sim  chunk 7 start: SITL launched, home = checkpoint pose s=257.7;SAVED s3a__s23 pass outcome=plan completed sim 10327 s;QUEUE left 1 / 60, wall 59 s;
+- 09:20 UTC base: [    0.0] sim  chunk 0 start: SITL launched, home = checkpoint pose s=5.2;checkpoint s3b__s23 t=1743 wall 92;QUEUE left 1 / 60, wall 92 s;
+- 09:22 UTC base: [ 1743.4] sim  chunk 1 start: SITL launched, home = checkpoint pose s=585.2;checkpoint s3b__s23 t=3256 wall 90;QUEUE left 1 / 60, wall 91 s;
+- 09:23 UTC base: [ 3256.3] sim  chunk 2 start: SITL launched, home = checkpoint pose s=16.4;checkpoint s3b__s23 t=4855 wall 91;QUEUE left 1 / 60, wall 91 s;
+- 09:25 UTC base: [ 4855.3] sim  chunk 3 start: SITL launched, home = checkpoint pose s=557.6;checkpoint s3b__s23 t=6178 wall 93;QUEUE left 1 / 60, wall 93 s;
+- 09:27 UTC base: [ 6177.6] sim  chunk 4 start: SITL launched, home = checkpoint pose s=209.7;checkpoint s3b__s23 t=7736 wall 93;QUEUE left 1 / 60, wall 94 s;
+- 09:28 UTC base: [ 7736.4] sim  chunk 5 start: SITL launched, home = checkpoint pose s=361.9;checkpoint s3b__s23 t=9151 wall 90;QUEUE left 1 / 60, wall 91 s;
+- 09:30 UTC base: [ 9151.5] sim  chunk 6 start: SITL launched, home = checkpoint pose s=371.1;SAVED s3b__s23 pass outcome=plan completed sim 10222 s;QUEUE left 0 / 60, wall 87 s;
+- 09:30 UTC scored queue COMPLETE 60/60; scored with frozen scripts/b2f_score.py -> out/rev2/sitl/score.{json,md}
+- 09:32 UTC m122: [    0.0] sim  chunk 0 start: SITL launched, home = checkpoint pose s=34.9;SAVED s4b__s7_m122 pass outcome=plan completed sim 276 s;[    0.0] sim  chunk 0 start: SITL launched, home = checkpoint pose s=5.2;checkpoint s1a__s7_m122 t=1140 wall 68;QUEUE left 3 / 4, wall 91 s;
+- 09:33 UTC m122: [ 1140.0] sim  chunk 1 start: SITL launched, home = checkpoint pose s=399.0;checkpoint s1a__s7_m122 t=2735 wall 91;QUEUE left 3 / 4, wall 92 s;
+- 09:35 UTC m122: [ 2734.5] sim  chunk 2 start: SITL launched, home = checkpoint pose s=262.8;SAVED s1a__s7_m122 pass outcome=plan completed sim 3472 s;[    0.0] sim  chunk 0 start: SITL launched, home = checkpoint pose s=5.2;checkpoint s1b__s7_m122 t=606 wall 38;QUEUE left 2 / 4, wall 86 s;
+- 09:36 UTC m122: [  606.3] sim  chunk 1 start: SITL launched, home = checkpoint pose s=220.2;checkpoint s1b__s7_m122 t=2167 wall 91;QUEUE left 2 / 4, wall 91 s;
+- 09:38 UTC m122: [ 2167.1] sim  chunk 2 start: SITL launched, home = checkpoint pose s=449.6;SAVED s1b__s7_m122 pass outcome=plan completed sim 3403 s;QUEUE left 1 / 4, wall 74 s;
+- 09:38 UTC m122: BUSY: rev2 runner alive (pid );
+- 09:38 UTC m122: BUSY: rev2 runner alive (pid 10131;
+- 09:39 UTC m122: BUSY: rev2 runner alive (pid 10131;
+- 09:39 UTC m122: BUSY: rev2 runner alive (pid 10131;
+- 09:39 UTC m122: BUSY: rev2 runner alive (pid 10131;
+- 09:39 UTC m122: BUSY: rev2 runner alive (pid 10131;
+- 09:39 UTC m122: BUSY: rev2 runner alive (pid 10131;
+- 09:39 UTC m122: [    0.0] sim  chunk 0 start: SITL launched, home = checkpoint pose s=5.2;checkpoint s3a__s7_m122 t=1593 wall 91;QUEUE left 1 / 4, wall 91 s;
+- 09:41 UTC m122: [ 1592.7] sim  chunk 1 start: SITL launched, home = checkpoint pose s=591.7;checkpoint s3a__s7_m122 t=3229 wall 91;QUEUE left 1 / 4, wall 92 s;
+- 09:42 UTC m122: [ 3228.8] sim  chunk 2 start: SITL launched, home = checkpoint pose s=63.3;checkpoint s3a__s7_m122 t=4809 wall 93;QUEUE left 1 / 4, wall 93 s;
+- 09:44 UTC m122: [ 4809.3] sim  chunk 3 start: SITL launched, home = checkpoint pose s=502.1;checkpoint s3a__s7_m122 t=6347 wall 92;QUEUE left 1 / 4, wall 93 s;
+- 09:46 UTC m122: [ 6347.3] sim  chunk 4 start: SITL launched, home = checkpoint pose s=166.6;checkpoint s3a__s7_m122 t=7894 wall 93;QUEUE left 1 / 4, wall 94 s;
+- 09:47 UTC m122: [ 7893.6] sim  chunk 5 start: SITL launched, home = checkpoint pose s=385.1;checkpoint s3a__s7_m122 t=9560 wall 95;QUEUE left 1 / 4, wall 96 s;
+- 09:48 UTC m122: [ 9560.0] sim  chunk 6 start: SITL launched, home = checkpoint pose s=221.4;SAVED s3a__s7_m122 pass outcome=plan completed sim 10178 s;QUEUE left 0 / 4, wall 56 s;
+- 09:50 UTC cam15: [    0.0] sim  chunk 0 start: SITL launched, home = checkpoint pose s=5.2;checkpoint s1b__s7_cam15 t=1711 wall 91;QUEUE left 2 / 2, wall 91 s;
+- 09:51 UTC cam15: [ 1710.8] sim  chunk 1 start: SITL launched, home = checkpoint pose s=605.9;SAVED s1b__s7_cam15 pass outcome=plan completed sim 3363 s;QUEUE left 1 / 2, wall 89 s;
+- 09:53 UTC cam15: [    0.0] sim  chunk 0 start: SITL launched, home = checkpoint pose s=5.2;checkpoint s1a__s7_cam15 t=2150 wall 91;QUEUE left 1 / 2, wall 91 s;
+- 09:54 UTC cam15: [ 2150.3] sim  chunk 1 start: SITL launched, home = checkpoint pose s=469.9;SAVED s1a__s7_cam15 pass outcome=plan completed sim 3402 s;QUEUE left 0 / 2, wall 57 s;
+- 09:56 UTC lid15: [    0.0] sim  chunk 0 start: SITL launched, home = checkpoint pose s=5.2;checkpoint s1b__s7_lid15 t=2149 wall 91;QUEUE left 2 / 2, wall 91 s;
+- 09:57 UTC lid15: [ 2149.2] sim  chunk 1 start: SITL launched, home = checkpoint pose s=440.4;SAVED s1b__s7_lid15 pass outcome=plan completed sim 3395 s;[    0.0] sim  chunk 0 start: SITL launched, home = checkpoint pose s=5.2;checkpoint s1a__s7_lid15 t=346 wall 22;QUEUE left 1 / 2, wall 91 s;
+- 09:59 UTC lid15: [  346.1] sim  chunk 1 start: SITL launched, home = checkpoint pose s=82.1;checkpoint s1a__s7_lid15 t=2004 wall 91;QUEUE left 1 / 2, wall 91 s;
+- 10:00 UTC lid15: [ 2003.6] sim  chunk 2 start: SITL launched, home = checkpoint pose s=543.6;checkpoint s1a__s7_lid15 t=3346 wall 90;QUEUE left 1 / 2, wall 91 s;
+- 10:01 UTC lid15: [ 3346.5] sim  chunk 3 start: SITL launched, home = checkpoint pose s=37.6;SAVED s1a__s7_lid15 pass outcome=plan completed sim 3513 s;QUEUE left 0 / 2, wall 22 s;
+- 10:02 UTC night: [    0.0] sim  chunk 0 start: SITL launched, home = checkpoint pose s=5.2;checkpoint s1b__s7_night t=1385 wall 91;QUEUE left 2 / 2, wall 91 s;
+- 10:03 UTC night: [ 1384.6] sim  chunk 1 start: SITL launched, home = checkpoint pose s=534.6;SAVED s1b__s7_night alert outcome=grab gate sim 1716 s;[    0.0] sim  chunk 0 start: SITL launched, home = checkpoint pose s=5.2;SAVED s1a__s7_night alert outcome=grab gate sim 116 s;QUEUE left 0 / 2, wall 40 s;
+## Status 10:5x UTC
+- DONE: scored 60/60 (48/60 PASS, all 12 missions fail C6 only); m122 4 runs (1/4, s4b pass, 3 missions C6); cam15 2, lid15 2 (all C6-only fails), night 2 (both refused: grab gate).
+- Metrics: /workspace/work/out/rev2/sitl/metrics_{base,m122,cam15,lid15,night}.json (scripts_rev2/rev2_metrics.py); variant scores in out/rev2/sitl/var_*/score.json.
+- FINDING: their camera RNG (_cam_rng) is an attribute of the companion object, re-seeded at every chunk resume -> in chunked runs every grab re-uses the first 1-2 draws of the seed (s7: -0.3, +6.0 mm). Their own runs were unchunked (budget 100000) so not affected there.
+  Added X_STRESS_CAMRNG_PERSIST (OUR xs copy only) and profile camfix (sigma 15 mm, fresh draw per check). Queue queues/rev2_camfix.txt (s1a 11, s1b 23, s3b 7).
+- Energy split: scripts_rev2/rev2_energy_split.py -> s1a s7: traction 27.8 Wh, other 24.9 Wh, 0.207 Wh per kg robot.
+- NEXT: camfix runs, then videos (render copy with nose +65 mm), then report.
+- 10:06 UTC camfix: [    0.0] sim  chunk 0 start: SITL launched, home = checkpoint pose s=5.2;checkpoint s1a__s11_camfix t=1483 wall 91;QUEUE left 3 / 3, wall 91 s;
+- 10:08 UTC camfix: [ 1483.0] sim  chunk 1 start: SITL launched, home = checkpoint pose s=539.7;checkpoint s1a__s11_camfix t=3010 wall 90;QUEUE left 3 / 3, wall 90 s;
+- 10:09 UTC camfix: [ 3009.6] sim  chunk 2 start: SITL launched, home = checkpoint pose s=133.9;SAVED s1a__s11_camfix pass outcome=plan completed sim 3419 s;[    0.0] sim  chunk 0 start: SITL launched, home = checkpoint pose s=5.2;checkpoint s1b__s23_camfix t=1018 wall 60;QUEUE left 2 / 3, wall 91 s;
+- 10:11 UTC camfix: [ 1017.8] sim  chunk 1 start: SITL launched, home = checkpoint pose s=380.5;checkpoint s1b__s23_camfix t=2761 wall 91;QUEUE left 2 / 3, wall 91 s;
+- 10:13 UTC camfix: [ 2761.3] sim  chunk 2 start: SITL launched, home = checkpoint pose s=238.3;SAVED s1b__s23_camfix pass outcome=plan completed sim 3497 s;[    0.0] sim  chunk 0 start: SITL launched, home = checkpoint pose s=5.2;checkpoint s3b__s7_camfix t=720 wall 38;QUEUE left 1 / 3, wall 91 s;
+- 10:14 UTC camfix: [  720.0] sim  chunk 1 start: SITL launched, home = checkpoint pose s=262.1;checkpoint s3b__s7_camfix t=2788 wall 91;QUEUE left 1 / 3, wall 91 s;
+- 10:16 UTC camfix: [ 2788.4] sim  chunk 2 start: SITL launched, home = checkpoint pose s=196.6;checkpoint s3b__s7_camfix t=4714 wall 92;QUEUE left 1 / 3, wall 92 s;
+- 10:17 UTC camfix: [ 4714.2] sim  chunk 3 start: SITL launched, home = checkpoint pose s=513.5;checkpoint s3b__s7_camfix t=6556 wall 92;QUEUE left 1 / 3, wall 93 s;
+- 10:19 UTC camfix: [ 6556.3] sim  chunk 4 start: SITL launched, home = checkpoint pose s=40.4;checkpoint s3b__s7_camfix t=8525 wall 93;QUEUE left 1 / 3, wall 94 s;
+- 10:20 UTC camfix: [ 8525.1] sim  chunk 5 start: SITL launched, home = checkpoint pose s=589.3;SAVED s3b__s7_camfix pass outcome=plan completed sim 10136 s;QUEUE left 0 / 3, wall 90 s;
+- 10:25 UTC videos: started (rev2_render_one.sh, sequential, niced); out /workspace/work/out/rev2/sitl_videos
+- 10:41 UTC videos: 33 mp4 in /workspace/work/out/rev2/sitl_videos (all 12 missions, s4a-s12b seed 7, stress night x2/cam15/lid15/m122, camfix s1b__s23). Renderer scripts render/rev2_render_one.sh, rev2_render_part.sh. NEXT: report.
+- 10:46 UTC REPORT: docs/reviews/SITL_rev2_2026-11-14.md + .pdf (pandoc/pdflatex, hdr_sitl_rev2.tex, ASCII). Tables from work/rev2_sitl_report/table.py. Variant symlink dirs moved to out/rev2/sitl/_vr_render. DONE.

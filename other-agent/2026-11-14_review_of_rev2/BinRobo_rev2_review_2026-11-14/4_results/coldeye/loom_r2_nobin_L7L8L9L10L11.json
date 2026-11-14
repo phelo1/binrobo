@@ -1,0 +1,506 @@
+[
+[
+"nobin",
+"L7",
+0,
+"BY HDPE rear cover (fixed)",
+"tug",
+679
+],
+[
+"nobin",
+"L7",
+0,
+"EL Electronics pod",
+"tug",
+452
+],
+[
+"nobin",
+"L7",
+3,
+"SN Comb ToF (gap + yaw) L",
+"lift",
+235
+],
+[
+"nobin",
+"L7",
+4,
+"SN Comb ToF (gap + yaw) R",
+"lift",
+235
+],
+[
+"nobin",
+"L7",
+5,
+"SW Comb contact switch (roller lever, 30 N)",
+"lift",
+235
+],
+[
+"nobin",
+"L7",
+7,
+"SW Pad contact switch",
+"pad",
+10
+],
+[
+"nobin",
+"L8",
+0,
+"BY HDPE front cover (removable, shortened)",
+"tug",
+924
+],
+[
+"nobin",
+"L8",
+0,
+"EL Electronics pod",
+"tug",
+718
+],
+[
+"nobin",
+"L8",
+0,
+"SN 2D lidar",
+"tug",
+10605
+],
+[
+"nobin",
+"L8",
+0,
+"SN Lidar window",
+"tug",
+6001
+],
+[
+"nobin",
+"L8",
+0,
+"CM LTE antenna",
+"tug",
+1232
+],
+[
+"nobin",
+"L8",
+0,
+"CASTOR ENVELOPE side 1 roll 0",
+"env",
+"gap 1.2"
+],
+[
+"nobin",
+"L8",
+0,
+"CASTOR ENVELOPE side 1 roll 2.0",
+"env",
+"gap 0.8"
+],
+[
+"nobin",
+"L8",
+0,
+"CASTOR ENVELOPE side 1 roll -2.0",
+"env",
+"gap 1.5"
+],
+[
+"nobin",
+"L8",
+0,
+"CASTOR ENVELOPE side -1 roll 0",
+"env",
+"gap 1.2"
+],
+[
+"nobin",
+"L8",
+0,
+"CASTOR ENVELOPE side -1 roll 2.0",
+"env",
+"gap 0.8"
+],
+[
+"nobin",
+"L8",
+0,
+"CASTOR ENVELOPE side -1 roll -2.0",
+"env",
+"gap 1.5"
+],
+[
+"nobin",
+"L8",
+2,
+"SN Front camera",
+"tug",
+1357
+],
+[
+"nobin",
+"L8",
+3,
+"SN Sensor post D40 on a foot plate on the nos",
+"tug",
+36
+],
+[
+"nobin",
+"L8",
+4,
+"AU Horn speaker 15 W",
+"tug",
+1357
+],
+[
+"nobin",
+"L9",
+0,
+"FR Nose cross-member 50x50x2, raised to rail ",
+"tug",
+677
+],
+[
+"nobin",
+"L9",
+0,
+"BY HDPE front cover (removable, shortened)",
+"tug",
+924
+],
+[
+"nobin",
+"L9",
+0,
+"EL Electronics pod",
+"tug",
+718
+],
+[
+"nobin",
+"L9",
+0,
+"CASTOR ENVELOPE side 1 roll 0",
+"env",
+"gap 1.2"
+],
+[
+"nobin",
+"L9",
+0,
+"CASTOR ENVELOPE side 1 roll 2.0",
+"env",
+"gap 1.5"
+],
+[
+"nobin",
+"L9",
+0,
+"CASTOR ENVELOPE side 1 roll -2.0",
+"env",
+"gap 0.8"
+],
+[
+"nobin",
+"L9",
+0,
+"CASTOR ENVELOPE side -1 roll 0",
+"env",
+"gap 1.2"
+],
+[
+"nobin",
+"L9",
+0,
+"CASTOR ENVELOPE side -1 roll 2.0",
+"env",
+"gap 1.5"
+],
+[
+"nobin",
+"L9",
+0,
+"CASTOR ENVELOPE side -1 roll -2.0",
+"env",
+"gap 0.8"
+],
+[
+"nobin",
+"L9",
+1,
+"LT Headlight L (dipped)",
+"tug",
+5558
+],
+[
+"nobin",
+"L9",
+1,
+"LT Headlight R (dipped)",
+"tug",
+5558
+],
+[
+"nobin",
+"L9",
+2,
+"CASTOR ENVELOPE side 1 roll 0",
+"env",
+"gap 2.2"
+],
+[
+"nobin",
+"L9",
+2,
+"CASTOR ENVELOPE side 1 roll 2.0",
+"env",
+"gap 1.0"
+],
+[
+"nobin",
+"L9",
+2,
+"CASTOR ENVELOPE side 1 roll -2.0",
+"env",
+"gap 0.1"
+],
+[
+"nobin",
+"L9",
+2,
+"CASTOR ENVELOPE side -1 roll 0",
+"env",
+"gap 2.2"
+],
+[
+"nobin",
+"L9",
+2,
+"CASTOR ENVELOPE side -1 roll 2.0",
+"env",
+"gap 1.0"
+],
+[
+"nobin",
+"L9",
+2,
+"CASTOR ENVELOPE side -1 roll -2.0",
+"env",
+"gap 0.1"
+],
+[
+"nobin",
+"L9",
+3,
+"CASTOR ENVELOPE side 1 roll 0",
+"env",
+"gap 2.2"
+],
+[
+"nobin",
+"L9",
+3,
+"CASTOR ENVELOPE side 1 roll 2.0",
+"env",
+"gap 0.1"
+],
+[
+"nobin",
+"L9",
+3,
+"CASTOR ENVELOPE side 1 roll -2.0",
+"env",
+"gap 1.0"
+],
+[
+"nobin",
+"L9",
+3,
+"CASTOR ENVELOPE side -1 roll 0",
+"env",
+"gap 2.2"
+],
+[
+"nobin",
+"L9",
+3,
+"CASTOR ENVELOPE side -1 roll 2.0",
+"env",
+"gap 0.1"
+],
+[
+"nobin",
+"L9",
+3,
+"CASTOR ENVELOPE side -1 roll -2.0",
+"env",
+"gap 1.0"
+],
+[
+"nobin",
+"L10",
+0,
+"BY HDPE rear cover (fixed)",
+"tug",
+603
+],
+[
+"nobin",
+"L10",
+0,
+"EL Electronics pod",
+"tug",
+452
+],
+[
+"nobin",
+"L10",
+0,
+"SF E-stop button",
+"tug",
+67
+],
+[
+"nobin",
+"L10",
+0,
+"CASTOR ENVELOPE side 1 roll 0",
+"env",
+"gap 9.0"
+],
+[
+"nobin",
+"L10",
+0,
+"CASTOR ENVELOPE side 1 roll 2.0",
+"env",
+"gap 13.1"
+],
+[
+"nobin",
+"L10",
+0,
+"CASTOR ENVELOPE side 1 roll -2.0",
+"env",
+"gap 0.1"
+],
+[
+"nobin",
+"L10",
+0,
+"CASTOR ENVELOPE side -1 roll 0",
+"env",
+"gap 9.0"
+],
+[
+"nobin",
+"L10",
+0,
+"CASTOR ENVELOPE side -1 roll 2.0",
+"env",
+"gap 13.1"
+],
+[
+"nobin",
+"L10",
+0,
+"CASTOR ENVELOPE side -1 roll -2.0",
+"env",
+"gap 0.1"
+],
+[
+"nobin",
+"L10",
+1,
+"BY HDPE rear cover (fixed)",
+"tug",
+603
+],
+[
+"nobin",
+"L10",
+1,
+"EL Electronics pod",
+"tug",
+452
+],
+[
+"nobin",
+"L10",
+1,
+"SF Reset button, blue illuminated",
+"tug",
+67
+],
+[
+"nobin",
+"L10",
+1,
+"CASTOR ENVELOPE side 1 roll 0",
+"env",
+"gap 9.0"
+],
+[
+"nobin",
+"L10",
+1,
+"CASTOR ENVELOPE side 1 roll 2.0",
+"env",
+"gap 13.1"
+],
+[
+"nobin",
+"L10",
+1,
+"CASTOR ENVELOPE side 1 roll -2.0",
+"env",
+"gap 0.9"
+],
+[
+"nobin",
+"L10",
+1,
+"CASTOR ENVELOPE side -1 roll 0",
+"env",
+"gap 9.0"
+],
+[
+"nobin",
+"L10",
+1,
+"CASTOR ENVELOPE side -1 roll 2.0",
+"env",
+"gap 13.1"
+],
+[
+"nobin",
+"L10",
+1,
+"CASTOR ENVELOPE side -1 roll -2.0",
+"env",
+"gap 0.9"
+],
+[
+"nobin",
+"L11",
+0,
+"EL Electronics pod",
+"tug",
+235
+],
+[
+"nobin",
+"L11",
+0,
+"EL Power box: 2 contactors, lift driver, char",
+"tug",
+452
+]
+]

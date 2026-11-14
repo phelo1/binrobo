@@ -1,0 +1,401 @@
+{
+ "lift_z_q0": 834.9,
+ "q_carry": 289.5,
+ "q295": [],
+ "q300.1": [],
+ "q310": [
+  {
+   "a": "LC Carriage plate",
+   "b": "SW Lift top limit switch (in the up feed of t",
+   "vol": 238,
+   "bbox": [
+    452.0,
+    455.0,
+    222.0,
+    230.0,
+    1300.0,
+    1309.9
+   ]
+  }
+ ],
+ "q336.1": [
+  {
+   "a": "LC Carriage plate",
+   "b": "LM Lift hard stop L at 345 mm, clamped on the",
+   "vol": 3,
+   "bbox": [
+    446.0,
+    455.0,
+    184.0,
+    216.0,
+    1336.0,
+    1336.0
+   ]
+  },
+  {
+   "a": "LC Carriage plate",
+   "b": "LM Lift hard stop R at 345 mm, clamped on the",
+   "vol": 3,
+   "bbox": [
+    446.0,
+    455.0,
+    -216.0,
+    -184.0,
+    1336.0,
+    1336.0
+   ]
+  },
+  {
+   "a": "LC Carriage plate",
+   "b": "SW Lift top limit switch (in the up feed of t",
+   "vol": 624,
+   "bbox": [
+    452.0,
+    455.0,
+    222.0,
+    230.0,
+    1300.0,
+    1326.0
+   ]
+  }
+ ],
+ "q340": [
+  {
+   "a": "LC Carriage plate",
+   "b": "LM Lift hard stop L at 345 mm, clamped on the",
+   "vol": 1126,
+   "bbox": [
+    446.0,
+    455.0,
+    184.0,
+    216.0,
+    1336.0,
+    1339.9
+   ]
+  },
+  {
+   "a": "LC Carriage plate",
+   "b": "LM Lift hard stop R at 345 mm, clamped on the",
+   "vol": 1126,
+   "bbox": [
+    446.0,
+    455.0,
+    -216.0,
+    -184.0,
+    1336.0,
+    1339.9
+   ]
+  },
+  {
+   "a": "LC Carriage plate",
+   "b": "SW Lift top limit switch (in the up feed of t",
+   "vol": 624,
+   "bbox": [
+    452.0,
+    455.0,
+    222.0,
+    230.0,
+    1300.0,
+    1326.0
+   ]
+  }
+ ],
+ "q346.1": [
+  {
+   "a": "LC Carriage plate",
+   "b": "LM Lift hard stop L at 345 mm, clamped on the",
+   "vol": 2883,
+   "bbox": [
+    446.0,
+    455.0,
+    184.0,
+    216.0,
+    1336.0,
+    1346.0
+   ]
+  },
+  {
+   "a": "LC Carriage plate",
+   "b": "LM Lift hard stop R at 345 mm, clamped on the",
+   "vol": 2883,
+   "bbox": [
+    446.0,
+    455.0,
+    -216.0,
+    -184.0,
+    1336.0,
+    1346.0
+   ]
+  },
+  {
+   "a": "LC Carriage plate",
+   "b": "SW Lift top limit switch (in the up feed of t",
+   "vol": 624,
+   "bbox": [
+    452.0,
+    455.0,
+    222.0,
+    230.0,
+    1300.0,
+    1326.0
+   ]
+  },
+  {
+   "a": "LC Rail carriage",
+   "b": "LM Lift hard stop L at 345 mm, clamped on the",
+   "vol": 4,
+   "bbox": [
+    455.0,
+    467.0,
+    184.0,
+    216.0,
+    1336.0,
+    1336.0
+   ]
+  },
+  {
+   "a": "LC Rail carriage",
+   "b": "LM Lift hard stop R at 345 mm, clamped on the",
+   "vol": 4,
+   "bbox": [
+    455.0,
+    467.0,
+    -216.0,
+    -184.0,
+    1336.0,
+    1336.0
+   ]
+  }
+ ],
+ "q352": [
+  {
+   "a": "LC Carriage plate",
+   "b": "LM Lift hard stop L at 345 mm, clamped on the",
+   "vol": 4582,
+   "bbox": [
+    446.0,
+    455.0,
+    184.0,
+    216.0,
+    1336.0,
+    1351.9
+   ]
+  },
+  {
+   "a": "LC Carriage plate",
+   "b": "LM Lift hard stop R at 345 mm, clamped on the",
+   "vol": 4582,
+   "bbox": [
+    446.0,
+    455.0,
+    -216.0,
+    -184.0,
+    1336.0,
+    1351.9
+   ]
+  },
+  {
+   "a": "LC Carriage plate",
+   "b": "SW Lift top limit switch (in the up feed of t",
+   "vol": 624,
+   "bbox": [
+    452.0,
+    455.0,
+    222.0,
+    230.0,
+    1300.0,
+    1326.0
+   ]
+  },
+  {
+   "a": "LC Rail carriage",
+   "b": "LM Lift hard stop L at 345 mm, clamped on the",
+   "vol": 2269,
+   "bbox": [
+    455.0,
+    467.0,
+    184.0,
+    216.0,
+    1336.0,
+    1341.9
+   ]
+  },
+  {
+   "a": "LC Rail carriage",
+   "b": "LM Lift hard stop R at 345 mm, clamped on the",
+   "vol": 2269,
+   "bbox": [
+    455.0,
+    467.0,
+    -216.0,
+    -184.0,
+    1336.0,
+    1341.9
+   ]
+  }
+ ],
+ "moving_top_q0": 999.9,
+ "gap_top_tie_q340": 30.1,
+ "gap_top_tie_q345": 25.1,
+ "gap_top_tie_q346.1": 24.0,
+ "bin_q340": [
+  {
+   "a": "LC Carriage plate",
+   "b": "LM Linear rail L HGR15 1 m, mounted 60 mm hig",
+   "vol": 16500,
+   "bbox": [
+    452.0,
+    455.0,
+    190.0,
+    210.0,
+    1064.9,
+    1339.9
+   ]
+  },
+  {
+   "a": "LC Carriage plate",
+   "b": "LM Linear rail R HGR15 1 m, mounted 60 mm hig",
+   "vol": 16500,
+   "bbox": [
+    452.0,
+    455.0,
+    -210.0,
+    -190.0,
+    1064.9,
+    1339.9
+   ]
+  },
+  {
+   "a": "LC Carriage plate",
+   "b": "LM Lift hard stop L at 345 mm, clamped on the",
+   "vol": 1126,
+   "bbox": [
+    446.0,
+    455.0,
+    184.0,
+    216.0,
+    1336.0,
+    1339.9
+   ]
+  },
+  {
+   "a": "LC Carriage plate",
+   "b": "LM Lift hard stop R at 345 mm, clamped on the",
+   "vol": 1126,
+   "bbox": [
+    446.0,
+    455.0,
+    -216.0,
+    -184.0,
+    1336.0,
+    1339.9
+   ]
+  },
+  {
+   "a": "LC Carriage plate",
+   "b": "SW Lift top limit switch (in the up feed of t",
+   "vol": 624,
+   "bbox": [
+    452.0,
+    455.0,
+    222.0,
+    230.0,
+    1300.0,
+    1326.0
+   ]
+  },
+  {
+   "a": "LC Rail carriage",
+   "b": "LM Linear rail L HGR15 1 m, mounted 60 mm hig",
+   "vol": 14400,
+   "bbox": [
+    455.0,
+    467.0,
+    190.0,
+    210.0,
+    1069.9,
+    1129.9
+   ]
+  },
+  {
+   "a": "LC Rail carriage",
+   "b": "LM Linear rail L HGR15 1 m, mounted 60 mm hig",
+   "vol": 14400,
+   "bbox": [
+    455.0,
+    467.0,
+    190.0,
+    210.0,
+    1269.9,
+    1329.9
+   ]
+  },
+  {
+   "a": "LC Rail carriage",
+   "b": "LM Linear rail R HGR15 1 m, mounted 60 mm hig",
+   "vol": 14400,
+   "bbox": [
+    455.0,
+    467.0,
+    -210.0,
+    -190.0,
+    1069.9,
+    1129.9
+   ]
+  },
+  {
+   "a": "LC Rail carriage",
+   "b": "LM Linear rail R HGR15 1 m, mounted 60 mm hig",
+   "vol": 14400,
+   "bbox": [
+    455.0,
+    467.0,
+    -210.0,
+    -190.0,
+    1269.9,
+    1329.9
+   ]
+  },
+  {
+   "a": "LA Lift actuator rod D30",
+   "b": "LA Lift actuator FDI 24 V 4 kN, 400 mm IP65 u",
+   "vol": 24804,
+   "bbox": [
+    540.0,
+    570.0,
+    -15.0,
+    15.0,
+    874.9,
+    910.0
+   ]
+  }
+ ],
+ "bin_q340_zmax_xmax": [
+  1241,
+  324
+ ],
+ "bin_wheel_bottom_q340": 146,
+ "bin_wheel_bottom_carry": 96,
+ "comb_dist_carry": {
+  "LM Mast upright L 80x40x4 (S12), 60 mm t tug": 64.9,
+  "LM Linear rail L HGR15 1 m, mounted 60 m tug": 36.9,
+  "LM Mast upright R 80x40x4 (S12), 60 mm t tug": 65.1,
+  "LM Linear rail R HGR15 1 m, mounted 60 m tug": 37.1,
+  "BIN 240 L body, corrected hull (front ta bin": 21.1,
+  "BIN Handle bar D27 (rear) bin": 711.0,
+  "BIN Handle bracket bin": 641.1,
+  "BIN Plain rim 20 x 8 (handle side, no re bin": 651.3,
+  "BIN EN 840 frontal receiver ledge 30 x 8 bin": 24.2,
+  "BIN EN 840 receiver rim 25 mm down-turn bin": 0.0,
+  "BIN Axle bin": 1031.0,
+  "BIN Wheel 200 mm L bwL": 941.0,
+  "BIN Wheel 200 mm R bwR": 941.3,
+  "BIN Wheel hub L bwL": 971.0,
+  "BIN Wheel hub R bwR": 971.3,
+  "BIN Lid (hinge at the rear) lid": 36.2,
+  "LM Rail backing flat L 30x10 (S12) tug": 54.9,
+  "LM Lift hard stop L at 345 mm, clamped o tug": 214.8,
+  "LM Rail backing flat R 30x10 (S12) tug": 55.1,
+  "LM Lift hard stop R at 345 mm, clamped o tug": 212.8
+ }
+}

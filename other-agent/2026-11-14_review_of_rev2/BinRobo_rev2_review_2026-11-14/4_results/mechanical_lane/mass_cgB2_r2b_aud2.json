@@ -1,0 +1,536 @@
+{
+ "label": "improved version, revision 2, weight table corrected 14 Nov (adds bumper brackets, mast foot plates, hard stops and limit switch) + cold-eye audit central +7.15 kg (tester) | aud2: carriage item merged into carriage[0] so the sim carries it",
+ "rows": [
+  {
+   "name": "Side rail L 50x50x4 RHS 1.35 m (S12)",
+   "kg": 7.36,
+   "p": [
+    0.305,
+    0.43,
+    0.385
+   ],
+   "d": [
+    1.35,
+    0.05,
+    0.05
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Side rail R 50x50x4 RHS 1.35 m (S12)",
+   "kg": 7.36,
+   "p": [
+    0.305,
+    -0.43,
+    0.385
+   ],
+   "d": [
+    1.35,
+    0.05,
+    0.05
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Nose cross-member 50x50x2 0.86 m, raised to rail height",
+   "kg": 2.563,
+   "p": [
+    0.955,
+    0,
+    0.385
+   ],
+   "d": [
+    0.05,
+    0.86,
+    0.05
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Mast-base cross-member 50x50x2 0.86 m",
+   "kg": 2.563,
+   "p": [
+    0.49,
+    0,
+    0.385
+   ],
+   "d": [
+    0.05,
+    0.86,
+    0.05
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Mast uprights 2 x 80x40x4 RHS 0.96 m (S12)",
+   "kg": 12.88,
+   "p": [
+    0.49,
+    0,
+    0.89
+   ],
+   "d": [
+    0.05,
+    0.45,
+    0.9
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Mast top tie 50x50x2 0.46 m",
+   "kg": 1.371,
+   "p": [
+    0.49,
+    0,
+    1.345
+   ],
+   "d": [
+    0.05,
+    0.46,
+    0.05
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Drive/motor plates 2 x 6 mm S355 (laser)",
+   "kg": 5.087,
+   "p": [
+    0.0,
+    0,
+    0.27
+   ],
+   "d": [
+    0.3,
+    0.9,
+    0.3
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Mast gussets 4 x 6 mm + actuator lugs 2 + rail-tail caps (laser)",
+   "kg": 1.6,
+   "p": [
+    0.42,
+    0,
+    0.42
+   ],
+   "d": [
+    0.2,
+    0.8,
+    0.1
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Battery/electronics bay: HDPE floor cut back for the castors, walls 140 mm shorter, front cover shortened",
+   "kg": 4.15,
+   "p": [
+    0.72,
+    0,
+    0.2
+   ],
+   "d": [
+    0.48,
+    0.76,
+    0.15
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Drive unit L: PEWM82M-320W gearmotor + spring brake + 3.5:1 chain + 330 mm wheel (B1 mass)",
+   "kg": 9.68,
+   "p": [
+    0.0,
+    0.4,
+    0.17
+   ],
+   "d": [
+    0.3,
+    0.1,
+    0.3
+   ],
+   "g": "wheel"
+  },
+  {
+   "name": "Drive unit R",
+   "kg": 9.68,
+   "p": [
+    0.0,
+    -0.4,
+    0.17
+   ],
+   "d": [
+    0.3,
+    0.1,
+    0.3
+   ],
+   "g": "wheel"
+  },
+  {
+   "name": "Castor 200 mm L + fork",
+   "kg": 2.3,
+   "p": [
+    0.93,
+    0.28,
+    0.1
+   ],
+   "d": [
+    0.2,
+    0.08,
+    0.2
+   ],
+   "g": "cast"
+  },
+  {
+   "name": "Castor 200 mm R + fork",
+   "kg": 2.3,
+   "p": [
+    0.93,
+    -0.28,
+    0.1
+   ],
+   "d": [
+    0.2,
+    0.08,
+    0.2
+   ],
+   "g": "cast"
+  },
+  {
+   "name": "Battery 24 V 20 Ah LiFePO4 + BMS (front bay)",
+   "kg": 5.05,
+   "p": [
+    0.82,
+    0,
+    0.205
+   ],
+   "d": [
+    0.25,
+    0.18,
+    0.15
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Electronics pod + harness (as B1)",
+   "kg": 3.39,
+   "p": [
+    0.7,
+    0,
+    0.32
+   ],
+   "d": [
+    0.2,
+    0.2,
+    0.1
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Sensors: post, lidar, cameras, radars (as B1)",
+   "kg": 1.86,
+   "p": [
+    1.0,
+    0,
+    0.6
+   ],
+   "d": [
+    0.05,
+    0.05,
+    0.6
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Bumper, lights, dock interface, safety (as B1), 65 mm further forward",
+   "kg": 1.95,
+   "p": [
+    1.135,
+    0,
+    0.22
+   ],
+   "d": [
+    0.05,
+    0.66,
+    0.1
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Linear rails 2 x 1.0 m HGR15 + 4 carriages + 10 mm backing flats (S12)",
+   "kg": 7.6,
+   "p": [
+    0.46,
+    0,
+    0.86
+   ],
+   "d": [
+    0.03,
+    0.4,
+    1.0
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Lift actuator FDI 24 V 4 kN, 400 mm IP65 unit, base pin 60 mm lower (340 mm used)",
+   "kg": 3.5,
+   "p": [
+    0.49,
+    0,
+    0.64
+   ],
+   "d": [
+    0.08,
+    0.08,
+    0.6
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Rear camera + beacon on the mast top",
+   "kg": 0.6,
+   "p": [
+    0.45,
+    0,
+    1.37
+   ],
+   "d": [
+    0.1,
+    0.3,
+    0.05
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Anti-tip rollers (y +/-0.42) + flares + UHMW guards",
+   "kg": 1.6,
+   "p": [
+    -0.25,
+    0,
+    0.18
+   ],
+   "d": [
+    0.1,
+    0.85,
+    0.1
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Leg-tip gap sensors 2 x ToF (potted)",
+   "kg": 0.1,
+   "p": [
+    -0.4,
+    0,
+    0.25
+   ],
+   "d": [
+    0.05,
+    0.8,
+    0.05
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Ballast: 5.0 kg steel plate on the nose cross-member / bay floor",
+   "kg": 5.0,
+   "p": [
+    0.99,
+    0,
+    0.142
+   ],
+   "d": [
+    0.1,
+    0.6,
+    0.03
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Castor-beam pivot: hanger plates 2 x 8 mm S235 + M16 pin + bushes",
+   "kg": 2.88,
+   "p": [
+    0.955,
+    0,
+    0.29
+   ],
+   "d": [
+    0.07,
+    0.09,
+    0.24
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Bumper brackets 2 x 5 mm S235 plate 135 x 204 mm, nose cross-member to bumper (allowance; block-level design)",
+   "kg": 2.16,
+   "p": [
+    1.05,
+    0,
+    0.28
+   ],
+   "d": [
+    0.135,
+    0.15,
+    0.2
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Mast foot plates 2 x 95 x 90 x 8 mm with crush tubes (S12)",
+   "kg": 1.1,
+   "p": [
+    0.52,
+    0,
+    0.414
+   ],
+   "d": [
+    0.095,
+    0.49,
+    0.008
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Lift hard stops 2 (clamp blocks) + top limit switch and bracket",
+   "kg": 0.3,
+   "p": [
+    0.46,
+    0,
+    1.33
+   ],
+   "d": [
+    0.03,
+    0.45,
+    0.03
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "[audit M-1] actuator base bracket item 71",
+   "kg": 1.18,
+   "p": [
+    0.49,
+    0,
+    0.385
+   ],
+   "d": [
+    0.05,
+    0.05,
+    0.05
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "[audit M-1] fasteners (central)",
+   "kg": 2.0,
+   "p": [
+    0.49,
+    0,
+    0.385
+   ],
+   "d": [
+    0.05,
+    0.05,
+    0.05
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "[audit M-1] cable chain, lift driver, bolted hard stops",
+   "kg": 0.75,
+   "p": [
+    0.49,
+    0,
+    0.89
+   ],
+   "d": [
+    0.05,
+    0.05,
+    0.05
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "[audit M-1] pivot housing solid",
+   "kg": 0.65,
+   "p": [
+    0.955,
+    0,
+    0.29
+   ],
+   "d": [
+    0.05,
+    0.05,
+    0.05
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "[audit M-1] foot plates 10 mm as labelled",
+   "kg": 0.27,
+   "p": [
+    0.52,
+    0,
+    0.414
+   ],
+   "d": [
+    0.05,
+    0.05,
+    0.05
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "[audit M-1] contactors (half of 0-1.2)",
+   "kg": 0.6,
+   "p": [
+    0.7,
+    0,
+    0.32
+   ],
+   "d": [
+    0.05,
+    0.05,
+    0.05
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "[audit M-1] bumper brackets drawn 1.56 vs 2.16 allowance",
+   "kg": -0.6,
+   "p": [
+    1.05,
+    0,
+    0.28
+   ],
+   "d": [
+    0.05,
+    0.05,
+    0.05
+   ],
+   "g": "chassis"
+  }
+ ],
+ "carriage": [
+  {
+   "name": "Lift carriage, 640 mm self-aligning comb + nib, pad arm, FIXED sprung pad, keeper + GR-07; comb plate 8 mm (S12), 700 mm wide + [audit M-1] carriage plate 80 mm deeper (central, 2.3 kg merged: the sim reads carriage[0] only)",
+   "kg": 8.75,
+   "p": [
+    0.4,
+    0.0,
+    0.85
+   ],
+   "d": [
+    0.15,
+    0.64,
+    0.6
+   ],
+   "g": "lift"
+  }
+ ],
+ "rocker_kg": 5.46,
+ "note": "total incl. the 0.6 kg comb body and the 5.46 kg rocker body (set X_ROCK_M=5.46; not in rows). S12 items as listed in HANDOVER Rev 4.0 section 4.4. Corrected 14 Nov: +3.56 kg for parts drawn in revision 2 but missing from the first table. The deleted keeper (0.2 kg body in the model) is still carried, on the safe side.",
+ "total": 125.64,
+ "car_total": 7.05
+}

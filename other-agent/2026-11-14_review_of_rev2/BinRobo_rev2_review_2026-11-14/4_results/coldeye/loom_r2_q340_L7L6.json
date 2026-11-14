@@ -1,0 +1,138 @@
+[
+[
+"q340",
+"L6",
+0,
+"LM Mast top tie 50x50x2",
+"tug",
+3131
+],
+[
+"q340",
+"L6",
+0,
+"SF Amber beacon",
+"tug",
+1437
+],
+[
+"q340",
+"L6",
+0,
+"BY HDPE rear cover (fixed)",
+"tug",
+924
+],
+[
+"q340",
+"L6",
+0,
+"EL Electronics pod",
+"tug",
+718
+],
+[
+"q340",
+"L6",
+0,
+"LT Mast-top red marker",
+"tug",
+2178
+],
+[
+"q340",
+"L6",
+1,
+"LM Mast top tie 50x50x2",
+"tug",
+3025
+],
+[
+"q340",
+"L6",
+2,
+"LM Mast top tie 50x50x2",
+"tug",
+44
+],
+[
+"q340",
+"L6",
+2,
+"LT Rear work lamp 3 W",
+"tug",
+1343
+],
+[
+"q340",
+"L6",
+3,
+"LM Mast top tie 50x50x2",
+"tug",
+3131
+],
+[
+"q340",
+"L6",
+4,
+"LM Mast top tie 50x50x2",
+"tug",
+83
+],
+[
+"q340",
+"L6",
+4,
+"SN Radar, rear",
+"tug",
+21
+],
+[
+"q340",
+"L7",
+0,
+"BY HDPE rear cover (fixed)",
+"tug",
+679
+],
+[
+"q340",
+"L7",
+0,
+"EL Electronics pod",
+"tug",
+452
+],
+[
+"q340",
+"L7",
+3,
+"SN Comb ToF (gap + yaw) L",
+"lift",
+235
+],
+[
+"q340",
+"L7",
+4,
+"SN Comb ToF (gap + yaw) R",
+"lift",
+235
+],
+[
+"q340",
+"L7",
+5,
+"SW Comb contact switch (roller lever, 30 N)",
+"lift",
+235
+],
+[
+"q340",
+"L7",
+7,
+"SW Pad contact switch",
+"pad",
+10
+]
+]

@@ -1,0 +1,506 @@
+{
+ "label": "revision 3, preliminary (for the load runs)",
+ "rows": [
+  {
+   "name": "Side rail L 100x50x4 RHS S355 1.35 m (rev 3)",
+   "kg": 11.6,
+   "p": [
+    0.305,
+    0.43,
+    0.36
+   ],
+   "d": [
+    1.35,
+    0.05,
+    0.1
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Side rail R 100x50x4 RHS S355 1.35 m (rev 3)",
+   "kg": 11.6,
+   "p": [
+    0.305,
+    -0.43,
+    0.36
+   ],
+   "d": [
+    1.35,
+    0.05,
+    0.1
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Nose cross-member 50x50x4 0.86 m, at rail height (rev 3)",
+   "kg": 4.69,
+   "p": [
+    0.955,
+    0,
+    0.385
+   ],
+   "d": [
+    0.05,
+    0.86,
+    0.05
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Mast-base cross-member 80x80x3 SHS S355 0.86 m (rev 3)",
+   "kg": 6.08,
+   "p": [
+    0.49,
+    0,
+    0.385
+   ],
+   "d": [
+    0.05,
+    0.86,
+    0.05
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Mast uprights 2 x 80x40x4 RHS 0.96 m (S12)",
+   "kg": 12.88,
+   "p": [
+    0.49,
+    0,
+    0.89
+   ],
+   "d": [
+    0.05,
+    0.45,
+    0.9
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Mast top tie 50x50x2 0.46 m",
+   "kg": 1.371,
+   "p": [
+    0.49,
+    0,
+    1.345
+   ],
+   "d": [
+    0.05,
+    0.46,
+    0.05
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Drive/motor plates 2 x 6 mm S355 (laser)",
+   "kg": 5.087,
+   "p": [
+    0.0,
+    0,
+    0.27
+   ],
+   "d": [
+    0.3,
+    0.9,
+    0.3
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Mast gussets 4 x 6 mm on the mast-base cross-member + rail-tail caps (laser)",
+   "kg": 1.3,
+   "p": [
+    0.42,
+    0,
+    0.42
+   ],
+   "d": [
+    0.2,
+    0.8,
+    0.1
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Battery/electronics bay: HDPE floor cut back for the castors, walls 140 mm shorter, front cover shortened",
+   "kg": 4.15,
+   "p": [
+    0.72,
+    0,
+    0.2
+   ],
+   "d": [
+    0.48,
+    0.76,
+    0.15
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Drive unit L: PEWM82M-320W gearmotor + spring brake + 3.5:1 chain + 330 mm wheel (B1 mass)",
+   "kg": 9.68,
+   "p": [
+    0.0,
+    0.4,
+    0.17
+   ],
+   "d": [
+    0.3,
+    0.1,
+    0.3
+   ],
+   "g": "wheel"
+  },
+  {
+   "name": "Drive unit R",
+   "kg": 9.68,
+   "p": [
+    0.0,
+    -0.4,
+    0.17
+   ],
+   "d": [
+    0.3,
+    0.1,
+    0.3
+   ],
+   "g": "wheel"
+  },
+  {
+   "name": "Castor 200 mm L + fork",
+   "kg": 2.3,
+   "p": [
+    0.93,
+    0.28,
+    0.1
+   ],
+   "d": [
+    0.2,
+    0.08,
+    0.2
+   ],
+   "g": "cast"
+  },
+  {
+   "name": "Castor 200 mm R + fork",
+   "kg": 2.3,
+   "p": [
+    0.93,
+    -0.28,
+    0.1
+   ],
+   "d": [
+    0.2,
+    0.08,
+    0.2
+   ],
+   "g": "cast"
+  },
+  {
+   "name": "Battery 24 V 20 Ah LiFePO4 + BMS (front bay)",
+   "kg": 5.05,
+   "p": [
+    0.82,
+    0,
+    0.205
+   ],
+   "d": [
+    0.25,
+    0.18,
+    0.15
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Electronics pod + harness (as B1)",
+   "kg": 3.39,
+   "p": [
+    0.7,
+    0,
+    0.32
+   ],
+   "d": [
+    0.2,
+    0.2,
+    0.1
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Sensors: post, lidar, cameras, radars (as B1)",
+   "kg": 1.86,
+   "p": [
+    1.0,
+    0,
+    0.6
+   ],
+   "d": [
+    0.05,
+    0.05,
+    0.6
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Bumper, lights, dock interface, safety (as B1), 65 mm further forward",
+   "kg": 1.95,
+   "p": [
+    1.135,
+    0,
+    0.22
+   ],
+   "d": [
+    0.05,
+    0.66,
+    0.1
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Linear rails 2 x 1.0 m HGR15 + 4 carriages + 10 mm backing flats (S12)",
+   "kg": 7.6,
+   "p": [
+    0.46,
+    0,
+    0.86
+   ],
+   "d": [
+    0.03,
+    0.4,
+    1.0
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Lift actuator FDI 24 V 4 kN, 400 mm IP65 unit, base pin 60 mm lower (340 mm used)",
+   "kg": 3.5,
+   "p": [
+    0.49,
+    0,
+    0.64
+   ],
+   "d": [
+    0.08,
+    0.08,
+    0.6
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Rear camera + beacon on the mast top",
+   "kg": 0.6,
+   "p": [
+    0.45,
+    0,
+    1.37
+   ],
+   "d": [
+    0.1,
+    0.3,
+    0.05
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Anti-tip rollers (y +/-0.42) + flares + UHMW guards",
+   "kg": 1.6,
+   "p": [
+    -0.25,
+    0,
+    0.18
+   ],
+   "d": [
+    0.1,
+    0.85,
+    0.1
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Leg-tip gap sensors 2 x ToF (potted)",
+   "kg": 0.1,
+   "p": [
+    -0.4,
+    0,
+    0.25
+   ],
+   "d": [
+    0.05,
+    0.8,
+    0.05
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Ballast: 5.0 kg steel plate on the nose cross-member / bay floor",
+   "kg": 5.0,
+   "p": [
+    0.99,
+    0,
+    0.142
+   ],
+   "d": [
+    0.1,
+    0.6,
+    0.03
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Castor-beam pivot: hanger plates 2 x 8 mm S235 welded to the nose cross-member + D20 pin + D20 bushes (rev 3)",
+   "kg": 3.13,
+   "p": [
+    0.955,
+    0,
+    0.29
+   ],
+   "d": [
+    0.07,
+    0.09,
+    0.24
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Bumper carrier: cross tube 40x40x2 0.66 m + 2 arms 40x40x2 0.26 m welded to the nose cross-member + 2 sprung guides + 4 switches (rev 3)",
+   "kg": 3.43,
+   "p": [
+    1.06,
+    0,
+    0.3
+   ],
+   "d": [
+    0.135,
+    0.15,
+    0.2
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Mast foot plates 2 x 95 x 90 x 10 mm, M12 through-bolts with crush tubes (rev 3)",
+   "kg": 1.4700000000000002,
+   "p": [
+    0.52,
+    0,
+    0.414
+   ],
+   "d": [
+    0.095,
+    0.49,
+    0.008
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Lift top end: 2 bolted stop blocks (2 x M8 each) + 2 limit switches on brackets + striker; bottom stop blocks 2 (rev 3)",
+   "kg": 0.75,
+   "p": [
+    0.46,
+    0,
+    1.33
+   ],
+   "d": [
+    0.03,
+    0.45,
+    0.03
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Actuator base bracket: 10 mm S355 plate with two gussets, bolted to the mast-base cross-member (rev 3; audit +1.18 kg)",
+   "kg": 1.3,
+   "p": [
+    0.555,
+    0,
+    0.36
+   ],
+   "d": [
+    0.09,
+    0.12,
+    0.09
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Fasteners, whole robot (BOM line F1; audit central 2.0 kg)",
+   "kg": 2.0,
+   "p": [
+    0.49,
+    0,
+    0.385
+   ],
+   "d": [
+    0.9,
+    0.8,
+    0.4
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Lift cable chain with end brackets (L7)",
+   "kg": 0.25,
+   "p": [
+    0.44,
+    0.17,
+    1.0
+   ],
+   "d": [
+    0.05,
+    0.05,
+    0.4
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Lift driver with current limit, in the power box",
+   "kg": 0.2,
+   "p": [
+    0.69,
+    0.26,
+    0.19
+   ],
+   "d": [
+    0.08,
+    0.06,
+    0.04
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Two safety contactors, if not inside the \"as B1\" lumps (audit 0 to 1.2 kg, central)",
+   "kg": 0.6,
+   "p": [
+    0.69,
+    0.26,
+    0.19
+   ],
+   "d": [
+    0.1,
+    0.1,
+    0.08
+   ],
+   "g": "chassis"
+  }
+ ],
+ "carriage": [
+  {
+   "name": "Lift carriage: 700 mm self-aligning comb (8 mm plate) + nib, pad arm, fixed sprung pad; carriage plate 80 mm deeper for the 200 mm block pitch (audit central +2.3 kg); 2 guided pad springs 160 mm with rods and pockets (+0.4 kg); keeper deleted (-0.2 kg)",
+   "kg": 8.95,
+   "p": [
+    0.4,
+    0,
+    0.85
+   ],
+   "d": [
+    0.15,
+    0.64,
+    0.6
+   ],
+   "g": "lift"
+  }
+ ],
+ "rocker_kg": 5.71,
+ "note": "Rebuilt 14 Nov from the revision 2 corrected table: audit items, structural changes and design changes each in their own row. total = rows + carriage (incl. the 0.6 kg comb body) + castor beam.",
+ "total": 141.76,
+ "car_total": 9.55
+}

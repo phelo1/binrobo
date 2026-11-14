@@ -1,0 +1,8 @@
+[   79.0] pi   rear camera: bin axis 0.007 m off the estimate (camera -0.026 m) -> estimate corrected, re-aligning
+[   95.6] pi   rear camera: no reading of bin black, re-aligning
+[   95.6] pi   rear camera: bin axis 0.000 m off the estimate (camera -0.010 m) -> estimate corrected, re-aligning
+[  109.5] pi   rear camera: bin axis -0.034 m off the estimate (camera 0.036 m) -> estimate corrected, re-aligning
+[  123.6] ALERT could not line up on bin black (rear camera still more than 25 mm off, or no reading, after 3 re-alignments) - not grabbing
+SAVED s1a__s7 result=alert outcome=grab refused, back on the dock sim 157 s
+QUEUE left 0 / 1, wall 16 s
+r3camA sitl done

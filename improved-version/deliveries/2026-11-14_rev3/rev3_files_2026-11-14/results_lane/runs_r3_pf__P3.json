@@ -1,0 +1,179 @@
+{
+ "run": "P3",
+ "title": "P3 full 140 L (Weber 140, 66 kg): home -> pad A",
+ "verdict": "PASS",
+ "fails": [],
+ "sim_time_s": 1308.5,
+ "t_start": 0.0,
+ "energy_Wh": 15.14,
+ "wall_s": 432,
+ "metrics": {
+  "clear_min": 0.0973,
+  "clear_at": 14.2,
+  "seated_all": true,
+  "bin_ground_N": 0.0,
+  "roll_max": 1.7126,
+  "pitch_max": 6.915,
+  "hedge_min": 0.3075,
+  "hedge_at": 621.1,
+  "tip_min": 30.0921,
+  "tip_at": 14.2,
+  "liftF_max": 1428.0394,
+  "liftF_at": 290.2,
+  "gap_min": 9.0,
+  "v_max": 0.5636,
+  "n_lost": 0
+ },
+ "results": {
+  "grab": {
+   "docked": true,
+   "reapp": false,
+   "dock_dy_mm": 0.6,
+   "pad_ok": true,
+   "padF_at_loadon": 0,
+   "lift_rise_N": 641,
+   "seat_switch": true,
+   "keeper_on_bar": true,
+   "keeper_deg": -82.6,
+   "claim": true,
+   "zc": 0.142,
+   "q_app": 0.094,
+   "captured": true,
+   "wheel_clear_mm": 118.2,
+   "bin_tilt_abs": 4.2,
+   "seated": true,
+   "dock": "tof",
+   "result": "success",
+   "posthold_mm": [
+    -8.4
+   ],
+   "nib_y_mm": 0.3
+  },
+  "drive1": {
+   "reached": true,
+   "why": null,
+   "s_end": 621.97,
+   "ref_end": 621.95,
+   "t": 1289.2,
+   "captured_end": true,
+   "clear_end_mm": 117.8
+  },
+  "setdown": {
+   "wheel_clear_at_zc_mm": -0.1,
+   "tilt_before_withdraw": 1.8,
+   "wheel_clear_before_withdraw_mm": -0.1,
+   "released": true,
+   "nib_clear_m": 0.611,
+   "sd": "SD2it1",
+   "tilt_end": 1.85,
+   "bin_speed": 0.0,
+   "standing": true,
+   "bin_s": 621.89,
+   "bin_lat": 1.306
+  }
+ },
+ "seg_metrics": {
+  "grab0": {
+   "clear_min": 9.0,
+   "clear_at": null,
+   "seated_all": true,
+   "bin_ground_N": 0.0,
+   "roll_max": 0.1721,
+   "pitch_max": 0.5693,
+   "hedge_min": 9.0,
+   "hedge_at": null,
+   "tip_min": 31.9384,
+   "tip_at": 11.3,
+   "liftF_max": 952.1283,
+   "liftF_at": 10.3,
+   "gap_min": 9.0,
+   "v_max": 0.1452,
+   "n_lost": 0
+  },
+  "drive1": {
+   "clear_min": 0.0973,
+   "clear_at": 14.2,
+   "seated_all": true,
+   "bin_ground_N": 0.0,
+   "roll_max": 1.7126,
+   "pitch_max": 6.915,
+   "hedge_min": 0.3075,
+   "hedge_at": 621.1,
+   "tip_min": 30.0921,
+   "tip_at": 14.2,
+   "liftF_max": 1428.0394,
+   "liftF_at": 290.2,
+   "gap_min": 9.0,
+   "v_max": 0.5636,
+   "n_lost": 0
+  },
+  "setdown2": {
+   "clear_min": 9.0,
+   "clear_at": null,
+   "seated_all": true,
+   "bin_ground_N": 0.0,
+   "roll_max": 0.0796,
+   "pitch_max": 1.8641,
+   "hedge_min": 9.0,
+   "hedge_at": null,
+   "tip_min": 31.608,
+   "tip_at": 622.0,
+   "liftF_max": 909.4193,
+   "liftF_at": 622.0,
+   "gap_min": 9.0,
+   "v_max": 0.1494,
+   "n_lost": 0
+  }
+ },
+ "events": [
+  [
+   15.54,
+   "docked: tof, bin dy 1 mm (camera 1), nib gap 2 mm, bin moved 0 mm, rim 0.974 q_app 0.094, yaw meas -0.1 true 0.2 deg"
+  ],
+  [
+   39.72,
+   "grab: claim True captured True clear 118 mm rise 641 N tilt 4.2"
+  ],
+  [
+   39.72,
+   "grab result success"
+  ],
+  [
+   1289.22,
+   "drive1: reached at s 622.0"
+  ],
+  [
+   1308.51,
+   "set-down: released True standing True tilt 1.8"
+  ]
+ ],
+ "cfg": {
+  "binkey": "WEB140",
+  "kg": null,
+  "with_bin": true,
+  "variant": {
+   "step": "ramp",
+   "trench": "covered",
+   "pothole": "filled"
+  },
+  "act_N": 3000.0,
+  "pert": {},
+  "night": false,
+  "obstacles": [],
+  "title": "P3 full 140 L (Weber 140, 66 kg): home -> pad A",
+  "start": "home"
+ },
+ "steps": [
+  [
+   "grab"
+  ],
+  [
+   "drive",
+   "{'to': 621.9612509503402, 'ref': 'bin', 'dirn': 1, 'knots': [(0, -1.4), (12.0, -1.4), (24.0, 0.0), (610.0, 0.0), (619.5, 1.35), (700, 1.35)], 'snaps': True}"
+  ],
+  [
+   "setdown"
+  ]
+ ],
+ "peak": {}
+}

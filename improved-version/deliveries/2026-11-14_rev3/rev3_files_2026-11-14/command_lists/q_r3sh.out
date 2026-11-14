@@ -1,0 +1,17 @@
+  0 rc 0    31 s  step one
+  1 rc 0    33 s  step both
+  2 rc 0    27 s  climb 0.22 0.09
+  3 rc 0    23 s  estop rev
+  4 rc 0    23 s  estop fwd
+  5 rc 0    37 s  towstab
+  6 rc 0    28 s  ret ESE240SL pothole 0.8
+  7 rc 0    34 s  ret ESE240SL pothole 0.5
+  8 rc 0    24 s  ret WEB140 pothole 0.8
+  9 rc 0    22 s  ret WEB140 pothole 0.5
+ 10 rc 0    24 s  climbn 0.22 0.06
+ 11 rc 0    23 s  kerb 0.5 nose
+ 12 rc 0    26 s  rel ESE240CL up12 full
+ 13 rc 0    22 s  kerb 0.5 nose
+ 14 rc 0    26 s  ret ESE240SL pothole 0.8
+ 15 rc 0    20 s  ret ESE240SL pothole 0.8
+batch done in 215 s

@@ -1,0 +1,49 @@
+files read: 128 (tag _r3)
+LOADS  wheel carry 3724 N (estop12_rev_r3) | wheel edge 3656 N (S5_WEB140_pothole_v08_r3sh) [pothole 3656, kerb compliant 2956] | rigid step, info only 10406
+       comb carry 2218 N (climb_m30_c09_r3) | comb all 4523 N (S5_ESE240SL_step_v08_r3) | by case {'carry': 2218, 'pothole': 3053, 'step_rigid': 4523, 'kerb_compliant': 3604, 'kerb_rigid': 4467, 'ramp': 1622, 'trench': 0}
+       pad 1330 N (S6_kerb_v08_nose_r_r3) | lift 3000 N | static castor sum 882 N
+  Side rail 50x50x4, fy 355                                                  carry              wheel 3724 N            174.4 MPa SF  2.04 ok  M = 1825 N m
+  Side rail 50x50x4, fy 355                                                  edge               wheel 3656 N            171.2 MPa SF  2.07 ok  M = 1791 N m
+  Side rail 50x50x4 at the mast-base joint                                   comb_all           moment 1018 N m          97.3 MPa SF  3.65 ok  all of the joint moment on one side of the joint
+  Mast upright 80x40x4 S235 at the foot                                      carry              moment 499 N m           28.1 MPa SF  8.37 ok  
+  Mast upright 80x40x4 S235 at the foot                                      comb_all           moment 1018 N m          57.2 MPa SF  4.11 ok  
+  Mast-base cross-member 50x50x5 S355, torsion                               carry              torque 499 N m           24.6 MPa SF  8.31 ok  
+  Mast-base cross-member 50x50x5 S355, torsion                               comb_all           torque 1018 N m          50.3 MPa SF  4.08 ok  
+  Mast-base cross-member 50x50x5 S355, bending under the actuator            lift 4 kN          4000 N at mid-span       69.9 MPa SF  5.08 ok  
+  Mast foot shoe bolt group, 4 x M12 8.8                                     carry              moment 499 N m           58.4 MPa SF 10.96 ok  capacity at bolt yield 5470 N m
+  Upright to shoe weld: full-penetration on the two 40 mm faces = wall stren carry              moment 499 N m           28.1 MPa SF  8.37 ok  as the upright section
+  Mast foot shoe bolt group, 4 x M12 8.8                                     comb_all           moment 1018 N m         119.1 MPa SF  5.38 ok  capacity at bolt yield 5470 N m
+  Upright to shoe weld: full-penetration on the two 40 mm faces = wall stren comb_all           moment 1018 N m          57.2 MPa SF  4.11 ok  as the upright section
+  HGH15CA block, C0 23.47 kN, pitch 200 mm                                   carry              block 2495 N                -     SF  9.40 ok  
+  Rail screws M4 12.9 into the 10 mm flat (2 per block length)               carry              screw 1248 N            142.1 MPa SF  7.60 ok  
+  HGH15CA block, C0 23.47 kN, pitch 200 mm                                   comb_all           block 5088 N                -     SF  4.61 ok  
+  Rail screws M4 12.9 into the 10 mm flat (2 per block length)               comb_all           screw 2544 N            289.8 MPa SF  3.73 ok  
+  Comb pivot pin D20 8.8                                                     comb_all           comb 4523 N             115.2 MPa SF  5.56 ok  
+  Nose cross-member 50x50x3 S235, bending (3 g on the castor pair, at mid-sp static x3          castors 2646 N           68.2 MPa SF  3.44 ok  
+  Nose cross-member 50x50x3 S235, torsion (kerb strike, 80 N m per wheel)    kerb               push 970 N               15.4 MPa SF  8.83 ok  lever 0.21 m to the pin
+  Nose cross-member 50x50x3 S235, torsion (kerb strike, 150 N m per wheel)   kerb               push 1818 N              28.8 MPa SF  4.71 ok  lever 0.21 m to the pin
+  Rocker bushes D20 x 12 bronze (2, 70 mm apart)                             kerb 80 N m        bush 485 N                2.0 MPa SF 29.70 ok  
+  Rocker pin D20 8.8 (bending between bush and housing, 12 mm arm)           kerb 80 N m        bush 485 N                7.4 MPa SF 86.39 ok  
+  Hanger plates 10 x 90 S355, weak axis, 185 mm from pin to the member       kerb 80 N m        plate 485 N              59.8 MPa SF  5.94 ok  each plate takes half
+  Rocker bushes D20 x 12 bronze (2, 70 mm apart)                             kerb 150 N m       bush 909 N                3.8 MPa SF 15.84 ok  
+  Rocker pin D20 8.8 (bending between bush and housing, 12 mm arm)           kerb 150 N m       bush 909 N               13.9 MPa SF 46.08 ok  
+  Hanger plates 10 x 90 S355, weak axis, 185 mm from pin to the member       kerb 150 N m       plate 909 N             112.1 MPa SF  3.17 ok  each plate takes half
+  Castor beam 50x40x3 S235 at the pivot (3 g on one castor)                  static x3          castor 1323 N            52.8 MPa SF  4.45 ok  
+  Actuator base bracket 10 x 120 S355 (gussets not counted)                  lift 4 kN          4000 N at 40 mm          80.0 MPa SF  4.44 ok  
+  Actuator base bracket 10 x 120 S355 (gussets not counted)                  stall 6 kN (ASSUME 6000 N at 40 mm         120.0 MPa SF  2.96 ok  
+  Mast-base cross-member 50x50x5 S355, bending under a stalled actuator      stall 6 kN (ASSUME 6000 N at mid-span       98.8 MPa SF  3.59 ok  
+  Lift stop bracket bolts, 2 x M10 8.8 each side                             stall 6 kN (ASSUME bolt 6600 N             113.8 MPa SF  3.25 ok  
+  Lift stop tongue on the carriage plate edge, bearing 40 x 16 mm, aluminium stall 6 kN (ASSUME 3000 N per side           4.7 MPa SF 53.33 ok  6082-T6, 250 MPa ASSUMED
+  Bumper carrier drop legs 2 x 40x40x2 S235, 200 mm                          side knock 500 N   per leg 250 N            13.6 MPa SF 17.24 ok  
+  Bumper guide pins 2 x D12 8.8, 20 mm stick-out                             side knock 500 N   per pin 250 N            29.5 MPa SF 21.71 ok  
+  Bumper carrier drop legs 2 x 40x40x2 S235, 200 mm                          side knock 1000 N  per leg 500 N            27.3 MPa SF  8.62 ok  
+  Bumper guide pins 2 x D12 8.8, 20 mm stick-out                             side knock 1000 N  per pin 500 N            58.9 MPa SF 10.86 ok  
+  Carriage cross-beam 50x50x4 S355 (block force x 170 mm)                    carry              block 2495 N             40.6 MPa SF  8.75 ok  
+  Carriage plate strip between beam end and block, 50 x 16 aluminium, 30 mm  carry              block 2495 N             35.1 MPa SF  7.12 ok  6082-T6, 250 MPa ASSUMED
+  Carriage cross-beam 50x50x4 S355 (block force x 170 mm)                    comb_all           block 5088 N             82.7 MPa SF  4.29 ok  
+  Carriage plate strip between beam end and block, 50 x 16 aluminium, 30 mm  comb_all           block 5088 N             71.6 MPa SF  3.49 ok  6082-T6, 250 MPa ASSUMED
+  Pad arm 80x40x3 S235 at the lower bolt                                     pad peak           pad 1330 N               47.6 MPa SF  4.93 ok  
+  Carriage plate tongue 120 x 16 aluminium at its root                       pad peak           lower bolt 4162 N        97.5 MPa SF  2.56 ok  6082-T6, 250 MPa ASSUMED
+  Pad spring at the full 45 mm stroke (wire 4.5, 15 coils)                   full stroke        825 N per spring        768.5 MPa SF  1.20 ok  spring check, not a yield check: against 0.5 x 1850 MPa (chrome-silicon spring wire, ASSUMED); an occasional load
+lowest SF 2.04; below 2.0: none
+left out of the sizing loads: {'file': 'B2F_S5_ESE240SL_pothole_v08_lsr004_r3sh.json', 'wheel': 18786.808, 'comb': 6497.778, 'pad': 1501.138, 'yaw_dev': 179.895, 'roll': 5.953}

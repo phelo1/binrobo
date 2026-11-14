@@ -1,0 +1,91 @@
+[  101.1] pi   rear camera: bin axis 0.008 m off the estimate (camera -0.025 m) -> estimate corrected, re-aligning
+[  115.5] pi   pre-grab gate OK: lateral -0.006 m, yaw 0.19 deg (truth)
+[  196.0] pi   yard exit path 9.5 m from lateral -4.32 m, map / known-object clearance 0.74 m
+[   80.1] pi   rear camera: bin axis 0.014 m off the estimate (camera -0.029 m) -> estimate corrected, re-aligning
+[   94.5] pi   pre-grab gate OK: lateral -0.005 m, yaw 1.01 deg (truth)
+[ 3408.0] pi   pre-grab gate OK: lateral -0.030 m, yaw -0.96 deg (truth)
+SAVED s1a__s7 result=pass outcome=plan completed sim 3347 s
+[ 1610.1] pi   rear camera: bin axis 0.084 m off the estimate (camera -0.057 m) -> estimate corrected, re-aligning
+[ 1626.0] pi   pre-grab gate OK: lateral 0.017 m, yaw 0.73 deg (truth)
+SAVED s1b__s7 result=pass outcome=plan completed sim 3349 s
+[   79.0] pi   pre-grab gate OK: lateral -0.015 m, yaw 0.12 deg (truth)
+[ 6694.9] pi   rear camera: bin axis 0.002 m off the estimate (camera -0.036 m) -> estimate corrected, re-aligning
+[ 6711.3] pi   pre-grab gate OK: lateral -0.002 m, yaw 0.37 deg (truth)
+[ 6786.0] pi   yard exit path 8.5 m from lateral -2.97 m, map / known-object clearance 2.94 m
+SAVED s1a__s11 result=pass outcome=plan completed sim 3318 s
+SAVED s3a__s7 result=pass outcome=plan completed sim 9926 s
+[ 1628.1] pi   pre-grab gate OK: lateral -0.029 m, yaw 0.50 deg (truth)
+[ 1605.0] pi   pre-grab gate OK: lateral -0.031 m, yaw 0.71 deg (truth)
+SAVED s1b__s11 result=pass outcome=plan completed sim 3292 s
+[   88.0] pi   pre-grab gate OK: lateral -0.002 m, yaw -0.34 deg (truth)
+[ 4903.9] pi   rear camera: bin axis -0.077 m off the estimate (camera 0.026 m) -> estimate corrected, re-aligning
+[ 4917.5] pi   rear camera: bin axis 0.067 m off the estimate (camera -0.048 m) -> estimate corrected, re-aligning
+[ 4931.5] pi   pre-grab gate OK: lateral 0.015 m, yaw 0.27 deg (truth)
+SAVED s1a__s23 result=pass outcome=plan completed sim 3362 s
+[ 8178.0] pi   rear camera: bin axis -0.053 m off the estimate (camera 0.062 m) -> estimate corrected, re-aligning
+[ 8195.9] pi   pre-grab gate OK: lateral -0.005 m, yaw -0.33 deg (truth)
+[ 1637.1] pi   rear camera: bin axis 0.064 m off the estimate (camera -0.063 m) -> estimate corrected, re-aligning
+[ 1653.0] pi   pre-grab gate OK: lateral -0.017 m, yaw -0.08 deg (truth)
+SAVED s3b__s23 result=pass outcome=plan completed sim 9941 s
+[  100.0] pi   pre-grab gate OK: lateral 0.005 m, yaw -0.51 deg (truth)
+[  182.0] pi   yard exit path 9.5 m from lateral -4.34 m, map / known-object clearance 0.75 m
+SAVED s1b__s23 result=pass outcome=plan completed sim 3364 s
+Traceback (most recent call last):
+SAVED s4a__s7 result=pass outcome=plan completed sim 297 s
+SAVED s4a__s11 result=pass outcome=plan completed sim 293 s
+SAVED s4a__s23 result=pass outcome=plan completed sim 306 s
+SAVED s4b__s7 result=pass outcome=plan completed sim 277 s
+SAVED s4b__s11 result=pass outcome=plan completed sim 275 s
+SAVED s4b__s23 result=pass outcome=plan completed sim 289 s
+SAVED s4c__s7 result=alert outcome=no fix hold sim 251 s
+SAVED s4c__s11 result=alert outcome=no fix hold sim 247 s
+SAVED s4c__s23 result=alert outcome=no fix hold sim 253 s
+SAVED s5a__s7 result=pass outcome=plan completed sim 259 s
+SAVED s5a__s11 result=pass outcome=plan completed sim 267 s
+SAVED s5a__s23 result=pass outcome=plan completed sim 274 s
+SAVED s5b__s7 result=pass outcome=plan completed sim 260 s
+SAVED s5b__s11 result=pass outcome=plan completed sim 258 s
+SAVED s5b__s23 result=pass outcome=plan completed sim 272 s
+SAVED s6a__s7 result=alert outcome=companion freeze -> firmware HOLD sim 144 s
+SAVED s6a__s11 result=alert outcome=companion freeze -> firmware HOLD sim 151 s
+SAVED s6a__s23 result=alert outcome=companion freeze -> firmware HOLD sim 160 s
+[   66.1] pi   pre-grab gate OK: lateral 0.015 m, yaw 0.11 deg (truth)
+SAVED s6b__s7 result=alert outcome=companion freeze -> firmware HOLD sim 100 s
+[   66.1] pi   rear camera: bin axis -0.058 m off the estimate (camera 0.082 m) -> estimate corrected, re-aligning
+[   83.1] pi   rear camera: bin axis 0.036 m off the estimate (camera -0.044 m) -> estimate corrected, re-aligning
+[   99.6] pi   pre-grab gate OK: lateral -0.013 m, yaw 0.42 deg (truth)
+SAVED s6b__s11 result=alert outcome=companion freeze -> firmware HOLD sim 133 s
+[   66.1] pi   rear camera: bin axis -0.019 m off the estimate (camera 0.051 m) -> estimate corrected, re-aligning
+[   80.6] pi   pre-grab gate OK: lateral -0.008 m, yaw 0.61 deg (truth)
+SAVED s6b__s23 result=alert outcome=companion freeze -> firmware HOLD sim 114 s
+SAVED s7__s7 result=alert outcome=e-stop sim 123 s
+SAVED s7__s11 result=alert outcome=e-stop sim 139 s
+SAVED s7__s23 result=alert outcome=e-stop sim 144 s
+SAVED s8__s7 result=alert outcome=energy guard sim 46 s
+SAVED s8__s11 result=alert outcome=energy guard sim 47 s
+SAVED s8__s23 result=alert outcome=energy guard sim 46 s
+SAVED s9__s7 result=alert outcome=bin missing sim 232 s
+SAVED s9__s11 result=alert outcome=bin missing sim 227 s
+SAVED s9__s23 result=alert outcome=bin missing sim 245 s
+SAVED s10a__s7 result=alert outcome=bin tipped sim 177 s
+SAVED s10a__s11 result=alert outcome=bin tipped sim 172 s
+SAVED s10a__s23 result=alert outcome=bin tipped sim 185 s
+SAVED s10b__s7 result=alert outcome=bin blocked sim 178 s
+SAVED s10b__s11 result=alert outcome=bin blocked sim 173 s
+SAVED s10b__s23 result=alert outcome=bin blocked sim 185 s
+SAVED s11a__s7 result=alert outcome=wind no-go sim 47 s
+SAVED s11a__s11 result=alert outcome=wind no-go sim 46 s
+SAVED s11a__s23 result=alert outcome=wind no-go sim 47 s
+SAVED s11b__s7 result=alert outcome=frost no-go sim 46 s
+SAVED s11b__s11 result=alert outcome=frost no-go sim 48 s
+SAVED s11b__s23 result=alert outcome=frost no-go sim 47 s
+SAVED s12a__s7 result=alert outcome=pad outside geofence sim 46 s
+SAVED s12a__s11 result=alert outcome=pad outside geofence sim 47 s
+SAVED s12a__s23 result=alert outcome=pad outside geofence sim 47 s
+SAVED s12b__s7 result=alert outcome=firmware fence hold sim 94 s
+SAVED s12b__s11 result=alert outcome=firmware fence hold sim 94 s
+SAVED s12b__s23 result=alert outcome=firmware fence hold sim 95 s
+[   97.0] pi   pre-grab gate OK: lateral -0.028 m, yaw -0.87 deg (truth)
+[  178.0] pi   yard exit path 9.5 m from lateral -4.34 m, map / known-object clearance 0.76 m
+QUEUE left 0 / 54, wall 0 s
+r3 sitl done

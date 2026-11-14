@@ -1,0 +1,13 @@
+runs_r3_pf P7: DONE P7 PASS [] sim 1305 s E 21.8 Wh {"clear_min": 0.045, "clear_at": 290.2, "seated_all": true, "bin_ground_N": 0.0, "roll_max": 1.7312, "pitch_max":
+runs_r3_pf P1: DONE P1 PASS [] sim 1306 s E 15.4 Wh {"clear_min": 0.0504, "clear_at": 290.2, "seated_all": true, "bin_ground_N": 0.0, "roll_max": 1.7196, "pitch_max"
+runs_r3_pf P2a: DONE P2a PASS [] sim 1289 s E 30.9 Wh {"clear_min": 9.0, "clear_at": null, "seated_all": true, "bin_ground_N": 0.0, "roll_max": 1.8089, "pitch_max": 6
+runs_r3_pf P3: DONE P3 PASS [] sim 1309 s E 15.1 Wh {"clear_min": 0.0973, "clear_at": 14.2, "seated_all": true, "bin_ground_N": 0.0, "roll_max": 1.7126, "pitch_max":
+runs_r3_pf P4a: DONE P4a PASS [] sim 376 s E 0.3 Wh {"clear_min": 0.0955, "clear_at": 166.0, "seated_all": true, "bin_ground_N": 0.0, "roll_max": 0.5069, "pitch_max":
+runs_r3_pf P4b: DONE P4b PASS [] sim 493 s E 5.8 Wh {"clear_min": 0.0959, "clear_at": 170.1, "seated_all": true, "bin_ground_N": 0.0, "roll_max": 2.4416, "pitch_max":
+runs_r3_pf chain done
+runs_r3_pf P5a_drop_sharp_3kN: DONE P5a_drop_sharp_3kN PASS [] sim 627 s E 0.2 Wh {"clear_min": 0.0449, "clear_at": 290.2, "seated_all": true, "bin_ground_N": 0.0, "roll_max": 0.199
+runs_r3_pf P5d_up_sharp_3kN: DONE P5d_up_sharp_3kN FAIL ['drive2 stalled at s 291.0 (no progress 12 s (stall))'] sim 685 s E 0.7 Wh {"clear_min": 0.0752, "clear_at": 291.0, "seate
+runs_r3_pf P6a_person_estop: DONE P6a_person_estop PASS [] sim 345 s E 0.2 Wh {"clear_min": 0.1, "clear_at": 130.1, "seated_all": true, "bin_ground_N": 0.0, "roll_max": 0.4996, "p
+runs_r3_pf chain done
+runs_r3_pf P2c: DONE P2c PASS [] sim 1334 s E 32.0 Wh {"clear_min": 0.0972, "clear_at": 290.9, "seated_all": true, "bin_ground_N": 0.0, "roll_max": 1.8469, "pitch_max
+runs_r3_pf chain done

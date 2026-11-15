@@ -1,0 +1,512 @@
+[text of COLDEYE_rev3_2026-11-14.pdf, taken out of the PDF for the public repository; pictures and layout are not kept]
+
+    Cold-eye review: BinRobo revision 3 (reply to our rev 2 review, 16 A3
+                           sheets, 14 Nov 2026)
+
+
+                                                 14 November 2026
+
+
+Verdict
+A real step forward, honestly reported, but still not a build basis. Revision 3 fixes the lift top end, the floating
+parts and the weight table, and the reply admits its own errors plainly. Our checks reproduce their weight (152.19 kg)
+row for row and their stop position (q 335.1 mm) to 0.5 mm. What remains is mostly in what nobody checked yet: who
+protects a person in front of the robot, what the actuator does at its own end of travel, fatigue at the new welds, and
+whether the gate limits they want moved (120 kg, 50 Wh, 60 N m) are being moved for a reason.
+Scope: drawings, design and claims only. No MuJoCo or SITL run here (the sibling streams rev3-mech and rev3-sitl do
+that). Every number below comes from OpenCascade booleans on their own model script, from hand calculations in
+calcs_rev3.py, or from a page cited in the text. ASSUMED marks a value with no datasheet behind it.
+
+Class                                                                        Count    Items
+Blocker                                                                           1   B-1 personnel stop: the 15 mm
+                                                                                      bumper cannot stop a 152-262 kg
+                                                                                      robot from 0.8 m/s, and no safety
+                                                                                      function covers lowering
+Major                                                                             8   M-1 weight and the 120 kg gate
+                                                                                      (B2-F fails it too); M-2 side rail at
+                                                                                      the limit and its fatigue; M-3
+                                                                                      actuator end of travel and stop
+                                                                                      load; M-4 welds in a bolted DIY
+                                                                                      build; M-5 safety sheet gaps; M-6
+                                                                                      actuator data conflicts (holding,
+                                                                                      IP42 vs IP65, closed length); M-7
+                                                                                      castor-tyre claim rests on a
+                                                                                      contact-model artefact; M-8
+                                                                                      goalpost moves (80 N m, 70 Wh,
+                                                                                      160 kg)
+Minor                                                                            10   m-1 to m-10 below
+Confirmed                                                                        12   listed in “What revision 3 got
+                                                                                      right”
+
+
+Cost. Revision 3 adds about EUR 210 to 1,250 over B2-F with S12 (EUR 4,244.57 all-in) for its own mechanical
+changes, the top of that range being a fabricator for the welds. Separately, EUR 390 to 1,290 of safety hardware (safety
+controller, contactors with mirror contacts, lift driver, pre-charge) is needed by both designs. Revision 3 all-in: about
+EUR 4,850 to 6,800.
+Honest note on our own design. The reply’s claim that B2-F’s weight table has the same gaps is correct. B2-F’s
+carriage row is 6.95 kg (7.55 with S12). Built from our own CAD it is 24.9 kg lean and 35 kg as drawn. Its guards row is
+1.60 kg against 5.6 kg drawn. B2-F with its own S12 sections is about 135 to 158 kg, not 92 kg. Neither design meets
+120 kg. B2-F’s gate results were also run with a carriage roughly 17 kg too light.
+
+
+
+
+                                                           1
+Blocker
+B-1. The front bumper is a trip switch, not a person stop; lowering has no safety function
+Evidence (calcs_rev3.json “bumper”; Fig 5):
+  • The bar slides 15 mm on sprung pins.
+  • The robot’s own G4 stop from 0.8 m/s takes 0.23 m on the 12 % slope, about 1.4 m/s2.
+  • With 0.05-0.1 s from contact to braking, the robot travels 0.17 to 0.31 m after contact: 11 to 20 times the bar
+    travel.
+  • Kinetic energy is 49 J empty and 84 J with a full bin. After the bar bottoms out, all of it goes into whatever the
+    bar is pressing.
+  • The bar only stops the robot within its own travel below about 0.15 m/s.
+  • The usual rule for bumper-type person detection on driverless vehicles (ISO 3691-4, EN 1525 before it) is that the
+    compliant travel must cover the stopping distance. That rule is not met. The design never states which standard it
+    targets; sheet 15 says only “PL d”.
+Lowering:
+  • The 4 kN screw actuator drives the carriage and bin down with up to its full force (about 5.6 kN at the 4 A limit
+    on sheet 15).
+  • Sheet 15 has no safety function for this: no lower-only-when-clear, no force limit on the way down, and the down
+    switch is a single channel.
+  • A foot under the bin wheels or the comb at set-down is exposed.
+What it needs:
+  • Either about 0.3 m of compliant bumper (foam or a deflecting skirt) at 0.8 m/s, or a speed limit of about 0.15 m/s
+    whenever people can be present.
+  • Or a safety-rated presence sensor (a safety laser scanner, about EUR 1.5-3k) with the bumper kept as a last resort.
+  • A lowering function: a down-force current limit and a stop on the comb or pad ToF.
+  • The dock contacts sit on the bumper face. Docking presses the bar, so the bumper trips during docking. Muting it
+    is a safety function of its own and is not designed.
+This is shared with B2-F, whose bumper bar has the same concept. It blocks unattended operation, not a bench prototype.
+
+
+Major findings
+M-1. Weight: 152.2 kg confirmed; likely 152-162 kg; the 120 kg gate is out of reach for
+both designs
+Reproduced:
+  • I re-derived 10 rows from their solids_r3_final.json and EN 10219 catalogue masses: rails, cross-members,
+    uprights, carriage plate, comb, guards, pad block, cross-beams and pad arm.
+  • All match within 0.03 kg.
+  • The densities are right: steel 7.85, 6082 aluminium 2.70, UHMW and HDPE 0.95, rubber 1.10.
+  • No drawn solid is missing or counted twice. The 12 groups skipped by the script are all inside named bought-in
+    rows.
+Adjustments to inherited rows (mass_audit.json):
+
+Row                                                                    Change kg     Basis
+Lift actuator 3.50 kg                                                        -1.05   Botland lists the same Elektrobim
+                                                                                     FDI 4000 N / 400 mm
+                                                                                     (ELB-15868) at 2.445 kg,
+                                                                                     https://botland.store/15868-
+                                                                                     linear-actuator-super-power-jack-
+                                                                                     4000n-6mms-24v-40cm-
+                                                                                     stroke.html
+
+
+
+
+                                                          2
+Row                                                                   Change kg     Basis
+Drive units 2 x 9.68 kg                                                +2 to +8     ASSUMED. A comparable 350 W
+                                                                                    32:1 wheelchair gearmotor is 7.2
+                                                                                    kg net
+                                                                                    (https://www.medicalexpo.com/prod/dongyan
+                                                                                    dong-zheng-motor-co-ltd/product-
+                                                                                    4579534-1105985.html). Add a 330
+                                                                                    mm solid PU wheel (3-4 kg), the
+                                                                                    08B 12T/42T chain stage (about
+                                                                                    1.7 kg) and the stub axle
+Bumper, lights, dock “as B1” 1.95                                      0 to +1.5    the front bar and corners are now
+kg                                                                                  drawn at 2.6 L
+Sensors “as B1” 1.86 kg                                                0 to +1.0    D40 post 650 mm plus horn
+Battery 5.05 kg                                                         -1.0 to 0   BOM G14: pack about 3.8 kg plus
+                                                                                    case
+Revision 3                                                       152.1 to 161.6     central about 156.6 kg
+
+
+B2-F, audited from our own CAD (cad_B2F_vol.py -> solids_B2F.json):
+  • Carriage: lean build 24.9 kg (10 mm 640 comb at the S12 8 mm, 12 mm aluminium plate, RHS pad arm), 35.2 kg
+    as drawn (solid blocks), against a table row of 7.55 kg. That is +17 to +28 kg.
+  • Guards, flares, rollers and brackets: 5.6 kg against 1.60 kg, +4.0 kg.
+  • Rail drop plates +0.8 kg, HDPE +0.7 kg, fasteners +1.5 to 2.5 kg, actuator -1.05 kg.
+  • With the same bought-in corrections as revision 3, B2-F with S12 is 135 to 158 kg. Without S12, whose 2 mm
+    walls fail, it is 116 to 128 kg.
+Where 120 kg came from. It is the concept-gate figure from the G6 review (“mass <= 120 kg”), set so that concept
+B stayed comparable to A’ at 115.8 kg (REVIEW_G6_coldeye.md, CONCEPT_GATE_G6.md). It is a comparison gate, not a
+physical requirement. The reply is right that no physical basis was given.
+What the weight still costs:
+  • Energy: +7 Wh per trip.
+  • The sharp 40 mm step: lost at 60 N m.
+  • Tip margin: down to 31.9 deg, which is still large.
+  • Hand recovery: about 390 N to push 152 kg plus a full bin up 12 % (340 N at 120 kg). That is a two-person job
+    either way.
+Fix:
+  • Replace G9 with functional criteria: SOC, step, stop and tip, all already in the gate, plus a cap on a weighed
+    prototype.
+  • 160 kg leaves no margin over our 152-162 kg range; 165 kg would be honest.
+  • Apply the same criteria to B2-F.
+
+M-2. Side rail: SF 2.04 rests on the tyre model; the welded corner plate is a fatigue detail
+Reproduced:
+  • 174.4 MPa at the 3,724 N wheel load with M = F x 0.49 m and Z = 10,461 mm3 (sharp corners).
+  • The load reading from their 4.0.1 runs is applied correctly. The categories are as in S12: compliant-tyre kerb and
+    pothole for “edge”, the rest for “carry”.
+  • We accept the 3.17 edge artefact.
+Not covered:
+  • The same 4.0.1 runs give 10,406 N on a rigid-tyre 40 mm step. They list it as “info only”, as S12 did. On that
+    load the rail SF is 0.73 (Fig 4).
+  • Excluding it is only valid if the real tyre is as soft as the 15 mm compliant-tyre model. The BOM wheel (DRV-W8)
+    is a solid PU 330 mm wheel, which sits closer to the rigid model.
+  • Fatigue (rough, ASSUMED spectrum):
+       – Load: static drive-wheel load with a full bin 845 N, +/-50 % per bump.
+
+
+                                                          3
+         – Cycles: about 2.0 million in 10 years (3 bins a week, 1 bump per metre, half the distance loaded).
+         – The rear corner plate is fillet-welded on the rail top face at x 450, right at the peak moment. That is roughly
+           FAT 50.
+         – Stress range 39.6 MPa against an allowable of 37.2 MPa, a ratio of 1.07 (fails).
+         – 60x60x4 gives a ratio of 0.71. A bolted plate (FAT 71) on 50x50x4 gives 0.75.
+Fix:
+   • Fit 60x60x4 S355 rails: SF 3.05 static, 1.09 even on the rigid-step peak, +3.4 kg, about EUR 15. They proposed it
+     themselves; take it.
+   • Keep welds off the rail top flange between the mast joint and the axle, or bolt the corner plates.
+
+M-3. Lift end of travel: stops verified; the actuator’s own end stops and the stop load are
+not pinned down
+Sweep (model/sweep_r3.py, every carriage solid against every fixed solid, 0.5 mm steps, q from -20 to 400 mm; Fig 1-2):
+
+                                                             q, mm       first contact
+                                                          -8.9 / -9.9    down-switch body / rail blocks on the bottom stop
+                                                                         tongue
+                                                               -4.9      carriage plate lower edge on the bottom stops
+                                                                  0      down switch roller (lever not drawn; label)
+                                                    305 / 320 / 327      travel used / firmware stop / top switch rollers
+                                                                         (labels)
+                                                                335.1    carriage plate on the bolted top stops (claim 335:
+                                                                         confirmed)
+                                                                338.5    top switch bodies (behind the stops: good)
+                                                                345.1    rail blocks reach the stop brackets (only 10 mm
+                                                                         behind the plate)
+                                                                385.1    actuator bracket and top carriage cross-beam
+                                                                         reach the top tie
+
+
+The actuator’s own end stops depend on two values the drawings do not give: its closed length and the rod-eye pin
+height.
+   • Closed length: 620 mm on the Anodas page, 595 mm Lmin on the Botland page for ELB-15868.
+   • Rod-eye pin: z 950-970 at q 0. The base pin is at z 338 (clevis lugs).
+
+Closed length              Rod eye                                           Retracted q                        Extended q
+620                        z 950                          +8 (bottom stop and down            408 (23 mm into the tie if the
+                                                               switch never reached)                            stops fail)
+620                        z 970                                                 -12                                     388
+595                        z 950                                                 -17                                     383
+595                        z 970                                                 -37                                     363
+
+
+   • So the bolted stops are the only hard limit before the tie in three of the four cases.
+   • In one case the actuator cannot retract far enough to trip the down switch, so the firmware would never see “down”.
+Stop strength (their method of direct shear plus the bolt-pair moment is correct; I assumed bolts at x 500/540, 40 mm
+apart, against their 50 mm):
+
+Stall force                        Bolt force         Bolt SF (yield)                    Bracket SF    Upright wall bearing
+4.0 kN rated                          5.3 kN                       4.0                          4.6                132 MPa
+about 5.6 kN at                       7.4 kN                       2.9                          3.3                186 MPa
+the 4 A limit
+(ASSUMED 0.5
+A no-load)
+
+
+                                                            4
+Stall force                       Bolt force            Bolt SF (yield)               Bracket SF       Upright wall bearing
+6 kN (theirs,                        8.0 kN                         2.7                        3.1                199 MPa
+ASSUMED)
+8 kN (no current                    10.6 kN                         2.0                        2.3                265 MPa
+limit)
+
+
+   • The stops are adequate at their assumed load.
+   • But the load is set by a current limit in a lift driver that is not chosen, and by a stall force the supplier has not
+     stated.
+   • Bearing on the 4 mm upright walls is fine by EN 1993-1-8 (about 24 kN per bolt-wall). The through-bolts still need
+     crush tubes in the 80x40 upright.
+Fix:
+   • Dimension pin-to-pin at q 0 and get the real closed length.
+   • Move the base pin so the actuator’s internal top limit lands at about q 325-330. Then the actuator switches
+     itself off before the bolted stops and never stalls on them; the stops become a backstop.
+   • Make sure the retracted end reaches q -5 or below.
+   • Set the driver current limit at 3.5 A or less and size the stops for 2x the resulting force.
+
+M-4. Revision 3 needs welding; Brian intended a bolted DIY build
+B2-F’s FAB-B2 line is “saw-cut and drilled by Brian, bolted through about 16 laser-cut plates”. Revision 3 has:
+   • 4 corner plates welded over the frame joints;
+   • 2 uprights welded all round (5 mm fillet) to their foot shoes;
+   • 2 castor-pivot hanger plates welded to both faces of the nose cross-member;
+   • 2 bumper-carrier flanges welded;
+   • 4 stop brackets whose tongue is perpendicular to the plate, which means welded or machined from a block.
+The reply flags this (decision 4), which is fair. Cost of a fabricator: about EUR 150-400 (ASSUMED).
+Bolted equivalents exist for every item:
+   • bolted end plates with crush tubes;
+   • a clamp plate pair for the pivot;
+   • angle brackets for the bumper carrier;
+   • stop blocks machined from 40 mm bar.
+This is Brian’s decision; it also feeds M-2, because a bolted corner plate is the better fatigue detail.
+
+M-5. Safety sheet 15: right topology, not yet a PL d design
+Credit: every device has its own input pair (no series chain); both contactors’ mirror contacts are in the feedback loop;
+two tilt switches; pre-charge; a power diode for braking energy; lift interlocks; PL targets per function.
+Still missing or wrong:
+   1. No PL calculation: no MTTFd, DC, CCF or SISTEMA. Their reply says so.
+   2. The safety controller with 9 monitored two-channel inputs is not chosen. The BOM still holds the used PNOZ X3
+      (EUR 61). Budget about EUR 300-550.
+   3. The bumper switches: BOM BMP-L8 is Omron D4N-4120, which is 1NC/1NO. Sheet 15 asks for two NC
+      contacts per switch. Change the part, or use antivalent inputs.
+   4. KM-L8 contactors (SW100-class DC) normally have no mirror contacts to EN 60947-4-1 Annex F, so the EDM on
+      sheet 15 needs different parts. Allow up to about EUR 400.
+   5. The lift driver is not chosen. Its “enable” input is not a safety function. That is acceptable only because the hard
+      stops carry the load (M-3).
+   6. Lowering has no safety function (B-1).
+   7. Actuator holding and brake: open (M-6).
+   8. The speed and standstill monitor is own-build on RP2040s: uncertified, so it needs a validation plan.
+   9. Both tilt switches are the same ball type, which is a common-cause weakness. Pair one with an inclinometer or the
+      flight controller’s IMU on a separate input.
+
+
+                                                             5
+ 10. Docking presses the bumper (B-1).
+
+M-6. Actuator data conflicts
+  • Holding: the bin hangs on it after every stop. Neither supplier page gives a self-locking or static holding figure.
+    Still open.
+  • Ingress protection: Anodas lists IP65. Botland lists IP42 for ELB-15868, the same Elektrobim FDI 4000 N
+    / 6 mm/s / 400 mm unit. IP42 will not survive Irish rain on an outdoor robot. Sheet 13 says “IP65 unit”.
+  • Closed length: 620 vs 595 mm (affects M-3).
+  • Botland states built-in limit switches, 3 A maximum, 50 W. There is no stall-force figure on either page.
+  • Get all four values (holding, IP rating, closed length, stall force) in writing before ordering.
+
+M-7. Castor round-profile tyre: the fail-to-pass flip comes from a contact-model parameter
+The model (make_simB2hx.py) is a condim-3 cylinder, which touches the ground at its two rim edges. Spin friction per
+unit mu N is the half-width: 25 mm for the flat 50 mm tread, 12 mm for the 24 mm strip.
+Pressure-weighted real patches (castor_spin.py; patch sizes ASSUMED; Fig 6) give about:
+  • 15.6-17.3 mm for a real flat 50 mm tread;
+  • 8.3-9.7 mm for a round profile.
+So the flat model overstates a real flat tyre by about 1.5x, and the 24 mm strip sits between a real flat tyre and a real
+round one.
+  • The 6.7 deg fail is probably pessimistic, and the 1.4 deg pass does not prove a round-profile tyre is needed.
+  • A 24 mm contact width on a 200x50 crowned powerchair tyre under about 440 N is plausible.
+  • The change is cheap and points the right way, but the evidence is model tuning.
+  • The swivel offset is 50 mm in the model; get the real part’s figure.
+Fix: bench-measure the swivel torque of the chosen castor at 450 N on wet tarmac and set the model contact width from
+that. Until then, report S7 as “passes with a contact-model assumption”.
+
+M-8. Goalpost moves: 80 N m, 65/70 Wh, 160 kg
+80 N m per wheel (Fig 4, calcs_rev3.json “drive”):
+  • Hardware (ASSUMED Kt 0.044 N m/A, worm efficiency 0.70): 80 N m is 1.07 N m at the motor, 27 A per motor,
+    24 N m at the 32:1 gearbox output (a comparable unit is rated 60 N m max) and 0.98 kN in the 08B chain (about
+    18 kN breaking).
+  • That is within the RoboClaw’s 30 A continuous rating. Rated continuous torque is about 50 N m at the wheel, so
+    80 N m is a few-seconds rating.
+  • Both wheels plus electronics draw about 56 A, above the 50 A slow main fuse (fine for seconds) and near the 60 A
+    BMS. So it needs a stall timeout.
+  • But: 60 N m was the frozen common term in both designs’ models (simB2.py: “60 N m = frozen common term”),
+    and 80 was run on one case only.
+  • Re-run G2, G3, G4 and the S5/S6 loads at 80, for B2-F as well. The kerb loads in S12 already use 80/150 N m.
+Trip energy 50 -> 65/70 Wh:
+  • Their 57.8-64.3 Wh is exactly the mass effect: our rev2 slope of 0.207 Wh/kg predicts 59.6 Wh at 152 kg.
+  • 50 Wh is a per-trip proxy (C6). The physical rule, end SOC of at least 20 % after a three-bin evening, passes:
+      – 50 % at 64.3 Wh with a new 480 Wh pack;
+      – 31 % with an aged (80 %) pack at 0 C (85 %).
+  • Acceptable if C6 is re-stated as that SOC rule at aged and cold capacity, and the energy guard’s budget is raised to
+    match.
+160 kg: see M-1.
+Verdict on M-8: these are goalpost moves, each defensible because the functional criterion behind it still passes. Brian
+decides, and the same limits must then apply to B2-F.
+
+
+
+
+                                                           6
+Minor findings
+  • m-1. Pad springs (Fig 7):
+       – The geometry is consistent: 4.5 wire, D 26.5, 14.5 active coils give 15 N/mm. Free length 134 mm, fitted 124
+          mm (150 N each), 79 mm at full stroke (825 N each, 1.65 kN per pair), 768 MPa (Wahl).
+       – Solid length is 74.3 mm, so 4.7 mm of clearance, below the EN 13906-1 minimum of 9.9 mm.
+       – At solid: 834 MPa, still under about 950 MPa (0.5 Rm, ASSUMED for 4.5 mm VDSiCr).
+       – Buckling is stable only with both ends guided (nu 0.5). At nu 0.7 the critical deflection is 36 mm against 55
+          needed. Seat the springs on spigots or in pockets.
+       – No ISO 10243 die spring fits: too stiff at this length. Order a custom spring, or about 145 mm free length.
+       – The softer pad we suggested (0.6 kN at full stroke) is still untested.
+  • m-2. The actuator body sits 4 mm into its base-bracket back plate (6.8 cm3). Their clash check allows this pair.
+  • m-3. Mast foot shoe. Their SF 5.38 adds plastic capacities of the shear and tension bolts. In clearance holes the
+    two tension bolts take the 1,018 N m first: 22 kN each, SF 2.44. That still passes. Specify preload, and crush
+    tubes in the 50x50x5 member.
+  • m-4. Motor plate. The 6 mm drive plate under a sideways tyre load has SF 1.18 at 1 kN (2.37 at 500 N; plate
+    alone, ASSUMED load). It is not in S12 or in struct_r3. The same applies to B2-F. Add a gusset or show that the
+    flange carries the load.
+  • m-5. Sheet 13 says the rail safety factor is 2.2; the calculation says 2.04.
+  • m-6. The comb clears the side guards by 8 mm a side (700 mm comb, 716 mm between guards). That is tight for a
+    self-aligning comb.
+  • m-7. Comb loads. The reply says comb loads “stay about the same” on 4.0.1, but the 8,148 N is B2-F’s keeper-on
+    case (H2_KEEPER=1). Like for like, the 9,634 N lsr004 case falls to 4,550 N. Without the keeper B2-F gives 4,071
+    N and revision 3 gives 4,523 N, which is consistent. Their sizing on their own loads is right; only the sentence is off.
+  • m-8. The rail blocks reach the stop brackets 10 mm after the plate does. If the aluminium plate edge yields, the
+    blocks become the stop. Add a chamfer, or give the blocks 15 mm or more of clearance.
+  • m-9. Drawings. Sheet 16 has good overall dimensions, and the looms pass their check. There are still no part
+    drawings, hole patterns, weld symbols, pin-to-pin length, tolerances or bolt torques. “Concept, not for manufacture”
+    is stated correctly.
+  • m-10. Sheet 13. It now marks every line as “new line needed” or “to change”, which is honest. Still unpriced: lift
+    driver, safety controller, castor-beam parts, front camera, corner plates, stops, switches, cable chain and pre-charge.
+    Delete the old keeper, toggle and ballast lines.
+
+
+What revision 3 got right (confirmed)
+  1. The weight table reproduces from the drawn solids: 10 of 10 rows checked, 152.19 kg total.
+  2. The top stops are at q 335.1 mm, ahead of the switch bodies (338.5). The finger gap under the tie is 35 mm. The
+     bottom stops are at q -4.9.
+  3. Every rev 2 clash is gone: guard into tyre, post through lidar, pad arm in the comb pivot, carriage plate in the rails.
+     In both poses only legacy anti-tip, flare and stripe overlaps remain, plus m-2.
+  4. The stop bolt calculation method is correct, and adequate at their 6 kN.
+  5. struct_r3 loads are read and applied correctly. I reproduced rail, upright, cross-member torsion and block stresses.
+  6. The mast foot, castor pivot, bumper carrier and carriage now have real joints and sizes. Nothing floats.
+  7. The pad now really strokes 45 mm with 300 N preload and 1.65 kN at full stroke.
+  8. Their claim about B2-F’s table is correct (M-1).
+  9. Trip energy is consistent with our own SITL mass slope.
+ 10. The recount of the 180 rev 2 pick-ups matches their summary: 178 lifted, 2 refused, 1 beyond 50 mm, 0 beyond 80
+     mm (recount_r2b_summary.json).
+ 11. G8 tip of 31.9 deg is from the revision 3 file (B2F_tipcalc_r3.json).
+ 12. The safety topology moved from a series chain to per-device input pairs with EDM on both contactors.
+
+
+Their section 1 table, row by row
+
+Review item                              Their position                            This review
+“Never > 31 mm off-centre” wrong         withdrawn; 1 lift at 50.2 mm               Agree; recount file matches
+Tip figure from wrong model              rev 3 own: 31.9 / 26.0 deg                 Agree (31.9 in their file)
+
+
+                                                            7
+Review item                              Their position                             This review
+Placement limit 0.15 m                    corrected; worst 0.10 m                   Agree; the SITL stream verifies the
+                                                                                    runs
+Hedge 0.152 m                             accepted as ours; rev 3 0.195 m           Agree; the SITL stream verifies
+Pad 9.8 mm, not 11                        label now 10 mm                           Agree: model gives 9.8 mm
+Lift top end B-1                          redesigned, nothing in the way            Agree up to 335.1 mm; actuator
+                                                                                    end stops and stall load open (M-3)
+Structure B-2: edge loads are a           rails stay 50x50x4 S355                   Partly. Agree for the 3.17 edge. But
+simulator fault                                                                     the 4.0.1 rigid step gives 10.4 kN, and
+                                                                                    the BOM tyre is solid PU, so the rail
+                                                                                    is at its limit and fails a rough fatigue
+                                                                                    check (M-2)
+Weight 123-128 kg                         it is 152 kg                              Agree, our audit was low. Real likely
+                                                                                    152-162 kg
+Safety M-2                                sheet 15 proposal                         Better topology; PL d not shown
+                                                                                    (M-5, B-1)
+Actuator holding M-6                      open                                      Agree; plus the IP42 vs IP65 and
+                                                                                    closed-length conflicts (M-6)
+Pad springs, bumper brackets              redesigned                                Springs work but sit inside the EN
+                                                                                    13906 clearance (m-1). The carrier is
+                                                                                    real; the bumper travel cannot stop
+                                                                                    the robot (B-1)
+False holds, seating check                done                                      Not verified here (mech stream)
+Lane time limit, refusal logic            done                                      Not verified here (SITL stream)
+Parts list vs BOM                         corrected or marked                       Agree, honestly marked; still
+                                                                                    unpriced lines (m-10); rail SF 2.2 vs
+                                                                                    2.04 (m-5)
+Brian’s bins                              open                                      Agree
+
+
+
+Cost delta (EUR, ASSUMED estimates, cost_rev3.json)
+
+Group                                                                    Low                                           High
+Safety hardware needed by                                               +392                                         +1,294
+both designs (controller, EDM
+contactors, lift driver,
+pre-charge, switches), +12-15
+%
+Revision 3 mechanical                                                   +350                                           +835
+(switches, stops, frame, pivot,
+bumper carrier, carriage, pad,
+castors, chain)
+Welding by a fabricator (or 0 if                                            0                                          +400
+redesigned bolted)
+Deleted (toggle pad, keeper,                                             -159                                           -144
+ballast, actuator price)
+Revision 3 own delta (sum                                              +214                                         +1,255
++191 to +1,091), incl. 12-15 %
+Revision 3 all-in (from EUR                                            4,851                                          6,794
+4,244.57)
+B2-F with the same safety fixes                                         4,637                                          5,539
+
+
+
+For the other agent (short list)
+   1. Fit 60x60x4 rails and keep welds off the rail top flange at the mast joint.
+
+
+                                                              8
+  2. Dimension the actuator pin-to-pin; put its internal top limit at about q 325-330 and its bottom below q -5; get L,
+     stall force, holding force and IP rating in writing.
+  3. Bumper and person protection (B-1), and a lowering safety function.
+  4. Run G2-G4 and the S5/S6 loads at 80 N m on both designs before proposing it.
+  5. Re-state C6 as end SOC at aged and cold capacity; propose a weighed-mass cap of 165 kg rather than 160 kg.
+  6. Bench-measure castor swivel torque before calling the round tyre necessary.
+  7. Pad spring at about 145 mm free length; D4N 2NC variant; crush tubes in the upright and cross-member.
+
+
+Files
+Working files are in /workspace/work/coldeye_rev3/:
+  • PROGRESS.md, mass_audit.py and .json, cad_B2F_vol.py, solids_B2F.json, calcs_rev3.py and .json,
+    castor_spin.py and .json, cost_rev3.py and .json, figs_rev3.py;
+  • model/: parts_r3.py (their r3 patch, exported to BREP), sweep_r3.py, static_r3.py, sweep_*.json,
+    static_*.json.
+Static poses use the rev 2 recording, because rev 3’s own rec_B2F was not in the pack.                 Figures are in
+/workspace/work/out/rev3/coldeye_figs/, with copies in coldeye_rev3_figs/.
+
+
+Figures
+
+
+
+
+             Figure 1: Lift travel map: contacts from the solid sweep and the actuator’s own end stops
+
+
+
+
+                                                          9
+   Figure 2: Lift top end, side elevation at the stop and at the top tie
+
+
+
+
+Figure 3: Robot mass: tables vs audits for B2-F, revision 2 and revision 3
+
+
+
+
+                                    10
+Figure 4: Safety factors: their rows and this review’s extra checks
+
+
+
+
+Figure 5: Stopping distance after bumper contact vs bumper travel
+
+
+
+
+                                11
+Figure 6: Castor swivel-scrub moment: MuJoCo contact models vs real contact patches
+
+
+
+
+         Figure 7: Pad spring force vs length with solid and EN 13906 limits
+
+
+
+
+                                         12
+

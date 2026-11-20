@@ -1,0 +1,796 @@
+{
+ "loads": {
+  "files": 97,
+  "wheel_carry": [
+   3497.43,
+   "estop12_rev_r4"
+  ],
+  "wheel_edge": [
+   4754.02,
+   "S5_WEB140_pothole_v08_r4"
+  ],
+  "wheel_edge_pothole": [
+   4754.02,
+   "S5_WEB140_pothole_v08_r4"
+  ],
+  "wheel_edge_kerb": [
+   3341.775,
+   "S6_kerb_v08_nose_t15_r4"
+  ],
+  "wheel_rigid_step_info": [
+   11403.091,
+   "S5_WEB140_step_v08_r4"
+  ],
+  "wheel_trench_info": [
+   2618.948,
+   "S5_ESE240SL_trench_v08_r4"
+  ],
+  "comb_carry": [
+   2421.38,
+   "climb_m22_c09_pm110_r4"
+  ],
+  "comb_all": [
+   7838.313,
+   "S6_kerb_v08_nose_r_r4"
+  ],
+  "comb_by_case": {
+   "carry": [
+    2421.38,
+    "climb_m22_c09_pm110_r4"
+   ],
+   "pothole": [
+    3502.725,
+    "S5_ESE240SL_pothole_v08_lsr004_r4"
+   ],
+   "step_rigid": [
+    5665.081,
+    "S5_ESE240SL_step_v08_lsr004_r4"
+   ],
+   "kerb_compliant": [
+    3357.776,
+    "S6_kerb_v08_nose_t15_r4"
+   ],
+   "kerb_rigid": [
+    7838.313,
+    "S6_kerb_v08_nose_r_r4"
+   ],
+   "ramp": [
+    1640.945,
+    "S6_kerb_v05_nose_ramp_r_r4"
+   ],
+   "trench": [
+    0.0,
+    "S5_ESE240SL_trench_v08_r4"
+   ]
+  },
+  "pad": [
+   1414.369,
+   "S6_kerb_v08_nose_r_r4"
+  ],
+  "lift": [
+   4028.409,
+   "S6_kerb_v08_nose_r_r4"
+  ],
+  "castor_static_sum": [
+   1063.7,
+   "static_dn_110_cg60_r4"
+  ],
+  "extra": {
+   "wheel_0.020": [
+    4069.0,
+    "kerb_nose_v08_r4cap12t20"
+   ],
+   "lift": [
+    4028.0,
+    "kerb_nose_v08_r4cap12"
+   ],
+   "wheel_0.065": [
+    3342.0,
+    "kerb_nose_v08_r4cap12t65"
+   ],
+   "wheel_0.030": [
+    3557.0,
+    "kerb_nose_v08_r4cap12t30"
+   ],
+   "wheel_rigid": [
+    9350.0,
+    "kerb_nose_v05_r4cap12"
+   ],
+   "lat": [
+    904.0,
+    "B2F_Y_lat_k110_r4.json"
+   ]
+  }
+ },
+ "rows": [
+  {
+   "item": "Side rail 60x60x4 S355, net section at the joint",
+   "case": "carry",
+   "load": "wheel 3497 N",
+   "stress": 124.1,
+   "SF": 2.86,
+   "ok": true,
+   "note": "M = 1714 N m",
+   "info": false
+  },
+  {
+   "item": "Side rail 60x60x4 S355, net section at the joint",
+   "case": "edge",
+   "load": "wheel 4754 N",
+   "stress": 168.7,
+   "SF": 2.1,
+   "ok": true,
+   "note": "M = 2329 N m",
+   "info": false
+  },
+  {
+   "item": "Side rail 60x60x4 S355, net section at the joint",
+   "case": "sharp 40 mm kerb at 0.8 m/s on a stiff solid tyre (650 N/mm)",
+   "load": "wheel 4069 N",
+   "stress": 144.4,
+   "SF": 2.46,
+   "ok": true,
+   "note": "my run kerb_nose_v08_r4cap12t20",
+   "info": false
+  },
+  {
+   "item": "Side rail 60x60x4 S355, net section at the joint",
+   "case": "the same kerb on a perfectly rigid tyre (not a real tyre; shown for the limit)",
+   "load": "wheel 11403 N",
+   "stress": 404.6,
+   "SF": 0.88,
+   "ok": false,
+   "note": "against yield: 0.88",
+   "info": true
+  },
+  {
+   "item": "Side rail 60x60x4 at the joint, fatigue: bolted plates (holes, detail category 90, partial factor 1.35)",
+   "case": "ASSUMED spectrum: wheel 1229 N +/-50 %, 2 million cycles",
+   "load": "range 1229 N",
+   "stress": 43.6,
+   "SF": 1.53,
+   "ok": true,
+   "note": "allowable range 66.7 MPa; needs 1.0",
+   "info": true
+  },
+  {
+   "item": "Mast upright 80x40x4 S235 at the strut pin",
+   "case": "carry",
+   "load": "moment 545 N m",
+   "stress": 30.6,
+   "SF": 7.67,
+   "ok": true,
+   "note": "",
+   "info": false
+  },
+  {
+   "item": "Mast upright 80x40x4 S235 at the strut pin",
+   "case": "comb_all",
+   "load": "moment 1764 N m",
+   "stress": 99.2,
+   "SF": 2.37,
+   "ok": true,
+   "note": "",
+   "info": false
+  },
+  {
+   "item": "Mast strut 30x30x2 S235, axial",
+   "case": "comb_all",
+   "load": "strut 6425 N",
+   "stress": 28.7,
+   "SF": 8.19,
+   "ok": true,
+   "note": "Euler load 269 kN",
+   "info": false
+  },
+  {
+   "item": "Strut pins M10 8.8, double shear",
+   "case": "comb_all",
+   "load": "strut 6425 N",
+   "stress": 55.4,
+   "SF": 6.67,
+   "ok": true,
+   "note": "",
+   "info": false
+  },
+  {
+   "item": "Strut lug plates 2 x 5 mm S355, bearing on the pin",
+   "case": "comb_all",
+   "load": "strut 6425 N",
+   "stress": 64.2,
+   "SF": 8.29,
+   "ok": true,
+   "note": "bearing limit 1.5 fy",
+   "info": false
+  },
+  {
+   "item": "Lug bolts 2 x M8 8.8 through the upright (2 shear planes each; pin 52 mm in front of the bolts)",
+   "case": "comb_all",
+   "load": "per plane 4474 N",
+   "stress": 122.2,
+   "SF": 3.02,
+   "ok": true,
+   "note": "",
+   "info": false
+  },
+  {
+   "item": "Strut foot cleats 2 x angle 40x40x4 S355, leg in its own plane, pin 52 mm above the member",
+   "case": "comb_all",
+   "load": "push 4899 N",
+   "stress": 119.4,
+   "SF": 2.97,
+   "ok": true,
+   "note": "",
+   "info": false
+  },
+  {
+   "item": "Mast foot cleats: 2 x M8 8.8 through the upright (2 shear planes each)",
+   "case": "comb_all",
+   "load": "foot 4899 N",
+   "stress": 33.5,
+   "SF": 11.04,
+   "ok": true,
+   "note": "",
+   "info": false
+  },
+  {
+   "item": "Mast foot cleats: 2 x M12 8.8 down through the cross-member, shear",
+   "case": "comb_all",
+   "load": "foot 4899 N",
+   "stress": 29.1,
+   "SF": 12.71,
+   "ok": true,
+   "note": "",
+   "info": false
+  },
+  {
+   "item": "Mast-base cross-member 50x50x5 S355: two foot forces sideways to the member (195 mm from each rail)",
+   "case": "comb_all",
+   "load": "2 x 4899 N",
+   "stress": 77.7,
+   "SF": 4.57,
+   "ok": true,
+   "note": "",
+   "info": false
+  },
+  {
+   "item": "Nose cross-member 50x50x4 S355: strut forces (both axes) + 3 x the static castor load at mid-span, summed at one corner",
+   "case": "comb_all + castors x3",
+   "load": "strut 6425 N, castors 3191 N",
+   "stress": 229.0,
+   "SF": 1.55,
+   "ok": false,
+   "note": "parts: 91 + 77 + 60 MPa",
+   "info": false
+  },
+  {
+   "item": "Mast-base cross-member 50x50x5 S355, bending under the actuator at mid-span",
+   "case": "lift shock, largest in my runs",
+   "load": "4028 N",
+   "stress": 64.7,
+   "SF": 5.49,
+   "ok": true,
+   "note": "",
+   "info": false
+  },
+  {
+   "item": "Actuator base bracket: angle 100x100x12 S355, 120 wide, pin 40 mm from the upright leg",
+   "case": "lift shock, largest in my runs",
+   "load": "4028 N",
+   "stress": 56.0,
+   "SF": 6.34,
+   "ok": true,
+   "note": "",
+   "info": false
+  },
+  {
+   "item": "Base bracket bolts 2 x M12 8.8 through the cross-member (shear + prying)",
+   "case": "lift shock, largest in my runs",
+   "load": "4028 N",
+   "stress": 29.4,
+   "SF": 21.8,
+   "ok": true,
+   "note": "",
+   "info": false
+  },
+  {
+   "item": "Lug angles on the bracket: 2 x M8 8.8 each",
+   "case": "lift shock, largest in my runs",
+   "load": "per lug 2014 N",
+   "stress": 27.5,
+   "SF": 13.42,
+   "ok": true,
+   "note": "",
+   "info": false
+  },
+  {
+   "item": "Frame joint at the mast base: top and bottom plates 6 mm S355, 90 wide, 30 mm from bolt to rail edge (half the actuator load per joint, shared by two plates)",
+   "case": "lift shock, largest in my runs",
+   "load": "joint 2014 N",
+   "stress": 56.0,
+   "SF": 6.34,
+   "ok": true,
+   "note": "",
+   "info": false
+  },
+  {
+   "item": "Mast-base cross-member 50x50x5 S355, bending under the actuator at mid-span",
+   "case": "actuator at its rated push",
+   "load": "6800 N",
+   "stress": 109.2,
+   "SF": 3.25,
+   "ok": true,
+   "note": "",
+   "info": false
+  },
+  {
+   "item": "Actuator base bracket: angle 100x100x12 S355, 120 wide, pin 40 mm from the upright leg",
+   "case": "actuator at its rated push",
+   "load": "6800 N",
+   "stress": 94.4,
+   "SF": 3.76,
+   "ok": true,
+   "note": "",
+   "info": false
+  },
+  {
+   "item": "Base bracket bolts 2 x M12 8.8 through the cross-member (shear + prying)",
+   "case": "actuator at its rated push",
+   "load": "6800 N",
+   "stress": 49.6,
+   "SF": 12.91,
+   "ok": true,
+   "note": "",
+   "info": false
+  },
+  {
+   "item": "Lug angles on the bracket: 2 x M8 8.8 each",
+   "case": "actuator at its rated push",
+   "load": "per lug 3400 N",
+   "stress": 46.4,
+   "SF": 7.95,
+   "ok": true,
+   "note": "",
+   "info": false
+  },
+  {
+   "item": "Frame joint at the mast base: top and bottom plates 6 mm S355, 90 wide, 30 mm from bolt to rail edge (half the actuator load per joint, shared by two plates)",
+   "case": "actuator at its rated push",
+   "load": "joint 3400 N",
+   "stress": 94.4,
+   "SF": 3.76,
+   "ok": true,
+   "note": "",
+   "info": false
+  },
+  {
+   "item": "Mast-base cross-member 50x50x5 S355, bending under the actuator at mid-span",
+   "case": "actuator against a stop, slip clutch at 1.4 x (its own end stops failed)",
+   "load": "9520 N",
+   "stress": 152.9,
+   "SF": 2.32,
+   "ok": true,
+   "note": "",
+   "info": false
+  },
+  {
+   "item": "Actuator base bracket: angle 100x100x12 S355, 120 wide, pin 40 mm from the upright leg",
+   "case": "actuator against a stop, slip clutch at 1.4 x (its own end stops failed)",
+   "load": "9520 N",
+   "stress": 132.2,
+   "SF": 2.68,
+   "ok": true,
+   "note": "",
+   "info": false
+  },
+  {
+   "item": "Base bracket bolts 2 x M12 8.8 through the cross-member (shear + prying)",
+   "case": "actuator against a stop, slip clutch at 1.4 x (its own end stops failed)",
+   "load": "9520 N",
+   "stress": 69.4,
+   "SF": 9.22,
+   "ok": true,
+   "note": "",
+   "info": false
+  },
+  {
+   "item": "Lug angles on the bracket: 2 x M8 8.8 each",
+   "case": "actuator against a stop, slip clutch at 1.4 x (its own end stops failed)",
+   "load": "per lug 4760 N",
+   "stress": 65.0,
+   "SF": 5.68,
+   "ok": true,
+   "note": "",
+   "info": false
+  },
+  {
+   "item": "Frame joint at the mast base: top and bottom plates 6 mm S355, 90 wide, 30 mm from bolt to rail edge (half the actuator load per joint, shared by two plates)",
+   "case": "actuator against a stop, slip clutch at 1.4 x (its own end stops failed)",
+   "load": "joint 4760 N",
+   "stress": 132.2,
+   "SF": 2.68,
+   "ok": true,
+   "note": "",
+   "info": false
+  },
+  {
+   "item": "Lift actuator holding (LINAK LA36 6.8 kN type: self-lock at least 8,800 N, data sheet)",
+   "case": "lift shock, largest in my runs",
+   "load": "4028 N",
+   "stress": null,
+   "SF": 2.18,
+   "ok": true,
+   "note": "S6_kerb_v08_nose_r_r4",
+   "info": false
+  },
+  {
+   "item": "Lift stop blocks: 2 x M10 8.8 through the upright, 30 mm apart, load 25 mm off the face",
+   "case": "slip clutch 1.4 x",
+   "load": "block 4760 N",
+   "stress": 79.8,
+   "SF": 4.63,
+   "ok": true,
+   "note": "",
+   "info": false
+  },
+  {
+   "item": "Upright wall 4 mm S235 in bearing under a stop bolt",
+   "case": "slip clutch 1.4 x",
+   "load": "bolt 4626 N",
+   "stress": 57.8,
+   "SF": 6.1,
+   "ok": true,
+   "note": "two walls; bearing limit 1.5 fy; crush tube inside",
+   "info": false
+  },
+  {
+   "item": "Carriage cross-beam end on the aluminium stop block, 26 x 46 mm",
+   "case": "slip clutch 1.4 x",
+   "load": "block 4760 N",
+   "stress": 4.0,
+   "SF": 62.82,
+   "ok": true,
+   "note": "",
+   "info": false
+  },
+  {
+   "item": "HGH15CA block, C0 23.47 kN, pitch 200 mm",
+   "case": "carry",
+   "load": "block 2724 N",
+   "stress": null,
+   "SF": 8.62,
+   "ok": true,
+   "note": "",
+   "info": false
+  },
+  {
+   "item": "Rail screws M4 12.9 into the 10 mm flat (2 per block length)",
+   "case": "carry",
+   "load": "screw 1362 N",
+   "stress": 155.1,
+   "SF": 6.96,
+   "ok": true,
+   "note": "",
+   "info": false
+  },
+  {
+   "item": "Carriage cross-beam 50x50x4 S355 (block force x 170 mm)",
+   "case": "carry",
+   "load": "block 2724 N",
+   "stress": 44.3,
+   "SF": 8.02,
+   "ok": true,
+   "note": "",
+   "info": false
+  },
+  {
+   "item": "Carriage plate strip between beam end and block, 50 x 16 aluminium, 30 mm",
+   "case": "carry",
+   "load": "block 2724 N",
+   "stress": 38.3,
+   "SF": 6.53,
+   "ok": true,
+   "note": "6082-T6, 250 MPa ASSUMED",
+   "info": false
+  },
+  {
+   "item": "HGH15CA block, C0 23.47 kN, pitch 200 mm",
+   "case": "comb_all",
+   "load": "block 8818 N",
+   "stress": null,
+   "SF": 2.66,
+   "ok": true,
+   "note": "",
+   "info": false
+  },
+  {
+   "item": "Rail screws M4 12.9 into the 10 mm flat (2 per block length)",
+   "case": "comb_all",
+   "load": "screw 4409 N",
+   "stress": 502.2,
+   "SF": 2.15,
+   "ok": true,
+   "note": "",
+   "info": false
+  },
+  {
+   "item": "Carriage cross-beam 50x50x4 S355 (block force x 170 mm)",
+   "case": "comb_all",
+   "load": "block 8818 N",
+   "stress": 143.3,
+   "SF": 2.48,
+   "ok": true,
+   "note": "",
+   "info": false
+  },
+  {
+   "item": "Carriage plate strip between beam end and block, 50 x 16 aluminium, 30 mm",
+   "case": "comb_all",
+   "load": "block 8818 N",
+   "stress": 124.0,
+   "SF": 2.02,
+   "ok": true,
+   "note": "6082-T6, 250 MPa ASSUMED",
+   "info": false
+  },
+  {
+   "item": "Comb pivot pin D20 8.8",
+   "case": "comb_all",
+   "load": "comb 7838 N",
+   "stress": 199.6,
+   "SF": 3.21,
+   "ok": true,
+   "note": "",
+   "info": false
+  },
+  {
+   "item": "Rocker bushes D20 x 12 bronze (2, 70 mm apart)",
+   "case": "kerb strike, 100 N m per wheel",
+   "load": "bush 606 N",
+   "stress": 2.5,
+   "SF": 23.76,
+   "ok": true,
+   "note": "",
+   "info": false
+  },
+  {
+   "item": "Rocker pin D20 8.8 (12 mm arm)",
+   "case": "kerb strike, 100 N m per wheel",
+   "load": "bush 606 N",
+   "stress": 9.3,
+   "SF": 69.12,
+   "ok": true,
+   "note": "",
+   "info": false
+  },
+  {
+   "item": "Pivot clamp plates 10 x 90 S355, weak axis, 185 mm from the pin to the member",
+   "case": "kerb strike, 100 N m per wheel",
+   "load": "plate 606 N",
+   "stress": 74.7,
+   "SF": 4.75,
+   "ok": true,
+   "note": "",
+   "info": false
+  },
+  {
+   "item": "Clamp bolts 4 x M10 8.8 through the nose member (plate root moment over a 35 mm lever, 2 bolts)",
+   "case": "kerb strike, 100 N m per wheel",
+   "load": "plate 606 N",
+   "stress": 27.6,
+   "SF": 23.17,
+   "ok": true,
+   "note": "",
+   "info": false
+  },
+  {
+   "item": "Nose cross-member 50x50x4 S355, torsion (kerb strike)",
+   "case": "kerb strike, 100 N m per wheel",
+   "load": "push 1212 N",
+   "stress": 15.0,
+   "SF": 13.62,
+   "ok": true,
+   "note": "",
+   "info": false
+  },
+  {
+   "item": "Rocker bushes D20 x 12 bronze (2, 70 mm apart)",
+   "case": "kerb strike, 150 N m per wheel",
+   "load": "bush 909 N",
+   "stress": 3.8,
+   "SF": 15.84,
+   "ok": true,
+   "note": "",
+   "info": false
+  },
+  {
+   "item": "Rocker pin D20 8.8 (12 mm arm)",
+   "case": "kerb strike, 150 N m per wheel",
+   "load": "bush 909 N",
+   "stress": 13.9,
+   "SF": 46.08,
+   "ok": true,
+   "note": "",
+   "info": false
+  },
+  {
+   "item": "Pivot clamp plates 10 x 90 S355, weak axis, 185 mm from the pin to the member",
+   "case": "kerb strike, 150 N m per wheel",
+   "load": "plate 909 N",
+   "stress": 112.1,
+   "SF": 3.17,
+   "ok": true,
+   "note": "",
+   "info": false
+  },
+  {
+   "item": "Clamp bolts 4 x M10 8.8 through the nose member (plate root moment over a 35 mm lever, 2 bolts)",
+   "case": "kerb strike, 150 N m per wheel",
+   "load": "plate 909 N",
+   "stress": 41.4,
+   "SF": 15.45,
+   "ok": true,
+   "note": "",
+   "info": false
+  },
+  {
+   "item": "Nose cross-member 50x50x4 S355, torsion (kerb strike)",
+   "case": "kerb strike, 150 N m per wheel",
+   "load": "push 1818 N",
+   "stress": 22.6,
+   "SF": 9.08,
+   "ok": true,
+   "note": "",
+   "info": false
+  },
+  {
+   "item": "Castor beam 50x40x3 S235 at the pivot (3 x the static load on one castor)",
+   "case": "static x3",
+   "load": "castor 1596 N",
+   "stress": 63.7,
+   "SF": 3.69,
+   "ok": true,
+   "note": "",
+   "info": false
+  },
+  {
+   "item": "Bumper side brackets: folded leg, angle 40x40x5 S355, 185 mm",
+   "case": "side knock 500 N at the bumper",
+   "load": "per leg 250 N",
+   "stress": 24.2,
+   "SF": 14.66,
+   "ok": true,
+   "note": "",
+   "info": false
+  },
+  {
+   "item": "Bumper side brackets: folded leg, angle 40x40x5 S355, 185 mm",
+   "case": "side knock 1000 N at the bumper",
+   "load": "per leg 500 N",
+   "stress": 48.4,
+   "SF": 7.33,
+   "ok": true,
+   "note": "",
+   "info": false
+  },
+  {
+   "item": "Bumper side brackets: leg in its own plane 40 x 5 S355, 185 mm",
+   "case": "bumper pressed to 600 N (the maker's largest reference force)",
+   "load": "per leg 300 N",
+   "stress": 41.6,
+   "SF": 8.53,
+   "ok": true,
+   "note": "",
+   "info": false
+  },
+  {
+   "item": "Bumper backing beam 40x40x2 S235 between the legs (300 mm span) with 175 mm overhangs",
+   "case": "bumper pressed to 600 N on one end",
+   "load": "600 N at the tip",
+   "stress": 28.6,
+   "SF": 8.21,
+   "ok": true,
+   "note": "",
+   "info": false
+  },
+  {
+   "item": "Drive / motor plate 8 x 200 S355, weak axis at the flange",
+   "case": "largest sideways tyre force in my runs",
+   "load": "904 N at the ground",
+   "stress": 150.0,
+   "SF": 2.37,
+   "ok": true,
+   "note": "B2F_Y_lat_k110_r4.json",
+   "info": false
+  },
+  {
+   "item": "Drive / motor plate 8 x 200 S355, weak axis at the flange",
+   "case": "1.0 kN (the reviewer's figure)",
+   "load": "1000 N at the ground",
+   "stress": 165.9,
+   "SF": 2.14,
+   "ok": true,
+   "note": "",
+   "info": false
+  },
+  {
+   "item": "Pad arm 80x40x3 S235 below the tongue bolts",
+   "case": "pad peak",
+   "load": "pad 1414 N",
+   "stress": 50.7,
+   "SF": 4.64,
+   "ok": true,
+   "note": "",
+   "info": false
+  },
+  {
+   "item": "Carriage plate tongue 120 x 16 aluminium at its root",
+   "case": "pad peak",
+   "load": "lower bolt 4426 N",
+   "stress": 103.7,
+   "SF": 2.41,
+   "ok": true,
+   "note": "6082-T6, 250 MPa ASSUMED",
+   "info": false
+  },
+  {
+   "item": "Tongue bolts 3 x M10 8.8 (lower pair reaction)",
+   "case": "pad peak",
+   "load": "reaction 4426 N",
+   "stress": 38.2,
+   "SF": 9.68,
+   "ok": true,
+   "note": "",
+   "info": false
+  },
+  {
+   "item": "Pad spring (2 x 15.0 N/mm), shear stress with the Wahl factor",
+   "case": "fitted (pad just touching)",
+   "load": "150 N each",
+   "stress": 140.0,
+   "SF": 6.62,
+   "ok": true,
+   "note": "allowable 925 MPa for chrome-silicon wire (ASSUMED); spring check, needs 1.0",
+   "info": true
+  },
+  {
+   "item": "Pad spring (2 x 15.0 N/mm), shear stress with the Wahl factor",
+   "case": "largest pad force in my runs",
+   "load": "707 N each",
+   "stress": 659.0,
+   "SF": 1.4,
+   "ok": true,
+   "note": "allowable 925 MPa for chrome-silicon wire (ASSUMED); spring check, needs 1.0",
+   "info": true
+  },
+  {
+   "item": "Pad spring (2 x 15.0 N/mm), shear stress with the Wahl factor",
+   "case": "full stroke 45 mm",
+   "load": "825 N each",
+   "stress": 768.0,
+   "SF": 1.2,
+   "ok": true,
+   "note": "allowable 925 MPa for chrome-silicon wire (ASSUMED); spring check, needs 1.0",
+   "info": true
+  },
+  {
+   "item": "Pad spring: length left before solid at full stroke",
+   "case": "free 145, full stroke 90, solid 74.2 mm",
+   "load": "-",
+   "stress": null,
+   "SF": 1.59,
+   "ok": true,
+   "note": "15.8 mm left; EN 13906-1 asks 9.9 mm",
+   "info": true
+  }
+ ],
+ "sections": {
+  "rail": "60x60x4",
+  "xm": "50x50x5",
+  "nose": "50x50x4"
+ },
+ "fy_rail": 355.0,
+ "excluded": [],
+ "rail_Znet_mm3": 13808,
+ "rail_Z_mm3": 15690
+}

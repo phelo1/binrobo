@@ -1,0 +1,16 @@
+r4: 60 runs, 48 PASS by their scorer; fail on the 50 Wh trip limit only: 5 ['s1a__s11', 's1a__s23', 's1a__s7', 's1b__s23', 's1b__s7']; fail on anything else: [('s1b__s11', ['C6', 'C7']), ('s3a__s11', ['C6', 'C7']), ('s3a__s23', ['C6', 'C7']), ('s3a__s7', ['C6', 'C7']), ('s3b__s11', ['C6', 'C7']), ('s3b__s23', ['C6', 'C7']), ('s3b__s7', ['C6', 'C7', 'C8'])]
+   trips: 18, largest 74.71 Wh, smallest 67.09 Wh; over 50 Wh: 18; over 60: 18; over 65: 18
+   least hedge clearance 0.198 m
+   camera: runs with checks 15; most re-alignments in one pick-up 3; runs with a refused grab 2
+   s1a__s11    FAIL  plan completed         trips [74.05]  end charge 0.7405  hedge 0.198  camera checks 2 (max k 1)  refused None  ['C6']
+   s1a__s23    FAIL  plan completed         trips [67.77]  end charge 0.754  hedge 0.198  camera checks 1 (max k 0)  refused None  ['C6']
+   s1a__s7     FAIL  plan completed         trips [68.6]  end charge 0.7522  hedge 0.204  camera checks 1 (max k 0)  refused None  ['C6']
+   s1b__s11    FAIL  grab refused, back on  trips [67.09]  end charge 0.7554  hedge 0.243  camera checks 1 (max k 0)  refused [{'bin': 'black', 'why': 'gate'}]  ['C6', 'C7']
+   s1b__s23    FAIL  plan completed         trips [70.55]  end charge 0.748  hedge 0.228  camera checks 2 (max k 1)  refused None  ['C6']
+   s1b__s7     FAIL  plan completed         trips [70.0]  end charge 0.7492  hedge 0.236  camera checks 1 (max k 0)  refused None  ['C6']
+   s3a__s11    FAIL  too late               trips [70.25, 67.88]  end charge 0.5931  hedge 0.208  camera checks 3 (max k 1)  refused None  ['C6', 'C7']
+   s3a__s23    FAIL  too late               trips [72.22, 71.08]  end charge 0.5817  hedge 0.206  camera checks 3 (max k 1)  refused None  ['C6', 'C7']
+   s3a__s7     FAIL  too late               trips [70.32, 67.3]  end charge 0.5943  hedge 0.203  camera checks 2 (max k 0)  refused None  ['C6', 'C7']
+   s3b__s11    FAIL  too late               trips [69.36, 70.11]  end charge 0.5902  hedge 0.239  camera checks 2 (max k 0)  refused None  ['C6', 'C7']
+   s3b__s23    FAIL  grab refused, back on  trips [72.44, 74.71]  end charge 0.5731  hedge 0.24  camera checks 6 (max k 3)  refused [{'bin': 'black', 'why': 'camera'}]  ['C6', 'C7']
+   s3b__s7     FAIL  too late               trips [69.19, 70.62]  end charge 0.5894  hedge 0.235  camera checks 5 (max k 3)  refused None  ['C6', 'C7', 'C8']

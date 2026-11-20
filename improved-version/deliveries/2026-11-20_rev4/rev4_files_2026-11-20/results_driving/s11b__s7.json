@@ -1,0 +1,194 @@
+{
+ "scenario": "s11b",
+ "seed": 7,
+ "title": "Frost no-go",
+ "expect": "alert",
+ "result": "alert",
+ "outcome": "frost no-go",
+ "alerts": [
+  "weather no-go: frost / ice on the lane (air -3.0 C) - bins stay home"
+ ],
+ "sim_time_s": 47.4,
+ "chunks": [
+  {
+   "t0": 0.0,
+   "t1": 47.4,
+   "wall": 8.9,
+   "frames": 3364,
+   "status": "done"
+  }
+ ],
+ "energy_wh": 0.12,
+ "soc_start": 0.9,
+ "soc_end": 0.8997,
+ "odo_m": 0.0,
+ "hedge_min_m": null,
+ "hedge_min_at": null,
+ "legal_min_m": null,
+ "legal_min_at": null,
+ "contact_min_m": 3.657,
+ "contact_with": "black",
+ "person_rest_min_m": null,
+ "car_rest_min_m": null,
+ "collisions": [],
+ "chain_trips": [],
+ "metrics": {
+  "placements": [],
+  "grabs": [],
+  "trips": [],
+  "stops": [],
+  "gates": []
+ },
+ "events": [
+  {
+   "t": 0.0,
+   "kind": "sim",
+   "text": "chunk 0 start: SITL launched, home = checkpoint pose s=5.5"
+  },
+  {
+   "t": 1.14,
+   "kind": "fw",
+   "text": "Calibrating barometer"
+  },
+  {
+   "t": 2.81,
+   "kind": "fw",
+   "text": "Barometer 1 calibration complete"
+  },
+  {
+   "t": 2.81,
+   "kind": "fw",
+   "text": "Barometer 2 calibration complete"
+  },
+  {
+   "t": 2.83,
+   "kind": "fw",
+   "text": "Beginning INS calibration. Do not move vehicle"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "ArduPilot Ready"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "RCInput: decoding UDP (Pulses)"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "AHRS: DCM active"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "GPS 1: specified as MAV"
+  },
+  {
+   "t": 3.11,
+   "kind": "fw",
+   "text": "GPS 1: detected MAV"
+  },
+  {
+   "t": 4.97,
+   "kind": "fw",
+   "text": "EKF3 IMU0 initialised"
+  },
+  {
+   "t": 4.97,
+   "kind": "fw",
+   "text": "EKF3 IMU1 initialised"
+  },
+  {
+   "t": 6.67,
+   "kind": "fw",
+   "text": "EKF3 IMU0 tilt alignment complete"
+  },
+  {
+   "t": 6.67,
+   "kind": "fw",
+   "text": "EKF3 IMU1 tilt alignment complete"
+  },
+  {
+   "t": 6.75,
+   "kind": "fw",
+   "text": "EKF3 IMU0 MAG0 initial yaw alignment complete"
+  },
+  {
+   "t": 6.75,
+   "kind": "fw",
+   "text": "EKF3 IMU1 MAG0 initial yaw alignment complete"
+  },
+  {
+   "t": 6.75,
+   "kind": "fw",
+   "text": "AHRS: EKF3 active"
+  },
+  {
+   "t": 15.15,
+   "kind": "fw",
+   "text": "EKF3 IMU0 origin set"
+  },
+  {
+   "t": 15.15,
+   "kind": "fw",
+   "text": "EKF3 IMU1 origin set"
+  },
+  {
+   "t": 15.15,
+   "kind": "fw",
+   "text": "Field Elevation Set: 43m"
+  },
+  {
+   "t": 21.63,
+   "kind": "fw",
+   "text": "SmartRTL deactivated: bad position"
+  },
+  {
+   "t": 42.77,
+   "kind": "fw",
+   "text": "EKF3 IMU0 is using GPS"
+  },
+  {
+   "t": 42.77,
+   "kind": "fw",
+   "text": "EKF3 IMU1 is using GPS"
+  },
+  {
+   "t": 46.35,
+   "kind": "fw",
+   "text": "Fence Indexed OK"
+  },
+  {
+   "t": 46.35,
+   "kind": "pi",
+   "text": "fence upload ack=0 (81 vertices)"
+  },
+  {
+   "t": 46.39,
+   "kind": "fw",
+   "text": "Warning: Arming Checks Disabled"
+  },
+  {
+   "t": 46.39,
+   "kind": "fw",
+   "text": "Throttle armed"
+  },
+  {
+   "t": 47.35,
+   "kind": "pi",
+   "text": "boot done (GUIDED, armed, fence 81 pts)"
+  },
+  {
+   "t": 47.45,
+   "kind": "ALERT",
+   "text": "weather no-go: frost / ice on the lane (air -3.0 C) - bins stay home"
+  },
+  {
+   "t": 47.45,
+   "kind": "pi",
+   "text": "FINISH alert: frost no-go"
+  }
+ ]
+}

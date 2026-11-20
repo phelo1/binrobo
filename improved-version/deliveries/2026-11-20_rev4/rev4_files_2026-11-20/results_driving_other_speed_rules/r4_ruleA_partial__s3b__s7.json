@@ -1,0 +1,760 @@
+{
+ "scenario": "s3b",
+ "seed": 7,
+ "title": "Three-bin night pickup (F, M, A -> home)",
+ "expect": "pass",
+ "result": "pass",
+ "outcome": "plan completed",
+ "alerts": [],
+ "sim_time_s": 11425.0,
+ "chunks": [
+  {
+   "t0": 0.0,
+   "t1": 11425.0,
+   "wall": 799.8,
+   "frames": 572241,
+   "status": "done"
+  }
+ ],
+ "energy_wh": 200.36,
+ "soc_start": 0.9,
+ "soc_end": 0.4553,
+ "odo_m": 3675.9,
+ "hedge_min_m": 0.202,
+ "hedge_min_at": [
+  2649.4,
+  417.1
+ ],
+ "legal_min_m": 3.115,
+ "legal_min_at": [
+  9655.9,
+  621.9
+ ],
+ "contact_min_m": 0.256,
+ "contact_with": "green",
+ "person_rest_min_m": null,
+ "car_rest_min_m": null,
+ "collisions": [],
+ "chain_trips": [],
+ "metrics": {
+  "placements": [
+   {
+    "bin": "green",
+    "where": "home:green",
+    "err_m": 0.126,
+    "handle_err_deg": 0.91,
+    "clock": "D0 19:02",
+    "t": 3743.1
+   },
+   {
+    "bin": "black",
+    "where": "home:black",
+    "err_m": 0.039,
+    "handle_err_deg": 0.96,
+    "clock": "D0 20:05",
+    "t": 7539.1
+   },
+   {
+    "bin": "brown",
+    "where": "home:brown",
+    "err_m": 0.044,
+    "handle_err_deg": 1.65,
+    "clock": "D0 21:09",
+    "t": 11363.7
+   }
+  ],
+  "grabs": [
+   {
+    "bin": "green",
+    "lat_mm": -14.9,
+    "yaw_deg": 0.82,
+    "result": "success (MuJoCo gate)"
+   },
+   {
+    "bin": "black",
+    "lat_mm": -2.7,
+    "yaw_deg": -0.31,
+    "result": "success (MuJoCo gate)"
+   },
+   {
+    "bin": "brown",
+    "lat_mm": 0.1,
+    "yaw_deg": 0.0,
+    "result": "success (MuJoCo gate)"
+   }
+  ],
+  "trips": [
+   {
+    "kind": "pickup green<-F",
+    "t0": 47.9,
+    "wh0": 0.12,
+    "clk0": "D0 18:00",
+    "t1": 3797.9,
+    "wh": 66.15,
+    "clk1": "D0 19:03",
+    "min": 62.5
+   },
+   {
+    "kind": "pickup black<-M",
+    "t0": 3798.1,
+    "wh0": 66.274,
+    "clk0": "D0 19:03",
+    "t1": 7589.8,
+    "wh": 67.05,
+    "clk1": "D0 20:06",
+    "min": 63.2
+   },
+   {
+    "kind": "pickup brown<-A",
+    "t0": 7590.0,
+    "wh0": 133.321,
+    "clk0": "D0 20:06",
+    "t1": 11424.8,
+    "wh": 67.04,
+    "clk1": "D0 21:10",
+    "min": 63.9
+   }
+  ],
+  "stops": [],
+  "gates": [
+   {
+    "bin": "green",
+    "attempt": 0,
+    "lat_m": 0.0,
+    "along_m": -0.065,
+    "yaw_deg": 1.51,
+    "ok": true,
+    "lat_cam": 0.003,
+    "yaw_cam_deg": 1.36,
+    "ok_cam": true
+   },
+   {
+    "bin": "black",
+    "attempt": 0,
+    "lat_m": 0.0,
+    "along_m": -0.006,
+    "yaw_deg": 0.39,
+    "ok": true,
+    "lat_cam": -0.009,
+    "yaw_cam_deg": 0.76,
+    "ok_cam": true
+   },
+   {
+    "bin": "brown",
+    "attempt": 0,
+    "lat_m": 0.012,
+    "along_m": -0.049,
+    "yaw_deg": 1.52,
+    "ok": true,
+    "lat_cam": 0.007,
+    "yaw_cam_deg": 1.39,
+    "ok_cam": true
+   }
+  ],
+  "guard": [
+   {
+    "t": 47.9,
+    "soc": 0.9,
+    "avail_wh": 360.3,
+    "budget_wh": 75.0,
+    "kind": "pickup green<-F"
+   },
+   {
+    "t": 3798.1,
+    "soc": 0.753,
+    "avail_wh": 294.2,
+    "budget_wh": 75.0,
+    "kind": "pickup black<-M"
+   },
+   {
+    "t": 7590.0,
+    "soc": 0.604,
+    "avail_wh": 227.1,
+    "budget_wh": 75.0,
+    "kind": "pickup brown<-A"
+   }
+  ],
+  "first_motion_clock": "D0 18:00",
+  "first_motion_t": 58.3,
+  "verify": {
+   "bin": "brown",
+   "n_pts": 150,
+   "width_m": 0.54,
+   "depth_m": 0.66,
+   "corridor_returns": 0,
+   "refine_yaw_deg": 0.37,
+   "refine_m": [
+    -0.038,
+    0.058
+   ],
+   "verdict": "ok"
+  },
+  "cam_checks": [
+   {
+    "bin": "green",
+    "k": 0,
+    "lat_cam": -0.006,
+    "lat_true": 0.0,
+    "e_est": 0.015,
+    "seen": true
+   },
+   {
+    "bin": "black",
+    "k": 0,
+    "lat_cam": 0.005,
+    "lat_true": 0.0,
+    "e_est": 0.023,
+    "seen": true
+   },
+   {
+    "bin": "brown",
+    "k": 0,
+    "lat_cam": 0.01,
+    "lat_true": 0.012,
+    "e_est": 0.03,
+    "seen": true
+   }
+  ],
+  "seat_checks": [
+   {
+    "bin": "green",
+    "k": 0,
+    "meas_mm": -8.0,
+    "true_mm": -14.9,
+    "ok": true
+   },
+   {
+    "bin": "black",
+    "k": 0,
+    "meas_mm": -15.6,
+    "true_mm": -2.7,
+    "ok": true
+   },
+   {
+    "bin": "brown",
+    "k": 0,
+    "meas_mm": 1.3,
+    "true_mm": 0.1,
+    "ok": true
+   }
+  ],
+  "last_dock_clock": "D0 21:10"
+ },
+ "events": [
+  {
+   "t": 0.0,
+   "kind": "sim",
+   "text": "chunk 0 start: SITL launched, home = checkpoint pose s=5.5"
+  },
+  {
+   "t": 1.15,
+   "kind": "fw",
+   "text": "Calibrating barometer"
+  },
+  {
+   "t": 2.83,
+   "kind": "fw",
+   "text": "Barometer 1 calibration complete"
+  },
+  {
+   "t": 2.83,
+   "kind": "fw",
+   "text": "Barometer 2 calibration complete"
+  },
+  {
+   "t": 2.85,
+   "kind": "fw",
+   "text": "Beginning INS calibration. Do not move vehicle"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "ArduPilot Ready"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "RCInput: decoding UDP (Pulses)"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "AHRS: DCM active"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "GPS 1: specified as MAV"
+  },
+  {
+   "t": 3.11,
+   "kind": "fw",
+   "text": "GPS 1: detected MAV"
+  },
+  {
+   "t": 5.01,
+   "kind": "fw",
+   "text": "EKF3 IMU0 initialised"
+  },
+  {
+   "t": 5.01,
+   "kind": "fw",
+   "text": "EKF3 IMU1 initialised"
+  },
+  {
+   "t": 6.69,
+   "kind": "fw",
+   "text": "EKF3 IMU0 tilt alignment complete"
+  },
+  {
+   "t": 6.69,
+   "kind": "fw",
+   "text": "EKF3 IMU1 tilt alignment complete"
+  },
+  {
+   "t": 6.75,
+   "kind": "fw",
+   "text": "EKF3 IMU0 MAG0 initial yaw alignment complete"
+  },
+  {
+   "t": 6.75,
+   "kind": "fw",
+   "text": "EKF3 IMU1 MAG0 initial yaw alignment complete"
+  },
+  {
+   "t": 6.75,
+   "kind": "fw",
+   "text": "AHRS: EKF3 active"
+  },
+  {
+   "t": 15.15,
+   "kind": "fw",
+   "text": "EKF3 IMU0 origin set"
+  },
+  {
+   "t": 15.15,
+   "kind": "fw",
+   "text": "EKF3 IMU1 origin set"
+  },
+  {
+   "t": 15.19,
+   "kind": "fw",
+   "text": "Field Elevation Set: 43m"
+  },
+  {
+   "t": 21.67,
+   "kind": "fw",
+   "text": "SmartRTL deactivated: bad position"
+  },
+  {
+   "t": 42.77,
+   "kind": "fw",
+   "text": "EKF3 IMU0 is using GPS"
+  },
+  {
+   "t": 42.77,
+   "kind": "fw",
+   "text": "EKF3 IMU1 is using GPS"
+  },
+  {
+   "t": 46.85,
+   "kind": "fw",
+   "text": "Fence Indexed OK"
+  },
+  {
+   "t": 46.85,
+   "kind": "pi",
+   "text": "fence upload ack=0 (81 vertices)"
+  },
+  {
+   "t": 46.91,
+   "kind": "fw",
+   "text": "Warning: Arming Checks Disabled"
+  },
+  {
+   "t": 46.91,
+   "kind": "fw",
+   "text": "Throttle armed"
+  },
+  {
+   "t": 47.85,
+   "kind": "pi",
+   "text": "boot done (GUIDED, armed, fence 81 pts)"
+  },
+  {
+   "t": 47.95,
+   "kind": "pi",
+   "text": "preflight OK (pickup green<-F): 360 Wh available, clock D0 18:00"
+  },
+  {
+   "t": 48.15,
+   "kind": "pi",
+   "text": "undock: charger off, beacon + pre-motion warning (10 s)"
+  },
+  {
+   "t": 855.31,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 1030.21,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 1834.53,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 2026.25,
+   "kind": "pi",
+   "text": "bin green verified at F (180 returns, 0.63 x 0.79 m)"
+  },
+  {
+   "t": 2055.51,
+   "kind": "pi",
+   "text": "pre-grab gate OK on the camera: lateral 0.003 m, yaw 1.36 deg (truth: 0.000 m, 1.51 deg, inside)"
+  },
+  {
+   "t": 2055.51,
+   "kind": "pi",
+   "text": "pre-motion warning (beacon, chime) (3 s)"
+  },
+  {
+   "t": 2068.11,
+   "kind": "pi",
+   "text": "pre-motion warning before the lift (3 s)"
+  },
+  {
+   "t": 2071.23,
+   "kind": "pi",
+   "text": "comb engage + lift + pad lock (MuJoCo G1 front dock: 90/90) (26 s)"
+  },
+  {
+   "t": 2097.75,
+   "kind": "pi",
+   "text": "bin green lifted: comb seated, pad locked, 13 kg on board"
+  },
+  {
+   "t": 2137.01,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 2171.55,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 2464.59,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 3080.59,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 3247.35,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 3442.93,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 3557.77,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 3719.07,
+   "kind": "pi",
+   "text": "pre-motion warning before the set-down (3 s)"
+  },
+  {
+   "t": 3722.19,
+   "kind": "pi",
+   "text": "lower bin + pad release (21 s)"
+  },
+  {
+   "t": 3743.07,
+   "kind": "pi",
+   "text": "bin green set down at green: 0.126 m / 0.9 deg from the spot (truth)"
+  },
+  {
+   "t": 3753.63,
+   "kind": "pi",
+   "text": "photo of the placed bin (app) (5 s)"
+  },
+  {
+   "t": 3792.75,
+   "kind": "pi",
+   "text": "dock contacts closed, charging (5 s)"
+  },
+  {
+   "t": 3797.91,
+   "kind": "pi",
+   "text": "trip done: 66.2 Wh, 62.5 min, back D0 19:03"
+  },
+  {
+   "t": 3798.15,
+   "kind": "pi",
+   "text": "preflight OK (pickup black<-M): 294 Wh available, clock D0 19:03"
+  },
+  {
+   "t": 3798.39,
+   "kind": "pi",
+   "text": "undock: charger off, beacon + pre-motion warning (10 s)"
+  },
+  {
+   "t": 4129.49,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 4155.49,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 4709.29,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 5501.89,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 5826.89,
+   "kind": "pi",
+   "text": "bin black verified at M (169 returns, 0.64 x 0.81 m)"
+  },
+  {
+   "t": 5854.49,
+   "kind": "pi",
+   "text": "pre-grab gate OK on the camera: lateral -0.009 m, yaw 0.76 deg (truth: 0.000 m, 0.39 deg, inside)"
+  },
+  {
+   "t": 5854.49,
+   "kind": "pi",
+   "text": "pre-motion warning (beacon, chime) (3 s)"
+  },
+  {
+   "t": 5866.59,
+   "kind": "pi",
+   "text": "pre-motion warning before the lift (3 s)"
+  },
+  {
+   "t": 5869.59,
+   "kind": "pi",
+   "text": "comb engage + lift + pad lock (MuJoCo G1 front dock: 90/90) (26 s)"
+  },
+  {
+   "t": 5895.99,
+   "kind": "pi",
+   "text": "bin black lifted: comb seated, pad locked, 13 kg on board"
+  },
+  {
+   "t": 5945.49,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 6624.89,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 6878.49,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 6962.49,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 6990.49,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 7515.29,
+   "kind": "pi",
+   "text": "pre-motion warning before the set-down (3 s)"
+  },
+  {
+   "t": 7518.29,
+   "kind": "pi",
+   "text": "lower bin + pad release (21 s)"
+  },
+  {
+   "t": 7539.09,
+   "kind": "pi",
+   "text": "bin black set down at black: 0.039 m / 1.0 deg from the spot (truth)"
+  },
+  {
+   "t": 7549.69,
+   "kind": "pi",
+   "text": "photo of the placed bin (app) (5 s)"
+  },
+  {
+   "t": 7584.69,
+   "kind": "pi",
+   "text": "dock contacts closed, charging (5 s)"
+  },
+  {
+   "t": 7589.79,
+   "kind": "pi",
+   "text": "trip done: 67.0 Wh, 63.2 min, back D0 20:06"
+  },
+  {
+   "t": 7589.99,
+   "kind": "pi",
+   "text": "preflight OK (pickup brown<-A): 227 Wh available, clock D0 20:06"
+  },
+  {
+   "t": 7590.19,
+   "kind": "pi",
+   "text": "undock: charger off, beacon + pre-motion warning (10 s)"
+  },
+  {
+   "t": 7894.09,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 8333.89,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 8434.89,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 8595.29,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 8800.89,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 8939.29,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 9379.29,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 9585.79,
+   "kind": "pi",
+   "text": "bin brown verified at A (150 returns, 0.54 x 0.66 m)"
+  },
+  {
+   "t": 9613.89,
+   "kind": "pi",
+   "text": "pre-grab gate OK on the camera: lateral 0.007 m, yaw 1.39 deg (truth: 0.012 m, 1.53 deg, inside)"
+  },
+  {
+   "t": 9613.89,
+   "kind": "pi",
+   "text": "pre-motion warning (beacon, chime) (3 s)"
+  },
+  {
+   "t": 9626.09,
+   "kind": "pi",
+   "text": "pre-motion warning before the lift (3 s)"
+  },
+  {
+   "t": 9629.09,
+   "kind": "pi",
+   "text": "comb engage + lift + pad lock (MuJoCo G1 front dock: 90/90) (26 s)"
+  },
+  {
+   "t": 9655.49,
+   "kind": "pi",
+   "text": "bin brown lifted: comb seated, pad locked, 9 kg on board"
+  },
+  {
+   "t": 9670.49,
+   "kind": "fw",
+   "text": "Battery 1 is low 24.95V used 42894 mAh"
+  },
+  {
+   "t": 10543.89,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 10685.89,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 10751.89,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 10803.49,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 11130.89,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 11339.89,
+   "kind": "pi",
+   "text": "pre-motion warning before the set-down (3 s)"
+  },
+  {
+   "t": 11342.89,
+   "kind": "pi",
+   "text": "lower bin + pad release (21 s)"
+  },
+  {
+   "t": 11363.69,
+   "kind": "pi",
+   "text": "bin brown set down at brown: 0.044 m / 1.6 deg from the spot (truth)"
+  },
+  {
+   "t": 11374.69,
+   "kind": "pi",
+   "text": "photo of the placed bin (app) (5 s)"
+  },
+  {
+   "t": 11419.69,
+   "kind": "pi",
+   "text": "dock contacts closed, charging (5 s)"
+  },
+  {
+   "t": 11424.79,
+   "kind": "pi",
+   "text": "trip done: 67.0 Wh, 63.9 min, back D0 21:10"
+  },
+  {
+   "t": 11424.99,
+   "kind": "pi",
+   "text": "FINISH pass: plan completed"
+  }
+ ]
+}

@@ -1,0 +1,137 @@
+{
+ "run": "P5g_trench_open",
+ "title": "P5 trench 40 x 200 mm as-is, 110 kg",
+ "verdict": "FAIL",
+ "fails": [
+  "drive0 stalled at s 454.2 (no progress 12 s (stall))"
+ ],
+ "sim_time_s": 40.4,
+ "t_start": 1360.0935000477127,
+ "energy_Wh": 1.09,
+ "wall_s": 13,
+ "metrics": {
+  "clear_min": 0.0784,
+  "clear_at": 454.2,
+  "seated_all": true,
+  "bin_ground_N": 0.0,
+  "roll_max": 0.0128,
+  "pitch_max": 2.3129,
+  "hedge_min": 1.5553,
+  "hedge_at": 446.0,
+  "tip_min": 29.303,
+  "tip_at": 450.8,
+  "liftF_max": 2264.914,
+  "liftF_at": 454.2,
+  "gap_min": 9.0,
+  "v_max": 0.598,
+  "n_lost": 0
+ },
+ "results": {
+  "drive0": {
+   "reached": false,
+   "why": "no progress 12 s (stall)",
+   "s_end": 454.22,
+   "ref_end": 454.22,
+   "t": 1397.2,
+   "captured_end": true,
+   "clear_end_mm": 103.6,
+   "binwheels_past_far_edge": false
+  },
+  "hold1": {
+   "creep3_m": 0.00019118034656181673,
+   "creepT_m": 0.00019118034656181673,
+   "T": 3.0,
+   "s": 454.22,
+   "grade_pct": 0.7,
+   "leaf": false
+  }
+ },
+ "seg_metrics": {
+  "drive0": {
+   "clear_min": 0.0784,
+   "clear_at": 454.2,
+   "seated_all": true,
+   "bin_ground_N": 0.0,
+   "roll_max": 0.0128,
+   "pitch_max": 2.3129,
+   "hedge_min": 1.5553,
+   "hedge_at": 446.0,
+   "tip_min": 29.303,
+   "tip_at": 450.8,
+   "liftF_max": 2264.914,
+   "liftF_at": 454.2,
+   "gap_min": 9.0,
+   "v_max": 0.598,
+   "n_lost": 0
+  },
+  "hold1": {
+   "clear_min": 0.1034,
+   "clear_at": 454.2,
+   "seated_all": true,
+   "bin_ground_N": 0.0,
+   "roll_max": 0.0001,
+   "pitch_max": 2.1497,
+   "hedge_min": 1.6138,
+   "hedge_at": 454.0,
+   "tip_min": 30.4053,
+   "tip_at": 454.2,
+   "liftF_max": 1352.2041,
+   "liftF_at": 454.2,
+   "gap_min": 9.0,
+   "v_max": 0.0001,
+   "n_lost": 0
+  }
+ },
+ "events": [
+  [
+   1360.09,
+   "start from P1 snapshot s446.0.pkl (carried state)"
+  ],
+  [
+   1381.45,
+   "torque boost 1 on (100 N m)"
+  ],
+  [
+   1389.85,
+   "torque boost 2 on (100 N m)"
+  ],
+  [
+   1397.25,
+   "drive0: no progress 12 s (stall) at s 454.2"
+  ],
+  [
+   1400.45,
+   "hold at s 454.2 (0.7 %): creep 0.0002 m in 3 s, 0.0002 m in 3 s"
+  ]
+ ],
+ "cfg": {
+  "binkey": "ESE240SL",
+  "kg": 110.0,
+  "with_bin": true,
+  "variant": {
+   "step": "ramp",
+   "trench": "open"
+  },
+  "act_N": 3000.0,
+  "pert": {},
+  "night": false,
+  "obstacles": [],
+  "title": "P5 trench 40 x 200 mm as-is, 110 kg",
+  "start": [
+   "snap",
+   "P1",
+   446.0
+  ]
+ },
+ "steps": [
+  [
+   "drive",
+   "{'to': 462.0, 'ref': 'tug', 'dirn': 1, 'knots': [(0, -1.4), (12.0, -1.4), (24.0, 0.0), (610.0, 0.0), (619.5, 1.35), (700, 1.35)], 'feature': 'trench'}"
+  ],
+  [
+   "hold",
+   "3.0"
+  ]
+ ],
+ "peak": {}
+}

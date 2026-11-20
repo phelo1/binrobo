@@ -1,0 +1,9 @@
+[   89.1] pi   rear camera: bin axis -0.027 m off the estimate (camera 0.050 m) -> estimate corrected, re-aligning
+[  104.1] pi   rear camera: bin axis -0.034 m off the estimate (camera 0.028 m) -> estimate corrected, re-aligning
+[  116.6] pi   pre-grab gate OK on the camera: lateral -0.008 m, yaw 0.05 deg (truth: -0.071 m, 0.20 deg, OUTSIDE)
+SAVED s1a__s7 result=pass outcome=plan completed sim 3865 s
+[ 2367.0] pi   rear camera: bin axis -0.014 m off the estimate (camera 0.056 m) -> estimate corrected, re-aligning
+[ 2382.6] pi   pre-grab gate OK on the camera: lateral 0.018 m, yaw 0.05 deg (truth: -0.045 m, 0.20 deg, inside)
+SAVED s1b__s7 result=pass outcome=plan completed sim 4306 s
+QUEUE left 0 / 2, wall 550 s
+r4camB sitl done

@@ -1,0 +1,1016 @@
+{
+ "label": "improved version, revision 3: table built from the drawn solids",
+ "rows": [
+  {
+   "name": "FR Side rail L 50x50x4 RHS S355",
+   "kg": 7.358,
+   "p": [
+    0.305,
+    0.43,
+    0.385
+   ],
+   "d": [
+    1.35,
+    0.05,
+    0.05
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "FR Drive/motor plate L 6 mm S355 with top flange bolted up through the rail",
+   "kg": 2.628,
+   "p": [
+    0.0,
+    0.427,
+    0.24
+   ],
+   "d": [
+    0.2,
+    0.045,
+    0.24
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "GU UHMW guard L",
+   "kg": 1.542,
+   "p": [
+    0.04,
+    0.363,
+    0.21
+   ],
+   "d": [
+    0.68,
+    0.01,
+    0.3
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "GU Mouth flare L",
+   "kg": 0.228,
+   "p": [
+    -0.335,
+    0.383,
+    0.21
+   ],
+   "d": [
+    0.074,
+    0.049,
+    0.3
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "AT Anti-tip bracket L",
+   "kg": 0.38,
+   "p": [
+    -0.33,
+    0.42,
+    0.225
+   ],
+   "d": [
+    0.03,
+    0.024,
+    0.27
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "AT Anti-tip roller L D80 (y 420)",
+   "kg": 0.276,
+   "p": [
+    -0.33,
+    0.42,
+    0.09
+   ],
+   "d": [
+    0.08,
+    0.05,
+    0.08
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "FR Side rail R 50x50x4 RHS S355",
+   "kg": 7.358,
+   "p": [
+    0.305,
+    -0.43,
+    0.385
+   ],
+   "d": [
+    1.35,
+    0.05,
+    0.05
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "FR Drive/motor plate R 6 mm S355 with top flange bolted up through the rail",
+   "kg": 2.628,
+   "p": [
+    0.0,
+    -0.427,
+    0.24
+   ],
+   "d": [
+    0.2,
+    0.045,
+    0.24
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "GU UHMW guard R",
+   "kg": 1.542,
+   "p": [
+    0.04,
+    -0.363,
+    0.21
+   ],
+   "d": [
+    0.68,
+    0.01,
+    0.3
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "GU Mouth flare R",
+   "kg": 0.228,
+   "p": [
+    -0.335,
+    -0.383,
+    0.21
+   ],
+   "d": [
+    0.074,
+    0.049,
+    0.3
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "AT Anti-tip bracket R",
+   "kg": 0.38,
+   "p": [
+    -0.33,
+    -0.42,
+    0.225
+   ],
+   "d": [
+    0.03,
+    0.024,
+    0.27
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "AT Anti-tip roller R D80 (y 420)",
+   "kg": 0.276,
+   "p": [
+    -0.33,
+    -0.42,
+    0.09
+   ],
+   "d": [
+    0.08,
+    0.05,
+    0.08
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "FR Nose cross-member 50x50x3 RHS, at rail height",
+   "kg": 3.443,
+   "p": [
+    0.955,
+    0.0,
+    0.385
+   ],
+   "d": [
+    0.05,
+    0.81,
+    0.05
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "FR Mast-base cross-member 50x50x5 RHS S355",
+   "kg": 5.314,
+   "p": [
+    0.49,
+    0.0,
+    0.385
+   ],
+   "d": [
+    0.05,
+    0.81,
+    0.05
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "LM Mast upright L 80x40x4 RHS, welded all round to its foot shoe",
+   "kg": 6.374,
+   "p": [
+    0.52,
+    0.2,
+    0.895
+   ],
+   "d": [
+    0.08,
+    0.04,
+    0.95
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "LM Linear rail L HGR15, 940 mm",
+   "kg": 1.36,
+   "p": [
+    0.463,
+    0.2,
+    0.89
+   ],
+   "d": [
+    0.015,
+    0.015,
+    0.94
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "LM Mast upright R 80x40x4 RHS, welded all round to its foot shoe",
+   "kg": 6.374,
+   "p": [
+    0.52,
+    -0.2,
+    0.895
+   ],
+   "d": [
+    0.08,
+    0.04,
+    0.95
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "LM Linear rail R HGR15, 940 mm",
+   "kg": 1.36,
+   "p": [
+    0.463,
+    -0.2,
+    0.89
+   ],
+   "d": [
+    0.015,
+    0.015,
+    0.94
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "LM Mast top tie 50x50x2 RHS",
+   "kg": 1.348,
+   "p": [
+    0.495,
+    0.0,
+    1.395
+   ],
+   "d": [
+    0.05,
+    0.46,
+    0.05
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "BY HDPE bay floor 10 mm, cut back at the front corners for the castors",
+   "kg": 2.527,
+   "p": [
+    0.74,
+    0.0,
+    0.125
+   ],
+   "d": [
+    0.48,
+    0.76,
+    0.01
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "BY HDPE side walls, ending 140 mm earlier for the castors",
+   "kg": 0.562,
+   "p": [
+    0.645,
+    0.0,
+    0.215
+   ],
+   "d": [
+    0.29,
+    0.772,
+    0.17
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "BY HDPE rear cover (fixed), with cable grommets",
+   "kg": 0.861,
+   "p": [
+    0.62,
+    0.0,
+    0.303
+   ],
+   "d": [
+    0.2,
+    0.772,
+    0.006
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "BY HDPE front cover (removable, shortened), with cable grommets",
+   "kg": 0.855,
+   "p": [
+    0.818,
+    0.0,
+    0.303
+   ],
+   "d": [
+    0.195,
+    0.772,
+    0.006
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "LM Rail backing flat L 30x10",
+   "kg": 2.214,
+   "p": [
+    0.475,
+    0.2,
+    0.89
+   ],
+   "d": [
+    0.01,
+    0.03,
+    0.94
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "LM Rail backing flat R 30x10",
+   "kg": 2.214,
+   "p": [
+    0.475,
+    -0.2,
+    0.89
+   ],
+   "d": [
+    0.01,
+    0.03,
+    0.94
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "LA Actuator base bracket: 10 mm S355 back plate and shelf, two gussets, clevis lugs; 2 x M12 through the mast-base cross-member",
+   "kg": 2.176,
+   "p": [
+    0.557,
+    0.0,
+    0.364
+   ],
+   "d": [
+    0.085,
+    0.12,
+    0.092
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "RK Pivot hanger plate rear 10 mm S355, welded to the nose cross-member",
+   "kg": 1.696,
+   "p": [
+    0.925,
+    0.0,
+    0.29
+   ],
+   "d": [
+    0.01,
+    0.09,
+    0.24
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "RK Pivot hanger plate front 10 mm S355, welded to the nose cross-member",
+   "kg": 1.696,
+   "p": [
+    0.985,
+    0.0,
+    0.29
+   ],
+   "d": [
+    0.01,
+    0.09,
+    0.24
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "RK Pivot pin D20, bronze bushes in the beam housing, held in both hanger plates",
+   "kg": 0.212,
+   "p": [
+    0.955,
+    0.0,
+    0.2
+   ],
+   "d": [
+    0.086,
+    0.02,
+    0.02
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "FR Corner plate L rear, 6 mm, welded over the rail / mast-base joint",
+   "kg": 0.301,
+   "p": [
+    0.49,
+    0.415,
+    0.413
+   ],
+   "d": [
+    0.08,
+    0.08,
+    0.006
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "FR Corner plate L front, 6 mm, welded over the rail / nose joint",
+   "kg": 0.245,
+   "p": [
+    0.948,
+    0.415,
+    0.413
+   ],
+   "d": [
+    0.065,
+    0.08,
+    0.006
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "FR Corner plate R rear, 6 mm, welded over the rail / mast-base joint",
+   "kg": 0.301,
+   "p": [
+    0.49,
+    -0.415,
+    0.413
+   ],
+   "d": [
+    0.08,
+    0.08,
+    0.006
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "FR Corner plate R front, 6 mm, welded over the rail / nose joint",
+   "kg": 0.245,
+   "p": [
+    0.948,
+    -0.415,
+    0.413
+   ],
+   "d": [
+    0.065,
+    0.08,
+    0.006
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "LM Mast foot shoe L: 10 mm S355 top plate and front leg",
+   "kg": 1.046,
+   "p": [
+    0.515,
+    0.2,
+    0.391
+   ],
+   "d": [
+    0.1,
+    0.09,
+    0.058
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "LM Lift top stop L: bolted 12 mm S355 bracket with tongue, 2 x M10 through the upright",
+   "kg": 0.503,
+   "p": [
+    0.493,
+    0.211,
+    1.35
+   ],
+   "d": [
+    0.133,
+    0.042,
+    0.03
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "LM Lift bottom stop L: bolted bracket with tongue, 2 x M10",
+   "kg": 0.503,
+   "p": [
+    0.493,
+    0.211,
+    0.705
+   ],
+   "d": [
+    0.133,
+    0.042,
+    0.03
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "SW Lift top limit switch L (channel A), roller lever down to 1,327 mm",
+   "kg": 0.1,
+   "p": [
+    0.435,
+    0.247,
+    1.353
+   ],
+   "d": [
+    0.03,
+    0.022,
+    0.03
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "LM Mast foot shoe R: 10 mm S355 top plate and front leg",
+   "kg": 1.046,
+   "p": [
+    0.515,
+    -0.2,
+    0.391
+   ],
+   "d": [
+    0.1,
+    0.09,
+    0.058
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "LM Lift top stop R: bolted 12 mm S355 bracket with tongue, 2 x M10 through the upright",
+   "kg": 0.503,
+   "p": [
+    0.493,
+    -0.211,
+    1.35
+   ],
+   "d": [
+    0.133,
+    0.042,
+    0.03
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "LM Lift bottom stop R: bolted bracket with tongue, 2 x M10",
+   "kg": 0.503,
+   "p": [
+    0.493,
+    -0.211,
+    0.705
+   ],
+   "d": [
+    0.133,
+    0.042,
+    0.03
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "SW Lift top limit switch R (channel B), roller lever down to 1,327 mm",
+   "kg": 0.1,
+   "p": [
+    0.435,
+    -0.247,
+    1.353
+   ],
+   "d": [
+    0.03,
+    0.022,
+    0.03
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "SW Lift down limit switch, roller lever up to 725 mm",
+   "kg": 0.1,
+   "p": [
+    0.435,
+    0.247,
+    0.7
+   ],
+   "d": [
+    0.03,
+    0.022,
+    0.032
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "SF Bumper carrier arm L 40x40x2 with drop leg, flange welded to the nose cross-member",
+   "kg": 0.947,
+   "p": [
+    1.035,
+    0.09,
+    0.29
+   ],
+   "d": [
+    0.11,
+    0.06,
+    0.25
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "SF Bumper guide pin D12 with return spring L",
+   "kg": 0.1,
+   "p": [
+    1.123,
+    0.15,
+    0.185
+   ],
+   "d": [
+    0.017,
+    0.012,
+    0.012
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "SW Front bumper switch L, two normally-closed contacts (one per channel)",
+   "kg": 0.08,
+   "p": [
+    1.123,
+    0.19,
+    0.185
+   ],
+   "d": [
+    0.012,
+    0.024,
+    0.026
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "SF Bumper carrier arm R 40x40x2 with drop leg, flange welded to the nose cross-member",
+   "kg": 0.947,
+   "p": [
+    1.035,
+    -0.09,
+    0.29
+   ],
+   "d": [
+    0.11,
+    0.06,
+    0.25
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "SF Bumper guide pin D12 with return spring R",
+   "kg": 0.1,
+   "p": [
+    1.123,
+    -0.15,
+    0.185
+   ],
+   "d": [
+    0.017,
+    0.012,
+    0.012
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "SW Front bumper switch R, two normally-closed contacts (one per channel)",
+   "kg": 0.08,
+   "p": [
+    1.123,
+    -0.19,
+    0.185
+   ],
+   "d": [
+    0.012,
+    0.024,
+    0.026
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "SF Bumper carrier beam 40x25x2, fixed to the drop legs",
+   "kg": 0.766,
+   "p": [
+    1.103,
+    0.0,
+    0.185
+   ],
+   "d": [
+    0.025,
+    0.4,
+    0.04
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "CH Cable chain anchor bracket on the left upright",
+   "kg": 0.068,
+   "p": [
+    0.505,
+    0.171,
+    1.1
+   ],
+   "d": [
+    0.016,
+    0.018,
+    0.03
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Drive unit L: PEWM82M-320W gearmotor + spring brake + 3.5:1 chain + 330 mm wheel (B1 mass)",
+   "kg": 9.68,
+   "p": [
+    0.0,
+    0.4,
+    0.17
+   ],
+   "d": [
+    0.3,
+    0.1,
+    0.3
+   ],
+   "g": "wheel"
+  },
+  {
+   "name": "Drive unit R",
+   "kg": 9.68,
+   "p": [
+    0.0,
+    -0.4,
+    0.17
+   ],
+   "d": [
+    0.3,
+    0.1,
+    0.3
+   ],
+   "g": "wheel"
+  },
+  {
+   "name": "Castor 200 mm L + fork",
+   "kg": 2.3,
+   "p": [
+    0.93,
+    0.28,
+    0.1
+   ],
+   "d": [
+    0.2,
+    0.08,
+    0.2
+   ],
+   "g": "cast"
+  },
+  {
+   "name": "Castor 200 mm R + fork",
+   "kg": 2.3,
+   "p": [
+    0.93,
+    -0.28,
+    0.1
+   ],
+   "d": [
+    0.2,
+    0.08,
+    0.2
+   ],
+   "g": "cast"
+  },
+  {
+   "name": "Battery 24 V 20 Ah LiFePO4 + BMS (front bay)",
+   "kg": 5.05,
+   "p": [
+    0.82,
+    0,
+    0.205
+   ],
+   "d": [
+    0.25,
+    0.18,
+    0.15
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Electronics pod + harness (as B1)",
+   "kg": 3.39,
+   "p": [
+    0.7,
+    0,
+    0.32
+   ],
+   "d": [
+    0.2,
+    0.2,
+    0.1
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Sensors: post, lidar, cameras, radars (as B1)",
+   "kg": 1.86,
+   "p": [
+    1.0,
+    0,
+    0.6
+   ],
+   "d": [
+    0.05,
+    0.05,
+    0.6
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Bumper, lights, dock interface, safety (as B1), 65 mm further forward",
+   "kg": 1.95,
+   "p": [
+    1.135,
+    0,
+    0.22
+   ],
+   "d": [
+    0.05,
+    0.66,
+    0.1
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Lift actuator FDI 24 V 4 kN, 400 mm IP65 unit, base pin 60 mm lower (340 mm used)",
+   "kg": 3.5,
+   "p": [
+    0.49,
+    0,
+    0.64
+   ],
+   "d": [
+    0.08,
+    0.08,
+    0.6
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Rear camera + beacon on the mast top",
+   "kg": 0.6,
+   "p": [
+    0.45,
+    0,
+    1.37
+   ],
+   "d": [
+    0.1,
+    0.3,
+    0.05
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Leg-tip gap sensors 2 x ToF (potted)",
+   "kg": 0.1,
+   "p": [
+    -0.4,
+    0,
+    0.25
+   ],
+   "d": [
+    0.05,
+    0.8,
+    0.05
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Fasteners, whole robot (BOM line F1; reviewer audit: 2.0 kg)",
+   "kg": 2.0,
+   "p": [
+    0.49,
+    0,
+    0.385
+   ],
+   "d": [
+    0.9,
+    0.8,
+    0.4
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Lift cable chain 0.6 m (loom L7)",
+   "kg": 0.2,
+   "p": [
+    0.44,
+    0.12,
+    1.0
+   ],
+   "d": [
+    0.05,
+    0.1,
+    0.4
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Power box: enclosure, 2 safety contactors, lift driver, pre-charge relay and resistor, fuses, isolator",
+   "kg": 1.6,
+   "p": [
+    0.69,
+    0.265,
+    0.19
+   ],
+   "d": [
+    0.16,
+    0.19,
+    0.12
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Safety additions: second tilt switch, larger safety controller, limit-switch wiring",
+   "kg": 0.3,
+   "p": [
+    0.64,
+    0,
+    0.2
+   ],
+   "d": [
+    0.1,
+    0.1,
+    0.08
+   ],
+   "g": "chassis"
+  },
+  {
+   "name": "Weld metal and paint (about 1 % of the fabricated steel)",
+   "kg": 0.6,
+   "p": [
+    0.45,
+    0,
+    0.5
+   ],
+   "d": [
+    0.9,
+    0.8,
+    0.6
+   ],
+   "g": "chassis"
+  }
+ ],
+ "carriage": [
+  {
+   "name": "Lift carriage, sum of its parts (see the table), less the 1.5 kg the simulator adds as separate small bodies",
+   "kg": 25.59,
+   "p": [
+    0.404,
+    0,
+    0.726
+   ],
+   "d": [
+    0.15,
+    0.7,
+    0.6
+   ],
+   "g": "lift"
+  }
+ ],
+ "rocker_kg": 6.0,
+ "car_total": 27.09,
+ "total": 152.2,
+ "note": "total = fixed rows + carriage (27.09 kg, all of it) + castor beam (6.00 kg). The simulator builds comb, keeper, pad base and pad as separate bodies of 1.5 kg, so the carriage row carries the rest."
+}

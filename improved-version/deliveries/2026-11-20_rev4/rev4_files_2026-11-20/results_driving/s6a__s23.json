@@ -1,0 +1,222 @@
+{
+ "scenario": "s6a",
+ "seed": 23,
+ "title": "Companion freeze, loaded transit (firmware failsafe)",
+ "expect": "alert",
+ "result": "alert",
+ "outcome": "companion freeze -> firmware HOLD",
+ "alerts": [],
+ "sim_time_s": 176.7,
+ "chunks": [
+  {
+   "t0": 0.0,
+   "t1": 176.7,
+   "wall": 18.0,
+   "frames": 9827,
+   "status": "done"
+  }
+ ],
+ "energy_wh": 1.13,
+ "soc_start": 0.9,
+ "soc_end": 0.8976,
+ "odo_m": 30.9,
+ "hedge_min_m": 0.285,
+ "hedge_min_at": [
+  48.8,
+  200.1
+ ],
+ "legal_min_m": null,
+ "legal_min_at": null,
+ "contact_min_m": null,
+ "contact_with": null,
+ "person_rest_min_m": null,
+ "car_rest_min_m": null,
+ "collisions": [],
+ "chain_trips": [],
+ "metrics": {
+  "placements": [],
+  "grabs": [],
+  "trips": [],
+  "stops": [],
+  "gates": [],
+  "first_motion_clock": null,
+  "first_motion_t": 146.6,
+  "crash": {
+   "t": 146.61,
+   "v": 0.306,
+   "mode": "GUIDED",
+   "op": "lane",
+   "hold_t": 1.8,
+   "stop_t": 2.5,
+   "stop_m": 0.625,
+   "rolled_30s_m": 0.626
+  }
+ },
+ "events": [
+  {
+   "t": 0.0,
+   "kind": "sim",
+   "text": "chunk 0 start: SITL launched, home = checkpoint pose s=200.0"
+  },
+  {
+   "t": 1.14,
+   "kind": "fw",
+   "text": "Calibrating barometer"
+  },
+  {
+   "t": 2.83,
+   "kind": "fw",
+   "text": "Barometer 1 calibration complete"
+  },
+  {
+   "t": 2.83,
+   "kind": "fw",
+   "text": "Barometer 2 calibration complete"
+  },
+  {
+   "t": 2.85,
+   "kind": "fw",
+   "text": "Beginning INS calibration. Do not move vehicle"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "ArduPilot Ready"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "RCInput: decoding UDP (Pulses)"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "AHRS: DCM active"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "GPS 1: specified as MAV"
+  },
+  {
+   "t": 3.11,
+   "kind": "fw",
+   "text": "GPS 1: detected MAV"
+  },
+  {
+   "t": 5.01,
+   "kind": "fw",
+   "text": "EKF3 IMU0 initialised"
+  },
+  {
+   "t": 5.01,
+   "kind": "fw",
+   "text": "EKF3 IMU1 initialised"
+  },
+  {
+   "t": 6.69,
+   "kind": "fw",
+   "text": "EKF3 IMU0 tilt alignment complete"
+  },
+  {
+   "t": 6.69,
+   "kind": "fw",
+   "text": "EKF3 IMU1 tilt alignment complete"
+  },
+  {
+   "t": 6.75,
+   "kind": "fw",
+   "text": "EKF3 IMU0 MAG0 initial yaw alignment complete"
+  },
+  {
+   "t": 6.75,
+   "kind": "fw",
+   "text": "EKF3 IMU1 MAG0 initial yaw alignment complete"
+  },
+  {
+   "t": 6.75,
+   "kind": "fw",
+   "text": "AHRS: EKF3 active"
+  },
+  {
+   "t": 15.17,
+   "kind": "fw",
+   "text": "EKF3 IMU0 origin set"
+  },
+  {
+   "t": 15.17,
+   "kind": "fw",
+   "text": "EKF3 IMU1 origin set"
+  },
+  {
+   "t": 15.17,
+   "kind": "fw",
+   "text": "Field Elevation Set: 34m"
+  },
+  {
+   "t": 21.67,
+   "kind": "fw",
+   "text": "SmartRTL deactivated: bad position"
+  },
+  {
+   "t": 42.97,
+   "kind": "fw",
+   "text": "EKF3 IMU0 is using GPS"
+  },
+  {
+   "t": 42.97,
+   "kind": "fw",
+   "text": "EKF3 IMU1 is using GPS"
+  },
+  {
+   "t": 46.95,
+   "kind": "fw",
+   "text": "Fence Indexed OK"
+  },
+  {
+   "t": 46.95,
+   "kind": "pi",
+   "text": "fence upload ack=0 (81 vertices)"
+  },
+  {
+   "t": 46.99,
+   "kind": "fw",
+   "text": "Warning: Arming Checks Disabled"
+  },
+  {
+   "t": 46.99,
+   "kind": "fw",
+   "text": "Throttle armed"
+  },
+  {
+   "t": 47.95,
+   "kind": "pi",
+   "text": "boot done (GUIDED, armed, fence 81 pts)"
+  },
+  {
+   "t": 146.61,
+   "kind": "pi",
+   "text": "*** COMPANION FREEZE INJECTED (op lane, v=0.31 m/s): heartbeat, attitude targets and lidar feed stop"
+  },
+  {
+   "t": 148.33,
+   "kind": "fw",
+   "text": "mode GUIDED -> HOLD"
+  },
+  {
+   "t": 148.33,
+   "kind": "fw",
+   "text": "GCS Failsafe"
+  },
+  {
+   "t": 148.41,
+   "kind": "fw",
+   "text": "firmware HOLD 1.80 s after the freeze"
+  },
+  {
+   "t": 176.71,
+   "kind": "pi",
+   "text": "FINISH alert: companion freeze -> firmware HOLD"
+  }
+ ]
+}

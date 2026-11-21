@@ -1,0 +1,373 @@
+[text of SITL_rev4_2026-11-21.pdf, taken out of the PDF for the public repository; pictures and layout are not kept]
+
+                               BinRobo revision 4 - ArduPilot SITL re-test (driving software)
+         Independent re-run of the frozen B2-F 60-run suite at 177.6 kg with their revision 4 companion, 21 Nov 2026
+
+
+
+
+Verdict
+Revision 4 scores 47 / 60 on the frozen SITL criteria (ArduPilot Rover 4.6.2, frozen 50 Wh scorer). They report 48 /
+60. The extra failure is a fault run (s4c seed 11) that ended on a different alarm from the expected one. The robot was safe and
+stopped.
+
+trip limit (C6 only changed)    50 Wh (frozen)        65 Wh                         70 Wh                         75 Wh
+runs passing, of 60             47                    47                            50                            52
+
+
+
+Raising the trip limit no longer gets to 60 / 60. Rev 3 reached 60 / 60 at 65 Wh. In rev 4, 8 runs fail for reasons that have
+nothing to do with energy:
+   • 6 x “too late”: all six three-bin evenings (s3a and s3b, every seed). Each ran two trips, then refused the third because the
+     companion’s own 18:00-21:00 window said it would end after 21:00. The cause is the slower speed rule: trips now take 64 to 74
+     min.
+   • 1 x hedge clearance (s1b seed 23): 0.098 m against the 0.124 m limit (C1). This happened at pad A while the robot
+     was re-aligning on the bin after the camera found it 204 mm off. This is new: the worst in rev 3 was 0.184 m, and the worst in
+     their rev 4 run was 0.198 m.
+   • 1 x wrong alarm (s4c seed 11): during the long RTK loss the robot stopped (HOLD) at station 86 m as it should. While it
+     stood still, the EKF estimate drifted 14 m, and the firmware fence fired before the companion’s 60 s no-fix alarm. The robot
+     was safe and did not move, but the outcome label is wrong for the scorer. This is a race between two alarms.
+The safety logic they added works. The camera-only gate, the 3-frame average, the seating check and the closed refusals all
+behave as described. The seating check is now the thing that makes a camera-only gate safe: with a 60 mm camera bias
+the gate passed robots that were truly 39 to 77 mm off, and the seating check caught every one. With the seating check off, the
+robot lifted bins 69 mm off centre (2 of 2). That is outside the 50 mm pick-up envelope.
+The 18:00-21:00 window is our own B2-F companion rule, not the bye-law. The bye-law is: bins out no earlier than 18:00
+the day before, and back by 21:00 on collection day. Under the real bye-law:
+   • three drops from 18:00 fit: they end about 21:25-21:35 the evening before, and nothing in the bye-law limits that.
+   • three returns from 18:00 on collection day do not fit: they end about 21:35-21:40. They fit if they start by about 17:20 (17:00
+     with a 10 % margin), any time after the collector has been.
+
+1. What was run
+
+item                                                                 value
+Firmware                                                             ArduRover 4.6.2 (bin/ardurover_aarch64), SITL instance -I4. They used
+                                                                     4.7.x; ARMING_SKIPCHK (4.7 only) not passed, ARMING_CHECK 0 in params.
+Robot                                                                177.6 kg, nose +0.324 m, lift scale 0.8. Their rev 4 switches verbatim:
+                                                                     X_CAM_RNG=1 X_CAM_REFUSE=1 X_CAM_TRIES=3 X_FIX_RTH=1 X_TRIP_WH=75
+                                                                     X_CAM_AVG=3 X_GATE_CAM=1 X_FINAL_CAM=1 X_SEAT=0.030, X_VSLOPE speed
+                                                                     rule of their 3.3
+Code                                                                 world / scenarios / scorer / runner frozen (runner md5 f34ad493 = rev
+                                                                     2/3). Companion = their rev 4 b2f_companion_x.py (md5 f0b6a284) +
+                                                                     DI-2 resume-only fix (does nothing in an uninterrupted run). md5s:
+                                                                     sitl/b2f/FROZEN_rev4_scripts.md5
+Scorer                                                               frozen b2f_score.py (C6 at 50 Wh). The 65/70/75 Wh what-ifs come from
+                                                                     rev4_analyse.py, which changes C6 only (full missions: every trip <=
+                                                                     limit, three-bin end SOC >= 20 %)
+Suite                                                                20 scenarios x seeds 7, 11, 23 = 60 runs, all run (chunked, checkpointed,
+                                                                     one SITL at a time)
+Stress                                                               m195 (195 kg) s3a seed 11; seed 7: lid15 s1a; camA s1a; camB s1a + s1b;
+                                                                     camC s1a + s1b; camB with the seating check off (camBnoseat) s1a + s1b
+Their results                                                        re-scored with the frozen scorer: 48 / 60, the same verdicts as their
+                                                                     score.json
+
+
+
+
+                                                                 1
+BinRobo revision 4                                                                                               SITL re-test, 21 Nov 2026
+
+
+
+2. Code review of their revision 4 companion
+Diff rev 3 -> rev 4: /workspace/work/out/rev4/sitl/companion_rev3_to_rev4.diff (147 lines, companion only; runner un-
+changed). Every new switch is off by default, so with the switches off the code behaves like rev 3.
+
+#                            item                                finding                                 verdict
+1                            camera-only pre-grab gate           Decides on lat_cam = truth + bias       fixed (yaw idealised)
+                             (X_GATE_CAM)                        + 3-frame mean noise, with a 35
+                                                                 mm band. Truth is only logged
+                                                                 (ok), which lets the scorer judge the
+                                                                 grab. Yaw is truth + N(0, 0.5
+                                                                 deg): no bias, not averaged. This is
+                                                                 optimistic.
+2                            final reverse on the camera         lat_b is still computed from the        partly fixed - medium
+                             (X_FINAL_CAM)                       true robot and bin poses, plus one
+                                                                 constant camera error drawn per
+                                                                 dock. In practice it is an oracle
+                                                                 with an offset: no frame-to-frame
+                                                                 noise, no dropouts, no lag.
+3                            3-frame average (X_CAM_AVG=3)       Averages the frames that returned       fixed (optimistic)
+                                                                 a reading, and reports “no reading”
+                                                                 only if all 3 are missing. It treats
+                                                                 the frames as independent, so the
+                                                                 noise drops by sqrt(3). Real frames
+                                                                 from a robot that is not moving are
+                                                                 correlated. Bias is unchanged, as
+                                                                 expected.
+4                            seating check (X_SEAT=0.030)        Runs at the dock, before the lift.      works (sensor idealised)
+                                                                 Reads truth dock offset + N(0, 5
+                                                                 mm), which stands in for the two
+                                                                 leg-tip gap sensors and does not
+                                                                 depend on the camera. Over 30
+                                                                 mm: pull out, pivot, re-dock with
+                                                                 the measured value as a correction.
+                                                                 Over 30 mm again: no lift, refuse,
+                                                                 drive home. The sensor has no bias
+                                                                 or dropout.
+5                            refusal closure (D1)                ('trip_end',) is now in all three       fixed
+                                                                 refusal paths (camera, gate,
+                                                                 seating). Verified in camC s1a: the
+                                                                 trip was logged (1.16 Wh), the
+                                                                 robot was back on the dock at
+                                                                 18:02, and C3 passes.
+6                            refusals counted (D4)               Gate and seating refusals are added     fixed
+                                                                 to metrics.refused.
+7                            slope speed (X_VSLOPE)              Reads the true map gradient at the      partly - low/medium
+                                                                 true pose and heading (acceptable:
+                                                                 map plus IMU). Picks “bin” or
+                                                                 “empty” speed from the bin’s true
+                                                                 mass (>= 40 kg), which the robot
+                                                                 cannot know unless it reads the lift
+                                                                 load. The rule for steeper than 9 %
+                                                                 with no bin, tail first at 0.2 m/s,
+                                                                 is not implemented: the code
+                                                                 drives nose first at 0.15 m/s, as
+                                                                 they admit. hd_ = ... if sgn > 0
+                                                                 or True else ... is dead code
+                                                                 (harmless).
+8                            trip-start check                    The 21:00 check still assumes 50        open - high for collection day
+                                                                 min per trip (c + 50.0). Real rev
+                                                                 4 trips are 64-74 min, so a trip
+                                                                 started between 19:46 and 20:10
+                                                                 would pass the check and end after
+                                                                 21:00. It did not happen in the 60
+                                                                 runs, because the second trips
+                                                                 always started around 19:13.
+9                            truth oracles                       Pre-grab gate: gone (truth is only      mostly gone
+                                                                 logged). Final reverse: still
+                                                                 truth-based (item 2). The comb
+                                                                 ToF gap and seating sensor are
+                                                                 sensor models built from truth
+                                                                 geometry (acceptable). Bins
+                                                                 re-entered into the obstacle map
+                                                                 from truth after withdraw/refuse
+                                                                 (inherited from rev 2, minor).
+
+
+
+
+3. Scored suite (60 runs)
+
+
+
+
+                                                             2
+BinRobo revision 4                                                                                                           SITL re-test, 21 Nov 2026
+
+
+
+group                   runs                       frozen 50 Wh                  65 Wh                  70 Wh                       75 Wh
+fault / hazard runs     48                         47 (s4c s11 C7)               47                     47                          47
+(s4-s12)
+one-bin s1a (drop)      3                          0                             0                      3                           3
+one-bin s1b (return)    3                          0                             0                      0                           2 (s23 fails C1 hedge)
+three-bin s3a, s3b      6                          0                             0                      0                           0 (all C7 “too late”)
+total                   60                         47                            47                     50                          52
+
+
+
+Against their 60: the verdicts are identical except s4c s11. Some failure reasons differ: their s1b s11 and s3b s23 refused a grab, and
+their s3b s7 had a camera gate that passed a bin 3.3 deg out. None of those happened in our runs: 0 refusals, and the camera
+agreed with truth at all 21 gates (theirs 19 / 21).
+
+3.1 Energy, time, charge
+
+run                            trips (Wh)                     trip minutes                     out -> back on dock             end SOC
+s1a s7 / s11 / s23             67.46 / 67.68 / 67.92          64.4 / 64.6 / 65.0               18:00 -> 19:05 (D-1)            0.755 / 0.754 / 0.754
+s1b s7 / s11 / s23             70.10 / 70.10 / 70.50          73.0 / 73.7 / 73.7               18:00 -> 19:13-19:14 (D0)       0.749 / 0.749 / 0.748
+s3a s7                         70.51, 67.51                   73.5, 64.9                       18:00 -> 20:19, third           0.593
+                                                                                               refused
+s3a s11                        70.17, 67.91                   72.6, 65.3                       18:00 -> 20:18, third           0.593
+                                                                                               refused
+s3a s23                        70.52, 67.29                   74.0, 64.4                       18:00 -> 20:19, third           0.594
+                                                                                               refused
+s3b s7                         69.74, 69.76                   73.1, 72.3                       18:00 -> 20:26, third           0.590
+                                                                                               refused
+s3b s11                        68.90, 69.98                   71.0, 72.6                       18:00 -> 20:24, third           0.592
+                                                                                               refused
+s3b s23                        69.62, 69.95                   72.7, 72.5                       18:00 -> 20:25, third           0.590
+                                                                                               refused
+
+
+   • 18 trips: 67.3 to 70.5 Wh (mean 69.2), 64.4 to 74.0 min (mean 70.2). Theirs: 67.1 to 74.7 Wh, 62 to 72 min. Rev 3
+     was 57.2 to 59.7 Wh and about 56 min. All trips are under their 75 Wh guard budget, with 4.5 Wh of headroom at most.
+   • Charge-left rule (>= 20 % at the end of the evening): passes. In SITL (512 Wh pack, start SOC 0.90) two trips leave
+     0.59, about 15.5 % per trip, so three trips leave about 0.43. From full: 3 x 70.5 = 212 Wh leaves 59 % of 512 Wh. On an aged,
+     cold pack (0.8 x 0.85 x 512 = 348 Wh) it leaves 39 %, or 35 % on their 480 Wh figure. The battery is not the constraint. Time
+     is.
+   • The energy guard (75 Wh budget) still refuses s8 correctly in all 3 seeds.
+   • Heavier robot (195 kg, m195, s3a seed 11): trips 73.73 and 71.10 Wh (72.6 and 64.0 min), end SOC 0.578, hedge 0.215
+     m, placement 56 mm max, third trip refused “too late” as at 177.6 kg. The first trip is 1.3 Wh under the 75 Wh guard
+     budget. A weighed prototype at 180-186 kg (their estimate) is fine. Anything near 195 kg needs an 80 Wh budget, or a fail at
+     75 Wh is likely.
+
+3.2 Other criteria
+
+metric                                ours (4.6.2, 60 runs)                      theirs                              limit
+hedge clearance, min                  0.098 m (s1b s23, pad A,                   0.198 m                             >= 0.124 m
+                                      re-alignment) - FAIL; next 0.167 m
+                                      (s3a s7)
+placement error, max / mean           0.054 / 0.032 m (21 set-downs)             0.079 / 0.045 m                     0.15 m
+final dock lateral, max               18.9 mm                                    -                                   -
+camera gate vs truth                  21 / 21 agree                              19 / 21                             -
+seating checks                        18 run, 18 passed, sensor error max        16 / 16                             30 mm
+                                      12.9 mm (5 mm sigma)
+camera re-alignments, max per bin     3                                          -                                   3 then refuse
+refusals                              0                                          2                                   -
+
+
+
+Hedge 0.098 m (s1b s23). At pad A (station 620 m, lateral +1.17 m) the robot’s first camera check found it 204 mm off the true
+bin axis. The lidar estimate of the bin had been 170 mm out. The re-alignment reversed toward the corrected axis, and the 1.83 m
+robot (nose + bumper) came within 98 mm of the hedge face. It stopped there and then completed the pick-up. The EKF was on
+RTK and correct, so the cause is the bin estimate plus the longer robot. The companion’s clearance check does not cover the grab
+approach. Their run of the same seed found the bin only 19 mm off, so this depends on the firmware and the seed. It shows the
+margin at pad A is thin with the rev 4 length.
+
+4. Failures not caused by energy, and why
+
+
+
+                                                                             3
+BinRobo revision 4                                                                                                        SITL re-test, 21 Nov 2026
+
+
+
+run                                           criterion                                             why
+s3a s7, s11, s23                              C7 too late                                           two drops end at 20:18-20:19; the companion
+                                                                                                    refuses the third because 20:19 + 50 min >
+                                                                                                    21:00 (our B2-F window; see section 5)
+s3b s7, s11, s23                              C7 too late                                           two returns end at 20:24-20:26; third refused the
+                                                                                                    same way (with real trip times it would end at
+                                                                                                    about 21:35)
+s1b s23                                       C1 hedge                                              0.098 m at pad A during the camera
+                                                                                                    re-alignment (3.2)
+s4c s11                                       C7 wrong outcome                                      robot in HOLD at station 86 m with no fix; the
+                                                                                                    EKF drifted 9-14 m while standing still, and the
+                                                                                                    firmware fence HOLD alarm fired before the
+                                                                                                    companion’s 60 s no-fix alarm. Seeds 7 / 23
+                                                                                                    drifted later, and the no-fix alarm fired first.
+                                                                                                    Safe, but the alarm order is down to chance: the
+                                                                                                    companion should raise its own no-fix alarm as
+                                                                                                    soon as it commands the HOLD.
+
+
+
+
+5. Timing against the [county] bye-law
+The bye-law: out no earlier than 18:00 the day before collection; back by 21:00 on collection day. The companion (our
+own B2-F code, frozen C3) applies a stricter 18:00-21:00 window on both evenings and assumes 50 min per trip.
+
+                                                                           three bins under rev 4 (measured
+evening                           what the bye-law needs                   trips)                                 fits?
+D-1, drops (s3a)                  first motion >= 18:00; no end time       18:00 + 73.5 + 64.9 = 20:19, third     yes (bye-law); no under our 21:00
+                                                                           drop about 65-74 min -> back           window
+                                                                           about 21:25-21:33
+D0, returns (s3b)                 back by 21:00; start may be any          from 18:00: 73.1 + 72.3 + about 72     no from 18:00; yes if started by
+                                  time after the collection                -> about 21:37                         about 17:20 (17:00 with a 10 %
+                                                                                                                  margin)
+
+
+
+So the three drop-evening “too late” refusals (s3a) are caused by our own window, not the bye-law. The three collection-day refusals
+(s3b) are real unless the returns start earlier. Recommended (requirements for Brian):
+   1. D-1: start at 18:00 and drop the 21:00 cut-off. Keep a quiet-hours limit if Brian wants one (for example 22:00).
+   2. D0: start returns once the collector has been (or from a set time such as 16:00), with 21:00 as the deadline.
+   3. Replace the hard-coded 50 min with the measured trip time for that bin and pad, plus a margin, in the start check. As coded,
+      a trip started between 19:46 and 20:10 on collection day would breach 21:00.
+   4. Their three alternatives (faster rule, castor brakes) bring trips to 54-64 min. That fits from 18:00, but the faster rule breaks
+      their own stopping-distance limit (146-167 mm against the 150 mm assumed). Starting earlier costs no hardware.
+
+6. Camera and lidar stress (seed 7)
+
+                                                                           seating check (meas /
+profile                    run                gate (camera / truth)        truth)                   grab offset                 outcome
+camA (25 mm noise,         s1a                OK / -24 mm inside           -17 / -24 mm, pass       -24 mm                      completed, 67.8 Wh
+10 mm bias, 20 %
+missing)
+camB (60 mm bias)          s1a                OK at +24 / -39 mm           -59 / -66 mm             -19 mm                      completed, placed 31
+                                              (inside)                     caught, re-dock -23 /                                mm
+                                                                           -19 pass
+camB                       s1b                OK at 0 / -63 mm             -50 / -57 mm             -10 mm                      completed, placed 19
+                                              OUTSIDE                      caught, re-dock -14 /                                mm
+                                                                           -10 pass
+camC (80 mm bias)          s1a                OK at +7 / -77 mm            -80 / -87 caught,        none                        refused, back on
+                                              OUTSIDE                      re-dock -34 / -30                                    dock 18:02, trip
+                                                                           still over                                           closed
+camC                       s1b                OK at +14 / -69 mm           -68 / -75 caught,        -23 mm                      completed, 70.7 Wh,
+                                              OUTSIDE                      re-dock -27 / -23 pass                               placed 17 mm
+camB, seating check        s1a                OK at +13 / -50 mm           -                        -69 mm                      completed (grab
+off                                           OUTSIDE                                                                           outside envelope)
+camB, seating check        s1b                OK at +2 / -62 mm            -                        -69 mm                      completed (grab
+off                                           OUTSIDE                                                                           outside envelope)
+lid15 (lidar noise x1.5,   s1a                OK / -18 mm inside           pass                     -                           completed, 67.6 Wh,
+10 % dropout)                                                                                                                   hedge 0.236 m, placed
+                                                                                                                                31 mm
+
+
+   • A biased camera fools a camera-only gate (5 of 6 biased gates passed a robot truly outside 50 mm, the sixth was 39 mm
+     off). That is expected, and they say so themselves.
+
+
+
+                                                                       4
+BinRobo revision 4                                                                                                      SITL re-test, 21 Nov 2026
+
+
+
+       • The seating check caught every biased dock (4 of 4 runs; 5 failed checks, each acted on). With 60 mm bias one
+         re-dock fixed it (-19, -10 mm). With 80 mm, s1b re-docked to -23 mm and completed. In s1a the second dock was -30 mm true
+         / -34 mm measured, so the robot refused and drove home. They report camC as completed within 58 mm; we get one refusal
+         and one completion. This sits right at the 30 mm limit and depends on the seed.
+       • Without the seating check the robot lifts 69 mm off centre (they report 49 mm). The G1 MuJoCo envelope tested
+         pick-ups up to 50 mm. The seating check must stay, and the frozen C8 rightly fails these runs.
+       • The frozen C8 also fails the camB runs that were corrected by the seating check, because it judges the gate and not the final
+         dock. The grab itself was within 19 mm. Read C8 on the stress runs together with the dock offset.
+
+7. Videos
+ArduPilot SITL renderings (truth view, matplotlib/PIL), not field footage. /workspace/work/out/rev4/videos/driving_software/:
+
+file                                                                        shows
+rev4_01_three_bin_evening_s3a_s7.mp4 (61 s)                                 three-bin drop evening, 177.6 kg: two trips (73.5 + 64.9 min), third refused
+                                                                            “too late” at 20:19
+rev4_02_seating_check_catch_camB60_s1a_s7.mp4 (62 s)                        60 mm camera bias: gate passes, seating check measures 59 mm, pulls out,
+                                                                            re-docks at 19 mm, completes
+rev4_03_no_seating_check_bias_camB60_s1a_s7.mp4 (63 s)                      same bias, seating check off: gate passes at true -50 mm, bin lifted 69 mm
+                                                                            off centre
+rev4_04_worst_hedge_98mm_s1b_s23.mp4 (68 s)                                 worst hedge of the 60: 98 mm at pad A during the camera re-alignment
+rev4_05_seating_refusal_camC80_s1a_s7.mp4 (59 s)                            80 mm bias: seating check fails twice, no lift, refused, back on dock, trip
+                                                                            closed
+rev4_06_too_late_third_bin_s3b_s7.mp4 (77 s)                                collection day, three returns: two trips (73 + 72 min), third refused at
+                                                                            20:26
+rev4_07_rtk_loss_fence_hold_s4c_s11.mp4 (37 s)                              RTK loss, robot holds; the drifting EKF trips the firmware fence before the
+                                                                            no-fix alarm
+
+
+
+The stress clips show “?” in the verdict box because the stress folders were scored after rendering. Their verdicts are in section 6.
+
+8. Not run / limits
+       • Camera/lidar stress: seed 7 only, one-bin missions only. Not run: camA s1b, cam15, lid15 s1b, night (camA + lid15), camera
+         stress on s3a/s3b, m195 on s1b / s3b and other seeds.
+       • 4.7.x not run (4.6.2 only). Differences against their runs (s4c s11 alarm race, s1b s23 bin estimate, their 2 refusals) are firmware-
+         and seed-dependent and were not investigated further.
+       • Their alternative speed rules (faster rule, castor brakes) were not re-run.
+       • No run of a third trip past 21:00 or an earlier D0 start: the timing in section 5 is worked out from the measured trip times, not
+         simulated.
+       • The seating sensor and camera yaw are idealised in their code (no bias), and the final reverse still steers on truth plus a constant
+         offset. Dock offsets (max 18.9 mm) are therefore optimistic.
+
+9. Files
+       • Scored runs: /workspace/work/out/rev4/sitl/runs/ (60), score.json / score.md (frozen scorer), analysis.json (per-run
+         Wh, minutes, SOC, gates, seating, hedge, placement, 65/70/75 Wh verdicts).
+       • Stress: /workspace/work/out/rev4/sitl/runs_{camA,camB,camC,camBnoseat,lid15,m195}/, scored copies in stress_score/<profile>
+       • Their 60 re-scored: /workspace/work/out/rev4/sitl/their_rescore/. Diff: companion_rev3_to_rev4.diff.
+       • Scripts: sitl/b2f/run_chunk_rev4.sh, rc4.sh, score_stress_rev4.sh, scripts_rev4/ (xr4, xs4, rev4_analyse.py),
+         render/rev4_*.
+       • Progress log: docs/reviews/PROGRESS_rev4_sitl.md.
+
+
+
+
+                                                                        5
+

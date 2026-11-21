@@ -1,0 +1,245 @@
+[text of TEST_rev4_2026-11-21.pdf, taken out of the PDF for the public repository; pictures and layout are not kept]
+
+BinRobo revision 4 - independent re-test (mechanical gate, person stop,
+                 lowering, steps, lane), MuJoCo 4.0.1
+                                      Tester report, 21 November 2026
+
+
+
+
+1. Verdict
+Everything revision 4 reports reproduces. Every point of their person-stop table that I re-ran (16 cells plus
+their side cases) matches to the millimetre; one wet-leaf side case differs by 2 mm. Their lowering, step and lane
+verdicts match too, and so do the gate pick-up files (179 of 180 captured, 1 safe refusal). Sim mass is 177.60 kg, CG
+x 0.497 m / z 0.475 m from the axle, as they state. The lane run P1 takes 1834 s and 16.7 Wh, against their 1833.6
+s and 16.67 Wh.
+The headline “longest simulated stop 122 mm against 150 mm” does not hold for the robot as it
+would really drive. It holds only inside their scoring assumptions:
+  • The empty robot on the 12 % pitch is scored tail first (71 mm), but tail-first driving does not
+    exist. It is not in the driving software and not in the lane runs. Nose first, their own table gives 389 mm at
+    0.2 m/s. I get 389 mm too.
+  • Slope transitions are not in the map. The speed rule looks at the slope the robot is on, not the slope
+    ahead. Suppose the empty robot is doing 0.4 m/s on the level (allowed) when the ground tips into the 12 %
+    pitch and the bumper is touched. It needs 938 mm and 6.7 s to stop. At +10 % mass (187 kg pstop mass) it
+    needs 1098 mm and has still not stopped after 12 s. Full bin, same case: 191 mm. Other transitions,
+    empty: 9 -> 12 % at 0.2 m/s: 329 mm; 3 -> 9 % at 0.3 m/s: 156 mm.
+  • Castor brakes do NOT fix wet leaves. Revision 4 recommends castor brakes as the fix for empty-robot
+    braking. On mu 0.30 they work: 46 mm at 0.2 m/s, and 167 mm at 0.5 m/s (= theirs). On wet leaves (mu
+    0.22, 12 %, empty) they give 644 mm from 0.2 m/s and 753 mm from 0.5 m/s, 4-5 times the 150 mm.
+    Their own section 7 mentions an unexplained 0.72 m run. It was not a fluke; it is the result. Without castor
+    brakes, the empty robot on wet leaves does not stop at all (13.2 m in 8 s). It is already sliding at 0.87 m/s
+    when the bumper is touched, because the drive wheels cannot hold it at 0.2 m/s.
+  • The lowering guard threshold is about 22 mm, not “about 20 mm”. They ran 15 mm (not seen) and
+    25 mm (seen) only. I ran 20 mm: not seen at 6 and at 13 mm/s, for 110 kg and 25 kg bins and under both
+    wheels. The bin was set down on the block (837-1180 N on it). Still not seen at +10 % mass (815 N). 30 mm
+    trips at 107 N.
+  • Open pothole: the hedge clearance falls to 5.6 mm. P5h stalls at s 550.5, as in their file. While working
+    at the hole the body passes 5.6 mm from the hedge line (s 550.0). Their reply does not mention this.
+  • The empty 40 mm step fails on B2-F as well. Empty at 3.0 m run-up, 0.3 and 0.5 m/s: stall. The boost
+    never fires (n = 0, the wheels spin). This answers their question 1 to the B2-F author: the empty-step problem
+    belongs to the whole layout (two driven rear wheels, castors in front), not to revision 4.
+Overall: as a simulation, revision 4 is reproducible and honest about most of its limits. Its own text says the empty
+robot brakes badly and that tail first is not implemented. The summary and the 122 mm headline are still more
+favourable than the results. As a design for the assumed 12 % wet lane, the empty robot still cannot be stopped
+within the bumper travel, with or without castor brakes. The 150 mm bumper travel itself is an assumption (half its
+depth; the maker has not confirmed it). The real lane slope is unmeasured (the map data says at most 7.9 %), and
+it decides most of this.
+
+
+
+
+                                                         1
+2. What was run (all at 177.6 kg unless stated, MuJoCo 4.0.1, 2 shared
+CPUs)
+  • Setup:
+       – Model: their make_simB2hx.py, writing h2/simB2hx_r4.py (2-line diff). With no switches it equals
+          simB2h.py (md5 check: 17 bodies, 34 geoms, 5 actuators).
+       – Environment: their revision 4 env (X_LIFT_V 0.013, X_NOSE_DX 0.34, CGB_GEO act_N 6800,
+          X_CAST_W 0.012, X_POSTHOLD 0.030, X_DOCK_TRIES 3, mass file mass_cgB2_r4.json), plus CGB_F9=1
+          B2_DOCK=front.
+       – Their runner runY was copied unchanged (runY_r4.py). runZ_r4.py is runY plus two additions: a
+          compliant obstacle (X_OBST_SOLREF) and a slope transition after the touch (pstopx).
+  • (A) Spot checks against their stored files: 14 compared, 11 identical, 0 verdict flips. The step “one”
+    drive-tyre peak drifts 5 %.
+  • (P/P2) Person stop: their map points plus probes. Probes: reaction time 0.20 s, grip 0.22, tail first, slope
+    transitions, 0.5 m/s.
+  • (K) Empty-robot braking: rev 4, rev 4 + castor brakes (X_CBRAKE=30) and B2-F (CGB_F9 B2_DOCK=front,
+    91.7 kg tug mass).
+  • (L) Lowering guard: 10/15/20/30 mm blocks, 6 and 13 mm/s, 110 and 25 kg bins, both wheels, compliant
+    feet.
+  • (S) Steps: full and empty, at 3.0 m and 1.6 m run-up, 0.3/0.4/0.5 m/s, boost to 100 N m, yaw 10/20 deg,
+    20/25/30 mm, one side only.
+  • (M) +10 % mass (PERT_M/PERT_MASS 1.1, pstop mass 187.1 kg), on the key cases.
+  • (Lane) Their lanerun_x.py, rev 4 copy, with their slope speed rule (X_VSLOPE). P1, P2a, P2c (lane made
+    good); P5a, P5d, P5g, P5h (as is); P6a; P5d with boost 100; P5d at +10 % mass. P2a and P2c ran with a
+    120 s stuck limit (X_STUCK_S=120; their default is 12 s).
+  • (D) Gate re-checks: climb 12 % at mu 0.30/0.25/0.22 with bin rolling resistance 0.06: all reach 5 m.
+
+
+3. What reproduces (to the mm)
+
+Case                                                            Theirs                                    Mine
+Full bin, 12 %, 0.2 m/s, mu                                     94 mm                                   94 mm
+0.30
+Empty, 12 %, 0.2 m/s (nose                                389 / 289 mm                           389 / 289 mm
+first) / from 0.15 m/s
+Empty, level, 0.4 m/s / full,                             122 / 105 mm                           122 / 105 mm
+level, 0.4 m/s
+Full, 9 %, 0.3 m/s / full, 3 %,                    121 / 121 / 95 mm                        121 / 121 / 95 mm
+0.4 m/s / full, 6 %, 0.3 m/s
+Empty, 9 %, 0.2 m/s / empty,                               95 / 93 mm                              95 / 93 mm
+3 %, 0.3 m/s
+Full / empty, level, 0.5 m/s                              146 / 175 mm                           146 / 175 mm
+Empty, 3 % / 6 %, 0.5 m/s                                 208 / 279 mm                           208 / 279 mm
+Empty tail first, 12 %, 0.2 /                              71 / 122 mm                            71 / 122 mm
+0.3 m/s
+Castor brakes, empty 12 %                                      167 mm                                  167 mm
+mu 0.30, 0.5 m/s
+Wet leaves mu 0.22, full: 6 %                             114 / 277 mm                   114 / 279 mm (2 mm)
+0.3 m/s / 12 % 0.2 m/s
++10 % mass, empty, level, 0.4                                  124 mm                                  124 mm
+m/s
+Lowering 15 mm, 110 kg: not                                     859 N                                    859 N
+seen
+Lowering, 60 mm, 25 kg bin:                                      81 N                     80 N (compliant foot)
+stopped
+
+
+                                                      2
+Case                                                             Theirs                                       Mine
+Lowering 30-80 mm, 110 kg:                       107-109 N (25-60 mm)                                    107-109 N
+stopped
+Gate pick-ups (stored files)                   179/180 + 1 safe refusal     same; 28 re-approaches, max nib 29.5
+                                                                                         mm, min clear 89.0 mm
+Step 40 mm full, 3.0 m:                                             stall                                   stall
+0.3/0.4/0.5 m/s
+Step 40 mm full, 1.6 m, 0.5                                         pass                   pass (castors reversed)
+m/s
+Boost 100 N m, 3.0 m: 0.5 /                                 pass / stall                                pass / stall
+0.4 m/s
+Step 25 mm full 0.3 / 30 mm                                 pass / stall                                pass / stall
+Empty: 20 mm / 25 mm / 40                            pass / stall / stall                                     same
+mm
+Lane P1 (made good)                          PASS, 1833.6 s, 16.67 Wh       PASS, 1834 s, 16.7 Wh, clearance min
+                                                                                                        51.6 mm
+Lane P2a return empty                                               pass      PASS, 1740 s (29.0 min), 33.4 Wh,
+(made good)                                                                                    hedge min 333 mm
+Lane P2c collect empty 240 L                                        pass      PASS, 1806 s (30.1 min), 34.6 Wh,
+(made good)                                                                     clearance 98 mm, hedge 346 mm
+Lane P6a person on 12 % wet                                        stops                          PASS (108.9 s)
+descent
+Lane P5a sharp drop, full                                          pass       PASS, but v max 0.703 m/s (see 5)
+Lane P5d sharp step up, full                 stall (with/without boost)      stall s 291.0; boost 100: stall s 290.1
+Lane P5g open trench                                               stall                               stall s 454.2
+Lane P5h open pothole, 60 N                                        stall             stall s 550.5; hedge 5.6 mm
+m
+
+
+Energy and trip time (lane made good, simulated). A full leg down (P1) takes 30.6 min and 16.7 Wh. The
+empty return (P2a) takes 29.0 min and 33.4 Wh: the lane climbs on the way back. Collecting an empty bin (P2c)
+takes 30.1 min and 34.6 Wh. One bin out and robot home is about 60 min and 50 Wh. That fits their
+62-72 min per trip, which includes the mission overhead. Revision 3 took about 22 min per leg.
+
+
+4. What their scoring hides
+  1. Tail first is assumed, not built. The “122 mm longest stop” uses the tail-first value (71 mm) for the empty
+     robot on > 9 %. Their mission runs drive it nose first at 0.15 m/s, which gives 289 mm.
+  2. The map has only steady slopes. Every map cell starts on a constant grade. The worst real moment is
+     the brow of the pitch: the robot is on the level at the level speed and the ground tips under it. Empty, 938
+     mm; at +10 % mass, 1098 mm and still not stopped. A speed rule driven by a look-ahead (map position or
+     IMU pitch rate) would be needed.
+  3. Wet leaves are an aside. In their text: “Empty on 12 %: it does not stop at all.” It is not in the headline,
+     and the castor-brake recommendation is presented as fixing empty braking. On mu 0.22 it does not (644-753
+     mm).
+  4. “About 20 mm” for the lowering guard is an interpolation between 15 mm (not seen) and 25 mm
+     (seen). At 20 mm it is not seen. The bin is put down on the object with up to 1180 N on it.
+  5. The lane pass is on a lane with its three rough spots made good. On the lane as modelled: stall at
+     the step up, in the trench and in the pothole. The pothole stall also brings the robot within 5.6 mm of the
+     hedge. The 12 s stuck rule ends those runs early. With a 120 s limit the made-good runs still pass (P2a, P2c).
+  6. The boost does not help the sharp step in the lane. P5d with X_BOOST=100 still stalls at s 290.1 (lift
+     2169 N). It helps only in the gate test with 3.0 m of run-up at 0.5 m/s.
+
+
+
+
+                                                        3
+5. New findings (not in their reply)
+  • Wet leaves, empty, 12 %, castor brakes: 644 mm at 0.2 m/s, 753 mm at 0.5 m/s. Rev 4 without them:
+    no stop (13.2 m in 8 s). B2-F empty on mu 0.22: 1145 / 1164 mm, but it stops and holds 0.2 m/s before the
+    touch. B2-F on mu 0.30: 108 mm (rev 4: 289 / 389).
+  • Slope transitions: empty, level -> 12 % at 0.4 m/s: 938 mm (6.7 s); +10 % mass: 1098 mm, not
+    stopped at 12 s. Full bin, same case: 191 mm. Empty 9 -> 12 % at 0.2: 329 mm. Empty 3 -> 9 % at 0.3:
+    156 mm.
+  • Reaction 0.20 s: full 9 % at 0.3 m/s: 136 mm (rule speed; their 0.20 s probe was level only). Grip 0.22 at
+    the empty 9 % rule speed (0.2 m/s): 334 mm.
+  • Lowering: 20 mm not seen at 6 and 13 mm/s, 110 / 25 kg bins, both wheels, +10 % mass. Estimated
+    threshold about 22 mm (15 mm margin + about 7 mm offset). 30 mm trips at 107 N (25 kg bin: 83 N).
+  • Empty 40 mm step: stalls on B2-F too (0.3 and 0.5 m/s, 3.0 m run-up). It is a layout problem.
+  • Sharp drop P5a: passes, but the robot reaches 0.703 m/s over the edge. That is 1.76 times the 0.4 m/s
+    rule cap, so the speed rule does not hold on a drop. Wheel clearance min 47.4 mm, lift peak 2874 N.
+  • Open pothole P5h: hedge clearance 5.6 mm, lift 2348 N, roll 3.8 deg.
+
+
+6. +10 % mass (195 kg class; pstop mass 187.1 kg)
+
+Case                                                             177.6 kg                                     +10 %
+Worst case: empty, level ->                               938 mm, stops          1098 mm, not stopped at 12 s
+12 %, 0.4 m/s
+Full bin, 12 %, 0.2 m/s                                           94 mm                                      105 mm
+Empty, 9 %, 0.2 m/s                                               95 mm                                      101 mm
+Empty tail first, 12 %, 0.2                                       71 mm                                       77 mm
+m/s
+Empty, level, 0.4 m/s                                           122 mm                                      124 mm
+Full, 9 %, 0.3 m/s                                              121 mm                                      116 mm
+E-stop 12 % forward                                              0.281 m                                    0.293 m
+Lowering 20 mm                                                  not seen                           not seen (815 N)
+Step 25 mm full 0.3 m/s; step                                  pass; pass                                 pass; pass
+40 mm one side
+Climb 12 % mu 0.22                                    pass, creep 33 mm                           pass, creep 29 mm
+Lane P5d sharp step up                                       stall s 291.0                               stall s 291.0
+(m110 mass file)
+
+
+Note: the climb result file prints tug_kg 170.1 at +10 % as well. The creep and e-stop numbers differ, so the scaling
+is applied, but the printed mass is not updated.
+
+
+7. Videos (digital twin, software rasteriser, not field footage)
+All in /workspace/work/out/rev4/videos/mechanical_lane/:
+  1. rev4_01_person_stop_worst_empty_level_to_12pct_938mm.mp4: empty 938 mm vs full 191 mm.
+  2. rev4_02_person_stop_12pct_downhill_full_vs_empty.mp4: full 94 mm (pass) vs empty nose first 389 mm.
+  3. rev4_03_wet_leaves_empty_rev4_vs_castor_brakes.mp4: no stop vs 644 mm.
+  4. rev4_04_wet_leaves_empty_B2F_vs_castor_brakes.mp4: B2-F 1164 mm vs 644 mm.
+  5. rev4_05_lowering_onto_20mm_no_trip_vs_30mm_trip.mp4
+  6. rev4_06_step_40mm_full_stall_vs_momentum.mp4: 3.0 m / 0.3 m/s stall vs 1.6 m / 0.5 m/s pass.
+  7. rev4_07_worst_pickup_CL_s303_i25.mp4: the re-grip trial (195 s).
+  8. rev4_08_open_pothole_stall_hedge_5p6mm.mp4 (lane P5h)
+  9. rev4_09_sharp_drop_40mm_vmax.mp4 (lane P5a)
+
+
+
+
+                                                         4
+8. Not run
+ • Lane P7 (night, mass x1.1, mu x0.8, bin CG +60 mm), P3, P4a and P4b on revision 4: dropped for time. Also
+   P2a at +10 % mass.
+ • Open pothole with the boost (they report a pass); open trench with the boost.
+ • The full 180 re-grabs and the gate perturbation set (D), except the climb checks. The stored gate files were
+   analysed, and 5 single trials were re-run.
+ • Tail-first person stops on transitions; castor brakes on transitions; castor brakes at +10 % mass.
+ • No hardware data checked (bumper after-travel, castor brake torque, actuator holding force): all still ASSUMED
+   as in their reply.
+
+
+9. Files
+ • Results: P/revG/sim/cg/h2/res_r4/ (queue q_r4.txt, log q_r4.txt.log, extra runs q_r4_extra.txt).
+   Progress: h2/PROGRESS_REV4.md.
+ • Lane runs: P/work/b2f_lanephys/runs_r4_pf, runs_r4_b100, runs_r4_m110 (driver r4_lane_q.sh,
+   lanerun_x_r4.py with X_STUCK_S).
+ • Video tooling: P/work/rev4_vid/ (rec_r4.py, gate_video_r4.py, render_r4.py, job files, rec/).
+
+
+
+
+                                                       5
+

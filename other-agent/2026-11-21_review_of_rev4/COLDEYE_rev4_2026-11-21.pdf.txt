@@ -1,0 +1,476 @@
+[text of COLDEYE_rev4_2026-11-21.pdf, taken out of the PDF for the public repository; pictures and layout are not kept]
+
+    Cold-eye review: BinRobo revision 4 (reply to our rev 3 review, 17 A3
+                           sheets, 20 Nov 2026)
+
+
+                                                 21 November 2026
+
+
+Verdict
+Revision 4 is a serious, honest answer to our rev 3 review, and most of what it claims checks out. It is
+still not a basis for unattended operation. It fixes the welds, the rails, the actuator data, the pad springs and the
+end-stop layout. It also finds a real problem that our own gate never tested: the empty robot cannot hold or stop nose
+first on a wet 12 % pitch. That problem applies to B2-F as well. We reproduce the weight (177.61 kg), the lift sweep, the
+clash check and their stopping distances. Our hand model lands within 3-10 % of their simulation.
+What is still wrong:
+  • Person protection covers less than it looks. The bumper protects the middle 700 mm of a 936 mm robot,
+    going forward. It does not cover pivot turns, the robot’s front corners, or reversing.
+  • The lowering beams cannot work as drawn. The bin’s own wheels break them before the bin lands.
+  • The lift stops can still end in a stall. Their order depends on a stroke tolerance that the LA36 data sheet does
+    not support.
+  • “Two bins between 18:00 and 21:00” misreads the bye-law. It comes from the window coded in the B2-F
+    companion, which is our own mistake.
+  • The cost is understated.
+Scope: drawings, design, calculations and claims. Siblings rev4-mech and rev4-sitl run the simulations. Our numbers
+come from:
+  • OpenCascade checks on their own drawing model (model/sweep_r4.py, static_r4.py);
+  • hand calculations in calcs_rev4.py;
+  • the pages cited in the text.
+ASSUMED marks a value with no data sheet behind it.
+
+Class                                                                        Count    Items
+Blocker                                                                           2   B-1 empty robot cannot hold or
+                                                                                      stop nose first on a wet 12 % pitch,
+                                                                                      and the standstill monitor cannot
+                                                                                      see it slide (theirs; confirmed;
+                                                                                      shared with B2-F); B-2 person
+                                                                                      protection still partial: corners,
+                                                                                      pivot turns and reversing are
+                                                                                      unprotected (rev 3 B-1, partly
+                                                                                      fixed)
+
+
+
+
+                                                           1
+Class                                                                       Count   Items
+Major                                                                           7   M-1 under-bin beams blocked by
+                                                                                    the bin’s own wheels, guard
+                                                                                    window tied to the pick-up ground;
+                                                                                    M-2 speed rule rests on grip, slope
+                                                                                    and bumper figures the robot
+                                                                                    cannot know; M-3 bolted corner
+                                                                                    joints slip, so the fatigue detail
+                                                                                    falls from 90 to about 50; M-4 lift
+                                                                                    stop order not robust (about 38 %
+                                                                                    chance the actuator stalls on the
+                                                                                    top block); M-5 bye-law window
+                                                                                    misread (our companion code);
+                                                                                    M-6 cost understated (actuator
+                                                                                    EUR 940-1,060, not 400-700); M-7
+                                                                                    only edges of about 12-15 mm can
+                                                                                    be climbed from a standstill
+Minor                                                                           9   m-1 to m-9 below
+Confirmed                                                                      14   listed under “What revision 4 got
+                                                                                    right”
+
+
+Cost. Revision 4 all-in is about EUR 7,340 to 11,330, against EUR 4,851-6,794 for revision 3 and EUR 4,245 for the
+B2-F BOM. B2-F with the same person-safety parts would cost EUR 6,050-9,050 (Fig 6).
+Our own design, honestly. The empty-braking problem applies to B2-F too:
+  • On a wet 12 % pitch the brakes alone hold B2-F nose first only up to 13.7 % (10.3 % on wet leaves).
+  • Our frozen gate tests G3 (step) and G4 (stop) with a full bin only.
+The step problem also applies to B2-F: empty, it needs about 700 N to push its castors up 40 mm and has about 340 N of
+dry grip. The 18:00-21:00 trip window that cost revision 4 its third bin is in our own b2f_companion (op_preflight).
+
+
+Their section 1, row by row (credit)
+
+Rev 3 item                              Status in rev 4                         Our check
+B-1 bumper, lowering, docking           Partly fixed                            Covered now: a straight nose-first stop
+                                                                                at the middle of the nose, by
+                                                                                simulation, at 0.4 m/s or less. Docking
+                                                                                no longer touches the bumper.
+                                                                                Lowering has a guard and beams. Still
+                                                                                open: corners, pivot turns, reversing
+                                                                                and set-down (B-2, M-1).
+M-1 weight / 120 kg gate                Agreed, for Brian                       177.61 kg reproduced. Weighed, it is
+                                                                                likely about 180-187 kg (drive units +2
+                                                                                to 8 kg, actuator -0.75 kg, crush tubes
+                                                                                +1.3 kg). A cap of 190 kg is fair.
+M-2 rail, welded corner plate fatigue   Fixed, with a new dependency            60x60x4 rails: SF 2.10 at 4,754 N,
+                                                                                which we reproduce. The fatigue
+                                                                                figure (44 vs 67 MPa) holds only if the
+                                                                                bolted joint is slip-resistant (M-3).
+M-3 actuator end stops, stop load       Fixed in layout, not in tolerance       Pin spacing 600/615 drawn. Blocks
+                                                                                are good for 9.5 kN (bolt SF 4.6,
+                                                                                reproduced). The order of the stops is
+                                                                                not robust (M-4).
+M-4 welds                               Fixed                                   No welds remain. Sheet 17 gives a bolt
+                                                                                table, and its torques match 8.8 tables.
+
+
+
+                                                            2
+Rev 3 item                           Status in rev 4                        Our check
+M-5 safety sheet gaps                Mostly fixed on paper                  All 10 items are answered. Still open:
+                                                                            no real PL calculation; the speed
+                                                                            monitor reads the drive wheels, so it
+                                                                            cannot see a slide (B-1); the slope rule
+                                                                            is not safety-rated; the lowering guard
+                                                                            is firmware.
+M-6 actuator data                    Fixed                                  LA36 24 V 6.8 kN confirmed: self-lock
+                                                                            8.8 kN, IP66, 600 mm built-in for a
+                                                                            350 mm stroke, 12.7 mm/s loaded.
+                                                                            The listed weight works out at 5.75 kg,
+                                                                            not 6.5. The price is EUR 940-1,060,
+                                                                            not 400-700 (M-6).
+M-7 castor round-tyre claim          Fixed                                  Reworded to a contact strip of 40 mm
+                                                                            or less, with the bench test kept. Fair.
+M-8 goalposts                        Fixed                                  80 N m and the boost are withdrawn
+                                                                            (70 A is over the 60 A BMS). End
+                                                                            SOC on an aged, cold pack is 31-36 %,
+                                                                            matching our rev 3 figure of 31 %.
+m-1 springs                          Fixed                                  15.8 mm left before solid (9.9 needed);
+                                                                            both ends guided.
+m-2 actuator in its bracket          Fixed                                  Our static check finds no overlap.
+m-3 mast foot                        Fixed                                  Struts take the tipping load. Cleat
+                                                                            bolts SF 11-13.
+m-4 motor plate                      Fixed                                  904 N gives 150 MPa and SF 2.37,
+                                                                            which we reproduce.
+m-5 sheet 13 figure                  Accepted                               Sheet 13 not re-read.
+m-6 comb 8 mm clearance              Accepted                               Pivot of plus or minus 4 deg moves
+                                                                            the ends 0.9 mm.
+m-7 comb-load sentence               Withdrawn                              Correct.
+m-8 rail blocks at the stops         Fixed                                  Sweep: beams on blocks at -18.5 /
+                                                                            +335.5, switch bodies at -25 / +339.
+m-9 hole patterns, torques           Partly                                 Torques and pin spacing added. No
+                                                                            hole positions or tolerances.
+m-10 unpriced lines                  Partly                                 Rough prices given. The actuator
+                                                                            price is wrong (M-6).
+
+
+
+Blockers
+B-1. The empty robot cannot hold or stop nose first on a wet 12 % pitch (theirs, confirmed,
+shared with B2-F)
+Rigid two-axle model (calcs_rev4.json “brake”; Fig 1):
+  • Drive axle at x 0, castor swivel at 0.95 m.
+  • Empty: 177.6 kg, CG x 0.498, z 0.465, so 52-55 % of the weight is on the castors.
+  • Full bin: 287.6 kg. CG x 0.358 comes from their static castor sum of 1,064 N. CG z 0.52 is ASSUMED.
+  • Only the drive wheels brake. Reaction time 0.15 s.
+
+Case, 0.2 m/s unless stated                                   Hand, mm                              Their sim, mm
+empty, level, 0.4 m/s                                                 126                                       122
+empty, 12 %, 0.15 m/s             281 (100 with castor rolling resistance                                       289
+                                                                    0.02)
+empty, tail first, 12 %                                                73                                        71
+full, level, 0.5 m/s                                                  154                                       146
+full, 12 %, 0.5 m/s                                                   392                                       360
+
+
+
+                                                        3
+Case, 0.2 m/s unless stated                                       Hand, mm                                  Their sim, mm
+full, 12 %, wet leaves (grip                                              239                                           277
+0.22)
+
+
+Largest grade the brakes alone hold, robot nose first:
+
+Robot                                         Grip 0.30            Grip 0.22 (wet leaves)                        Grip 0.45
+Revision 4, empty                               12.4 %                             9.4 %                            17.5 %
+Revision 4, full bin                             16.1 %                            12.2 %                           22.5 %
+B2-F (S12 table),                                13.7 %                            10.3 %                           19.4 %
+empty
+Rev 4 with battery,                              14.0 %                            10.6 %                           19.8 %
+pod and power box
+(10.6 kg) moved about
+0.95 m aft
+
+
+So a stop nose first on the assumed 12 % pitch is a slide with the wheels locked, not a long stop. That applies to a person,
+an obstacle or a fault.
+What makes it worse:
+  • The standstill monitor cannot see the slide. Sheet 15 puts both “speed and standstill” sensors on the drive
+    wheels. With the brakes locked those wheels read zero while the robot slides. Put at least one channel on a castor
+    wheel, which keeps rolling during a slide.
+  • Tail first is no fix as drawn. It would make the empty robot lead with its 25 mm rear foam (B-2).
+At the map slope of 7.9 %, the same model gives 67 mm from 0.2 m/s at grip 0.30 and 109 mm on wet leaves. So
+measuring the real pitch decides most of this, as they say.
+Status: a blocker for unattended running, for both designs, until either:
+  • the steepest pitch is measured below about 8-9 %; or
+  • a braked or weight-shifted fix is designed and tested empty.
+Our gate missed this. G4 uses a full bin only, so add an empty-robot stop to the gate for both designs.
+
+B-2. Person protection is still partial (rev 3 B-1, partly fixed)
+Geometry from their drawing model (Fig 2):
+  • Width. The foam bumper is 700 mm wide on a robot 936 mm wide. A 118 mm strip each side, with the rail ends,
+    castors and drive wheels in it, leads with no bumper.
+  • Pivot turns. The nose corner is 1.47 m from the axle. At the companion’s pivot rates (0.45 rad/s loaded, 0.6
+    empty) it moves at 0.66 / 0.88 m/s, more than the 0.4 m/s rule. It moves sideways, outside the bumper’s plus or
+    minus 45 deg active area (Schmersal SSG-SB-L data). Pivot turns happen at the dock, at the bin and at the road
+    verge, which is where people are. A nose speed of 0.3 m/s needs a pivot rate of 0.20 rad/s or less, and the sides of
+    the foam need to switch.
+  • Reversing. Every move onto a bin, and the “tail first above 9 %” rule, leads with 25 mm foam on the two rail
+    ends only, plus the open mouth (comb and pad switches, not safety-rated). Their own tail-first stop is 71 mm.
+  • Speed rule not safety-rated. The rule lives in ordinary software; they say so in their 4.3. A certified speed
+    monitor enforces one fixed limit. Selecting it by slope needs the inclinometer on a safety input.
+What to do (any of these):
+  • full-width bumper with active side faces;
+  • pivot-rate cap in the safety layer;
+  • rear foam with at least 100 mm of travel, or a speed cap of about 0.1 m/s for every reverse;
+  • or a safety-rated scanner. They price one at EUR 6-7.8k, so the first three are the realistic route.
+
+
+
+
+                                                             4
+Major findings
+M-1. The lowering protection does not work as drawn
+  • The beams are blocked by the bin. In the carry pose of their own model, the bin wheel centre is at x -199.5
+    mm and its bottom is 97 mm up. Beam B sits at x -195, under the wheel axle; beam A at -270. Both are 40 mm
+    above the ground. As the bin comes down, its own wheel cuts beam B in the last 40 mm and beam A in the
+    last 11 mm (Fig 3). Since “lowering is blocked while either beam is broken”, the robot either never sets a 240 L
+    bin down, or the beams have to be muted in exactly the last 40 mm, where a foot is crushed. The beams are not in
+    any simulation (runY.py, companion: no beam logic).
+  • The guard’s window moves with the ground. The guard watches the load only while the bin is more than 15
+    mm above “the height at which it left the ground at the pick-up”. The set-down point is a different surface (the
+    house end and the road end). If the set-down ground is 20 mm lower, the blind thickness grows from about 20 mm
+    to about 40 mm. If it is higher, the guard trips on the bin landing normally.
+  • Forces. Even when the guard works, the block carried 107-158 N. That is at or above the BGIA/ISO TS 15066
+    draft clamping limits of 125 N (feet), 135 N (hand) and 140 N (lower leg), quoted in NIST IR 8029. A flat hand is
+    seen by neither the guard nor the beams; they accept this with a warning sound.
+  • Down-current limit. The 3 A limit gives about 516 N of push (LA36: 2.4 A at no load, 10.3 A at 6.8 kN), which
+    matches their 0.5 kN. Gravity lowers the bin anyway, so this limit does nothing for a foot under a wheel.
+Fix: move the beams clear of the wheel paths, for example one beam just outside each wheel at about 25 mm height,
+looking along x. Reference the guard to the comb’s measured height above the local ground, using the leg-tip ToF sensors,
+not the pick-up height. Then simulate the beams.
+
+M-2. The speed rule rests on grip, slope and bumper figures the robot cannot know
+Grip. Sheet 17 says “no trips with grip below 0.3 until measured”. Nothing on the robot measures grip, and wet leaves
+are the norm on a hedged lane from October to December. On 12 % with leaves, the full bin needs 239-277 mm from 0.2
+m/s.
+Their own runs break the rule. The lane runs used X_VSLOPE ...0.09:0.2:0.15, which is 0.15 m/s empty, nose
+first, on the steep pitch. That gives 289 mm against their own 125 mm limit, which they admit.
+Bumper figures.
+  • The 150 mm after-travel and 0.15 s are ASSUMED. The bumper they cite (Schmersal SSG-SB-L, 150 mm deep)
+    has 75-91 mm of after-travel to 250 N, so 150 mm from a 300 mm unit is plausible.
+  • That bumper is IP54 and rated 0 to +55 C. That is not an outdoor winter part. Sheet 17 rightly asks for
+    “outdoor”, but no such part is named.
+  • Its 27-39 mm of switching travel happens before the 0.15 s can start. If the sim starts the clock at first touch, add
+    about 20 mm at 0.4 m/s.
+  • With 0.20 s reaction the level stop at 0.4 m/s is about 142 mm, against 150 mm.
+Force on a person. The spec of 250 N on a 70 mm post matches EN 1525. It exceeds the 140 N lower-leg clamping
+figure if the person is pinned against a hedge or gate. Pressure is only about 2.4 N/cm2.
+
+M-3. Bolted corner joints slip, so the fatigue check falls
+Each rail-to-cross-member joint has 2 x M8 into the rail and 2 into the member, through top and bottom 6 mm plates, at
+25 N m.
+  • Preload is about 15.6 kN (K 0.2). Slip resistance per bolt (2 planes, gamma 1.25) is 5.0 kN on painted faces (mu
+    0.2) and 7.5 kN at mu 0.3.
+  • The sideways tyre force of 904 N at 0.49 m from the mast-base joint gives about 443 N m. With bolts 40-60 mm
+    apart that is 7.4-11.1 kN per bolt, so the joint slips into bearing. Bearing is fine: M8 at 14.1 kN per plane.
+  • Fatigue. Their check uses detail 90, which needs a slip-resistant preloaded joint. A bearing joint in clearance holes
+    is about detail 50: 43.6 MPa against 37 MPa allowed, a ratio of 1.18 (fails). That is roughly the rev 3 welded
+    result again.
+The load path is our ASSUMPTION.
+Fix: blasted, unpainted faying faces (mu at least 0.5 gives 12.5 kN), 3 bolts per member, or fitted bolts. Add locking
+nuts and a re-torque schedule.
+
+
+                                                           5
+M-4. The lift stop order is not robust at the top
+   • With pins 615 mm apart at q 0, closed 600 puts the actuator’s own stop at q -15. Extended 950 puts it at q +335
+     for a full 350 mm stroke, exactly the block. Their +331 assumes a 346 mm stroke.
+   • The LA36 data sheet says the stroke “will be up to 4 mm shorter” with end stops. Add up to 2 mm of endplay, pin
+     clearance and coast.
+   • Monte Carlo (shim_stack): top margin to the block is -2.0 / +0.5 / +3.0 mm (1st/50th/99th percentile). The
+     chance that the actuator’s own stop lands on the block is about 38 % (Fig 4).
+   • The bottom is fine (+0.4 to +2.6 mm). The switch-before-actuator margin is +1.8 to +6.2 mm.
+The consequence is mild. The switches at 327 cut the feed first, and the 6 A up-limit caps the push at about 3.1 kN. But
+the claimed order “actuator off before the blocks” is not guaranteed.
+Fix: raise the top blocks to +340 and the switch bodies to at least +345. The top tie is at 386, so there is room. That
+gives a top margin of +3.0 to +8.0 mm.
+
+M-5. The time window is misread, and it is our companion’s fault
+The project’s bye-law: bins out no earlier than 18:00 the day before, back by 21:00 on collection day.
+   • Drops have no end time before the crew comes. Three drops at 72 min from 18:00 end at 21:36, which is legal.
+   • Returns can start as soon as the crew has passed. Three returns at 72 min must start by 17:24.
+The “two bins fit, third does not” result comes from b2f_companion.op_preflight. That code refuses any trip starting
+06:00-18:00, or ending after 21:00 (assuming 50 min). It is B2-F code that both of us inherited (Fig 5).
+So decision 1, “castor brakes to get the third bin back”, loses its time argument. Castor brakes may still be needed for
+B-1.
+Two things are needed in the companion: the real trip time in place of c + 50, and the bye-law as two windows (drop:
+18:00 onward; return: crew passed, until 21:00). Brian should confirm the crew’s usual time.
+
+M-6. Cost understated
+The LA36 24 V 6.8 kN 200 mm with end stops is EUR 939.91 incl. VAT (EUR 776.78 ex) at Techniek Totaal. The eBoat
+Watch dealer listing starts at EUR 771 ex VAT. Our G6 BOM had EUR 1,058. Their EUR 400-700 is low.
+
+Change over rev 3 (EUR)                                                Low                                         High
+Safety bumper 300x150x700                                               650                                       1,500
+with control unit (their range,
+ASSUMED)
+Old 15 mm bumper bar                                                    -50                                         -25
+removed
+LA36 less the FDI unit (137)                                            803                                         923
+Two light-beam pairs, type 2                                            200                                         400
+(their range)
+Certified speed monitor and 2                                           380                                       1,000
+safety sensors (ASSUMED)
+Inclinometer on a safety input                                           30                                         150
+(ASSUMED)
+Bolted plates and bolts (their                                          150                                        -150
+range), less rev 3 welding of
+0-400
+Stop blocks, extra switches,                                             60                                         150
+larger power box (ASSUMED)
+Sum, then +12-15 %                                                   2,490                                       4,540
+Revision 4 all-in                                                    7,341                                      11,334
+
+
+Their figure: EUR 1,500-3,000 over rev 3. Castor brakes, if adopted, add about EUR 300-800 (ASSUMED). B2-F with
+the same bumper, beams, speed monitor and inclinometer costs EUR 6,048-9,046.
+
+
+
+                                                           6
+M-7. Only very low edges can be climbed from a standstill
+Their momentum explanation is right: with a full bin, 40 mm needs 95 N m at 878 N per wheel (125 N m on their 1,160
+N), against 60 N m. Quasi-statically, though, the limits are lower:
+  • Full bin: about 15 mm (60 N m).
+  • Empty: about 12 mm in the dry (castor push equals 497 N of grip) and about 4 mm in the wet.
+Their “20 mm empty, 25 mm full, square on” passes therefore also depend on speed. A robot stopped in front of such an
+edge, for example after a person stop, may not restart nose first. Tyre compliance helps, and these figures are conservative.
+Fix: make “every edge over about 10 mm is ramped” a lane condition, or test restart-from-standstill at 20 and 25 mm,
+for both designs.
+
+
+Minor findings
+  • m-1. Nose cross-member. It is still 50x50x4 on the drawings, at SF 1.55. A 60x60x4 member gives SF 2.43 by
+    our section moduli (8,854 to 13,884 mm3) and adds 1.0 kg, not 0.8. The load case already includes 3x the static
+    castor load, so this is their own rule, not a failure.
+  • m-2. Mass rows. The LA36 weighs 5.75 kg for 350 mm (4.55 kg plus 0.24 kg per 50 mm, as listed by eBoat
+    Watch from LINAK data), so -0.75 kg. Crush tubes at 0.02 kg are light: a 20x2x60 mm steel tube is about 0.054 kg,
+    so +1.3 kg for 40.
+  • m-3. Top tie. It is fixed by one M8 into a tapped hole in each aluminium stop block, which also takes the 4.8 kN
+    stop load. Use a steel insert or a through-bolt. No bolt locking or re-torque interval is given anywhere on sheet 17.
+  • m-4. Lift current limits (sheet 15: 6 A up, 3 A down). The LA36 draws 2.4 A at no load and up to 3x more in
+    the cold (data sheet). Lowering at 3 A may stall at 0-5 C. Set both limits by a bench test at 0 C.
+  • m-5. Bumper height. It spans 115-265 mm. Toes and low kerbs pass under it; the castor is about 400 mm behind
+    its face, which is enough by our numbers. Kerbs over 115 mm at the road, and brambles, will cause nuisance trips.
+  • m-6. Length 1,831 mm.
+       – Pivot circle 2.94 m (theirs: 3.00), so 0.33 m to each hedge in a 3.6 m lane. The nose radius is 0.27 m more
+          than rev 3.
+       – Pivot spots must stay at least 1.5 m back from the [road] edge.
+       – The companion’s 0.15 m sweep-clearance check should use the new outline.
+  • m-7. Castor brakes. The idea is sound for B-1 (all-wheel braking: 41 mm from 0.2 m/s on 12 % wet), but:
+       – an electric brake on a free-swivel castor needs a slip ring or a limited swivel;
+       – it must be spring-applied;
+       – braking a leading castor when reversing can flip it.
+       – No catalogue part exists, as they say. Moving 10.6 kg of battery and electronics aft (hold to 14 % wet) is
+          cheap, but it is not enough alone.
+  • m-8. PL estimate. Fine as a first pass. It leaves out the slope selection, the brake test (their 4.4) and the slide
+    blindness (B-1). ISO 3691-4 was not applied, as they say.
+  • m-9. Clash results. Only 0.53 cm3 of comb and nib into the bin rim (a load contact in the sim pose) and 0.19
+    cm3 of sensor post into the LTE antenna. Both are trivial. Docking geometry with the nose pads is not drawn or
+    checked here.
+
+
+What revision 4 got right (confirmed)
+  1. Weight: 177.61 kg from their table. The fabricated rows re-derive from solids and density, and the RHS rows
+     match catalogue kg/m (mass_check_r4.json).
+  2. Lift sweep (0.5 mm steps): bottom switches at -25, blocks at -18.5, blocks at +335.5, switch bodies at +339, top
+     tie at 386. Nothing else touches.
+  3. Castor swivel: 360 deg is clear of the new bumper carrier, the charge pads and the floor cut-outs.
+  4. Static clash: only legacy pairs, plus two trivial contacts.
+  5. Stopping distances: our hand model reproduces their 159-stop map within 3-10 % on the cases checked.
+  6. B-1 is real and shared with B2-F. Finding it was good work.
+  7. The 40 mm step claim is true: it was only crossed with momentum.
+  8. Withdrawals of 80 N m and the boost are right (70 A against the 60 A BMS).
+  9. LA36 data: 6.8 kN, self-lock 8.8 kN, IP66, 600 mm built-in, 12.7 / 15.7 mm/s.
+ 10. Pad springs: 15.8 mm before solid; 768 MPa at full stroke against 925 MPa.
+
+
+                                                             7
+ 11. Structure rows reproduced:
+       • motor plate 150 MPa, SF 2.37;
+       • strut Euler load 205 kN against 6.4 kN;
+       • stop-block bolts 4.0 kN prying plus 2.4 kN shear, against 33 kN;
+       • rail SF 2.10.
+ 12. Bolt torques match 8.8 lightly-oiled tables: M8 25, M10 49, M12 85 N m; M4 12.9 at 4.5 N m.
+ 13. Safety chain: 10 monitored inputs, the lift feed through safety relays, and diverse tilt sensing.
+ 14. Self-corrections are clear: castor load averaging, the round-tyre claim, the comb sentence.
+
+
+For the other agent (short fix list)
+  1. Measure first. Have Brian measure the steepest pitch and the highest edge. Add an empty-robot stop and hold
+     test to the gate, for both designs.
+  2. Standstill monitoring. Put a speed/standstill channel on a castor wheel so a slide is seen.
+  3. Bumper coverage. Make it full width with active sides. Cap the pivot rate at 0.20 rad/s or less in the safety
+     layer. Give the rear foam at least 100 mm of travel, or cap reversing at about 0.1 m/s. Do not use tail-first until
+     the rear is protected.
+  4. Beams and guard. Move the beams off the bin-wheel line and simulate them. Reference the lowering guard to
+     the local ground, not the pick-up height.
+  5. Corner joints. Make them slip-resistant (blasted faces or 3 bolts) and redo the fatigue check. Add locking and
+     re-torque.
+  6. Lift stops. Raise the top blocks to +340 and the switch bodies to at least +345.
+  7. Companion. Use the real trip time in place of c + 50, and code the bye-law as two windows. Redo the “third bin”
+     conclusion.
+  8. Costs and drawings. Re-price the LA36 (about EUR 940-1,060). Draw the 60x60 nose member. Name an
+     outdoor-rated bumper (below 0 C, IP65 or better).
+
+
+Files
+Working files are in /workspace/work/coldeye_rev4/:
+  • PROGRESS.md
+  • calcs_rev4.py and .json
+  • mass_check_r4.py and .json
+  • figs_rev4.py
+  • model/ with sweep_r4.py, static_r4.py, binpose.py, and the results lift_r4.json, castor_r4.json,
+    static_nobin.json, static_carry.json, binpose.json. Their drawing scripts are copied there, with our rev 3
+    rec_B2F and cad_B2F_src.py.
+  • OCR of sheets 13, 15, 16 and 17 in ocr_s*.txt.
+Figures are in /workspace/work/out/rev4/coldeye_figs/, with copies in coldeye_rev4_figs/.
+Sources:
+  • LINAK LA36 data sheet: https://media.distrelec.com/Web/Downloads/_e/ng/linear_actuator_la36_data_sheet_eng.pdf
+  • LA36 weight and dealer price: https://www.eboatwatch.com/products/la36
+  • LA36 6.8 kN price: https://www.techniektotaal.com/en/actuator-la36-24v-6800n-stroke-200mm-eos-linak.html
+  • Schmersal SSG-SB-L: https://products.schmersal.com/upload/orig/10/00/20/01/DOC_MAN_MEC_mrl-ssg-
+    sbl_SEN_AIN_V3.pdf
+  • NIST IR 8029 (EN 1525, B56.5, BGIA limits): https://nvlpubs.nist.gov/nistpubs/ir/2015/NIST.IR.8029.pdf
+
+
+
+
+                                                          8
+Figures
+
+
+
+
+          Figure 1: Stop distance against slope: hand model and their simulation
+
+
+
+
+                                            9
+Figure 2: Plan view: bumper coverage, pivot sweep and nose-corner speed
+
+
+
+
+      Figure 3: Under-bin beams against the bin wheel at set-down
+
+
+
+
+                                  10
+Figure 4: Lift stop order against the LA36 stroke tolerance
+
+
+
+
+Figure 5: Bye-law window against the companion window
+
+
+
+
+               Figure 6: All-in cost ranges
+
+
+
+                            11
+

@@ -1,0 +1,178 @@
+[
+ {
+  "software": "first pass",
+  "dir": "-45",
+  "pose_err_max": 1.0,
+  "lat_min": -0.97,
+  "lat_max": 0.47,
+  "w_max": 0.26,
+  "hedge_min": 0.358,
+  "outcome": "plan completed",
+  "prot": 0
+ },
+ {
+  "software": "first pass",
+  "dir": "45",
+  "pose_err_max": 1.11,
+  "lat_min": -0.97,
+  "lat_max": 0.48,
+  "w_max": 0.21,
+  "hedge_min": 0.357,
+  "outcome": "plan completed",
+  "prot": 0
+ },
+ {
+  "software": "first pass",
+  "dir": "-135",
+  "pose_err_max": 1.09,
+  "lat_min": -1.02,
+  "lat_max": 0.37,
+  "w_max": 0.27,
+  "hedge_min": 0.357,
+  "outcome": "plan completed",
+  "prot": 0
+ },
+ {
+  "software": "first pass",
+  "dir": "135",
+  "pose_err_max": 1.16,
+  "lat_min": -1.01,
+  "lat_max": 0.38,
+  "w_max": 0.24,
+  "hedge_min": 0.358,
+  "outcome": "plan completed",
+  "prot": 0
+ },
+ {
+  "software": "first pass",
+  "dir": "0",
+  "pose_err_max": 0.94,
+  "lat_min": -0.97,
+  "lat_max": 0.48,
+  "w_max": 0.29,
+  "hedge_min": 0.36,
+  "outcome": "plan completed",
+  "prot": 0
+ },
+ {
+  "software": "first pass",
+  "dir": "180",
+  "pose_err_max": 1.14,
+  "lat_min": -1.02,
+  "lat_max": 0.37,
+  "w_max": 0.2,
+  "hedge_min": 0.358,
+  "outcome": "plan completed",
+  "prot": 0
+ },
+ {
+  "software": "first pass",
+  "dir": "90",
+  "pose_err_max": 1.14,
+  "lat_min": -0.99,
+  "lat_max": 0.42,
+  "w_max": 0.21,
+  "hedge_min": 0.356,
+  "outcome": "plan completed",
+  "prot": 0
+ },
+ {
+  "software": "first pass",
+  "dir": "-90",
+  "pose_err_max": 1.0,
+  "lat_min": -0.99,
+  "lat_max": 0.42,
+  "w_max": 0.28,
+  "hedge_min": 0.358,
+  "outcome": "plan completed",
+  "prot": 0
+ },
+ {
+  "software": "second pass",
+  "dir": "-45",
+  "pose_err_max": 1.01,
+  "lat_min": -0.82,
+  "lat_max": 0.47,
+  "w_max": 0.14,
+  "hedge_min": 0.392,
+  "outcome": "plan completed",
+  "prot": 0
+ },
+ {
+  "software": "second pass",
+  "dir": "45",
+  "pose_err_max": 1.11,
+  "lat_min": -0.82,
+  "lat_max": 0.47,
+  "w_max": 0.15,
+  "hedge_min": 0.392,
+  "outcome": "plan completed",
+  "prot": 0
+ },
+ {
+  "software": "second pass",
+  "dir": "-135",
+  "pose_err_max": 1.08,
+  "lat_min": -0.85,
+  "lat_max": 0.38,
+  "w_max": 0.14,
+  "hedge_min": 0.391,
+  "outcome": "plan completed",
+  "prot": 0
+ },
+ {
+  "software": "second pass",
+  "dir": "135",
+  "pose_err_max": 1.16,
+  "lat_min": -0.85,
+  "lat_max": 0.38,
+  "w_max": 0.15,
+  "hedge_min": 0.391,
+  "outcome": "plan completed",
+  "prot": 0
+ },
+ {
+  "software": "second pass",
+  "dir": "0",
+  "pose_err_max": 1.06,
+  "lat_min": -0.81,
+  "lat_max": 0.51,
+  "w_max": 0.15,
+  "hedge_min": 0.391,
+  "outcome": "plan completed",
+  "prot": 0
+ },
+ {
+  "software": "second pass",
+  "dir": "180",
+  "pose_err_max": 1.14,
+  "lat_min": -0.86,
+  "lat_max": 0.37,
+  "w_max": 0.15,
+  "hedge_min": 0.391,
+  "outcome": "plan completed",
+  "prot": 0
+ },
+ {
+  "software": "second pass",
+  "dir": "90",
+  "pose_err_max": 1.15,
+  "lat_min": -0.84,
+  "lat_max": 0.42,
+  "w_max": 0.15,
+  "hedge_min": 0.391,
+  "outcome": "plan completed",
+  "prot": 0
+ },
+ {
+  "software": "second pass",
+  "dir": "-90",
+  "pose_err_max": 1.0,
+  "lat_min": -0.83,
+  "lat_max": 0.43,
+  "w_max": 0.15,
+  "hedge_min": 0.391,
+  "outcome": "plan completed",
+  "prot": 0
+ }
+]

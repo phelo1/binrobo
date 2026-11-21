@@ -1,0 +1,4 @@
+QUEUE left 1 / 1, wall 94 s
+SAVED tune__s7 result=pass outcome=plan completed sim 288 s
+QUEUE left 0 / 1, wall 49 s
+r5b_fault_none sitl done

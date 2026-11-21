@@ -1,0 +1,16 @@
+[ 2210.5] pi   pre-grab gate OK on the camera: lateral 0.002 m, yaw 0.96 deg (truth: -0.002 m, 1.11 deg, inside)
+[ 2216.1] pi   pre-grab gate OK on the camera: lateral 0.004 m, yaw -0.09 deg (truth: 0.002 m, -0.32 deg, inside)
+[ 6302.4] pi   pre-grab gate OK on the camera: lateral -0.008 m, yaw 1.69 deg (truth: 0.001 m, 1.31 deg, inside)
+[ 6321.4] pi   rear camera: bin axis -0.031 m off the estimate (camera 0.038 m) -> estimate corrected, re-aligning
+[ 6338.3] pi   pre-grab gate OK on the camera: lateral 0.003 m, yaw -1.74 deg (truth: 0.000 m, -1.04 deg, inside)
+[10431.9] pi   rear camera: bin axis -0.029 m off the estimate (camera 0.047 m) -> estimate corrected, re-aligning
+[10505.9] pi   pre-grab gate OK on the camera: lateral -0.020 m, yaw 0.18 deg (truth: -0.015 m, 0.31 deg, inside)
+[10453.3] pi   rear camera: bin axis -0.033 m off the estimate (camera 0.065 m) -> estimate corrected, re-aligning
+[10470.9] pi   rear camera: bin axis -0.030 m off the estimate (camera 0.026 m) -> estimate corrected, re-aligning
+[10491.9] pi   pre-grab gate OK on the camera: lateral -0.022 m, yaw -0.56 deg (truth: -0.019 m, -0.78 deg, inside)
+SAVED s3b__s7 result=pass outcome=plan completed sim 12483 s
+QUEUE left 0 / 1, wall 889 s
+r5b_ret1630 sitl done
+SAVED s3b__s23 result=pass outcome=plan completed sim 12449 s
+QUEUE left 0 / 1, wall 892 s
+r5b_ret1630 sitl done

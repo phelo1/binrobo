@@ -1,0 +1,136 @@
+{
+ "run": "P2a_pf",
+ "title": "P2a-pf return empty, pothole filled (supplementary)",
+ "verdict": "PASS",
+ "fails": [],
+ "sim_time_s": 1745.6,
+ "t_start": 0.0,
+ "energy_Wh": 33.57,
+ "wall_s": 1349,
+ "metrics": {
+  "clear_min": 9.0,
+  "clear_at": null,
+  "seated_all": true,
+  "bin_ground_N": 0.0,
+  "roll_max": 1.8087,
+  "pitch_max": 6.8388,
+  "hedge_min": 0.3326,
+  "hedge_at": 621.1,
+  "tip_min": 33.0046,
+  "tip_at": 623.2,
+  "liftF_max": 987.7334,
+  "liftF_at": 622.8,
+  "gap_min": 9.0,
+  "v_max": 0.4024,
+  "n_lost": 0
+ },
+ "results": {
+  "pivot1": {
+   "ok": true
+  },
+  "drive2": {
+   "reached": true,
+   "why": null,
+   "s_end": 12.01,
+   "ref_end": 12.01,
+   "t": 1745.6
+  }
+ },
+ "seg_metrics": {
+  "forward0": {
+   "clear_min": 9.0,
+   "clear_at": null,
+   "seated_all": true,
+   "bin_ground_N": 0.0,
+   "roll_max": 0.0728,
+   "pitch_max": 2.0156,
+   "hedge_min": 9.0,
+   "hedge_at": null,
+   "tip_min": 33.9291,
+   "tip_at": 622.8,
+   "liftF_max": 987.7334,
+   "liftF_at": 622.8,
+   "gap_min": 9.0,
+   "v_max": 0.1504,
+   "n_lost": 0
+  },
+  "pivot1": {
+   "clear_min": 9.0,
+   "clear_at": null,
+   "seated_all": true,
+   "bin_ground_N": 0.0,
+   "roll_max": 1.8087,
+   "pitch_max": 1.8258,
+   "hedge_min": 9.0,
+   "hedge_at": null,
+   "tip_min": 33.0046,
+   "tip_at": 623.2,
+   "liftF_max": 26.3207,
+   "liftF_at": 623.3,
+   "gap_min": 9.0,
+   "v_max": 0.0167,
+   "n_lost": 0
+  },
+  "drive2": {
+   "clear_min": 9.0,
+   "clear_at": null,
+   "seated_all": true,
+   "bin_ground_N": 0.0,
+   "roll_max": 1.2711,
+   "pitch_max": 6.8388,
+   "hedge_min": 0.3326,
+   "hedge_at": 621.1,
+   "tip_min": 33.1048,
+   "tip_at": 15.4,
+   "liftF_max": 41.8132,
+   "liftF_at": 290.2,
+   "gap_min": 9.0,
+   "v_max": 0.4024,
+   "n_lost": 0
+  }
+ },
+ "events": [
+  [
+   21.92,
+   "pivot +180 deg done, axle moved 0.055 m"
+  ],
+  [
+   1745.62,
+   "drive2: reached at s 12.0"
+  ]
+ ],
+ "cfg": {
+  "binkey": "ESE240SL",
+  "kg": 0.0,
+  "with_bin": false,
+  "variant": {
+   "step": "ramp",
+   "trench": "covered",
+   "pothole": "filled"
+  },
+  "act_N": 3000.0,
+  "pert": {},
+  "night": false,
+  "obstacles": [],
+  "title": "P2a-pf return empty, pothole filled (supplementary)",
+  "start": [
+   "from",
+   "P1"
+  ]
+ },
+ "steps": [
+  [
+   "forward",
+   "0.45"
+  ],
+  [
+   "pivot",
+   "180.0"
+  ],
+  [
+   "drive",
+   "{'to': 12.0, 'ref': 'tug', 'dirn': -1, 'knots': [(0, -1.4), (12.0, -1.4), (24.0, 0.0), (610.0, 0.0), (619.5, 1.35), (700, 1.35)], 'snaps': True}"
+  ]
+ ],
+ "peak": {}
+}

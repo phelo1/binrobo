@@ -1,0 +1,5 @@
+runs_r5_w22 X8t: DONE X8t PASS [] sim 1579 s E 0.4 Wh {"clear_min": 9.0, "clear_at": null, "seated_all": true, "bin_ground_N": 0.0, "roll_max": 0.5339, "pitch_max": 6.
+runs_r5_w22 X8n: DONE X8n FAIL ['e-stop distance 0.74 m > 0.5'] sim 1526 s E 0.3 Wh {"clear_min": 9.0, "clear_at": null, "seated_all": true, "bin_ground_N": 0.0, "roll
+runs_r5_w22 X9t: DONE X9t PASS [] sim 1593 s E 0.5 Wh {"clear_min": 9.0, "clear_at": null, "seated_all": true, "bin_ground_N": 0.0, "roll_max": 3.733, "pitch_max": 6.8
+runs_r5_w22 X9n: DONE X9n PASS [] sim 1520 s E 0.3 Wh {"clear_min": 9.0, "clear_at": null, "seated_all": true, "bin_ground_N": 0.0, "roll_max": 3.6043, "pitch_max": 6.
+runs_r5_w22 chain done

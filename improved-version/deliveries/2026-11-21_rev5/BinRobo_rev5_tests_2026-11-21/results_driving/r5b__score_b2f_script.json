@@ -1,0 +1,1556 @@
+[
+ {
+  "key": "s1a__s7",
+  "scenario": "s1a",
+  "seed": 7,
+  "title": "One-bin night drop (240 L black -> pad A)",
+  "expect": "pass",
+  "result": "pass",
+  "outcome": "plan completed",
+  "verdict": "FAIL",
+  "crit": {
+   "C1": "PASS",
+   "C2": "PASS",
+   "C3": "PASS",
+   "C4": "PASS",
+   "C5b": "PASS",
+   "C6": "FAIL",
+   "C7": "PASS",
+   "C8": "PASS"
+  },
+  "why": {
+   "C1": "hedge min 0.208 m at t/s [2662.6, 417.4]",
+   "C2": "pad:A 0.026 m 0.9 deg",
+   "C3": "first motion D-1 18:00, last dock D-1 19:04",
+   "C4": "boundary margin 3.139 m",
+   "C5b": "contact min 0.33 (black), at-rest gaps person None car None",
+   "C6": "trips [70.0] Wh, end SOC 0.749",
+   "C7": "result pass / plan completed",
+   "C8": "gates ['black -0.009 m -0.75 deg OK']"
+  },
+  "alerts": [],
+  "sim_s": 3880.9
+ },
+ {
+  "key": "s1a__s11",
+  "scenario": "s1a",
+  "seed": 11,
+  "title": "One-bin night drop (240 L black -> pad A)",
+  "expect": "pass",
+  "result": "pass",
+  "outcome": "plan completed",
+  "verdict": "FAIL",
+  "crit": {
+   "C1": "PASS",
+   "C2": "PASS",
+   "C3": "PASS",
+   "C4": "PASS",
+   "C5b": "PASS",
+   "C6": "FAIL",
+   "C7": "PASS",
+   "C8": "PASS"
+  },
+  "why": {
+   "C1": "hedge min 0.202 m at t/s [2650.3, 417.4]",
+   "C2": "pad:A 0.039 m 0.7 deg",
+   "C3": "first motion D-1 18:00, last dock D-1 19:04",
+   "C4": "boundary margin 3.117 m",
+   "C5b": "contact min 0.326 (black), at-rest gaps person None car None",
+   "C6": "trips [70.09] Wh, end SOC 0.749",
+   "C7": "result pass / plan completed",
+   "C8": "gates ['black 0.018 m -0.45 deg OK']"
+  },
+  "alerts": [],
+  "sim_s": 3865.0
+ },
+ {
+  "key": "s1a__s23",
+  "scenario": "s1a",
+  "seed": 23,
+  "title": "One-bin night drop (240 L black -> pad A)",
+  "expect": "pass",
+  "result": "pass",
+  "outcome": "plan completed",
+  "verdict": "FAIL",
+  "crit": {
+   "C1": "PASS",
+   "C2": "PASS",
+   "C3": "PASS",
+   "C4": "PASS",
+   "C5b": "PASS",
+   "C6": "FAIL",
+   "C7": "PASS",
+   "C8": "PASS"
+  },
+  "why": {
+   "C1": "hedge min 0.197 m at t/s [2669.2, 417.0]",
+   "C2": "pad:A 0.029 m 0.9 deg",
+   "C3": "first motion D-1 18:00, last dock D-1 19:05",
+   "C4": "boundary margin 3.14 m",
+   "C5b": "contact min 0.318 (black), at-rest gaps person None car None",
+   "C6": "trips [70.11] Wh, end SOC 0.749",
+   "C7": "result pass / plan completed",
+   "C8": "gates ['black 0.003 m -0.02 deg OK']"
+  },
+  "alerts": [],
+  "sim_s": 3908.1
+ },
+ {
+  "key": "s1b__s7",
+  "scenario": "s1b",
+  "seed": 7,
+  "title": "One-bin night pickup (pad A -> home)",
+  "expect": "pass",
+  "result": "pass",
+  "outcome": "plan completed",
+  "verdict": "FAIL",
+  "crit": {
+   "C1": "PASS",
+   "C2": "PASS",
+   "C3": "PASS",
+   "C4": "PASS",
+   "C5b": "PASS",
+   "C6": "FAIL",
+   "C7": "PASS",
+   "C8": "PASS"
+  },
+  "why": {
+   "C1": "hedge min 0.224 m at t/s [2889.6, 417.2]",
+   "C2": "home:black 0.055 m 1.1 deg",
+   "C3": "first motion D0 18:00, last dock D0 19:09",
+   "C4": "boundary margin 3.147 m",
+   "C5b": "contact min 0.468 (black), at-rest gaps person None car None",
+   "C6": "trips [70.85] Wh, end SOC 0.747",
+   "C7": "result pass / plan completed",
+   "C8": "gates ['black 0.006 m 0.90 deg OK']"
+  },
+  "alerts": [],
+  "sim_s": 4161.8
+ },
+ {
+  "key": "s1b__s11",
+  "scenario": "s1b",
+  "seed": 11,
+  "title": "One-bin night pickup (pad A -> home)",
+  "expect": "pass",
+  "result": "pass",
+  "outcome": "plan completed",
+  "verdict": "FAIL",
+  "crit": {
+   "C1": "PASS",
+   "C2": "PASS",
+   "C3": "PASS",
+   "C4": "PASS",
+   "C5b": "PASS",
+   "C6": "FAIL",
+   "C7": "PASS",
+   "C8": "PASS"
+  },
+  "why": {
+   "C1": "hedge min 0.234 m at t/s [2902.2, 417.2]",
+   "C2": "home:black 0.051 m 0.4 deg",
+   "C3": "first motion D0 18:00, last dock D0 19:09",
+   "C4": "boundary margin 3.166 m",
+   "C5b": "contact min 0.515 (black), at-rest gaps person None car None",
+   "C6": "trips [70.86] Wh, end SOC 0.747",
+   "C7": "result pass / plan completed",
+   "C8": "gates ['black -0.010 m -0.15 deg OK']"
+  },
+  "alerts": [],
+  "sim_s": 4165.8
+ },
+ {
+  "key": "s1b__s23",
+  "scenario": "s1b",
+  "seed": 23,
+  "title": "One-bin night pickup (pad A -> home)",
+  "expect": "pass",
+  "result": "pass",
+  "outcome": "plan completed",
+  "verdict": "FAIL",
+  "crit": {
+   "C1": "PASS",
+   "C2": "PASS",
+   "C3": "PASS",
+   "C4": "PASS",
+   "C5b": "PASS",
+   "C6": "FAIL",
+   "C7": "PASS",
+   "C8": "PASS"
+  },
+  "why": {
+   "C1": "hedge min 0.244 m at t/s [2908.8, 417.2]",
+   "C2": "home:black 0.020 m 0.8 deg",
+   "C3": "first motion D0 18:00, last dock D0 19:09",
+   "C4": "boundary margin 3.148 m",
+   "C5b": "contact min 0.422 (black), at-rest gaps person None car None",
+   "C6": "trips [71.11] Wh, end SOC 0.747",
+   "C7": "result pass / plan completed",
+   "C8": "gates ['black -0.006 m -0.54 deg OK']"
+  },
+  "alerts": [],
+  "sim_s": 4184.9
+ },
+ {
+  "key": "s3a__s7",
+  "scenario": "s3a",
+  "seed": 7,
+  "title": "Three-bin night drop (140 L -> A, 240 L -> M, 240 L -> F)",
+  "expect": "pass",
+  "result": "pass",
+  "outcome": "plan completed",
+  "verdict": "FAIL",
+  "crit": {
+   "C1": "PASS",
+   "C2": "PASS",
+   "C3": "FAIL",
+   "C4": "PASS",
+   "C5b": "PASS",
+   "C6": "FAIL",
+   "C7": "PASS",
+   "C8": "PASS"
+  },
+  "why": {
+   "C1": "hedge min 0.217 m at t/s [6871.7, 416.6]",
+   "C2": "pad:A 0.044 m 0.2 deg; pad:M 0.023 m 0.6 deg; pad:F 0.021 m 0.5 deg",
+   "C3": "first motion D-1 18:00, last dock D-1 21:18",
+   "C4": "boundary margin 3.058 m",
+   "C5b": "contact min 0.305 (brown), at-rest gaps person None car None",
+   "C6": "trips [71.78, 69.68, 69.8] Wh, end SOC 0.431",
+   "C7": "result pass / plan completed",
+   "C8": "gates ['brown 0.019 m -0.99 deg OK', 'black 0.003 m -0.29 deg OK', 'green 0.011 m -0.44 deg OK']"
+  },
+  "alerts": [],
+  "sim_s": 11933.8
+ },
+ {
+  "key": "s3a__s11",
+  "scenario": "s3a",
+  "seed": 11,
+  "title": "Three-bin night drop (140 L -> A, 240 L -> M, 240 L -> F)",
+  "expect": "pass",
+  "result": "pass",
+  "outcome": "plan completed",
+  "verdict": "FAIL",
+  "crit": {
+   "C1": "PASS",
+   "C2": "PASS",
+   "C3": "FAIL",
+   "C4": "PASS",
+   "C5b": "PASS",
+   "C6": "FAIL",
+   "C7": "PASS",
+   "C8": "PASS"
+  },
+  "why": {
+   "C1": "hedge min 0.196 m at t/s [6834.9, 416.6]",
+   "C2": "pad:A 0.064 m 0.3 deg; pad:M 0.041 m 0.6 deg; pad:F 0.062 m 0.1 deg",
+   "C3": "first motion D-1 18:00, last dock D-1 21:17",
+   "C4": "boundary margin 3.041 m",
+   "C5b": "contact min 0.296 (brown), at-rest gaps person None car None",
+   "C6": "trips [71.45, 69.88, 69.16] Wh, end SOC 0.432",
+   "C7": "result pass / plan completed",
+   "C8": "gates ['brown 0.015 m -0.86 deg OK', 'black 0.016 m -0.60 deg OK', 'green 0.015 m -0.62 deg OK']"
+  },
+  "alerts": [],
+  "sim_s": 11845.0
+ },
+ {
+  "key": "s3a__s23",
+  "scenario": "s3a",
+  "seed": 23,
+  "title": "Three-bin night drop (140 L -> A, 240 L -> M, 240 L -> F)",
+  "expect": "pass",
+  "result": "pass",
+  "outcome": "plan completed",
+  "verdict": "FAIL",
+  "crit": {
+   "C1": "PASS",
+   "C2": "PASS",
+   "C3": "FAIL",
+   "C4": "PASS",
+   "C5b": "PASS",
+   "C6": "FAIL",
+   "C7": "PASS",
+   "C8": "PASS"
+  },
+  "why": {
+   "C1": "hedge min 0.204 m at t/s [6856.7, 417.0]",
+   "C2": "pad:A 0.015 m 0.5 deg; pad:M 0.038 m 0.3 deg; pad:F 0.028 m 1.2 deg",
+   "C3": "first motion D-1 18:00, last dock D-1 21:18",
+   "C4": "boundary margin 3.096 m",
+   "C5b": "contact min 0.311 (brown), at-rest gaps person None car None",
+   "C6": "trips [72.13, 70.55, 70.32] Wh, end SOC 0.427",
+   "C7": "result pass / plan completed",
+   "C8": "gates ['brown 0.000 m -1.15 deg OK', 'black -0.008 m 0.40 deg OK', 'green 0.021 m -1.16 deg OK']"
+  },
+  "alerts": [],
+  "sim_s": 11905.9
+ },
+ {
+  "key": "s3b__s7",
+  "scenario": "s3b",
+  "seed": 7,
+  "title": "Three-bin night pickup (F, M, A -> home)",
+  "expect": "pass",
+  "result": "alert",
+  "outcome": "too late",
+  "verdict": "FAIL",
+  "crit": {
+   "C1": "PASS",
+   "C2": "PASS",
+   "C3": "PASS",
+   "C4": "PASS",
+   "C5b": "PASS",
+   "C6": "FAIL",
+   "C7": "FAIL",
+   "C8": "PASS"
+  },
+  "why": {
+   "C1": "hedge min 0.232 m at t/s [6970.3, 417.2]",
+   "C2": "home:green 0.056 m 0.3 deg; home:black 0.057 m 1.1 deg",
+   "C3": "first motion D0 18:00, last dock D0 20:17",
+   "C4": "boundary margin 5.822 m",
+   "C5b": "contact min 0.474 (green), at-rest gaps person None car None",
+   "C6": "trips [71.53, 72.31] Wh, end SOC 0.581",
+   "C7": "result alert / too late",
+   "C8": "gates ['green 0.001 m 1.49 deg OK', 'black 0.017 m -0.72 deg OK']"
+  },
+  "alerts": [
+   "bye-law: a return started now would end after 21:00 (trip 72 min) - not started"
+  ],
+  "sim_s": 8244.9
+ },
+ {
+  "key": "s3b__s11",
+  "scenario": "s3b",
+  "seed": 11,
+  "title": "Three-bin night pickup (F, M, A -> home)",
+  "expect": "pass",
+  "result": "alert",
+  "outcome": "too late",
+  "verdict": "FAIL",
+  "crit": {
+   "C1": "PASS",
+   "C2": "PASS",
+   "C3": "PASS",
+   "C4": "PASS",
+   "C5b": "PASS",
+   "C6": "FAIL",
+   "C7": "FAIL",
+   "C8": "PASS"
+  },
+  "why": {
+   "C1": "hedge min 0.228 m at t/s [2841.2, 417.2]",
+   "C2": "home:green 0.053 m 0.2 deg; home:black 0.051 m 0.9 deg",
+   "C3": "first motion D0 18:00, last dock D0 20:17",
+   "C4": "boundary margin 5.899 m",
+   "C5b": "contact min 0.513 (black), at-rest gaps person None car None",
+   "C6": "trips [70.3, 71.57] Wh, end SOC 0.585",
+   "C7": "result alert / too late",
+   "C8": "gates ['green -0.025 m -0.37 deg OK', 'black 0.000 m -0.82 deg OK']"
+  },
+  "alerts": [
+   "bye-law: a return started now would end after 21:00 (trip 72 min) - not started"
+  ],
+  "sim_s": 8233.0
+ },
+ {
+  "key": "s3b__s23",
+  "scenario": "s3b",
+  "seed": 23,
+  "title": "Three-bin night pickup (F, M, A -> home)",
+  "expect": "pass",
+  "result": "alert",
+  "outcome": "too late",
+  "verdict": "FAIL",
+  "crit": {
+   "C1": "PASS",
+   "C2": "PASS",
+   "C3": "PASS",
+   "C4": "PASS",
+   "C5b": "PASS",
+   "C6": "FAIL",
+   "C7": "FAIL",
+   "C8": "PASS"
+  },
+  "why": {
+   "C1": "hedge min 0.233 m at t/s [6978.7, 417.2]",
+   "C2": "home:green 0.052 m 0.1 deg; home:black 0.012 m 0.2 deg",
+   "C3": "first motion D0 18:00, last dock D0 20:17",
+   "C4": "boundary margin 5.843 m",
+   "C5b": "contact min 0.501 (green), at-rest gaps person None car None",
+   "C6": "trips [70.71, 71.47] Wh, end SOC 0.584",
+   "C7": "result alert / too late",
+   "C8": "gates ['green 0.021 m -0.21 deg OK', 'black 0.017 m -1.44 deg OK']"
+  },
+  "alerts": [
+   "bye-law: a return started now would end after 21:00 (trip 72 min) - not started"
+  ],
+  "sim_s": 8251.9
+ },
+ {
+  "key": "s4a__s7",
+  "scenario": "s4a",
+  "seed": 7,
+  "title": "RTK float under the hedge (40 m, loaded)",
+  "expect": "pass",
+  "result": "pass",
+  "outcome": "plan completed",
+  "verdict": "PASS",
+  "crit": {
+   "C1": "PASS",
+   "C5b": "PASS",
+   "C7": "PASS"
+  },
+  "why": {
+   "C1": "hedge min 0.293 m at t/s [0.0, 34.9]",
+   "C5b": "contact min None (None), at-rest gaps person None car None",
+   "C7": "result pass / plan completed"
+  },
+  "alerts": [],
+  "sim_s": 326.0
+ },
+ {
+  "key": "s4a__s11",
+  "scenario": "s4a",
+  "seed": 11,
+  "title": "RTK float under the hedge (40 m, loaded)",
+  "expect": "pass",
+  "result": "pass",
+  "outcome": "plan completed",
+  "verdict": "PASS",
+  "crit": {
+   "C1": "PASS",
+   "C5b": "PASS",
+   "C7": "PASS"
+  },
+  "why": {
+   "C1": "hedge min 0.292 m at t/s [47.8, 34.9]",
+   "C5b": "contact min None (None), at-rest gaps person None car None",
+   "C7": "result pass / plan completed"
+  },
+  "alerts": [],
+  "sim_s": 324.9
+ },
+ {
+  "key": "s4a__s23",
+  "scenario": "s4a",
+  "seed": 23,
+  "title": "RTK float under the hedge (40 m, loaded)",
+  "expect": "pass",
+  "result": "pass",
+  "outcome": "plan completed",
+  "verdict": "PASS",
+  "crit": {
+   "C1": "PASS",
+   "C5b": "PASS",
+   "C7": "PASS"
+  },
+  "why": {
+   "C1": "hedge min 0.293 m at t/s [0.0, 34.9]",
+   "C5b": "contact min None (None), at-rest gaps person None car None",
+   "C7": "result pass / plan completed"
+  },
+  "alerts": [],
+  "sim_s": 325.8
+ },
+ {
+  "key": "s4b__s7",
+  "scenario": "s4b",
+  "seed": 7,
+  "title": "RTK loss under the hedge (20 m, bridged by odometry + lidar)",
+  "expect": "pass",
+  "result": "pass",
+  "outcome": "plan completed",
+  "verdict": "PASS",
+  "crit": {
+   "C1": "PASS",
+   "C5b": "PASS",
+   "C7": "PASS"
+  },
+  "why": {
+   "C1": "hedge min 0.292 m at t/s [48.0, 34.9]",
+   "C5b": "contact min None (None), at-rest gaps person None car None",
+   "C7": "result pass / plan completed"
+  },
+  "alerts": [],
+  "sim_s": 327.9
+ },
+ {
+  "key": "s4b__s11",
+  "scenario": "s4b",
+  "seed": 11,
+  "title": "RTK loss under the hedge (20 m, bridged by odometry + lidar)",
+  "expect": "pass",
+  "result": "pass",
+  "outcome": "plan completed",
+  "verdict": "PASS",
+  "crit": {
+   "C1": "PASS",
+   "C5b": "PASS",
+   "C7": "PASS"
+  },
+  "why": {
+   "C1": "hedge min 0.292 m at t/s [47.2, 34.9]",
+   "C5b": "contact min None (None), at-rest gaps person None car None",
+   "C7": "result pass / plan completed"
+  },
+  "alerts": [],
+  "sim_s": 324.9
+ },
+ {
+  "key": "s4b__s23",
+  "scenario": "s4b",
+  "seed": 23,
+  "title": "RTK loss under the hedge (20 m, bridged by odometry + lidar)",
+  "expect": "pass",
+  "result": "pass",
+  "outcome": "plan completed",
+  "verdict": "PASS",
+  "crit": {
+   "C1": "PASS",
+   "C5b": "PASS",
+   "C7": "PASS"
+  },
+  "why": {
+   "C1": "hedge min 0.292 m at t/s [47.2, 34.9]",
+   "C5b": "contact min None (None), at-rest gaps person None car None",
+   "C7": "result pass / plan completed"
+  },
+  "alerts": [],
+  "sim_s": 326.8
+ },
+ {
+  "key": "s4c__s7",
+  "scenario": "s4c",
+  "seed": 7,
+  "title": "RTK long loss under the hedge (70 m)",
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "no fix hold",
+  "verdict": "PASS",
+  "crit": {
+   "C1": "PASS",
+   "C5b": "PASS",
+   "C7": "PASS"
+  },
+  "why": {
+   "C1": "hedge min 0.292 m at t/s [47.0, 34.9]",
+   "C5b": "contact min None (None), at-rest gaps person None car None",
+   "C7": "result alert / no fix hold (expected alert: no fix hold)"
+  },
+  "alerts": [
+   "no GNSS fix for 60 s after 25 m dead reckoning - holding in the lane"
+  ],
+  "sim_s": 255.8
+ },
+ {
+  "key": "s4c__s11",
+  "scenario": "s4c",
+  "seed": 11,
+  "title": "RTK long loss under the hedge (70 m)",
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "no fix hold",
+  "verdict": "PASS",
+  "crit": {
+   "C1": "PASS",
+   "C5b": "PASS",
+   "C7": "PASS"
+  },
+  "why": {
+   "C1": "hedge min 0.292 m at t/s [47.2, 34.9]",
+   "C5b": "contact min None (None), at-rest gaps person None car None",
+   "C7": "result alert / no fix hold (expected alert: no fix hold)"
+  },
+  "alerts": [
+   "no GNSS fix for 60 s after 25 m dead reckoning - holding in the lane"
+  ],
+  "sim_s": 253.3
+ },
+ {
+  "key": "s4c__s23",
+  "scenario": "s4c",
+  "seed": 23,
+  "title": "RTK long loss under the hedge (70 m)",
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "no fix hold",
+  "verdict": "PASS",
+  "crit": {
+   "C1": "PASS",
+   "C5b": "PASS",
+   "C7": "PASS"
+  },
+  "why": {
+   "C1": "hedge min 0.292 m at t/s [48.0, 34.9]",
+   "C5b": "contact min None (None), at-rest gaps person None car None",
+   "C7": "result alert / no fix hold (expected alert: no fix hold)"
+  },
+  "alerts": [
+   "no GNSS fix for 60 s after 25 m dead reckoning - holding in the lane"
+  ],
+  "sim_s": 257.7
+ },
+ {
+  "key": "s5a__s7",
+  "scenario": "s5a",
+  "seed": 7,
+  "title": "Lidar: person + dog crossing (loaded)",
+  "expect": "pass",
+  "result": "pass",
+  "outcome": "plan completed",
+  "verdict": "PASS",
+  "crit": {
+   "C1": "PASS",
+   "C5b": "PASS",
+   "C7": "PASS"
+  },
+  "why": {
+   "C1": "hedge min 0.372 m at t/s [53.4, 297.0]",
+   "C5b": "contact min 1.885 (person), at-rest gaps person None car None",
+   "C7": "result pass / plan completed"
+  },
+  "alerts": [],
+  "sim_s": 280.1
+ },
+ {
+  "key": "s5a__s11",
+  "scenario": "s5a",
+  "seed": 11,
+  "title": "Lidar: person + dog crossing (loaded)",
+  "expect": "pass",
+  "result": "pass",
+  "outcome": "plan completed",
+  "verdict": "PASS",
+  "crit": {
+   "C1": "PASS",
+   "C5b": "PASS",
+   "C7": "PASS"
+  },
+  "why": {
+   "C1": "hedge min 0.380 m at t/s [47.6, 295.0]",
+   "C5b": "contact min 1.725 (person), at-rest gaps person None car None",
+   "C7": "result pass / plan completed"
+  },
+  "alerts": [],
+  "sim_s": 279.8
+ },
+ {
+  "key": "s5a__s23",
+  "scenario": "s5a",
+  "seed": 23,
+  "title": "Lidar: person + dog crossing (loaded)",
+  "expect": "pass",
+  "result": "pass",
+  "outcome": "plan completed",
+  "verdict": "PASS",
+  "crit": {
+   "C1": "PASS",
+   "C5b": "PASS",
+   "C7": "PASS"
+  },
+  "why": {
+   "C1": "hedge min 0.380 m at t/s [47.2, 295.0]",
+   "C5b": "contact min 2.207 (person), at-rest gaps person None car None",
+   "C7": "result pass / plan completed"
+  },
+  "alerts": [],
+  "sim_s": 285.9
+ },
+ {
+  "key": "s5b__s7",
+  "scenario": "s5b",
+  "seed": 7,
+  "title": "Car in the bell-mouth at the drop",
+  "expect": "pass",
+  "result": "pass",
+  "outcome": "plan completed",
+  "verdict": "PASS",
+  "crit": {
+   "C1": "PASS",
+   "C2": "PASS",
+   "C4": "PASS",
+   "C5b": "PASS",
+   "C7": "PASS"
+  },
+  "why": {
+   "C1": "hedge min 0.361 m at t/s [0.0, 585.0]",
+   "C2": "pad:A 0.025 m 0.5 deg",
+   "C4": "boundary margin 3.129 m",
+   "C5b": "contact min 0.696 (black), at-rest gaps person None car 2.079",
+   "C7": "result pass / plan completed"
+  },
+  "alerts": [],
+  "sim_s": 280.8
+ },
+ {
+  "key": "s5b__s11",
+  "scenario": "s5b",
+  "seed": 11,
+  "title": "Car in the bell-mouth at the drop",
+  "expect": "pass",
+  "result": "pass",
+  "outcome": "plan completed",
+  "verdict": "PASS",
+  "crit": {
+   "C1": "PASS",
+   "C2": "PASS",
+   "C4": "PASS",
+   "C5b": "PASS",
+   "C7": "PASS"
+  },
+  "why": {
+   "C1": "hedge min 0.360 m at t/s [47.8, 585.0]",
+   "C2": "pad:A 0.020 m 0.7 deg",
+   "C4": "boundary margin 3.167 m",
+   "C5b": "contact min 0.702 (black), at-rest gaps person None car 2.068",
+   "C7": "result pass / plan completed"
+  },
+  "alerts": [],
+  "sim_s": 278.8
+ },
+ {
+  "key": "s5b__s23",
+  "scenario": "s5b",
+  "seed": 23,
+  "title": "Car in the bell-mouth at the drop",
+  "expect": "pass",
+  "result": "pass",
+  "outcome": "plan completed",
+  "verdict": "PASS",
+  "crit": {
+   "C1": "PASS",
+   "C2": "PASS",
+   "C4": "PASS",
+   "C5b": "PASS",
+   "C7": "PASS"
+  },
+  "why": {
+   "C1": "hedge min 0.345 m at t/s [48.8, 585.3]",
+   "C2": "pad:A 0.037 m 0.6 deg",
+   "C4": "boundary margin 3.122 m",
+   "C5b": "contact min 0.717 (black), at-rest gaps person None car 2.008",
+   "C7": "result pass / plan completed"
+  },
+  "alerts": [],
+  "sim_s": 291.9
+ },
+ {
+  "key": "s6a__s7",
+  "scenario": "s6a",
+  "seed": 7,
+  "title": "Companion freeze, loaded transit (firmware failsafe)",
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "companion freeze -> firmware HOLD",
+  "verdict": "PASS",
+  "crit": {
+   "C1": "PASS",
+   "C5b": "PASS",
+   "C5c": "PASS",
+   "C7": "PASS"
+  },
+  "why": {
+   "C1": "hedge min 0.360 m at t/s [87.3, 212.0]",
+   "C5b": "contact min None (None), at-rest gaps person None car None",
+   "C5c": "HOLD 1.7 s, rolled 0.581 m",
+   "C7": "result alert / companion freeze -> firmware HOLD (expected alert: companion freeze -> firmware HOLD)"
+  },
+  "alerts": [],
+  "sim_s": 176.8
+ },
+ {
+  "key": "s6a__s11",
+  "scenario": "s6a",
+  "seed": 11,
+  "title": "Companion freeze, loaded transit (firmware failsafe)",
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "companion freeze -> firmware HOLD",
+  "verdict": "PASS",
+  "crit": {
+   "C1": "PASS",
+   "C5b": "PASS",
+   "C5c": "PASS",
+   "C7": "PASS"
+  },
+  "why": {
+   "C1": "hedge min 0.367 m at t/s [48.0, 200.0]",
+   "C5b": "contact min None (None), at-rest gaps person None car None",
+   "C5c": "HOLD 1.8 s, rolled 0.602 m",
+   "C7": "result alert / companion freeze -> firmware HOLD (expected alert: companion freeze -> firmware HOLD)"
+  },
+  "alerts": [],
+  "sim_s": 176.7
+ },
+ {
+  "key": "s6a__s23",
+  "scenario": "s6a",
+  "seed": 23,
+  "title": "Companion freeze, loaded transit (firmware failsafe)",
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "companion freeze -> firmware HOLD",
+  "verdict": "PASS",
+  "crit": {
+   "C1": "PASS",
+   "C5b": "PASS",
+   "C5c": "PASS",
+   "C7": "PASS"
+  },
+  "why": {
+   "C1": "hedge min 0.340 m at t/s [49.6, 200.3]",
+   "C5b": "contact min None (None), at-rest gaps person None car None",
+   "C5c": "HOLD 1.7 s, rolled 0.569 m",
+   "C7": "result alert / companion freeze -> firmware HOLD (expected alert: companion freeze -> firmware HOLD)"
+  },
+  "alerts": [],
+  "sim_s": 176.8
+ },
+ {
+  "key": "s6b__s7",
+  "scenario": "s6b",
+  "seed": 7,
+  "title": "Companion freeze while reversing onto the bin",
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "companion freeze -> firmware HOLD",
+  "verdict": "PASS",
+  "crit": {
+   "C1": "PASS",
+   "C4": "PASS",
+   "C5b": "PASS",
+   "C5c": "PASS",
+   "C7": "PASS",
+   "C8": "PASS"
+  },
+  "why": {
+   "C1": "hedge min 0.358 m at t/s [98.1, 619.8]",
+   "C4": "boundary margin 3.982 m",
+   "C5b": "contact min 0.513 (black), at-rest gaps person None car None",
+   "C5c": "HOLD 1.68 s, rolled 0.184 m",
+   "C7": "result alert / companion freeze -> firmware HOLD (expected alert: companion freeze -> firmware HOLD)",
+   "C8": "gates ['black -0.007 m 0.15 deg OK']"
+  },
+  "alerts": [],
+  "sim_s": 145.5
+ },
+ {
+  "key": "s6b__s11",
+  "scenario": "s6b",
+  "seed": 11,
+  "title": "Companion freeze while reversing onto the bin",
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "companion freeze -> firmware HOLD",
+  "verdict": "PASS",
+  "crit": {
+   "C1": "PASS",
+   "C4": "PASS",
+   "C5b": "PASS",
+   "C5c": "PASS",
+   "C7": "PASS",
+   "C8": "PASS"
+  },
+  "why": {
+   "C1": "hedge min 0.418 m at t/s [105.1, 620.7]",
+   "C4": "boundary margin 3.953 m",
+   "C5b": "contact min 0.462 (black), at-rest gaps person None car None",
+   "C5c": "HOLD 1.7 s, rolled 0.183 m",
+   "C7": "result alert / companion freeze -> firmware HOLD (expected alert: companion freeze -> firmware HOLD)",
+   "C8": "gates ['black 0.006 m 1.45 deg OK']"
+  },
+  "alerts": [],
+  "sim_s": 174.6
+ },
+ {
+  "key": "s6b__s23",
+  "scenario": "s6b",
+  "seed": 23,
+  "title": "Companion freeze while reversing onto the bin",
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "companion freeze -> firmware HOLD",
+  "verdict": "PASS",
+  "crit": {
+   "C1": "PASS",
+   "C4": "PASS",
+   "C5b": "PASS",
+   "C5c": "PASS",
+   "C7": "PASS",
+   "C8": "PASS"
+  },
+  "why": {
+   "C1": "hedge min 0.445 m at t/s [81.2, 620.4]",
+   "C4": "boundary margin 3.98 m",
+   "C5b": "contact min 0.532 (black), at-rest gaps person None car None",
+   "C5c": "HOLD 1.8 s, rolled 0.194 m",
+   "C7": "result alert / companion freeze -> firmware HOLD (expected alert: companion freeze -> firmware HOLD)",
+   "C8": "gates ['black 0.013 m 1.47 deg OK']"
+  },
+  "alerts": [],
+  "sim_s": 118.5
+ },
+ {
+  "key": "s7__s7",
+  "scenario": "s7",
+  "seed": 7,
+  "title": "E-stop, loaded transit at 0.5 m/s",
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "e-stop",
+  "verdict": "PASS",
+  "crit": {
+   "C1": "PASS",
+   "C5a": "PASS",
+   "C5b": "PASS",
+   "C7": "PASS"
+  },
+  "why": {
+   "C1": "hedge min 0.360 m at t/s [87.3, 212.0]",
+   "C5a": "stop 0.036 m",
+   "C5b": "contact min None (None), at-rest gaps person None car None",
+   "C7": "result alert / e-stop (expected alert: e-stop)"
+  },
+  "alerts": [
+   "E-stop pressed: robot stopped 0.04 m / 0.2 s"
+  ],
+  "sim_s": 303.0
+ },
+ {
+  "key": "s7__s11",
+  "scenario": "s7",
+  "seed": 11,
+  "title": "E-stop, loaded transit at 0.5 m/s",
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "e-stop",
+  "verdict": "PASS",
+  "crit": {
+   "C1": "PASS",
+   "C5a": "PASS",
+   "C5b": "PASS",
+   "C7": "PASS"
+  },
+  "why": {
+   "C1": "hedge min 0.367 m at t/s [48.6, 200.0]",
+   "C5a": "stop 0.037 m",
+   "C5b": "contact min None (None), at-rest gaps person None car None",
+   "C7": "result alert / e-stop (expected alert: e-stop)"
+  },
+  "alerts": [
+   "E-stop pressed: robot stopped 0.04 m / 0.2 s"
+  ],
+  "sim_s": 304.1
+ },
+ {
+  "key": "s7__s23",
+  "scenario": "s7",
+  "seed": 23,
+  "title": "E-stop, loaded transit at 0.5 m/s",
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "e-stop",
+  "verdict": "PASS",
+  "crit": {
+   "C1": "PASS",
+   "C5a": "PASS",
+   "C5b": "PASS",
+   "C7": "PASS"
+  },
+  "why": {
+   "C1": "hedge min 0.340 m at t/s [49.6, 200.3]",
+   "C5a": "stop 0.038 m",
+   "C5b": "contact min None (None), at-rest gaps person None car None",
+   "C7": "result alert / e-stop (expected alert: e-stop)"
+  },
+  "alerts": [
+   "E-stop pressed: robot stopped 0.04 m / 0.3 s"
+  ],
+  "sim_s": 253.0
+ },
+ {
+  "key": "s8__s7",
+  "scenario": "s8",
+  "seed": 7,
+  "title": "Low battery at the energy guard",
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "energy guard",
+  "verdict": "PASS",
+  "crit": {
+   "C5b": "PASS",
+   "C6": "PASS",
+   "C7": "PASS"
+  },
+  "why": {
+   "C5b": "contact min 3.75 (black), at-rest gaps person None car None",
+   "C6": "guard [{'t': 47.2, 'soc': 0.17, 'avail_wh': 32.4, 'budget_wh': 75.0, 'kind': 'drop black->A'}]",
+   "C7": "result alert / energy guard (expected alert: energy guard)"
+  },
+  "alerts": [
+   "energy guard: 32 Wh available above the 10 % reserve < 75 Wh trip budget - trip refused, staying on the dock"
+  ],
+  "sim_s": 47.2
+ },
+ {
+  "key": "s8__s11",
+  "scenario": "s8",
+  "seed": 11,
+  "title": "Low battery at the energy guard",
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "energy guard",
+  "verdict": "PASS",
+  "crit": {
+   "C5b": "PASS",
+   "C6": "PASS",
+   "C7": "PASS"
+  },
+  "why": {
+   "C5b": "contact min 3.75 (black), at-rest gaps person None car None",
+   "C6": "guard [{'t': 48.0, 'soc': 0.17, 'avail_wh': 32.4, 'budget_wh': 75.0, 'kind': 'drop black->A'}]",
+   "C7": "result alert / energy guard (expected alert: energy guard)"
+  },
+  "alerts": [
+   "energy guard: 32 Wh available above the 10 % reserve < 75 Wh trip budget - trip refused, staying on the dock"
+  ],
+  "sim_s": 48.0
+ },
+ {
+  "key": "s8__s23",
+  "scenario": "s8",
+  "seed": 23,
+  "title": "Low battery at the energy guard",
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "energy guard",
+  "verdict": "PASS",
+  "crit": {
+   "C5b": "PASS",
+   "C6": "PASS",
+   "C7": "PASS"
+  },
+  "why": {
+   "C5b": "contact min 3.75 (black), at-rest gaps person None car None",
+   "C6": "guard [{'t': 47.2, 'soc': 0.17, 'avail_wh': 32.4, 'budget_wh': 75.0, 'kind': 'drop black->A'}]",
+   "C7": "result alert / energy guard (expected alert: energy guard)"
+  },
+  "alerts": [
+   "energy guard: 32 Wh available above the 10 % reserve < 75 Wh trip budget - trip refused, staying on the dock"
+  ],
+  "sim_s": 47.2
+ },
+ {
+  "key": "s9__s7",
+  "scenario": "s9",
+  "seed": 7,
+  "title": "Bin missing at pickup",
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "bin missing",
+  "verdict": "PASS",
+  "crit": {
+   "C1": "PASS",
+   "C4": "PASS",
+   "C5b": "PASS",
+   "C7": "PASS"
+  },
+  "why": {
+   "C1": "hedge min 0.379 m at t/s [48.2, 565.0]",
+   "C4": "boundary margin 5.426 m",
+   "C5b": "contact min None (None), at-rest gaps person None car None",
+   "C7": "result alert / bin missing (expected alert: bin missing)"
+  },
+  "alerts": [
+   "bin black not found at A (lidar: 0 returns) - photo sent, heading home empty"
+  ],
+  "sim_s": 299.9
+ },
+ {
+  "key": "s9__s11",
+  "scenario": "s9",
+  "seed": 11,
+  "title": "Bin missing at pickup",
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "bin missing",
+  "verdict": "PASS",
+  "crit": {
+   "C1": "PASS",
+   "C4": "PASS",
+   "C5b": "PASS",
+   "C7": "PASS"
+  },
+  "why": {
+   "C1": "hedge min 0.376 m at t/s [184.4, 606.6]",
+   "C4": "boundary margin 5.527 m",
+   "C5b": "contact min None (None), at-rest gaps person None car None",
+   "C7": "result alert / bin missing (expected alert: bin missing)"
+  },
+  "alerts": [
+   "bin black not found at A (lidar: 0 returns) - photo sent, heading home empty"
+  ],
+  "sim_s": 298.8
+ },
+ {
+  "key": "s9__s23",
+  "scenario": "s9",
+  "seed": 23,
+  "title": "Bin missing at pickup",
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "bin missing",
+  "verdict": "PASS",
+  "crit": {
+   "C1": "PASS",
+   "C4": "PASS",
+   "C5b": "PASS",
+   "C7": "PASS"
+  },
+  "why": {
+   "C1": "hedge min 0.379 m at t/s [48.2, 565.0]",
+   "C4": "boundary margin 5.38 m",
+   "C5b": "contact min None (None), at-rest gaps person None car None",
+   "C7": "result alert / bin missing (expected alert: bin missing)"
+  },
+  "alerts": [
+   "bin black not found at A (lidar: 0 returns) - photo sent, heading home empty"
+  ],
+  "sim_s": 299.9
+ },
+ {
+  "key": "s10a__s7",
+  "scenario": "s10a",
+  "seed": 7,
+  "title": "Bin tipped at pickup",
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "bin tipped",
+  "verdict": "PASS",
+  "crit": {
+   "C1": "PASS",
+   "C4": "PASS",
+   "C5b": "PASS",
+   "C7": "PASS"
+  },
+  "why": {
+   "C1": "hedge min 0.380 m at t/s [47.6, 565.0]",
+   "C4": "boundary margin 5.498 m",
+   "C5b": "contact min 2.876 (black), at-rest gaps person None car None",
+   "C7": "result alert / bin tipped (expected alert: bin tipped)"
+  },
+  "alerts": [
+   "bin black at A does not look upright (lidar outline 1.05 x 0.24 m) - not grabbing, photo sent"
+  ],
+  "sim_s": 224.8
+ },
+ {
+  "key": "s10a__s11",
+  "scenario": "s10a",
+  "seed": 11,
+  "title": "Bin tipped at pickup",
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "bin tipped",
+  "verdict": "PASS",
+  "crit": {
+   "C1": "PASS",
+   "C4": "PASS",
+   "C5b": "PASS",
+   "C7": "PASS"
+  },
+  "why": {
+   "C1": "hedge min 0.374 m at t/s [186.4, 607.3]",
+   "C4": "boundary margin 5.52 m",
+   "C5b": "contact min 2.91 (black), at-rest gaps person None car None",
+   "C7": "result alert / bin tipped (expected alert: bin tipped)"
+  },
+  "alerts": [
+   "bin black at A does not look upright (lidar outline 1.04 x 0.17 m) - not grabbing, photo sent"
+  ],
+  "sim_s": 224.9
+ },
+ {
+  "key": "s10a__s23",
+  "scenario": "s10a",
+  "seed": 23,
+  "title": "Bin tipped at pickup",
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "bin tipped",
+  "verdict": "PASS",
+  "crit": {
+   "C1": "PASS",
+   "C4": "PASS",
+   "C5b": "PASS",
+   "C7": "PASS"
+  },
+  "why": {
+   "C1": "hedge min 0.379 m at t/s [47.6, 565.0]",
+   "C4": "boundary margin 5.451 m",
+   "C5b": "contact min 2.879 (black), at-rest gaps person None car None",
+   "C7": "result alert / bin tipped (expected alert: bin tipped)"
+  },
+  "alerts": [
+   "bin black at A does not look upright (lidar outline 1.04 x 0.29 m) - not grabbing, photo sent"
+  ],
+  "sim_s": 224.7
+ },
+ {
+  "key": "s10b__s7",
+  "scenario": "s10b",
+  "seed": 7,
+  "title": "Bin blocked at pickup (garden-waste sack in the approach)",
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "bin blocked",
+  "verdict": "PASS",
+  "crit": {
+   "C1": "PASS",
+   "C4": "PASS",
+   "C5b": "PASS",
+   "C7": "PASS"
+  },
+  "why": {
+   "C1": "hedge min 0.379 m at t/s [47.4, 565.0]",
+   "C4": "boundary margin 5.483 m",
+   "C5b": "contact min 1.079 (sack), at-rest gaps person None car None",
+   "C7": "result alert / bin blocked (expected alert: bin blocked)"
+  },
+  "alerts": [
+   "approach to bin black at A is blocked (255 unmapped returns in the approach corridor) - not grabbing"
+  ],
+  "sim_s": 224.7
+ },
+ {
+  "key": "s10b__s11",
+  "scenario": "s10b",
+  "seed": 11,
+  "title": "Bin blocked at pickup (garden-waste sack in the approach)",
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "bin blocked",
+  "verdict": "PASS",
+  "crit": {
+   "C1": "PASS",
+   "C4": "PASS",
+   "C5b": "PASS",
+   "C7": "PASS"
+  },
+  "why": {
+   "C1": "hedge min 0.368 m at t/s [194.0, 609.8]",
+   "C4": "boundary margin 5.46 m",
+   "C5b": "contact min 1.053 (sack), at-rest gaps person None car None",
+   "C7": "result alert / bin blocked (expected alert: bin blocked)"
+  },
+  "alerts": [
+   "approach to bin black at A is blocked (256 unmapped returns in the approach corridor) - not grabbing"
+  ],
+  "sim_s": 224.8
+ },
+ {
+  "key": "s10b__s23",
+  "scenario": "s10b",
+  "seed": 23,
+  "title": "Bin blocked at pickup (garden-waste sack in the approach)",
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "bin blocked",
+  "verdict": "PASS",
+  "crit": {
+   "C1": "PASS",
+   "C4": "PASS",
+   "C5b": "PASS",
+   "C7": "PASS"
+  },
+  "why": {
+   "C1": "hedge min 0.379 m at t/s [47.4, 565.0]",
+   "C4": "boundary margin 5.449 m",
+   "C5b": "contact min 1.053 (sack), at-rest gaps person None car None",
+   "C7": "result alert / bin blocked (expected alert: bin blocked)"
+  },
+  "alerts": [
+   "approach to bin black at A is blocked (255 unmapped returns in the approach corridor) - not grabbing"
+  ],
+  "sim_s": 224.6
+ },
+ {
+  "key": "s11a__s7",
+  "scenario": "s11a",
+  "seed": 7,
+  "title": "Wind no-go",
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "wind no-go",
+  "verdict": "PASS",
+  "crit": {
+   "C5b": "PASS",
+   "C7": "PASS"
+  },
+  "why": {
+   "C5b": "contact min 3.751 (black), at-rest gaps person None car None",
+   "C7": "result alert / wind no-go (expected alert: wind no-go)"
+  },
+  "alerts": [
+   "weather no-go: wind gust 18 m/s >= 15 m/s - bins stay home"
+  ],
+  "sim_s": 47.5
+ },
+ {
+  "key": "s11a__s11",
+  "scenario": "s11a",
+  "seed": 11,
+  "title": "Wind no-go",
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "wind no-go",
+  "verdict": "PASS",
+  "crit": {
+   "C5b": "PASS",
+   "C7": "PASS"
+  },
+  "why": {
+   "C5b": "contact min 3.75 (black), at-rest gaps person None car None",
+   "C7": "result alert / wind no-go (expected alert: wind no-go)"
+  },
+  "alerts": [
+   "weather no-go: wind gust 18 m/s >= 15 m/s - bins stay home"
+  ],
+  "sim_s": 47.2
+ },
+ {
+  "key": "s11a__s23",
+  "scenario": "s11a",
+  "seed": 23,
+  "title": "Wind no-go",
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "wind no-go",
+  "verdict": "PASS",
+  "crit": {
+   "C5b": "PASS",
+   "C7": "PASS"
+  },
+  "why": {
+   "C5b": "contact min 3.75 (black), at-rest gaps person None car None",
+   "C7": "result alert / wind no-go (expected alert: wind no-go)"
+  },
+  "alerts": [
+   "weather no-go: wind gust 18 m/s >= 15 m/s - bins stay home"
+  ],
+  "sim_s": 47.2
+ },
+ {
+  "key": "s11b__s7",
+  "scenario": "s11b",
+  "seed": 7,
+  "title": "Frost no-go",
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "frost no-go",
+  "verdict": "PASS",
+  "crit": {
+   "C5b": "PASS",
+   "C7": "PASS"
+  },
+  "why": {
+   "C5b": "contact min 3.751 (black), at-rest gaps person None car None",
+   "C7": "result alert / frost no-go (expected alert: frost no-go)"
+  },
+  "alerts": [
+   "weather no-go: frost / ice on the lane (air -3.0 C) - bins stay home"
+  ],
+  "sim_s": 47.9
+ },
+ {
+  "key": "s11b__s11",
+  "scenario": "s11b",
+  "seed": 11,
+  "title": "Frost no-go",
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "frost no-go",
+  "verdict": "PASS",
+  "crit": {
+   "C5b": "PASS",
+   "C7": "PASS"
+  },
+  "why": {
+   "C5b": "contact min 3.75 (black), at-rest gaps person None car None",
+   "C7": "result alert / frost no-go (expected alert: frost no-go)"
+  },
+  "alerts": [
+   "weather no-go: frost / ice on the lane (air -3.0 C) - bins stay home"
+  ],
+  "sim_s": 47.2
+ },
+ {
+  "key": "s11b__s23",
+  "scenario": "s11b",
+  "seed": 23,
+  "title": "Frost no-go",
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "frost no-go",
+  "verdict": "PASS",
+  "crit": {
+   "C5b": "PASS",
+   "C7": "PASS"
+  },
+  "why": {
+   "C5b": "contact min 3.75 (black), at-rest gaps person None car None",
+   "C7": "result alert / frost no-go (expected alert: frost no-go)"
+  },
+  "alerts": [
+   "weather no-go: frost / ice on the lane (air -3.0 C) - bins stay home"
+  ],
+  "sim_s": 46.2
+ },
+ {
+  "key": "s12a__s7",
+  "scenario": "s12a",
+  "seed": 7,
+  "title": "Geofence: pad drawn on the road verge (Pi refuses)",
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "pad outside geofence",
+  "verdict": "PASS",
+  "crit": {
+   "C5b": "PASS",
+   "C7": "PASS"
+  },
+  "why": {
+   "C5b": "contact min None (None), at-rest gaps person None car None",
+   "C7": "result alert / pad outside geofence (expected alert: pad outside geofence)"
+  },
+  "alerts": [
+   "drop spot A is -4.47 m from the road-verge boundary (< 0.3 m): not going - please re-draw the pad in the app"
+  ],
+  "sim_s": 47.0
+ },
+ {
+  "key": "s12a__s11",
+  "scenario": "s12a",
+  "seed": 11,
+  "title": "Geofence: pad drawn on the road verge (Pi refuses)",
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "pad outside geofence",
+  "verdict": "PASS",
+  "crit": {
+   "C5b": "PASS",
+   "C7": "PASS"
+  },
+  "why": {
+   "C5b": "contact min None (None), at-rest gaps person None car None",
+   "C7": "result alert / pad outside geofence (expected alert: pad outside geofence)"
+  },
+  "alerts": [
+   "drop spot A is -4.47 m from the road-verge boundary (< 0.3 m): not going - please re-draw the pad in the app"
+  ],
+  "sim_s": 47.2
+ },
+ {
+  "key": "s12a__s23",
+  "scenario": "s12a",
+  "seed": 23,
+  "title": "Geofence: pad drawn on the road verge (Pi refuses)",
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "pad outside geofence",
+  "verdict": "PASS",
+  "crit": {
+   "C5b": "PASS",
+   "C7": "PASS"
+  },
+  "why": {
+   "C5b": "contact min None (None), at-rest gaps person None car None",
+   "C7": "result alert / pad outside geofence (expected alert: pad outside geofence)"
+  },
+  "alerts": [
+   "drop spot A is -4.47 m from the road-verge boundary (< 0.3 m): not going - please re-draw the pad in the app"
+  ],
+  "sim_s": 47.8
+ },
+ {
+  "key": "s12b__s7",
+  "scenario": "s12b",
+  "seed": 7,
+  "title": "Geofence: Pi check bypassed, firmware fence HOLD at the road edge",
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "firmware fence hold",
+  "verdict": "PASS",
+  "crit": {
+   "C1": "PASS",
+   "C4": "PASS",
+   "C5b": "PASS",
+   "C7": "PASS"
+  },
+  "why": {
+   "C1": "hedge min 0.311 m at t/s [47.8, 600.0]",
+   "C4": "boundary margin 0.37 m",
+   "C5b": "contact min None (None), at-rest gaps person None car None",
+   "C7": "result alert / firmware fence hold (expected alert: firmware fence hold)"
+  },
+  "alerts": [
+   "firmware geofence HOLD at the road edge"
+  ],
+  "sim_s": 95.1
+ },
+ {
+  "key": "s12b__s11",
+  "scenario": "s12b",
+  "seed": 11,
+  "title": "Geofence: Pi check bypassed, firmware fence HOLD at the road edge",
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "firmware fence hold",
+  "verdict": "PASS",
+  "crit": {
+   "C1": "PASS",
+   "C4": "PASS",
+   "C5b": "PASS",
+   "C7": "PASS"
+  },
+  "why": {
+   "C1": "hedge min 0.313 m at t/s [47.8, 600.0]",
+   "C4": "boundary margin 0.448 m",
+   "C5b": "contact min None (None), at-rest gaps person None car None",
+   "C7": "result alert / firmware fence hold (expected alert: firmware fence hold)"
+  },
+  "alerts": [
+   "firmware geofence HOLD at the road edge"
+  ],
+  "sim_s": 95.0
+ },
+ {
+  "key": "s12b__s23",
+  "scenario": "s12b",
+  "seed": 23,
+  "title": "Geofence: Pi check bypassed, firmware fence HOLD at the road edge",
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "firmware fence hold",
+  "verdict": "PASS",
+  "crit": {
+   "C1": "PASS",
+   "C4": "PASS",
+   "C5b": "PASS",
+   "C7": "PASS"
+  },
+  "why": {
+   "C1": "hedge min 0.310 m at t/s [48.0, 600.0]",
+   "C4": "boundary margin 0.432 m",
+   "C5b": "contact min None (None), at-rest gaps person None car None",
+   "C7": "result alert / firmware fence hold (expected alert: firmware fence hold)"
+  },
+  "alerts": [
+   "firmware geofence HOLD at the road edge"
+  ],
+  "sim_s": 95.1
+ }
+]

@@ -1,0 +1,4 @@
+[  103.0] pi   pre-grab gate OK on the camera: lateral -0.001 m, yaw 0.13 deg (truth: -0.005 m, 0.28 deg, inside)
+SAVED s1a__s7 result=pass outcome=plan completed sim 3847 s
+QUEUE left 0 / 1, wall 339 s
+r5kl42bk sitl done

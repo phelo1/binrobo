@@ -1,0 +1,229 @@
+{
+ "scenario": "s6a",
+ "seed": 7,
+ "title": "Companion freeze, loaded transit (firmware failsafe)",
+ "expect": "alert",
+ "result": "alert",
+ "outcome": "companion freeze -> firmware HOLD",
+ "alerts": [],
+ "sim_time_s": 175.1,
+ "chunks": [
+  {
+   "t0": 0.0,
+   "t1": 175.1,
+   "wall": 15.2,
+   "frames": 9747,
+   "status": "done"
+  }
+ ],
+ "energy_wh": 1.14,
+ "soc_start": 0.9,
+ "soc_end": 0.8976,
+ "odo_m": 30.8,
+ "hedge_min_m": 0.367,
+ "hedge_min_at": [
+  46.8,
+  200.0
+ ],
+ "legal_min_m": null,
+ "legal_min_at": null,
+ "contact_min_m": null,
+ "contact_with": null,
+ "person_rest_min_m": null,
+ "car_rest_min_m": null,
+ "collisions": [],
+ "chain_trips": [],
+ "metrics": {
+  "placements": [],
+  "grabs": [],
+  "trips": [],
+  "stops": [],
+  "gates": [],
+  "navcam": {
+   "n": 878,
+   "cam_only": 0,
+   "both": 761,
+   "disagree": 0,
+   "none": 21
+  },
+  "first_motion_clock": null,
+  "first_motion_t": 145.0,
+  "crash": {
+   "t": 145.01,
+   "v": 0.299,
+   "mode": "GUIDED",
+   "op": "lane",
+   "hold_t": 1.7,
+   "stop_t": 2.4,
+   "stop_m": 0.595,
+   "rolled_30s_m": 0.596
+  }
+ },
+ "events": [
+  {
+   "t": 0.0,
+   "kind": "sim",
+   "text": "chunk 0 start: SITL launched, home = checkpoint pose s=200.0"
+  },
+  {
+   "t": 0.13,
+   "kind": "fw",
+   "text": "Calibrating barometer"
+  },
+  {
+   "t": 1.76,
+   "kind": "fw",
+   "text": "Barometer 1 calibration complete"
+  },
+  {
+   "t": 1.76,
+   "kind": "fw",
+   "text": "Barometer 2 calibration complete"
+  },
+  {
+   "t": 1.77,
+   "kind": "fw",
+   "text": "Beginning INS calibration. Do not move vehicle"
+  },
+  {
+   "t": 1.89,
+   "kind": "fw",
+   "text": "ArduPilot Ready"
+  },
+  {
+   "t": 1.89,
+   "kind": "fw",
+   "text": "RCInput: decoding UDP (Pulses)"
+  },
+  {
+   "t": 1.89,
+   "kind": "fw",
+   "text": "AHRS: DCM active"
+  },
+  {
+   "t": 1.89,
+   "kind": "fw",
+   "text": "GPS 1: specified as MAV"
+  },
+  {
+   "t": 2.06,
+   "kind": "fw",
+   "text": "GPS 1: detected MAV"
+  },
+  {
+   "t": 3.93,
+   "kind": "fw",
+   "text": "EKF3 IMU0 initialised"
+  },
+  {
+   "t": 3.93,
+   "kind": "fw",
+   "text": "EKF3 IMU1 initialised"
+  },
+  {
+   "t": 5.63,
+   "kind": "fw",
+   "text": "EKF3 IMU0 tilt alignment complete"
+  },
+  {
+   "t": 5.63,
+   "kind": "fw",
+   "text": "EKF3 IMU1 tilt alignment complete"
+  },
+  {
+   "t": 5.71,
+   "kind": "fw",
+   "text": "EKF3 IMU0 MAG0 initial yaw alignment complete"
+  },
+  {
+   "t": 5.71,
+   "kind": "fw",
+   "text": "EKF3 IMU1 MAG0 initial yaw alignment complete"
+  },
+  {
+   "t": 5.71,
+   "kind": "fw",
+   "text": "AHRS: EKF3 active"
+  },
+  {
+   "t": 14.05,
+   "kind": "fw",
+   "text": "EKF3 IMU0 origin set"
+  },
+  {
+   "t": 14.05,
+   "kind": "fw",
+   "text": "EKF3 IMU1 origin set"
+  },
+  {
+   "t": 14.13,
+   "kind": "fw",
+   "text": "Field Elevation Set: 34m"
+  },
+  {
+   "t": 20.61,
+   "kind": "fw",
+   "text": "SmartRTL deactivated: bad position"
+  },
+  {
+   "t": 41.97,
+   "kind": "fw",
+   "text": "EKF3 IMU0 is using GPS"
+  },
+  {
+   "t": 41.97,
+   "kind": "fw",
+   "text": "EKF3 IMU1 is using GPS"
+  },
+  {
+   "t": 45.37,
+   "kind": "fw",
+   "text": "Fence Indexed OK"
+  },
+  {
+   "t": 45.45,
+   "kind": "pi",
+   "text": "fence upload ack=0 (81 vertices)"
+  },
+  {
+   "t": 45.51,
+   "kind": "fw",
+   "text": "Warning: Arming Checks Disabled"
+  },
+  {
+   "t": 45.51,
+   "kind": "fw",
+   "text": "Throttle armed"
+  },
+  {
+   "t": 46.45,
+   "kind": "pi",
+   "text": "boot done (GUIDED, armed, fence 81 pts)"
+  },
+  {
+   "t": 145.01,
+   "kind": "pi",
+   "text": "*** COMPANION FREEZE INJECTED (op lane, v=0.30 m/s): heartbeat, attitude targets and lidar feed stop"
+  },
+  {
+   "t": 146.71,
+   "kind": "fw",
+   "text": "mode GUIDED -> HOLD"
+  },
+  {
+   "t": 146.71,
+   "kind": "fw",
+   "text": "GCS Failsafe"
+  },
+  {
+   "t": 146.71,
+   "kind": "fw",
+   "text": "firmware HOLD 1.70 s after the freeze"
+  },
+  {
+   "t": 175.11,
+   "kind": "pi",
+   "text": "FINISH alert: companion freeze -> firmware HOLD"
+  }
+ ]
+}

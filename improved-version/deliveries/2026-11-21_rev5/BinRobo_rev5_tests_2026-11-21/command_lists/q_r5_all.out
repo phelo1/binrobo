@@ -1,0 +1,111 @@
+  0 rc 0   124 s  step one
+  1 rc 0   104 s  step both
+  2 rc 0   125 s  step both_ramp
+  3 rc 0   260 s  step one
+  4 rc 0  1549 s  grab WEB140 30 201
+  5 rc 0  1502 s  grab ESE240SL 30 202
+  6 rc 0  1330 s  grab ESE240CL 30 203
+  7 rc 0  1459 s  grab ESE240CL 30 303
+  8 rc 0   954 s  grab ESE240CL 30 403
+  9 rc 0   865 s  grab ESE240CL 30 503
+ 10 rc 0    78 s  climb 0.30 0.06
+ 11 rc 0    61 s  climb 0.30 0.09
+ 12 rc 0    56 s  climb 0.25 0.06
+ 13 rc 0    58 s  climb 0.25 0.09
+ 14 rc 0    78 s  climb 0.22 0.06
+ 15 rc 0    94 s  climb 0.22 0.09
+ 16 rc 0    91 s  estop fwd
+ 17 rc 0    83 s  estop rev
+ 18 rc 0   121 s  towstab
+ 19 rc 0   104 s  rel WEB140 flat full
+ 20 rc 0    63 s  rel WEB140 flat empty
+ 21 rc 0   105 s  rel WEB140 up12 full
+ 22 rc 0    72 s  rel WEB140 up12 empty
+ 23 rc 0    88 s  rel WEB140 dn12 full
+ 24 rc 0    73 s  rel WEB140 dn12 empty
+ 25 rc 0   136 s  rel ESE240CL flat full
+ 26 rc 0    97 s  rel ESE240CL flat empty
+ 27 rc 0    76 s  rel ESE240CL up12 full
+ 28 rc 0    45 s  rel ESE240CL up12 empty
+ 29 rc 0    57 s  rel ESE240CL dn12 full
+ 30 rc 0    34 s  rel ESE240CL dn12 empty
+ 31 rc 0    59 s  rel ESE240SL250 flat full
+ 32 rc 0    46 s  rel ESE240SL250 flat empty
+ 33 rc 0    19 s  rel ESE240SL250 up12 full
+ 34 rc 0    18 s  rel ESE240SL250 up12 empty
+ 35 rc 0    18 s  rel ESE240SL250 dn12 full
+ 36 rc 0    17 s  rel ESE240SL250 dn12 empty
+ 37 rc 0    14 s  static up 110
+ 38 rc 0    15 s  static up 60
+ 39 rc 0    14 s  static dn 110
+ 40 rc 0    14 s  static dn 60
+ 41 rc 0    15 s  static crL 110
+ 42 rc 0    15 s  static crL 60
+ 43 rc 0    15 s  static crR 110
+ 44 rc 0    14 s  static crR 60
+ 45 rc 0    32 s  climb 0.25 0.09
+ 46 rc 0    30 s  estop fwd
+ 47 rc 0    26 s  tipcalc
+ 48 rc 0    17 s  climb 0.22 0.09
+ 49 rc 0    16 s  step one
+ 50 rc 0    16 s  estop fwd
+ 51 rc 0    18 s  rel ESE240CL up12 full
+ 52 rc 0    19 s  rel ESE240SL250 dn12 full
+ 53 rc 0    22 s  climb 0.22 0.09
+ 54 rc 0    32 s  step one
+ 55 rc 0    29 s  estop fwd
+ 56 rc 0    20 s  rel ESE240CL up12 full
+ 57 rc 0    19 s  rel ESE240SL250 dn12 full
+ 58 rc 0    20 s  climb 0.22 0.09
+ 59 rc 0    16 s  step one
+ 60 rc 0    18 s  estop fwd
+ 61 rc 0    18 s  rel ESE240CL up12 full
+ 62 rc 0    18 s  rel ESE240SL250 dn12 full
+ 63 rc 0    18 s  climb 0.22 0.09
+ 64 rc 0    16 s  step one
+ 65 rc 0    15 s  estop fwd
+ 66 rc 0    18 s  rel ESE240CL up12 full
+ 67 rc 0    19 s  rel ESE240SL250 dn12 full
+ 68 rc 0   286 s  grab ESE240SL 5 202
+ 69 rc 0   218 s  grab ESE240SL 5 202
+ 70 rc 0   239 s  grab ESE240SL 5 202
+ 71 rc 0   487 s  grab ESE240SL 5 202
+ 72 rc 0    19 s  ret ESE240SL step 0.5
+ 73 rc 0    18 s  ret ESE240SL step 0.8
+ 74 rc 0   104 s  ret ESE240SL trench 0.5
+ 75 rc 0    84 s  ret ESE240SL trench 0.8
+ 76 rc 0    61 s  ret ESE240SL pothole 0.5
+ 77 rc 0   131 s  ret ESE240SL pothole 0.8
+ 78 rc 0    44 s  ret WEB140 step 0.5
+ 79 rc 0    61 s  ret WEB140 step 0.8
+ 80 rc 0   224 s  ret WEB140 trench 0.5
+ 81 rc 0   229 s  ret WEB140 trench 0.8
+ 82 rc 0   229 s  ret WEB140 pothole 0.5
+ 83 rc 0   232 s  ret WEB140 pothole 0.8
+ 84 rc 0    72 s  tyrecal
+ 85 rc 0    88 s  kerb 0.5 nose
+ 86 rc 0    65 s  kerb 0.5 nose
+ 87 rc 0    46 s  kerb 0.5 nose
+ 88 rc 0    51 s  kerb 0.5 nose ramp
+ 89 rc 0    56 s  kerb 0.5 nose
+ 90 rc 0    56 s  kerb 0.5 nose
+ 91 rc 0    46 s  ret ESE240SL step 0.8
+ 92 rc 0   232 s  ret ESE240SL pothole 0.8
+ 93 rc 0    51 s  ret ESE240SL step 0.8
+ 94 rc 0   218 s  ret ESE240SL pothole 0.8
+ 95 rc 0    37 s  kerb 0.8 nose
+ 96 rc 0    45 s  kerb 0.5 tail
+ 97 rc 0    34 s  kerb 0.8 nose
+ 98 rc 0    31 s  kerb 0.5 tail
+ 99 rc 0    27 s  kerb 0.5 nose
+100 rc 0    24 s  kerb 0.5 nose
+101 rc 0    26 s  climbn 0.22 0.06
+102 rc 0    27 s  climbn 0.25 0.06
+103 rc 0    25 s  climbn 0.30 0.06
+104 rc 0    29 s  climbn 0.22 0.06
+105 rc 0    23 s  static up 110
+106 rc 0    41 s  static dn 110
+107 rc 0    40 s  static crL 110
+108 rc 0    35 s  static crR 110
+109 rc 0    45 s  tipcalc
+batch done in 7429 s

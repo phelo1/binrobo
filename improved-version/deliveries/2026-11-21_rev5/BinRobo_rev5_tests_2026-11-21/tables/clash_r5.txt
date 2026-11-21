@@ -1,0 +1,48 @@
+  raised 10 mm with the nose member: 10 ['AU Horn speaker 15 W', 'CM LTE antenna', 'SN 2D lidar', 'SN Front camera', 'SN Front camera lens', 'SN GNSS antenna', 'SN Lidar bracket, 80 mm arm ', 'SN Lidar window', 'SN Radar, front', 'SN Sensor post D40 on a foot']
+pieces 181 items 88 triangles 59891
+by source: {'CAD': 18, 'changed': 36, 'new': 34}
+items without geometry: []
+robot envelope nobin (mm): x -401..1335  y -471..471  z 0..1510
+== nobin: 15 pairs with more than 1.0 cm3 in common (0 involve a part I changed or added)
+      69.0 cm3  BIN 240 L body, corrected hull (front taper 35 mm, rear dr x BIN Lid (hinge at the rear)                                legacy
+      28.1 cm3  AT Anti-tip bracket R                                      x AT Anti-tip roller R D80 (y 420)                           legacy
+      28.1 cm3  AT Anti-tip bracket L                                      x AT Anti-tip roller L D80 (y 420)                           legacy
+      13.8 cm3  BIN Handle bracket                                         x BIN Lid (hinge at the rear)                                legacy
+      13.8 cm3  BIN Handle bracket                                         x BIN Lid (hinge at the rear)                                legacy
+      10.0 cm3  GU Mouth flare R                                           x AT Anti-tip roller R D80 (y 420)                           legacy
+      10.0 cm3  GU Mouth flare L                                           x AT Anti-tip roller L D80 (y 420)                           legacy
+       6.3 cm3  BIN Axle                                                   x BIN Wheel hub [bwR]                                        legacy
+       6.3 cm3  BIN Axle                                                   x BIN Wheel hub [bwL]                                        legacy
+       3.7 cm3  BIN 240 L body, corrected hull (front taper 35 mm, rear dr x BIN Wheel 200 mm [bwR]                                     legacy
+       3.7 cm3  BIN 240 L body, corrected hull (front taper 35 mm, rear dr x BIN Wheel 200 mm [bwL]                                     legacy
+       3.1 cm3  CA Castor fork 200 mm [cforkR]                             x CA Castor hub [cwheelR]                                    legacy
+       3.1 cm3  CA Castor fork 200 mm [cforkL]                             x CA Castor hub [cwheelL]                                    legacy
+       1.4 cm3  SF Rear bumper R (foam + switch)                           x SF Rear bumper stripe R                                    legacy
+       1.4 cm3  SF Rear bumper L (foam + switch)                           x SF Rear bumper stripe L                                    legacy
+== carry: 15 pairs with more than 1.0 cm3 in common (0 involve a part I changed or added)
+      79.3 cm3  BIN 240 L body, corrected hull (front taper 35 mm, rear dr x BIN Lid (hinge at the rear)                                legacy
+      28.1 cm3  AT Anti-tip bracket R                                      x AT Anti-tip roller R D80 (y 420)                           legacy
+      28.1 cm3  AT Anti-tip bracket L                                      x AT Anti-tip roller L D80 (y 420)                           legacy
+      13.8 cm3  BIN Handle bracket                                         x BIN Lid (hinge at the rear)                                legacy
+      13.8 cm3  BIN Handle bracket                                         x BIN Lid (hinge at the rear)                                legacy
+      10.0 cm3  GU Mouth flare R                                           x AT Anti-tip roller R D80 (y 420)                           legacy
+      10.0 cm3  GU Mouth flare L                                           x AT Anti-tip roller L D80 (y 420)                           legacy
+       6.3 cm3  BIN Axle                                                   x BIN Wheel hub [bwR]                                        legacy
+       6.3 cm3  BIN Axle                                                   x BIN Wheel hub [bwL]                                        legacy
+       3.7 cm3  BIN 240 L body, corrected hull (front taper 35 mm, rear dr x BIN Wheel 200 mm [bwR]                                     legacy
+       3.7 cm3  BIN 240 L body, corrected hull (front taper 35 mm, rear dr x BIN Wheel 200 mm [bwL]                                     legacy
+       3.1 cm3  CA Castor fork 200 mm [cforkR]                             x CA Castor hub [cwheelR]                                    legacy
+       3.1 cm3  CA Castor fork 200 mm [cforkL]                             x CA Castor hub [cwheelL]                                    legacy
+       1.4 cm3  SF Rear bumper R (foam + switch)                           x SF Rear bumper stripe R                                    legacy
+       1.4 cm3  SF Rear bumper L (foam + switch)                           x SF Rear bumper stripe L                                    legacy
+== lift sweep: 26 moving parts against 119 fixed parts; lift at -0.1 mm in the no-bin pose; sweep up from 0 to 350 mm and down from 0 to -25 mm in 0.5 mm steps
+   q   -25 mm  LC Carriage plate 16 mm aluminium 6082, two windows, fou meets SW Lift down limit switch L (channel A), roller lever up (0.3 cm3)
+   q   -25 mm  LC Carriage plate 16 mm aluminium 6082, two windows, fou meets SW Lift down limit switch R (channel B), roller lever up (0.3 cm3)
+   q   -18 mm  LC Carriage cross-beam 50x50x4 RHS S355 behind the plate meets LM Lift bottom stop block L: 30x45 aluminium bar on the  (0.6 cm3)
+   q   -18 mm  LC Carriage cross-beam 50x50x4 RHS S355 behind the plate meets LM Lift bottom stop block R: 30x45 aluminium bar on the  (0.6 cm3)
+   q   340 mm  LC Carriage cross-beam 50x50x4 RHS S355 behind the plate meets LM Lift top stop block L: 30x45 aluminium bar on the inn (0.6 cm3)
+   q   340 mm  LC Carriage cross-beam 50x50x4 RHS S355 behind the plate meets LM Lift top stop block R: 30x45 aluminium bar on the inn (0.6 cm3)
+   q   346 mm  LC Carriage plate 16 mm aluminium 6082, two windows, fou meets SW Lift top limit switch L (channel A), roller lever dow (0.3 cm3)
+   q   346 mm  LC Carriage plate 16 mm aluminium 6082, two windows, fou meets SW Lift top limit switch R (channel B), roller lever dow (0.3 cm3)
+== looms, nobin: 0 loom/part pairs where the loom centre-line is inside a solid
+== looms, carry: 0 loom/part pairs where the loom centre-line is inside a solid

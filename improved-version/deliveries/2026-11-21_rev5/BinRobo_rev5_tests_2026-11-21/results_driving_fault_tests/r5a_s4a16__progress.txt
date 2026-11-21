@@ -1,0 +1,18 @@
+SAVED s4a__s1 result=pass outcome=plan completed sim 329 s
+SAVED s4a__s2 result=pass outcome=plan completed sim 328 s
+SAVED s4a__s3 result=pass outcome=plan completed sim 326 s
+SAVED s4a__s4 result=pass outcome=plan completed sim 329 s
+SAVED s4a__s5 result=pass outcome=plan completed sim 327 s
+SAVED s4a__s6 result=pass outcome=plan completed sim 328 s
+SAVED s4a__s7 result=pass outcome=plan completed sim 326 s
+SAVED s4a__s8 result=pass outcome=plan completed sim 322 s
+SAVED s4a__s9 result=pass outcome=plan completed sim 326 s
+SAVED s4a__s10 result=pass outcome=plan completed sim 322 s
+SAVED s4a__s11 result=pass outcome=plan completed sim 324 s
+SAVED s4a__s12 result=pass outcome=plan completed sim 328 s
+SAVED s4a__s13 result=pass outcome=plan completed sim 326 s
+SAVED s4a__s14 result=pass outcome=plan completed sim 327 s
+SAVED s4a__s15 result=pass outcome=plan completed sim 322 s
+SAVED s4a__s16 result=pass outcome=plan completed sim 322 s
+QUEUE left 0 / 16, wall 514 s
+r5a_s4a16 sitl done

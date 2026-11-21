@@ -1,0 +1,5 @@
+[  104.1] pi   rear camera: bin axis 0.004 m off the estimate (camera -0.030 m) -> estimate corrected, re-aligning
+[  121.5] pi   pre-grab gate OK on the camera: lateral -0.002 m, yaw 0.11 deg (truth: -0.005 m, 0.26 deg, inside)
+SAVED s1a__s7 result=pass outcome=plan completed sim 3870 s
+QUEUE left 0 / 1, wall 390 s
+r5kl35 sitl done

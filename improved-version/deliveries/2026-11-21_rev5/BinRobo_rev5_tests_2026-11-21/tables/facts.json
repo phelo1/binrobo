@@ -1,0 +1,111 @@
+{
+ "kg": "180",
+ "pivot": "2.81",
+ "kl_gap": 0.42,
+ "speed_rule": [
+  [
+   "level or uphill",
+   "0.4 m/s",
+   "0.4 m/s"
+  ],
+  [
+   "downhill, up to 3 %",
+   "0.4 m/s",
+   "0.3 m/s"
+  ],
+  [
+   "downhill, 3 to 6 %",
+   "0.3 m/s",
+   "0.3 m/s"
+  ],
+  [
+   "downhill, 6 to 9 %",
+   "0.3 m/s",
+   "tail first, 0.2 m/s"
+  ],
+  [
+   "downhill, steeper than 9 %",
+   "0.2 m/s",
+   "tail first, 0.2 m/s"
+  ]
+ ],
+ "speed_notes": [
+  "Longest simulated stop under this rule: 129 mm (wet surface, grip 0.30; 0.15 s from the touch to the brakes). Full bin on the 12 % pitch at 0.2 m/s: 107 mm.",
+  "Only the two drive wheels brake, and without a bin over half the weight is on the castors. So the empty robot comes down any pitch steeper than 6 % tail first, with the drive wheels downhill: 71 mm from 0.2 m/s on a wet 12 % pitch, 171 mm on wet leaves. Nose first it needs 354 mm on the wet pitch and does not stop on wet leaves.",
+  "Tail-first driving is tested in the lane simulation (reply note); it is not yet in the mission software, which still drives nose first at 0.2 m/s there.",
+  "The 150 mm of give in the foam and the 0.15 s are assumptions. Measure the stop on the built robot before it runs unattended."
+ ],
+ "lower_notes": [
+  "Before the bin comes down, a ToF sensor behind each leg guard reads the ground where the bin wheel will land and compares it with the bare ground it saw on arrival. 10 mm short: no lowering. In simulation a 10 mm block reads 12 mm short and a 20 mm block 24 mm short.",
+  "On the way down (6 mm/s for the last 100 mm) the firmware watches the load on the lift while the bin is more than 8 mm above the expected touchdown: a drop of more than 80 N (or 10 % of the bin's weight) stops it and raises 30 mm. Results by block height are in the reply note.",
+  "No lowering while the rear camera or the rear lidar shows anyone within 1 m of the bin. The robot sounds a warning first.",
+  "The lift driver's current limits (6 A up, 3 A down) are starting values: set them on the bench at 0 C, where the actuator draws more."
+ ],
+ "people_rules": [
+  "1. Forward: an unknown object or person in the robot's path inside 4 m: slow to 0.25 m/s. Inside 1.5 m: stop and wait; move on when the path has been clear for 3 s. The lidar does this for anything not on its map; the camera does it for a person or dog within 0.5 m of the robot's sides, whatever the map says.",
+  "2. Protective field (new): anything at all, hedge included, inside the robot's own path up to 0.6 m ahead of the nose or within 80 mm of its sides: stop, back out 0.8 m, start again from the lane edges. Three times in two minutes: hold and call the owner. It does not use the map or the satellite position.",
+  "3. Keeping left: the robot's left side stays 0.42 m from the left edge of the lane. The lidar measures the hedge face and the camera the left edge. If they differ by more than 0.25 m, the reading that fits the known lane width is used. Never planned closer than 0.20 m to the left hedge or 0.35 m to the right.",
+  "4. Turning: pivot turns are slow. In the mission runs the nose corner moves at 0.3 to 0.6 m/s at the peak (it was 1.0 to 1.2 m/s). Before a pivot the turning circle is checked against the map and known objects; a lidar check for anything else in the circle is still to be written. In the lane the heading command may change at 0.15 rad/s at most. A stopped robot holds the heading it stopped at.",
+  "5. Reverse moves: 0.1 m/s, watched by the rear lidar and the rear camera. Coming down a steep pitch tail first (empty): 0.2 m/s under the same two sensors.",
+  "6. Lowering the bin: see sheet 17.",
+  "7. Last line: the switch strips on the front and both sides of the soft nose, and the two rear bumper switches, open the stop chain at the first touch.",
+  "8. Self-check: each sensor is tested at the start of a trip and must keep reporting. If one stops, the robot goes on at 0.2 m/s on the other and reports it; if both stop, it stops."
+ ],
+ "people_rows": [
+  [
+   "level, full bin, 0.4 m/s",
+   "0.40",
+   "0.46",
+   "0.90",
+   "1.97"
+  ],
+  [
+   "level, empty, 0.4 m/s",
+   "0.42",
+   "0.48",
+   "0.92",
+   "1.96"
+  ],
+  [
+   "6 % down, full bin, 0.3 m/s",
+   "0.31",
+   "0.37",
+   "0.71",
+   "1.50"
+  ],
+  [
+   "6 % down, empty, 0.3 m/s",
+   "0.35",
+   "0.40",
+   "0.73",
+   "1.51"
+  ],
+  [
+   "12 % down, full bin, 0.2 m/s",
+   "0.25",
+   "0.29",
+   "0.51",
+   "1.05"
+  ],
+  [
+   "12 % down, empty, tail first, 0.2 m/s",
+   "0.22",
+   "0.25",
+   "0.47",
+   "1.00"
+  ],
+  [
+   "12 % down on wet leaves, empty, tail first, 0.2 m/s",
+   "0.32",
+   "0.35",
+   "0.57",
+   "1.12"
+  ]
+ ],
+ "people_notes": [
+  "Assumed until measured on the built robot: lidar 10 scans a second, an adult's legs found in 90 % of scans; camera 5 frames a second, a person found in 85 % of frames by day and 60 % at night with the infra-red light; 0.15 s to process. Stopping distances are the simulated ones.",
+  "A person who steps out closer than these distances is touched by the soft nose at a speed at which the robot stops inside the foam (sheet 17).",
+  "What the lidar cannot see at 0.30 m: something lower than that lying on the ground. The camera and the soft nose cover it.",
+  "In the mission software and tested: rules 1 to 4 and the 0.1 m/s reverse. Not yet in the mission software: tail first, the rear sensors, rule 8. Nothing on this sheet is a certified safety function."
+ ]
+}

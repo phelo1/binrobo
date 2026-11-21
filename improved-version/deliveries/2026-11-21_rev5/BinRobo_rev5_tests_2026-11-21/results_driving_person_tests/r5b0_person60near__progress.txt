@@ -1,0 +1,5 @@
+SAVED s5a__s7 result=pass outcome=plan completed sim 349 s
+SAVED s5a__s11 result=pass outcome=plan completed sim 356 s
+SAVED s5a__s23 result=pass outcome=plan completed sim 287 s
+QUEUE left 0 / 3, wall 79 s
+r5b_person60near sitl done

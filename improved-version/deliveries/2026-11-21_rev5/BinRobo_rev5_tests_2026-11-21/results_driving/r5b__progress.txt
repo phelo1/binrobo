@@ -1,0 +1,104 @@
+[  128.9] pi   pre-grab gate OK on the camera: lateral 0.022 m, yaw -1.14 deg (truth: 0.019 m, -0.99 deg, inside)
+[  207.0] pi   yard exit path 10.1 m from lateral -4.27 m, map / known-object clearance 0.75 m
+[  133.0] pi   pre-grab gate OK on the camera: lateral 0.006 m, yaw -0.58 deg (truth: 0.015 m, -0.86 deg, inside)
+[  212.1] pi   yard exit path 10.0 m from lateral -4.26 m, map / known-object clearance 0.71 m
+[ 4329.9] pi   pre-grab gate OK on the camera: lateral -0.006 m, yaw 0.09 deg (truth: 0.003 m, -0.29 deg, inside)
+[ 4278.0] pi   pre-grab gate OK on the camera: lateral 0.005 m, yaw 0.13 deg (truth: 0.016 m, -0.60 deg, inside)
+[ 8155.9] pi   rear camera: bin axis 0.004 m off the estimate (camera 0.038 m) -> estimate corrected, re-aligning
+[ 8173.9] pi   pre-grab gate OK on the camera: lateral 0.006 m, yaw -0.58 deg (truth: 0.011 m, -0.44 deg, inside)
+[ 8245.0] pi   yard exit path 8.5 m from lateral -2.99 m, map / known-object clearance 2.85 m
+[ 8121.0] pi   pre-grab gate OK on the camera: lateral 0.017 m, yaw -0.15 deg (truth: 0.015 m, -0.62 deg, inside)
+[ 8192.1] pi   yard exit path 8.5 m from lateral -2.99 m, map / known-object clearance 2.85 m
+SAVED s3a__s7 result=pass outcome=plan completed sim 11934 s
+[  129.9] pi   pre-grab gate OK on the camera: lateral 0.001 m, yaw -0.91 deg (truth: 0.000 m, -1.15 deg, inside)
+[  206.0] pi   yard exit path 9.5 m from lateral -4.37 m, map / known-object clearance 0.79 m
+[ 4298.9] pi   rear camera: bin axis -0.001 m off the estimate (camera -0.039 m) -> estimate corrected, re-aligning
+[ 4319.4] pi   pre-grab gate OK on the camera: lateral -0.006 m, yaw -0.31 deg (truth: -0.008 m, 0.40 deg, inside)
+SAVED s3a__s11 result=pass outcome=plan completed sim 11845 s
+[ 8141.9] pi   rear camera: bin axis 0.009 m off the estimate (camera -0.044 m) -> estimate corrected, re-aligning
+[ 8164.9] pi   pre-grab gate OK on the camera: lateral 0.019 m, yaw -0.94 deg (truth: 0.021 m, -1.16 deg, inside)
+[ 8228.0] pi   yard exit path 8.5 m from lateral -2.96 m, map / known-object clearance 2.85 m
+[ 2207.7] pi   rear camera: bin axis 0.053 m off the estimate (camera -0.034 m) -> estimate corrected, re-aligning
+[ 2224.1] pi   pre-grab gate OK on the camera: lateral 0.004 m, yaw 1.34 deg (truth: 0.001 m, 1.49 deg, inside)
+SAVED s3a__s23 result=pass outcome=plan completed sim 11906 s
+[ 6333.6] pi   pre-grab gate OK on the camera: lateral 0.008 m, yaw -0.34 deg (truth: 0.017 m, -0.72 deg, inside)
+[ 2224.6] pi   pre-grab gate OK on the camera: lateral -0.035 m, yaw -0.09 deg (truth: -0.025 m, -0.37 deg, inside)
+SAVED s3b__s7 result=alert outcome=too late sim 8245 s
+[ 2217.0] pi   rear camera: bin axis 0.001 m off the estimate (camera 0.037 m) -> estimate corrected, re-aligning
+[ 2238.6] pi   pre-grab gate OK on the camera: lateral 0.022 m, yaw 0.02 deg (truth: 0.021 m, -0.21 deg, inside)
+[ 6304.5] pi   pre-grab gate OK on the camera: lateral -0.010 m, yaw -0.10 deg (truth: 0.000 m, -0.82 deg, inside)
+SAVED s3b__s11 result=alert outcome=too late sim 8233 s
+[  103.0] pi   pre-grab gate OK on the camera: lateral -0.006 m, yaw -0.90 deg (truth: -0.009 m, -0.75 deg, inside)
+[ 6347.5] pi   pre-grab gate OK on the camera: lateral 0.020 m, yaw -2.14 deg (truth: 0.017 m, -1.44 deg, inside)
+SAVED s3b__s23 result=alert outcome=too late sim 8252 s
+[  103.0] pi   pre-grab gate OK on the camera: lateral 0.008 m, yaw -0.17 deg (truth: 0.018 m, -0.45 deg, inside)
+SAVED s1a__s7 result=pass outcome=plan completed sim 3881 s
+[  102.1] pi   pre-grab gate OK on the camera: lateral 0.005 m, yaw 0.22 deg (truth: 0.003 m, -0.02 deg, inside)
+SAVED s1a__s11 result=pass outcome=plan completed sim 3865 s
+SAVED s1a__s23 result=pass outcome=plan completed sim 3908 s
+[ 2240.1] pi   pre-grab gate OK on the camera: lateral 0.010 m, yaw 0.76 deg (truth: 0.006 m, 0.90 deg, inside)
+[ 2260.6] pi   pre-grab gate OK on the camera: lateral -0.019 m, yaw 0.13 deg (truth: -0.010 m, -0.15 deg, inside)
+SAVED s1b__s7 result=pass outcome=plan completed sim 4162 s
+SAVED s1b__s11 result=pass outcome=plan completed sim 4166 s
+SAVED s10a__s7 result=alert outcome=bin tipped sim 225 s
+[ 2246.1] pi   rear camera: bin axis -0.006 m off the estimate (camera 0.054 m) -> estimate corrected, re-aligning
+[ 2267.1] pi   pre-grab gate OK on the camera: lateral -0.005 m, yaw -0.31 deg (truth: -0.006 m, -0.54 deg, inside)
+SAVED s10a__s23 result=alert outcome=bin tipped sim 225 s
+SAVED s10b__s11 result=alert outcome=bin blocked sim 225 s
+SAVED s11a__s7 result=alert outcome=wind no-go sim 48 s
+SAVED s11a__s23 result=alert outcome=wind no-go sim 47 s
+SAVED s11b__s11 result=alert outcome=frost no-go sim 47 s
+SAVED s12a__s7 result=alert outcome=pad outside geofence sim 47 s
+SAVED s12a__s23 result=alert outcome=pad outside geofence sim 48 s
+SAVED s12b__s11 result=alert outcome=firmware fence hold sim 95 s
+SAVED s4a__s7 result=pass outcome=plan completed sim 326 s
+SAVED s1b__s23 result=pass outcome=plan completed sim 4185 s
+SAVED s4a__s23 result=pass outcome=plan completed sim 326 s
+SAVED s10a__s11 result=alert outcome=bin tipped sim 225 s
+SAVED s4b__s11 result=pass outcome=plan completed sim 325 s
+SAVED s10b__s7 result=alert outcome=bin blocked sim 225 s
+SAVED s4c__s7 result=alert outcome=no fix hold sim 256 s
+SAVED s10b__s23 result=alert outcome=bin blocked sim 225 s
+SAVED s11a__s11 result=alert outcome=wind no-go sim 47 s
+SAVED s4c__s23 result=alert outcome=no fix hold sim 258 s
+SAVED s11b__s7 result=alert outcome=frost no-go sim 48 s
+SAVED s11b__s23 result=alert outcome=frost no-go sim 46 s
+SAVED s12a__s11 result=alert outcome=pad outside geofence sim 47 s
+SAVED s5a__s11 result=pass outcome=plan completed sim 280 s
+SAVED s12b__s7 result=alert outcome=firmware fence hold sim 95 s
+SAVED s12b__s23 result=alert outcome=firmware fence hold sim 95 s
+SAVED s5b__s7 result=pass outcome=plan completed sim 281 s
+SAVED s4a__s11 result=pass outcome=plan completed sim 325 s
+SAVED s5b__s23 result=pass outcome=plan completed sim 292 s
+SAVED s6a__s11 result=alert outcome=companion freeze -> firmware HOLD sim 177 s
+SAVED s4b__s7 result=pass outcome=plan completed sim 328 s
+[   85.0] pi   rear camera: bin axis 0.005 m off the estimate (camera 0.033 m) -> estimate corrected, re-aligning
+[  112.0] pi   pre-grab gate OK on the camera: lateral -0.003 m, yaw -0.00 deg (truth: -0.007 m, 0.15 deg, inside)
+SAVED s6b__s7 result=alert outcome=companion freeze -> firmware HOLD sim 146 s
+[   85.0] pi   pre-grab gate OK on the camera: lateral 0.014 m, yaw 1.70 deg (truth: 0.013 m, 1.47 deg, inside)
+SAVED s6b__s23 result=alert outcome=companion freeze -> firmware HOLD sim 119 s
+SAVED s4b__s23 result=pass outcome=plan completed sim 327 s
+SAVED s7__s11 result=alert outcome=e-stop sim 304 s
+SAVED s4c__s11 result=alert outcome=no fix hold sim 253 s
+SAVED s8__s7 result=alert outcome=energy guard sim 47 s
+SAVED s8__s23 result=alert outcome=energy guard sim 47 s
+SAVED s5a__s7 result=pass outcome=plan completed sim 280 s
+SAVED s9__s11 result=alert outcome=bin missing sim 299 s
+QUEUE left 0 / 30, wall 3140 s
+r5b sitl done
+SAVED s5a__s23 result=pass outcome=plan completed sim 286 s
+SAVED s5b__s11 result=pass outcome=plan completed sim 279 s
+SAVED s6a__s7 result=alert outcome=companion freeze -> firmware HOLD sim 177 s
+SAVED s6a__s23 result=alert outcome=companion freeze -> firmware HOLD sim 177 s
+[   84.1] pi   rear camera: bin axis -0.018 m off the estimate (camera 0.026 m) -> estimate corrected, re-aligning
+[  104.6] pi   rear camera: bin axis 0.015 m off the estimate (camera -0.037 m) -> estimate corrected, re-aligning
+[  122.1] pi   rear camera: bin axis 0.018 m off the estimate (camera -0.031 m) -> estimate corrected, re-aligning
+[  141.3] pi   pre-grab gate OK on the camera: lateral -0.004 m, yaw 1.73 deg (truth: 0.006 m, 1.45 deg, inside)
+SAVED s6b__s11 result=alert outcome=companion freeze -> firmware HOLD sim 175 s
+SAVED s7__s7 result=alert outcome=e-stop sim 303 s
+SAVED s7__s23 result=alert outcome=e-stop sim 253 s
+SAVED s8__s11 result=alert outcome=energy guard sim 48 s
+SAVED s9__s7 result=alert outcome=bin missing sim 300 s
+SAVED s9__s23 result=alert outcome=bin missing sim 300 s
+QUEUE left 0 / 30, wall 3288 s
+r5b sitl done

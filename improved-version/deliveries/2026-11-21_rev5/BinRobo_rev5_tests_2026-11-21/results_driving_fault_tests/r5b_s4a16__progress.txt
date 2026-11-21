@@ -1,0 +1,7 @@
+SAVED s4a__s1 result=pass outcome=plan completed sim 328 s
+SAVED s4a__s2 result=pass outcome=plan completed sim 328 s
+SAVED s4a__s3 result=pass outcome=plan completed sim 327 s
+SAVED s4a__s4 result=pass outcome=plan completed sim 330 s
+SAVED s4a__s5 result=pass outcome=plan completed sim 326 s
+Traceback (most recent call last):
+    print('QUEUE left %d / %d, wall %.0f s' % (len(left), len(lines), time.time() - t0), flush=True)

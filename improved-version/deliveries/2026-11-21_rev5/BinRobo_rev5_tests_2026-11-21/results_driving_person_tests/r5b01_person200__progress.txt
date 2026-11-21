@@ -1,0 +1,5 @@
+SAVED s5a__s7 result=pass outcome=plan completed sim 487 s
+SAVED s5a__s11 result=alert outcome=path blocked sim 241 s
+SAVED s5a__s23 result=pass outcome=plan completed sim 293 s
+QUEUE left 0 / 3, wall 89 s
+r5b_person200 sitl done

@@ -1,0 +1,27 @@
+[  124.0] pi   pre-grab gate OK on the camera: lateral 0.015 m, yaw -0.99 deg (truth: 0.012 m, -0.84 deg, inside)
+[  186.0] pi   yard exit path 9.5 m from lateral -4.36 m, map / known-object clearance 0.78 m
+[  121.0] pi   pre-grab gate OK on the camera: lateral -0.017 m, yaw -0.25 deg (truth: -0.018 m, -0.48 deg, inside)
+[  177.0] pi   yard exit path 9.5 m from lateral -4.35 m, map / known-object clearance 0.76 m
+[ 4235.9] pi   pre-grab gate OK on the camera: lateral 0.000 m, yaw -0.24 deg (truth: 0.009 m, -0.62 deg, inside)
+[ 4229.9] pi   pre-grab gate OK on the camera: lateral -0.001 m, yaw -1.44 deg (truth: -0.004 m, -0.74 deg, inside)
+[ 8035.9] pi   rear camera: bin axis 0.005 m off the estimate (camera 0.029 m) -> estimate corrected, re-aligning
+[ 8052.4] pi   pre-grab gate OK on the camera: lateral -0.004 m, yaw 0.64 deg (truth: 0.002 m, 0.77 deg, inside)
+[ 8108.0] pi   yard exit path 8.5 m from lateral -2.97 m, map / known-object clearance 2.88 m
+[ 8021.9] pi   pre-grab gate OK on the camera: lateral 0.016 m, yaw -0.37 deg (truth: 0.018 m, -0.59 deg, inside)
+[ 8074.0] pi   yard exit path 8.5 m from lateral -2.95 m, map / known-object clearance 2.85 m
+SAVED s3a__s23 result=pass outcome=plan completed sim 11731 s
+SAVED s3a__s7 result=pass outcome=plan completed sim 11796 s
+SAVED s5b__s23 result=pass outcome=plan completed sim 279 s
+SAVED s5b__s7 result=pass outcome=plan completed sim 269 s
+[ 2178.7] pi   pre-grab gate OK on the camera: lateral 0.019 m, yaw 0.97 deg (truth: 0.016 m, 1.12 deg, inside)
+[ 2215.1] pi   rear camera: bin axis -0.042 m off the estimate (camera 0.092 m) -> estimate corrected, re-aligning
+[ 2233.7] pi   pre-grab gate OK on the camera: lateral 0.005 m, yaw 0.20 deg (truth: 0.004 m, -0.03 deg, inside)
+SAVED s1b__s23 result=pass outcome=plan completed sim 4151 s
+QUEUE left 0 / 4, wall 1259 s
+r5b_fix sitl done
+[ 6235.5] pi   pre-grab gate OK on the camera: lateral -0.023 m, yaw 0.41 deg (truth: -0.014 m, 0.04 deg, inside)
+SAVED s3b__s7 result=alert outcome=too late sim 8147 s
+[  104.1] pi   pre-grab gate OK on the camera: lateral -0.003 m, yaw 0.38 deg (truth: -0.005 m, 0.15 deg, inside)
+SAVED s1a__s23 result=pass outcome=plan completed sim 3879 s
+QUEUE left 0 / 3, wall 1818 s
+r5b_fix sitl done

@@ -1,0 +1,8 @@
+== r5b: 60 runs; results: {'bin blocked': 3, 'bin missing': 3, 'bin tipped': 3, 'companion freeze -> firmware HOLD': 6, 'e-stop': 3, 'energy guard': 3, 'firmware fence hold': 3, 'frost no-go': 3, 'no fix hold': 3, 'pad outside geofence': 3, 'plan completed': 21, 'too late': 3, 'wind no-go': 3}
+   trips 21: Wh 69.2..72.3 (mean 70.7); minutes 63.2..70.4 (mean 66.7)
+   placements 24: error mm max 64 mean 38; handle angle max 1.2 deg
+   gate: camera OK 24, truth OK 24; camera OK but truth outside 0; camera refused but truth inside 0
+   gate worst true lateral 25 mm, worst true yaw 1.49 deg
+   seating checks 21: ok 21; worst measured 22.7 mm, worst true 22.9 mm; worst sensor error 12.9 mm
+   refused: []
+   multi-trip runs, last time on the dock: [('s3a__s11', 'D-1 21:17'), ('s3a__s23', 'D-1 21:18'), ('s3a__s7', 'D-1 21:18'), ('s3b__s11', 'D0 20:17'), ('s3b__s23', 'D0 20:17'), ('s3b__s7', 'D0 20:17')]

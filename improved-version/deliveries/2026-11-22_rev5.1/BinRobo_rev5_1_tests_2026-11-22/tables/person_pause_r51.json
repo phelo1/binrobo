@@ -1,0 +1,494 @@
+[
+ {
+  "test": "r51_final_s5a",
+  "what": "scenario as written, under the revision 5.1 speed rule",
+  "seed": 11,
+  "result": "pass",
+  "outcome": "plan completed",
+  "closest_person_m": null,
+  "contact_min_m": 3.193,
+  "contact_with": "dog",
+  "collisions": [],
+  "hedge_min_m": 0.338,
+  "alerts": [],
+  "pauses": [
+   {
+    "first_seen_at_m": 4.91,
+    "waited_s": 13.8,
+    "station_m": 314
+   },
+   {
+    "first_seen_at_m": 4.11,
+    "waited_s": 9.2,
+    "station_m": 345
+   }
+  ],
+  "sim_time_s": 297.9,
+  "energy_wh": 5.7
+ },
+ {
+  "test": "r51_final_s5a",
+  "what": "scenario as written, under the revision 5.1 speed rule",
+  "seed": 23,
+  "result": "pass",
+  "outcome": "plan completed",
+  "closest_person_m": null,
+  "contact_min_m": 4.061,
+  "contact_with": "dog",
+  "collisions": [],
+  "hedge_min_m": 0.37,
+  "alerts": [],
+  "pauses": [
+   {
+    "first_seen_at_m": 4.95,
+    "waited_s": 10.0,
+    "station_m": 314
+   },
+   {
+    "first_seen_at_m": 4.6,
+    "waited_s": 9.2,
+    "station_m": 344
+   }
+  ],
+  "sim_time_s": 298.7,
+  "energy_wh": 5.69
+ },
+ {
+  "test": "r51_final_s5a",
+  "what": "scenario as written, under the revision 5.1 speed rule",
+  "seed": 7,
+  "result": "pass",
+  "outcome": "plan completed",
+  "closest_person_m": null,
+  "contact_min_m": 3.211,
+  "contact_with": "dog",
+  "collisions": [],
+  "hedge_min_m": 0.376,
+  "alerts": [],
+  "pauses": [
+   {
+    "first_seen_at_m": 4.92,
+    "waited_s": 13.8,
+    "station_m": 314
+   },
+   {
+    "first_seen_at_m": 3.8,
+    "waited_s": 9.2,
+    "station_m": 345
+   }
+  ],
+  "sim_time_s": 298.8,
+  "energy_wh": 5.71
+ },
+ {
+  "test": "r51_s5a",
+  "what": "scenario as written: a walker comes up the lane, then a dog crosses (night rate 0.60)",
+  "seed": 11,
+  "result": "pass",
+  "outcome": "plan completed",
+  "closest_person_m": null,
+  "contact_min_m": 3.195,
+  "contact_with": "dog",
+  "collisions": [],
+  "hedge_min_m": 0.342,
+  "alerts": [],
+  "pauses": [
+   {
+    "first_seen_at_m": 4.99,
+    "waited_s": 14.0,
+    "station_m": 314
+   },
+   {
+    "first_seen_at_m": 4.08,
+    "waited_s": 9.2,
+    "station_m": 345
+   }
+  ],
+  "sim_time_s": 297.9,
+  "energy_wh": 5.71
+ },
+ {
+  "test": "r51_s5a",
+  "what": "scenario as written: a walker comes up the lane, then a dog crosses (night rate 0.60)",
+  "seed": 23,
+  "result": "pass",
+  "outcome": "plan completed",
+  "closest_person_m": null,
+  "contact_min_m": 4.022,
+  "contact_with": "dog",
+  "collisions": [],
+  "hedge_min_m": 0.381,
+  "alerts": [],
+  "pauses": [
+   {
+    "first_seen_at_m": 4.92,
+    "waited_s": 10.0,
+    "station_m": 314
+   },
+   {
+    "first_seen_at_m": 4.52,
+    "waited_s": 9.2,
+    "station_m": 344
+   }
+  ],
+  "sim_time_s": 298.7,
+  "energy_wh": 5.7
+ },
+ {
+  "test": "r51_s5a",
+  "what": "scenario as written: a walker comes up the lane, then a dog crosses (night rate 0.60)",
+  "seed": 7,
+  "result": "pass",
+  "outcome": "plan completed",
+  "closest_person_m": null,
+  "contact_min_m": 3.258,
+  "contact_with": "dog",
+  "collisions": [],
+  "hedge_min_m": 0.378,
+  "alerts": [],
+  "pauses": [
+   {
+    "first_seen_at_m": 4.97,
+    "waited_s": 13.8,
+    "station_m": 314
+   },
+   {
+    "first_seen_at_m": 3.88,
+    "waited_s": 9.2,
+    "station_m": 345
+   }
+  ],
+  "sim_time_s": 299.7,
+  "energy_wh": 5.72
+ },
+ {
+  "test": "r51_person60",
+  "what": "the walker stops and stands in the lane for 60 s",
+  "seed": 11,
+  "result": "pass",
+  "outcome": "plan completed",
+  "closest_person_m": null,
+  "contact_min_m": 3.362,
+  "contact_with": "dog",
+  "collisions": [],
+  "hedge_min_m": 0.38,
+  "alerts": [],
+  "pauses": [
+   {
+    "first_seen_at_m": 4.99,
+    "waited_s": 56.6,
+    "station_m": 314
+   },
+   {
+    "first_seen_at_m": 3.67,
+    "waited_s": 9.2,
+    "station_m": 345
+   }
+  ],
+  "sim_time_s": 356.7,
+  "energy_wh": 6.12
+ },
+ {
+  "test": "r51_person60",
+  "what": "the walker stops and stands in the lane for 60 s",
+  "seed": 23,
+  "result": "pass",
+  "outcome": "plan completed",
+  "closest_person_m": null,
+  "contact_min_m": 3.509,
+  "contact_with": "dog",
+  "collisions": [],
+  "hedge_min_m": 0.38,
+  "alerts": [],
+  "pauses": [
+   {
+    "first_seen_at_m": 4.92,
+    "waited_s": 55.8,
+    "station_m": 314
+   },
+   {
+    "first_seen_at_m": 4.01,
+    "waited_s": 8.8,
+    "station_m": 345
+   }
+  ],
+  "sim_time_s": 347.7,
+  "energy_wh": 6.0
+ },
+ {
+  "test": "r51_person60",
+  "what": "the walker stops and stands in the lane for 60 s",
+  "seed": 7,
+  "result": "pass",
+  "outcome": "plan completed",
+  "closest_person_m": null,
+  "contact_min_m": 3.313,
+  "contact_with": "dog",
+  "collisions": [],
+  "hedge_min_m": 0.38,
+  "alerts": [],
+  "pauses": [
+   {
+    "first_seen_at_m": 4.94,
+    "waited_s": 55.9,
+    "station_m": 314
+   },
+   {
+    "first_seen_at_m": 3.78,
+    "waited_s": 9.2,
+    "station_m": 345
+   }
+  ],
+  "sim_time_s": 344.8,
+  "energy_wh": 6.02
+ },
+ {
+  "test": "r51_person60near",
+  "what": "the walker steps out 3.5 m in front of the robot and stands 60 s (night rate 0.60)",
+  "seed": 11,
+  "result": "pass",
+  "outcome": "plan completed",
+  "closest_person_m": 1.156,
+  "contact_min_m": 1.156,
+  "contact_with": "person",
+  "collisions": [],
+  "hedge_min_m": 0.335,
+  "alerts": [],
+  "pauses": [
+   {
+    "first_seen_at_m": 2.64,
+    "waited_s": 66.4,
+    "station_m": 317
+   },
+   {
+    "first_seen_at_m": 3.92,
+    "waited_s": 9.6,
+    "station_m": 345
+   }
+  ],
+  "sim_time_s": 366.9,
+  "energy_wh": 6.19
+ },
+ {
+  "test": "r51_person60near",
+  "what": "the walker steps out 3.5 m in front of the robot and stands 60 s (night rate 0.60)",
+  "seed": 23,
+  "result": "pass",
+  "outcome": "plan completed",
+  "closest_person_m": 1.256,
+  "contact_min_m": 1.256,
+  "contact_with": "person",
+  "collisions": [],
+  "hedge_min_m": 0.381,
+  "alerts": [],
+  "pauses": [
+   {
+    "first_seen_at_m": 2.23,
+    "waited_s": 65.7,
+    "station_m": 317
+   },
+   {
+    "first_seen_at_m": 4.81,
+    "waited_s": 9.6,
+    "station_m": 344
+   }
+  ],
+  "sim_time_s": 355.7,
+  "energy_wh": 6.06
+ },
+ {
+  "test": "r51_person60near",
+  "what": "the walker steps out 3.5 m in front of the robot and stands 60 s (night rate 0.60)",
+  "seed": 7,
+  "result": "pass",
+  "outcome": "plan completed",
+  "closest_person_m": 1.235,
+  "contact_min_m": 1.235,
+  "contact_with": "person",
+  "collisions": [],
+  "hedge_min_m": 0.375,
+  "alerts": [],
+  "pauses": [
+   {
+    "first_seen_at_m": 2.58,
+    "waited_s": 65.9,
+    "station_m": 317
+   },
+   {
+    "first_seen_at_m": 4.29,
+    "waited_s": 10.3,
+    "station_m": 345
+   }
+  ],
+  "sim_time_s": 361.0,
+  "energy_wh": 6.11
+ },
+ {
+  "test": "r51_person60near_day",
+  "what": "same, daylight detection rate 0.85",
+  "seed": 11,
+  "result": "pass",
+  "outcome": "plan completed",
+  "closest_person_m": 1.39,
+  "contact_min_m": 1.39,
+  "contact_with": "person",
+  "collisions": [],
+  "hedge_min_m": 0.341,
+  "alerts": [],
+  "pauses": [
+   {
+    "first_seen_at_m": 3.38,
+    "waited_s": 66.5,
+    "station_m": 317
+   },
+   {
+    "first_seen_at_m": 4.38,
+    "waited_s": 9.4,
+    "station_m": 345
+   }
+  ],
+  "sim_time_s": 366.9,
+  "energy_wh": 6.19
+ },
+ {
+  "test": "r51_person60near_day",
+  "what": "same, daylight detection rate 0.85",
+  "seed": 23,
+  "result": "pass",
+  "outcome": "plan completed",
+  "closest_person_m": 1.568,
+  "contact_min_m": 1.568,
+  "contact_with": "person",
+  "collisions": [],
+  "hedge_min_m": 0.379,
+  "alerts": [],
+  "pauses": [
+   {
+    "first_seen_at_m": 3.14,
+    "waited_s": 67.6,
+    "station_m": 317
+   },
+   {
+    "first_seen_at_m": 3.43,
+    "waited_s": 8.3,
+    "station_m": 345
+   }
+  ],
+  "sim_time_s": 356.8,
+  "energy_wh": 6.05
+ },
+ {
+  "test": "r51_person60near_day",
+  "what": "same, daylight detection rate 0.85",
+  "seed": 7,
+  "result": "pass",
+  "outcome": "plan completed",
+  "closest_person_m": 1.52,
+  "contact_min_m": 1.52,
+  "contact_with": "person",
+  "collisions": [],
+  "hedge_min_m": 0.375,
+  "alerts": [],
+  "pauses": [
+   {
+    "first_seen_at_m": 3.29,
+    "waited_s": 67.6,
+    "station_m": 317
+   },
+   {
+    "first_seen_at_m": 4.54,
+    "waited_s": 9.8,
+    "station_m": 345
+   }
+  ],
+  "sim_time_s": 362.0,
+  "energy_wh": 6.1
+ },
+ {
+  "test": "r51_person200",
+  "what": "the walker stands in the lane for 200 s (owner message at 120 s)",
+  "seed": 11,
+  "result": "pass",
+  "outcome": "plan completed",
+  "closest_person_m": null,
+  "contact_min_m": 3.197,
+  "contact_with": "dog",
+  "collisions": [],
+  "hedge_min_m": 0.361,
+  "alerts": [
+   "waiting: someone has been near the robot for 2 minutes (it carries on by itself when they have gone)"
+  ],
+  "pauses": [
+   {
+    "first_seen_at_m": 4.91,
+    "waited_s": 199.4,
+    "station_m": 314
+   },
+   {
+    "first_seen_at_m": 4.04,
+    "waited_s": 9.0,
+    "station_m": 345
+   }
+  ],
+  "sim_time_s": 487.7,
+  "energy_wh": 6.84
+ },
+ {
+  "test": "r51_person200",
+  "what": "the walker stands in the lane for 200 s (owner message at 120 s)",
+  "seed": 23,
+  "result": "pass",
+  "outcome": "plan completed",
+  "closest_person_m": null,
+  "contact_min_m": 3.646,
+  "contact_with": "dog",
+  "collisions": [],
+  "hedge_min_m": 0.38,
+  "alerts": [
+   "waiting: someone has been near the robot for 2 minutes (it carries on by itself when they have gone)"
+  ],
+  "pauses": [
+   {
+    "first_seen_at_m": 4.97,
+    "waited_s": 196.5,
+    "station_m": 314
+   },
+   {
+    "first_seen_at_m": 4.23,
+    "waited_s": 8.0,
+    "station_m": 345
+   }
+  ],
+  "sim_time_s": 506.1,
+  "energy_wh": 7.04
+ },
+ {
+  "test": "r51_person200",
+  "what": "the walker stands in the lane for 200 s (owner message at 120 s)",
+  "seed": 7,
+  "result": "pass",
+  "outcome": "plan completed",
+  "closest_person_m": null,
+  "contact_min_m": 3.576,
+  "contact_with": "dog",
+  "collisions": [],
+  "hedge_min_m": 0.375,
+  "alerts": [
+   "waiting: someone has been near the robot for 2 minutes (it carries on by itself when they have gone)"
+  ],
+  "pauses": [
+   {
+    "first_seen_at_m": 4.92,
+    "waited_s": 198.7,
+    "station_m": 314
+   },
+   {
+    "first_seen_at_m": 4.68,
+    "waited_s": 10.0,
+    "station_m": 345
+   }
+  ],
+  "sim_time_s": 507.9,
+  "energy_wh": 7.03
+ }
+]

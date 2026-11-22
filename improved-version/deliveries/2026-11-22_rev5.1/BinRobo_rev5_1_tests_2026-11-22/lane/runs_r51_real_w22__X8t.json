@@ -1,0 +1,120 @@
+{
+ "run": "X8t",
+ "title": "X8t empty robot TAIL first down the 12 % pitch, person steps in",
+ "verdict": "PASS",
+ "fails": [],
+ "sim_time_s": 155.3,
+ "t_start": 1426.723000061287,
+ "energy_Wh": 0.39,
+ "wall_s": 47,
+ "metrics": {
+  "clear_min": 9.0,
+  "clear_at": null,
+  "seated_all": true,
+  "bin_ground_N": 0.0,
+  "roll_max": 0.352,
+  "pitch_max": 4.7774,
+  "hedge_min": 1.5005,
+  "hedge_at": 153.3,
+  "tip_min": 33.3387,
+  "tip_at": 126.4,
+  "liftF_max": 25.2577,
+  "liftF_at": 156.0,
+  "gap_min": 2.6752,
+  "v_max": 0.3825,
+  "n_lost": 0
+ },
+ "results": {
+  "drive0": {
+   "reached": true,
+   "why": null,
+   "s_end": 156.0,
+   "ref_end": 156.0,
+   "t": 1582.0
+  }
+ },
+ "seg_metrics": {
+  "drive0": {
+   "clear_min": 9.0,
+   "clear_at": null,
+   "seated_all": true,
+   "bin_ground_N": 0.0,
+   "roll_max": 0.352,
+   "pitch_max": 4.7774,
+   "hedge_min": 1.5005,
+   "hedge_at": 153.3,
+   "tip_min": 33.3387,
+   "tip_at": 126.4,
+   "liftF_max": 25.2577,
+   "liftF_at": 156.0,
+   "gap_min": 2.6752,
+   "v_max": 0.3825,
+   "n_lost": 0
+  }
+ },
+ "events": [
+  [
+   1426.72,
+   "start from P2a_pf snapshot s126.0.pkl (carried state)"
+  ],
+  [
+   1507.52,
+   "person starts moving into the lane (bumper 2.20 m from its line)"
+  ],
+  [
+   1508.5,
+   "controlled stop: obstacle 2.71 m ahead in the corridor"
+  ],
+  [
+   1516.9,
+   "corridor clear 2 s: resume"
+  ],
+  [
+   1582.02,
+   "drive0: reached at s 156.0"
+  ]
+ ],
+ "cfg": {
+  "binkey": "ESE240SL",
+  "kg": 0.0,
+  "with_bin": false,
+  "variant": {
+   "step": "ramp",
+   "trench": "covered",
+   "pothole": "filled"
+  },
+  "act_N": 3000.0,
+  "pert": {
+   "mu": 0.629
+  },
+  "night": false,
+  "obstacles": [
+   {
+    "name": "person",
+    "kind": "person",
+    "r": 0.22,
+    "h": 1.75,
+    "s": 146.0,
+    "lat0": -2.3,
+    "lat1": 0.0,
+    "lat2": 2.4,
+    "wait": 5.0,
+    "v": 1.4,
+    "trig": 2.2
+   }
+  ],
+  "title": "X8t empty robot TAIL first down the 12 % pitch, person steps in",
+  "start": [
+   "snap",
+   "P2a_pf",
+   126.0
+  ]
+ },
+ "steps": [
+  [
+   "drive",
+   "{'to': 156.0, 'ref': 'tug', 'dirn': 1, 'rev': True, 'knots': [(0, -1.4), (12.0, -1.4), (24.0, 0.0), (610.0, 0.0), (619.5, 1.35), (700, 1.35)], 'obstacle': True}"
+  ]
+ ],
+ "peak": {}
+}

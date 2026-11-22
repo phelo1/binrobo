@@ -1,0 +1,187 @@
+{
+ "run": "X9t",
+ "title": "X9t empty robot TAIL first: stop and hold on the 12 % pitch",
+ "verdict": "PASS",
+ "fails": [],
+ "sim_time_s": 168.6,
+ "t_start": 1426.723000061287,
+ "energy_Wh": 0.45,
+ "wall_s": 46,
+ "metrics": {
+  "clear_min": 9.0,
+  "clear_at": null,
+  "seated_all": true,
+  "bin_ground_N": 0.0,
+  "roll_max": 4.2397,
+  "pitch_max": 4.7775,
+  "hedge_min": 0.6365,
+  "hedge_at": 156.0,
+  "tip_min": 30.461,
+  "tip_at": 156.0,
+  "liftF_max": 24.857,
+  "liftF_at": 156.0,
+  "gap_min": 9.0,
+  "v_max": 0.3825,
+  "n_lost": 0
+ },
+ "results": {
+  "drive0": {
+   "reached": true,
+   "why": null,
+   "s_end": 145.99,
+   "ref_end": 145.99,
+   "t": 1525.4
+  },
+  "hold1": {
+   "creep3_m": 0.0003030387139246646,
+   "creepT_m": 0.0005050848015655505,
+   "T": 5.0,
+   "s": 145.99,
+   "grade_pct": -8.4,
+   "leaf": true
+  },
+  "drive2": {
+   "reached": true,
+   "why": null,
+   "s_end": 155.99,
+   "ref_end": 155.99,
+   "t": 1579.9
+  },
+  "pivot3": {
+   "ok": true
+  }
+ },
+ "seg_metrics": {
+  "drive0": {
+   "clear_min": 9.0,
+   "clear_at": null,
+   "seated_all": true,
+   "bin_ground_N": 0.0,
+   "roll_max": 0.099,
+   "pitch_max": 4.7482,
+   "hedge_min": 1.5099,
+   "hedge_at": 132.0,
+   "tip_min": 33.341,
+   "tip_at": 126.4,
+   "liftF_max": 24.3367,
+   "liftF_at": 137.9,
+   "gap_min": 9.0,
+   "v_max": 0.3825,
+   "n_lost": 0
+  },
+  "hold1": {
+   "clear_min": 9.0,
+   "clear_at": null,
+   "seated_all": true,
+   "bin_ground_N": 0.0,
+   "roll_max": 0.0126,
+   "pitch_max": 4.7473,
+   "hedge_min": 1.6142,
+   "hedge_at": 146.2,
+   "tip_min": 35.4519,
+   "tip_at": 146.0,
+   "liftF_max": 23.2942,
+   "liftF_at": 146.0,
+   "gap_min": 9.0,
+   "v_max": 0.0001,
+   "n_lost": 0
+  },
+  "drive2": {
+   "clear_min": 9.0,
+   "clear_at": null,
+   "seated_all": true,
+   "bin_ground_N": 0.0,
+   "roll_max": 0.3453,
+   "pitch_max": 4.7775,
+   "hedge_min": 1.5004,
+   "hedge_at": 153.3,
+   "tip_min": 35.3196,
+   "tip_at": 155.6,
+   "liftF_max": 24.857,
+   "liftF_at": 156.0,
+   "gap_min": 9.0,
+   "v_max": 0.2094,
+   "n_lost": 0
+  },
+  "pivot3": {
+   "clear_min": 9.0,
+   "clear_at": null,
+   "seated_all": true,
+   "bin_ground_N": 0.0,
+   "roll_max": 4.2397,
+   "pitch_max": 4.2575,
+   "hedge_min": 0.6365,
+   "hedge_at": 156.0,
+   "tip_min": 30.461,
+   "tip_at": 156.0,
+   "liftF_max": 24.4713,
+   "liftF_at": 156.0,
+   "gap_min": 9.0,
+   "v_max": 0.0303,
+   "n_lost": 0
+  }
+ },
+ "events": [
+  [
+   1426.72,
+   "start from P2a_pf snapshot s126.0.pkl (carried state)"
+  ],
+  [
+   1525.42,
+   "drive0: reached at s 146.0"
+  ],
+  [
+   1530.62,
+   "hold at s 146.0 (-8.4 %): creep 0.0003 m in 3 s, 0.0005 m in 5 s"
+  ],
+  [
+   1579.93,
+   "drive2: reached at s 156.0"
+  ],
+  [
+   1595.35,
+   "pivot +180 deg done, axle moved 0.106 m"
+  ]
+ ],
+ "cfg": {
+  "binkey": "ESE240SL",
+  "kg": 0.0,
+  "with_bin": false,
+  "variant": {
+   "step": "ramp",
+   "trench": "covered",
+   "pothole": "filled"
+  },
+  "act_N": 3000.0,
+  "pert": {
+   "mu": 0.857
+  },
+  "night": false,
+  "obstacles": [],
+  "title": "X9t empty robot TAIL first: stop and hold on the 12 % pitch",
+  "start": [
+   "snap",
+   "P2a_pf",
+   126.0
+  ]
+ },
+ "steps": [
+  [
+   "drive",
+   "{'to': 146.0, 'ref': 'tug', 'dirn': 1, 'rev': True, 'knots': [(0, -1.4), (12.0, -1.4), (24.0, 0.0), (610.0, 0.0), (619.5, 1.35), (700, 1.35)]}"
+  ],
+  [
+   "hold",
+   "5.0"
+  ],
+  [
+   "drive",
+   "{'to': 156.0, 'ref': 'tug', 'dirn': 1, 'rev': True, 'knots': [(0, -1.4), (12.0, -1.4), (24.0, 0.0), (610.0, 0.0), (619.5, 1.35), (700, 1.35)]}"
+  ],
+  [
+   "pivot",
+   "180.0"
+  ]
+ ],
+ "peak": {}
+}

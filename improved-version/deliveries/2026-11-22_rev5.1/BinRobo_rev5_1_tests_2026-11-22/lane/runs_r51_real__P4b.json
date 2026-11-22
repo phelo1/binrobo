@@ -1,0 +1,209 @@
+{
+ "run": "P4b",
+ "title": "P4b 12 % pitch UP, 110 kg, wet leaves mu 0.35, stop + hold",
+ "verdict": "PASS",
+ "fails": [],
+ "sim_time_s": 146.4,
+ "t_start": 561.3024999901829,
+ "energy_Wh": 5.74,
+ "wall_s": 218,
+ "metrics": {
+  "clear_min": 0.1026,
+  "clear_at": 165.6,
+  "seated_all": true,
+  "bin_ground_N": 0.0,
+  "roll_max": 3.532,
+  "pitch_max": 4.7799,
+  "hedge_min": 0.6951,
+  "hedge_at": 170.2,
+  "tip_min": 27.14,
+  "tip_at": 145.0,
+  "liftF_max": 1383.8548,
+  "liftF_at": 145.0,
+  "gap_min": 9.0,
+  "v_max": 0.3826,
+  "n_lost": 0
+ },
+ "results": {
+  "pivot1": {
+   "ok": true
+  },
+  "drive2": {
+   "reached": true,
+   "why": null,
+   "s_end": 145.02,
+   "ref_end": 145.02,
+   "t": 648.2,
+   "captured_end": true,
+   "clear_end_mm": 107.7
+  },
+  "hold3": {
+   "creep3_m": 0.0004927489616612251,
+   "creepT_m": 0.0016408355680104147,
+   "T": 10.0,
+   "s": 145.02,
+   "grade_pct": -8.3,
+   "leaf": true
+  },
+  "drive4": {
+   "reached": true,
+   "why": null,
+   "s_end": 127.01,
+   "ref_end": 127.01,
+   "t": 707.7,
+   "captured_end": true,
+   "clear_end_mm": 104.4
+  }
+ },
+ "seg_metrics": {
+  "softstop0": {
+   "clear_min": 0.1029,
+   "clear_at": 170.1,
+   "seated_all": true,
+   "bin_ground_N": 0.0,
+   "roll_max": 0.0293,
+   "pitch_max": 3.5928,
+   "hedge_min": 1.6074,
+   "hedge_at": 171.1,
+   "tip_min": 30.9205,
+   "tip_at": 170.1,
+   "liftF_max": 1382.4468,
+   "liftF_at": 170.1,
+   "gap_min": 9.0,
+   "v_max": 0.3061,
+   "n_lost": 0
+  },
+  "pivot1": {
+   "clear_min": 0.103,
+   "clear_at": 170.2,
+   "seated_all": true,
+   "bin_ground_N": 0.0,
+   "roll_max": 3.532,
+   "pitch_max": 3.5876,
+   "hedge_min": 0.6951,
+   "hedge_at": 170.2,
+   "tip_min": 27.9477,
+   "tip_at": 170.3,
+   "liftF_max": 1359.511,
+   "liftF_at": 170.1,
+   "gap_min": 9.0,
+   "v_max": 0.0251,
+   "n_lost": 0
+  },
+  "drive2": {
+   "clear_min": 0.1026,
+   "clear_at": 165.6,
+   "seated_all": true,
+   "bin_ground_N": 0.0,
+   "roll_max": 0.3462,
+   "pitch_max": 4.7799,
+   "hedge_min": 1.4945,
+   "hedge_at": 156.3,
+   "tip_min": 27.185,
+   "tip_at": 145.0,
+   "liftF_max": 1383.8548,
+   "liftF_at": 145.0,
+   "gap_min": 9.0,
+   "v_max": 0.3826,
+   "n_lost": 0
+  },
+  "hold3": {
+   "clear_min": 0.1076,
+   "clear_at": 145.0,
+   "seated_all": true,
+   "bin_ground_N": 0.0,
+   "roll_max": 0.0429,
+   "pitch_max": 4.6359,
+   "hedge_min": 1.6458,
+   "hedge_at": 145.2,
+   "tip_min": 27.2152,
+   "tip_at": 145.0,
+   "liftF_max": 1360.004,
+   "liftF_at": 145.0,
+   "gap_min": 9.0,
+   "v_max": 0.0003,
+   "n_lost": 0
+  },
+  "drive4": {
+   "clear_min": 0.1031,
+   "clear_at": 127.0,
+   "seated_all": true,
+   "bin_ground_N": 0.0,
+   "roll_max": 0.0916,
+   "pitch_max": 4.6377,
+   "hedge_min": 1.5121,
+   "hedge_at": 133.6,
+   "tip_min": 27.14,
+   "tip_at": 145.0,
+   "liftF_max": 1377.0629,
+   "liftF_at": 127.0,
+   "gap_min": 9.0,
+   "v_max": 0.3818,
+   "n_lost": 0
+  }
+ },
+ "events": [
+  [
+   561.3,
+   "start from P1 snapshot s170.0.pkl (carried state)"
+  ],
+  [
+   579.5,
+   "pivot +180 deg done, axle moved 0.146 m"
+  ],
+  [
+   648.2,
+   "drive2: reached at s 145.0"
+  ],
+  [
+   658.4,
+   "hold at s 145.0 (-8.3 %): creep 0.0005 m in 3 s, 0.0016 m in 10 s"
+  ],
+  [
+   707.7,
+   "drive4: reached at s 127.0"
+  ]
+ ],
+ "cfg": {
+  "binkey": "ESE240SL",
+  "kg": 110.0,
+  "with_bin": true,
+  "variant": {
+   "step": "ramp",
+   "trench": "covered",
+   "pothole": "filled"
+  },
+  "act_N": 3000.0,
+  "pert": {},
+  "night": false,
+  "obstacles": [],
+  "title": "P4b 12 % pitch UP, 110 kg, wet leaves mu 0.35, stop + hold",
+  "start": [
+   "snap",
+   "P1",
+   170.0
+  ]
+ },
+ "steps": [
+  [
+   "softstop"
+  ],
+  [
+   "pivot",
+   "180.0"
+  ],
+  [
+   "drive",
+   "{'to': 145.0, 'ref': 'tug', 'dirn': -1, 'knots': [(0, -1.4), (12.0, -1.4), (24.0, 0.0), (610.0, 0.0), (619.5, 1.35), (700, 1.35)]}"
+  ],
+  [
+   "hold",
+   "10.0"
+  ],
+  [
+   "drive",
+   "{'to': 127.0, 'ref': 'tug', 'dirn': -1, 'knots': [(0, -1.4), (12.0, -1.4), (24.0, 0.0), (610.0, 0.0), (619.5, 1.35), (700, 1.35)]}"
+  ]
+ ],
+ "peak": {}
+}

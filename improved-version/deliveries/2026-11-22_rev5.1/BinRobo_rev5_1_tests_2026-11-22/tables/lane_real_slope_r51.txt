@@ -1,0 +1,43 @@
+set                  lane               rule     grip  run               verd  v_max  gap m   hold slope creep mm   fails / stop
+runs_r5_pf           12 % pitch (rev 5) rev 5    0.35  P1                PASS  0.45   None    None       None       
+runs_r5_pf           12 % pitch (rev 5) rev 5    0.35  P7                PASS  0.47   None    None       None       
+runs_r5_pf           12 % pitch (rev 5) rev 5    0.35  P2a_pf            PASS  0.40   None    None       None       
+runs_r5_pf           12 % pitch (rev 5) rev 5    0.35  P4a               PASS  0.32   None    -12.0      2.4        
+runs_r5_pf           12 % pitch (rev 5) rev 5    0.35  P4b               PASS  0.39   None    -12.0      2.4        
+runs_r5_pf           12 % pitch (rev 5) rev 5    0.35  P6a_person_estop  PASS  0.35   1.599   None       None       controlled stop: obstacle 1.77 m ahead in the corridor
+runs_r5_w30          12 % pitch (rev 5) rev 5    0.30  P2a_pf            PASS  0.40   None    None       None       
+runs_r5_w30          12 % pitch (rev 5) rev 5    0.30  X8n               PASS  0.38   1.502   None       None       controlled stop: obstacle 1.78 m ahead in the corridor
+runs_r5_w30          12 % pitch (rev 5) rev 5    0.30  X9n               PASS  0.38   None    -12.0      14.2       
+runs_r5_w30          12 % pitch (rev 5) rev 5    0.30  X8t               PASS  0.38   2.637   None       None       controlled stop: obstacle 2.71 m ahead in the corridor
+runs_r5_w30          12 % pitch (rev 5) rev 5    0.30  X9t               PASS  0.38   None    -12.0      0.7        
+runs_r5_w22          12 % pitch (rev 5) rev 5    0.22  P2a_pf            PASS  0.40   None    None       None       
+runs_r5_w22          12 % pitch (rev 5) rev 5    0.22  X8n               FAIL  1.48   0.022   None       None       ['e-stop distance 0.74 m > 0.5']
+runs_r5_w22          12 % pitch (rev 5) rev 5    0.22  X9n               PASS  2.07   None    -5.2       0.3        
+runs_r5_w22          12 % pitch (rev 5) rev 5    0.22  X8t               PASS  0.38   2.567   None       None       controlled stop: obstacle 2.71 m ahead in the corridor
+runs_r5_w22          12 % pitch (rev 5) rev 5    0.22  X9t               PASS  0.38   None    -12.0      29.9       
+runs_r51_real        real slope         rev 5    0.35  P1                PASS  0.47   None    None       None       
+runs_r51_real        real slope         rev 5    0.35  P7                PASS  0.47   None    None       None       
+runs_r51_real        real slope         rev 5    0.35  P2a_pf            PASS  0.40   None    None       None       
+runs_r51_real        real slope         rev 5    0.35  P4a               PASS  0.32   None    -8.3       1.6        
+runs_r51_real        real slope         rev 5    0.35  P4b               PASS  0.38   None    -8.3       1.6        
+runs_r51_real        real slope         rev 5    0.35  P6a_person_estop  PASS  0.35   1.534   None       None       controlled stop: obstacle 1.68 m ahead in the corridor
+runs_r51_real_w30    real slope         rev 5    0.30  X8n               PASS  0.38   1.703   None       None       controlled stop: obstacle 1.78 m ahead in the corridor
+runs_r51_real_w30    real slope         rev 5    0.30  X9n               PASS  0.38   None    -8.4       0.5        
+runs_r51_real_w30    real slope         rev 5    0.30  X8t               PASS  0.38   2.676   None       None       controlled stop: obstacle 2.71 m ahead in the corridor
+runs_r51_real_w30    real slope         rev 5    0.30  X9t               PASS  0.38   None    -8.4       0.5        
+runs_r51_real_w22    real slope         rev 5    0.22  X8n               PASS  0.38   1.676   None       None       controlled stop: obstacle 1.78 m ahead in the corridor
+runs_r51_real_w22    real slope         rev 5    0.22  X9n               PASS  0.38   None    -8.4       0.5        
+runs_r51_real_w22    real slope         rev 5    0.22  X8t               PASS  0.38   2.675   None       None       controlled stop: obstacle 2.71 m ahead in the corridor
+runs_r51_real_w22    real slope         rev 5    0.22  X9t               PASS  0.38   None    -8.4       0.5        
+runs_r51_v51_m35     real slope         rev 5.1  0.35  P4a               PASS  0.32   None    -8.3       1.5        
+runs_r51_v51_m35     real slope         rev 5.1  0.35  P6a_person_estop  PASS  0.35   1.658   None       None       controlled stop: obstacle 1.76 m ahead in the corridor
+runs_r51_v51_m35     real slope         rev 5.1  0.35  X8n               PASS  0.38   1.767   None       None       controlled stop: obstacle 1.82 m ahead in the corridor
+runs_r51_v51_m35     real slope         rev 5.1  0.35  X9n               PASS  0.38   None    -8.4       0.5        
+runs_r51_v51_w30     real slope         rev 5.1  0.30  P4a               PASS  0.32   None    -8.3       1.6        
+runs_r51_v51_w30     real slope         rev 5.1  0.30  P6a_person_estop  PASS  0.35   1.658   None       None       controlled stop: obstacle 1.76 m ahead in the corridor
+runs_r51_v51_w30     real slope         rev 5.1  0.30  X8n               PASS  0.38   1.764   None       None       controlled stop: obstacle 1.82 m ahead in the corridor
+runs_r51_v51_w30     real slope         rev 5.1  0.30  X9n               PASS  0.38   None    -8.4       0.5        
+runs_r51_v51_w22     real slope         rev 5.1  0.22  P4a               PASS  0.32   None    -8.3       1.6        
+runs_r51_v51_w22     real slope         rev 5.1  0.22  P6a_person_estop  PASS  0.35   1.655   None       None       controlled stop: obstacle 1.76 m ahead in the corridor
+runs_r51_v51_w22     real slope         rev 5.1  0.22  X8n               PASS  0.38   1.744   None       None       controlled stop: obstacle 1.83 m ahead in the corridor
+runs_r51_v51_w22     real slope         rev 5.1  0.22  X9n               PASS  0.38   None    -8.4       2.5        

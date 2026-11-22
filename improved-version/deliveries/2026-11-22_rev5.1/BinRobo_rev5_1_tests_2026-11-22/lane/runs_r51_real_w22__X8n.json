@@ -1,0 +1,148 @@
+{
+ "run": "X8n",
+ "title": "X8n empty robot NOSE first down the 12 % pitch, person steps in",
+ "verdict": "PASS",
+ "fails": [],
+ "sim_time_s": 170.0,
+ "t_start": 1426.723000061287,
+ "energy_Wh": 0.46,
+ "wall_s": 50,
+ "metrics": {
+  "clear_min": 9.0,
+  "clear_at": null,
+  "seated_all": true,
+  "bin_ground_N": 0.0,
+  "roll_max": 3.6094,
+  "pitch_max": 4.8204,
+  "hedge_min": 0.6593,
+  "hedge_at": 126.2,
+  "tip_min": 30.8035,
+  "tip_at": 126.1,
+  "liftF_max": 32.0143,
+  "liftF_at": 126.2,
+  "gap_min": 1.6758,
+  "v_max": 0.3825,
+  "n_lost": 0
+ },
+ "results": {
+  "pivot0": {
+   "ok": true
+  },
+  "drive1": {
+   "reached": true,
+   "why": null,
+   "s_end": 156.04,
+   "ref_end": 156.04,
+   "t": 1596.7
+  }
+ },
+ "seg_metrics": {
+  "pivot0": {
+   "clear_min": 9.0,
+   "clear_at": null,
+   "seated_all": true,
+   "bin_ground_N": 0.0,
+   "roll_max": 3.6094,
+   "pitch_max": 3.6195,
+   "hedge_min": 0.6593,
+   "hedge_at": 126.2,
+   "tip_min": 30.8035,
+   "tip_at": 126.1,
+   "liftF_max": 32.0143,
+   "liftF_at": 126.2,
+   "gap_min": 9.0,
+   "v_max": 0.3825,
+   "n_lost": 0
+  },
+  "drive1": {
+   "clear_min": 9.0,
+   "clear_at": null,
+   "seated_all": true,
+   "bin_ground_N": 0.0,
+   "roll_max": 0.3451,
+   "pitch_max": 4.8204,
+   "hedge_min": 1.5024,
+   "hedge_at": 155.1,
+   "tip_min": 32.2057,
+   "tip_at": 126.2,
+   "liftF_max": 25.7766,
+   "liftF_at": 142.7,
+   "gap_min": 1.6758,
+   "v_max": 0.3048,
+   "n_lost": 0
+  }
+ },
+ "events": [
+  [
+   1426.72,
+   "start from P2a_pf snapshot s126.0.pkl (carried state)"
+  ],
+  [
+   1442.76,
+   "pivot +180 deg done, axle moved 0.047 m"
+  ],
+  [
+   1522.06,
+   "person starts moving into the lane (bumper 2.20 m from its line)"
+  ],
+  [
+   1523.0,
+   "controlled stop: obstacle 1.78 m ahead in the corridor"
+  ],
+  [
+   1531.5,
+   "corridor clear 2 s: resume"
+  ],
+  [
+   1596.67,
+   "drive1: reached at s 156.0"
+  ]
+ ],
+ "cfg": {
+  "binkey": "ESE240SL",
+  "kg": 0.0,
+  "with_bin": false,
+  "variant": {
+   "step": "ramp",
+   "trench": "covered",
+   "pothole": "filled"
+  },
+  "act_N": 3000.0,
+  "pert": {
+   "mu": 0.629
+  },
+  "night": false,
+  "obstacles": [
+   {
+    "name": "person",
+    "kind": "person",
+    "r": 0.22,
+    "h": 1.75,
+    "s": 146.0,
+    "lat0": -2.3,
+    "lat1": 0.0,
+    "lat2": 2.4,
+    "wait": 5.0,
+    "v": 1.4,
+    "trig": 2.2
+   }
+  ],
+  "title": "X8n empty robot NOSE first down the 12 % pitch, person steps in",
+  "start": [
+   "snap",
+   "P2a_pf",
+   126.0
+  ]
+ },
+ "steps": [
+  [
+   "pivot",
+   "180.0"
+  ],
+  [
+   "drive",
+   "{'to': 156.0, 'ref': 'tug', 'dirn': 1, 'knots': [(0, -1.4), (12.0, -1.4), (24.0, 0.0), (610.0, 0.0), (619.5, 1.35), (700, 1.35)], 'obstacle': True}"
+  ]
+ ],
+ "peak": {}
+}

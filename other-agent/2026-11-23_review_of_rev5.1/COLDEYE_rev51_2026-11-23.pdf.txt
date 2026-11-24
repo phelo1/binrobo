@@ -1,0 +1,591 @@
+[text of COLDEYE_rev51_2026-11-23.pdf, taken out of the PDF for the public repository; pictures and layout are not kept]
+
+Cold-eye review: BinRobo revision 5.1 (reply of 22 Nov 2026, sheets 15, 17,
+                              18 reissued)
+
+
+                                                23 November 2026
+
+
+Verdict
+Revision 5.1 applies Brian’s five answers honestly and mostly correctly. Its slope work reproduces exactly.
+Two of its conclusions do not hold, though: “the hill is 8.5 % at most” and “the two contactors in series
+mean one fault cannot keep the motors live”. It is still not ready to run unattended.
+What holds:
+  • The slope script. lane_grade.py on our sitl/data/route.json gives their table to the decimal.
+  • The 12 % pitch was never a measurement. Nor was it Brian’s requirement. It came from us (see answer 2).
+  • The stop table. Our hand model reproduces their wet-leaf stop table within about 15 %, except right at the
+    holding limit.
+  • The rev 4 timing bug is fixed. The trip clock now uses the measured trip time instead of c + 50 min.
+  • Most carried rev 4 items are fixed on the drawings: a full-width nose, a 60 x 60 nose member, slip-resistant
+    M10 corners, top blocks at +340 with the switch bodies first touched at +346, and a lowering guard referenced to
+    the local ground.
+What is wrong:
+  • B-1 (carried, narrowed). 8.5 % is not an upper bound.
+      – The 7.9 % comes from bilinear smoothing of a 25 m grid.
+      – The raw EU-DEM cells along the lane step at 8.3 % (142-172 m) and 10.1 % (200-228 m). SRTM gives
+         10 % over 50 m and 12 % over 25 m.
+      – The empty robot, nose first on wet leaves (grip 0.22), holds only to 9.4-10.5 %. It stops inside the foam only
+         to about 8.5-9 %.
+      – The empty-robot problem therefore stays open until the hill is measured properly, and test 1 as written cannot
+         resolve 8 against 8.5 %.
+  • B-2 (new, cheap to fix). One shorted part defeats both contactors.
+      – The braking-energy diode on sheet 15 bridges both contactors, so one shorted diode keeps the drive controller
+         powered after any stop.
+      – The all-in-series chain also contradicts the sheet’s own function table: lift-only and lowering-only inputs now
+         drop the drive.
+      – The B2-F relay (PNOZ X3: 3 NO + 1 NC + 1 semiconductor output) has too few outputs for the five loads
+         drawn.
+      – The B2-F contactors (KM-L8) have no auxiliary contacts for the drawn feedback loop.
+  • The pause rule restarts with a person beside the robot. Only the front camera feeds it, so someone who
+    walks past the nose drops out of view and the robot moves off 3 s later. A static false detection (a gatepost) holds
+    the robot for 15 min and fails the trip.
+  • The bye-law end time is 12:00 midnight in the legal text, not 21:00. The council’s summary page says 9.00
+    pm, and that page is where our project’s “21:00” came from. With midnight, three pick-ups from 18:00 are legal.
+  • The detector on the Radxa Zero 3W is plausible but tight. About 13 fps is realistic against 10 needed, and
+    the camera’s other jobs also need it. Their fallback (a Raspberry Pi 5) has no NPU.
+Scope: drawings, design, claims, and short hand checks. Siblings rev51-mech (MuJoCo) and rev51-sitl (ArduPilot) run
+the simulations. ASSUMED marks a value with no data sheet behind it.
+
+
+
+
+                                                          1
+Class                                                                       Count     Items
+Blocker                                                                           2   B-1 slope not bounded; empty
+                                                                                      robot on wet leaves (carried from
+                                                                                      rev 4 B-1, narrowed); B-2 stop
+                                                                                      chain: one diode bypasses both
+                                                                                      contactors, series wiring
+                                                                                      contradicts the function table,
+                                                                                      relay outputs and contactor
+                                                                                      feedback missing
+Major                                                                             5   M-1 pause rule: front camera only,
+                                                                                      restart beside a person, persistent
+                                                                                      false pauses, pivot flanks; M-2
+                                                                                      detector compute unproven; M-3
+                                                                                      bye-law is midnight, legacy c + 50
+                                                                                      branch still the default; M-4
+                                                                                      built-robot tests: gaps and one
+                                                                                      unsafe test; M-5 wet-leaf foam
+                                                                                      margin is thin even on the level
+Minor                                                                            7    m-1 to m-7
+Confirmed                                                                       12    listed under “What revision 5.1
+                                                                                      got right”
+
+
+What we could not check without the rev 5 pack (21 Nov; never sent to us):
+  • the rev 5 reply note and its 60-mission score, fault injections and bend tests;
+  • the 180 kg mass and the CG (we reuse the rev 4 CG);
+  • the depth of the side foam on the soft nose;
+  • their rail calculation that gives SF 1.99 at the M10 holes;
+  • the ToF lowering-guard simulation;
+  • the design of the speed and slide watchdog;
+  • the rev 5 cost lines behind “same”.
+We inferred the rev 5 hardware changes from draw_sheets_r5.py against our rev 4 copy and from the rev 5 sheets 13,
+16 and 17 in this set.
+
+
+Answers to their section 9
+1. Is the route.json lane the one Brian means? Probably, but he has never said so outright.
+  • His map link of 6 Nov resolves to 53.000000, -8.000000. That is exactly the origin in our build_route.py, and the
+    route starts 23 m from it.
+  • OSM ways 0 and 0 are tagged highway=service, service=driveway, and 0 is
+    highway=residential. The lane ends at the public road (635 m).
+  • We showed him the route on 6 Nov and asked “Is that the right route?”. His next message said “continue . . . ”,
+    which is tacit agreement, not a confirmation. Ask him once.
+2. Is anything Brian said behind the 12 % pitch, the 40 mm step, the trench, the pothole or the leaf
+zones? No. All of them are ours.
+  • Brian’s only words on terrain:
+       – 4 Nov: “travel 500m with a full bin load there and back up and down hills and over bumps and potholes”;
+       – 6 Nov: “its not really muddy”;
+       – 6 Nov: night operation;
+       – 22 Nov: “the gradient is not that steep”.
+  • 12 % came from our design note of 4 Nov (“up to about 10-12 % grade”, about motor sizing). On 6 Nov we read
+    the DEM as “peaking around 7.5 %, maybe 10-12 % on a short pitch”.
+  • 40 mm step entered with our 10 Nov triage of the third-party review and our G3 gate.
+  • Trench, pothole, leaf zones and the leaf grip of 0.35 are defaults in lane_world.py. Its header says “All lane
+    features are ASSUMED (no survey)”.
+
+
+                                                           2
+   • Our project brief’s phrase “12 % slopes, wet leaves and 40 mm steps” is therefore our own framing, not Brian’s
+     requirement.
+3. Do the KM-L8 contactors have auxiliary contacts? Not as listed.
+   • KM-L8 is two generic SW100-class 100 A DC contactors with 24 V coils (Jazgot E1205, EUR 28.57 each). The
+     listing shows no auxiliary contact.
+   • In the Albright SW80/SW100 family an auxiliary contact is an option: suffix A is a changeover microswitch rated 5
+     A at 24 V, and suffix C is the V3 type. Albright also sells a mirror auxiliary contact to EN 60947-4-1 Annex F.
+   • B2-F did contactor monitoring differently: its line SLS-L8 sensed the voltage on the KM1 and KM2 outputs. Sheet
+     13 (rev 5) still lists that voltage sense in loom L11.
+   • Recommendation: keep the voltage sense, which also catches the diode fault in B-2, and/or buy suffix-A or
+     mirror-contact contactors (+EUR 0-150, ASSUMED).
+4. Has a detector been timed on the Radxa Zero 3W with two cameras? No.
+   • We chose the board (G23) for its companion jobs: H.264 streaming, 2.6 W, the Pi Zero footprint. A person detector
+     was never planned on it.
+   • Their sources, re-read:
+       – Qengineering gives RK3566/68 int8 inference alone at 19.5 fps (yolov5n) and 18.2 fps (yolov8n), and 11.7
+          fps for yolov5s.
+       – The Radxa forum thread they quote for “2-3 fps” ends with a reply finding the cause. The pre-converted model
+          was outdated; after re-converting it with the current RKNN toolkit the poster got about 75 ms per frame
+          (about 13 fps). The note leaves this out.
+   • Two cameras at 5 fps need 10 inferences a second, which is 55-75 % of the NPU. The bin, handle and lane-edge
+     camera jobs already run on the same board, and it has a single USB 3 host port for both cameras, the hub and the
+     modem.
+   • Possible, not proven. Test 11 must run with the full mission software, not the detector alone.
+   • Fallback: a Raspberry Pi 5 has no NPU. An RK3588 board lists 50-59 fps for the same small models in the same
+     table. A Pi 5 with an AI accelerator also works. Prices ASSUMED.
+5. Source of 18:00 and 21:00.
+   • The legal text is the County county waste management bye-laws, 2018, bye-law 6: kerbside waste “shall not be
+     presented for collection earlier than 6.00 pm on the day immediately preceding the designated waste collection day”.
+     Containers must be removed “no later than 12:00 midnight on the designated waste collection day”.
+   • The council’s summary web page says “no later than 9.00pm”. Our first cold-eye review quoted the summary page,
+     and the 21:00 in the companion comes from there.
+   • Recommendation: code the legal limit (23:59) as the hard rule and 21:00 as Brian’s preferred setting. With 23:59,
+     the three pick-ups from 18:00 that the B2-F script refuses end at about 21:50 and are legal.
+
+
+Blockers
+B-1. The hill is not bounded at 8.5 %, and the empty robot’s wet-leaf margin depends on
+it
+The slope (Fig 1).      We re-sampled the same 128 route points through OpenTopoData (resample_otd.json,
+slopes_otd.json).
+
+Source,
+steepest over                 10 m                 25 m                 50 m                 100 m       75-225 m mean
+EU-DEM                          7.9                  7.5                   7.1                  7.0                  6.5
+bilinear (their
+figure; ours
+identical)
+EU-DEM                          7.5                  7.3                   7.1                  7.1                  6.7
+cubic
+
+
+
+
+                                                           3
+Source,
+steepest over                  10 m                  25 m                  50 m                 100 m        75-225 m mean
+EU-DEM raw                         -    10.1 (200-228 m)                      8.7                   7.9                   6.6
+cells, cell to                          / 8.3 (142-172 m)
+cell (about
+25-30 m)
+SRTM 30 m                         10                    12                    10                    8.0                   6.0
+(and Mapzen,
+same)
+ASTER 30 m                        30                    24                    20                    16        8.7 (noisy; not
+                                                                                                                       used)
+
+
+   • Every source agrees on about 7-8 % over 100 m and 6-7 % over the 150 m hill. Over 25-50 m they disagree.
+   • Bilinear interpolation of a 25 m grid gives a slope that cannot exceed the steepest cell-to-cell step. It averages
+     neighbouring steps, so 7.9 % is a lower estimate of the steepest 25 m.
+   • EU-DEM is a surface model (SRTM and ASTER fused), with stated vertical errors of metres. A hedge-lined lane
+     biases it either way.
+   • A short pitch of 10-12 % fits all the data. 8.5 % is a reasonable middle figure, not a bound.
+The empty robot (calcs_r51.py). Rigid two-axle model: 180 kg, rev 4 CG (x 0.498, z 0.465, ASSUMED unchanged),
+only the drive wheels braked.
+
+Holding limit,
+nose first                 grip 0.18                  0.20                  0.22                   0.25                  0.30
+Empty, no                  7.9 / 8.9              8.7 / 9.7          9.4 / 10.5             10.6 / 11.7           12.5 / 13.5
+castor drag /
+drag 0.02
+Full bin                 10.2 / 11.0           11.2 / 12.0           12.2 / 13.0            13.7 / 14.5           16.1 / 16.8
+
+
+   • Their 8.5 % case runs at 90 % of the holding grade. Their own simulation shows the cliff: 120 mm at 8.5 %, 172
+     mm at 9 %, a 1.4 m slide at 10 %.
+   • Grip 0.22 on wet leaves is itself ASSUMED. At 0.18 the empty robot cannot hold an 8.5 % slope at all.
+Status. This is the rev 4 B-1 with the slope uncertainty narrowed but not closed. It applies to B2-F too. It closes when
+either of these is done:
+   1. The hill is surveyed properly (see M-4, test 1) and is no steeper than about 8 % anywhere over a 1-2 m base. Then
+      the 5.1 rule holds.
+   2. The empty robot gets more braking or more weight on the drive wheels. Options are moving the battery and
+      electronics aft, tail first (which needs rear foam of 100 mm or more and the rear lidar in the loop), or braked castors.
+      Then retest at 10 %.
+Until then, run empty trips nose first at 0.15 m/s only when no wet leaves are present, and treat leaf season as a no-go
+for empty downhill runs. The robot cannot sense leaves, so this has to be a date or weather rule.
+
+B-2. Stop chain on sheet 15: single faults and contradictions
+   1. The diode bypasses both contactors.
+        • Sheet 15 draws the braking-energy diode from the controller side of KM2 back to the battery side of KM1.
+        • A diode’s common failure is a short. Once it shorts, the battery feeds the drive controller with both contactors
+           open, and the e-stop, the soft nose and the tilt switch no longer remove drive power.
+        • Nothing on 5.1 detects this: the auxiliary-contact feedback sees only the contactors.
+        • Fix (cost about zero): fit one diode across each contactor (KM1 alone, KM2 alone), so a shorted diode
+           bypasses only one contactor. Also keep the B2-F voltage sense on the controller side and check that the bus
+           voltage falls below about 5 V within a few seconds of every stop.
+        • The pre-charge path (K3 + 1 kOhm) across both contactors is harmless: at 24 V it passes 24 mA if K3 welds.
+   2. Series wiring contradicts the function table. The left of the sheet puts all ten inputs in series into one
+      two-channel loop, so any input drops both contactors. The table on the right gives some inputs different reactions:
+        • top and bottom lift switches: “lift feed cut”;
+
+
+                                                              4
+       • under-bin ToF: “lowering blocked”;
+       • “lift commanded while moving”: “lift feed stays cut”.
+     As drawn, a ToF reading or a lift limit stops the whole robot and needs a manual reset. A relay with one loop
+     cannot give different reactions. Fix: two chains, for example the PNOZ for drive plus e-stop, and a second relay (or
+     the second B2-F relay pair) for the lift interlocks. Keep the ToF sensors as plain inputs to the lift driver’s enable
+     through the lift relays. They are “not rated” anyway.
+  3. Too few relay outputs. The PNOZ X3 has 3 NO safety contacts, 1 NC auxiliary and 1 semiconductor output.
+     Sheet 15 needs KM1, KM2, two lift relays and pre-charge. Pre-charge must also close before the contactors, but all
+     X3 outputs close together on reset, so this needs a sequence (companion drives K3, then reset). Draw it.
+  4. The feedback loop needs auxiliary contacts the BOM parts lack (answer 3).
+  5. Single-channel inputs. The watchdogs (“one signal each”) and the home-built speed and tilt electronics enter a
+     two-channel loop through relays. This works if each drives a relay with force-guided contacts in both channels. Say
+     so on the sheet.
+  6. Brake supply not shown. “Spring brakes apply” needs the brake release to be powered only from the switched
+     side. Draw where the brake coils are fed.
+Realistic PL. With ten devices in series, ISO/TR 24119 fault masking limits diagnostic coverage to low. The parts are
+used ones without MTTFd or B10d data, and the electronics are home-built.
+  • After fixes 1-5, a fair statement is “category 3 structure, no PL claimed; engineering judgement about PL c for the
+    e-stop path”. As drawn today, the diode makes the power path single-channel.
+  • Their move from a PL column to “was aimed at” is the honest way to show this. For a private machine whose owner
+    decided against certified parts, that is acceptable, provided the single faults above are removed and tested (M-4).
+
+
+Major findings
+M-1. Pause rule: what the front camera cannot see
+Our numbers for the detection itself are in pause_calc.json and Fig 3: two hits in a row at 5 fps, 0.15 s processing,
+misses assumed independent.
+
+                                                                Median / 99th / 99.9th percentile travel at 0.4 m/s before
+Per-picture detection                                           standstill
+85 % (their day rate)                                           0.34 / 0.74 / 0.98 m
+60 % (their night rate)                                         0.42 / 1.46 / 2.02 m
+40 %                                                            0.66 / 3.06 / 4.42 m
+30 %                                                            0.98 / 5.14 / 7.54 m
+
+
+  • Geometry. With 5 m of pause range, the rule has margin down to about 40 % per picture. At the night rate, the
+    robot stops about 3 m short of a standing person in 99.9 % of cases (5 m less 2.0 m), close to their 3.2 m.
+  • Correlated misses. Real misses come in runs: dark clothes, a child behind the bin, rain on the lens. So the lidar
+    stop (1.5 m) and the nose remain the actual protection. Rule 1 is a courtesy layer.
+  • Simulation latency. In their “steps out 3.5 m ahead” runs the stand-out was found only at 2.2-2.6 m, which is
+    2.3-3.3 s at 0.4 m/s. That is slower than the frame statistics predict (median 0.75 s), so the camera model has extra
+    confirmation latency. Find out which latency is real before tuning X_PPL_PAUSE_R.
+  • Restart beside a person (gap). pause_for_people resumes once the front camera has seen nobody within 5.5
+    m for 3 s. A walker coming the other way passes the nose, leaves the +-55 deg view and walks along the flank. The
+    robot moves off 3 s later with the person 0.5-1 m from its side and the bin.
+       – Fix: resume only when the person has been seen leaving (tracked out of view going away), or once the rear
+          camera or rear lidar confirms them behind the tail.
+       – Until the rear sensors are in the loop, require 10 s or more clear plus a horn chirp before moving.
+  • Pivot flanks. Rule 1 checks before a pivot with the front camera only. The flanks between x -0.4 and 1.0 m lie
+    outside both camera cones (sheet 18, white areas). Rule 5’s “lidar check for anything else in the circle is still to be
+    written”. A child beside the robot at the bin or the dock is exactly where pivots happen.
+  • False pauses persist. A gatepost or wheelie bin seen as a person is detected again every frame, so the “clear for 3
+    s” never comes. The robot waits 15 min, holds, and the trip fails. Test 8 would catch this, but the fix belongs in the
+    design: require the camera person to match a lidar cluster that is not on the static map, or ignore a stationary
+    detection that matches a mapped object after about 60 s.
+
+
+                                                            5
+  • Rear side. Rear sensors are drawn but not simulated, and reversing at 0.1 m/s is fine. Rule 7 (no lowering with
+    anyone within 1 m of the bin) depends on them, so it is untested.
+
+M-2. Detector compute is unproven
+See answer 4. Plan for an RK3588-class companion (or a Pi 5 with an accelerator) as the likely outcome, about +EUR
+60-130 (ASSUMED), and keep the Radxa only if test 11 passes with the full software. A Pi 5 alone is not a fallback.
+
+M-3. Bye-law and the trip clock
+  • The c + 50 bug is fixed when X_BYELAW=1. The return check uses the longest measured trip x 1.05 (78 min
+    until one is measured). Drops have only the quiet-hours limit, which 5.1 sets beyond reach (X_QUIET_END=1800).
+  • The fix is not the default. X_BYELAW is unset by default, and the legacy branch still contains (c + 50.0) %
+    1440 > 21*60. Make the bye-law branch the default and delete the legacy branch.
+  • The end time is midnight (answer 5). Change the 21:00 to a setting defaulting to 23:59, with 21:00 as an option.
+  • Results (their result files):
+
+Mission                                Result                                     Charge
+Drops from 18:00                       three trips, back at 19:17 / 20:24 /       0.90 to 0.42
+                                       21:31
+Pick-ups from 18:00                    two trips; the third is refused at 20:30   0.90 to 0.57
+                                       (est. 78 min)
+Pick-ups from 16:30                    three trips, home 20:16                    0.90 to 0.41
+
+
+  • With a 23:59 limit the 18:00 case passes, so decision 1 of rev 4 (castor brakes for the third bin) loses its time
+    argument completely.
+  • A drop started between 00:00 and 06:00 on collection day is allowed with no check against the crew’s time. Add
+    “drop must end before the earliest crew time” as a setting.
+
+M-4. The 12 built-robot tests (section 6): mostly right; gaps and one unsafe test
+
+                                                                #    Comment
+                                                                 1   The arithmetic is right: with the uphill end on
+                                                                     the ground and the level held level, the gap in cm
+                                                                     under a 1 m level equals the slope in %. The
+                                                                     method cannot decide 8 against 8.5 %:
+                                                                     stones and ruts under a 1 m base give plus or
+                                                                     minus 0.5-1 cm, which is plus or minus 0.5-1 %.
+                                                                     “Five steepest-looking places” relies on the eye,
+                                                                     which is poor at this. The stretch 80-230 m misses
+                                                                     SRTM’s steep part (50-100 m). Better: a 2 m
+                                                                     straightedge (or a board) with a phone
+                                                                     inclinometer or digital level, in both wheel
+                                                                     tracks, every 5 m from 0 to 300 m, 3 readings
+                                                                     each. Or a cheap water-tube level over 5 m bays.
+                                                                     Record the cross-fall too. Pass: no 2 m reading
+                                                                     over 8 %; any over 8.5 % triggers B-1 fix 2.
+                                                                 2   Good. Add: wheels off the ground, motors
+                                                                     commanded, and check the controller bus voltage
+                                                                     falls (catches the B-2 diode).
+                                                                 3   Do not hold a 100 A contactor closed by
+                                                                     hand. Simulate a weld with a fused jumper across
+                                                                     the main terminals, wheels up. Add: jumper
+                                                                     across the diode (B-2), a cross-short between the
+                                                                     two loop channels (the relay must refuse reset),
+                                                                     and one channel open (the relay must trip).
+
+
+
+                                                          6
+                                                                #     Comment
+                                                                4     Good. Repeat after a cold (0 C or below), wet
+                                                                      night. Open-cell foam takes on water and can
+                                                                      freeze stiff, which removes the 150 mm. Specify a
+                                                                      closed-cell or sealed foam, or a drain. State the
+                                                                      side-face foam depth.
+                                                                5     Good. Measure the reaction time (strip to
+                                                                      contactor drop to wheel standstill) with a phone at
+                                                                      240 fps. The 0.15 s is ASSUMED, and at 0.20 s
+                                                                      the level stop on leaves is 158 mm (M-5). Add a
+                                                                      wet-leaf pass at the steepest place, empty, nose
+                                                                      first. That is the B-1 case.
+                                                                6     Add wet leaves under the drive wheels, empty,
+                                                                      nose down. That is the case that fails first.
+                                                                7     Twenty passes with no miss shows only that the
+                                                                      miss rate is below about 14 % (95 % confidence).
+                                                                      Fine for a courtesy layer, not for a safety claim.
+                                                                      Add the restart-beside case (M-1): walk past the
+                                                                      nose and stop at the flank.
+                                                                8     Run at night and in rain, past the real gateposts
+                                                                      and bins on the route, and log where each false
+                                                                      pause happens.
+                                                              9-12    Good. Test 10: also lower onto a hand-sized foam
+                                                                      block (25 mm).
+                                                              new     Pivot at the dock, the bin and the road with a
+                                                                      person standing at each flank.
+                                                              new     Reversing at 0.1 m/s onto a padded post: the rear
+                                                                      switch must stop it.
+                                                              new     Remote stop over 4G and loss of 4G mid-trip.
+                                                              new     Lift current limits at 0 C (rev 4 m-4; still open on
+                                                                      sheet 15).
+
+
+M-5. Wet-leaf margins are thin even off the hill
+Hand model against theirs on wet leaves, in mm (Fig 2):
+
+Case                               Theirs           Hand, no drag             Hand, drag 0.02      Hand, 0.20 s reaction
+level, empty, 0.4                     139                       146                        138                        158
+m/s
+3 %, full bin, 0.4                    142                       148                        142                        162
+m/s
+6 %, full bin, 0.3                    118                       119                        111                        126
+m/s
+8.5 %, empty,                         120                       144                          80                        88
+0.15 m/s
+9 %, empty, 0.15                      172                       278                          99                       107
+m/s
+
+
+On the level and up to 3 % at 0.4 m/s, the stop uses all but 2-12 mm of the 150 mm. A 0.05 s longer reaction takes it
+past the foam.
+Fix: cap at 0.35 m/s, which gives 112-129 mm on leaves (empty on the level) and 115-133 mm (full bin at 3 %) by our
+hand model, wherever the lane has leaves (the hedged sections) from October to December. The cost is about 1-2 min
+per trip.
+
+
+
+
+                                                          7
+Minor findings
+  • m-1. Energy budget.
+       – A trip uses 71-75 Wh. The runs used X_TRIP_WH=75 (from sitl_env_r5.sh, not 50), and the recommended
+           80 is only 7 % above the measured trip.
+       – Their own lane run at night with a heavier bin and less grip (P7) used 54 % more lane energy (25.5 against
+          16.6 Wh).
+       – Make the budget adaptive like the time estimate: the longest measured trip x 1.25.
+       – The battery has room: an aged pack (80 %) at 0 C still ends three trips above the reserve, about 25 % left
+          (our estimate).
+  • m-2. Actuator shim note (sheet 17). “The actuator’s own stops fall at 331 and at -15 mm, whatever the built
+    length” is possible only if the end-stop stroke is exactly 346 mm. If you shim for 331 at the top and the stroke is
+    350, the bottom stop lands at -19, past the -18 block, so the actuator stalls on it. Shim to the bottom (-15); the top
+    then falls at 331-335, which is 5-9 mm under the +340 block.
+  • m-3. Stale text on rev 5 sheets. Sheet 13, loom L11 still reads “two contactor coils from the safety controller,
+    the mirror contacts of both contactors”. Sheet 13, item 75 still says the rear lidar is “for coming down a steep pitch
+    tail first”. Reissue sheet 13 with 5.1.
+  • m-4. Hedge clearance. The least clearance in the mission runs was 0.197 m, against the planning rule of “never
+    planned closer than 0.20 m”. Trivial, but the rule should then read 0.19 m, or the planner should hold 0.20 m.
+  • m-5. Pivot nose speed. The peak dropped from 1.0-1.2 to 0.3-0.6 m/s, which is good. 0.6 m/s still exceeds the
+    0.4 m/s straight-line rule, and the side faces’ foam depth is not given. At 0.6 m/s the robot moves 90 mm before
+    the brakes even start (0.15 s). Cap the yaw rate so the nose corner (radius 1.34-1.39 m) stays at 0.3 m/s or less,
+    that is 0.22 rad/s, and give the side foam depth.
+  • m-6. Not re-run. The 60-mission score, the fault injections and the bend tests were not re-run under 5.1. The
+    changes slow the robot and add stops, so a regression is unlikely. The pause rule, however, adds a new way to hold
+    (M-1), so re-run the score once with false pauses injected.
+  • m-7. Cost risks not in the range (Section 7).
+       – The used LA36 at EUR 250-400 is plausible: used listings run EUR 250-450, for example Buy2Sell at EUR 399
+           and EUR 449. The model code must match a 6.8 kN gear and a 350 mm stroke, otherwise expect new (EUR
+           940-1,060, +EUR 540-810).
+       – Contactors with auxiliary contacts: +EUR 0-150.
+       – Companion upgrade: +EUR 60-130.
+       – The frame, rails, nose and sensor rows are reasonable ASSUMED ranges.
+       – Realistic all-in: EUR 4,100-5,100, and up to about EUR 5,800 if the actuator has to be bought new. Their
+           figure is EUR 4,055-4,789. The arithmetic of their table is right (parts x 1.2034).
+
+
+Carried items from our rev 4 review
+Rev 4 item                              Status in rev 5 / 5.1                     Evidence
+Bumper 700 on a 936 robot (B-2)         Fixed                                     Soft nose 936 wide, ribbon switches on
+                                                                                  the front and both side faces (sheets
+                                                                                  13, 16, 18). Side foam depth not
+                                                                                  stated (m-5).
+Pivot corner speed 0.66-0.88 m/s        Partly fixed                              Peak 0.3-0.6 m/s (sheet 18, rule 5), in
+                                                                                  software, not in the safety layer (m-5).
+Reversing on 25 mm rear foam            Fixed by speed                            Every reverse at 0.1 m/s; rear lidar
+                                                                                  and camera drawn, not simulated.
+Lowering beams cut by the bin wheel;    Fixed in concept                          Beams replaced by two ToF sensors
+guard about 22 mm blind (M-1)                                                     reading the ground under each bin
+                                                                                  wheel against the bare ground seen on
+                                                                                  arrival; 10 mm threshold (sim: 10 mm
+                                                                                  block reads 12 mm). Load-drop watch
+                                                                                  to 8 mm. Not checked here (rev 5
+                                                                                  pack).
+
+
+
+
+                                                           8
+Rev 4 item                                Status in rev 5 / 5.1                   Evidence
+Bolted corner slip (M-3)                  Fixed                                   4 x M10 8.8 at 49 N m, bare brushed
+                                                                                  faces, prevailing-torque nuts. Our
+                                                                                  check: preload about 24.5 kN; slip per
+                                                                                  bolt at mu 0.3, 2 planes, gamma 1.25
+                                                                                  is about 11.8 kN, against 7.4 kN (60
+                                                                                  mm pair) and 9.8 kN (45 mm pair).
+                                                                                  Holds while the faces stay unpainted
+                                                                                  and the torque is re-checked (their test
+                                                                                  12). At mu 0.2 the 45 mm pair would
+                                                                                  slip.
+Lift top-stop order (M-4)                 Fixed                                   Blocks at +340; switch bodies first
+                                                                                  touched at +346 (sheet 13, item 68);
+                                                                                  actuator stop 331-335. See m-2 for the
+                                                                                  shim note.
+Top tie into an aluminium block           Fixed                                   Steel thread insert (sheet 17).
+Nose cross-member 50 x 50 (m-1)           Fixed                                   60 x 60 x 4 S355 (sheet 13, item 3).
+Rail SF 1.99 at M10 holes                 Open (theirs)                           0.5 % under their own 2.0 target.
+                                                                                  Acceptable, or add a 4 mm backing
+                                                                                  flat at the corner. Not recalculated:
+                                                                                  their working is in the rev 5 pack.
+Standstill blind to a slide (rev 4 B-1)   Addressed on paper                      “Speed and slide watchdog (own
+                                                                                  build), wheel sensors and ground
+                                                                                  speed” (sheet 15). Design not seen.
+Bye-law window misread (M-5)              Fixed in code, not the default          M-3.
+LA36 price (M-6)                          Fixed                                   Priced used, now plausible (m-7).
+
+
+
+What revision 5.1 got right (confirmed)
+  1. lane_grade.py on our route.json reproduces their table exactly (EU-DEM 13.7 m fall, 2.16 % mean, 7.9 % / 10 m
+     at 145 m).
+  2. The 12 % pitch, the step, the trench, the pothole and the leaf zones were assumptions, not measurements. They say
+     so plainly, which is correct.
+  3. Their stop table matches our hand model within about 15 % away from the holding limit (Fig 2).
+  4. The weak case is correctly identified: empty, nose first, wet leaves, more than half the weight on the castors.
+  5. Tail-first driving is rightly dropped while the rear has only 25 mm of foam.
+  6. The trip clock uses the measured trip time (the rev 4 c + 50 bug), under X_BYELAW=1.
+  7. Mission timings are as stated in their result files: three drops from 18:00 back at 21:31, three pick-ups from 16:30
+     back at 20:16, 0.41-0.42 of charge left.
+  8. The pause rule is coded as described and logs its pauses. The 2-minute message and the 15-minute hold are sensible.
+  9. Their limits paragraph is honest: the camera rates are assumed, there is no rear camera in the simulation, and false
+     pauses are not modelled.
+ 10. Two contactors in series are kept despite “no certified parts”. That is the right call, once B-2 is fixed.
+ 11. The cost arithmetic is consistent, and used LA36 prices are in their range.
+ 12. The carried mechanical items are fixed: corners, stops, top tie, nose member, nose width.
+
+
+Fix list for the other agent
+  1. Stop chain (B-2). One diode per contactor. Voltage sense on the controller bus with a check after every stop.
+     Separate drive and lift chains, with the ToF sensors and lift limits out of the drive loop. A pre-charge sequence.
+     Contactors with auxiliary (or mirror) contacts, or keep the B2-F voltage EDM. Draw the brake supply. Reissue
+     sheets 13 and 15 together.
+  2. Slope (B-1). Replace test 1 with the 2 m, every-5 m survey from 0 to 300 m in both wheel tracks. Until it is done,
+     no empty downhill runs in leaf season. Prepare the B-1 fix-2 option (battery aft or tail first with 100 mm or more of
+     rear foam) in case it reads over 8.5 %.
+
+
+
+                                                            9
+  3. Pause rule (M-1). Resume only on confirmed exit, or at least 10 s clear plus a chirp. Cross-check camera people
+     against lidar clusters not on the map. Write the lidar pivot-circle check. Put the rear sensors in the simulation.
+  4. Companion (M-2). Plan an RK3588-class board, or a Pi 5 with an accelerator. Make test 11 run the full software.
+  5. Bye-law (M-3). Make X_BYELAW=1 the default and delete the c + 50 branch. Set the return limit to 23:59 with
+     21:00 as an option. Rerun s3b from 18:00. Add a “drop ends before the crew” setting.
+  6. Speed (M-5). 0.35 m/s on leafy sections in leaf season.
+  7. Tests (M-4). Apply the table above. Do not hold contactors by hand.
+  8. Minor. Adaptive energy budget (longest trip x 1.25). Shim the actuator to the bottom stop. Cap the pivot nose
+     speed at 0.3 m/s. State the side foam depth. Fix the stale sheet 13 text. Re-run the 60-mission score with false
+     pauses injected.
+
+
+Files
+Working files in /workspace/work/coldeye_rev51/:
+  • PROGRESS.md
+  • resample.py, resample_otd.json (OpenTopoData, 6 dataset and interpolation variants)
+  • slopes.py, slopes_otd.json, grade_ours.json (their script on our route.json)
+  • calcs_r51.py, calcs_r51.json (stops, holding grades, speed for a 130 mm stop)
+  • pause_calc.py, pause_calc.json
+  • figs_r51.py; cropped sheet images s13_half.png, s15_left.png, s15_right.png, s18_half.png
+Figures are in /workspace/work/out/rev51/coldeye_figs/, with copies in coldeye_rev51_figs/ next to this file.
+Inputs:
+  • /workspace/work/rev51/ (their reply, 18 sheets, test pack)
+  • sitl/data/route.json (md5 35aef473. . . )
+  • /workspace/work/out/b2f_bom/BinRobo_B2F_BOM_2026-11-12.xlsx
+  • /workspace/work/coldeye_rev4/calcs_rev4.py
+  • the project journals for answer 2
+Sources:
+  • County county waste management bye-laws 2018 (bye-law 6): [county council website]
+    07/clare-waste-management-bye-laws-2018-17061.pdf
+  • the county council bye-laws summary page (9.00 pm): [county council website]
+    waste/national-waste-policy-and-regulations/waste-management-bye-laws
+  • OpenTopoData API (EU-DEM 25 m, SRTM 30 m, Mapzen, ASTER): https://api.opentopodata.org
+  • OSM ways 0, 0, 0: https://api.openstreetmap.org/api/0.6/ways?ways=0,0,0
+  • Qengineering YoloV5-NPU benchmark (RK3566/68, RK3588): https://github.com/Qengineering/YoloV5-NPU
+  • Radxa forum, RK3566 detection thread (follow-up: 75 ms after re-conversion): https://forum.radxa.com/t/optimizing-
+    object-detection-on-radxa-zero-3-rk3566-performance-issues/25700
+  • KM-L8 listing (SW100, no auxiliary contact listed): https://jazgot.at/sch%C3%BCtze/18407-antriebssch%C3%BCtz-
+    dc-24v-100a-sw100.html
+  • Albright auxiliary options (suffix A/C) and mirror auxiliary contact: https://www.albrightinternational.com/wpcms/wp-
+    content/uploads/2020/08/SW80-Data-Sheet.pdf ; https://www.albrightinternational.com/blog/2020/04/15/new-
+    albright-mirror-auxiliary-contact/
+  • Used LA36 prices: https://www.buy2sell.dk/en/products/k36-2 ; https://gebraucht-kaufen.de/linak ; new:
+    https://www.techniektotaal.com/en/actuator-la36-24v-6800n-stroke-200mm-eos-linak.html
+
+
+
+
+                                                         10
+Figures
+
+
+
+
+                      Figure 1: Lane profile and slope from four elevation datasets
+
+
+
+
+          Figure 2: Stop after a nose touch on wet leaves: their simulation and our hand model
+
+
+
+                                                   11
+Figure 3: Pause rule: robot travel before standstill against detection rate
+
+
+
+
+                                    12
+

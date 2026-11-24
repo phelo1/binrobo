@@ -1,0 +1,48 @@
+
+grip 0.60, full bin: stop distance m (trigger to standstill) by slope and speed
+slope %   0.40   1.00
+  -0.0    0.09    0.33 
+
+grip 0.60, empty: stop distance m (trigger to standstill) by slope and speed
+slope %   0.40   1.00
+  -0.0    0.10    0.39 
+
+grip 0.30, full bin: stop distance m (trigger to standstill) by slope and speed
+slope %   0.20   0.30   0.35   0.40   0.50   0.60   0.80   1.00   1.20
+  -0.0      -       -     0.09    0.11    0.15    0.20    0.31    0.45    0.60 
+   3.0      -       -     0.10    0.12    0.17    0.23    0.36    0.52    0.70 
+   6.0      -     0.09      -       -     0.20    0.27    0.43    0.63    0.86 
+   8.5    0.06      -       -       -     0.25    0.33    0.53    0.78    1.06 
+  10.0    0.07      -       -       -       -     0.38      -       -       -  
+
+grip 0.30, empty: stop distance m (trigger to standstill) by slope and speed
+slope %   0.15   0.20   0.30   0.35   0.40   0.50   0.60   0.80   1.00   1.20
+  -0.0      -       -       -     0.10    0.12    0.17    0.23    0.37    0.55    0.75 
+   3.0      -       -     0.09      -       -     0.21    0.28    0.46    0.68    0.94 
+   6.0      -     0.06      -       -     0.18    0.27    0.37    0.61    0.92    1.28 
+   8.5    0.07      -       -       -     0.27    0.39    0.54    0.91    1.37    1.93 
+  10.0    0.08      -       -       -     0.38      -       -       -       -       -  
+
+grip 0.22, full bin: stop distance m (trigger to standstill) by slope and speed
+slope %   0.20   0.30   0.35   0.40   0.50   0.60   0.80   1.00   1.20
+  -0.0      -       -     0.10    0.12    0.17    0.22    0.36    0.53    0.72 
+   3.0      -       -     0.12    0.14    0.20    0.27    0.44    0.65    0.89 
+   6.0      -     0.12      -       -     0.26    0.35    0.58    0.86    1.20 
+   8.5    0.08      -       -       -     0.37    0.50    0.83    1.24    1.74 
+  10.0    0.12      -       -       -     0.50    0.69      -       -       -  
+
+grip 0.22, empty: stop distance m (trigger to standstill) by slope and speed
+slope %   0.15   0.20   0.30   0.35   0.40   0.50   0.60   0.80   1.00   1.20
+  -0.0      -       -       -     0.11    0.14    0.20    0.27    0.44    0.65    0.91 
+   3.0      -       -     0.11      -       -     0.26    0.35    0.58    0.88    1.22 
+   6.0      -     0.08      -       -     0.27    0.40    0.55    0.93    1.42    2.00 
+   8.5    0.11      -       -       -     0.61    0.92    1.29    2.22    3.41    4.83 
+  10.0    1.09*     -       -       -     3.04*     -       -       -       -       -  
+
+* = not stopped within 8 s (sliding)
+
+longer reaction time (brakes on 0.20 s after the touch), wet leaves, level:
+  full bin, 0.35 m/s: 0.114 m
+  full bin, 0.40 m/s: 0.138 m
+  empty, 0.35 m/s: 0.130 m
+  empty, 0.40 m/s: 0.159 m

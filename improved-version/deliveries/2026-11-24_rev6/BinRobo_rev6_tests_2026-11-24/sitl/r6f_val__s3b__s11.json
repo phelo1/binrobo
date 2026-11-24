@@ -1,0 +1,381 @@
+{
+ "scenario": "s3b",
+ "seed": 11,
+ "title": "Three-bin night pickup (F, M, A -> home)",
+ "expect": "pass",
+ "result": "alert",
+ "outcome": "grab refused, back on the dock",
+ "alerts": [
+  "could not line up on bin green (pre-grab gate missed twice) - not grabbing"
+ ],
+ "sim_time_s": 2176.1,
+ "chunks": [
+  {
+   "t0": 0.0,
+   "t1": 2176.1,
+   "wall": 298.1,
+   "frames": 109797,
+   "status": "done"
+  }
+ ],
+ "energy_wh": 53.08,
+ "soc_start": 0.9,
+ "soc_end": 0.7822,
+ "odo_m": 1213.9,
+ "hedge_min_m": 0.242,
+ "hedge_min_at": [
+  1598.9,
+  417.1
+ ],
+ "legal_min_m": 11.225,
+ "legal_min_at": [
+  1310.3,
+  611.7
+ ],
+ "contact_min_m": 0.524,
+ "contact_with": "green",
+ "person_rest_min_m": null,
+ "car_rest_min_m": null,
+ "collisions": [],
+ "chain_trips": [],
+ "metrics": {
+  "placements": [],
+  "grabs": [],
+  "trips": [
+   {
+    "kind": "pickup green<-F",
+    "t0": 47.4,
+    "wh0": 0.119,
+    "clk0": "D0 18:00",
+    "t1": 2174.8,
+    "wh": 52.96,
+    "clk1": "D0 18:36",
+    "min": 35.5
+   }
+  ],
+  "stops": [],
+  "gates": [
+   {
+    "bin": "green",
+    "attempt": 0,
+    "lat_m": -0.026,
+    "along_m": 0.009,
+    "yaw_deg": -1.08,
+    "ok": true,
+    "lat_cam": -0.036,
+    "yaw_cam_deg": -0.8,
+    "ok_cam": false
+   },
+   {
+    "bin": "green",
+    "attempt": 1,
+    "lat_m": -0.028,
+    "along_m": -0.001,
+    "yaw_deg": -0.36,
+    "ok": true,
+    "lat_cam": -0.038,
+    "yaw_cam_deg": 0.37,
+    "ok_cam": false
+   }
+  ],
+  "guard": [
+   {
+    "t": 47.4,
+    "soc": 0.9,
+    "avail_wh": 360.3,
+    "budget_wh": 80.0,
+    "kind": "pickup green<-F",
+    "need_wh": 80.0
+   }
+  ],
+  "window": [
+   {
+    "kind": "pickup",
+    "clock": "D0 18:00",
+    "est_min": 45.0
+   }
+  ],
+  "first_motion_clock": "D0 18:00",
+  "first_motion_t": 57.8,
+  "pivot_way": [
+   {
+    "t": 69.7,
+    "ccw_m": 0.81,
+    "cw_m": 0.81,
+    "way": "ccw"
+   },
+   {
+    "t": 1207.4,
+    "ccw_m": 0.32,
+    "cw_m": 0.84,
+    "way": "cw"
+   }
+  ],
+  "navcam": {
+   "n": 16386,
+   "cam_only": 138,
+   "both": 13125,
+   "disagree": 761,
+   "none": 1597,
+   "dis_cam": 13,
+   "dis_near": 4
+  },
+  "r6_fast": {
+   "ends": 32.0,
+   "lane_s": 1512.4,
+   "narrow": 124.5,
+   "fast": 1239.8,
+   "float": 318.1,
+   "object": 0.1,
+   "fix": 50.6,
+   "one_face": 96.0,
+   "ramp": 25.8,
+   "hedge_close": 1.7,
+   "bend": 1.0
+  },
+  "verify": {
+   "bin": "green",
+   "n_pts": 165,
+   "merged_m": [
+    0.59,
+    0.29
+   ],
+   "width_m": 0.56,
+   "depth_m": 0.12,
+   "corridor_returns": 0,
+   "refine_yaw_deg": 0.59,
+   "refine_m": [
+    -0.041,
+    0.048
+   ],
+   "verdict": "ok"
+  },
+  "cam_checks": [
+   {
+    "bin": "green",
+    "k": 0,
+    "lat_cam": -0.067,
+    "lat_true": -0.072,
+    "e_est": 0.005,
+    "seen": true
+   },
+   {
+    "bin": "green",
+    "k": 1,
+    "lat_cam": -0.024,
+    "lat_true": -0.026,
+    "e_est": -0.03,
+    "seen": true
+   }
+  ],
+  "refused": [
+   {
+    "bin": "green",
+    "why": "gate"
+   }
+  ],
+  "last_dock_clock": "D0 18:36"
+ },
+ "events": [
+  {
+   "t": 0.0,
+   "kind": "sim",
+   "text": "chunk 0 start: SITL launched, home = checkpoint pose s=5.4"
+  },
+  {
+   "t": 1.14,
+   "kind": "fw",
+   "text": "Calibrating barometer"
+  },
+  {
+   "t": 2.81,
+   "kind": "fw",
+   "text": "Barometer 1 calibration complete"
+  },
+  {
+   "t": 2.81,
+   "kind": "fw",
+   "text": "Barometer 2 calibration complete"
+  },
+  {
+   "t": 2.83,
+   "kind": "fw",
+   "text": "Beginning INS calibration. Do not move vehicle"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "ArduPilot Ready"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "RCInput: decoding UDP (Pulses)"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "AHRS: DCM active"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "GPS 1: specified as MAV"
+  },
+  {
+   "t": 3.11,
+   "kind": "fw",
+   "text": "GPS 1: detected MAV"
+  },
+  {
+   "t": 4.97,
+   "kind": "fw",
+   "text": "EKF3 IMU0 initialised"
+  },
+  {
+   "t": 4.97,
+   "kind": "fw",
+   "text": "EKF3 IMU1 initialised"
+  },
+  {
+   "t": 6.65,
+   "kind": "fw",
+   "text": "EKF3 IMU0 tilt alignment complete"
+  },
+  {
+   "t": 6.65,
+   "kind": "fw",
+   "text": "EKF3 IMU1 tilt alignment complete"
+  },
+  {
+   "t": 6.73,
+   "kind": "fw",
+   "text": "EKF3 IMU0 MAG0 initial yaw alignment complete"
+  },
+  {
+   "t": 6.73,
+   "kind": "fw",
+   "text": "EKF3 IMU1 MAG0 initial yaw alignment complete"
+  },
+  {
+   "t": 6.73,
+   "kind": "fw",
+   "text": "AHRS: EKF3 active"
+  },
+  {
+   "t": 15.15,
+   "kind": "fw",
+   "text": "EKF3 IMU0 origin set"
+  },
+  {
+   "t": 15.15,
+   "kind": "fw",
+   "text": "EKF3 IMU1 origin set"
+  },
+  {
+   "t": 15.15,
+   "kind": "fw",
+   "text": "Field Elevation Set: 43m"
+  },
+  {
+   "t": 21.63,
+   "kind": "fw",
+   "text": "SmartRTL deactivated: bad position"
+  },
+  {
+   "t": 42.77,
+   "kind": "fw",
+   "text": "EKF3 IMU0 is using GPS"
+  },
+  {
+   "t": 42.77,
+   "kind": "fw",
+   "text": "EKF3 IMU1 is using GPS"
+  },
+  {
+   "t": 46.35,
+   "kind": "fw",
+   "text": "Fence Indexed OK"
+  },
+  {
+   "t": 46.35,
+   "kind": "pi",
+   "text": "fence upload ack=0 (81 vertices)"
+  },
+  {
+   "t": 46.39,
+   "kind": "fw",
+   "text": "Warning: Arming Checks Disabled"
+  },
+  {
+   "t": 46.39,
+   "kind": "fw",
+   "text": "Throttle armed"
+  },
+  {
+   "t": 47.35,
+   "kind": "pi",
+   "text": "boot done (GUIDED, armed, fence 81 pts)"
+  },
+  {
+   "t": 47.45,
+   "kind": "pi",
+   "text": "preflight OK (pickup green<-F): 360 Wh available, clock D0 18:00"
+  },
+  {
+   "t": 47.65,
+   "kind": "pi",
+   "text": "undock: charger off, beacon + pre-motion warning (10 s)"
+  },
+  {
+   "t": 1052.87,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 1207.13,
+   "kind": "pi",
+   "text": "bin green verified at F (165 returns, 0.56 x 0.12 m)"
+  },
+  {
+   "t": 1265.93,
+   "kind": "pi",
+   "text": "rear camera: bin axis 0.073 m off the estimate (camera -0.067 m) -> estimate corrected, re-aligning"
+  },
+  {
+   "t": 1291.13,
+   "kind": "pi",
+   "text": "pre-grab gate MISS on the camera: lateral -0.036 m, yaw -0.80 deg (truth: -0.026 m, -1.08 deg, inside)"
+  },
+  {
+   "t": 1312.13,
+   "kind": "pi",
+   "text": "pre-grab gate MISS on the camera: lateral -0.038 m, yaw 0.37 deg (truth: -0.028 m, -0.36 deg, inside)"
+  },
+  {
+   "t": 1312.13,
+   "kind": "ALERT",
+   "text": "could not line up on bin green (pre-grab gate missed twice) - not grabbing"
+  },
+  {
+   "t": 1400.47,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 2169.63,
+   "kind": "pi",
+   "text": "dock contacts closed, charging (5 s)"
+  },
+  {
+   "t": 2174.79,
+   "kind": "pi",
+   "text": "trip done: 53.0 Wh, 35.5 min, back D0 18:36"
+  },
+  {
+   "t": 2176.11,
+   "kind": "pi",
+   "text": "FINISH alert: grab refused, back on the dock"
+  }
+ ]
+}

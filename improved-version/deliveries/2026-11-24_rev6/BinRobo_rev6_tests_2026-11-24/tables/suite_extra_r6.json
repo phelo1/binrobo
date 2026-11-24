@@ -1,0 +1,2548 @@
+[
+ {
+  "key": "s10a__s11",
+  "scen": "s10a",
+  "seed": 11,
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "bin tipped",
+  "alerts": [
+   "bin black at A does not look upright (lidar outline 1.04 x 0.13 m) - n"
+  ],
+  "trips": [],
+  "hedge": 0.381,
+  "hedge_at": [
+   48.2,
+   565.0
+  ],
+  "contact_min": 2.825,
+  "contact_with": "black",
+  "collisions": 0,
+  "place": [],
+  "seat": [],
+  "pauses": [],
+  "pf": [],
+  "stops": 0,
+  "pivot_way": [],
+  "soc_end": 0.8973,
+  "last_dock": null,
+  "first": null,
+  "sim_min": 2.5
+ },
+ {
+  "key": "s10a__s23",
+  "scen": "s10a",
+  "seed": 23,
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "bin tipped",
+  "alerts": [
+   "bin black at A does not look upright (lidar outline 1.06 x 0.39 m) - n"
+  ],
+  "trips": [],
+  "hedge": 0.381,
+  "hedge_at": [
+   47.4,
+   565.0
+  ],
+  "contact_min": 2.984,
+  "contact_with": "black",
+  "collisions": 0,
+  "place": [],
+  "seat": [],
+  "pauses": [],
+  "pf": [],
+  "stops": 0,
+  "pivot_way": [],
+  "soc_end": 0.897,
+  "last_dock": null,
+  "first": null,
+  "sim_min": 2.7
+ },
+ {
+  "key": "s10a__s7",
+  "scen": "s10a",
+  "seed": 7,
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "bin tipped",
+  "alerts": [
+   "bin black at A does not look upright (lidar outline 1.03 x 0.48 m) - n"
+  ],
+  "trips": [],
+  "hedge": 0.343,
+  "hedge_at": [
+   71.5,
+   583.7
+  ],
+  "contact_min": 2.93,
+  "contact_with": "black",
+  "collisions": 0,
+  "place": [],
+  "seat": [],
+  "pauses": [
+   {
+    "where": "lane",
+    "by": "lid",
+    "s": 617.3,
+    "range": 2.96,
+    "wait": 3.3,
+    "person": false,
+    "static": null,
+    "v_in": 0.17
+   }
+  ],
+  "pf": [],
+  "stops": 0,
+  "pivot_way": [],
+  "soc_end": 0.8971,
+  "last_dock": null,
+  "first": null,
+  "sim_min": 2.5
+ },
+ {
+  "key": "s10b__s11",
+  "scen": "s10b",
+  "seed": 11,
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "path blocked",
+  "alerts": [
+   "path blocked for 120 s (something 3.0 m from the robot, in its path)"
+  ],
+  "trips": [],
+  "hedge": 0.381,
+  "hedge_at": [
+   47.6,
+   565.0
+  ],
+  "contact_min": 2.971,
+  "contact_with": "sack",
+  "collisions": 0,
+  "place": [],
+  "seat": [],
+  "pauses": [
+   {
+    "where": "lane",
+    "by": "lid",
+    "s": 615.4,
+    "range": 2.99,
+    "wait": null,
+    "person": null,
+    "static": null,
+    "v_in": 0.21
+   }
+  ],
+  "pf": [],
+  "stops": 0,
+  "pivot_way": [],
+  "soc_end": 0.8962,
+  "last_dock": null,
+  "first": null,
+  "sim_min": 4.2
+ },
+ {
+  "key": "s10b__s23",
+  "scen": "s10b",
+  "seed": 23,
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "path blocked",
+  "alerts": [
+   "path blocked for 120 s (something 2.9 m from the robot, in its path)"
+  ],
+  "trips": [],
+  "hedge": 0.375,
+  "hedge_at": [
+   125.6,
+   609.3
+  ],
+  "contact_min": 2.936,
+  "contact_with": "sack",
+  "collisions": 0,
+  "place": [],
+  "seat": [],
+  "pauses": [
+   {
+    "where": "lane",
+    "by": "lid",
+    "s": 615.4,
+    "range": 2.98,
+    "wait": null,
+    "person": null,
+    "static": null,
+    "v_in": 0.22
+   }
+  ],
+  "pf": [],
+  "stops": 0,
+  "pivot_way": [],
+  "soc_end": 0.8958,
+  "last_dock": null,
+  "first": null,
+  "sim_min": 4.5
+ },
+ {
+  "key": "s10b__s7",
+  "scen": "s10b",
+  "seed": 7,
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "path blocked",
+  "alerts": [
+   "path blocked for 120 s (something 3.0 m from the robot, in its path)"
+  ],
+  "trips": [],
+  "hedge": 0.35,
+  "hedge_at": [
+   72.6,
+   584.0
+  ],
+  "contact_min": 2.953,
+  "contact_with": "sack",
+  "collisions": 0,
+  "place": [],
+  "seat": [],
+  "pauses": [
+   {
+    "where": "lane",
+    "by": "lid",
+    "s": 615.4,
+    "range": 3.0,
+    "wait": null,
+    "person": null,
+    "static": null,
+    "v_in": 0.21
+   }
+  ],
+  "pf": [],
+  "stops": 0,
+  "pivot_way": [],
+  "soc_end": 0.8962,
+  "last_dock": null,
+  "first": null,
+  "sim_min": 4.2
+ },
+ {
+  "key": "s11a__s11",
+  "scen": "s11a",
+  "seed": 11,
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "wind no-go",
+  "alerts": [
+   "weather no-go: wind gust 18 m/s >= 15 m/s - bins stay home"
+  ],
+  "trips": [],
+  "hedge": null,
+  "hedge_at": null,
+  "contact_min": 3.751,
+  "contact_with": "black",
+  "collisions": 0,
+  "place": [],
+  "seat": [],
+  "pauses": [],
+  "pf": [],
+  "stops": 0,
+  "pivot_way": [],
+  "soc_end": 0.8997,
+  "last_dock": null,
+  "first": null,
+  "sim_min": 0.8
+ },
+ {
+  "key": "s11a__s23",
+  "scen": "s11a",
+  "seed": 23,
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "wind no-go",
+  "alerts": [
+   "weather no-go: wind gust 18 m/s >= 15 m/s - bins stay home"
+  ],
+  "trips": [],
+  "hedge": null,
+  "hedge_at": null,
+  "contact_min": 3.75,
+  "contact_with": "black",
+  "collisions": 0,
+  "place": [],
+  "seat": [],
+  "pauses": [],
+  "pf": [],
+  "stops": 0,
+  "pivot_way": [],
+  "soc_end": 0.8997,
+  "last_dock": null,
+  "first": null,
+  "sim_min": 0.8
+ },
+ {
+  "key": "s11a__s7",
+  "scen": "s11a",
+  "seed": 7,
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "wind no-go",
+  "alerts": [
+   "weather no-go: wind gust 18 m/s >= 15 m/s - bins stay home"
+  ],
+  "trips": [],
+  "hedge": null,
+  "hedge_at": null,
+  "contact_min": 3.75,
+  "contact_with": "black",
+  "collisions": 0,
+  "place": [],
+  "seat": [],
+  "pauses": [],
+  "pf": [],
+  "stops": 0,
+  "pivot_way": [],
+  "soc_end": 0.8997,
+  "last_dock": null,
+  "first": null,
+  "sim_min": 0.8
+ },
+ {
+  "key": "s11b__s11",
+  "scen": "s11b",
+  "seed": 11,
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "frost no-go",
+  "alerts": [
+   "weather no-go: frost / ice on the lane (air -3.0 C) - bins stay home"
+  ],
+  "trips": [],
+  "hedge": null,
+  "hedge_at": null,
+  "contact_min": 3.751,
+  "contact_with": "black",
+  "collisions": 0,
+  "place": [],
+  "seat": [],
+  "pauses": [],
+  "pf": [],
+  "stops": 0,
+  "pivot_way": [],
+  "soc_end": 0.8997,
+  "last_dock": null,
+  "first": null,
+  "sim_min": 0.8
+ },
+ {
+  "key": "s11b__s23",
+  "scen": "s11b",
+  "seed": 23,
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "frost no-go",
+  "alerts": [
+   "weather no-go: frost / ice on the lane (air -3.0 C) - bins stay home"
+  ],
+  "trips": [],
+  "hedge": null,
+  "hedge_at": null,
+  "contact_min": 3.75,
+  "contact_with": "black",
+  "collisions": 0,
+  "place": [],
+  "seat": [],
+  "pauses": [],
+  "pf": [],
+  "stops": 0,
+  "pivot_way": [],
+  "soc_end": 0.8997,
+  "last_dock": null,
+  "first": null,
+  "sim_min": 0.8
+ },
+ {
+  "key": "s11b__s7",
+  "scen": "s11b",
+  "seed": 7,
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "frost no-go",
+  "alerts": [
+   "weather no-go: frost / ice on the lane (air -3.0 C) - bins stay home"
+  ],
+  "trips": [],
+  "hedge": null,
+  "hedge_at": null,
+  "contact_min": 3.75,
+  "contact_with": "black",
+  "collisions": 0,
+  "place": [],
+  "seat": [],
+  "pauses": [],
+  "pf": [],
+  "stops": 0,
+  "pivot_way": [],
+  "soc_end": 0.8997,
+  "last_dock": null,
+  "first": null,
+  "sim_min": 0.8
+ },
+ {
+  "key": "s12a__s11",
+  "scen": "s12a",
+  "seed": 11,
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "pad outside geofence",
+  "alerts": [
+   "drop spot A is -4.47 m from the road-verge boundary (< 0.3 m): not goi"
+  ],
+  "trips": [],
+  "hedge": 0.361,
+  "hedge_at": [
+   0.0,
+   585.0
+  ],
+  "contact_min": null,
+  "contact_with": null,
+  "collisions": 0,
+  "place": [],
+  "seat": [],
+  "pauses": [],
+  "pf": [],
+  "stops": 0,
+  "pivot_way": [],
+  "soc_end": 0.8997,
+  "last_dock": null,
+  "first": null,
+  "sim_min": 0.8
+ },
+ {
+  "key": "s12a__s23",
+  "scen": "s12a",
+  "seed": 23,
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "pad outside geofence",
+  "alerts": [
+   "drop spot A is -4.47 m from the road-verge boundary (< 0.3 m): not goi"
+  ],
+  "trips": [],
+  "hedge": 0.36,
+  "hedge_at": [
+   47.2,
+   585.0
+  ],
+  "contact_min": null,
+  "contact_with": null,
+  "collisions": 0,
+  "place": [],
+  "seat": [],
+  "pauses": [],
+  "pf": [],
+  "stops": 0,
+  "pivot_way": [],
+  "soc_end": 0.8997,
+  "last_dock": null,
+  "first": null,
+  "sim_min": 0.8
+ },
+ {
+  "key": "s12a__s7",
+  "scen": "s12a",
+  "seed": 7,
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "pad outside geofence",
+  "alerts": [
+   "drop spot A is -4.47 m from the road-verge boundary (< 0.3 m): not goi"
+  ],
+  "trips": [],
+  "hedge": 0.36,
+  "hedge_at": [
+   47.2,
+   585.0
+  ],
+  "contact_min": null,
+  "contact_with": null,
+  "collisions": 0,
+  "place": [],
+  "seat": [],
+  "pauses": [],
+  "pf": [],
+  "stops": 0,
+  "pivot_way": [],
+  "soc_end": 0.8997,
+  "last_dock": null,
+  "first": null,
+  "sim_min": 0.8
+ },
+ {
+  "key": "s12b__s11",
+  "scen": "s12b",
+  "seed": 11,
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "firmware fence hold",
+  "alerts": [
+   "firmware geofence HOLD at the road edge"
+  ],
+  "trips": [],
+  "hedge": 0.323,
+  "hedge_at": [
+   48.0,
+   600.1
+  ],
+  "contact_min": null,
+  "contact_with": null,
+  "collisions": 0,
+  "place": [],
+  "seat": [],
+  "pauses": [],
+  "pf": [],
+  "stops": 0,
+  "pivot_way": [],
+  "soc_end": 0.8988,
+  "last_dock": null,
+  "first": null,
+  "sim_min": 1.6
+ },
+ {
+  "key": "s12b__s23",
+  "scen": "s12b",
+  "seed": 23,
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "firmware fence hold",
+  "alerts": [
+   "firmware geofence HOLD at the road edge"
+  ],
+  "trips": [],
+  "hedge": 0.319,
+  "hedge_at": [
+   48.0,
+   600.1
+  ],
+  "contact_min": null,
+  "contact_with": null,
+  "collisions": 0,
+  "place": [],
+  "seat": [],
+  "pauses": [],
+  "pf": [],
+  "stops": 0,
+  "pivot_way": [],
+  "soc_end": 0.8988,
+  "last_dock": null,
+  "first": null,
+  "sim_min": 1.6
+ },
+ {
+  "key": "s12b__s7",
+  "scen": "s12b",
+  "seed": 7,
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "firmware fence hold",
+  "alerts": [
+   "firmware geofence HOLD at the road edge"
+  ],
+  "trips": [],
+  "hedge": 0.322,
+  "hedge_at": [
+   47.8,
+   600.1
+  ],
+  "contact_min": null,
+  "contact_with": null,
+  "collisions": 0,
+  "place": [],
+  "seat": [],
+  "pauses": [],
+  "pf": [],
+  "stops": 0,
+  "pivot_way": [],
+  "soc_end": 0.8988,
+  "last_dock": null,
+  "first": null,
+  "sim_min": 1.6
+ },
+ {
+  "key": "s1a__s11",
+  "scen": "s1a",
+  "seed": 11,
+  "expect": "pass",
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [
+   [
+    "drop black->A",
+    34.5,
+    56.89,
+    "D-1 18:00",
+    "D-1 18:35"
+   ]
+  ],
+  "hedge": 0.194,
+  "hedge_at": [
+   926.1,
+   502.8
+  ],
+  "contact_min": 0.352,
+  "contact_with": "black",
+  "collisions": 0,
+  "place": [
+   [
+    0.034,
+    0.3
+   ]
+  ],
+  "seat": [
+   null
+  ],
+  "pauses": [],
+  "pf": [],
+  "stops": 0,
+  "pivot_way": [
+   {
+    "t": 147.3,
+    "ccw_m": 3.97,
+    "cw_m": 3.98,
+    "way": "cw"
+   },
+   {
+    "t": 1114.1,
+    "ccw_m": 0.44,
+    "cw_m": 0.84,
+    "way": "cw"
+   }
+  ],
+  "soc_end": 0.7774,
+  "last_dock": "D-1 18:35",
+  "first": "D-1 18:00",
+  "sim_min": 35.2
+ },
+ {
+  "key": "s1a__s23",
+  "scen": "s1a",
+  "seed": 23,
+  "expect": "pass",
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [
+   [
+    "drop black->A",
+    34.1,
+    56.49,
+    "D-1 18:00",
+    "D-1 18:34"
+   ]
+  ],
+  "hedge": 0.197,
+  "hedge_at": [
+   1501.4,
+   417.4
+  ],
+  "contact_min": 0.347,
+  "contact_with": "black",
+  "collisions": 0,
+  "place": [
+   [
+    0.036,
+    0.08
+   ]
+  ],
+  "seat": [
+   null
+  ],
+  "pauses": [],
+  "pf": [],
+  "stops": 0,
+  "pivot_way": [
+   {
+    "t": 146.4,
+    "ccw_m": 3.98,
+    "cw_m": 3.99,
+    "way": "cw"
+   },
+   {
+    "t": 1080.0,
+    "ccw_m": 0.43,
+    "cw_m": 0.85,
+    "way": "cw"
+   }
+  ],
+  "soc_end": 0.7782,
+  "last_dock": "D-1 18:34",
+  "first": "D-1 18:00",
+  "sim_min": 34.9
+ },
+ {
+  "key": "s1a__s7",
+  "scen": "s1a",
+  "seed": 7,
+  "expect": "pass",
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [
+   [
+    "drop black->A",
+    33.9,
+    56.42,
+    "D-1 18:00",
+    "D-1 18:34"
+   ]
+  ],
+  "hedge": 0.215,
+  "hedge_at": [
+   1512.0,
+   417.0
+  ],
+  "contact_min": 0.341,
+  "contact_with": "black",
+  "collisions": 0,
+  "place": [
+   [
+    0.055,
+    0.39
+   ]
+  ],
+  "seat": [
+   null
+  ],
+  "pauses": [],
+  "pf": [],
+  "stops": 0,
+  "pivot_way": [
+   {
+    "t": 147.2,
+    "ccw_m": 3.96,
+    "cw_m": 3.96,
+    "way": "cw"
+   },
+   {
+    "t": 1076.2,
+    "ccw_m": 0.43,
+    "cw_m": 0.85,
+    "way": "cw"
+   }
+  ],
+  "soc_end": 0.7784,
+  "last_dock": "D-1 18:34",
+  "first": "D-1 18:00",
+  "sim_min": 34.7
+ },
+ {
+  "key": "s1b__s11",
+  "scen": "s1b",
+  "seed": 11,
+  "expect": "pass",
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [
+   [
+    "pickup black<-A",
+    37.1,
+    56.56,
+    "D0 18:00",
+    "D0 18:37"
+   ]
+  ],
+  "hedge": 0.243,
+  "hedge_at": [
+   1644.4,
+   417.2
+  ],
+  "contact_min": 0.511,
+  "contact_with": "black",
+  "collisions": 0,
+  "place": [
+   [
+    0.017,
+    0.82
+   ]
+  ],
+  "seat": [
+   null
+  ],
+  "pauses": [],
+  "pf": [],
+  "stops": 0,
+  "pivot_way": [
+   {
+    "t": 69.7,
+    "ccw_m": 0.8,
+    "cw_m": 0.8,
+    "way": "ccw"
+   },
+   {
+    "t": 1217.3,
+    "ccw_m": 0.37,
+    "cw_m": 0.89,
+    "way": "cw"
+   }
+  ],
+  "soc_end": 0.7781,
+  "last_dock": "D0 18:37",
+  "first": "D0 18:00",
+  "sim_min": 37.9
+ },
+ {
+  "key": "s1b__s23",
+  "scen": "s1b",
+  "seed": 23,
+  "expect": "pass",
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [
+   [
+    "pickup black<-A",
+    37.8,
+    57.08,
+    "D0 18:00",
+    "D0 18:38"
+   ]
+  ],
+  "hedge": 0.238,
+  "hedge_at": [
+   1673.9,
+   417.2
+  ],
+  "contact_min": 0.532,
+  "contact_with": "black",
+  "collisions": 0,
+  "place": [
+   [
+    0.01,
+    0.62
+   ]
+  ],
+  "seat": [
+   null
+  ],
+  "pauses": [],
+  "pf": [],
+  "stops": 0,
+  "pivot_way": [
+   {
+    "t": 69.7,
+    "ccw_m": 0.8,
+    "cw_m": 0.79,
+    "way": "ccw"
+   },
+   {
+    "t": 1244.3,
+    "ccw_m": 0.39,
+    "cw_m": 0.89,
+    "way": "cw"
+   }
+  ],
+  "soc_end": 0.777,
+  "last_dock": "D0 18:38",
+  "first": "D0 18:00",
+  "sim_min": 38.6
+ },
+ {
+  "key": "s1b__s7",
+  "scen": "s1b",
+  "seed": 7,
+  "expect": "pass",
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [
+   [
+    "pickup black<-A",
+    38.1,
+    57.24,
+    "D0 18:00",
+    "D0 18:38"
+   ]
+  ],
+  "hedge": 0.254,
+  "hedge_at": [
+   1706.0,
+   417.2
+  ],
+  "contact_min": 0.511,
+  "contact_with": "black",
+  "collisions": 0,
+  "place": [
+   [
+    0.089,
+    0.68
+   ]
+  ],
+  "seat": [
+   null
+  ],
+  "pauses": [],
+  "pf": [],
+  "stops": 0,
+  "pivot_way": [
+   {
+    "t": 69.7,
+    "ccw_m": 0.76,
+    "cw_m": 0.76,
+    "way": "ccw"
+   },
+   {
+    "t": 1243.4,
+    "ccw_m": 0.44,
+    "cw_m": 0.84,
+    "way": "cw"
+   }
+  ],
+  "soc_end": 0.7766,
+  "last_dock": "D0 18:38",
+  "first": "D0 18:00",
+  "sim_min": 38.9
+ },
+ {
+  "key": "s3a__s11",
+  "scen": "s3a",
+  "seed": 11,
+  "expect": "pass",
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [
+   [
+    "drop brown->A",
+    37.6,
+    57.01,
+    "D-1 18:00",
+    "D-1 18:38"
+   ],
+   [
+    "drop black->M",
+    34.6,
+    56.91,
+    "D-1 18:38",
+    "D-1 19:12"
+   ],
+   [
+    "drop green->F",
+    34.1,
+    56.54,
+    "D-1 19:12",
+    "D-1 19:47"
+   ]
+  ],
+  "hedge": 0.201,
+  "hedge_at": [
+   3768.5,
+   417.0
+  ],
+  "contact_min": 0.27,
+  "contact_with": "green",
+  "collisions": 0,
+  "place": [
+   [
+    0.02,
+    0.97
+   ],
+   [
+    0.073,
+    0.2
+   ],
+   [
+    0.021,
+    0.9
+   ]
+  ],
+  "seat": [
+   null,
+   null,
+   null
+  ],
+  "pauses": [
+   {
+    "where": "yard",
+    "by": "lid",
+    "s": 20.8,
+    "range": 2.97,
+    "wait": 3.4,
+    "person": false,
+    "static": null,
+    "v_in": 0.23
+   }
+  ],
+  "pf": [],
+  "stops": 0,
+  "pivot_way": [
+   {
+    "t": 176.3,
+    "ccw_m": 0.57,
+    "cw_m": 0.0,
+    "way": "ccw"
+   },
+   {
+    "t": 1296.0,
+    "ccw_m": 0.38,
+    "cw_m": 0.89,
+    "way": "cw"
+   },
+   {
+    "t": 2401.1,
+    "ccw_m": 0.0,
+    "cw_m": 0.6,
+    "way": "cw"
+   },
+   {
+    "t": 3356.1,
+    "ccw_m": 0.41,
+    "cw_m": 0.87,
+    "way": "cw"
+   },
+   {
+    "t": 4493.9,
+    "ccw_m": 4.28,
+    "cw_m": 4.28,
+    "way": "ccw"
+   },
+   {
+    "t": 5435.8,
+    "ccw_m": 0.46,
+    "cw_m": 0.81,
+    "way": "cw"
+   }
+  ],
+  "soc_end": 0.5214,
+  "last_dock": "D-1 19:47",
+  "first": "D-1 18:00",
+  "sim_min": 107.1
+ },
+ {
+  "key": "s3a__s23",
+  "scen": "s3a",
+  "seed": 23,
+  "expect": "pass",
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [
+   [
+    "drop brown->A",
+    38.9,
+    57.77,
+    "D-1 18:00",
+    "D-1 18:39"
+   ],
+   [
+    "drop black->M",
+    34.1,
+    56.61,
+    "D-1 18:39",
+    "D-1 19:13"
+   ],
+   [
+    "drop green->F",
+    34.5,
+    57.09,
+    "D-1 19:13",
+    "D-1 19:48"
+   ]
+  ],
+  "hedge": 0.207,
+  "hedge_at": [
+   3842.2,
+   417.0
+  ],
+  "contact_min": 0.315,
+  "contact_with": "green",
+  "collisions": 0,
+  "place": [
+   [
+    0.008,
+    0.93
+   ],
+   [
+    0.068,
+    0.3
+   ],
+   [
+    0.008,
+    0.4
+   ]
+  ],
+  "seat": [
+   null,
+   null,
+   null
+  ],
+  "pauses": [
+   {
+    "where": "yard",
+    "by": "lid",
+    "s": 20.9,
+    "range": 2.91,
+    "wait": 3.3,
+    "person": false,
+    "static": null,
+    "v_in": 0.21
+   }
+  ],
+  "pf": [],
+  "stops": 0,
+  "pivot_way": [
+   {
+    "t": 176.2,
+    "ccw_m": 0.61,
+    "cw_m": 0.0,
+    "way": "ccw"
+   },
+   {
+    "t": 1321.1,
+    "ccw_m": 0.41,
+    "cw_m": 0.87,
+    "way": "cw"
+   },
+   {
+    "t": 2478.6,
+    "ccw_m": 0.0,
+    "cw_m": 0.59,
+    "way": "cw"
+   },
+   {
+    "t": 3420.1,
+    "ccw_m": 0.39,
+    "cw_m": 0.89,
+    "way": "cw"
+   },
+   {
+    "t": 4541.1,
+    "ccw_m": 4.27,
+    "cw_m": 4.27,
+    "way": "ccw"
+   },
+   {
+    "t": 5507.9,
+    "ccw_m": 0.21,
+    "cw_m": 0.73,
+    "way": "cw"
+   }
+  ],
+  "soc_end": 0.5192,
+  "last_dock": "D-1 19:48",
+  "first": "D-1 18:00",
+  "sim_min": 108.2
+ },
+ {
+  "key": "s3a__s7",
+  "scen": "s3a",
+  "seed": 7,
+  "expect": "pass",
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [
+   [
+    "drop brown->A",
+    38.0,
+    57.23,
+    "D-1 18:00",
+    "D-1 18:38"
+   ],
+   [
+    "drop black->M",
+    34.0,
+    56.33,
+    "D-1 18:38",
+    "D-1 19:12"
+   ],
+   [
+    "drop green->F",
+    34.1,
+    56.33,
+    "D-1 19:12",
+    "D-1 19:46"
+   ]
+  ],
+  "hedge": 0.211,
+  "hedge_at": [
+   3781.3,
+   417.0
+  ],
+  "contact_min": 0.256,
+  "contact_with": "green",
+  "collisions": 0,
+  "place": [
+   [
+    0.022,
+    0.93
+   ],
+   [
+    0.065,
+    0.32
+   ],
+   [
+    0.024,
+    0.42
+   ]
+  ],
+  "seat": [
+   null,
+   null,
+   null
+  ],
+  "pauses": [],
+  "pf": [],
+  "stops": 0,
+  "pivot_way": [
+   {
+    "t": 176.9,
+    "ccw_m": 0.59,
+    "cw_m": 0.0,
+    "way": "ccw"
+   },
+   {
+    "t": 1317.0,
+    "ccw_m": 0.44,
+    "cw_m": 0.83,
+    "way": "cw"
+   },
+   {
+    "t": 2444.1,
+    "ccw_m": 0.0,
+    "cw_m": 0.6,
+    "way": "cw"
+   },
+   {
+    "t": 3389.1,
+    "ccw_m": 0.45,
+    "cw_m": 0.83,
+    "way": "cw"
+   },
+   {
+    "t": 4494.2,
+    "ccw_m": 4.25,
+    "cw_m": 4.25,
+    "way": "ccw"
+   },
+   {
+    "t": 5427.9,
+    "ccw_m": 0.41,
+    "cw_m": 0.86,
+    "way": "cw"
+   }
+  ],
+  "soc_end": 0.5227,
+  "last_dock": "D-1 19:46",
+  "first": "D-1 18:00",
+  "sim_min": 106.9
+ },
+ {
+  "key": "s3b__s11",
+  "scen": "s3b",
+  "seed": 11,
+  "expect": "pass",
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [
+   [
+    "pickup green<-F",
+    36.8,
+    56.22,
+    "D0 18:00",
+    "D0 18:37"
+   ],
+   [
+    "pickup black<-M",
+    37.6,
+    56.95,
+    "D0 18:37",
+    "D0 19:15"
+   ],
+   [
+    "pickup brown<-A",
+    38.9,
+    57.77,
+    "D0 19:15",
+    "D0 19:54"
+   ]
+  ],
+  "hedge": 0.186,
+  "hedge_at": [
+   3246.5,
+   502.8
+  ],
+  "contact_min": 0.222,
+  "contact_with": "green",
+  "collisions": 0,
+  "place": [
+   [
+    0.039,
+    0.92
+   ],
+   [
+    0.036,
+    0.15
+   ],
+   [
+    0.07,
+    2.14
+   ]
+  ],
+  "seat": [
+   null,
+   null,
+   null
+  ],
+  "pauses": [
+   {
+    "where": "pivot",
+    "by": "lid",
+    "s": 608.5,
+    "range": 2.83,
+    "wait": 3.2,
+    "person": false,
+    "static": null,
+    "v_in": 0.0
+   }
+  ],
+  "pf": [],
+  "stops": 2,
+  "pivot_way": [
+   {
+    "t": 69.7,
+    "ccw_m": 0.8,
+    "cw_m": 0.8,
+    "way": "ccw"
+   },
+   {
+    "t": 1207.4,
+    "ccw_m": 0.4,
+    "cw_m": 0.88,
+    "way": "cw"
+   },
+   {
+    "t": 2276.7,
+    "ccw_m": 0.77,
+    "cw_m": 0.78,
+    "way": "cw"
+   },
+   {
+    "t": 3444.5,
+    "ccw_m": 0.45,
+    "cw_m": 0.83,
+    "way": "cw"
+   },
+   {
+    "t": 4533.7,
+    "ccw_m": 0.73,
+    "cw_m": 0.73,
+    "way": "ccw"
+   },
+   {
+    "t": 5725.0,
+    "ccw_m": 0.38,
+    "cw_m": 0.89,
+    "way": "cw"
+   }
+  ],
+  "soc_end": 0.5203,
+  "last_dock": "D0 19:54",
+  "first": "D0 18:00",
+  "sim_min": 114.1
+ },
+ {
+  "key": "s3b__s23",
+  "scen": "s3b",
+  "seed": 23,
+  "expect": "pass",
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [
+   [
+    "pickup green<-F",
+    37.5,
+    56.56,
+    "D0 18:00",
+    "D0 18:38"
+   ],
+   [
+    "pickup black<-M",
+    37.0,
+    56.71,
+    "D0 18:38",
+    "D0 19:15"
+   ],
+   [
+    "pickup brown<-A",
+    38.5,
+    57.58,
+    "D0 19:15",
+    "D0 19:53"
+   ]
+  ],
+  "hedge": 0.199,
+  "hedge_at": [
+   6150.1,
+   417.1
+  ],
+  "contact_min": 0.337,
+  "contact_with": "green",
+  "collisions": 0,
+  "place": [
+   [
+    0.079,
+    0.65
+   ],
+   [
+    0.054,
+    0.07
+   ],
+   [
+    0.029,
+    2.29
+   ]
+  ],
+  "seat": [
+   null,
+   null,
+   null
+  ],
+  "pauses": [],
+  "pf": [],
+  "stops": 2,
+  "pivot_way": [
+   {
+    "t": 69.7,
+    "ccw_m": 0.82,
+    "cw_m": 0.82,
+    "way": "ccw"
+   },
+   {
+    "t": 1215.5,
+    "ccw_m": 0.43,
+    "cw_m": 0.85,
+    "way": "cw"
+   },
+   {
+    "t": 2321.7,
+    "ccw_m": 0.79,
+    "cw_m": 0.79,
+    "way": "cw"
+   },
+   {
+    "t": 3475.5,
+    "ccw_m": 0.39,
+    "cw_m": 0.89,
+    "way": "cw"
+   },
+   {
+    "t": 4539.6,
+    "ccw_m": 0.75,
+    "cw_m": 0.75,
+    "way": "cw"
+   },
+   {
+    "t": 5706.0,
+    "ccw_m": 0.4,
+    "cw_m": 0.88,
+    "way": "cw"
+   }
+  ],
+  "soc_end": 0.5205,
+  "last_dock": "D0 19:53",
+  "first": "D0 18:00",
+  "sim_min": 113.8
+ },
+ {
+  "key": "s3b__s7",
+  "scen": "s3b",
+  "seed": 7,
+  "expect": "pass",
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [
+   [
+    "pickup green<-F",
+    36.9,
+    56.55,
+    "D0 18:00",
+    "D0 18:37"
+   ],
+   [
+    "pickup black<-M",
+    37.4,
+    56.99,
+    "D0 18:37",
+    "D0 19:15"
+   ],
+   [
+    "pickup brown<-A",
+    38.4,
+    57.32,
+    "D0 19:15",
+    "D0 19:53"
+   ]
+  ],
+  "hedge": 0.206,
+  "hedge_at": [
+   6145.5,
+   417.0
+  ],
+  "contact_min": 0.242,
+  "contact_with": "green",
+  "collisions": 0,
+  "place": [
+   [
+    0.085,
+    0.22
+   ],
+   [
+    0.129,
+    0.3
+   ],
+   [
+    0.051,
+    1.97
+   ]
+  ],
+  "seat": [
+   null,
+   null,
+   null
+  ],
+  "pauses": [],
+  "pf": [],
+  "stops": 1,
+  "pivot_way": [
+   {
+    "t": 68.7,
+    "ccw_m": 0.71,
+    "cw_m": 0.71,
+    "way": "ccw"
+   },
+   {
+    "t": 1198.4,
+    "ccw_m": 0.42,
+    "cw_m": 0.86,
+    "way": "cw"
+   },
+   {
+    "t": 2284.7,
+    "ccw_m": 0.79,
+    "cw_m": 0.8,
+    "way": "cw"
+   },
+   {
+    "t": 3467.4,
+    "ccw_m": 0.42,
+    "cw_m": 0.85,
+    "way": "cw"
+   },
+   {
+    "t": 4530.7,
+    "ccw_m": 0.81,
+    "cw_m": 0.81,
+    "way": "cw"
+   },
+   {
+    "t": 5707.0,
+    "ccw_m": 0.43,
+    "cw_m": 0.84,
+    "way": "cw"
+   }
+  ],
+  "soc_end": 0.5205,
+  "last_dock": "D0 19:53",
+  "first": "D0 18:00",
+  "sim_min": 113.5
+ },
+ {
+  "key": "s4a__s11",
+  "scen": "s4a",
+  "seed": 11,
+  "expect": "pass",
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [],
+  "hedge": 0.293,
+  "hedge_at": [
+   0.0,
+   34.9
+  ],
+  "contact_min": null,
+  "contact_with": null,
+  "collisions": 0,
+  "place": [],
+  "seat": [],
+  "pauses": [],
+  "pf": [],
+  "stops": 0,
+  "pivot_way": [],
+  "soc_end": 0.8939,
+  "last_dock": null,
+  "first": null,
+  "sim_min": 3.1
+ },
+ {
+  "key": "s4a__s23",
+  "scen": "s4a",
+  "seed": 23,
+  "expect": "pass",
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [],
+  "hedge": 0.292,
+  "hedge_at": [
+   47.4,
+   34.9
+  ],
+  "contact_min": null,
+  "contact_with": null,
+  "collisions": 0,
+  "place": [],
+  "seat": [],
+  "pauses": [],
+  "pf": [],
+  "stops": 0,
+  "pivot_way": [],
+  "soc_end": 0.8938,
+  "last_dock": null,
+  "first": null,
+  "sim_min": 3.2
+ },
+ {
+  "key": "s4a__s7",
+  "scen": "s4a",
+  "seed": 7,
+  "expect": "pass",
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [],
+  "hedge": 0.293,
+  "hedge_at": [
+   0.0,
+   34.9
+  ],
+  "contact_min": null,
+  "contact_with": null,
+  "collisions": 0,
+  "place": [],
+  "seat": [],
+  "pauses": [],
+  "pf": [],
+  "stops": 0,
+  "pivot_way": [],
+  "soc_end": 0.8939,
+  "last_dock": null,
+  "first": null,
+  "sim_min": 3.1
+ },
+ {
+  "key": "s4b__s11",
+  "scen": "s4b",
+  "seed": 11,
+  "expect": "pass",
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [],
+  "hedge": 0.292,
+  "hedge_at": [
+   47.0,
+   34.9
+  ],
+  "contact_min": null,
+  "contact_with": null,
+  "collisions": 0,
+  "place": [],
+  "seat": [],
+  "pauses": [],
+  "pf": [],
+  "stops": 0,
+  "pivot_way": [],
+  "soc_end": 0.8934,
+  "last_dock": null,
+  "first": null,
+  "sim_min": 3.6
+ },
+ {
+  "key": "s4b__s23",
+  "scen": "s4b",
+  "seed": 23,
+  "expect": "pass",
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [],
+  "hedge": 0.292,
+  "hedge_at": [
+   47.2,
+   34.9
+  ],
+  "contact_min": null,
+  "contact_with": null,
+  "collisions": 0,
+  "place": [],
+  "seat": [],
+  "pauses": [],
+  "pf": [],
+  "stops": 0,
+  "pivot_way": [],
+  "soc_end": 0.8933,
+  "last_dock": null,
+  "first": null,
+  "sim_min": 3.7
+ },
+ {
+  "key": "s4b__s7",
+  "scen": "s4b",
+  "seed": 7,
+  "expect": "pass",
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [],
+  "hedge": 0.292,
+  "hedge_at": [
+   48.0,
+   34.9
+  ],
+  "contact_min": null,
+  "contact_with": null,
+  "collisions": 0,
+  "place": [],
+  "seat": [],
+  "pauses": [],
+  "pf": [],
+  "stops": 0,
+  "pivot_way": [],
+  "soc_end": 0.8931,
+  "last_dock": null,
+  "first": null,
+  "sim_min": 3.8
+ },
+ {
+  "key": "s4c__s11",
+  "scen": "s4c",
+  "seed": 11,
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "no fix hold",
+  "alerts": [
+   "no GNSS fix for 60 s after 25 m dead reckoning - holding in the lane"
+  ],
+  "trips": [],
+  "hedge": 0.292,
+  "hedge_at": [
+   47.4,
+   34.9
+  ],
+  "contact_min": null,
+  "contact_with": null,
+  "collisions": 0,
+  "place": [],
+  "seat": [],
+  "pauses": [],
+  "pf": [],
+  "stops": 0,
+  "pivot_way": [],
+  "soc_end": 0.8939,
+  "last_dock": null,
+  "first": null,
+  "sim_min": 3.7
+ },
+ {
+  "key": "s4c__s23",
+  "scen": "s4c",
+  "seed": 23,
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "no fix hold",
+  "alerts": [
+   "no GNSS fix for 60 s after 25 m dead reckoning - holding in the lane"
+  ],
+  "trips": [],
+  "hedge": 0.292,
+  "hedge_at": [
+   47.2,
+   34.9
+  ],
+  "contact_min": null,
+  "contact_with": null,
+  "collisions": 0,
+  "place": [],
+  "seat": [],
+  "pauses": [],
+  "pf": [],
+  "stops": 0,
+  "pivot_way": [],
+  "soc_end": 0.8939,
+  "last_dock": null,
+  "first": null,
+  "sim_min": 3.7
+ },
+ {
+  "key": "s4c__s7",
+  "scen": "s4c",
+  "seed": 7,
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "no fix hold",
+  "alerts": [
+   "no GNSS fix for 60 s after 25 m dead reckoning - holding in the lane"
+  ],
+  "trips": [],
+  "hedge": 0.292,
+  "hedge_at": [
+   47.4,
+   34.9
+  ],
+  "contact_min": null,
+  "contact_with": null,
+  "collisions": 0,
+  "place": [],
+  "seat": [],
+  "pauses": [],
+  "pf": [],
+  "stops": 0,
+  "pivot_way": [],
+  "soc_end": 0.8937,
+  "last_dock": null,
+  "first": null,
+  "sim_min": 3.6
+ },
+ {
+  "key": "s5a__s11",
+  "scen": "s5a",
+  "seed": 11,
+  "expect": "pass",
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [],
+  "hedge": 0.38,
+  "hedge_at": [
+   47.2,
+   295.0
+  ],
+  "contact_min": 3.248,
+  "contact_with": "dog",
+  "collisions": 0,
+  "place": [],
+  "seat": [],
+  "pauses": [
+   {
+    "where": "lane",
+    "by": "cam",
+    "s": 313.9,
+    "range": 4.91,
+    "wait": 13.8,
+    "person": true,
+    "static": null,
+    "v_in": 0.4
+   },
+   {
+    "where": "lane",
+    "by": "cam",
+    "s": 345.1,
+    "range": 4.12,
+    "wait": 8.9,
+    "person": true,
+    "static": null,
+    "v_in": 0.52
+   }
+  ],
+  "pf": [],
+  "stops": 0,
+  "pivot_way": [],
+  "soc_end": 0.8889,
+  "last_dock": null,
+  "first": null,
+  "sim_min": 3.3
+ },
+ {
+  "key": "s5a__s23",
+  "scen": "s5a",
+  "seed": 23,
+  "expect": "pass",
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [],
+  "hedge": 0.38,
+  "hedge_at": [
+   47.2,
+   295.0
+  ],
+  "contact_min": 3.585,
+  "contact_with": "dog",
+  "collisions": 0,
+  "place": [],
+  "seat": [],
+  "pauses": [
+   {
+    "where": "lane",
+    "by": "cam",
+    "s": 313.9,
+    "range": 4.83,
+    "wait": 13.1,
+    "person": true,
+    "static": null,
+    "v_in": 0.38
+   },
+   {
+    "where": "lane",
+    "by": "cam",
+    "s": 344.6,
+    "range": 4.75,
+    "wait": 8.8,
+    "person": true,
+    "static": null,
+    "v_in": 0.67
+   }
+  ],
+  "pf": [],
+  "stops": 0,
+  "pivot_way": [],
+  "soc_end": 0.8888,
+  "last_dock": null,
+  "first": null,
+  "sim_min": 3.3
+ },
+ {
+  "key": "s5a__s7",
+  "scen": "s5a",
+  "seed": 7,
+  "expect": "pass",
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [],
+  "hedge": 0.366,
+  "hedge_at": [
+   53.4,
+   299.1
+  ],
+  "contact_min": 2.663,
+  "contact_with": "dog",
+  "collisions": 0,
+  "place": [],
+  "seat": [],
+  "pauses": [
+   {
+    "where": "lane",
+    "by": "cam",
+    "s": 313.8,
+    "range": 4.91,
+    "wait": 14.4,
+    "person": true,
+    "static": null,
+    "v_in": 0.4
+   },
+   {
+    "where": "lane",
+    "by": "cam",
+    "s": 345.4,
+    "range": 3.73,
+    "wait": 8.6,
+    "person": true,
+    "static": null,
+    "v_in": 0.83
+   }
+  ],
+  "pf": [],
+  "stops": 0,
+  "pivot_way": [],
+  "soc_end": 0.8889,
+  "last_dock": null,
+  "first": null,
+  "sim_min": 3.2
+ },
+ {
+  "key": "s5b__s11",
+  "scen": "s5b",
+  "seed": 11,
+  "expect": "pass",
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [],
+  "hedge": 0.355,
+  "hedge_at": [
+   71.9,
+   607.8
+  ],
+  "contact_min": 0.704,
+  "contact_with": "black",
+  "collisions": 0,
+  "place": [
+   [
+    0.03,
+    1.26
+   ]
+  ],
+  "seat": [],
+  "pauses": [
+   {
+    "where": "lane",
+    "by": "lid",
+    "s": 617.0,
+    "range": 2.98,
+    "wait": 42.6,
+    "person": false,
+    "static": null,
+    "v_in": 0.26
+   }
+  ],
+  "pf": [],
+  "stops": 0,
+  "pivot_way": [
+   {
+    "t": 147.8,
+    "ccw_m": 0.41,
+    "cw_m": 0.86,
+    "way": "cw"
+   }
+  ],
+  "soc_end": 0.8944,
+  "last_dock": null,
+  "first": null,
+  "sim_min": 4.5
+ },
+ {
+  "key": "s5b__s23",
+  "scen": "s5b",
+  "seed": 23,
+  "expect": "pass",
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [],
+  "hedge": 0.353,
+  "hedge_at": [
+   48.6,
+   585.3
+  ],
+  "contact_min": 0.715,
+  "contact_with": "black",
+  "collisions": 0,
+  "place": [
+   [
+    0.067,
+    1.18
+   ]
+  ],
+  "seat": [],
+  "pauses": [
+   {
+    "where": "lane",
+    "by": "lid",
+    "s": 617.0,
+    "range": 3.0,
+    "wait": 46.6,
+    "person": false,
+    "static": null,
+    "v_in": 0.27
+   }
+  ],
+  "pf": [],
+  "stops": 0,
+  "pivot_way": [
+   {
+    "t": 155.8,
+    "ccw_m": 0.39,
+    "cw_m": 0.88,
+    "way": "cw"
+   }
+  ],
+  "soc_end": 0.8941,
+  "last_dock": null,
+  "first": null,
+  "sim_min": 4.7
+ },
+ {
+  "key": "s5b__s7",
+  "scen": "s5b",
+  "seed": 7,
+  "expect": "pass",
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [],
+  "hedge": 0.361,
+  "hedge_at": [
+   0.0,
+   585.0
+  ],
+  "contact_min": 0.692,
+  "contact_with": "black",
+  "collisions": 0,
+  "place": [
+   [
+    0.011,
+    0.63
+   ]
+  ],
+  "seat": [],
+  "pauses": [
+   {
+    "where": "lane",
+    "by": "lid",
+    "s": 617.0,
+    "range": 2.99,
+    "wait": 43.8,
+    "person": false,
+    "static": null,
+    "v_in": 0.26
+   }
+  ],
+  "pf": [],
+  "stops": 0,
+  "pivot_way": [
+   {
+    "t": 146.7,
+    "ccw_m": 0.41,
+    "cw_m": 0.87,
+    "way": "cw"
+   }
+  ],
+  "soc_end": 0.8943,
+  "last_dock": null,
+  "first": null,
+  "sim_min": 4.5
+ },
+ {
+  "key": "s6a__s11",
+  "scen": "s6a",
+  "seed": 11,
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "companion freeze -> firmware HOLD",
+  "alerts": [],
+  "trips": [],
+  "hedge": 0.368,
+  "hedge_at": [
+   48.0,
+   200.0
+  ],
+  "contact_min": null,
+  "contact_with": null,
+  "collisions": 0,
+  "place": [],
+  "seat": [],
+  "pauses": [],
+  "pf": [],
+  "stops": 0,
+  "pivot_way": [],
+  "soc_end": 0.8986,
+  "last_dock": null,
+  "first": null,
+  "sim_min": 2.0
+ },
+ {
+  "key": "s6a__s23",
+  "scen": "s6a",
+  "seed": 23,
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "companion freeze -> firmware HOLD",
+  "alerts": [],
+  "trips": [],
+  "hedge": 0.346,
+  "hedge_at": [
+   48.6,
+   200.2
+  ],
+  "contact_min": null,
+  "contact_with": null,
+  "collisions": 0,
+  "place": [],
+  "seat": [],
+  "pauses": [],
+  "pf": [],
+  "stops": 0,
+  "pivot_way": [],
+  "soc_end": 0.8985,
+  "last_dock": null,
+  "first": null,
+  "sim_min": 2.0
+ },
+ {
+  "key": "s6a__s7",
+  "scen": "s6a",
+  "seed": 7,
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "companion freeze -> firmware HOLD",
+  "alerts": [],
+  "trips": [],
+  "hedge": 0.314,
+  "hedge_at": [
+   71.3,
+   215.6
+  ],
+  "contact_min": null,
+  "contact_with": null,
+  "collisions": 0,
+  "place": [],
+  "seat": [],
+  "pauses": [],
+  "pf": [],
+  "stops": 0,
+  "pivot_way": [],
+  "soc_end": 0.8986,
+  "last_dock": null,
+  "first": null,
+  "sim_min": 2.0
+ },
+ {
+  "key": "s6b__s11",
+  "scen": "s6b",
+  "seed": 11,
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "companion freeze -> firmware HOLD",
+  "alerts": [],
+  "trips": [],
+  "hedge": 0.43,
+  "hedge_at": [
+   105.1,
+   620.7
+  ],
+  "contact_min": 0.482,
+  "contact_with": "black",
+  "collisions": 0,
+  "place": [],
+  "seat": [],
+  "pauses": [],
+  "pf": [],
+  "stops": 0,
+  "pivot_way": [],
+  "soc_end": 0.8974,
+  "last_dock": null,
+  "first": null,
+  "sim_min": 2.8
+ },
+ {
+  "key": "s6b__s23",
+  "scen": "s6b",
+  "seed": 23,
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "companion freeze -> firmware HOLD",
+  "alerts": [],
+  "trips": [],
+  "hedge": 0.261,
+  "hedge_at": [
+   90.2,
+   620.0
+  ],
+  "contact_min": 0.483,
+  "contact_with": "black",
+  "collisions": 0,
+  "place": [],
+  "seat": [],
+  "pauses": [],
+  "pf": [],
+  "stops": 0,
+  "pivot_way": [],
+  "soc_end": 0.8977,
+  "last_dock": null,
+  "first": null,
+  "sim_min": 2.7
+ },
+ {
+  "key": "s6b__s7",
+  "scen": "s6b",
+  "seed": 7,
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "companion freeze -> firmware HOLD",
+  "alerts": [],
+  "trips": [],
+  "hedge": 0.383,
+  "hedge_at": [
+   100.3,
+   619.8
+  ],
+  "contact_min": 0.509,
+  "contact_with": "black",
+  "collisions": 0,
+  "place": [],
+  "seat": [],
+  "pauses": [],
+  "pf": [],
+  "stops": 0,
+  "pivot_way": [],
+  "soc_end": 0.898,
+  "last_dock": null,
+  "first": null,
+  "sim_min": 2.4
+ },
+ {
+  "key": "s7__s11",
+  "scen": "s7",
+  "seed": 11,
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "e-stop",
+  "alerts": [
+   "E-stop pressed: robot stopped 0.04 m / 0.2 s"
+  ],
+  "trips": [],
+  "hedge": 0.353,
+  "hedge_at": [
+   71.0,
+   215.7
+  ],
+  "contact_min": null,
+  "contact_with": null,
+  "collisions": 0,
+  "place": [],
+  "seat": [],
+  "pauses": [],
+  "pf": [],
+  "stops": 0,
+  "pivot_way": [],
+  "soc_end": 0.8984,
+  "last_dock": null,
+  "first": null,
+  "sim_min": 2.1
+ },
+ {
+  "key": "s7__s23",
+  "scen": "s7",
+  "seed": 23,
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "e-stop",
+  "alerts": [
+   "E-stop pressed: robot stopped 0.04 m / 0.2 s"
+  ],
+  "trips": [],
+  "hedge": 0.346,
+  "hedge_at": [
+   49.2,
+   200.2
+  ],
+  "contact_min": null,
+  "contact_with": null,
+  "collisions": 0,
+  "place": [],
+  "seat": [],
+  "pauses": [],
+  "pf": [],
+  "stops": 0,
+  "pivot_way": [],
+  "soc_end": 0.8984,
+  "last_dock": null,
+  "first": null,
+  "sim_min": 2.1
+ },
+ {
+  "key": "s7__s7",
+  "scen": "s7",
+  "seed": 7,
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "e-stop",
+  "alerts": [
+   "E-stop pressed: robot stopped 0.04 m / 0.2 s"
+  ],
+  "trips": [],
+  "hedge": 0.368,
+  "hedge_at": [
+   48.6,
+   200.0
+  ],
+  "contact_min": null,
+  "contact_with": null,
+  "collisions": 0,
+  "place": [],
+  "seat": [],
+  "pauses": [],
+  "pf": [],
+  "stops": 0,
+  "pivot_way": [],
+  "soc_end": 0.8985,
+  "last_dock": null,
+  "first": null,
+  "sim_min": 2.1
+ },
+ {
+  "key": "s8__s11",
+  "scen": "s8",
+  "seed": 11,
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "energy guard",
+  "alerts": [
+   "energy guard: 32 Wh available above the 10 % reserve < 80 Wh trip budg"
+  ],
+  "trips": [],
+  "hedge": null,
+  "hedge_at": null,
+  "contact_min": 3.75,
+  "contact_with": "black",
+  "collisions": 0,
+  "place": [],
+  "seat": [],
+  "pauses": [],
+  "pf": [],
+  "stops": 0,
+  "pivot_way": [],
+  "soc_end": 0.1697,
+  "last_dock": null,
+  "first": null,
+  "sim_min": 0.8
+ },
+ {
+  "key": "s8__s23",
+  "scen": "s8",
+  "seed": 23,
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "energy guard",
+  "alerts": [
+   "energy guard: 32 Wh available above the 10 % reserve < 80 Wh trip budg"
+  ],
+  "trips": [],
+  "hedge": null,
+  "hedge_at": null,
+  "contact_min": 3.75,
+  "contact_with": "black",
+  "collisions": 0,
+  "place": [],
+  "seat": [],
+  "pauses": [],
+  "pf": [],
+  "stops": 0,
+  "pivot_way": [],
+  "soc_end": 0.1697,
+  "last_dock": null,
+  "first": null,
+  "sim_min": 0.8
+ },
+ {
+  "key": "s8__s7",
+  "scen": "s8",
+  "seed": 7,
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "energy guard",
+  "alerts": [
+   "energy guard: 32 Wh available above the 10 % reserve < 80 Wh trip budg"
+  ],
+  "trips": [],
+  "hedge": null,
+  "hedge_at": null,
+  "contact_min": 3.75,
+  "contact_with": "black",
+  "collisions": 0,
+  "place": [],
+  "seat": [],
+  "pauses": [],
+  "pf": [],
+  "stops": 0,
+  "pivot_way": [],
+  "soc_end": 0.1697,
+  "last_dock": null,
+  "first": null,
+  "sim_min": 0.8
+ },
+ {
+  "key": "s9__s11",
+  "scen": "s9",
+  "seed": 11,
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "bin missing",
+  "alerts": [
+   "bin black not found at A (lidar: 0 returns) - photo sent, heading home"
+  ],
+  "trips": [],
+  "hedge": 0.381,
+  "hedge_at": [
+   47.6,
+   565.0
+  ],
+  "contact_min": null,
+  "contact_with": null,
+  "collisions": 0,
+  "place": [],
+  "seat": [],
+  "pauses": [],
+  "pf": [],
+  "stops": 0,
+  "pivot_way": [],
+  "soc_end": 0.894,
+  "last_dock": null,
+  "first": null,
+  "sim_min": 3.6
+ },
+ {
+  "key": "s9__s23",
+  "scen": "s9",
+  "seed": 23,
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "bin missing",
+  "alerts": [
+   "bin black not found at A (lidar: 0 returns) - photo sent, heading home"
+  ],
+  "trips": [],
+  "hedge": 0.369,
+  "hedge_at": [
+   131.6,
+   609.6
+  ],
+  "contact_min": null,
+  "contact_with": null,
+  "collisions": 0,
+  "place": [],
+  "seat": [],
+  "pauses": [],
+  "pf": [],
+  "stops": 0,
+  "pivot_way": [],
+  "soc_end": 0.8937,
+  "last_dock": null,
+  "first": null,
+  "sim_min": 3.9
+ },
+ {
+  "key": "s9__s7",
+  "scen": "s9",
+  "seed": 7,
+  "expect": "alert",
+  "result": "alert",
+  "outcome": "bin missing",
+  "alerts": [
+   "bin black not found at A (lidar: 0 returns) - photo sent, heading home"
+  ],
+  "trips": [],
+  "hedge": 0.332,
+  "hedge_at": [
+   72.6,
+   584.0
+  ],
+  "contact_min": null,
+  "contact_with": null,
+  "collisions": 0,
+  "place": [],
+  "seat": [],
+  "pauses": [],
+  "pf": [],
+  "stops": 0,
+  "pivot_way": [],
+  "soc_end": 0.8939,
+  "last_dock": null,
+  "first": null,
+  "sim_min": 3.6
+ }
+]

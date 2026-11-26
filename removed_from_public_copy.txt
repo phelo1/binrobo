@@ -1,0 +1,445 @@
+Files left out of the public copy, with the reason and the size in bytes.
+
+improved-version/deliveries/2026-11-12_revH2_handover/BinTug_handover_2026-11-12/BinTug_handover_2026-11-12/reference/other_agent/docs/reviews/fig_b2_1_plan.png	picture, video or binary of the other agent: not checked	97350
+improved-version/deliveries/2026-11-12_revH2_handover/BinTug_handover_2026-11-12/BinTug_handover_2026-11-12/reference/other_agent/docs/reviews/fig_b2_2_lane.png	picture, video or binary of the other agent: not checked	135044
+improved-version/deliveries/2026-11-12_revH2_handover/BinTug_handover_2026-11-12/BinTug_handover_2026-11-12/reference/other_agent/docs/reviews/fig_b2_3_grab.png	picture, video or binary of the other agent: not checked	43239
+improved-version/deliveries/2026-11-12_revH2_handover/BinTug_handover_2026-11-12/BinTug_handover_2026-11-12/reference/other_agent/docs/reviews/fig_cmp_1_plan.png	picture, video or binary of the other agent: not checked	101659
+improved-version/deliveries/2026-11-12_revH2_handover/BinTug_handover_2026-11-12/BinTug_handover_2026-11-12/reference/other_agent/docs/reviews/fig_cmp_2_lane.png	picture, video or binary of the other agent: not checked	121939
+improved-version/deliveries/2026-11-12_revH2_handover/BinTug_handover_2026-11-12/BinTug_handover_2026-11-12/reference/other_agent/docs/reviews/fig_cmp_3_grab.png	picture, video or binary of the other agent: not checked	49722
+improved-version/deliveries/2026-11-12_revH2_handover/BinTug_handover_2026-11-12/BinTug_handover_2026-11-12/reference/other_agent/revG/sim/cg/b2/lanefitB1s.pid	map extract, flight log or firmware file	5
+improved-version/deliveries/2026-11-12_revH2_handover/BinTug_handover_2026-11-12/BinTug_handover_2026-11-12/reference/other_agent/revG/sim/cg/b2/lanefitB2.pid	map extract, flight log or firmware file	5
+improved-version/deliveries/2026-11-12_revH2_handover/BinTug_handover_2026-11-12/BinTug_handover_2026-11-12/reference/other_agent/revG/sim/cg/b2/queue.pid	map extract, flight log or firmware file	5
+improved-version/deliveries/2026-11-12_revH2_handover/BinTug_handover_2026-11-12/BinTug_handover_2026-11-12/reference/other_agent/revG/sim/cg/b2/smoke2.pid	map extract, flight log or firmware file	4
+improved-version/deliveries/2026-11-12_revH2_handover/BinTug_handover_2026-11-12/BinTug_handover_2026-11-12/reference/other_agent/revG/sim/cg/b2/smoke3.pid	map extract, flight log or firmware file	5
+improved-version/deliveries/2026-11-12_revH2_handover/BinTug_handover_2026-11-12/BinTug_handover_2026-11-12/reference/other_agent/revG/sim/cg/b2/smoke4.pid	map extract, flight log or firmware file	5
+improved-version/deliveries/2026-11-12_revH2_handover/BinTug_handover_2026-11-12/BinTug_handover_2026-11-12/reference/other_agent/revG/sim/cg/b2/smoke5.pid	map extract, flight log or firmware file	5
+improved-version/deliveries/2026-11-12_revH2_handover/BinTug_handover_2026-11-12/BinTug_handover_2026-11-12/reference/other_agent/revG/sim/cg/b2/smoke6.pid	map extract, flight log or firmware file	5
+improved-version/deliveries/2026-11-12_revH2_handover/BinTug_handover_2026-11-12/BinTug_handover_2026-11-12/reference/other_agent/revG/sim/cg/cmp/queue.pid	map extract, flight log or firmware file	4
+improved-version/deliveries/2026-11-12_revH2_handover/BinTug_handover_2026-11-12/BinTug_handover_2026-11-12/reference/other_agent/revG/sim/cg/it1/queue.pid	map extract, flight log or firmware file	4
+improved-version/deliveries/2026-11-12_revH2_handover/BinTug_handover_2026-11-12/BinTug_handover_2026-11-12/reference/other_agent/revG/sim/cg/queue.pid	map extract, flight log or firmware file	4
+improved-version/deliveries/2026-11-12_revH2_handover/BinTug_handover_2026-11-12/BinTug_handover_2026-11-12/reference/other_agent/sitl/data/osm_highways.json	map extract, flight log or firmware file	83813
+improved-version/deliveries/2026-11-12_revH2_handover/BinTug_handover_2026-11-12/BinTug_handover_2026-11-12/reference/other_agent/web/downloads/g5bins/craemer240.png	picture, video or binary of the other agent: not checked	254476
+improved-version/deliveries/2026-11-12_revH2_handover/BinTug_handover_2026-11-12/BinTug_handover_2026-11-12/reference/other_agent/web/downloads/g5bins/craemer240_ds.pdf	PDF replaced by its text	260831
+improved-version/deliveries/2026-11-12_revH2_handover/BinTug_handover_2026-11-12/BinTug_handover_2026-11-12/reference/other_agent/web/downloads/g5bins/craemer240_side.png	picture, video or binary of the other agent: not checked	250404
+improved-version/deliveries/2026-11-12_revH2_handover/BinTug_handover_2026-11-12/BinTug_handover_2026-11-12/reference/other_agent/web/downloads/g5bins/craemer_front_top.png	picture, video or binary of the other agent: not checked	228017
+improved-version/deliveries/2026-11-12_revH2_handover/BinTug_handover_2026-11-12/BinTug_handover_2026-11-12/reference/other_agent/web/downloads/g5bins/ese_manual.pdf	PDF replaced by its text	963433
+improved-version/deliveries/2026-11-12_revH2_handover/BinTug_handover_2026-11-12/BinTug_handover_2026-11-12/reference/other_agent/web/downloads/g5bins/sulo240_brochure.pdf	PDF replaced by its text	2568567
+improved-version/deliveries/2026-11-12_revH2_handover/BinTug_handover_2026-11-12/BinTug_handover_2026-11-12/reference/other_agent/web/downloads/g5bins/sulo240_ds.pdf	PDF replaced by its text	401297
+improved-version/deliveries/2026-11-12_revH2_handover/BinTug_handover_2026-11-12/BinTug_handover_2026-11-12/reference/other_agent/web/downloads/g5bins/suloHi-3.png	picture, video or binary of the other agent: not checked	438391
+improved-version/deliveries/2026-11-12_revH2_handover/BinTug_handover_2026-11-12/BinTug_handover_2026-11-12/reference/other_agent/web/downloads/g5bins/sulo_rear_top.png	picture, video or binary of the other agent: not checked	22736
+improved-version/deliveries/2026-11-12_revH2_handover/BinTug_handover_2026-11-12/BinTug_handover_2026-11-12/reference/other_agent/web/downloads/g5bins/sulo_side_top.png	picture, video or binary of the other agent: not checked	6939
+improved-version/deliveries/2026-11-12_revH2_handover/BinTug_handover_2026-11-12/BinTug_handover_2026-11-12/reference/other_agent/web/downloads/g5bins/sulobr-15.png	picture, video or binary of the other agent: not checked	329535
+improved-version/deliveries/2026-11-12_revH2_handover/BinTug_handover_2026-11-12/BinTug_handover_2026-11-12/reference/other_agent/web/downloads/g5bins/sulods-1.png	picture, video or binary of the other agent: not checked	89876
+improved-version/deliveries/2026-11-12_revH2_handover/BinTug_handover_2026-11-12/BinTug_handover_2026-11-12/reference/other_agent/web/downloads/g5bins/sulods-2.png	picture, video or binary of the other agent: not checked	157815
+improved-version/deliveries/2026-11-12_revH2_handover/BinTug_handover_2026-11-12/BinTug_handover_2026-11-12/reference/other_agent/web/downloads/g5bins/sulods-3.png	picture, video or binary of the other agent: not checked	143246
+improved-version/deliveries/2026-11-12_revH2_handover/BinTug_handover_2026-11-12/BinTug_handover_2026-11-12/reference/other_agent/web/downloads/g5bins/weber140-1.png	picture, video or binary of the other agent: not checked	276347
+improved-version/deliveries/2026-11-12_revH2_handover/BinTug_handover_2026-11-12/BinTug_handover_2026-11-12/reference/other_agent/web/downloads/g5bins/weber140.pdf	PDF replaced by its text	43048
+improved-version/deliveries/2026-11-12_revH2_handover/BinTug_handover_2026-11-12/BinTug_handover_2026-11-12/reference/other_agent/web/downloads/g5bins/weber140_side_crop.png	picture, video or binary of the other agent: not checked	54000
+improved-version/deliveries/2026-11-12_revH2_handover/BinTug_handover_2026-11-12/BinTug_handover_2026-11-12/reference/other_agent/web/downloads/g5bins/weber140_top_crop.png	picture, video or binary of the other agent: not checked	40084
+improved-version/deliveries/2026-11-12_revH2_handover/BinTug_handover_2026-11-12/BinTug_handover_2026-11-12/reference/other_agent/web/downloads/g5bins/weber_handle_zoom.png	picture, video or binary of the other agent: not checked	46563
+other-agent/2026-11-13_B2F/BinRobo_B2F_BOM_2026-11-12.xlsx	picture, video or binary of the other agent: not checked	31817
+other-agent/2026-11-13_B2F/BinRobo_B2F_drawings_A3.pdf	PDF replaced by its text	1191385
+other-agent/2026-11-13_B2F/BinRobo_B2F_package_2026-11-13/b2f_bom/BinRobo_B2F_BOM_2026-11-12.xlsx	picture, video or binary of the other agent: not checked	31817
+other-agent/2026-11-13_B2F/BinRobo_B2F_package_2026-11-13/b2f_lane/phys/RESULTS_B2F_lane_physics.pdf	PDF replaced by its text	168988
+other-agent/2026-11-13_B2F/BinRobo_B2F_package_2026-11-13/b2f_lane/sitl/RESULTS_B2F_sitl.pdf	PDF replaced by its text	212549
+other-agent/2026-11-13_B2F/BinRobo_B2F_package_2026-11-13/revB2F/B2F_carry240L_FL.png	picture, video or binary of the other agent: not checked	181132
+other-agent/2026-11-13_B2F/BinRobo_B2F_package_2026-11-13/revB2F/B2F_carry240L_FR.png	picture, video or binary of the other agent: not checked	299342
+other-agent/2026-11-13_B2F/BinRobo_B2F_package_2026-11-13/revB2F/B2F_carry240L_RL.png	picture, video or binary of the other agent: not checked	209765
+other-agent/2026-11-13_B2F/BinRobo_B2F_package_2026-11-13/revB2F/B2F_carry240L_RR.png	picture, video or binary of the other agent: not checked	119694
+other-agent/2026-11-13_B2F/BinRobo_B2F_package_2026-11-13/revB2F/B2F_carry240L_TOP.png	picture, video or binary of the other agent: not checked	175251
+other-agent/2026-11-13_B2F/BinRobo_B2F_package_2026-11-13/revB2F/B2F_closeup_comb_receiver_pad.png	picture, video or binary of the other agent: not checked	142712
+other-agent/2026-11-13_B2F/BinRobo_B2F_package_2026-11-13/revB2F/B2F_nobin_FL.png	picture, video or binary of the other agent: not checked	156956
+other-agent/2026-11-13_B2F/BinRobo_B2F_package_2026-11-13/revB2F/B2F_nobin_FR.png	picture, video or binary of the other agent: not checked	268952
+other-agent/2026-11-13_B2F/BinRobo_B2F_package_2026-11-13/revB2F/B2F_nobin_RL.png	picture, video or binary of the other agent: not checked	220575
+other-agent/2026-11-13_B2F/BinRobo_B2F_package_2026-11-13/revB2F/B2F_nobin_RR.png	picture, video or binary of the other agent: not checked	125265
+other-agent/2026-11-13_B2F/BinRobo_B2F_package_2026-11-13/revB2F/B2F_nobin_TOP.png	picture, video or binary of the other agent: not checked	171957
+other-agent/2026-11-13_B2F/BinRobo_B2F_package_2026-11-13/revB2F/B2F_plan_nb.png	picture, video or binary of the other agent: not checked	25153
+other-agent/2026-11-13_B2F/BinRobo_B2F_package_2026-11-13/revB2F/B2F_sheet1_without_bin.png	picture, video or binary of the other agent: not checked	1263161
+other-agent/2026-11-13_B2F/BinRobo_B2F_package_2026-11-13/revB2F/B2F_sheet2_carrying_240L.png	picture, video or binary of the other agent: not checked	1393378
+other-agent/2026-11-13_B2F/BinRobo_B2F_package_2026-11-13/revB2F/B2F_side_nb.png	picture, video or binary of the other agent: not checked	19292
+other-agent/2026-11-13_B2F/BinRobo_B2F_package_2026-11-13/revB2F/B2F_side_wb.png	picture, video or binary of the other agent: not checked	23698
+other-agent/2026-11-13_B2F/BinRobo_B2F_package_2026-11-13/revB2F/BinRobo_B2F_carrying_240L.step	picture, video or binary of the other agent: not checked	1870027
+other-agent/2026-11-13_B2F/BinRobo_B2F_package_2026-11-13/revB2F/BinRobo_B2F_drawings_A3.pdf	PDF replaced by its text	1191385
+other-agent/2026-11-13_B2F/BinRobo_B2F_package_2026-11-13/revB2F/BinRobo_B2F_no_bin.step	picture, video or binary of the other agent: not checked	1689427
+other-agent/2026-11-13_B2F/BinRobo_B2F_source_2026-11-13/cad/revF1/Bin_Tug_RevF1_Report.pdf	PDF replaced by its text	388610
+other-agent/2026-11-13_B2F/BinRobo_B2F_source_2026-11-13/docs/reviews/GATE_H2_vs_B2F.pdf	PDF replaced by its text	568153
+other-agent/2026-11-13_B2F/BinRobo_B2F_source_2026-11-13/docs/reviews/LANE_SITL_COST_H2.pdf	PDF replaced by its text	170087
+other-agent/2026-11-13_B2F/BinRobo_B2F_source_2026-11-13/out/b2f_bom/BinRobo_B2F_BOM_2026-11-12.xlsx	picture, video or binary of the other agent: not checked	31817
+other-agent/2026-11-13_B2F/BinRobo_B2F_source_2026-11-13/out/bin_measure/bin_lip_and_markings.png	picture, video or binary of the other agent: not checked	236211
+other-agent/2026-11-13_B2F/BinRobo_B2F_source_2026-11-13/out/bin_measure/bin_measure_views.png	picture, video or binary of the other agent: not checked	276834
+other-agent/2026-11-13_B2F/BinRobo_B2F_source_2026-11-13/revH2_ext/BinTug_handover_2026-11-12/reference/other_agent/sitl/data/osm_highways.json	map extract, flight log or firmware file	83813
+other-agent/2026-11-13_B2F/BinRobo_B2F_source_2026-11-13/revH2_ext/BinTug_handover_2026-11-12/reference/other_agent/web/downloads/g5bins/craemer240_ds.pdf	PDF replaced by its text	260831
+other-agent/2026-11-13_B2F/BinRobo_B2F_source_2026-11-13/revH2_ext/BinTug_handover_2026-11-12/reference/other_agent/web/downloads/g5bins/ese_manual.pdf	PDF replaced by its text	963433
+other-agent/2026-11-13_B2F/BinRobo_B2F_source_2026-11-13/revH2_ext/BinTug_handover_2026-11-12/reference/other_agent/web/downloads/g5bins/sulo240_brochure.pdf	PDF replaced by its text	2568567
+other-agent/2026-11-13_B2F/BinRobo_B2F_source_2026-11-13/revH2_ext/BinTug_handover_2026-11-12/reference/other_agent/web/downloads/g5bins/sulo240_ds.pdf	PDF replaced by its text	401297
+other-agent/2026-11-13_B2F/BinRobo_B2F_source_2026-11-13/revH2_ext/BinTug_handover_2026-11-12/reference/other_agent/web/downloads/g5bins/weber140.pdf	PDF replaced by its text	43048
+other-agent/2026-11-13_B2F/BinRobo_B2F_source_2026-11-13/sitl/b2f/bin/ardurover	map extract, flight log or firmware file	6845664
+other-agent/2026-11-13_B2F/BinRobo_B2F_source_2026-11-13/sitl/b2f/bin/ardurover_aarch64	map extract, flight log or firmware file	5170600
+other-agent/2026-11-13_B2F/BinRobo_B2F_source_2026-11-13/sitl/b2f/data/osm_bbox.xml	map extract, flight log or firmware file	884158
+other-agent/2026-11-13_B2F/BinRobo_B2F_source_2026-11-13/sitl/b2f/data/osm_highways.json	map extract, flight log or firmware file	83813
+other-agent/2026-11-13_B2F/HANDOVER_Rev4.0.pdf	PDF replaced by its text	208054
+other-agent/2026-11-13_review_of_improved_version/COLDEYE_improved_drawings_2026-11-13.pdf	PDF replaced by its text	1201236
+other-agent/2026-11-13_review_of_improved_version/SITL_improved_version_2026-11-13.pdf	PDF replaced by its text	189004
+other-agent/2026-11-13_review_of_improved_version/TEST_improved_version_2026-11-13.pdf	PDF replaced by its text	180097
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/2_reports/COLDEYE_rev2_2026-11-14.pdf	PDF replaced by its text	524238
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/2_reports/SITL_rev2_2026-11-14.pdf	PDF replaced by its text	256111
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/2_reports/TEST_rev2_2026-11-14.pdf	PDF replaced by its text	292703
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/2_reports/coldeye_rev2_figs/fig1_lift_top_stops.png	picture, video or binary of the other agent: not checked	126623
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/2_reports/coldeye_rev2_figs/fig2_nose_plan.png	picture, video or binary of the other agent: not checked	111973
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/2_reports/coldeye_rev2_figs/fig3_mast_foot.png	picture, video or binary of the other agent: not checked	87132
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/2_reports/coldeye_rev2_figs/fig4_pad_springs.png	picture, video or binary of the other agent: not checked	83754
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/3_videos/driving_software/rev2_CAMFIX_s1b__s23.mp4	picture, video or binary of the other agent: not checked	4499227
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/3_videos/driving_software/rev2_STRESS_cam15_s1a__s7.mp4	picture, video or binary of the other agent: not checked	4181462
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/3_videos/driving_software/rev2_STRESS_lid15_s1a__s7.mp4	picture, video or binary of the other agent: not checked	4316127
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/3_videos/driving_software/rev2_STRESS_m122_s1a__s7.mp4	picture, video or binary of the other agent: not checked	4238051
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/3_videos/driving_software/rev2_STRESS_night_s1a__s7.mp4	picture, video or binary of the other agent: not checked	560003
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/3_videos/driving_software/rev2_STRESS_night_s1b__s7.mp4	picture, video or binary of the other agent: not checked	3582642
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/3_videos/driving_software/rev2_s10a__s7.mp4	picture, video or binary of the other agent: not checked	871918
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/3_videos/driving_software/rev2_s10b__s7.mp4	picture, video or binary of the other agent: not checked	880210
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/3_videos/driving_software/rev2_s11a__s7.mp4	picture, video or binary of the other agent: not checked	111127
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/3_videos/driving_software/rev2_s11b__s7.mp4	picture, video or binary of the other agent: not checked	111029
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/3_videos/driving_software/rev2_s12a__s7.mp4	picture, video or binary of the other agent: not checked	185146
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/3_videos/driving_software/rev2_s12b__s7.mp4	picture, video or binary of the other agent: not checked	1199210
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/3_videos/driving_software/rev2_s1a__s11.mp4	picture, video or binary of the other agent: not checked	4170596
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/3_videos/driving_software/rev2_s1a__s23.mp4	picture, video or binary of the other agent: not checked	4226371
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/3_videos/driving_software/rev2_s1a__s7.mp4	picture, video or binary of the other agent: not checked	4229346
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/3_videos/driving_software/rev2_s1b__s11.mp4	picture, video or binary of the other agent: not checked	4343447
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/3_videos/driving_software/rev2_s1b__s23.mp4	picture, video or binary of the other agent: not checked	4308067
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/3_videos/driving_software/rev2_s1b__s7.mp4	picture, video or binary of the other agent: not checked	4318687
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/3_videos/driving_software/rev2_s3a__s11.mp4	picture, video or binary of the other agent: not checked	4580101
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/3_videos/driving_software/rev2_s3a__s23.mp4	picture, video or binary of the other agent: not checked	4503945
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/3_videos/driving_software/rev2_s3b__s11.mp4	picture, video or binary of the other agent: not checked	5374411
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/3_videos/driving_software/rev2_s3b__s23.mp4	picture, video or binary of the other agent: not checked	5490709
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/3_videos/driving_software/rev2_s3b__s7.mp4	picture, video or binary of the other agent: not checked	5337682
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/3_videos/driving_software/rev2_s4a__s7.mp4	picture, video or binary of the other agent: not checked	1596407
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/3_videos/driving_software/rev2_s4b__s7.mp4	picture, video or binary of the other agent: not checked	1515755
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/3_videos/driving_software/rev2_s4c__s7.mp4	picture, video or binary of the other agent: not checked	1335629
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/3_videos/driving_software/rev2_s5a__s7.mp4	picture, video or binary of the other agent: not checked	1566460
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/3_videos/driving_software/rev2_s5b__s7.mp4	picture, video or binary of the other agent: not checked	2104078
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/3_videos/driving_software/rev2_s6a__s7.mp4	picture, video or binary of the other agent: not checked	652544
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/3_videos/driving_software/rev2_s6b__s7.mp4	picture, video or binary of the other agent: not checked	1104804
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/3_videos/driving_software/rev2_s7__s7.mp4	picture, video or binary of the other agent: not checked	542547
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/3_videos/driving_software/rev2_s8__s7.mp4	picture, video or binary of the other agent: not checked	112969
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/3_videos/driving_software/rev2_s9__s7.mp4	picture, video or binary of the other agent: not checked	1358569
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/3_videos/mechanical_lane/rev2_P1_filled.mp4	picture, video or binary of the other agent: not checked	6855464
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/3_videos/mechanical_lane/rev2_P1_pothole_open.mp4	picture, video or binary of the other agent: not checked	8604579
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/3_videos/mechanical_lane/rev2_P4a_wet_descent_stop.mp4	picture, video or binary of the other agent: not checked	2089628
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/3_videos/mechanical_lane/rev2_P5g_trench_open.mp4	picture, video or binary of the other agent: not checked	943765
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/3_videos/mechanical_lane/rev2_pickup_refusal_CL203_i14.mp4	picture, video or binary of the other agent: not checked	4330434
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/3_videos/mechanical_lane/rev2_pickup_success_CL203_i0.mp4	picture, video or binary of the other agent: not checked	1718825
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/3_videos/mechanical_lane/rev2_step_sharp_up_down.mp4	picture, video or binary of the other agent: not checked	2015485
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s10a__s11/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s10a__s11/sitlrun/logs/00000001.BIN	map extract, flight log or firmware file	651264
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s10a__s23/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s10a__s23/sitlrun/logs/00000001.BIN	map extract, flight log or firmware file	704512
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s10a__s7/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s10a__s7/sitlrun/logs/00000001.BIN	map extract, flight log or firmware file	675840
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s10b__s11/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s10b__s11/sitlrun/logs/00000001.BIN	map extract, flight log or firmware file	655360
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s10b__s23/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s10b__s23/sitlrun/logs/00000001.BIN	map extract, flight log or firmware file	704512
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s10b__s7/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s10b__s7/sitlrun/logs/00000001.BIN	map extract, flight log or firmware file	671744
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s11a__s11/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s11a__s11/sitlrun/logs/00000001.BIN	map extract, flight log or firmware file	45056
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s11a__s23/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s11a__s23/sitlrun/logs/00000001.BIN	map extract, flight log or firmware file	49152
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s11a__s7/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s11a__s7/sitlrun/logs/00000001.BIN	map extract, flight log or firmware file	20480
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s11b__s11/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s11b__s11/sitlrun/logs/00000001.BIN	map extract, flight log or firmware file	0
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s11b__s23/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s11b__s23/sitlrun/logs/00000001.BIN	map extract, flight log or firmware file	57344
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s11b__s7/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s11b__s7/sitlrun/logs/00000001.BIN	map extract, flight log or firmware file	73728
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s12a__s11/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s12a__s11/sitlrun/logs/00000001.BIN	map extract, flight log or firmware file	49152
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s12a__s23/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s12a__s23/sitlrun/logs/00000001.BIN	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s12a__s7/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s12a__s7/sitlrun/logs/00000001.BIN	map extract, flight log or firmware file	0
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s12b__s11/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s12b__s11/sitlrun/logs/00000001.BIN	map extract, flight log or firmware file	299008
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s12b__s23/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s12b__s23/sitlrun/logs/00000001.BIN	map extract, flight log or firmware file	299008
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s12b__s7/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s12b__s7/sitlrun/logs/00000001.BIN	map extract, flight log or firmware file	299008
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s1a__s11/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s1a__s11/sitlrun/logs/00000003.BIN	map extract, flight log or firmware file	1245184
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s1a__s23/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s1a__s23/sitlrun/logs/00000003.BIN	map extract, flight log or firmware file	1732608
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s1a__s7/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s1b__s11/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s1b__s23/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s1b__s7/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s1b__s7/sitlrun/logs/00000001.BIN	map extract, flight log or firmware file	1114112
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s3a__s11/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s3a__s11/sitlrun/logs/00000008.BIN	map extract, flight log or firmware file	1015808
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s3a__s23/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s3a__s23/sitlrun/logs/00000001.BIN	map extract, flight log or firmware file	1875968
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s3a__s7/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s3b__s11/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s3b__s23/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s3b__s7/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s4a__s11/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s4a__s11/sitlrun/logs/00000001.BIN	map extract, flight log or firmware file	1171456
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s4a__s23/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s4a__s23/sitlrun/logs/00000001.BIN	map extract, flight log or firmware file	1228800
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s4a__s7/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s4a__s7/sitlrun/logs/00000001.BIN	map extract, flight log or firmware file	1187840
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s4b__s11/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s4b__s11/sitlrun/logs/00000001.BIN	map extract, flight log or firmware file	1097728
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s4b__s23/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s4b__s23/sitlrun/logs/00000001.BIN	map extract, flight log or firmware file	1155072
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s4b__s7/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s4b__s7/sitlrun/logs/00000001.BIN	map extract, flight log or firmware file	1097728
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s4c__s11/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s4c__s11/sitlrun/logs/00000001.BIN	map extract, flight log or firmware file	966656
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s4c__s23/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s4c__s23/sitlrun/logs/00000001.BIN	map extract, flight log or firmware file	987136
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s4c__s7/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s4c__s7/sitlrun/logs/00000001.BIN	map extract, flight log or firmware file	987136
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s5a__s11/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s5a__s11/sitlrun/logs/00000001.BIN	map extract, flight log or firmware file	1060864
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s5a__s23/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s5a__s23/sitlrun/logs/00000001.BIN	map extract, flight log or firmware file	1105920
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s5a__s7/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s5a__s7/sitlrun/logs/00000001.BIN	map extract, flight log or firmware file	1032192
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s5b__s11/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s5b__s11/sitlrun/logs/00000001.BIN	map extract, flight log or firmware file	643072
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s5b__s11/sitlrun/logs/00000002.BIN	map extract, flight log or firmware file	438272
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s5b__s23/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s5b__s23/sitlrun/logs/00000001.BIN	map extract, flight log or firmware file	684032
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s5b__s23/sitlrun/logs/00000002.BIN	map extract, flight log or firmware file	446464
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s5b__s7/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s5b__s7/sitlrun/logs/00000001.BIN	map extract, flight log or firmware file	1036288
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s6a__s11/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s6a__s11/sitlrun/logs/00000001.BIN	map extract, flight log or firmware file	552960
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s6a__s23/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s6a__s23/sitlrun/logs/00000001.BIN	map extract, flight log or firmware file	589824
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s6a__s7/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s6a__s7/sitlrun/logs/00000001.BIN	map extract, flight log or firmware file	512000
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s6b__s11/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s6b__s11/sitlrun/logs/00000001.BIN	map extract, flight log or firmware file	368640
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s6b__s23/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s6b__s23/sitlrun/logs/00000001.BIN	map extract, flight log or firmware file	364544
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s6b__s7/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s6b__s7/sitlrun/logs/00000001.BIN	map extract, flight log or firmware file	368640
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s7__s11/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s7__s11/sitlrun/logs/00000001.BIN	map extract, flight log or firmware file	499712
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s7__s23/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s7__s23/sitlrun/logs/00000001.BIN	map extract, flight log or firmware file	524288
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s7__s7/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s7__s7/sitlrun/logs/00000001.BIN	map extract, flight log or firmware file	425984
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s8__s11/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s8__s11/sitlrun/logs/00000001.BIN	map extract, flight log or firmware file	49152
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s8__s23/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s8__s23/sitlrun/logs/00000001.BIN	map extract, flight log or firmware file	40960
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s8__s7/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s8__s7/sitlrun/logs/00000001.BIN	map extract, flight log or firmware file	4096
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s9__s11/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s9__s11/sitlrun/logs/00000001.BIN	map extract, flight log or firmware file	921600
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s9__s23/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s9__s23/sitlrun/logs/00000001.BIN	map extract, flight log or firmware file	970752
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s9__s7/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs/s9__s7/sitlrun/logs/00000001.BIN	map extract, flight log or firmware file	937984
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs_cam15/s1a__s7_cam15/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs_cam15/s1b__s7_cam15/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs_camfix/s1a__s11_camfix/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs_camfix/s1a__s11_camfix/sitlrun/logs/00000003.BIN	map extract, flight log or firmware file	1413120
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs_camfix/s1b__s23_camfix/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs_camfix/s3b__s7_camfix/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs_lid15/s1a__s7_lid15/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs_lid15/s1a__s7_lid15/sitlrun/logs/00000001.BIN	map extract, flight log or firmware file	1404928
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs_lid15/s1a__s7_lid15/sitlrun/logs/00000004.BIN	map extract, flight log or firmware file	458752
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs_lid15/s1b__s7_lid15/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs_m122/s1a__s7_m122/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs_m122/s1b__s7_m122/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs_m122/s3a__s7_m122/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs_m122/s4b__s7_m122/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs_m122/s4b__s7_m122/sitlrun/logs/00000001.BIN	map extract, flight log or firmware file	1097728
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs_night/s1a__s7_night/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs_night/s1a__s7_night/sitlrun/logs/00000001.BIN	map extract, flight log or firmware file	397312
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs_night/s1b__s7_night/sitlrun/eeprom.bin	map extract, flight log or firmware file	16384
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/4_results/driving_software/runs_night/s1b__s7_night/sitlrun/logs/00000002.BIN	map extract, flight log or firmware file	1073152
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/grab_CL203_i0.npz	picture, video or binary of the other agent: not checked	187330
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/grab_CL203_i14.npz	picture, video or binary of the other agent: not checked	635568
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/P1_filled/sample_00005.jpg	picture, video or binary of the other agent: not checked	89677
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/P1_filled/sample_00120.jpg	picture, video or binary of the other agent: not checked	123470
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/P1_filled/sample_00150.jpg	picture, video or binary of the other agent: not checked	120772
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/P1_filled/sample_00300.jpg	picture, video or binary of the other agent: not checked	111304
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/P1_filled/sample_00426.jpg	picture, video or binary of the other agent: not checked	111433
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/P1_filled/sample_00450.jpg	picture, video or binary of the other agent: not checked	112792
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/P1_filled/sample_00541.jpg	picture, video or binary of the other agent: not checked	113140
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/P1_filled/sample_00600.jpg	picture, video or binary of the other agent: not checked	113315
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/P1_filled/sample_00750.jpg	picture, video or binary of the other agent: not checked	116335
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/P1_filled/sample_00764.jpg	picture, video or binary of the other agent: not checked	115097
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/P1_filled/sample_00879.jpg	picture, video or binary of the other agent: not checked	117049
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/P1_filled/sample_00900.jpg	picture, video or binary of the other agent: not checked	113084
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/P1_filled/sample_01050.jpg	picture, video or binary of the other agent: not checked	124809
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/P1_filled/sample_01092.jpg	picture, video or binary of the other agent: not checked	126424
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/P1_filled/sample_01200.jpg	picture, video or binary of the other agent: not checked	60996
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/P1_filled/sample_01207.jpg	picture, video or binary of the other agent: not checked	60996
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/P1_filled/seg_000.mp4	picture, video or binary of the other agent: not checked	1763748
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/P1_filled/seg_001.mp4	picture, video or binary of the other agent: not checked	2570975
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/P1_filled/seg_002.mp4	picture, video or binary of the other agent: not checked	2332432
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/P1_filled/seg_003.mp4	picture, video or binary of the other agent: not checked	190518
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/P1_pothole_open/sample_00005.jpg	picture, video or binary of the other agent: not checked	93138
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/P1_pothole_open/sample_00120.jpg	picture, video or binary of the other agent: not checked	111313
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/P1_pothole_open/sample_00150.jpg	picture, video or binary of the other agent: not checked	114692
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/P1_pothole_open/sample_00300.jpg	picture, video or binary of the other agent: not checked	114211
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/P1_pothole_open/sample_00450.jpg	picture, video or binary of the other agent: not checked	116633
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/P1_pothole_open/sample_00565.jpg	picture, video or binary of the other agent: not checked	113607
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/P1_pothole_open/sample_00600.jpg	picture, video or binary of the other agent: not checked	115205
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/P1_pothole_open/sample_00750.jpg	picture, video or binary of the other agent: not checked	115431
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/P1_pothole_open/sample_00768.jpg	picture, video or binary of the other agent: not checked	113840
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/P1_pothole_open/sample_00883.jpg	picture, video or binary of the other agent: not checked	117407
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/P1_pothole_open/sample_00900.jpg	picture, video or binary of the other agent: not checked	113981
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/P1_pothole_open/sample_01050.jpg	picture, video or binary of the other agent: not checked	113704
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/P1_pothole_open/sample_01072.jpg	picture, video or binary of the other agent: not checked	114093
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/P1_pothole_open/sample_01187.jpg	picture, video or binary of the other agent: not checked	73752
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/P1_pothole_open/sample_01200.jpg	picture, video or binary of the other agent: not checked	73752
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/P1_pothole_open/seg_000.mp4	picture, video or binary of the other agent: not checked	3017235
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/P1_pothole_open/seg_001.mp4	picture, video or binary of the other agent: not checked	2309291
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/P1_pothole_open/seg_002.mp4	picture, video or binary of the other agent: not checked	2803515
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/P1_pothole_open/seg_003.mp4	picture, video or binary of the other agent: not checked	476723
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/P4a_wet_descent_stop/sample_00005.jpg	picture, video or binary of the other agent: not checked	81876
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/P4a_wet_descent_stop/sample_00120.jpg	picture, video or binary of the other agent: not checked	113589
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/P4a_wet_descent_stop/sample_00150.jpg	picture, video or binary of the other agent: not checked	113065
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/P4a_wet_descent_stop/sample_00300.jpg	picture, video or binary of the other agent: not checked	111158
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/P4a_wet_descent_stop/sample_00450.jpg	picture, video or binary of the other agent: not checked	113071
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/P4a_wet_descent_stop/sample_00462.jpg	picture, video or binary of the other agent: not checked	113308
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/P4a_wet_descent_stop/sample_00577.jpg	picture, video or binary of the other agent: not checked	111241
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/P4a_wet_descent_stop/sample_00600.jpg	picture, video or binary of the other agent: not checked	112047
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/P4a_wet_descent_stop/sample_00750.jpg	picture, video or binary of the other agent: not checked	63012
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/P4a_wet_descent_stop/seg_000.mp4	picture, video or binary of the other agent: not checked	1145178
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/P4a_wet_descent_stop/seg_001.mp4	picture, video or binary of the other agent: not checked	945113
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/P5g_trench_open/sample_00005.jpg	picture, video or binary of the other agent: not checked	70924
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/P5g_trench_open/sample_00120.jpg	picture, video or binary of the other agent: not checked	105233
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/P5g_trench_open/sample_00150.jpg	picture, video or binary of the other agent: not checked	105762
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/P5g_trench_open/sample_00300.jpg	picture, video or binary of the other agent: not checked	103536
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/P5g_trench_open/sample_00423.jpg	picture, video or binary of the other agent: not checked	103439
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/P5g_trench_open/sample_00450.jpg	picture, video or binary of the other agent: not checked	103462
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/P5g_trench_open/sample_00538.jpg	picture, video or binary of the other agent: not checked	103550
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/P5g_trench_open/sample_00600.jpg	picture, video or binary of the other agent: not checked	103493
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/P5g_trench_open/sample_00750.jpg	picture, video or binary of the other agent: not checked	102964
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/P5g_trench_open/sample_00756.jpg	picture, video or binary of the other agent: not checked	102965
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/P5g_trench_open/sample_00871.jpg	picture, video or binary of the other agent: not checked	61591
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/P5g_trench_open/sample_00900.jpg	picture, video or binary of the other agent: not checked	61591
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/P5g_trench_open/seg_000.mp4	picture, video or binary of the other agent: not checked	665932
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/P5g_trench_open/seg_001.mp4	picture, video or binary of the other agent: not checked	189980
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/P5g_trench_open/seg_002.mp4	picture, video or binary of the other agent: not checked	89293
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/grab_grab_CL203_i0/sample_00005.jpg	picture, video or binary of the other agent: not checked	83540
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/grab_grab_CL203_i0/sample_00200.jpg	picture, video or binary of the other agent: not checked	97226
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/grab_grab_CL203_i0/sample_00400.jpg	picture, video or binary of the other agent: not checked	93788
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/grab_grab_CL203_i0/sample_00506.jpg	picture, video or binary of the other agent: not checked	94837
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/grab_grab_CL203_i0/sample_00600.jpg	picture, video or binary of the other agent: not checked	89908
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/grab_grab_CL203_i0/sample_00800.jpg	picture, video or binary of the other agent: not checked	64333
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/grab_grab_CL203_i0/seg_000.mp4	picture, video or binary of the other agent: not checked	1412787
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/grab_grab_CL203_i0/seg_001.mp4	picture, video or binary of the other agent: not checked	306671
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/grab_grab_CL203_i14/sample_00005.jpg	picture, video or binary of the other agent: not checked	85930
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/grab_grab_CL203_i14/sample_00200.jpg	picture, video or binary of the other agent: not checked	99607
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/grab_grab_CL203_i14/sample_00400.jpg	picture, video or binary of the other agent: not checked	94701
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/grab_grab_CL203_i14/sample_00478.jpg	picture, video or binary of the other agent: not checked	96380
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/grab_grab_CL203_i14/sample_00600.jpg	picture, video or binary of the other agent: not checked	92933
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/grab_grab_CL203_i14/sample_00800.jpg	picture, video or binary of the other agent: not checked	94590
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/grab_grab_CL203_i14/sample_00878.jpg	picture, video or binary of the other agent: not checked	95053
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/grab_grab_CL203_i14/sample_01000.jpg	picture, video or binary of the other agent: not checked	94828
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/grab_grab_CL203_i14/sample_01200.jpg	picture, video or binary of the other agent: not checked	95107
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/grab_grab_CL203_i14/seg_000.mp4	picture, video or binary of the other agent: not checked	1494255
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/grab_grab_CL203_i14/seg_001.mp4	picture, video or binary of the other agent: not checked	1618502
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/grab_grab_CL203_i14/seg_002.mp4	picture, video or binary of the other agent: not checked	1219063
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/step_sharp_up_down/sample_00005.jpg	picture, video or binary of the other agent: not checked	85292
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/step_sharp_up_down/sample_00120.jpg	picture, video or binary of the other agent: not checked	44585
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/step_sharp_up_down/sample_00150.jpg	picture, video or binary of the other agent: not checked	111613
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/step_sharp_up_down/sample_00300.jpg	picture, video or binary of the other agent: not checked	109253
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/step_sharp_up_down/sample_00450.jpg	picture, video or binary of the other agent: not checked	112909
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/step_sharp_up_down/sample_00465.jpg	picture, video or binary of the other agent: not checked	113521
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/step_sharp_up_down/sample_00580.jpg	picture, video or binary of the other agent: not checked	112984
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/step_sharp_up_down/sample_00600.jpg	picture, video or binary of the other agent: not checked	113019
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/step_sharp_up_down/sample_00750.jpg	picture, video or binary of the other agent: not checked	99728
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/step_sharp_up_down/sample_00824.jpg	picture, video or binary of the other agent: not checked	101091
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/step_sharp_up_down/sample_00900.jpg	picture, video or binary of the other agent: not checked	102668
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/step_sharp_up_down/sample_00939.jpg	picture, video or binary of the other agent: not checked	104054
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/step_sharp_up_down/sample_01050.jpg	picture, video or binary of the other agent: not checked	104825
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/step_sharp_up_down/sample_01200.jpg	picture, video or binary of the other agent: not checked	80698
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/step_sharp_up_down/seg_000.mp4	picture, video or binary of the other agent: not checked	846870
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/step_sharp_up_down/seg_001.mp4	picture, video or binary of the other agent: not checked	611132
+other-agent/2026-11-14_review_of_rev2/BinRobo_rev2_review_2026-11-14/5_scripts/mech/rev2_vid/vid/step_sharp_up_down/seg_002.mp4	picture, video or binary of the other agent: not checked	558801
+other-agent/2026-11-15_review_of_rev3/BinRobo_rev3_review_2026-11-15/figures/fig1_lift_travel_map.png	picture, video or binary of the other agent: not checked	122921
+other-agent/2026-11-15_review_of_rev3/BinRobo_rev3_review_2026-11-15/figures/fig2_lift_top_section.png	picture, video or binary of the other agent: not checked	94747
+other-agent/2026-11-15_review_of_rev3/BinRobo_rev3_review_2026-11-15/figures/fig3_mass.png	picture, video or binary of the other agent: not checked	99053
+other-agent/2026-11-15_review_of_rev3/BinRobo_rev3_review_2026-11-15/figures/fig4_safety_factors.png	picture, video or binary of the other agent: not checked	134045
+other-agent/2026-11-15_review_of_rev3/BinRobo_rev3_review_2026-11-15/figures/fig5_bumper_stop.png	picture, video or binary of the other agent: not checked	109740
+other-agent/2026-11-15_review_of_rev3/BinRobo_rev3_review_2026-11-15/figures/fig6_castor_spin.png	picture, video or binary of the other agent: not checked	88536
+other-agent/2026-11-15_review_of_rev3/BinRobo_rev3_review_2026-11-15/figures/fig7_pad_spring.png	picture, video or binary of the other agent: not checked	92074
+other-agent/2026-11-15_review_of_rev3/BinRobo_rev3_review_2026-11-15/reports/COLDEYE_rev3_2026-11-14.pdf	PDF replaced by its text	763178
+other-agent/2026-11-15_review_of_rev3/BinRobo_rev3_review_2026-11-15/reports/SITL_rev3_2026-11-14.pdf	PDF replaced by its text	289045
+other-agent/2026-11-15_review_of_rev3/BinRobo_rev3_review_2026-11-15/reports/TEST_rev3_2026-11-14.pdf	PDF replaced by its text	248000
+other-agent/2026-11-15_review_of_rev3/BinRobo_rev3_review_2026-11-15/videos/driving_software/rev3_01_three_bin_evening_s3a_s11.mp4	picture, video or binary of the other agent: not checked	5650865
+other-agent/2026-11-15_review_of_rev3/BinRobo_rev3_review_2026-11-15/videos/driving_software/rev3_02_night_camera_refusal_drive_home.mp4	picture, video or binary of the other agent: not checked	857447
+other-agent/2026-11-15_review_of_rev3/BinRobo_rev3_review_2026-11-15/videos/driving_software/rev3_03_cam_bias60mm_gate_refusal.mp4	picture, video or binary of the other agent: not checked	4126655
+other-agent/2026-11-15_review_of_rev3/BinRobo_rev3_review_2026-11-15/videos/driving_software/rev3_04_cam_bias80mm_refusal.mp4	picture, video or binary of the other agent: not checked	703616
+other-agent/2026-11-15_review_of_rev3/BinRobo_rev3_review_2026-11-15/videos/driving_software/rev3_05_energy_one_bin_59.7Wh_fails_50Wh_limit.mp4	picture, video or binary of the other agent: not checked	4407671
+other-agent/2026-11-15_review_of_rev3/BinRobo_rev3_review_2026-11-15/videos/driving_software/rev3_06_energy_guard_refuses_trip.mp4	picture, video or binary of the other agent: not checked	116425
+other-agent/2026-11-15_review_of_rev3/BinRobo_rev3_review_2026-11-15/videos/driving_software/rev3_07_worst_hedge_clearance_s3b_s23.mp4	picture, video or binary of the other agent: not checked	5525407
+other-agent/2026-11-15_review_of_rev3/BinRobo_rev3_review_2026-11-15/videos/driving_software/rev3_08_night_camera_pass.mp4	picture, video or binary of the other agent: not checked	4216092
+other-agent/2026-11-15_review_of_rev3/BinRobo_rev3_review_2026-11-15/videos/driving_software/rev3_09_lidar_stress_lid15.mp4	picture, video or binary of the other agent: not checked	4323008
+other-agent/2026-11-15_review_of_rev3/BinRobo_rev3_review_2026-11-15/videos/driving_software/rev3_10_three_bins_162kg.mp4	picture, video or binary of the other agent: not checked	5470049
+other-agent/2026-11-15_review_of_rev3/BinRobo_rev3_review_2026-11-15/videos/mechanical_lane/rev3_01_slippery_hillstart_flat_vs_narrow_tread.mp4	picture, video or binary of the other agent: not checked	894786
+other-agent/2026-11-15_review_of_rev3/BinRobo_rev3_review_2026-11-15/videos/mechanical_lane/rev3_02_G3_step_both_24mm_pass_vs_36mm_stall.mp4	picture, video or binary of the other agent: not checked	493473
+other-agent/2026-11-15_review_of_rev3/BinRobo_rev3_review_2026-11-15/videos/mechanical_lane/rev3_03_sharp_step_up_60Nm_stall_vs_80Nm.mp4	picture, video or binary of the other agent: not checked	1999771
+other-agent/2026-11-15_review_of_rev3/BinRobo_rev3_review_2026-11-15/videos/mechanical_lane/rev3_04_open_pothole_stall_vs_80Nm.mp4	picture, video or binary of the other agent: not checked	7179632
+other-agent/2026-11-15_review_of_rev3/BinRobo_rev3_review_2026-11-15/videos/mechanical_lane/rev3_05_open_trench_stall.mp4	picture, video or binary of the other agent: not checked	781814
+other-agent/2026-11-15_review_of_rev3/BinRobo_rev3_review_2026-11-15/videos/mechanical_lane/rev3_06_wet_descent_person_estop.mp4	picture, video or binary of the other agent: not checked	1787487
+other-agent/2026-11-15_review_of_rev3/BinRobo_rev3_review_2026-11-15/videos/mechanical_lane/rev3_07_seating_check_setdown_retry_CL303_i25.mp4	picture, video or binary of the other agent: not checked	1149541
+other-agent/2026-11-15_review_of_rev3/BinRobo_rev3_review_2026-11-15/videos/mechanical_lane/rev3_08_hillstart_plus10pct_mass_166kg_flat_vs_narrow.mp4	picture, video or binary of the other agent: not checked	883552
+other-agent/2026-11-15_review_of_rev3/COLDEYE_rev3_2026-11-14.pdf	PDF replaced by its text	763178
+other-agent/2026-11-15_review_of_rev3/SITL_rev3_2026-11-14.pdf	PDF replaced by its text	289045
+other-agent/2026-11-15_review_of_rev3/TEST_rev3_2026-11-14.pdf	PDF replaced by its text	248000
+other-agent/2026-11-21_review_of_rev4/COLDEYE_rev4_2026-11-21.pdf	PDF replaced by its text	767421
+other-agent/2026-11-21_review_of_rev4/SITL_rev4_2026-11-21.pdf	PDF replaced by its text	322917
+other-agent/2026-11-21_review_of_rev4/TEST_rev4_2026-11-21.pdf	PDF replaced by its text	199633
+other-agent/2026-11-21_review_of_rev4/coldeye_figs/fig1_stop_vs_slope.png	picture, video or binary of the other agent: not checked	159617
+other-agent/2026-11-21_review_of_rev4/coldeye_figs/fig2_bumper_plan_pivot.png	picture, video or binary of the other agent: not checked	176342
+other-agent/2026-11-21_review_of_rev4/coldeye_figs/fig3_beams_vs_bin_wheel.png	picture, video or binary of the other agent: not checked	145502
+other-agent/2026-11-21_review_of_rev4/coldeye_figs/fig4_lift_stop_stack.png	picture, video or binary of the other agent: not checked	98013
+other-agent/2026-11-21_review_of_rev4/coldeye_figs/fig5_byelaw_window.png	picture, video or binary of the other agent: not checked	111610
+other-agent/2026-11-21_review_of_rev4/coldeye_figs/fig6_cost.png	picture, video or binary of the other agent: not checked	78494
+other-agent/2026-11-21_review_of_rev4/videos/driving_software/rev4_01_three_bin_evening_s3a_s7.mp4	picture, video or binary of the other agent: not checked	4512226
+other-agent/2026-11-21_review_of_rev4/videos/driving_software/rev4_02_seating_check_catch_camB60_s1a_s7.mp4	picture, video or binary of the other agent: not checked	3879633
+other-agent/2026-11-21_review_of_rev4/videos/driving_software/rev4_03_no_seating_check_bias_camB60_s1a_s7.mp4	picture, video or binary of the other agent: not checked	3910008
+other-agent/2026-11-21_review_of_rev4/videos/driving_software/rev4_04_worst_hedge_98mm_s1b_s23.mp4	picture, video or binary of the other agent: not checked	4357235
+other-agent/2026-11-21_review_of_rev4/videos/driving_software/rev4_05_seating_refusal_camC80_s1a_s7.mp4	picture, video or binary of the other agent: not checked	885902
+other-agent/2026-11-21_review_of_rev4/videos/driving_software/rev4_06_too_late_third_bin_s3b_s7.mp4	picture, video or binary of the other agent: not checked	5563993
+other-agent/2026-11-21_review_of_rev4/videos/driving_software/rev4_07_rtk_loss_fence_hold_s4c_s11.mp4	picture, video or binary of the other agent: not checked	1454745
+other-agent/2026-11-21_review_of_rev4/videos/mechanical_lane/rev4_01_person_stop_worst_empty_level_to_12pct_938mm.mp4	picture, video or binary of the other agent: not checked	485259
+other-agent/2026-11-21_review_of_rev4/videos/mechanical_lane/rev4_02_person_stop_12pct_downhill_full_vs_empty.mp4	picture, video or binary of the other agent: not checked	232971
+other-agent/2026-11-21_review_of_rev4/videos/mechanical_lane/rev4_03_wet_leaves_empty_rev4_vs_castor_brakes.mp4	picture, video or binary of the other agent: not checked	402976
+other-agent/2026-11-21_review_of_rev4/videos/mechanical_lane/rev4_04_wet_leaves_empty_B2F_vs_castor_brakes.mp4	picture, video or binary of the other agent: not checked	245869
+other-agent/2026-11-21_review_of_rev4/videos/mechanical_lane/rev4_05_lowering_onto_20mm_no_trip_vs_30mm_trip.mp4	picture, video or binary of the other agent: not checked	394038
+other-agent/2026-11-21_review_of_rev4/videos/mechanical_lane/rev4_06_step_40mm_full_stall_vs_momentum.mp4	picture, video or binary of the other agent: not checked	518659
+other-agent/2026-11-21_review_of_rev4/videos/mechanical_lane/rev4_07_worst_pickup_CL_s303_i25.mp4	picture, video or binary of the other agent: not checked	1028176
+other-agent/2026-11-21_review_of_rev4/videos/mechanical_lane/rev4_08_open_pothole_stall_hedge_5p6mm.mp4	picture, video or binary of the other agent: not checked	2826382
+other-agent/2026-11-21_review_of_rev4/videos/mechanical_lane/rev4_09_sharp_drop_40mm_vmax.mp4	picture, video or binary of the other agent: not checked	1234099
+other-agent/2026-11-23_review_of_rev5.1/COLDEYE_rev51_2026-11-23.pdf	PDF replaced by its text	523420
+other-agent/2026-11-23_review_of_rev5.1/SITL_rev51_2026-11-23.pdf	PDF replaced by its text	323241
+other-agent/2026-11-23_review_of_rev5.1/TEST_rev51_2026-11-23.pdf	PDF replaced by its text	220301
+other-agent/2026-11-23_review_of_rev5.1/coldeye_figs/fig1_lane_slope.png	picture, video or binary of the other agent: not checked	186968
+other-agent/2026-11-23_review_of_rev5.1/coldeye_figs/fig2_stop_leaves.png	picture, video or binary of the other agent: not checked	101701
+other-agent/2026-11-23_review_of_rev5.1/coldeye_figs/fig3_pause_travel.png	picture, video or binary of the other agent: not checked	72094
+other-agent/2026-11-23_review_of_rev5.1/videos/driving_software/rev51_01_walker_pause_60s_s5a_s7.mp4	picture, video or binary of the other agent: not checked	2280383
+other-agent/2026-11-23_review_of_rev5.1/videos/driving_software/rev51_02_person_steps_out_1m_contact_s5a_s7.mp4	picture, video or binary of the other agent: not checked	570209
+other-agent/2026-11-23_review_of_rev5.1/videos/driving_software/rev51_03_person_steps_out_2m_stops_s5a_s7.mp4	picture, video or binary of the other agent: not checked	2289533
+other-agent/2026-11-23_review_of_rev5.1/videos/driving_software/rev51_04_person_from_behind_unseen_s5a_s7.mp4	picture, video or binary of the other agent: not checked	1795998
+other-agent/2026-11-23_review_of_rev5.1/videos/driving_software/rev51_05_person_stays_1000s_no_15min_hold_s5a_s7.mp4	picture, video or binary of the other agent: not checked	2080251
+other-agent/2026-11-23_review_of_rev5.1/videos/driving_software/rev51_06_three_dropoffs_to_2135_s3a_s23.mp4	picture, video or binary of the other agent: not checked	4799609
+other-agent/2026-11-23_review_of_rev5.1/videos/driving_software/rev51_07_three_pickups_from_1630_s3b_s7.mp4	picture, video or binary of the other agent: not checked	4702883
+other-agent/2026-11-23_review_of_rev5.1/videos/driving_software/rev51_08_FAIL_pivot_into_green_bin_s3a_s7.mp4	picture, video or binary of the other agent: not checked	4267224
+other-agent/2026-11-23_review_of_rev5.1/videos/driving_software/rev51_09_phantom_detections_1pm_s1b_s7.mp4	picture, video or binary of the other agent: not checked	4093916
+other-agent/2026-11-23_review_of_rev5.1/videos/mechanical_lane/rev51_01_empty_wet_leaves_8p5_vs_10pct.mp4	picture, video or binary of the other agent: not checked	302758
+other-agent/2026-11-23_review_of_rev5.1/videos/mechanical_lane/rev51_02_level_to_8p5pct_transition_0p4.mp4	picture, video or binary of the other agent: not checked	434243
+other-agent/2026-11-23_review_of_rev5.1/videos/mechanical_lane/rev51_03_X8n_person_real_hill_wet_leaves.mp4	picture, video or binary of the other agent: not checked	990518
+other-agent/2026-11-23_review_of_rev5.1/videos/mechanical_lane/rev51_04_short_12pct_ramp_X8n_runaway.mp4	picture, video or binary of the other agent: not checked	1731040
+other-agent/2026-11-23_review_of_rev5.1/videos/mechanical_lane/rev51_05_short_10pct_ramp_X9n_hold_slides.mp4	picture, video or binary of the other agent: not checked	625827
+other-agent/2026-11-23_review_of_rev5.1/videos/mechanical_lane/rev51_06_worst_stop_grip_0p18_vs_0p22.mp4	picture, video or binary of the other agent: not checked	287931

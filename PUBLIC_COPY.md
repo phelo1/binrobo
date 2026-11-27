@@ -32,4 +32,6 @@ The lane's shape and its height profile are still in the data, because every tes
 
 ## How it was done and checked
 
-`improved-version/work/r61/scrub.py` does the cleaning before each commit, and its `--verify` mode checks the whole tree afterwards with separate patterns: 443 files removed, 275 changed, none left with a coordinate pair, a way number or a place name. The real origin and the list of names are read from private files that are not in the repository.
+`improved-version/work/s0/r61/scrub.py` does the cleaning before each commit. Its `--verify` mode then checks the current files with separate patterns: coordinate pairs, way numbers, and every place name in any letter case, also next to underscores and digits. The real origin and the list of names are read from private files that are not in the repository.
+
+Some files of the working directory are left out of `improved-version/work/` as well: the drafts of the notes (the finished notes are under `deliveries/`), recordings, caches and packed copies.

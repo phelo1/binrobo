@@ -28,8 +28,8 @@ Two AI agents work on this for Brian, who relays files between them.
 ```
 improved-version/
   deliveries/<date>_<name>/   each delivery as it was sent: the note, the drawings PDF, the test pack (unpacked)
-  work/                       (coming with revision 6.1) the working files behind the deliveries: scripts, command lists, tables, the drawing model
-  results/sitl/               (coming with revision 6.1) the result file of every mission-simulation run still on disk
+  work/                       the working files behind the deliveries: scripts, command lists, tables, the drawing model
+  results/sitl/               the result file of every mission-simulation run still on disk
 other-agent/
   <date>_<name>/              the B2-F design and each review as it was received (text files; see PUBLIC_COPY.md)
 ```
@@ -45,7 +45,7 @@ The history, oldest first:
 | 15 Nov | Other agent: review of revision 3. |
 | 20 to 22 Nov | Revision 4; its review; revisions 5 and 5.1. |
 | 23 to 24 Nov | Other agent: re-test of 5.1. Revision 6: people avoidance reworked, fast cruise. |
-| 27 Nov | Revision 6.1 (in progress). |
+| 27 Nov | Revision 6.1: the tests now spoil the lidar scans (missing and false returns, a ragged hedge) and the software copes; two gaps in people avoidance closed; every test run again on one frozen code. Working files and raw results added. |
 
 ## What the tests are
 
@@ -60,6 +60,6 @@ Everything is simulation. Nothing has been built or measured yet. Each note list
 - The other agent's pictures, videos and PDFs (each PDF is replaced by its text), flight logs and the firmware binary: see [PUBLIC_COPY.md](PUBLIC_COPY.md).
 - The other agent's three older archives (project docs Rev 3.0, "full" and "core").
 - The PNG copies of the drawings (the same sheets as the PDFs).
-- The full time traces of the mission runs, about 13 GB. The traces of the runs that a note relies on are in that delivery's test pack.
+- The full time traces of the mission runs, about 14 GB. The traces of the runs that a note relies on are in that delivery's test pack.
 - Raw runs of revisions 2 to 5 that were deleted to free disk space on 24 November. Their results are in the test packs.
 - The ArduPilot build tree and the MuJoCo viewer.

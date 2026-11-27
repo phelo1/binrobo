@@ -1,0 +1,3349 @@
+[
+ {
+  "set": "fast",
+  "case": "asis",
+  "what": "Walker stops in the path 10 m ahead, then a dog crosses (scenario as written)",
+  "runs": [
+   {
+    "seed": 11,
+    "result": "pass",
+    "outcome": "plan completed",
+    "contacts": 0,
+    "alerts": [],
+    "hedge": 0.381,
+    "pauses": [
+     {
+      "by": "cam",
+      "range": 4.91,
+      "wait": 13.8,
+      "person": true,
+      "static": null
+     },
+     {
+      "by": "cam",
+      "range": 4.51,
+      "wait": 38.9,
+      "person": true,
+      "static": null
+     }
+    ],
+    "min_s": 4.1,
+    "near": {
+     "gap": 3.0,
+     "t": 150.01,
+     "v": 0.002,
+     "w": 0.0,
+     "still_for": 0.2,
+     "side": "front"
+    },
+    "vmax": 1.11,
+    "v_appear": 0.71,
+    "v_in": [
+     0.4,
+     0.74
+    ]
+   },
+   {
+    "seed": 23,
+    "result": "pass",
+    "outcome": "plan completed",
+    "contacts": 0,
+    "alerts": [],
+    "hedge": 0.379,
+    "pauses": [
+     {
+      "by": "cam",
+      "range": 4.94,
+      "wait": 13.4,
+      "person": true,
+      "static": null
+     },
+     {
+      "by": "cam",
+      "range": 4.83,
+      "wait": 8.9,
+      "person": true,
+      "static": null
+     },
+     {
+      "by": "lid",
+      "range": 3.0,
+      "wait": 26.5,
+      "person": true,
+      "static": null
+     }
+    ],
+    "min_s": 4.0,
+    "near": {
+     "gap": 3.5,
+     "t": 148.01,
+     "v": 0.006,
+     "w": 0.002,
+     "still_for": 0.0,
+     "side": "front"
+    },
+    "vmax": 1.02,
+    "v_appear": 0.72,
+    "v_in": [
+     0.37,
+     0.83,
+     0.22
+    ]
+   },
+   {
+    "seed": 7,
+    "result": "pass",
+    "outcome": "plan completed",
+    "contacts": 0,
+    "alerts": [],
+    "hedge": 0.366,
+    "pauses": [
+     {
+      "by": "cam",
+      "range": 4.93,
+      "wait": 14.5,
+      "person": true,
+      "static": null
+     },
+     {
+      "by": "cam",
+      "range": 3.83,
+      "wait": 38.6,
+      "person": true,
+      "static": null
+     }
+    ],
+    "min_s": 3.9,
+    "near": {
+     "gap": 2.78,
+     "t": 146.11,
+     "v": 0.007,
+     "w": 0.001,
+     "still_for": 0.0,
+     "side": "front"
+    },
+    "vmax": 1.02,
+    "v_appear": 1.01,
+    "v_in": [
+     0.4,
+     0.75
+    ]
+   }
+  ]
+ },
+ {
+  "set": "fast",
+  "case": "near35",
+  "what": "Walks out of the far hedge and stops in the robot's path; nose 2.0 m from their line when they set off",
+  "runs": [
+   {
+    "seed": 11,
+    "result": "pass",
+    "outcome": "plan completed",
+    "contacts": 0,
+    "alerts": [],
+    "hedge": 0.38,
+    "pauses": [
+     {
+      "by": "lid",
+      "range": 1.77,
+      "wait": 96.0,
+      "person": true,
+      "static": null
+     },
+     {
+      "by": "lid",
+      "range": 2.96,
+      "wait": 8.3,
+      "person": true,
+      "static": null
+     }
+    ],
+    "min_s": 5.0,
+    "near": {
+     "gap": 1.4,
+     "t": 78.09,
+     "v": 0.0,
+     "w": 0.0,
+     "still_for": 1.1,
+     "side": "front"
+    },
+    "vmax": 1.08,
+    "v_appear": 0.7,
+    "v_in": [
+     0.47,
+     0.46
+    ]
+   },
+   {
+    "seed": 23,
+    "result": "pass",
+    "outcome": "plan completed",
+    "contacts": 0,
+    "alerts": [],
+    "hedge": 0.378,
+    "pauses": [
+     {
+      "by": "lid",
+      "range": 1.91,
+      "wait": 96.2,
+      "person": true,
+      "static": null
+     },
+     {
+      "by": "cam",
+      "range": 4.54,
+      "wait": 9.1,
+      "person": true,
+      "static": null
+     },
+     {
+      "by": "lid",
+      "range": 2.83,
+      "wait": 24.5,
+      "person": true,
+      "static": null
+     }
+    ],
+    "min_s": 5.3,
+    "near": {
+     "gap": 0.96,
+     "t": 76.41,
+     "v": 0.0,
+     "w": 0.0,
+     "still_for": 0.5,
+     "side": "front"
+    },
+    "vmax": 1.02,
+    "v_appear": 0.97,
+    "v_in": [
+     0.77,
+     0.62,
+     0.22
+    ]
+   },
+   {
+    "seed": 7,
+    "result": "pass",
+    "outcome": "plan completed",
+    "contacts": 0,
+    "alerts": [],
+    "hedge": 0.366,
+    "pauses": [
+     {
+      "by": "lid",
+      "range": 2.08,
+      "wait": 96.1,
+      "person": true,
+      "static": null
+     },
+     {
+      "by": "cam",
+      "range": 4.56,
+      "wait": 35.2,
+      "person": true,
+      "static": null
+     }
+    ],
+    "min_s": 5.3,
+    "near": {
+     "gap": 1.47,
+     "t": 76.17,
+     "v": 0.0,
+     "w": -0.0,
+     "still_for": 1.4,
+     "side": "front"
+    },
+    "vmax": 1.02,
+    "v_appear": 0.69,
+    "v_in": [
+     0.48,
+     0.92
+    ]
+   }
+  ]
+ },
+ {
+  "set": "fast",
+  "case": "near31",
+  "what": "Walks out of the far hedge and stops in the robot's path; nose 1.6 m from their line when they set off",
+  "runs": [
+   {
+    "seed": 11,
+    "result": "pass",
+    "outcome": "plan completed",
+    "contacts": 0,
+    "alerts": [],
+    "hedge": 0.38,
+    "pauses": [
+     {
+      "by": "lid",
+      "range": 1.54,
+      "wait": 96.2,
+      "person": true,
+      "static": null
+     },
+     {
+      "by": "cam",
+      "range": 3.55,
+      "wait": 9.6,
+      "person": true,
+      "static": null
+     }
+    ],
+    "min_s": 5.0,
+    "near": {
+     "gap": 1.06,
+     "t": 77.73,
+     "v": 0.001,
+     "w": 0.0,
+     "still_for": 0.2,
+     "side": "front"
+    },
+    "vmax": 1.08,
+    "v_appear": 0.69,
+    "v_in": [
+     0.48,
+     0.68
+    ]
+   },
+   {
+    "seed": 23,
+    "result": "pass",
+    "outcome": "plan completed",
+    "contacts": 0,
+    "alerts": [],
+    "hedge": 0.379,
+    "pauses": [
+     {
+      "by": "lid",
+      "range": 1.54,
+      "wait": 96.1,
+      "person": true,
+      "static": null
+     },
+     {
+      "by": "cam",
+      "range": 4.42,
+      "wait": 9.0,
+      "person": true,
+      "static": null
+     },
+     {
+      "by": "lid",
+      "range": 2.8,
+      "wait": 24.9,
+      "person": true,
+      "static": null
+     }
+    ],
+    "min_s": 5.3,
+    "near": {
+     "gap": 0.19,
+     "t": 76.77,
+     "v": 0.003,
+     "w": -0.0,
+     "still_for": 0.1,
+     "side": "front"
+    },
+    "vmax": 1.02,
+    "v_appear": 0.98,
+    "v_in": [
+     0.99,
+     0.62,
+     0.22
+    ]
+   },
+   {
+    "seed": 7,
+    "result": "pass",
+    "outcome": "plan completed",
+    "contacts": 0,
+    "alerts": [],
+    "hedge": 0.366,
+    "pauses": [
+     {
+      "by": "lid",
+      "range": 1.72,
+      "wait": 96.2,
+      "person": true,
+      "static": null
+     },
+     {
+      "by": "cam",
+      "range": 4.68,
+      "wait": 32.0,
+      "person": true,
+      "static": null
+     }
+    ],
+    "min_s": 5.2,
+    "near": {
+     "gap": 0.98,
+     "t": 76.77,
+     "v": 0.0,
+     "w": 0.0,
+     "still_for": 1.3,
+     "side": "front"
+    },
+    "vmax": 1.02,
+    "v_appear": 0.7,
+    "v_in": [
+     0.58,
+     0.74
+    ]
+   }
+  ]
+ },
+ {
+  "set": "fast",
+  "case": "near26",
+  "what": "Walks out of the far hedge and stops in the robot's path; nose 1.0 m from their line when they set off (the reviewers' contact case)",
+  "runs": [
+   {
+    "seed": 11,
+    "result": "pass",
+    "outcome": "plan completed",
+    "contacts": 0,
+    "alerts": [],
+    "hedge": 0.38,
+    "pauses": [
+     {
+      "by": "lid",
+      "range": 1.25,
+      "wait": 96.3,
+      "person": true,
+      "static": null
+     },
+     {
+      "by": "cam",
+      "range": 3.58,
+      "wait": 8.4,
+      "person": true,
+      "static": null
+     }
+    ],
+    "min_s": 5.0,
+    "near": {
+     "gap": 0.56,
+     "t": 78.45,
+     "v": 0.001,
+     "w": 0.0,
+     "still_for": 0.2,
+     "side": "front"
+    },
+    "vmax": 1.11,
+    "v_appear": 0.7,
+    "v_in": [
+     0.58,
+     0.47
+    ]
+   },
+   {
+    "seed": 23,
+    "result": "alert",
+    "outcome": "contact stop",
+    "contacts": 1,
+    "alerts": [
+     "bump strip / body contact - stop chain open, robot stopped (contact with person)"
+    ],
+    "hedge": 0.379,
+    "pauses": [
+     {
+      "by": "lid",
+      "range": 1.52,
+      "wait": null,
+      "person": null,
+      "static": null
+     }
+    ],
+    "min_s": 1.3,
+    "near": {
+     "gap": -0.09,
+     "t": 77.13,
+     "v": 0.0,
+     "w": 0.0,
+     "still_for": 0.1,
+     "side": "front"
+    },
+    "vmax": 1.02,
+    "touch": {
+     "t": 77.05,
+     "v": 0.008,
+     "what": "person"
+    },
+    "v_appear": 0.99,
+    "v_in": [
+     1.0
+    ]
+   },
+   {
+    "seed": 7,
+    "result": "pass",
+    "outcome": "plan completed",
+    "contacts": 0,
+    "alerts": [],
+    "hedge": 0.366,
+    "pauses": [
+     {
+      "by": "lid",
+      "range": 1.16,
+      "wait": 96.0,
+      "person": true,
+      "static": null
+     },
+     {
+      "by": "cam",
+      "range": 3.94,
+      "wait": 4.2,
+      "person": true,
+      "static": null
+     },
+     {
+      "by": "lid",
+      "range": 2.8,
+      "wait": 3.3,
+      "person": true,
+      "static": null
+     }
+    ],
+    "min_s": 4.8,
+    "near": {
+     "gap": 0.46,
+     "t": 77.25,
+     "v": 0.0,
+     "w": 0.0,
+     "still_for": 1.2,
+     "side": "front"
+    },
+    "vmax": 1.02,
+    "v_appear": 0.7,
+    "v_in": [
+     0.48,
+     0.6,
+     0.18
+    ]
+   }
+  ]
+ },
+ {
+  "set": "fast",
+  "case": "near20",
+  "what": "Walks out of the far hedge and stops in the robot's path; nose 0.4 m from their line when they set off",
+  "runs": [
+   {
+    "seed": 11,
+    "result": "alert",
+    "outcome": "contact stop",
+    "contacts": 2,
+    "alerts": [
+     "bump strip / body contact - stop chain open, robot stopped (contact with person)"
+    ],
+    "hedge": 0.38,
+    "pauses": [
+     {
+      "by": "lid",
+      "range": 0.84,
+      "wait": null,
+      "person": null,
+      "static": null
+     }
+    ],
+    "min_s": 1.3,
+    "near": {
+     "gap": -0.03,
+     "t": 79.65,
+     "v": 0.028,
+     "w": 0.007,
+     "still_for": 0.0,
+     "side": "front"
+    },
+    "vmax": 1.01,
+    "touch": {
+     "t": 79.63,
+     "v": 0.028,
+     "what": "person"
+    },
+    "v_appear": 0.7,
+    "v_in": [
+     0.7
+    ]
+   },
+   {
+    "seed": 23,
+    "result": "alert",
+    "outcome": "contact stop",
+    "contacts": 1,
+    "alerts": [
+     "bump strip / body contact - stop chain open, robot stopped (contact with person)"
+    ],
+    "hedge": 0.379,
+    "pauses": [
+     {
+      "by": "lid",
+      "range": 1.33,
+      "wait": null,
+      "person": null,
+      "static": null
+     }
+    ],
+    "min_s": 1.3,
+    "near": {
+     "gap": -0.08,
+     "t": 77.73,
+     "v": 0.0,
+     "w": 0.0,
+     "still_for": 0.1,
+     "side": "flank"
+    },
+    "vmax": 1.02,
+    "touch": {
+     "t": 77.67,
+     "v": 0.009,
+     "what": "person"
+    },
+    "v_appear": 1.0,
+    "v_in": [
+     0.98
+    ]
+   },
+   {
+    "seed": 7,
+    "result": "alert",
+    "outcome": "contact stop",
+    "contacts": 1,
+    "alerts": [
+     "bump strip / body contact - stop chain open, robot stopped (contact with person)"
+    ],
+    "hedge": 0.366,
+    "pauses": [
+     {
+      "by": "lid",
+      "range": 1.0,
+      "wait": null,
+      "person": null,
+      "static": null
+     }
+    ],
+    "min_s": 1.3,
+    "near": {
+     "gap": -0.01,
+     "t": 76.89,
+     "v": 0.026,
+     "w": 0.003,
+     "still_for": 0.0,
+     "side": "front"
+    },
+    "vmax": 1.02,
+    "touch": {
+     "t": 76.89,
+     "v": 0.026,
+     "what": "person"
+    },
+    "v_appear": 0.7,
+    "v_in": [
+     0.71
+    ]
+   }
+  ]
+ },
+ {
+  "set": "fast",
+  "case": "child35",
+  "what": "Small child (0.3 m wide), nose 2.0 m from their line",
+  "runs": [
+   {
+    "seed": 11,
+    "result": "pass",
+    "outcome": "plan completed",
+    "contacts": 0,
+    "alerts": [],
+    "hedge": 0.38,
+    "pauses": [
+     {
+      "by": "lid",
+      "range": 1.97,
+      "wait": 96.0,
+      "person": true,
+      "static": null
+     },
+     {
+      "by": "cam",
+      "range": 4.47,
+      "wait": 39.1,
+      "person": true,
+      "static": null
+     }
+    ],
+    "min_s": 5.4,
+    "near": {
+     "gap": 1.56,
+     "t": 76.77,
+     "v": 0.0,
+     "w": 0.0,
+     "still_for": 1.0,
+     "side": "front"
+    },
+    "vmax": 1.02,
+    "v_appear": 0.7,
+    "v_in": [
+     0.48,
+     0.84
+    ]
+   },
+   {
+    "seed": 23,
+    "result": "pass",
+    "outcome": "plan completed",
+    "contacts": 0,
+    "alerts": [],
+    "hedge": 0.348,
+    "pauses": [
+     {
+      "by": "lid",
+      "range": 2.0,
+      "wait": 96.1,
+      "person": true,
+      "static": null
+     },
+     {
+      "by": "cam",
+      "range": 4.68,
+      "wait": 9.2,
+      "person": true,
+      "static": null
+     },
+     {
+      "by": "lid",
+      "range": 2.95,
+      "wait": 24.1,
+      "person": true,
+      "static": null
+     }
+    ],
+    "min_s": 5.3,
+    "near": {
+     "gap": 1.13,
+     "t": 76.29,
+     "v": 0.0,
+     "w": 0.0,
+     "still_for": 0.4,
+     "side": "front"
+    },
+    "vmax": 1.02,
+    "v_appear": 1.0,
+    "v_in": [
+     0.79,
+     0.53,
+     0.22
+    ]
+   },
+   {
+    "seed": 7,
+    "result": "pass",
+    "outcome": "plan completed",
+    "contacts": 0,
+    "alerts": [],
+    "hedge": 0.381,
+    "pauses": [
+     {
+      "by": "lid",
+      "range": 2.07,
+      "wait": 96.0,
+      "person": true,
+      "static": null
+     },
+     {
+      "by": "cam",
+      "range": 3.94,
+      "wait": 9.9,
+      "person": true,
+      "static": null
+     },
+     {
+      "by": "lid",
+      "range": 2.91,
+      "wait": 25.0,
+      "person": true,
+      "static": null
+     }
+    ],
+    "min_s": 5.4,
+    "near": {
+     "gap": 1.5,
+     "t": 75.09,
+     "v": 0.0,
+     "w": 0.0,
+     "still_for": 1.3,
+     "side": "front"
+    },
+    "vmax": 1.02,
+    "v_appear": 0.71,
+    "v_in": [
+     0.49,
+     0.44,
+     0.24
+    ]
+   }
+  ]
+ },
+ {
+  "set": "fast",
+  "case": "run40",
+  "what": "Child running across at 2.5 m/s, nose 2.5 m from their line",
+  "runs": [
+   {
+    "seed": 11,
+    "result": "pass",
+    "outcome": "plan completed",
+    "contacts": 0,
+    "alerts": [],
+    "hedge": 0.38,
+    "pauses": [
+     {
+      "by": "lid",
+      "range": 2.27,
+      "wait": 24.2,
+      "person": true,
+      "static": null
+     },
+     {
+      "by": "cam",
+      "range": 4.4,
+      "wait": 38.9,
+      "person": true,
+      "static": null
+     }
+    ],
+    "min_s": 4.2,
+    "near": {
+     "gap": 2.04,
+     "t": 75.69,
+     "v": 0.058,
+     "w": 0.007,
+     "still_for": 0.0,
+     "side": "front"
+    },
+    "vmax": 1.11,
+    "v_appear": 0.7,
+    "v_in": [
+     0.58,
+     0.83
+    ]
+   },
+   {
+    "seed": 23,
+    "result": "pass",
+    "outcome": "plan completed",
+    "contacts": 0,
+    "alerts": [],
+    "hedge": 0.379,
+    "pauses": [
+     {
+      "by": "lid",
+      "range": 2.13,
+      "wait": 22.9,
+      "person": true,
+      "static": null
+     },
+     {
+      "by": "cam",
+      "range": 4.54,
+      "wait": 8.4,
+      "person": true,
+      "static": null
+     },
+     {
+      "by": "lid",
+      "range": 2.83,
+      "wait": 25.9,
+      "person": true,
+      "static": null
+     }
+    ],
+    "min_s": 4.1,
+    "near": {
+     "gap": 1.83,
+     "t": 74.73,
+     "v": 0.239,
+     "w": 0.061,
+     "still_for": 0.0,
+     "side": "front"
+    },
+    "vmax": 1.02,
+    "v_appear": 0.96,
+    "v_in": [
+     0.66,
+     0.61,
+     0.21
+    ]
+   },
+   {
+    "seed": 7,
+    "result": "pass",
+    "outcome": "plan completed",
+    "contacts": 0,
+    "alerts": [],
+    "hedge": 0.366,
+    "pauses": [
+     {
+      "by": "lid",
+      "range": 2.57,
+      "wait": 24.4,
+      "person": true,
+      "static": null
+     },
+     {
+      "by": "cam",
+      "range": 4.46,
+      "wait": 39.0,
+      "person": true,
+      "static": null
+     }
+    ],
+    "min_s": 4.1,
+    "near": {
+     "gap": 2.07,
+     "t": 73.89,
+     "v": 0.01,
+     "w": -0.001,
+     "still_for": 0.0,
+     "side": "front"
+    },
+    "vmax": 1.03,
+    "v_appear": 0.69,
+    "v_in": [
+     0.57,
+     0.91
+    ]
+   }
+  ]
+ },
+ {
+  "set": "fast",
+  "case": "run26",
+  "what": "Child running across at 2.5 m/s, nose 1.0 m from their line",
+  "runs": [
+   {
+    "seed": 11,
+    "result": "pass",
+    "outcome": "plan completed",
+    "contacts": 0,
+    "alerts": [],
+    "hedge": 0.381,
+    "pauses": [
+     {
+      "by": "lid",
+      "range": 0.92,
+      "wait": 24.2,
+      "person": true,
+      "static": null
+     },
+     {
+      "by": "cam",
+      "range": 4.22,
+      "wait": 38.9,
+      "person": true,
+      "static": null
+     }
+    ],
+    "min_s": 4.2,
+    "near": {
+     "gap": 0.71,
+     "t": 77.73,
+     "v": 0.066,
+     "w": 0.001,
+     "still_for": 0.0,
+     "side": "front"
+    },
+    "vmax": 1.11,
+    "v_appear": 0.7,
+    "v_in": [
+     0.48,
+     0.75
+    ]
+   },
+   {
+    "seed": 23,
+    "result": "pass",
+    "outcome": "plan completed",
+    "contacts": 0,
+    "alerts": [],
+    "hedge": 0.381,
+    "pauses": [
+     {
+      "by": "lid",
+      "range": 1.36,
+      "wait": 24.4,
+      "person": true,
+      "static": null
+     },
+     {
+      "by": "cam",
+      "range": 4.35,
+      "wait": 8.7,
+      "person": true,
+      "static": null
+     }
+    ],
+    "min_s": 3.6,
+    "near": {
+     "gap": 0.14,
+     "t": 76.05,
+     "v": 0.021,
+     "w": -0.0,
+     "still_for": 0.0,
+     "side": "front"
+    },
+    "vmax": 1.02,
+    "v_appear": 1.0,
+    "v_in": [
+     1.01,
+     0.84
+    ]
+   },
+   {
+    "seed": 7,
+    "result": "pass",
+    "outcome": "plan completed",
+    "contacts": 0,
+    "alerts": [],
+    "hedge": 0.365,
+    "pauses": [
+     {
+      "by": "lid",
+      "range": 1.19,
+      "wait": 24.2,
+      "person": true,
+      "static": null
+     },
+     {
+      "by": "cam",
+      "range": 4.35,
+      "wait": 38.9,
+      "person": true,
+      "static": null
+     }
+    ],
+    "min_s": 4.1,
+    "near": {
+     "gap": 0.57,
+     "t": 75.69,
+     "v": 0.06,
+     "w": 0.002,
+     "still_for": 0.0,
+     "side": "front"
+    },
+    "vmax": 1.03,
+    "v_appear": 0.7,
+    "v_in": [
+     0.67,
+     0.75
+    ]
+   }
+  ]
+ },
+ {
+  "set": "fast",
+  "case": "run20",
+  "what": "Child running across at 2.5 m/s, nose 0.4 m from their line",
+  "runs": [
+   {
+    "seed": 11,
+    "result": "alert",
+    "outcome": "contact stop",
+    "contacts": 1,
+    "alerts": [
+     "bump strip / body contact - stop chain open, robot stopped (contact with person)"
+    ],
+    "hedge": 0.381,
+    "pauses": [
+     {
+      "by": "lid",
+      "range": 0.69,
+      "wait": null,
+      "person": null,
+      "static": null
+     }
+    ],
+    "min_s": 1.3,
+    "near": {
+     "gap": -0.02,
+     "t": 79.41,
+     "v": 0.183,
+     "w": -0.001,
+     "still_for": 0.0,
+     "side": "front"
+    },
+    "vmax": 1.01,
+    "touch": {
+     "t": 79.35,
+     "v": 0.358,
+     "what": "person"
+    },
+    "v_appear": 0.7,
+    "v_in": [
+     0.7
+    ]
+   },
+   {
+    "seed": 23,
+    "result": "alert",
+    "outcome": "contact stop",
+    "contacts": 5,
+    "alerts": [
+     "bump strip / body contact - stop chain open, robot stopped (contact with person)"
+    ],
+    "hedge": 0.381,
+    "pauses": [
+     {
+      "by": "lid",
+      "range": 1.27,
+      "wait": null,
+      "person": null,
+      "static": null
+     }
+    ],
+    "min_s": 1.3,
+    "near": {
+     "gap": -0.15,
+     "t": 75.93,
+     "v": 0.472,
+     "w": -0.007,
+     "still_for": 0.0,
+     "side": "flank"
+    },
+    "vmax": 1.01,
+    "touch": {
+     "t": 75.85,
+     "v": 0.669,
+     "what": "person"
+    },
+    "v_appear": 1.01,
+    "v_in": [
+     1.01
+    ]
+   },
+   {
+    "seed": 7,
+    "result": "alert",
+    "outcome": "contact stop",
+    "contacts": 3,
+    "alerts": [
+     "bump strip / body contact - stop chain open, robot stopped (contact with person)"
+    ],
+    "hedge": 0.366,
+    "pauses": [
+     {
+      "by": "lid",
+      "range": 0.81,
+      "wait": null,
+      "person": null,
+      "static": null
+     }
+    ],
+    "min_s": 1.3,
+    "near": {
+     "gap": -0.04,
+     "t": 76.41,
+     "v": 0.211,
+     "w": 0.011,
+     "still_for": 0.0,
+     "side": "front"
+    },
+    "vmax": 1.02,
+    "touch": {
+     "t": 76.37,
+     "v": 0.211,
+     "what": "person"
+    },
+    "v_appear": 0.7,
+    "v_in": [
+     0.71
+    ]
+   }
+  ]
+ },
+ {
+  "set": "fast",
+  "case": "nearhedge45",
+  "what": "Steps out of the NEAR hedge into the path, 3.2 m ahead of the nose",
+  "runs": [
+   {
+    "seed": 11,
+    "result": "pass",
+    "outcome": "plan completed",
+    "contacts": 0,
+    "alerts": [],
+    "hedge": 0.38,
+    "pauses": [
+     {
+      "by": "lid",
+      "range": 2.71,
+      "wait": 66.2,
+      "person": true,
+      "static": null
+     }
+    ],
+    "min_s": 4.1,
+    "near": {
+     "gap": 2.39,
+     "t": 105.69,
+     "v": 0.0,
+     "w": -0.0,
+     "still_for": 30.1,
+     "side": "front"
+    },
+    "vmax": 1.11,
+    "v_appear": 0.7,
+    "v_in": [
+     0.48
+    ]
+   },
+   {
+    "seed": 23,
+    "result": "pass",
+    "outcome": "plan completed",
+    "contacts": 0,
+    "alerts": [],
+    "hedge": 0.379,
+    "pauses": [
+     {
+      "by": "lid",
+      "range": 2.68,
+      "wait": 66.2,
+      "person": true,
+      "static": null
+     }
+    ],
+    "min_s": 4.0,
+    "near": {
+     "gap": 2.16,
+     "t": 105.09,
+     "v": 0.0,
+     "w": 0.0,
+     "still_for": 30.5,
+     "side": "front"
+    },
+    "vmax": 1.03,
+    "v_appear": 0.94,
+    "v_in": [
+     0.73
+    ]
+   },
+   {
+    "seed": 7,
+    "result": "pass",
+    "outcome": "plan completed",
+    "contacts": 0,
+    "alerts": [],
+    "hedge": 0.36,
+    "pauses": [
+     {
+      "by": "lid",
+      "range": 2.59,
+      "wait": 66.2,
+      "person": true,
+      "static": null
+     }
+    ],
+    "min_s": 3.9,
+    "near": {
+     "gap": 2.36,
+     "t": 103.05,
+     "v": 0.0,
+     "w": 0.0,
+     "still_for": 29.5,
+     "side": "front"
+    },
+    "vmax": 1.02,
+    "v_appear": 0.69,
+    "v_in": [
+     0.4
+    ]
+   }
+  ]
+ },
+ {
+  "set": "fast",
+  "case": "nearhedge30",
+  "what": "Steps out of the near hedge into the path, 1.7 m ahead of the nose",
+  "runs": [
+   {
+    "seed": 11,
+    "result": "pass",
+    "outcome": "plan completed",
+    "contacts": 0,
+    "alerts": [],
+    "hedge": 0.38,
+    "pauses": [
+     {
+      "by": "lid",
+      "range": 1.42,
+      "wait": 66.3,
+      "person": true,
+      "static": null
+     }
+    ],
+    "min_s": 4.1,
+    "near": {
+     "gap": 0.8,
+     "t": 107.01,
+     "v": 0.0,
+     "w": -0.0,
+     "still_for": 30.2,
+     "side": "front"
+    },
+    "vmax": 1.06,
+    "v_appear": 0.7,
+    "v_in": [
+     0.59
+    ]
+   },
+   {
+    "seed": 23,
+    "result": "pass",
+    "outcome": "plan completed",
+    "contacts": 0,
+    "alerts": [],
+    "hedge": 0.379,
+    "pauses": [
+     {
+      "by": "lid",
+      "range": 1.03,
+      "wait": 66.3,
+      "person": true,
+      "static": null
+     }
+    ],
+    "min_s": 4.0,
+    "near": {
+     "gap": 0.51,
+     "t": 106.41,
+     "v": 0.0,
+     "w": 0.0,
+     "still_for": 30.0,
+     "side": "front"
+    },
+    "vmax": 1.03,
+    "v_appear": 0.98,
+    "v_in": [
+     0.78
+    ]
+   },
+   {
+    "seed": 7,
+    "result": "pass",
+    "outcome": "plan completed",
+    "contacts": 0,
+    "alerts": [],
+    "hedge": 0.351,
+    "pauses": [
+     {
+      "by": "lid",
+      "range": 1.25,
+      "wait": 66.3,
+      "person": true,
+      "static": null
+     }
+    ],
+    "min_s": 3.9,
+    "near": {
+     "gap": 0.79,
+     "t": 105.57,
+     "v": 0.0,
+     "w": -0.0,
+     "still_for": 30.0,
+     "side": "front"
+    },
+    "vmax": 1.02,
+    "v_appear": 0.7,
+    "v_in": [
+     0.58
+    ]
+   }
+  ]
+ },
+ {
+  "set": "fast",
+  "case": "gapwalk26",
+  "what": "Walks out of a 4 m gateway in the far hedge; nose 1.0 m from their line",
+  "runs": [
+   {
+    "seed": 11,
+    "result": "pass",
+    "outcome": "plan completed",
+    "contacts": 0,
+    "alerts": [],
+    "hedge": 0.38,
+    "pauses": [
+     {
+      "by": "lid",
+      "range": 1.71,
+      "wait": 96.6,
+      "person": true,
+      "static": null
+     },
+     {
+      "by": "cam",
+      "range": 3.6,
+      "wait": 8.4,
+      "person": true,
+      "static": null
+     }
+    ],
+    "min_s": 5.1,
+    "near": {
+     "gap": 0.7,
+     "t": 83.01,
+     "v": 0.0,
+     "w": 0.0,
+     "still_for": 0.8,
+     "side": "front"
+    },
+    "vmax": 1.08,
+    "v_appear": 0.45,
+    "v_in": [
+     0.45,
+     0.47
+    ]
+   },
+   {
+    "seed": 23,
+    "result": "pass",
+    "outcome": "plan completed",
+    "contacts": 0,
+    "alerts": [],
+    "hedge": 0.378,
+    "pauses": [
+     {
+      "by": "lid",
+      "range": 2.18,
+      "wait": 96.5,
+      "person": true,
+      "static": null
+     },
+     {
+      "by": "cam",
+      "range": 4.41,
+      "wait": 8.3,
+      "person": true,
+      "static": null
+     },
+     {
+      "by": "lid",
+      "range": 2.93,
+      "wait": 24.5,
+      "person": true,
+      "static": null
+     }
+    ],
+    "min_s": 5.5,
+    "near": {
+     "gap": 0.64,
+     "t": 83.97,
+     "v": 0.0,
+     "w": -0.0,
+     "still_for": 1.6,
+     "side": "front"
+    },
+    "vmax": 1.02,
+    "v_appear": 0.41,
+    "v_in": [
+     0.41,
+     0.39,
+     0.21
+    ]
+   },
+   {
+    "seed": 7,
+    "result": "pass",
+    "outcome": "plan completed",
+    "contacts": 0,
+    "alerts": [],
+    "hedge": 0.366,
+    "pauses": [
+     {
+      "by": "lid",
+      "range": 1.57,
+      "wait": 96.4,
+      "person": true,
+      "static": null
+     },
+     {
+      "by": "cam",
+      "range": 3.83,
+      "wait": 17.2,
+      "person": true,
+      "static": null
+     },
+     {
+      "by": "lid",
+      "range": 2.98,
+      "wait": 17.6,
+      "person": true,
+      "static": null
+     }
+    ],
+    "min_s": 5.5,
+    "near": {
+     "gap": 0.75,
+     "t": 81.09,
+     "v": -0.0,
+     "w": 0.0,
+     "still_for": 1.6,
+     "side": "front"
+    },
+    "vmax": 1.03,
+    "v_appear": 0.4,
+    "v_in": [
+     0.4,
+     0.42,
+     0.23
+    ]
+   }
+  ]
+ },
+ {
+  "set": "fast",
+  "case": "gaprun26",
+  "what": "Child runs out of the same gateway at 2.5 m/s; nose 1.0 m from their line",
+  "runs": [
+   {
+    "seed": 11,
+    "result": "pass",
+    "outcome": "plan completed",
+    "contacts": 0,
+    "alerts": [],
+    "hedge": 0.38,
+    "pauses": [
+     {
+      "by": "lid",
+      "range": 1.59,
+      "wait": 54.3,
+      "person": true,
+      "static": null
+     },
+     {
+      "by": "cam",
+      "range": 4.36,
+      "wait": 38.7,
+      "person": true,
+      "static": null
+     }
+    ],
+    "min_s": 4.8,
+    "near": {
+     "gap": 0.81,
+     "t": 81.93,
+     "v": 0.048,
+     "w": 0.009,
+     "still_for": 0.0,
+     "side": "front"
+    },
+    "vmax": 1.06,
+    "v_appear": 0.45,
+    "v_in": [
+     0.45,
+     0.84
+    ]
+   },
+   {
+    "seed": 23,
+    "result": "pass",
+    "outcome": "plan completed",
+    "contacts": 0,
+    "alerts": [],
+    "hedge": 0.379,
+    "pauses": [
+     {
+      "by": "lid",
+      "range": 2.1,
+      "wait": 54.3,
+      "person": true,
+      "static": null
+     },
+     {
+      "by": "cam",
+      "range": 4.41,
+      "wait": 21.6,
+      "person": true,
+      "static": null
+     },
+     {
+      "by": "lid",
+      "range": 2.96,
+      "wait": 14.0,
+      "person": true,
+      "static": null
+     }
+    ],
+    "min_s": 4.8,
+    "near": {
+     "gap": 0.74,
+     "t": 82.53,
+     "v": 0.002,
+     "w": -0.007,
+     "still_for": 0.1,
+     "side": "front"
+    },
+    "vmax": 1.1,
+    "v_appear": 0.41,
+    "v_in": [
+     0.41,
+     0.82,
+     0.22
+    ]
+   },
+   {
+    "seed": 7,
+    "result": "pass",
+    "outcome": "plan completed",
+    "contacts": 0,
+    "alerts": [],
+    "hedge": 0.366,
+    "pauses": [
+     {
+      "by": "lid",
+      "range": 1.63,
+      "wait": 54.3,
+      "person": true,
+      "static": null
+     },
+     {
+      "by": "cam",
+      "range": 4.47,
+      "wait": 38.9,
+      "person": true,
+      "static": null
+     }
+    ],
+    "min_s": 4.7,
+    "near": {
+     "gap": 0.9,
+     "t": 79.53,
+     "v": -0.001,
+     "w": 0.007,
+     "still_for": 0.2,
+     "side": "front"
+    },
+    "vmax": 1.02,
+    "v_appear": 0.4,
+    "v_in": [
+     0.4,
+     0.91
+    ]
+   }
+  ]
+ },
+ {
+  "set": "fast",
+  "case": "behind",
+  "what": "Walker comes from behind at 1.6 m/s and passes the robot's side",
+  "runs": [
+   {
+    "seed": 11,
+    "result": "pass",
+    "outcome": "plan completed",
+    "contacts": 0,
+    "alerts": [],
+    "hedge": 0.38,
+    "pauses": [
+     {
+      "by": "lid",
+      "range": 2.88,
+      "wait": 10.4,
+      "person": true,
+      "static": null
+     },
+     {
+      "by": "lid",
+      "range": 2.84,
+      "wait": 12.0,
+      "person": true,
+      "static": null
+     }
+    ],
+    "min_s": 3.4,
+    "near": {
+     "gap": 0.28,
+     "t": 61.45,
+     "v": 0.0,
+     "w": -0.0,
+     "still_for": 2.0,
+     "side": "front"
+    },
+    "vmax": 1.02,
+    "v_appear": 1.01,
+    "v_in": [
+     0.75,
+     0.99
+    ]
+   },
+   {
+    "seed": 23,
+    "result": "pass",
+    "outcome": "plan completed",
+    "contacts": 0,
+    "alerts": [],
+    "hedge": 0.378,
+    "pauses": [
+     {
+      "by": "lid",
+      "range": 2.97,
+      "wait": 10.0,
+      "person": true,
+      "static": null
+     },
+     {
+      "by": "lid",
+      "range": 2.66,
+      "wait": 8.2,
+      "person": true,
+      "static": null
+     }
+    ],
+    "min_s": 3.4,
+    "near": {
+     "gap": 0.49,
+     "t": 61.95,
+     "v": 0.0,
+     "w": -0.0,
+     "still_for": 1.2,
+     "side": "flank"
+    },
+    "vmax": 1.02,
+    "v_appear": 1.01,
+    "v_in": [
+     1.02,
+     0.72
+    ]
+   },
+   {
+    "seed": 7,
+    "result": "pass",
+    "outcome": "plan completed",
+    "contacts": 0,
+    "alerts": [],
+    "hedge": 0.366,
+    "pauses": [
+     {
+      "by": "lid",
+      "range": 3.0,
+      "wait": 10.0,
+      "person": true,
+      "static": null
+     },
+     {
+      "by": "lid",
+      "range": 2.75,
+      "wait": 11.0,
+      "person": true,
+      "static": null
+     }
+    ],
+    "min_s": 3.4,
+    "near": {
+     "gap": 0.5,
+     "t": 61.85,
+     "v": 0.0,
+     "w": 0.0,
+     "still_for": 1.3,
+     "side": "flank"
+    },
+    "vmax": 1.04,
+    "v_appear": 1.0,
+    "v_in": [
+     1.01,
+     0.98
+    ]
+   }
+  ]
+ },
+ {
+  "set": "fast",
+  "case": "side",
+  "what": "Walks up from the far hedge and stands about 0.45 m from the robot's side for 30 s; they set off when the robot is 3.0 m from their line",
+  "runs": [
+   {
+    "seed": 11,
+    "result": "pass",
+    "outcome": "plan completed",
+    "contacts": 0,
+    "alerts": [],
+    "hedge": 0.376,
+    "pauses": [
+     {
+      "by": "lid",
+      "range": 1.26,
+      "wait": 35.3,
+      "person": true,
+      "static": null
+     }
+    ],
+    "min_s": 3.6,
+    "near": {
+     "gap": 0.74,
+     "t": 74.37,
+     "v": 0.001,
+     "w": 0.001,
+     "still_for": 0.2,
+     "side": "front"
+    },
+    "vmax": 1.08,
+    "v_appear": 0.7,
+    "v_in": [
+     0.49
+    ]
+   },
+   {
+    "seed": 23,
+    "result": "pass",
+    "outcome": "plan completed",
+    "contacts": 0,
+    "alerts": [],
+    "hedge": 0.38,
+    "pauses": [
+     {
+      "by": "lid",
+      "range": 1.49,
+      "wait": 35.3,
+      "person": true,
+      "static": null
+     }
+    ],
+    "min_s": 3.5,
+    "near": {
+     "gap": 0.57,
+     "t": 72.69,
+     "v": 0.001,
+     "w": 0.001,
+     "still_for": 0.2,
+     "side": "front"
+    },
+    "vmax": 1.02,
+    "v_appear": 0.92,
+    "v_in": [
+     0.7
+    ]
+   },
+   {
+    "seed": 7,
+    "result": "pass",
+    "outcome": "plan completed",
+    "contacts": 0,
+    "alerts": [],
+    "hedge": 0.354,
+    "pauses": [
+     {
+      "by": "lid",
+      "range": 1.75,
+      "wait": 35.3,
+      "person": true,
+      "static": null
+     }
+    ],
+    "min_s": 3.4,
+    "near": {
+     "gap": 1.05,
+     "t": 72.09,
+     "v": 0.0,
+     "w": 0.0,
+     "still_for": 0.6,
+     "side": "front"
+    },
+    "vmax": 1.04,
+    "v_appear": 0.7,
+    "v_in": [
+     0.48
+    ]
+   }
+  ]
+ },
+ {
+  "set": "fast",
+  "case": "side14",
+  "what": "Walks from the far hedge straight at the robot's side: they set off when the robot is already beside them (1.4 m from their line)",
+  "runs": [
+   {
+    "seed": 11,
+    "result": "alert",
+    "outcome": "contact stop",
+    "contacts": 1,
+    "alerts": [
+     "bump strip / body contact - stop chain open, robot stopped (contact with person)"
+    ],
+    "hedge": 0.38,
+    "pauses": [
+     {
+      "by": "lid",
+      "range": 0.81,
+      "wait": null,
+      "person": null,
+      "static": null
+     }
+    ],
+    "min_s": 1.3,
+    "near": {
+     "gap": -0.01,
+     "t": 78.21,
+     "v": 0.059,
+     "w": 0.007,
+     "still_for": 0.0,
+     "side": "flank"
+    },
+    "vmax": 1.01,
+    "touch": {
+     "t": 78.21,
+     "v": 0.059,
+     "what": "person"
+    },
+    "v_appear": 0.7,
+    "v_in": [
+     0.7
+    ]
+   },
+   {
+    "seed": 23,
+    "result": "alert",
+    "outcome": "contact stop",
+    "contacts": 1,
+    "alerts": [
+     "bump strip / body contact - stop chain open, robot stopped (contact with person)"
+    ],
+    "hedge": 0.379,
+    "pauses": [
+     {
+      "by": "lid",
+      "range": 1.27,
+      "wait": null,
+      "person": null,
+      "static": null
+     }
+    ],
+    "min_s": 1.3,
+    "near": {
+     "gap": -0.06,
+     "t": 76.29,
+     "v": 0.0,
+     "w": 0.0,
+     "still_for": 0.1,
+     "side": "flank"
+    },
+    "vmax": 1.02,
+    "touch": {
+     "t": 76.19,
+     "v": 0.008,
+     "what": "person"
+    },
+    "v_appear": 0.98,
+    "v_in": [
+     0.96
+    ]
+   },
+   {
+    "seed": 7,
+    "result": "alert",
+    "outcome": "contact stop",
+    "contacts": 1,
+    "alerts": [
+     "bump strip / body contact - stop chain open, robot stopped (contact with person)"
+    ],
+    "hedge": 0.366,
+    "pauses": [
+     {
+      "by": "lid",
+      "range": 0.94,
+      "wait": null,
+      "person": null,
+      "static": null
+     }
+    ],
+    "min_s": 1.3,
+    "near": {
+     "gap": -0.12,
+     "t": 75.33,
+     "v": 0.0,
+     "w": 0.0,
+     "still_for": 0.0,
+     "side": "flank"
+    },
+    "vmax": 1.02,
+    "touch": {
+     "t": 75.23,
+     "v": 0.024,
+     "what": "person"
+    },
+    "v_appear": 0.7,
+    "v_in": [
+     0.7
+    ]
+   }
+  ]
+ },
+ {
+  "set": "fast",
+  "case": "flank",
+  "what": "Walker comes up the lane towards the robot, stops beside or just behind it for 30 s, walks on",
+  "runs": [
+   {
+    "seed": 11,
+    "result": "pass",
+    "outcome": "plan completed",
+    "contacts": 0,
+    "alerts": [],
+    "hedge": 0.381,
+    "pauses": [
+     {
+      "by": "cam",
+      "range": 4.32,
+      "wait": 41.0,
+      "person": true,
+      "static": null
+     }
+    ],
+    "min_s": 3.6,
+    "near": {
+     "gap": 0.08,
+     "t": 67.29,
+     "v": 0.0,
+     "w": 0.0,
+     "still_for": 2.4,
+     "side": "front"
+    },
+    "vmax": 1.02,
+    "v_appear": 1.01,
+    "v_in": [
+     0.42
+    ]
+   },
+   {
+    "seed": 23,
+    "result": "pass",
+    "outcome": "plan completed",
+    "contacts": 0,
+    "alerts": [],
+    "hedge": 0.379,
+    "pauses": [
+     {
+      "by": "cam",
+      "range": 4.34,
+      "wait": 41.0,
+      "person": true,
+      "static": null
+     }
+    ],
+    "min_s": 3.6,
+    "near": {
+     "gap": 0.28,
+     "t": 67.65,
+     "v": 0.0,
+     "w": -0.0,
+     "still_for": 2.3,
+     "side": "front"
+    },
+    "vmax": 1.02,
+    "v_appear": 1.0,
+    "v_in": [
+     0.44
+    ]
+   },
+   {
+    "seed": 7,
+    "result": "pass",
+    "outcome": "plan completed",
+    "contacts": 0,
+    "alerts": [],
+    "hedge": 0.366,
+    "pauses": [
+     {
+      "by": "cam",
+      "range": 4.19,
+      "wait": 40.6,
+      "person": true,
+      "static": null
+     }
+    ],
+    "min_s": 3.5,
+    "near": {
+     "gap": 1.01,
+     "t": 67.77,
+     "v": 0.0,
+     "w": -0.0,
+     "still_for": 2.4,
+     "side": "flank"
+    },
+    "vmax": 1.04,
+    "v_appear": 1.0,
+    "v_in": [
+     0.42
+    ]
+   }
+  ]
+ },
+ {
+  "set": "fast",
+  "case": "hug",
+  "what": "Walker comes up the lane towards the robot, 0.35 m from the far hedge, and walks past it",
+  "runs": [
+   {
+    "seed": 11,
+    "result": "pass",
+    "outcome": "plan completed",
+    "contacts": 0,
+    "alerts": [],
+    "hedge": 0.376,
+    "pauses": [
+     {
+      "by": "cam",
+      "range": 4.03,
+      "wait": 10.6,
+      "person": true,
+      "static": null
+     }
+    ],
+    "min_s": 3.1,
+    "near": {
+     "gap": 0.76,
+     "t": 73.65,
+     "v": 0.0,
+     "w": 0.0,
+     "still_for": 2.3,
+     "side": "front"
+    },
+    "vmax": 1.07,
+    "v_appear": 1.0,
+    "v_in": [
+     0.42
+    ]
+   },
+   {
+    "seed": 23,
+    "result": "pass",
+    "outcome": "plan completed",
+    "contacts": 0,
+    "alerts": [],
+    "hedge": 0.339,
+    "pauses": [
+     {
+      "by": "cam",
+      "range": 4.15,
+      "wait": 10.7,
+      "person": true,
+      "static": null
+     }
+    ],
+    "min_s": 3.1,
+    "near": {
+     "gap": 0.8,
+     "t": 73.05,
+     "v": 0.0,
+     "w": -0.0,
+     "still_for": 2.2,
+     "side": "front"
+    },
+    "vmax": 1.02,
+    "v_appear": 1.0,
+    "v_in": [
+     0.43
+    ]
+   },
+   {
+    "seed": 7,
+    "result": "pass",
+    "outcome": "plan completed",
+    "contacts": 0,
+    "alerts": [],
+    "hedge": 0.359,
+    "pauses": [
+     {
+      "by": "cam",
+      "range": 4.31,
+      "wait": 10.4,
+      "person": true,
+      "static": null
+     }
+    ],
+    "min_s": 3.0,
+    "near": {
+     "gap": 1.16,
+     "t": 72.45,
+     "v": -0.0,
+     "w": -0.0,
+     "still_for": 2.4,
+     "side": "front"
+    },
+    "vmax": 1.03,
+    "v_appear": 1.0,
+    "v_in": [
+     0.41
+    ]
+   }
+  ]
+ },
+ {
+  "set": "fast",
+  "case": "hugstand",
+  "what": "Walker comes up the lane 0.35 m from the far hedge and stops there for 30 s: 3 m behind the robot at the start settings, 9 m behind it with the fast cruise",
+  "runs": [
+   {
+    "seed": 11,
+    "result": "pass",
+    "outcome": "plan completed",
+    "contacts": 0,
+    "alerts": [],
+    "hedge": 0.377,
+    "pauses": [
+     {
+      "by": "cam",
+      "range": 4.01,
+      "wait": 10.6,
+      "person": true,
+      "static": null
+     }
+    ],
+    "min_s": 3.1,
+    "near": {
+     "gap": 0.76,
+     "t": 73.41,
+     "v": 0.0,
+     "w": 0.0,
+     "still_for": 2.3,
+     "side": "front"
+    },
+    "vmax": 1.07,
+    "v_appear": 1.0,
+    "v_in": [
+     0.42
+    ]
+   },
+   {
+    "seed": 23,
+    "result": "pass",
+    "outcome": "plan completed",
+    "contacts": 0,
+    "alerts": [],
+    "hedge": 0.339,
+    "pauses": [
+     {
+      "by": "cam",
+      "range": 4.15,
+      "wait": 10.7,
+      "person": true,
+      "static": null
+     }
+    ],
+    "min_s": 3.1,
+    "near": {
+     "gap": 0.8,
+     "t": 73.05,
+     "v": 0.0,
+     "w": -0.0,
+     "still_for": 2.2,
+     "side": "front"
+    },
+    "vmax": 1.02,
+    "v_appear": 1.0,
+    "v_in": [
+     0.43
+    ]
+   },
+   {
+    "seed": 7,
+    "result": "pass",
+    "outcome": "plan completed",
+    "contacts": 0,
+    "alerts": [],
+    "hedge": 0.366,
+    "pauses": [
+     {
+      "by": "cam",
+      "range": 4.32,
+      "wait": 10.4,
+      "person": true,
+      "static": null
+     }
+    ],
+    "min_s": 3.0,
+    "near": {
+     "gap": 1.15,
+     "t": 72.57,
+     "v": -0.0,
+     "w": -0.0,
+     "still_for": 2.5,
+     "side": "front"
+    },
+    "vmax": 1.03,
+    "v_appear": 1.0,
+    "v_in": [
+     0.42
+    ]
+   }
+  ]
+ },
+ {
+  "set": "fast",
+  "case": "hugstand31",
+  "what": "Walker comes up the lane 0.35 m from the far hedge and stops there, beside the robot, for 30 s (stopping point set for the fast cruise)",
+  "runs": [
+   {
+    "seed": 11,
+    "result": "pass",
+    "outcome": "plan completed",
+    "contacts": 0,
+    "alerts": [],
+    "hedge": 0.38,
+    "pauses": [
+     {
+      "by": "cam",
+      "range": 4.25,
+      "wait": 40.8,
+      "person": true,
+      "static": null
+     }
+    ],
+    "min_s": 3.7,
+    "near": {
+     "gap": 0.75,
+     "t": 102.69,
+     "v": 0.0,
+     "w": 0.0,
+     "still_for": 32.4,
+     "side": "front"
+    },
+    "vmax": 1.02,
+    "v_appear": 1.01,
+    "v_in": [
+     0.42
+    ]
+   },
+   {
+    "seed": 23,
+    "result": "pass",
+    "outcome": "plan completed",
+    "contacts": 0,
+    "alerts": [],
+    "hedge": 0.38,
+    "pauses": [
+     {
+      "by": "cam",
+      "range": 4.22,
+      "wait": 40.7,
+      "person": true,
+      "static": null
+     }
+    ],
+    "min_s": 3.8,
+    "near": {
+     "gap": 0.81,
+     "t": 102.93,
+     "v": 0.0,
+     "w": 0.0,
+     "still_for": 32.4,
+     "side": "front"
+    },
+    "vmax": 1.02,
+    "v_appear": 1.0,
+    "v_in": [
+     0.43
+    ]
+   },
+   {
+    "seed": 7,
+    "result": "pass",
+    "outcome": "plan completed",
+    "contacts": 0,
+    "alerts": [],
+    "hedge": 0.37,
+    "pauses": [
+     {
+      "by": "cam",
+      "range": 4.04,
+      "wait": 40.3,
+      "person": true,
+      "static": null
+     }
+    ],
+    "min_s": 3.5,
+    "near": {
+     "gap": 1.13,
+     "t": 72.21,
+     "v": -0.0,
+     "w": -0.0,
+     "still_for": 2.3,
+     "side": "front"
+    },
+    "vmax": 1.04,
+    "v_appear": 1.01,
+    "v_in": [
+     0.41
+    ]
+   }
+  ]
+ },
+ {
+  "set": "fast",
+  "case": "slowwalk",
+  "what": "Walks ahead of the robot in its path at 0.3 m/s",
+  "runs": [
+   {
+    "seed": 11,
+    "result": "pass",
+    "outcome": "plan completed",
+    "contacts": 0,
+    "alerts": [],
+    "hedge": 0.362,
+    "pauses": [
+     {
+      "by": "cam",
+      "range": 4.75,
+      "wait": 6.0,
+      "person": true,
+      "static": null
+     },
+     {
+      "by": "lid",
+      "range": 2.92,
+      "wait": 19.2,
+      "person": true,
+      "static": null
+     },
+     {
+      "by": "lid",
+      "range": 2.14,
+      "wait": 6.7,
+      "person": false,
+      "static": null
+     },
+     {
+      "by": "lid",
+      "range": 2.79,
+      "wait": 4.9,
+      "person": false,
+      "static": null
+     },
+     {
+      "by": "cam",
+      "range": 4.99,
+      "wait": 4.8,
+      "person": true,
+      "static": null
+     },
+     {
+      "by": "lid",
+      "range": 2.62,
+      "wait": 28.0,
+      "person": false,
+      "static": null
+     }
+    ],
+    "min_s": 5.6,
+    "near": {
+     "gap": 4.41,
+     "t": 65.01,
+     "v": 0.334,
+     "w": -0.057,
+     "still_for": 0.0,
+     "side": "front"
+    },
+    "vmax": 1.08,
+    "v_appear": 1.01,
+    "v_in": [
+     0.41,
+     0.4,
+     0.99,
+     0.42,
+     0.5,
+     0.72
+    ]
+   },
+   {
+    "seed": 23,
+    "result": "pass",
+    "outcome": "plan completed",
+    "contacts": 0,
+    "alerts": [],
+    "hedge": 0.374,
+    "pauses": [
+     {
+      "by": "cam",
+      "range": 4.98,
+      "wait": 3.8,
+      "person": true,
+      "static": null
+     },
+     {
+      "by": "cam",
+      "range": 4.91,
+      "wait": 6.4,
+      "person": true,
+      "static": null
+     },
+     {
+      "by": "lid",
+      "range": 2.87,
+      "wait": 18.0,
+      "person": true,
+      "static": null
+     },
+     {
+      "by": "cam",
+      "range": 4.97,
+      "wait": 5.4,
+      "person": true,
+      "static": null
+     },
+     {
+      "by": "lid",
+      "range": 2.68,
+      "wait": 18.0,
+      "person": true,
+      "static": null
+     },
+     {
+      "by": "lid",
+      "range": 2.29,
+      "wait": 5.0,
+      "person": false,
+      "static": null
+     }
+    ],
+    "min_s": 5.6,
+    "near": {
+     "gap": 4.55,
+     "t": 112.77,
+     "v": 0.304,
+     "w": -0.017,
+     "still_for": 0.0,
+     "side": "front"
+    },
+    "vmax": 1.03,
+    "v_appear": 1.01,
+    "v_in": [
+     0.42,
+     0.42,
+     0.41,
+     0.39,
+     0.4,
+     0.99
+    ]
+   },
+   {
+    "seed": 7,
+    "result": "pass",
+    "outcome": "plan completed",
+    "contacts": 0,
+    "alerts": [],
+    "hedge": 0.36,
+    "pauses": [
+     {
+      "by": "cam",
+      "range": 4.97,
+      "wait": 4.7,
+      "person": true,
+      "static": null
+     },
+     {
+      "by": "lid",
+      "range": 2.52,
+      "wait": 19.1,
+      "person": true,
+      "static": null
+     },
+     {
+      "by": "lid",
+      "range": 2.21,
+      "wait": 8.0,
+      "person": false,
+      "static": null
+     },
+     {
+      "by": "lid",
+      "range": 2.91,
+      "wait": 6.8,
+      "person": false,
+      "static": null
+     },
+     {
+      "by": "cam",
+      "range": 4.98,
+      "wait": 5.0,
+      "person": true,
+      "static": null
+     },
+     {
+      "by": "lid",
+      "range": 2.82,
+      "wait": 19.1,
+      "person": true,
+      "static": null
+     }
+    ],
+    "min_s": 5.4,
+    "near": {
+     "gap": 4.67,
+     "t": 242.51,
+     "v": 0.281,
+     "w": -0.038,
+     "still_for": 0.0,
+     "side": "front"
+    },
+    "vmax": 1.03,
+    "v_appear": 1.0,
+    "v_in": [
+     0.42,
+     0.68,
+     0.88,
+     0.4,
+     0.44,
+     0.44
+    ]
+   }
+  ]
+ },
+ {
+  "set": "fast",
+  "case": "low40",
+  "what": "Scenario as written, camera finds a person in only 40 % of pictures",
+  "runs": [
+   {
+    "seed": 11,
+    "result": "pass",
+    "outcome": "plan completed",
+    "contacts": 0,
+    "alerts": [],
+    "hedge": 0.379,
+    "pauses": [
+     {
+      "by": "cam",
+      "range": 4.56,
+      "wait": 12.8,
+      "person": true,
+      "static": null
+     },
+     {
+      "by": "cam",
+      "range": 4.25,
+      "wait": 39.0,
+      "person": true,
+      "static": null
+     }
+    ],
+    "min_s": 4.1,
+    "near": {
+     "gap": 2.88,
+     "t": 150.61,
+     "v": 0.005,
+     "w": 0.002,
+     "still_for": 0.0,
+     "side": "front"
+    },
+    "vmax": 1.09,
+    "v_appear": 0.71,
+    "v_in": [
+     0.4,
+     0.91
+    ]
+   },
+   {
+    "seed": 23,
+    "result": "pass",
+    "outcome": "plan completed",
+    "contacts": 0,
+    "alerts": [],
+    "hedge": 0.379,
+    "pauses": [
+     {
+      "by": "cam",
+      "range": 4.61,
+      "wait": 12.1,
+      "person": true,
+      "static": null
+     },
+     {
+      "by": "cam",
+      "range": 4.29,
+      "wait": 8.5,
+      "person": true,
+      "static": null
+     }
+    ],
+    "min_s": 3.5,
+    "near": {
+     "gap": 3.1,
+     "t": 147.41,
+     "v": 0.052,
+     "w": 0.016,
+     "still_for": 0.0,
+     "side": "front"
+    },
+    "vmax": 1.02,
+    "v_appear": 0.72,
+    "v_in": [
+     0.39,
+     0.83
+    ]
+   },
+   {
+    "seed": 7,
+    "result": "pass",
+    "outcome": "plan completed",
+    "contacts": 0,
+    "alerts": [],
+    "hedge": 0.366,
+    "pauses": [
+     {
+      "by": "cam",
+      "range": 4.55,
+      "wait": 12.8,
+      "person": true,
+      "static": null
+     },
+     {
+      "by": "cam",
+      "range": 3.65,
+      "wait": 8.4,
+      "person": true,
+      "static": null
+     }
+    ],
+    "min_s": 3.4,
+    "near": {
+     "gap": 2.9,
+     "t": 144.31,
+     "v": 0.015,
+     "w": -0.001,
+     "still_for": 0.0,
+     "side": "front"
+    },
+    "vmax": 1.04,
+    "v_appear": 1.01,
+    "v_in": [
+     0.39,
+     0.47
+    ]
+   }
+  ]
+ },
+ {
+  "set": "fast",
+  "case": "low40near",
+  "what": "Nose 2.0 m from their line, camera at 40 %",
+  "runs": [
+   {
+    "seed": 11,
+    "result": "pass",
+    "outcome": "plan completed",
+    "contacts": 0,
+    "alerts": [],
+    "hedge": 0.38,
+    "pauses": [
+     {
+      "by": "lid",
+      "range": 1.87,
+      "wait": 96.2,
+      "person": true,
+      "static": null
+     },
+     {
+      "by": "cam",
+      "range": 3.68,
+      "wait": 8.5,
+      "person": true,
+      "static": null
+     }
+    ],
+    "min_s": 5.0,
+    "near": {
+     "gap": 1.23,
+     "t": 77.73,
+     "v": 0.0,
+     "w": -0.0,
+     "still_for": 0.5,
+     "side": "front"
+    },
+    "vmax": 1.08,
+    "v_appear": 0.7,
+    "v_in": [
+     0.7,
+     0.68
+    ]
+   },
+   {
+    "seed": 23,
+    "result": "pass",
+    "outcome": "plan completed",
+    "contacts": 0,
+    "alerts": [],
+    "hedge": 0.347,
+    "pauses": [
+     {
+      "by": "lid",
+      "range": 1.87,
+      "wait": 96.1,
+      "person": true,
+      "static": null
+     },
+     {
+      "by": "cam",
+      "range": 3.97,
+      "wait": 7.9,
+      "person": true,
+      "static": null
+     }
+    ],
+    "min_s": 4.8,
+    "near": {
+     "gap": 0.66,
+     "t": 76.29,
+     "v": 0.003,
+     "w": -0.0,
+     "still_for": 0.1,
+     "side": "front"
+    },
+    "vmax": 1.1,
+    "v_appear": 0.97,
+    "v_in": [
+     0.99,
+     0.3
+    ]
+   },
+   {
+    "seed": 7,
+    "result": "pass",
+    "outcome": "plan completed",
+    "contacts": 0,
+    "alerts": [],
+    "hedge": 0.366,
+    "pauses": [
+     {
+      "by": "lid",
+      "range": 2.01,
+      "wait": 96.1,
+      "person": true,
+      "static": null
+     },
+     {
+      "by": "lid",
+      "range": 2.96,
+      "wait": 8.4,
+      "person": true,
+      "static": null
+     }
+    ],
+    "min_s": 4.8,
+    "near": {
+     "gap": 1.21,
+     "t": 75.93,
+     "v": 0.0,
+     "w": 0.0,
+     "still_for": 1.0,
+     "side": "front"
+    },
+    "vmax": 1.02,
+    "v_appear": 0.69,
+    "v_in": [
+     0.7,
+     0.57
+    ]
+   }
+  ]
+ },
+ {
+  "set": "fast",
+  "case": "stay1000",
+  "what": "Walker stands in the path for 1,000 s",
+  "runs": [
+   {
+    "seed": 11,
+    "result": "timeout",
+    "outcome": "time limit",
+    "contacts": 0,
+    "alerts": [
+     "waiting: someone has been near the robot for 2 minutes (it carries on by itself when the way is clear)",
+     "waiting: someone has been near the robot for 2 minutes (it carries on by itself when the way is clear)"
+    ],
+    "hedge": 0.38,
+    "pauses": [
+     {
+      "by": "cam",
+      "range": 4.91,
+      "wait": 318.2,
+      "person": true,
+      "static": null
+     },
+     {
+      "by": "cam",
+      "range": 4.62,
+      "wait": 328.7,
+      "person": true,
+      "static": null
+     },
+     {
+      "by": "cam",
+      "range": 4.15,
+      "wait": 92.5,
+      "person": true,
+      "static": null
+     },
+     {
+      "by": "cam",
+      "range": 4.12,
+      "wait": 65.2,
+      "person": true,
+      "static": null
+     },
+     {
+      "by": "cam",
+      "range": 4.17,
+      "wait": null,
+      "person": null,
+      "static": null
+     }
+    ],
+    "min_s": 15.0,
+    "near": {
+     "gap": 3.8,
+     "t": 882.65,
+     "v": -0.034,
+     "w": -0.0,
+     "still_for": 0.0,
+     "side": "front"
+    },
+    "vmax": 1.01,
+    "v_appear": 0.71,
+    "v_in": [
+     0.4,
+     0.18,
+     0.21,
+     0.1,
+     0.03
+    ]
+   },
+   {
+    "seed": 23,
+    "result": "timeout",
+    "outcome": "time limit",
+    "contacts": 0,
+    "alerts": [
+     "waiting: someone has been near the robot for 2 minutes (it carries on by itself when the way is clear)",
+     "waiting: someone has been near the robot for 2 minutes (it carries on by itself when the way is clear)",
+     "waiting: someone has been near the robot for 2 minutes (it carries on by itself when the way is clear)"
+    ],
+    "hedge": 0.38,
+    "pauses": [
+     {
+      "by": "cam",
+      "range": 4.83,
+      "wait": 16.4,
+      "person": true,
+      "static": null
+     },
+     {
+      "by": "cam",
+      "range": 4.28,
+      "wait": 298.5,
+      "person": true,
+      "static": null
+     },
+     {
+      "by": "cam",
+      "range": 4.11,
+      "wait": 328.7,
+      "person": true,
+      "static": null
+     },
+     {
+      "by": "cam",
+      "range": 3.62,
+      "wait": null,
+      "person": null,
+      "static": null
+     }
+    ],
+    "min_s": 15.0,
+    "near": {
+     "gap": 3.33,
+     "t": 723.77,
+     "v": 0.0,
+     "w": -0.015,
+     "still_for": 0.0,
+     "side": "front"
+    },
+    "vmax": 1.01,
+    "v_appear": 0.72,
+    "v_in": [
+     0.38,
+     0.23,
+     0.17,
+     0.21
+    ]
+   },
+   {
+    "seed": 7,
+    "result": "timeout",
+    "outcome": "time limit",
+    "contacts": 0,
+    "alerts": [
+     "waiting: someone has been near the robot for 2 minutes (it carries on by itself when the way is clear)",
+     "waiting: someone has been near the robot for 2 minutes (it carries on by itself when the way is clear)"
+    ],
+    "hedge": 0.366,
+    "pauses": [
+     {
+      "by": "cam",
+      "range": 4.91,
+      "wait": 318.2,
+      "person": true,
+      "static": null
+     },
+     {
+      "by": "cam",
+      "range": 4.63,
+      "wait": 328.7,
+      "person": true,
+      "static": null
+     },
+     {
+      "by": "cam",
+      "range": 4.13,
+      "wait": 92.5,
+      "person": true,
+      "static": null
+     },
+     {
+      "by": "cam",
+      "range": 4.09,
+      "wait": 65.2,
+      "person": true,
+      "static": null
+     },
+     {
+      "by": "cam",
+      "range": 4.15,
+      "wait": null,
+      "person": null,
+      "static": null
+     }
+    ],
+    "min_s": 15.0,
+    "near": {
+     "gap": 3.79,
+     "t": 899.93,
+     "v": -0.0,
+     "w": -0.0,
+     "still_for": 84.8,
+     "side": "front"
+    },
+    "vmax": 1.02,
+    "v_appear": 1.01,
+    "v_in": [
+     0.4,
+     0.19,
+     0.22,
+     0.09,
+     0.0
+    ]
+   }
+  ]
+ },
+ {
+  "set": "fast",
+  "case": "boxfar",
+  "what": "Unmapped 0.4 m box on the far side of the lane, 1.5 m clear of the robot's path",
+  "runs": [
+   {
+    "seed": 11,
+    "result": "pass",
+    "outcome": "plan completed",
+    "contacts": 0,
+    "alerts": [],
+    "hedge": 0.38,
+    "pauses": [
+     {
+      "by": "lid",
+      "range": 2.98,
+      "wait": 20.2,
+      "person": false,
+      "static": true
+     },
+     {
+      "by": "lid",
+      "range": 1.87,
+      "wait": 7.9,
+      "person": false,
+      "static": null
+     }
+    ],
+    "min_s": 3.9,
+    "near": null,
+    "vmax": 1.09,
+    "v_appear": null,
+    "v_in": [
+     0.4,
+     0.2
+    ]
+   },
+   {
+    "seed": 23,
+    "result": "pass",
+    "outcome": "plan completed",
+    "contacts": 0,
+    "alerts": [],
+    "hedge": 0.379,
+    "pauses": [
+     {
+      "by": "lid",
+      "range": 2.97,
+      "wait": 20.2,
+      "person": false,
+      "static": true
+     }
+    ],
+    "min_s": 3.7,
+    "near": null,
+    "vmax": 1.02,
+    "v_appear": null,
+    "v_in": [
+     0.41
+    ]
+   },
+   {
+    "seed": 7,
+    "result": "alert",
+    "outcome": "path blocked",
+    "contacts": 0,
+    "alerts": [
+     "path blocked for 120 s (something 2.8 m from the robot, in its path)"
+    ],
+    "hedge": 0.369,
+    "pauses": [
+     {
+      "by": "lid",
+      "range": 2.96,
+      "wait": null,
+      "person": null,
+      "static": null
+     }
+    ],
+    "min_s": 3.3,
+    "near": null,
+    "vmax": 1.02,
+    "v_appear": null,
+    "v_in": [
+     0.41
+    ]
+   }
+  ]
+ },
+ {
+  "set": "fast",
+  "case": "boxpath",
+  "what": "Unmapped 0.4 m box in a bend, 0.2 m clear of the robot's left side",
+  "runs": [
+   {
+    "seed": 11,
+    "result": "alert",
+    "outcome": "path blocked",
+    "contacts": 0,
+    "alerts": [
+     "path blocked for 120 s (something 2.8 m from the robot, in its path)"
+    ],
+    "hedge": 0.38,
+    "pauses": [
+     {
+      "by": "lid",
+      "range": 2.94,
+      "wait": null,
+      "person": null,
+      "static": null
+     }
+    ],
+    "min_s": 3.5,
+    "near": null,
+    "vmax": 1.01,
+    "v_appear": null,
+    "v_in": [
+     0.42
+    ]
+   },
+   {
+    "seed": 23,
+    "result": "alert",
+    "outcome": "path blocked",
+    "contacts": 0,
+    "alerts": [
+     "path blocked for 120 s (something 2.9 m from the robot, in its path)"
+    ],
+    "hedge": 0.38,
+    "pauses": [
+     {
+      "by": "lid",
+      "range": 3.0,
+      "wait": null,
+      "person": null,
+      "static": null
+     }
+    ],
+    "min_s": 3.5,
+    "near": null,
+    "vmax": 1.01,
+    "v_appear": null,
+    "v_in": [
+     0.31
+    ]
+   },
+   {
+    "seed": 7,
+    "result": "alert",
+    "outcome": "path blocked",
+    "contacts": 0,
+    "alerts": [
+     "path blocked for 120 s (something 2.8 m from the robot, in its path)"
+    ],
+    "hedge": 0.38,
+    "pauses": [
+     {
+      "by": "lid",
+      "range": 2.96,
+      "wait": null,
+      "person": null,
+      "static": null
+     }
+    ],
+    "min_s": 3.5,
+    "near": null,
+    "vmax": 1.01,
+    "v_appear": null,
+    "v_in": [
+     0.43
+    ]
+   }
+  ]
+ },
+ {
+  "set": "fast",
+  "case": "boxside",
+  "what": "Unmapped 0.4 m box in a bend, at the right edge of the robot's path",
+  "runs": [
+   {
+    "seed": 11,
+    "result": "alert",
+    "outcome": "path blocked",
+    "contacts": 0,
+    "alerts": [
+     "path blocked for 120 s (something 0.7 m from the robot, in its path)"
+    ],
+    "hedge": 0.38,
+    "pauses": [
+     {
+      "by": "lid",
+      "range": 2.97,
+      "wait": 47.9,
+      "person": false,
+      "static": null
+     },
+     {
+      "by": "lid",
+      "range": 1.65,
+      "wait": 3.1,
+      "person": false,
+      "static": null
+     },
+     {
+      "by": "lid",
+      "range": 0.74,
+      "wait": null,
+      "person": null,
+      "static": null
+     }
+    ],
+    "min_s": 4.7,
+    "near": null,
+    "vmax": 1.01,
+    "v_appear": null,
+    "v_in": [
+     0.26,
+     0.21,
+     0.21
+    ]
+   },
+   {
+    "seed": 23,
+    "result": "alert",
+    "outcome": "path blocked",
+    "contacts": 0,
+    "alerts": [
+     "path blocked for 120 s (something 1.9 m from the robot, in its path)"
+    ],
+    "hedge": 0.38,
+    "pauses": [
+     {
+      "by": "lid",
+      "range": 2.99,
+      "wait": 84.7,
+      "person": false,
+      "static": null
+     },
+     {
+      "by": "lid",
+      "range": 2.1,
+      "wait": 38.7,
+      "person": false,
+      "static": null
+     },
+     {
+      "by": "lid",
+      "range": 2.04,
+      "wait": 6.6,
+      "person": false,
+      "static": null
+     },
+     {
+      "by": "lid",
+      "range": 1.93,
+      "wait": null,
+      "person": null,
+      "static": null
+     }
+    ],
+    "min_s": 5.8,
+    "near": null,
+    "vmax": 1.01,
+    "v_appear": null,
+    "v_in": [
+     0.29,
+     0.22,
+     0.06,
+     0.18
+    ]
+   },
+   {
+    "seed": 7,
+    "result": "alert",
+    "outcome": "path blocked",
+    "contacts": 0,
+    "alerts": [
+     "path blocked for 120 s (something 2.9 m from the robot, in its path)"
+    ],
+    "hedge": 0.366,
+    "pauses": [
+     {
+      "by": "lid",
+      "range": 2.98,
+      "wait": null,
+      "person": null,
+      "static": null
+     }
+    ],
+    "min_s": 3.5,
+    "near": null,
+    "vmax": 1.02,
+    "v_appear": null,
+    "v_in": [
+     0.25
+    ]
+   }
+  ]
+ }
+]

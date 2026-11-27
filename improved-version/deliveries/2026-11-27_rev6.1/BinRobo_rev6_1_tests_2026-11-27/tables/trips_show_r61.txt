@@ -1,0 +1,74 @@
+r61f_turn_a            s1a s7   pass  plan completed   | nearest 0.401 black | contacts 0 | hedge 0.239 | 38.0 min 58.0 Wh | alerts []
+      pauses: cam 4.8 m at s 618, 43.1 s person
+      trip drop black->A D-1 18:00 -> D-1 18:37  37.2 min  57.9 Wh
+r61f_turn_a2           s1a s7   pass  plan completed   | nearest -0.211 person | contacts 0 | hedge 0.241 | 37.9 min 58.1 Wh | alerts []
+      pauses: cam 4.8 m at s 618, 42.8 s person
+      trip drop black->A D-1 18:00 -> D-1 18:37  37.1 min  58.0 Wh
+r61f_turn_b            s1a s7   pass  plan completed   | nearest -0.109 person | contacts 0 | hedge 0.241 | 37.6 min 57.8 Wh | alerts []
+      pauses: lid 2.8 m at s 618, 43.2 s person
+      trip drop black->A D-1 18:00 -> D-1 18:37  36.9 min  57.7 Wh
+r61f_turn_c            s1a s7   pass  plan completed   | nearest -0.087 person | contacts 0 | hedge 0.236 | 37.8 min 58.0 Wh | alerts []
+      pauses: lid 2.9 m at s 618, 53.0 s person
+      trip drop black->A D-1 18:00 -> D-1 18:37  37.0 min  57.8 Wh
+r61f_turn_y            s1a s7   pass  plan completed   | nearest 0.236 person | contacts 0 | hedge 0.231 | 38.3 min 58.1 Wh | alerts []
+      pauses: lid 3.0 m at s 10, 51.1 s person
+      trip drop black->A D-1 18:00 -> D-1 18:38  37.5 min  58.0 Wh
+r61f_pick              s1b s7   pass  plan completed   | nearest 0.483 black | contacts 0 | hedge 0.230 | 41.2 min 58.2 Wh | alerts []
+      pauses: lid 3.0 m at s 617, 3.4 s
+      trip pickup black<-A D0 18:00 -> D0 18:41  40.4 min  58.1 Wh
+r61s_trips             s1a s11  pass  plan completed   | nearest 0.35 black | contacts 0 | hedge 0.221 | 66.3 min 70.2 Wh | alerts []
+      trip drop black->A D-1 18:00 -> D-1 19:06  65.5 min  70.1 Wh
+r61s_trips             s1a s23  pass  plan completed   | nearest 0.332 black | contacts 0 | hedge 0.224 | 66.3 min 70.2 Wh | alerts []
+      pauses: lid 2.9 m at s 64, 3.4 s
+      trip drop black->A D-1 18:00 -> D-1 19:06  65.6 min  70.1 Wh
+r61s_trips             s1a s7   pass  plan completed   | nearest 0.401 black | contacts 0 | hedge 0.246 | 66.5 min 70.4 Wh | alerts []
+      trip drop black->A D-1 18:00 -> D-1 19:06  65.7 min  70.3 Wh
+r61s_trips             s1b s11  pass  plan completed   | nearest 0.497 black | contacts 0 | hedge 0.213 | 74.6 min 73.0 Wh | alerts []
+      pauses: lid 3.0 m at s 617, 3.2 s
+      trip pickup black<-A D0 18:00 -> D0 19:14  73.8 min  72.8 Wh
+r61s_trips             s1b s23  pass  plan completed   | nearest 0.404 black | contacts 0 | hedge 0.196 | 75.2 min 73.3 Wh | alerts []
+      pauses: lid 2.9 m at s 617, 3.4 s
+      trip pickup black<-A D0 18:00 -> D0 19:15  74.4 min  73.2 Wh
+r61s_trips             s1b s7   pass  plan completed   | nearest 0.46 black | contacts 0 | hedge 0.206 | 75.6 min 73.5 Wh | alerts []
+      pauses: lid 3.0 m at s 617, 3.2 s
+      trip pickup black<-A D0 18:00 -> D0 19:15  74.8 min  73.4 Wh
+r61s_trips             s3a s7   pass  plan completed   | nearest 0.312 brown | contacts 0 | hedge 0.209 | 204.9 min 212.5 Wh | alerts []
+      pauses: lid 1.7 m at s 13, 3.3 s; lid 1.2 m at s 13, 3.2 s
+      trip drop brown->A D-1 18:00 -> D-1 19:14  74.1 min  72.9 Wh
+      trip drop black->M D-1 19:14 -> D-1 20:19  65.1 min  69.9 Wh
+      trip drop green->F D-1 20:19 -> D-1 21:24  64.9 min  69.5 Wh
+r61s_trips             s3b s7   alert too late         | nearest 0.483 green | contacts 0 | hedge 0.209 | 148.3 min 145.2 Wh | alerts ['bye-law: a return started now would end after 21:00 (trip 78']
+      pauses: lid 2.8 m at s 608, 3.4 s; lid 3.0 m at s 608, 3.5 s; lid 2.9 m at s 614, 4.2 s; lid 2.9 m at s 614, 4.3 s; lid 3.0 m at s 614, 4.3 s
+      trip pickup green<-F D0 18:00 -> D0 19:14  73.9 min  72.5 Wh
+      trip pickup black<-M D0 19:14 -> D0 20:28  73.5 min  72.7 Wh
+r61s_ret1630           s3b s7   pass  plan completed   | nearest 0.272 green | contacts 0 | hedge 0.206 | 222.6 min 217.8 Wh | alerts []
+      pauses: lid 2.9 m at s 608, 3.2 s; lid 3.0 m at s 608, 3.2 s; lid 2.9 m at s 614, 4.4 s; lid 3.0 m at s 614, 4.3 s; lid 3.0 m at s 617, 4.2 s; lid 3.0 m at s 617, 4.3 s; lid 1.4 m at s 13, 4.1 s
+      trip pickup green<-F D0 16:30 -> D0 17:43  73.1 min  72.0 Wh
+      trip pickup black<-M D0 17:43 -> D0 18:57  74.3 min  73.0 Wh
+      trip pickup brown<-A D0 18:57 -> D0 20:11  74.4 min  72.7 Wh
+r61b1_trip             s1a s7   pass  plan completed   | nearest 0.401 black | contacts 0 | hedge 0.215 | 37.4 min 59.3 Wh | alerts []
+      trip drop black->A D-1 18:00 -> D-1 18:37  36.6 min  59.2 Wh
+r61b1_trip             s1b s7   pass  plan completed   | nearest 0.528 black | contacts 0 | hedge 0.219 | 41.0 min 59.7 Wh | alerts []
+      pauses: lid 2.9 m at s 617, 3.4 s; lid 3.0 m at s 617, 3.2 s
+      trip pickup black<-A D0 18:00 -> D0 18:41  40.2 min  59.5 Wh
+r61b2_trip             s1a s7   pass  plan completed   | nearest 0.401 black | contacts 0 | hedge 0.200 | 38.2 min 63.2 Wh | alerts []
+      trip drop black->A D-1 18:00 -> D-1 18:38  37.4 min  63.1 Wh
+r61b2_trip             s1b s7   pass  plan completed   | nearest 0.418 black | contacts 0 | hedge 0.196 | 42.3 min 63.4 Wh | alerts []
+      pauses: lid 2.9 m at s 617, 3.4 s
+      trip pickup black<-A D0 18:00 -> D0 18:42  41.5 min  63.2 Wh
+r61f_leaf              s1a s7   pass  plan completed   | nearest 0.318 black | contacts 0 | hedge 0.234 | 39.3 min 58.9 Wh | alerts []
+      trip drop black->A D-1 18:00 -> D-1 18:39  38.5 min  58.8 Wh
+r61f_leaf              s1b s7   pass  plan completed   | nearest 0.49 black | contacts 0 | hedge 0.246 | 50.7 min 63.2 Wh | alerts []
+      pauses: lid 2.8 m at s 618, 3.4 s; lid 3.0 m at s 618, 3.4 s
+      trip pickup black<-A D0 18:00 -> D0 18:50  49.9 min  63.1 Wh
+r61f_phantom           s1a s7   pass  plan completed   | nearest 0.401 black | contacts 0 | hedge 0.240 | 39.8 min 59.6 Wh | alerts []
+      pauses: cam 1.8 m at s 21, 4.0 s person; cam 2.0 m at s 253, 4.2 s person; cam 2.0 m at s 302, 4.2 s person; cam 1.8 m at s 476, 4.2 s person; cam 1.9 m at s 481, 4.2 s person; cam 2.3 m at s 433, 4.2 s person; cam 2.2 m at s 196, 4.2 s person
+      trip drop black->A D-1 18:00 -> D-1 18:39  39.0 min  59.5 Wh
+r61f_phantom           s1b s7   pass  plan completed   | nearest 0.49 black | contacts 0 | hedge 0.207 | 43.2 min 59.7 Wh | alerts []
+      pauses: cam 1.8 m at s 26, 4.0 s person; cam 2.0 m at s 194, 4.2 s person; cam 2.0 m at s 223, 4.2 s person; cam 1.8 m at s 341, 4.2 s person; cam 1.9 m at s 347, 4.2 s person; lid 2.9 m at s 617, 3.4 s; cam 2.3 m at s 552, 4.2 s person; cam 2.2 m at s 338, 4.2 s person
+      trip pickup black<-A D0 18:00 -> D0 18:43  42.4 min  59.6 Wh
+Traceback (most recent call last):
+  File "/home/claude/s0/r6/show.py", line 7, in <module>
+    print('%-22s %s s%-3s %-5s %-16s | nearest %s %s | contacts %d | hedge %.3f | %.1f min %.1f Wh | alerts %s' % (name, r['scenario'], r['seed'], r['result'], r['outcome'][:16], r['contact_min_m'], r['contact_with'], len(r['collisions']), r['hedge_min_m'], r['sim_time_s'] / 60, r['energy_wh'], [a[:60] for a in r['alerts']]))
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TypeError: must be real number, not NoneType

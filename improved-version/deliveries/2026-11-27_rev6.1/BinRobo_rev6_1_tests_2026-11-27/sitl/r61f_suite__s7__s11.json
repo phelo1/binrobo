@@ -1,0 +1,231 @@
+{
+ "scenario": "s7",
+ "seed": 11,
+ "title": "E-stop, loaded transit at 0.5 m/s",
+ "expect": "alert",
+ "result": "alert",
+ "outcome": "e-stop",
+ "alerts": [
+  "E-stop pressed: robot stopped 0.04 m / 0.3 s"
+ ],
+ "sim_time_s": 136.7,
+ "chunks": [
+  {
+   "t0": 0.0,
+   "t1": 136.7,
+   "wall": 15.8,
+   "frames": 7827,
+   "status": "done"
+  }
+ ],
+ "energy_wh": 0.83,
+ "soc_start": 0.9,
+ "soc_end": 0.8982,
+ "odo_m": 40.0,
+ "hedge_min_m": 0.368,
+ "hedge_min_at": [
+  46.8,
+  200.0
+ ],
+ "legal_min_m": null,
+ "legal_min_at": null,
+ "contact_min_m": null,
+ "contact_with": null,
+ "person_rest_min_m": null,
+ "car_rest_min_m": null,
+ "collisions": [],
+ "chain_trips": [
+  {
+   "t": 128.61,
+   "why": "E-STOP pressed",
+   "v": 0.438
+  }
+ ],
+ "metrics": {
+  "placements": [],
+  "grabs": [],
+  "trips": [],
+  "stops": [],
+  "gates": [],
+  "navcam": {
+   "n": 797,
+   "cam_only": 14,
+   "both": 484,
+   "disagree": 0,
+   "none": 244
+  },
+  "r6_fast": {
+   "lane_s": 79.7,
+   "fast": 40.7,
+   "gap": 14.6,
+   "float": 8.3,
+   "fix": 21.3,
+   "one_face": 24.4
+  },
+  "first_motion_clock": null,
+  "first_motion_t": 128.8,
+  "estop": {
+   "t": 128.61,
+   "v": 0.438,
+   "stop_m": 0.044,
+   "stop_s": 0.3
+  }
+ },
+ "events": [
+  {
+   "t": 0.0,
+   "kind": "sim",
+   "text": "chunk 0 start: SITL launched, home = checkpoint pose s=200.0"
+  },
+  {
+   "t": 0.13,
+   "kind": "fw",
+   "text": "Calibrating barometer"
+  },
+  {
+   "t": 1.76,
+   "kind": "fw",
+   "text": "Barometer 1 calibration complete"
+  },
+  {
+   "t": 1.76,
+   "kind": "fw",
+   "text": "Barometer 2 calibration complete"
+  },
+  {
+   "t": 1.77,
+   "kind": "fw",
+   "text": "Beginning INS calibration. Do not move vehicle"
+  },
+  {
+   "t": 1.9,
+   "kind": "fw",
+   "text": "ArduPilot Ready"
+  },
+  {
+   "t": 1.9,
+   "kind": "fw",
+   "text": "RCInput: decoding UDP (Pulses)"
+  },
+  {
+   "t": 1.9,
+   "kind": "fw",
+   "text": "AHRS: DCM active"
+  },
+  {
+   "t": 1.9,
+   "kind": "fw",
+   "text": "GPS 1: specified as MAV"
+  },
+  {
+   "t": 2.06,
+   "kind": "fw",
+   "text": "GPS 1: detected MAV"
+  },
+  {
+   "t": 3.93,
+   "kind": "fw",
+   "text": "EKF3 IMU0 initialised"
+  },
+  {
+   "t": 3.93,
+   "kind": "fw",
+   "text": "EKF3 IMU1 initialised"
+  },
+  {
+   "t": 5.63,
+   "kind": "fw",
+   "text": "EKF3 IMU0 tilt alignment complete"
+  },
+  {
+   "t": 5.63,
+   "kind": "fw",
+   "text": "EKF3 IMU1 tilt alignment complete"
+  },
+  {
+   "t": 5.71,
+   "kind": "fw",
+   "text": "EKF3 IMU0 MAG0 initial yaw alignment complete"
+  },
+  {
+   "t": 5.71,
+   "kind": "fw",
+   "text": "EKF3 IMU1 MAG0 initial yaw alignment complete"
+  },
+  {
+   "t": 5.71,
+   "kind": "fw",
+   "text": "AHRS: EKF3 active"
+  },
+  {
+   "t": 14.05,
+   "kind": "fw",
+   "text": "EKF3 IMU0 origin set"
+  },
+  {
+   "t": 14.05,
+   "kind": "fw",
+   "text": "EKF3 IMU1 origin set"
+  },
+  {
+   "t": 14.13,
+   "kind": "fw",
+   "text": "Field Elevation Set: 34m"
+  },
+  {
+   "t": 20.63,
+   "kind": "fw",
+   "text": "SmartRTL deactivated: bad position"
+  },
+  {
+   "t": 41.97,
+   "kind": "fw",
+   "text": "EKF3 IMU0 is using GPS"
+  },
+  {
+   "t": 41.97,
+   "kind": "fw",
+   "text": "EKF3 IMU1 is using GPS"
+  },
+  {
+   "t": 45.35,
+   "kind": "fw",
+   "text": "Fence Indexed OK"
+  },
+  {
+   "t": 45.35,
+   "kind": "pi",
+   "text": "fence upload ack=0 (81 vertices)"
+  },
+  {
+   "t": 45.37,
+   "kind": "fw",
+   "text": "Warning: Arming Checks Disabled"
+  },
+  {
+   "t": 45.37,
+   "kind": "fw",
+   "text": "Throttle armed"
+  },
+  {
+   "t": 46.35,
+   "kind": "pi",
+   "text": "boot done (GUIDED, armed, fence 81 pts)"
+  },
+  {
+   "t": 128.61,
+   "kind": "hw",
+   "text": "E-STOP pressed at 0.44 m/s (hard-wired chain opens, spring brakes)"
+  },
+  {
+   "t": 128.91,
+   "kind": "ALERT",
+   "text": "E-stop pressed: robot stopped 0.04 m / 0.3 s"
+  },
+  {
+   "t": 136.71,
+   "kind": "pi",
+   "text": "FINISH alert: e-stop"
+  }
+ ]
+}

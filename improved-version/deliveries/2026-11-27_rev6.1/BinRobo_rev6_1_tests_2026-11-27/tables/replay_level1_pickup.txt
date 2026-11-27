@@ -1,0 +1,1 @@
+{"looks": 16400, "metres": 1155, "looks_with_object_in_zone": 0, "events": 0, "looks_with_object_ahead_within_10m": 24, "bad": "drop=0.15,dark=0.3,burst=0.02,false=2,rag=0.10,sway=0.03,bram=0.02,bramd=0.2", "filter": true, "proud": 0.55}

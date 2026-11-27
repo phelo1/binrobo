@@ -1,0 +1,5 @@
+v10   near31       runs 3 | touches 0 at [] m/s | v when they appear [1.0, 1.01, 0.99] | nearest 0.56..0.68 m | robot speed then [0.0, 0.001, 0.0] | still for [1.0, 0.4, 1.0] s | results ['plan completed'] | pauses [2, 3, 2]
+v10   near26       runs 3 | touches 0 at [] m/s | v when they appear [1.0, 0.99, 0.99] | nearest 0.07..0.23 m | robot speed then [0.004, 0.003, 0.0] | still for [0.1, 0.1, 1.0] s | results ['plan completed'] | pauses [2, 3, 3]
+v10   near20       runs 3 | touches 3 at [0.222, 0.066, 0.076] m/s | v when they appear [1.01, 0.96, 0.99] | nearest -0.12..-0.03 m | robot speed then [0.004, 0.066, 0.076] | still for [0.0, 0.0, 0.0] s | results ['contact stop'] | pauses [1, 1, 1]
+v10   run26        runs 3 | touches 0 at [] m/s | v when they appear [1.0, 0.99, 0.99] | nearest 0.23..0.35 m | robot speed then [0.332, 0.31, 0.322] | still for [0.0, 0.0, 0.0] s | results ['plan completed'] | pauses [2, 3, 2]
+v10   run20        runs 3 | touches 3 at [0.862, 0.684, 0.715] m/s | v when they appear [1.01, 0.95, 0.99] | nearest -0.09..-0.05 m | robot speed then [0.862, 0.684, 0.715] | still for [0.0, 0.0, 0.0] s | results ['contact stop'] | pauses [1, 1, 1]

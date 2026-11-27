@@ -1,0 +1,341 @@
+{
+ "scenario": "s1b",
+ "seed": 7,
+ "title": "One-bin night pickup (pad A -> home)",
+ "expect": "pass",
+ "result": "alert",
+ "outcome": "path blocked",
+ "alerts": [
+  "protective field tripped 3 times in 2 minutes - holding in the lane"
+ ],
+ "sim_time_s": 972.6,
+ "chunks": [
+  {
+   "t0": 0.0,
+   "t1": 972.6,
+   "wall": 108.0,
+   "frames": 49624,
+   "status": "done"
+  }
+ ],
+ "energy_wh": 10.06,
+ "soc_start": 0.9,
+ "soc_end": 0.8784,
+ "odo_m": 321.9,
+ "hedge_min_m": 0.379,
+ "hedge_min_at": [
+  904.8,
+  273.8
+ ],
+ "legal_min_m": null,
+ "legal_min_at": null,
+ "contact_min_m": null,
+ "contact_with": null,
+ "person_rest_min_m": null,
+ "car_rest_min_m": null,
+ "collisions": [],
+ "chain_trips": [],
+ "metrics": {
+  "placements": [],
+  "grabs": [],
+  "trips": [],
+  "stops": [],
+  "gates": [],
+  "guard": [
+   {
+    "t": 47.4,
+    "soc": 0.9,
+    "avail_wh": 371.8,
+    "budget_wh": 80.0,
+    "kind": "pickup black<-A",
+    "need_wh": 80.0
+   }
+  ],
+  "window": [
+   {
+    "kind": "pickup",
+    "clock": "D0 18:00",
+    "est_min": 60.0
+   }
+  ],
+  "first_motion_clock": "D0 18:00",
+  "first_motion_t": 57.8,
+  "pivot_way": [
+   {
+    "t": 69.7,
+    "ccw_m": 0.76,
+    "cw_m": 0.76,
+    "way": "ccw"
+   }
+  ],
+  "navcam": {
+   "n": 6939,
+   "cam_only": 133,
+   "both": 5232,
+   "disagree": 857,
+   "none": 966,
+   "dis_near": 4,
+   "dis_cam": 15
+  },
+  "r6_fast": {
+   "ends": 23.0,
+   "lane_s": 613.1,
+   "gap": 127.8,
+   "fast": 401.6,
+   "object": 0.4,
+   "float": 123.4,
+   "fix": 12.6,
+   "one_face": 52.2,
+   "narrow": 4.6
+  },
+  "prot_stops": [
+   {
+    "t": 319.4,
+    "s": 82.5,
+    "gap": 0.61
+   },
+   {
+    "t": 394.8,
+    "s": 107.9,
+    "gap": 0.0
+   },
+   {
+    "t": 477.4,
+    "s": 135.0,
+    "gap": 0.02
+   },
+   {
+    "t": 553.7,
+    "s": 148.1,
+    "gap": 0.16
+   },
+   {
+    "t": 666.0,
+    "s": 186.1,
+    "gap": 0.01
+   },
+   {
+    "t": 872.7,
+    "s": 262.7,
+    "gap": 0.08
+   },
+   {
+    "t": 903.5,
+    "s": 273.5,
+    "gap": 0.66
+   },
+   {
+    "t": 971.3,
+    "s": 314.6,
+    "gap": 0.0
+   }
+  ]
+ },
+ "events": [
+  {
+   "t": 0.0,
+   "kind": "sim",
+   "text": "chunk 0 start: SITL launched, home = checkpoint pose s=5.4"
+  },
+  {
+   "t": 1.14,
+   "kind": "fw",
+   "text": "Calibrating barometer"
+  },
+  {
+   "t": 2.81,
+   "kind": "fw",
+   "text": "Barometer 1 calibration complete"
+  },
+  {
+   "t": 2.81,
+   "kind": "fw",
+   "text": "Barometer 2 calibration complete"
+  },
+  {
+   "t": 2.82,
+   "kind": "fw",
+   "text": "Beginning INS calibration. Do not move vehicle"
+  },
+  {
+   "t": 2.96,
+   "kind": "fw",
+   "text": "ArduPilot Ready"
+  },
+  {
+   "t": 2.96,
+   "kind": "fw",
+   "text": "RCInput: decoding UDP (Pulses)"
+  },
+  {
+   "t": 2.96,
+   "kind": "fw",
+   "text": "AHRS: DCM active"
+  },
+  {
+   "t": 2.96,
+   "kind": "fw",
+   "text": "GPS 1: specified as MAV"
+  },
+  {
+   "t": 3.11,
+   "kind": "fw",
+   "text": "GPS 1: detected MAV"
+  },
+  {
+   "t": 4.97,
+   "kind": "fw",
+   "text": "EKF3 IMU0 initialised"
+  },
+  {
+   "t": 4.97,
+   "kind": "fw",
+   "text": "EKF3 IMU1 initialised"
+  },
+  {
+   "t": 6.65,
+   "kind": "fw",
+   "text": "EKF3 IMU0 tilt alignment complete"
+  },
+  {
+   "t": 6.65,
+   "kind": "fw",
+   "text": "EKF3 IMU1 tilt alignment complete"
+  },
+  {
+   "t": 6.73,
+   "kind": "fw",
+   "text": "EKF3 IMU0 MAG0 initial yaw alignment complete"
+  },
+  {
+   "t": 6.73,
+   "kind": "fw",
+   "text": "EKF3 IMU1 MAG0 initial yaw alignment complete"
+  },
+  {
+   "t": 6.73,
+   "kind": "fw",
+   "text": "AHRS: EKF3 active"
+  },
+  {
+   "t": 15.15,
+   "kind": "fw",
+   "text": "EKF3 IMU0 origin set"
+  },
+  {
+   "t": 15.15,
+   "kind": "fw",
+   "text": "EKF3 IMU1 origin set"
+  },
+  {
+   "t": 15.15,
+   "kind": "fw",
+   "text": "Field Elevation Set: 43m"
+  },
+  {
+   "t": 21.63,
+   "kind": "fw",
+   "text": "SmartRTL deactivated: bad position"
+  },
+  {
+   "t": 42.77,
+   "kind": "fw",
+   "text": "EKF3 IMU0 is using GPS"
+  },
+  {
+   "t": 42.77,
+   "kind": "fw",
+   "text": "EKF3 IMU1 is using GPS"
+  },
+  {
+   "t": 46.27,
+   "kind": "fw",
+   "text": "Fence Indexed OK"
+  },
+  {
+   "t": 46.35,
+   "kind": "pi",
+   "text": "fence upload ack=0 (81 vertices)"
+  },
+  {
+   "t": 46.39,
+   "kind": "fw",
+   "text": "Warning: Arming Checks Disabled"
+  },
+  {
+   "t": 46.39,
+   "kind": "fw",
+   "text": "Throttle armed"
+  },
+  {
+   "t": 47.35,
+   "kind": "pi",
+   "text": "boot done (GUIDED, armed, fence 81 pts)"
+  },
+  {
+   "t": 47.45,
+   "kind": "pi",
+   "text": "preflight OK (pickup black<-A): 372 Wh available, clock D0 18:00"
+  },
+  {
+   "t": 47.65,
+   "kind": "pi",
+   "text": "undock: charger off, beacon + pre-motion warning (10 s)"
+  },
+  {
+   "t": 319.37,
+   "kind": "pi",
+   "text": "protective field: return 0.61 m ahead of the nose inside the robot's own path (or beside the nose) -> stop, back out"
+  },
+  {
+   "t": 394.85,
+   "kind": "pi",
+   "text": "protective field: return 0.00 m ahead of the nose inside the robot's own path (or beside the nose) -> stop, back out"
+  },
+  {
+   "t": 477.41,
+   "kind": "pi",
+   "text": "protective field: return 0.02 m ahead of the nose inside the robot's own path (or beside the nose) -> stop, back out"
+  },
+  {
+   "t": 553.73,
+   "kind": "pi",
+   "text": "protective field: return 0.16 m ahead of the nose inside the robot's own path (or beside the nose) -> stop, back out"
+  },
+  {
+   "t": 666.05,
+   "kind": "pi",
+   "text": "protective field: return 0.01 m ahead of the nose inside the robot's own path (or beside the nose) -> stop, back out"
+  },
+  {
+   "t": 777.43,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 872.69,
+   "kind": "pi",
+   "text": "protective field: return 0.08 m ahead of the nose inside the robot's own path (or beside the nose) -> stop, back out"
+  },
+  {
+   "t": 903.53,
+   "kind": "pi",
+   "text": "protective field: return 0.66 m ahead of the nose inside the robot's own path (or beside the nose) -> stop, back out"
+  },
+  {
+   "t": 971.33,
+   "kind": "pi",
+   "text": "protective field: return 0.00 m ahead of the nose inside the robot's own path (or beside the nose) -> stop, back out"
+  },
+  {
+   "t": 972.65,
+   "kind": "ALERT",
+   "text": "protective field tripped 3 times in 2 minutes - holding in the lane"
+  },
+  {
+   "t": 972.65,
+   "kind": "pi",
+   "text": "FINISH alert: path blocked"
+  }
+ ]
+}

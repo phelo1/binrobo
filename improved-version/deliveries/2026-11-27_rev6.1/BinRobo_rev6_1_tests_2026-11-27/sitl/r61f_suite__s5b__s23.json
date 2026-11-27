@@ -1,0 +1,297 @@
+{
+ "scenario": "s5b",
+ "seed": 23,
+ "title": "Car in the bell-mouth at the drop",
+ "expect": "pass",
+ "result": "pass",
+ "outcome": "plan completed",
+ "alerts": [],
+ "sim_time_s": 281.6,
+ "chunks": [
+  {
+   "t0": 0.0,
+   "t1": 281.6,
+   "wall": 30.0,
+   "frames": 15070,
+   "status": "done"
+  }
+ ],
+ "energy_wh": 2.73,
+ "soc_start": 0.9,
+ "soc_end": 0.8941,
+ "odo_m": 44.8,
+ "hedge_min_m": 0.353,
+ "hedge_min_at": [
+  48.4,
+  585.3
+ ],
+ "legal_min_m": 3.166,
+ "legal_min_at": [
+  218.2,
+  621.8
+ ],
+ "contact_min_m": 0.715,
+ "contact_with": "black",
+ "person_rest_min_m": null,
+ "car_rest_min_m": 2.914,
+ "collisions": [],
+ "chain_trips": [],
+ "metrics": {
+  "placements": [
+   {
+    "bin": "black",
+    "where": "pad:A",
+    "err_m": 0.019,
+    "handle_err_deg": 1.22,
+    "clock": null,
+    "t": 244.0
+   }
+  ],
+  "grabs": [],
+  "trips": [],
+  "stops": [],
+  "gates": [],
+  "navcam": {
+   "n": 685,
+   "cam_only": 0,
+   "both": 624,
+   "disagree": 65,
+   "none": 0
+  },
+  "r6_fast": {
+   "float": 17.6,
+   "lane_s": 66.6,
+   "fast": 29.4,
+   "ramp": 37.2,
+   "ends": 30.5
+  },
+  "first_motion_clock": null,
+  "first_motion_t": 281.1,
+  "ppl_pauses": [
+   {
+    "t": 100.4,
+    "v_in": 0.26,
+    "range": 2.96,
+    "s": 617.0,
+    "by": "lid",
+    "where": "lane",
+    "obj": [
+     [
+      4.32,
+      0.62,
+      38,
+      2.96,
+      0.05
+     ]
+    ],
+    "wait_s": 46.5,
+    "person": false
+   }
+  ],
+  "waits": [
+   {
+    "pad": "A",
+    "wait_s": 3.1
+   }
+  ],
+  "pivot_way": [
+   {
+    "t": 155.7,
+    "ccw_m": 0.42,
+    "cw_m": 0.86,
+    "way": "cw"
+   }
+  ],
+  "pad_check": {
+   "pad": "A",
+   "margin_m": 3.17
+  }
+ },
+ "events": [
+  {
+   "t": 0.0,
+   "kind": "sim",
+   "text": "chunk 0 start: SITL launched, home = checkpoint pose s=585.0"
+  },
+  {
+   "t": 1.14,
+   "kind": "fw",
+   "text": "Calibrating barometer"
+  },
+  {
+   "t": 2.81,
+   "kind": "fw",
+   "text": "Barometer 1 calibration complete"
+  },
+  {
+   "t": 2.81,
+   "kind": "fw",
+   "text": "Barometer 2 calibration complete"
+  },
+  {
+   "t": 2.82,
+   "kind": "fw",
+   "text": "Beginning INS calibration. Do not move vehicle"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "ArduPilot Ready"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "RCInput: decoding UDP (Pulses)"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "AHRS: DCM active"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "GPS 1: specified as MAV"
+  },
+  {
+   "t": 3.11,
+   "kind": "fw",
+   "text": "GPS 1: detected MAV"
+  },
+  {
+   "t": 4.97,
+   "kind": "fw",
+   "text": "EKF3 IMU0 initialised"
+  },
+  {
+   "t": 4.97,
+   "kind": "fw",
+   "text": "EKF3 IMU1 initialised"
+  },
+  {
+   "t": 6.65,
+   "kind": "fw",
+   "text": "EKF3 IMU0 tilt alignment complete"
+  },
+  {
+   "t": 6.65,
+   "kind": "fw",
+   "text": "EKF3 IMU1 tilt alignment complete"
+  },
+  {
+   "t": 6.73,
+   "kind": "fw",
+   "text": "EKF3 IMU0 MAG0 initial yaw alignment complete"
+  },
+  {
+   "t": 6.73,
+   "kind": "fw",
+   "text": "EKF3 IMU1 MAG0 initial yaw alignment complete"
+  },
+  {
+   "t": 6.73,
+   "kind": "fw",
+   "text": "AHRS: EKF3 active"
+  },
+  {
+   "t": 15.15,
+   "kind": "fw",
+   "text": "EKF3 IMU0 origin set"
+  },
+  {
+   "t": 15.15,
+   "kind": "fw",
+   "text": "EKF3 IMU1 origin set"
+  },
+  {
+   "t": 15.15,
+   "kind": "fw",
+   "text": "Field Elevation Set: 31m"
+  },
+  {
+   "t": 21.63,
+   "kind": "fw",
+   "text": "SmartRTL deactivated: bad position"
+  },
+  {
+   "t": 42.57,
+   "kind": "fw",
+   "text": "EKF3 IMU0 is using GPS"
+  },
+  {
+   "t": 42.57,
+   "kind": "fw",
+   "text": "EKF3 IMU1 is using GPS"
+  },
+  {
+   "t": 45.93,
+   "kind": "fw",
+   "text": "Fence Indexed OK"
+  },
+  {
+   "t": 45.95,
+   "kind": "pi",
+   "text": "fence upload ack=0 (81 vertices)"
+  },
+  {
+   "t": 45.99,
+   "kind": "fw",
+   "text": "Warning: Arming Checks Disabled"
+  },
+  {
+   "t": 45.99,
+   "kind": "fw",
+   "text": "Throttle armed"
+  },
+  {
+   "t": 46.95,
+   "kind": "pi",
+   "text": "boot done (GUIDED, armed, fence 81 pts)"
+  },
+  {
+   "t": 100.41,
+   "kind": "pi",
+   "text": "lidar: something 3.0 m away -> stand still"
+  },
+  {
+   "t": 100.93,
+   "kind": "fw",
+   "text": "mode GUIDED -> HOLD"
+  },
+  {
+   "t": 146.91,
+   "kind": "pi",
+   "text": "nothing near for 3 s on any sensor -> carry on, slowly at first"
+  },
+  {
+   "t": 146.95,
+   "kind": "fw",
+   "text": "mode HOLD -> GUIDED"
+  },
+  {
+   "t": 220.21,
+   "kind": "pi",
+   "text": "pre-motion warning before the set-down (3 s)"
+  },
+  {
+   "t": 223.21,
+   "kind": "pi",
+   "text": "lower bin + pad release (21 s)"
+  },
+  {
+   "t": 244.01,
+   "kind": "pi",
+   "text": "bin black set down at A: 0.019 m / 1.2 deg from the spot (truth)"
+  },
+  {
+   "t": 256.49,
+   "kind": "pi",
+   "text": "photo of the placed bin (app) (5 s)"
+  },
+  {
+   "t": 281.57,
+   "kind": "pi",
+   "text": "FINISH pass: plan completed"
+  }
+ ]
+}

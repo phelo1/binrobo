@@ -1,0 +1,267 @@
+chain_a start 00:45:51
+chain_a done 00:49:58
+chain_b start 00:51:50
+stand c y (v2) done 00:55:39
+r61_plain start 00:55:39
+r61_plain end 00:59:41
+plain done 00:59:41
+r61_ratmax start 00:59:41
+r61_ratmax end 01:03:41
+ratmax done 01:03:41
+chain_c start 01:06:11
+stand c, pivot b (proud) done 01:10:09
+r61_plain start 01:10:09
+r61_plain end 01:14:28
+plain (proud) done 01:14:28
+chain_d start 01:15:00
+stand c, pivot b (proud, compact) done 01:19:49
+r61_plain start 01:19:49
+r61_plain end 01:24:02
+plain (proud, compact) done 01:24:02
+chain_e start 01:24:06
+r61b1_trip start 01:24:06
+r61b1_trip end 01:24:47
+r61b2_trip start 01:24:47
+r61b2_trip end 01:25:20
+bad-lidar trips done 01:25:20
+r61b1_near26 start 01:25:20
+r61b1_near20 start 01:26:20
+chain_e stopped 01:26:22: at the first level both trips ended 'path blocked' in the yard - the inherited protective field stops for any single return, and two false returns a scan never leave it clear for 3 s
+chain_e start 01:27:06
+r61_plainf start 01:27:06
+r61b1_near20 end 01:27:18
+r61b1_run26 start 01:27:18
+r61b1_run26 end 01:30:25
+r61b1_child35 start 01:30:25
+all stopped 01:30:34: a people-test runner of the first chain_e had survived and was running beside the new one; restarted clean
+chain_e start 01:30:34
+r61_plainf start 01:30:34
+r61_plainf end 01:36:12
+plain with the scan filter done 01:36:12
+r61b1_trip start 01:36:12
+r61b1_trip end 01:42:55
+r61b2_trip start 01:42:55
+chain_e stopped 01:45:20: level-1 trips showed 53 to 77 protective-field stops (false returns passing on the hedge's account; hedge band 0.25 m) and a hedge end taken for a thing under Float; fixed, restarting
+chain_e start 01:45:20
+r61_plainf start 01:45:20
+chain_e start 01:47:53
+r61_plainf start 01:47:53
+r61_plainf end 01:53:13
+plain with the scan filter done 01:53:13
+r61b1_trip start 01:53:13
+r61b1_trip end 01:58:20
+r61b2_trip start 01:58:20
+r61b2_trip end 02:03:44
+bad-lidar trips done 02:03:44
+r61b1_near26 start 02:03:44
+r61b1_near26 end 02:05:26
+r61b1_near20 start 02:05:26
+chain_e stopped 02:05:45: level 2 showed 29 to 47 protective-field stops for false returns within 0.3 m of the nose, a 'pad not clear' ending and a 34 s stop for a patchy cluster by the house; fixed, restarting from the trips
+chain_e start 02:05:45
+r61b1_trip start 02:05:45
+chain_e stopped 02:10:14: offline test showed the scan filter halving the detection of a person who returns one ray in four; filter widened to four rays each side, protective field now needs two scans running; restarting
+chain_e start 02:10:14
+r61b1_trip start 02:10:14
+chain_e start 02:10:27
+r61b1_trip start 02:10:27
+r61b1_trip end 02:15:38
+r61b2_trip start 02:15:38
+r61b2_trip end 02:17:42
+bad-lidar trips done 02:17:42
+r61b1_near26 start 02:17:42
+chain_e stopped 02:18:23: level 1 trips clean (no protective-field stop); level 2 trips ended 'protective field tripped 3 times in 2 minutes' (my own near field of revision 5 took pairs of false returns); near field now needs two scans running; restarting from the level-2 trips
+chain_e start 02:18:23
+r61b2_trip start 02:18:23
+r61b2_trip end 02:23:32
+bad-lidar trips done 02:23:32
+r61b1_near26 start 02:23:32
+r61b1_near26 end 02:24:40
+r61b1_near20 start 02:24:40
+r61b1_near20 end 02:25:22
+r61b1_run26 start 02:25:22
+r61b1_run26 end 02:26:47
+r61b1_child35 start 02:26:47
+r61b1_child35 end 02:28:22
+r61b1_side start 02:28:22
+r61b1_side end 02:29:04
+r61b1_behind start 02:29:04
+r61b1_behind end 02:30:18
+r61b1_flank start 02:30:18
+r61b1_flank end 02:31:36
+r61b1_hug start 02:31:36
+r61b1_hug end 02:32:47
+r61b1_gapwalk26 start 02:32:47
+r61b1_gapwalk26 end 02:34:20
+stress r61b1 done 02:34:20
+r61b2_near26 start 02:34:20
+r61b2_near26 end 02:36:01
+r61b2_near20 start 02:36:01
+r61b2_near20 end 02:36:44
+r61b2_run26 start 02:36:44
+r61b2_run26 end 02:38:14
+r61b2_child35 start 02:38:14
+r61b2_child35 end 02:39:45
+r61b2_side start 02:39:45
+r61b2_side end 02:40:42
+r61b2_behind start 02:40:42
+chain_f stopped 02:41:49 before it started: the 'side' case of chain_e and chain_f used the launcher's default trigger (walker steps off the far hedge when the robot is 1.4 m from his line, i.e. beside him) and not the 3.0 m of revision 6; that is a different, harder case and it is not a code change. New launcher stress2.sh: side = 3.0 m as in revision 6, side14 = the 1.4 m case under its own name; chain_g replaces chain_f
+r61b2_behind end 02:41:55
+r61b2_flank start 02:41:55
+r61b2_flank end 02:43:13
+r61b2_hug start 02:43:13
+r61b2_hug end 02:44:30
+r61b2_gapwalk26 start 02:44:30
+r61b2_gapwalk26 end 02:46:24
+stress r61b2 done 02:46:24
+bad-lidar people done 02:46:24
+chain_g start 02:46:26
+02:54:12 disk 2.7 GB free with about 3.4 GB of runs still to come: compressing the trace files of earlier revisions (gzip, nothing removed; every folder not starting with r61)
+02:59:35 old traces compressed
+1 turn tests done 02:59:42
+r61f_near26 start 02:59:42
+r61f_near26 end 03:00:45
+r61f_near20 start 03:00:45
+r61f_near20 end 03:01:23
+r61f_run26 start 03:01:23
+r61f_run26 end 03:02:39
+r61f_run20 start 03:02:39
+r61f_run20 end 03:03:21
+r61f_child35 start 03:03:21
+r61f_child35 end 03:05:06
+r61f_side start 03:05:06
+r61f_side end 03:06:25
+r61f_side14 start 03:06:25
+r61f_side14 end 03:07:04
+r61f_behind start 03:07:04
+r61f_behind end 03:08:09
+r61f_flank start 03:08:09
+r61f_flank end 03:09:18
+r61f_hug start 03:09:18
+r61f_hug end 03:10:18
+r61f_hugstand start 03:10:18
+r61f_hugstand end 03:11:19
+r61f_asis start 03:11:19
+r61f_asis end 03:12:31
+r61f_near35 start 03:12:31
+r61f_near35 end 03:14:03
+r61f_near31 start 03:14:03
+r61f_near31 end 03:15:27
+r61f_run40 start 03:15:27
+r61f_run40 end 03:16:40
+r61f_nearhedge30 start 03:16:40
+r61f_nearhedge30 end 03:17:51
+r61f_nearhedge45 start 03:17:51
+r61f_nearhedge45 end 03:19:01
+r61f_slowwalk start 03:19:01
+r61f_slowwalk end 03:20:32
+r61f_low40 start 03:20:32
+r61f_low40 end 03:21:38
+r61f_low40near start 03:21:38
+r61f_low40near end 03:22:59
+r61f_stay1000 start 03:22:59
+r61f_stay1000 end 03:26:45
+r61f_boxside start 03:26:45
+r61f_boxside end 03:28:10
+r61f_boxpath start 03:28:10
+r61f_boxpath end 03:29:20
+r61f_boxfar start 03:29:20
+r61f_boxfar end 03:30:28
+r61f_gapwalk26 start 03:30:28
+r61f_gapwalk26 end 03:31:48
+r61f_gaprun26 start 03:31:48
+r61f_gaprun26 end 03:33:04
+stress r61f done 03:33:04
+2 people fast done 03:33:04
+r61s_near26 start 03:33:04
+r61s_near26 end 03:34:42
+r61s_near20 start 03:34:42
+r61s_near20 end 03:36:25
+r61s_run26 start 03:36:25
+r61s_run26 end 03:37:57
+r61s_run20 start 03:37:57
+r61s_run20 end 03:39:04
+r61s_child35 start 03:39:04
+r61s_child35 end 03:40:46
+r61s_side start 03:40:46
+r61s_side end 03:42:09
+r61s_side14 start 03:42:09
+r61s_side14 end 03:43:30
+r61s_behind start 03:43:30
+r61s_behind end 03:44:51
+r61s_flank start 03:44:51
+r61s_flank end 03:46:15
+r61s_hug start 03:46:15
+r61s_hug end 03:47:31
+r61s_hugstand start 03:47:31
+r61s_hugstand end 03:48:53
+r61s_nearhedge30 start 03:48:53
+r61s_nearhedge30 end 03:50:13
+r61s_stay1000 start 03:50:13
+r61s_stay1000 end 03:53:24
+r61s_boxfar start 03:53:24
+r61s_boxfar end 03:54:47
+r61s_gapwalk26 start 03:54:47
+r61s_gapwalk26 end 03:56:24
+r61s_gaprun26 start 03:56:24
+r61s_gaprun26 end 03:57:56
+stress r61s done 03:57:56
+3 people start done 03:57:56
+r61v_near31 start 03:57:56
+r61v_near31 end 03:59:19
+r61v_near26 start 03:59:19
+r61v_near26 end 04:00:42
+r61v_near20 start 04:00:42
+r61v_near20 end 04:01:19
+r61v_run26 start 04:01:19
+r61v_run26 end 04:02:28
+r61v_run20 start 04:02:28
+r61v_run20 end 04:03:04
+stress r61v done 04:03:04
+4 people v10 done 04:03:04
+r61f_suite start 04:03:04
+r61f_suite end 04:57:48
+5 suite fast done 04:57:48
+r61s_trips start 04:57:48
+r61s_trips end 05:00:14
+6 start trips done 05:00:14
+r61b1_trip start 05:00:14
+05:00:58 step 6 of chain_g (start-settings trips) did not run: the mission lists were given by a relative path and the launcher needs an absolute one. No result was produced. chain_k runs them after chain_j, same code, same settings.
+r61b1_trip end 05:04:55
+7 level-1 trips done 05:04:55
+r61b1_side start 05:04:55
+r61b1_side end 05:06:07
+stress r61b1 done 05:06:07
+r61b2_side start 05:06:07
+r61b2_side end 05:07:17
+stress r61b2 done 05:07:17
+8 side on the worse lidar done 05:07:17
+chain_g done 05:07:17
+chain_h start 05:07:27
+r61f_leaf start 05:07:27
+05:09:15 the cloud environment restarted at about 05:08; every running command ended (chain_h had just started r61f_leaf; chain_i, chain_j, chain_k were waiting). Files and code are intact (checksums as code_final.md5). chain_m runs what was left, in this order, and skips a step whose results are already complete: hugstand31, the two baselines with the walker rule off, the start-settings trips, the extras.
+chain_m start 05:09:15
+r61f_hugstand31 start 05:09:18
+r61f_hugstand31 end 05:10:45
+r61b1_hugstand31 start 05:10:45
+r61b1_hugstand31 end 05:12:17
+r61b2_hugstand31 start 05:12:17
+r61b2_hugstand31 end 05:13:54
+m1 hugstand31 done 05:13:54
+m2 baselines done 05:18:34
+r61s_trips start 05:18:35
+r61s_trips end 06:13:08
+m3 start trips done 06:13:08
+r61f_leaf start 06:13:08
+r61f_leaf end 06:19:44
+r61f_phantom start 06:19:44
+r61f_phantom end 06:25:07
+r61f_leafnogo start 06:25:07
+r61f_leafnogo end 06:25:15
+r61m_trip start 06:25:15
+r61m_trip end 06:31:10
+chain_m done 06:31:10
+chain_n start 06:31:16
+r61s_ret1630 start 06:31:16
+r61s_ret1630 end 07:02:48
+chain_n done 07:02:48
+07:06:09 all runs done. Tables rebuilt from the result files (mk_tables.sh); note assembled; pack and repository copy follow.

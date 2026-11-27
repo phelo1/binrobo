@@ -1,0 +1,4287 @@
+[
+ {
+  "set": "fast_suite",
+  "run": "r61f_suite",
+  "scen": "s10a",
+  "seed": 11,
+  "result": "alert",
+  "outcome": "bin tipped",
+  "alerts": [
+   "bin black at A does not look upright (lidar outline 1.04 x 0.20 m) - not grabbing, photo s"
+  ],
+  "trips": [],
+  "sim_min": 2.6,
+  "soc_end": 0.8972,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [
+   [
+    617,
+    "lid",
+    2.99,
+    3.7,
+    false
+   ],
+   [
+    617,
+    "lid",
+    2.93,
+    3.3,
+    false
+   ]
+  ],
+  "pauses_other": [],
+  "hedge": 0.381,
+  "contact_min": 2.93,
+  "contact_with": "black",
+  "contacts": 0,
+  "place": [],
+  "gate_tries": 0,
+  "grabs": [],
+  "last_dock": null,
+  "fast": {
+   "lane_s": 85.9,
+   "fast": 52.7,
+   "float": 6.8,
+   "ramp": 33.2,
+   "ends": 19.8
+  }
+ },
+ {
+  "set": "fast_suite",
+  "run": "r61f_suite",
+  "scen": "s10a",
+  "seed": 23,
+  "result": "alert",
+  "outcome": "bin tipped",
+  "alerts": [
+   "bin black at A does not look upright (lidar outline 1.06 x 0.43 m) - not grabbing, photo s"
+  ],
+  "trips": [],
+  "sim_min": 2.5,
+  "soc_end": 0.8973,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [],
+  "hedge": 0.381,
+  "contact_min": 2.89,
+  "contact_with": "black",
+  "contacts": 0,
+  "place": [],
+  "gate_tries": 0,
+  "grabs": [],
+  "last_dock": null,
+  "fast": {
+   "lane_s": 86.3,
+   "fast": 53.6,
+   "float": 18.2,
+   "ramp": 32.7,
+   "ends": 20.2
+  }
+ },
+ {
+  "set": "fast_suite",
+  "run": "r61f_suite",
+  "scen": "s10a",
+  "seed": 7,
+  "result": "alert",
+  "outcome": "bin tipped",
+  "alerts": [
+   "bin black at A does not look upright (lidar outline 1.03 x 0.35 m) - not grabbing, photo s"
+  ],
+  "trips": [],
+  "sim_min": 4.0,
+  "soc_end": 0.8964,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [
+   [
+    617,
+    "lid",
+    2.99,
+    90.6,
+    false
+   ]
+  ],
+  "pauses_other": [],
+  "hedge": 0.318,
+  "contact_min": 2.848,
+  "contact_with": "black",
+  "contacts": 0,
+  "place": [],
+  "gate_tries": 0,
+  "grabs": [],
+  "last_dock": null,
+  "fast": {
+   "lane_s": 86.7,
+   "fast": 53.8,
+   "float": 16.7,
+   "ramp": 32.9,
+   "ends": 19.6
+  }
+ },
+ {
+  "set": "fast_suite",
+  "run": "r61f_suite",
+  "scen": "s10b",
+  "seed": 11,
+  "result": "alert",
+  "outcome": "bin blocked",
+  "alerts": [
+   "approach to bin black is blocked for 120 s (something 3.0 m from the robot, in its path) -"
+  ],
+  "trips": [],
+  "sim_min": 4.2,
+  "soc_end": 0.8962,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [
+   [
+    615,
+    "lid",
+    2.98,
+    null,
+    false
+   ]
+  ],
+  "pauses_other": [],
+  "hedge": 0.381,
+  "contact_min": 2.97,
+  "contact_with": "sack",
+  "contacts": 0,
+  "place": [],
+  "gate_tries": 0,
+  "grabs": [],
+  "last_dock": null,
+  "fast": {
+   "lane_s": 75.7,
+   "fast": 52.7,
+   "float": 6.8,
+   "ramp": 23.0,
+   "ends": 9.7
+  }
+ },
+ {
+  "set": "fast_suite",
+  "run": "r61f_suite",
+  "scen": "s10b",
+  "seed": 23,
+  "result": "alert",
+  "outcome": "bin blocked",
+  "alerts": [
+   "approach to bin black is blocked for 120 s (something 3.0 m from the robot, in its path) -"
+  ],
+  "trips": [],
+  "sim_min": 4.3,
+  "soc_end": 0.896,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [
+   [
+    615,
+    "lid",
+    2.99,
+    null,
+    false
+   ]
+  ],
+  "pauses_other": [],
+  "hedge": 0.381,
+  "contact_min": 2.956,
+  "contact_with": "sack",
+  "contacts": 0,
+  "place": [],
+  "gate_tries": 0,
+  "grabs": [],
+  "last_dock": null,
+  "fast": {
+   "lane_s": 82.6,
+   "fast": 59.4,
+   "float": 18.1,
+   "gap": 0.2,
+   "ramp": 23.0,
+   "ends": 11.0
+  }
+ },
+ {
+  "set": "fast_suite",
+  "run": "r61f_suite",
+  "scen": "s10b",
+  "seed": 7,
+  "result": "alert",
+  "outcome": "bin blocked",
+  "alerts": [
+   "approach to bin black is blocked for 120 s (something 2.9 m from the robot, in its path) -"
+  ],
+  "trips": [],
+  "sim_min": 4.3,
+  "soc_end": 0.8961,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [
+   [
+    615,
+    "lid",
+    2.98,
+    null,
+    false
+   ]
+  ],
+  "pauses_other": [],
+  "hedge": 0.334,
+  "contact_min": 2.939,
+  "contact_with": "sack",
+  "contacts": 0,
+  "place": [],
+  "gate_tries": 0,
+  "grabs": [],
+  "last_dock": null,
+  "fast": {
+   "lane_s": 78.3,
+   "fast": 54.5,
+   "float": 16.7,
+   "ramp": 23.8,
+   "ends": 10.5
+  }
+ },
+ {
+  "set": "fast_suite",
+  "run": "r61f_suite",
+  "scen": "s11a",
+  "seed": 11,
+  "result": "alert",
+  "outcome": "wind no-go",
+  "alerts": [
+   "weather no-go: wind gust 18 m/s >= 15 m/s - bins stay home"
+  ],
+  "trips": [],
+  "sim_min": 0.8,
+  "soc_end": 0.8997,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [],
+  "hedge": null,
+  "contact_min": 3.751,
+  "contact_with": "black",
+  "contacts": 0,
+  "place": [],
+  "gate_tries": 0,
+  "grabs": [],
+  "last_dock": null,
+  "fast": null
+ },
+ {
+  "set": "fast_suite",
+  "run": "r61f_suite",
+  "scen": "s11a",
+  "seed": 23,
+  "result": "alert",
+  "outcome": "wind no-go",
+  "alerts": [
+   "weather no-go: wind gust 18 m/s >= 15 m/s - bins stay home"
+  ],
+  "trips": [],
+  "sim_min": 0.8,
+  "soc_end": 0.8997,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [],
+  "hedge": null,
+  "contact_min": 3.75,
+  "contact_with": "black",
+  "contacts": 0,
+  "place": [],
+  "gate_tries": 0,
+  "grabs": [],
+  "last_dock": null,
+  "fast": null
+ },
+ {
+  "set": "fast_suite",
+  "run": "r61f_suite",
+  "scen": "s11a",
+  "seed": 7,
+  "result": "alert",
+  "outcome": "wind no-go",
+  "alerts": [
+   "weather no-go: wind gust 18 m/s >= 15 m/s - bins stay home"
+  ],
+  "trips": [],
+  "sim_min": 0.8,
+  "soc_end": 0.8997,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [],
+  "hedge": null,
+  "contact_min": 3.75,
+  "contact_with": "black",
+  "contacts": 0,
+  "place": [],
+  "gate_tries": 0,
+  "grabs": [],
+  "last_dock": null,
+  "fast": null
+ },
+ {
+  "set": "fast_suite",
+  "run": "r61f_suite",
+  "scen": "s11b",
+  "seed": 11,
+  "result": "alert",
+  "outcome": "frost no-go",
+  "alerts": [
+   "weather no-go: frost / ice on the lane (air -3.0 C) - bins stay home"
+  ],
+  "trips": [],
+  "sim_min": 0.8,
+  "soc_end": 0.8997,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [],
+  "hedge": null,
+  "contact_min": 3.75,
+  "contact_with": "black",
+  "contacts": 0,
+  "place": [],
+  "gate_tries": 0,
+  "grabs": [],
+  "last_dock": null,
+  "fast": null
+ },
+ {
+  "set": "fast_suite",
+  "run": "r61f_suite",
+  "scen": "s11b",
+  "seed": 23,
+  "result": "alert",
+  "outcome": "frost no-go",
+  "alerts": [
+   "weather no-go: frost / ice on the lane (air -3.0 C) - bins stay home"
+  ],
+  "trips": [],
+  "sim_min": 0.8,
+  "soc_end": 0.8997,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [],
+  "hedge": null,
+  "contact_min": 3.75,
+  "contact_with": "black",
+  "contacts": 0,
+  "place": [],
+  "gate_tries": 0,
+  "grabs": [],
+  "last_dock": null,
+  "fast": null
+ },
+ {
+  "set": "fast_suite",
+  "run": "r61f_suite",
+  "scen": "s11b",
+  "seed": 7,
+  "result": "alert",
+  "outcome": "frost no-go",
+  "alerts": [
+   "weather no-go: frost / ice on the lane (air -3.0 C) - bins stay home"
+  ],
+  "trips": [],
+  "sim_min": 0.8,
+  "soc_end": 0.8997,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [],
+  "hedge": null,
+  "contact_min": 3.75,
+  "contact_with": "black",
+  "contacts": 0,
+  "place": [],
+  "gate_tries": 0,
+  "grabs": [],
+  "last_dock": null,
+  "fast": null
+ },
+ {
+  "set": "fast_suite",
+  "run": "r61f_suite",
+  "scen": "s12a",
+  "seed": 11,
+  "result": "alert",
+  "outcome": "pad outside geofence",
+  "alerts": [
+   "drop spot A is -4.47 m from the road-verge boundary (< 0.3 m): not going - please re-draw "
+  ],
+  "trips": [],
+  "sim_min": 0.8,
+  "soc_end": 0.8997,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [],
+  "hedge": 0.36,
+  "contact_min": null,
+  "contact_with": null,
+  "contacts": 0,
+  "place": [],
+  "gate_tries": 0,
+  "grabs": [],
+  "last_dock": null,
+  "fast": null
+ },
+ {
+  "set": "fast_suite",
+  "run": "r61f_suite",
+  "scen": "s12a",
+  "seed": 23,
+  "result": "alert",
+  "outcome": "pad outside geofence",
+  "alerts": [
+   "drop spot A is -4.47 m from the road-verge boundary (< 0.3 m): not going - please re-draw "
+  ],
+  "trips": [],
+  "sim_min": 0.8,
+  "soc_end": 0.8997,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [],
+  "hedge": 0.36,
+  "contact_min": null,
+  "contact_with": null,
+  "contacts": 0,
+  "place": [],
+  "gate_tries": 0,
+  "grabs": [],
+  "last_dock": null,
+  "fast": null
+ },
+ {
+  "set": "fast_suite",
+  "run": "r61f_suite",
+  "scen": "s12a",
+  "seed": 7,
+  "result": "alert",
+  "outcome": "pad outside geofence",
+  "alerts": [
+   "drop spot A is -4.47 m from the road-verge boundary (< 0.3 m): not going - please re-draw "
+  ],
+  "trips": [],
+  "sim_min": 0.8,
+  "soc_end": 0.8997,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [],
+  "hedge": 0.36,
+  "contact_min": null,
+  "contact_with": null,
+  "contacts": 0,
+  "place": [],
+  "gate_tries": 0,
+  "grabs": [],
+  "last_dock": null,
+  "fast": null
+ },
+ {
+  "set": "fast_suite",
+  "run": "r61f_suite",
+  "scen": "s12b",
+  "seed": 11,
+  "result": "alert",
+  "outcome": "firmware fence hold",
+  "alerts": [
+   "firmware geofence HOLD at the road edge"
+  ],
+  "trips": [],
+  "sim_min": 1.6,
+  "soc_end": 0.8988,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [],
+  "hedge": 0.322,
+  "contact_min": null,
+  "contact_with": null,
+  "contacts": 0,
+  "place": [],
+  "gate_tries": 0,
+  "grabs": [],
+  "last_dock": null,
+  "fast": null
+ },
+ {
+  "set": "fast_suite",
+  "run": "r61f_suite",
+  "scen": "s12b",
+  "seed": 23,
+  "result": "alert",
+  "outcome": "firmware fence hold",
+  "alerts": [
+   "firmware geofence HOLD at the road edge"
+  ],
+  "trips": [],
+  "sim_min": 1.6,
+  "soc_end": 0.8988,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [],
+  "hedge": 0.321,
+  "contact_min": null,
+  "contact_with": null,
+  "contacts": 0,
+  "place": [],
+  "gate_tries": 0,
+  "grabs": [],
+  "last_dock": null,
+  "fast": null
+ },
+ {
+  "set": "fast_suite",
+  "run": "r61f_suite",
+  "scen": "s12b",
+  "seed": 7,
+  "result": "alert",
+  "outcome": "firmware fence hold",
+  "alerts": [
+   "firmware geofence HOLD at the road edge"
+  ],
+  "trips": [],
+  "sim_min": 1.6,
+  "soc_end": 0.8988,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [],
+  "hedge": 0.322,
+  "contact_min": null,
+  "contact_with": null,
+  "contacts": 0,
+  "place": [],
+  "gate_tries": 0,
+  "grabs": [],
+  "last_dock": null,
+  "fast": null
+ },
+ {
+  "set": "fast_suite",
+  "run": "r61f_suite",
+  "scen": "s1a",
+  "seed": 11,
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [
+   [
+    "drop",
+    37.2,
+    58.24,
+    "D-1 18:00",
+    "D-1 18:37"
+   ]
+  ],
+  "sim_min": 38.0,
+  "soc_end": 0.7745,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [],
+  "hedge": 0.232,
+  "contact_min": 0.448,
+  "contact_with": "black",
+  "contacts": 0,
+  "place": [
+   0.086
+  ],
+  "gate_tries": 1,
+  "grabs": [
+   "success (MuJoCo gate"
+  ],
+  "last_dock": "D-1 18:37",
+  "fast": {
+   "ends": 53.3,
+   "lane_s": 1519.1,
+   "narrow": 102.1,
+   "fast": 1034.6,
+   "float": 322.4,
+   "gap": 220.2,
+   "one_face": 93.2,
+   "fix": 49.4,
+   "ramp": 20.0,
+   "hedge_close": 2.3,
+   "bend": 3.3
+  }
+ },
+ {
+  "set": "fast_suite",
+  "run": "r61f_suite",
+  "scen": "s1a",
+  "seed": 23,
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [
+   [
+    "drop",
+    36.5,
+    57.49,
+    "D-1 18:00",
+    "D-1 18:37"
+   ]
+  ],
+  "sim_min": 37.3,
+  "soc_end": 0.7761,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [],
+  "hedge": 0.229,
+  "contact_min": 0.333,
+  "contact_with": "black",
+  "contacts": 0,
+  "place": [
+   0.051
+  ],
+  "gate_tries": 1,
+  "grabs": [
+   "success (MuJoCo gate"
+  ],
+  "last_dock": "D-1 18:37",
+  "fast": {
+   "ends": 56.1,
+   "lane_s": 1513.9,
+   "narrow": 106.5,
+   "fast": 1030.0,
+   "float": 346.1,
+   "gap": 222.2,
+   "object": 0.3,
+   "fix": 25.2,
+   "one_face": 91.9,
+   "ramp": 22.5,
+   "hedge_close": 3.6,
+   "bend": 2.6
+  }
+ },
+ {
+  "set": "fast_suite",
+  "run": "r61f_suite",
+  "scen": "s1a",
+  "seed": 7,
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [
+   [
+    "drop",
+    36.4,
+    57.64,
+    "D-1 18:00",
+    "D-1 18:37"
+   ]
+  ],
+  "sim_min": 37.2,
+  "soc_end": 0.7758,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [],
+  "hedge": 0.239,
+  "contact_min": 0.414,
+  "contact_with": "black",
+  "contacts": 0,
+  "place": [
+   0.023
+  ],
+  "gate_tries": 1,
+  "grabs": [
+   "success (MuJoCo gate"
+  ],
+  "last_dock": "D-1 18:37",
+  "fast": {
+   "ends": 54.5,
+   "lane_s": 1484.5,
+   "narrow": 101.9,
+   "fast": 1008.4,
+   "gap": 210.8,
+   "float": 323.3,
+   "object": 0.5,
+   "fix": 46.6,
+   "one_face": 96.4,
+   "hedge_close": 2.2,
+   "ramp": 22.5,
+   "bend": 3.4
+  }
+ },
+ {
+  "set": "fast_suite",
+  "run": "r61f_suite",
+  "scen": "s1b",
+  "seed": 11,
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [
+   [
+    "pickup",
+    40.9,
+    58.42,
+    "D0 18:00",
+    "D0 18:41"
+   ]
+  ],
+  "sim_min": 41.6,
+  "soc_end": 0.7741,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [
+   [
+    "pivot",
+    617,
+    "lid",
+    2.9,
+    3.4,
+    false
+   ]
+  ],
+  "hedge": 0.224,
+  "contact_min": 0.498,
+  "contact_with": "black",
+  "contacts": 0,
+  "place": [
+   0.054
+  ],
+  "gate_tries": 1,
+  "grabs": [
+   "success (MuJoCo gate"
+  ],
+  "last_dock": "D0 18:41",
+  "fast": {
+   "ends": 63.7,
+   "lane_s": 1710.9,
+   "narrow": 106.5,
+   "fast": 1156.0,
+   "float": 405.7,
+   "gap": 257.4,
+   "object": 0.3,
+   "one_face": 106.2,
+   "fix": 23.8,
+   "ramp": 28.3,
+   "hedge_close": 3.5,
+   "bend": 2.9
+  }
+ },
+ {
+  "set": "fast_suite",
+  "run": "r61f_suite",
+  "scen": "s1b",
+  "seed": 23,
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [
+   [
+    "pickup",
+    41.8,
+    59.03,
+    "D0 18:00",
+    "D0 18:42"
+   ]
+  ],
+  "sim_min": 42.6,
+  "soc_end": 0.7728,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [
+   [
+    "pivot",
+    618,
+    "lid",
+    2.89,
+    3.4,
+    false
+   ]
+  ],
+  "hedge": 0.221,
+  "contact_min": 0.429,
+  "contact_with": "black",
+  "contacts": 0,
+  "place": [
+   0.05
+  ],
+  "gate_tries": 1,
+  "grabs": [
+   "success (MuJoCo gate"
+  ],
+  "last_dock": "D0 18:42",
+  "fast": {
+   "ends": 65.4,
+   "lane_s": 1739.6,
+   "narrow": 108.3,
+   "fast": 1170.9,
+   "float": 429.8,
+   "gap": 253.0,
+   "fix": 59.4,
+   "one_face": 113.4,
+   "hedge_close": 6.0,
+   "ramp": 29.2,
+   "object": 0.8,
+   "bend": 2.9
+  }
+ },
+ {
+  "set": "fast_suite",
+  "run": "r61f_suite",
+  "scen": "s1b",
+  "seed": 7,
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [
+   [
+    "pickup",
+    40.6,
+    58.45,
+    "D0 18:00",
+    "D0 18:41"
+   ]
+  ],
+  "sim_min": 41.4,
+  "soc_end": 0.774,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [
+   [
+    "pivot",
+    617,
+    "lid",
+    2.9,
+    3.4,
+    false
+   ],
+   [
+    "pivot",
+    617,
+    "lid",
+    3.0,
+    3.2,
+    false
+   ]
+  ],
+  "hedge": 0.242,
+  "contact_min": 0.5,
+  "contact_with": "black",
+  "contacts": 0,
+  "place": [
+   0.016
+  ],
+  "gate_tries": 1,
+  "grabs": [
+   "success (MuJoCo gate"
+  ],
+  "last_dock": "D0 18:41",
+  "fast": {
+   "ends": 64.5,
+   "lane_s": 1696.8,
+   "narrow": 107.3,
+   "fast": 1140.9,
+   "gap": 254.9,
+   "float": 350.5,
+   "object": 2.1,
+   "fix": 52.4,
+   "one_face": 103.9,
+   "ramp": 30.8,
+   "hedge_close": 0.8,
+   "bend": 3.4
+  }
+ },
+ {
+  "set": "fast_suite",
+  "run": "r61f_suite",
+  "scen": "s3a",
+  "seed": 11,
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [
+   [
+    "drop",
+    41.4,
+    58.64,
+    "D-1 18:00",
+    "D-1 18:42"
+   ],
+   [
+    "drop",
+    37.1,
+    58.1,
+    "D-1 18:42",
+    "D-1 19:19"
+   ],
+   [
+    "drop",
+    36.3,
+    57.54,
+    "D-1 19:19",
+    "D-1 19:55"
+   ]
+  ],
+  "sim_min": 115.6,
+  "soc_end": 0.5129,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [
+   [
+    238,
+    "lid",
+    2.7,
+    3.2,
+    false
+   ],
+   [
+    239,
+    "lid",
+    2.44,
+    3.4,
+    false
+   ]
+  ],
+  "pauses_other": [
+   [
+    "yard",
+    13,
+    "lid",
+    1.29,
+    3.2,
+    false
+   ]
+  ],
+  "hedge": 0.2,
+  "contact_min": 0.289,
+  "contact_with": "green",
+  "contacts": 0,
+  "place": [
+   0.007,
+   0.023,
+   0.014
+  ],
+  "gate_tries": 1,
+  "grabs": [
+   "success (MuJoCo gate",
+   "success (MuJoCo gate",
+   "success (MuJoCo gate"
+  ],
+  "last_dock": "D-1 19:55",
+  "fast": {
+   "ends": 131.0,
+   "lane_s": 5125.6,
+   "narrow": 343.3,
+   "fast": 3470.5,
+   "float": 1214.1,
+   "gap": 729.1,
+   "one_face": 338.6,
+   "fix": 164.0,
+   "hedge_close": 19.7,
+   "ramp": 74.0,
+   "object": 2.8,
+   "bend": 11.9
+  }
+ },
+ {
+  "set": "fast_suite",
+  "run": "r61f_suite",
+  "scen": "s3a",
+  "seed": 23,
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [
+   [
+    "drop",
+    41.9,
+    58.98,
+    "D-1 18:00",
+    "D-1 18:42"
+   ],
+   [
+    "drop",
+    37.3,
+    57.81,
+    "D-1 18:42",
+    "D-1 19:19"
+   ],
+   [
+    "drop",
+    37.9,
+    58.33,
+    "D-1 19:19",
+    "D-1 19:57"
+   ]
+  ],
+  "sim_min": 117.8,
+  "soc_end": 0.5111,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [
+   [
+    "yard",
+    13,
+    "lid",
+    1.53,
+    3.2,
+    false
+   ]
+  ],
+  "hedge": 0.21,
+  "contact_min": 0.29,
+  "contact_with": "brown",
+  "contacts": 0,
+  "place": [
+   0.014,
+   0.017,
+   0.036
+  ],
+  "gate_tries": 1,
+  "grabs": [
+   "success (MuJoCo gate",
+   "success (MuJoCo gate",
+   "success (MuJoCo gate"
+  ],
+  "last_dock": "D-1 19:57",
+  "fast": {
+   "ends": 130.5,
+   "lane_s": 5172.7,
+   "narrow": 328.2,
+   "fast": 3522.3,
+   "float": 1318.3,
+   "gap": 762.9,
+   "object": 5.7,
+   "fix": 189.6,
+   "one_face": 316.0,
+   "hedge_close": 14.5,
+   "ramp": 72.0,
+   "bend": 10.4
+  }
+ },
+ {
+  "set": "fast_suite",
+  "run": "r61f_suite",
+  "scen": "s3a",
+  "seed": 7,
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [
+   [
+    "drop",
+    40.5,
+    58.07,
+    "D-1 18:00",
+    "D-1 18:41"
+   ],
+   [
+    "drop",
+    36.5,
+    57.54,
+    "D-1 18:41",
+    "D-1 19:17"
+   ],
+   [
+    "drop",
+    36.5,
+    57.38,
+    "D-1 19:17",
+    "D-1 19:54"
+   ]
+  ],
+  "sim_min": 114.3,
+  "soc_end": 0.5158,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [],
+  "hedge": 0.213,
+  "contact_min": 0.305,
+  "contact_with": "brown",
+  "contacts": 0,
+  "place": [
+   0.07,
+   0.054,
+   0.074
+  ],
+  "gate_tries": 1,
+  "grabs": [
+   "success (MuJoCo gate",
+   "success (MuJoCo gate",
+   "success (MuJoCo gate"
+  ],
+  "last_dock": "D-1 19:54",
+  "fast": {
+   "ends": 130.3,
+   "lane_s": 5074.0,
+   "narrow": 332.5,
+   "fast": 3410.4,
+   "gap": 757.9,
+   "float": 1210.2,
+   "object": 4.6,
+   "fix": 199.9,
+   "one_face": 322.8,
+   "ramp": 76.5,
+   "hedge_close": 10.7,
+   "bend": 10.4
+  }
+ },
+ {
+  "set": "fast_suite",
+  "run": "r61f_suite",
+  "scen": "s3b",
+  "seed": 11,
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [
+   [
+    "pickup",
+    40.6,
+    57.86,
+    "D0 18:00",
+    "D0 18:41"
+   ],
+   [
+    "pickup",
+    41.1,
+    58.5,
+    "D0 18:41",
+    "D0 19:22"
+   ],
+   [
+    "pickup",
+    43.1,
+    59.34,
+    "D0 19:22",
+    "D0 20:05"
+   ]
+  ],
+  "sim_min": 125.6,
+  "soc_end": 0.5098,
+  "corridor_stops": 2,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [
+   [
+    "pivot",
+    608,
+    "lid",
+    2.79,
+    3.4,
+    false
+   ],
+   [
+    "pivot",
+    608,
+    "lid",
+    2.89,
+    3.5,
+    false
+   ],
+   [
+    "pivot",
+    614,
+    "lid",
+    2.75,
+    3.4,
+    false
+   ],
+   [
+    "pivot",
+    614,
+    "lid",
+    2.87,
+    3.4,
+    false
+   ],
+   [
+    "pivot",
+    617,
+    "lid",
+    2.96,
+    4.2,
+    false
+   ],
+   [
+    "pivot",
+    617,
+    "lid",
+    2.98,
+    4.3,
+    false
+   ]
+  ],
+  "hedge": 0.162,
+  "contact_min": 0.285,
+  "contact_with": "green",
+  "contacts": 0,
+  "place": [
+   0.019,
+   0.073,
+   0.056
+  ],
+  "gate_tries": 1,
+  "grabs": [
+   "success (MuJoCo gate",
+   "success (MuJoCo gate",
+   "success (MuJoCo gate"
+  ],
+  "last_dock": "D0 20:05",
+  "fast": {
+   "ends": 150.4,
+   "lane_s": 5647.2,
+   "narrow": 357.7,
+   "fast": 3802.8,
+   "float": 1365.6,
+   "gap": 834.5,
+   "object": 6.0,
+   "one_face": 352.9,
+   "fix": 173.0,
+   "ramp": 89.4,
+   "hedge_close": 18.8,
+   "bend": 10.6
+  }
+ },
+ {
+  "set": "fast_suite",
+  "run": "r61f_suite",
+  "scen": "s3b",
+  "seed": 23,
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [
+   [
+    "pickup",
+    40.7,
+    58.12,
+    "D0 18:00",
+    "D0 18:41"
+   ],
+   [
+    "pickup",
+    40.7,
+    58.14,
+    "D0 18:41",
+    "D0 19:22"
+   ],
+   [
+    "pickup",
+    42.0,
+    58.55,
+    "D0 19:22",
+    "D0 20:04"
+   ]
+  ],
+  "sim_min": 124.3,
+  "soc_end": 0.5117,
+  "corridor_stops": 1,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [
+   [
+    "pivot",
+    608,
+    "lid",
+    2.88,
+    3.4,
+    false
+   ],
+   [
+    "pivot",
+    614,
+    "lid",
+    2.79,
+    3.4,
+    false
+   ],
+   [
+    "pivot",
+    614,
+    "lid",
+    2.9,
+    3.4,
+    false
+   ],
+   [
+    "pivot",
+    618,
+    "lid",
+    2.88,
+    4.2,
+    false
+   ],
+   [
+    "pivot",
+    618,
+    "lid",
+    2.93,
+    4.3,
+    false
+   ],
+   [
+    "pivot",
+    618,
+    "lid",
+    2.96,
+    4.3,
+    false
+   ]
+  ],
+  "hedge": 0.198,
+  "contact_min": 0.27,
+  "contact_with": "green",
+  "contacts": 0,
+  "place": [
+   0.029,
+   0.073,
+   0.029
+  ],
+  "gate_tries": 1,
+  "grabs": [
+   "success (MuJoCo gate",
+   "success (MuJoCo gate",
+   "success (MuJoCo gate"
+  ],
+  "last_dock": "D0 20:04",
+  "fast": {
+   "ends": 152.8,
+   "lane_s": 5583.2,
+   "narrow": 347.2,
+   "fast": 3768.4,
+   "float": 1356.2,
+   "gap": 790.9,
+   "fix": 210.9,
+   "one_face": 375.5,
+   "hedge_close": 19.3,
+   "ramp": 88.0,
+   "bend": 12.2,
+   "object": 5.2
+  }
+ },
+ {
+  "set": "fast_suite",
+  "run": "r61f_suite",
+  "scen": "s3b",
+  "seed": 7,
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [
+   [
+    "pickup",
+    39.6,
+    57.49,
+    "D0 18:00",
+    "D0 18:40"
+   ],
+   [
+    "pickup",
+    40.5,
+    58.04,
+    "D0 18:40",
+    "D0 19:20"
+   ],
+   [
+    "pickup",
+    42.3,
+    58.81,
+    "D0 19:20",
+    "D0 20:03"
+   ]
+  ],
+  "sim_min": 123.3,
+  "soc_end": 0.5128,
+  "corridor_stops": 1,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [
+   [
+    "pivot",
+    608,
+    "lid",
+    2.82,
+    3.4,
+    false
+   ],
+   [
+    "pivot",
+    608,
+    "lid",
+    2.91,
+    3.5,
+    false
+   ],
+   [
+    "pivot",
+    614,
+    "lid",
+    2.85,
+    3.4,
+    false
+   ],
+   [
+    "pivot",
+    614,
+    "lid",
+    2.96,
+    3.5,
+    false
+   ],
+   [
+    "pivot",
+    617,
+    "lid",
+    2.89,
+    4.2,
+    false
+   ],
+   [
+    "pivot",
+    617,
+    "lid",
+    2.93,
+    4.3,
+    false
+   ],
+   [
+    "pivot",
+    617,
+    "lid",
+    2.97,
+    4.3,
+    false
+   ]
+  ],
+  "hedge": 0.222,
+  "contact_min": 0.249,
+  "contact_with": "green",
+  "contacts": 0,
+  "place": [
+   0.077,
+   0.031,
+   0.077
+  ],
+  "gate_tries": 1,
+  "grabs": [
+   "success (MuJoCo gate",
+   "success (MuJoCo gate",
+   "success (MuJoCo gate"
+  ],
+  "last_dock": "D0 20:03",
+  "fast": {
+   "ends": 153.1,
+   "lane_s": 5534.1,
+   "narrow": 344.2,
+   "fast": 3739.6,
+   "gap": 820.6,
+   "float": 1397.8,
+   "fix": 208.9,
+   "one_face": 365.0,
+   "ramp": 91.4,
+   "hedge_close": 8.0,
+   "bend": 12.5,
+   "object": 3.5
+  }
+ },
+ {
+  "set": "fast_suite",
+  "run": "r61f_suite",
+  "scen": "s4a",
+  "seed": 11,
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [],
+  "sim_min": 3.6,
+  "soc_end": 0.8934,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [],
+  "hedge": 0.292,
+  "contact_min": null,
+  "contact_with": null,
+  "contacts": 0,
+  "place": [],
+  "gate_tries": 0,
+  "grabs": [],
+  "last_dock": null,
+  "fast": {
+   "hedge_close": 0.3,
+   "lane_s": 154.6,
+   "fast": 101.7,
+   "float": 85.1,
+   "gap": 42.7,
+   "one_face": 1.4,
+   "object": 0.9,
+   "narrow": 7.6
+  }
+ },
+ {
+  "set": "fast_suite",
+  "run": "r61f_suite",
+  "scen": "s4a",
+  "seed": 23,
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [],
+  "sim_min": 3.5,
+  "soc_end": 0.8936,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [],
+  "hedge": 0.292,
+  "contact_min": null,
+  "contact_with": null,
+  "contacts": 0,
+  "place": [],
+  "gate_tries": 0,
+  "grabs": [],
+  "last_dock": null,
+  "fast": {
+   "hedge_close": 0.3,
+   "lane_s": 151.4,
+   "fast": 100.2,
+   "float": 112.6,
+   "gap": 41.7,
+   "fix": 0.1,
+   "one_face": 0.1,
+   "object": 1.4,
+   "narrow": 7.7
+  }
+ },
+ {
+  "set": "fast_suite",
+  "run": "r61f_suite",
+  "scen": "s4a",
+  "seed": 7,
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [],
+  "sim_min": 3.5,
+  "soc_end": 0.8936,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [],
+  "hedge": 0.292,
+  "contact_min": null,
+  "contact_with": null,
+  "contacts": 0,
+  "place": [],
+  "gate_tries": 0,
+  "grabs": [],
+  "last_dock": null,
+  "fast": {
+   "hedge_close": 0.3,
+   "lane_s": 151.0,
+   "fast": 99.1,
+   "gap": 39.6,
+   "float": 99.1,
+   "object": 1.8,
+   "fix": 2.9,
+   "one_face": 0.1,
+   "narrow": 7.3
+  }
+ },
+ {
+  "set": "fast_suite",
+  "run": "r61f_suite",
+  "scen": "s4b",
+  "seed": 11,
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [],
+  "sim_min": 3.8,
+  "soc_end": 0.8932,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [],
+  "hedge": 0.292,
+  "contact_min": null,
+  "contact_with": null,
+  "contacts": 0,
+  "place": [],
+  "gate_tries": 0,
+  "grabs": [],
+  "last_dock": null,
+  "fast": {
+   "hedge_close": 0.3,
+   "lane_s": 165.4,
+   "fast": 95.0,
+   "float": 6.9,
+   "gap": 12.9,
+   "one_face": 1.6,
+   "fix": 54.6,
+   "narrow": 9.4
+  }
+ },
+ {
+  "set": "fast_suite",
+  "run": "r61f_suite",
+  "scen": "s4b",
+  "seed": 23,
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [],
+  "sim_min": 3.8,
+  "soc_end": 0.8933,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [],
+  "hedge": 0.292,
+  "contact_min": null,
+  "contact_with": null,
+  "contacts": 0,
+  "place": [],
+  "gate_tries": 0,
+  "grabs": [],
+  "last_dock": null,
+  "fast": {
+   "hedge_close": 0.3,
+   "lane_s": 167.0,
+   "fast": 90.7,
+   "float": 42.6,
+   "gap": 21.6,
+   "object": 0.1,
+   "fix": 54.2,
+   "one_face": 0.1,
+   "narrow": 8.9
+  }
+ },
+ {
+  "set": "fast_suite",
+  "run": "r61f_suite",
+  "scen": "s4b",
+  "seed": 7,
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [],
+  "sim_min": 3.8,
+  "soc_end": 0.8929,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [],
+  "hedge": 0.293,
+  "contact_min": null,
+  "contact_with": null,
+  "contacts": 0,
+  "place": [],
+  "gate_tries": 0,
+  "grabs": [],
+  "last_dock": null,
+  "fast": {
+   "hedge_close": 0.3,
+   "lane_s": 170.3,
+   "fast": 97.9,
+   "float": 13.7,
+   "gap": 15.7,
+   "object": 0.4,
+   "fix": 55.2,
+   "one_face": 0.2,
+   "narrow": 9.5
+  }
+ },
+ {
+  "set": "fast_suite",
+  "run": "r61f_suite",
+  "scen": "s4c",
+  "seed": 11,
+  "result": "alert",
+  "outcome": "no fix hold",
+  "alerts": [
+   "no GNSS fix for 60 s after 25 m dead reckoning - holding in the lane"
+  ],
+  "trips": [],
+  "sim_min": 3.8,
+  "soc_end": 0.8938,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [],
+  "hedge": 0.293,
+  "contact_min": null,
+  "contact_with": null,
+  "contacts": 0,
+  "place": [],
+  "gate_tries": 0,
+  "grabs": [],
+  "last_dock": null,
+  "fast": {
+   "hedge_close": 0.3,
+   "lane_s": 108.4,
+   "fast": 21.5,
+   "float": 15.5,
+   "gap": 10.4,
+   "object": 0.1,
+   "one_face": 1.0,
+   "fix": 75.1,
+   "narrow": 8.5
+  }
+ },
+ {
+  "set": "fast_suite",
+  "run": "r61f_suite",
+  "scen": "s4c",
+  "seed": 23,
+  "result": "alert",
+  "outcome": "no fix hold",
+  "alerts": [
+   "no GNSS fix for 60 s after 25 m dead reckoning - holding in the lane"
+  ],
+  "trips": [],
+  "sim_min": 3.8,
+  "soc_end": 0.8938,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [],
+  "hedge": 0.292,
+  "contact_min": null,
+  "contact_with": null,
+  "contacts": 0,
+  "place": [],
+  "gate_tries": 0,
+  "grabs": [],
+  "last_dock": null,
+  "fast": {
+   "hedge_close": 0.3,
+   "lane_s": 108.4,
+   "fast": 20.2,
+   "float": 16.0,
+   "gap": 12.4,
+   "object": 0.1,
+   "fix": 75.4,
+   "one_face": 0.1,
+   "narrow": 9.2
+  }
+ },
+ {
+  "set": "fast_suite",
+  "run": "r61f_suite",
+  "scen": "s4c",
+  "seed": 7,
+  "result": "alert",
+  "outcome": "no fix hold",
+  "alerts": [
+   "no GNSS fix for 60 s after 25 m dead reckoning - holding in the lane"
+  ],
+  "trips": [],
+  "sim_min": 3.8,
+  "soc_end": 0.8938,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [],
+  "hedge": 0.292,
+  "contact_min": null,
+  "contact_with": null,
+  "contacts": 0,
+  "place": [],
+  "gate_tries": 0,
+  "grabs": [],
+  "last_dock": null,
+  "fast": {
+   "hedge_close": 0.3,
+   "lane_s": 107.4,
+   "fast": 19.2,
+   "gap": 11.9,
+   "float": 10.3,
+   "object": 0.3,
+   "fix": 75.7,
+   "one_face": 0.1,
+   "narrow": 7.9
+  }
+ },
+ {
+  "set": "fast_suite",
+  "run": "r61f_suite",
+  "scen": "s5a",
+  "seed": 11,
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [],
+  "sim_min": 4.1,
+  "soc_end": 0.8882,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [
+   [
+    314,
+    "cam",
+    4.89,
+    14.3,
+    true
+   ],
+   [
+    345,
+    "cam",
+    4.46,
+    39.0,
+    true
+   ]
+  ],
+  "pauses_other": [],
+  "hedge": 0.38,
+  "contact_min": 2.961,
+  "contact_with": "dog",
+  "contacts": 0,
+  "place": [],
+  "gate_tries": 0,
+  "grabs": [],
+  "last_dock": null,
+  "fast": {
+   "lane_s": 135.2,
+   "fast": 104.9,
+   "float": 49.7,
+   "object": 3.0,
+   "seen": 1.9,
+   "gap": 19.4,
+   "one_face": 5.8,
+   "fix": 0.1
+  }
+ },
+ {
+  "set": "fast_suite",
+  "run": "r61f_suite",
+  "scen": "s5a",
+  "seed": 23,
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [],
+  "sim_min": 4.0,
+  "soc_end": 0.8885,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [
+   [
+    314,
+    "cam",
+    4.83,
+    13.1,
+    true
+   ],
+   [
+    344,
+    "cam",
+    4.93,
+    9.0,
+    true
+   ],
+   [
+    346,
+    "lid",
+    2.92,
+    25.8,
+    true
+   ]
+  ],
+  "pauses_other": [],
+  "hedge": 0.38,
+  "contact_min": 3.564,
+  "contact_with": "dog",
+  "contacts": 0,
+  "place": [],
+  "gate_tries": 0,
+  "grabs": [],
+  "last_dock": null,
+  "fast": {
+   "lane_s": 136.5,
+   "fast": 105.8,
+   "float": 47.9,
+   "object": 3.1,
+   "seen": 2.1,
+   "fix": 4.4,
+   "gap": 15.5,
+   "one_face": 5.3
+  }
+ },
+ {
+  "set": "fast_suite",
+  "run": "r61f_suite",
+  "scen": "s5a",
+  "seed": 7,
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [],
+  "sim_min": 3.4,
+  "soc_end": 0.8888,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [
+   [
+    314,
+    "cam",
+    4.91,
+    14.5,
+    true
+   ],
+   [
+    345,
+    "cam",
+    3.83,
+    8.7,
+    true
+   ]
+  ],
+  "pauses_other": [],
+  "hedge": 0.365,
+  "contact_min": 2.732,
+  "contact_with": "dog",
+  "contacts": 0,
+  "place": [],
+  "gate_tries": 0,
+  "grabs": [],
+  "last_dock": null,
+  "fast": {
+   "lane_s": 125.8,
+   "fast": 96.8,
+   "float": 14.5,
+   "object": 2.7,
+   "seen": 1.8,
+   "gap": 19.1,
+   "one_face": 5.2
+  }
+ },
+ {
+  "set": "fast_suite",
+  "run": "r61f_suite",
+  "scen": "s5b",
+  "seed": 11,
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [],
+  "sim_min": 4.6,
+  "soc_end": 0.8943,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [
+   [
+    617,
+    "lid",
+    2.99,
+    43.0,
+    false
+   ]
+  ],
+  "pauses_other": [],
+  "hedge": 0.339,
+  "contact_min": 0.705,
+  "contact_with": "black",
+  "contacts": 0,
+  "place": [
+   0.019
+  ],
+  "gate_tries": 0,
+  "grabs": [],
+  "last_dock": null,
+  "fast": {
+   "lane_s": 62.8,
+   "fast": 26.1,
+   "ramp": 36.7,
+   "ends": 30.1
+  }
+ },
+ {
+  "set": "fast_suite",
+  "run": "r61f_suite",
+  "scen": "s5b",
+  "seed": 23,
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [],
+  "sim_min": 4.7,
+  "soc_end": 0.8941,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [
+   [
+    617,
+    "lid",
+    2.96,
+    46.5,
+    false
+   ]
+  ],
+  "pauses_other": [],
+  "hedge": 0.353,
+  "contact_min": 0.715,
+  "contact_with": "black",
+  "contacts": 0,
+  "place": [
+   0.019
+  ],
+  "gate_tries": 0,
+  "grabs": [],
+  "last_dock": null,
+  "fast": {
+   "float": 17.6,
+   "lane_s": 66.6,
+   "fast": 29.4,
+   "ramp": 37.2,
+   "ends": 30.5
+  }
+ },
+ {
+  "set": "fast_suite",
+  "run": "r61f_suite",
+  "scen": "s5b",
+  "seed": 7,
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [],
+  "sim_min": 4.6,
+  "soc_end": 0.8943,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [
+   [
+    617,
+    "lid",
+    2.97,
+    43.7,
+    false
+   ]
+  ],
+  "pauses_other": [],
+  "hedge": 0.356,
+  "contact_min": 0.589,
+  "contact_with": "black",
+  "contacts": 0,
+  "place": [
+   0.011
+  ],
+  "gate_tries": 0,
+  "grabs": [],
+  "last_dock": null,
+  "fast": {
+   "lane_s": 62.1,
+   "fast": 26.0,
+   "ramp": 36.1,
+   "ends": 29.4
+  }
+ },
+ {
+  "set": "fast_suite",
+  "run": "r61f_suite",
+  "scen": "s6a",
+  "seed": 11,
+  "result": "alert",
+  "outcome": "companion freeze -> firmware HOLD",
+  "alerts": [],
+  "trips": [],
+  "sim_min": 2.1,
+  "soc_end": 0.8984,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [],
+  "hedge": 0.368,
+  "contact_min": null,
+  "contact_with": null,
+  "contacts": 0,
+  "place": [],
+  "gate_tries": 0,
+  "grabs": [],
+  "last_dock": null,
+  "fast": {
+   "lane_s": 45.4,
+   "fast": 31.9,
+   "gap": 10.0,
+   "float": 2.6,
+   "fix": 2.0,
+   "one_face": 3.5
+  }
+ },
+ {
+  "set": "fast_suite",
+  "run": "r61f_suite",
+  "scen": "s6a",
+  "seed": 23,
+  "result": "alert",
+  "outcome": "companion freeze -> firmware HOLD",
+  "alerts": [],
+  "trips": [],
+  "sim_min": 2.1,
+  "soc_end": 0.8984,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [],
+  "hedge": 0.346,
+  "contact_min": null,
+  "contact_with": null,
+  "contacts": 0,
+  "place": [],
+  "gate_tries": 0,
+  "grabs": [],
+  "last_dock": null,
+  "fast": {
+   "float": 17.5,
+   "lane_s": 45.0,
+   "fast": 32.1,
+   "gap": 10.5,
+   "fix": 2.4,
+   "one_face": 2.4
+  }
+ },
+ {
+  "set": "fast_suite",
+  "run": "r61f_suite",
+  "scen": "s6a",
+  "seed": 7,
+  "result": "alert",
+  "outcome": "companion freeze -> firmware HOLD",
+  "alerts": [],
+  "trips": [],
+  "sim_min": 2.1,
+  "soc_end": 0.8984,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [],
+  "hedge": 0.306,
+  "contact_min": null,
+  "contact_with": null,
+  "contacts": 0,
+  "place": [],
+  "gate_tries": 0,
+  "grabs": [],
+  "last_dock": null,
+  "fast": {
+   "lane_s": 44.9,
+   "fast": 31.8,
+   "hedge_close": 0.1,
+   "gap": 10.7,
+   "one_face": 2.3
+  }
+ },
+ {
+  "set": "fast_suite",
+  "run": "r61f_suite",
+  "scen": "s6b",
+  "seed": 11,
+  "result": "alert",
+  "outcome": "companion freeze -> firmware HOLD",
+  "alerts": [],
+  "trips": [],
+  "sim_min": 2.5,
+  "soc_end": 0.898,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [],
+  "hedge": 0.423,
+  "contact_min": 0.48,
+  "contact_with": "black",
+  "contacts": 0,
+  "place": [],
+  "gate_tries": 1,
+  "grabs": [],
+  "last_dock": null,
+  "fast": null
+ },
+ {
+  "set": "fast_suite",
+  "run": "r61f_suite",
+  "scen": "s6b",
+  "seed": 23,
+  "result": "alert",
+  "outcome": "companion freeze -> firmware HOLD",
+  "alerts": [],
+  "trips": [],
+  "sim_min": 2.4,
+  "soc_end": 0.8981,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [
+   [
+    "yard",
+    618,
+    "lid",
+    2.95,
+    3.1,
+    false
+   ]
+  ],
+  "hedge": 0.411,
+  "contact_min": 0.471,
+  "contact_with": "black",
+  "contacts": 0,
+  "place": [],
+  "gate_tries": 1,
+  "grabs": [],
+  "last_dock": null,
+  "fast": null
+ },
+ {
+  "set": "fast_suite",
+  "run": "r61f_suite",
+  "scen": "s6b",
+  "seed": 7,
+  "result": "alert",
+  "outcome": "companion freeze -> firmware HOLD",
+  "alerts": [],
+  "trips": [],
+  "sim_min": 2.4,
+  "soc_end": 0.8981,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [],
+  "hedge": 0.361,
+  "contact_min": 0.523,
+  "contact_with": "black",
+  "contacts": 0,
+  "place": [],
+  "gate_tries": 1,
+  "grabs": [],
+  "last_dock": null,
+  "fast": null
+ },
+ {
+  "set": "fast_suite",
+  "run": "r61f_suite",
+  "scen": "s7",
+  "seed": 11,
+  "result": "alert",
+  "outcome": "e-stop",
+  "alerts": [
+   "E-stop pressed: robot stopped 0.04 m / 0.3 s"
+  ],
+  "trips": [],
+  "sim_min": 2.3,
+  "soc_end": 0.8982,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [],
+  "hedge": 0.368,
+  "contact_min": null,
+  "contact_with": null,
+  "contacts": 0,
+  "place": [],
+  "gate_tries": 0,
+  "grabs": [],
+  "last_dock": null,
+  "fast": {
+   "lane_s": 79.7,
+   "fast": 40.7,
+   "gap": 14.6,
+   "float": 8.3,
+   "fix": 21.3,
+   "one_face": 24.4
+  }
+ },
+ {
+  "set": "fast_suite",
+  "run": "r61f_suite",
+  "scen": "s7",
+  "seed": 23,
+  "result": "alert",
+  "outcome": "e-stop",
+  "alerts": [
+   "E-stop pressed: robot stopped 0.04 m / 0.2 s"
+  ],
+  "trips": [],
+  "sim_min": 2.3,
+  "soc_end": 0.8982,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [],
+  "hedge": 0.346,
+  "contact_min": null,
+  "contact_with": null,
+  "contacts": 0,
+  "place": [],
+  "gate_tries": 0,
+  "grabs": [],
+  "last_dock": null,
+  "fast": {
+   "float": 27.1,
+   "lane_s": 80.3,
+   "fast": 40.4,
+   "gap": 15.8,
+   "fix": 23.0,
+   "one_face": 24.1
+  }
+ },
+ {
+  "set": "fast_suite",
+  "run": "r61f_suite",
+  "scen": "s7",
+  "seed": 7,
+  "result": "alert",
+  "outcome": "e-stop",
+  "alerts": [
+   "E-stop pressed: robot stopped 0.04 m / 0.3 s"
+  ],
+  "trips": [],
+  "sim_min": 2.3,
+  "soc_end": 0.8982,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [],
+  "hedge": 0.306,
+  "contact_min": null,
+  "contact_with": null,
+  "contacts": 0,
+  "place": [],
+  "gate_tries": 0,
+  "grabs": [],
+  "last_dock": null,
+  "fast": {
+   "lane_s": 80.4,
+   "fast": 40.5,
+   "gap": 16.4,
+   "one_face": 23.5,
+   "fix": 6.0,
+   "float": 8.8
+  }
+ },
+ {
+  "set": "fast_suite",
+  "run": "r61f_suite",
+  "scen": "s8",
+  "seed": 11,
+  "result": "alert",
+  "outcome": "energy guard",
+  "alerts": [
+   "energy guard: 32 Wh available above the 10 % reserve < 80 Wh trip budget - trip refused, s"
+  ],
+  "trips": [],
+  "sim_min": 0.8,
+  "soc_end": 0.1697,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [],
+  "hedge": null,
+  "contact_min": 3.751,
+  "contact_with": "black",
+  "contacts": 0,
+  "place": [],
+  "gate_tries": 0,
+  "grabs": [],
+  "last_dock": null,
+  "fast": null
+ },
+ {
+  "set": "fast_suite",
+  "run": "r61f_suite",
+  "scen": "s8",
+  "seed": 23,
+  "result": "alert",
+  "outcome": "energy guard",
+  "alerts": [
+   "energy guard: 32 Wh available above the 10 % reserve < 80 Wh trip budget - trip refused, s"
+  ],
+  "trips": [],
+  "sim_min": 0.8,
+  "soc_end": 0.1697,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [],
+  "hedge": null,
+  "contact_min": 3.751,
+  "contact_with": "black",
+  "contacts": 0,
+  "place": [],
+  "gate_tries": 0,
+  "grabs": [],
+  "last_dock": null,
+  "fast": null
+ },
+ {
+  "set": "fast_suite",
+  "run": "r61f_suite",
+  "scen": "s8",
+  "seed": 7,
+  "result": "alert",
+  "outcome": "energy guard",
+  "alerts": [
+   "energy guard: 32 Wh available above the 10 % reserve < 80 Wh trip budget - trip refused, s"
+  ],
+  "trips": [],
+  "sim_min": 0.8,
+  "soc_end": 0.1698,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [],
+  "hedge": null,
+  "contact_min": 3.751,
+  "contact_with": "black",
+  "contacts": 0,
+  "place": [],
+  "gate_tries": 0,
+  "grabs": [],
+  "last_dock": null,
+  "fast": null
+ },
+ {
+  "set": "fast_suite",
+  "run": "r61f_suite",
+  "scen": "s9",
+  "seed": 11,
+  "result": "alert",
+  "outcome": "bin missing",
+  "alerts": [
+   "bin black not found at A (lidar: 0 returns) - photo sent, heading home empty"
+  ],
+  "trips": [],
+  "sim_min": 3.6,
+  "soc_end": 0.894,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [],
+  "hedge": 0.381,
+  "contact_min": null,
+  "contact_with": null,
+  "contacts": 0,
+  "place": [],
+  "gate_tries": 0,
+  "grabs": [],
+  "last_dock": null,
+  "fast": {
+   "lane_s": 127.4,
+   "fast": 60.7,
+   "float": 6.8,
+   "ramp": 54.5,
+   "ends": 32.4
+  }
+ },
+ {
+  "set": "fast_suite",
+  "run": "r61f_suite",
+  "scen": "s9",
+  "seed": 23,
+  "result": "alert",
+  "outcome": "bin missing",
+  "alerts": [
+   "bin black not found at A (lidar: 0 returns) - photo sent, heading home empty"
+  ],
+  "trips": [],
+  "sim_min": 3.7,
+  "soc_end": 0.8939,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [],
+  "hedge": 0.381,
+  "contact_min": null,
+  "contact_with": null,
+  "contacts": 0,
+  "place": [],
+  "gate_tries": 0,
+  "grabs": [],
+  "last_dock": null,
+  "fast": {
+   "lane_s": 131.7,
+   "fast": 65.6,
+   "float": 21.3,
+   "gap": 0.2,
+   "ramp": 53.7,
+   "ends": 33.2
+  }
+ },
+ {
+  "set": "fast_suite",
+  "run": "r61f_suite",
+  "scen": "s9",
+  "seed": 7,
+  "result": "alert",
+  "outcome": "bin missing",
+  "alerts": [
+   "bin black not found at A (lidar: 0 returns) - photo sent, heading home empty"
+  ],
+  "trips": [],
+  "sim_min": 3.6,
+  "soc_end": 0.8939,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [],
+  "hedge": 0.331,
+  "contact_min": null,
+  "contact_with": null,
+  "contacts": 0,
+  "place": [],
+  "gate_tries": 0,
+  "grabs": [],
+  "last_dock": null,
+  "fast": {
+   "lane_s": 129.8,
+   "fast": 62.6,
+   "float": 16.7,
+   "ramp": 55.0,
+   "ends": 32.9
+  }
+ },
+ {
+  "set": "start",
+  "run": "r61s_trips",
+  "scen": "s1a",
+  "seed": 11,
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [
+   [
+    "drop",
+    65.5,
+    70.09,
+    "D-1 18:00",
+    "D-1 19:06"
+   ]
+  ],
+  "sim_min": 66.3,
+  "soc_end": 0.749,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [],
+  "hedge": 0.221,
+  "contact_min": 0.35,
+  "contact_with": "black",
+  "contacts": 0,
+  "place": [
+   0.043
+  ],
+  "gate_tries": 1,
+  "grabs": [
+   "success (MuJoCo gate"
+  ],
+  "last_dock": "D-1 19:06",
+  "fast": null
+ },
+ {
+  "set": "start",
+  "run": "r61s_trips",
+  "scen": "s1a",
+  "seed": 23,
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [
+   [
+    "drop",
+    65.6,
+    70.11,
+    "D-1 18:00",
+    "D-1 19:06"
+   ]
+  ],
+  "sim_min": 66.3,
+  "soc_end": 0.7489,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [
+   [
+    64,
+    "lid",
+    2.94,
+    3.4,
+    false
+   ]
+  ],
+  "pauses_other": [],
+  "hedge": 0.224,
+  "contact_min": 0.332,
+  "contact_with": "black",
+  "contacts": 0,
+  "place": [
+   0.032
+  ],
+  "gate_tries": 1,
+  "grabs": [
+   "success (MuJoCo gate"
+  ],
+  "last_dock": "D-1 19:06",
+  "fast": null
+ },
+ {
+  "set": "start",
+  "run": "r61s_trips",
+  "scen": "s1a",
+  "seed": 7,
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [
+   [
+    "drop",
+    65.7,
+    70.27,
+    "D-1 18:00",
+    "D-1 19:06"
+   ]
+  ],
+  "sim_min": 66.5,
+  "soc_end": 0.7486,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [],
+  "hedge": 0.246,
+  "contact_min": 0.401,
+  "contact_with": "black",
+  "contacts": 0,
+  "place": [
+   0.052
+  ],
+  "gate_tries": 1,
+  "grabs": [
+   "success (MuJoCo gate"
+  ],
+  "last_dock": "D-1 19:06",
+  "fast": null
+ },
+ {
+  "set": "start",
+  "run": "r61s_trips",
+  "scen": "s1b",
+  "seed": 11,
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [
+   [
+    "pickup",
+    73.8,
+    72.83,
+    "D0 18:00",
+    "D0 19:14"
+   ]
+  ],
+  "sim_min": 74.6,
+  "soc_end": 0.7431,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [
+   [
+    "pivot",
+    617,
+    "lid",
+    2.95,
+    3.2,
+    false
+   ]
+  ],
+  "hedge": 0.213,
+  "contact_min": 0.497,
+  "contact_with": "black",
+  "contacts": 0,
+  "place": [
+   0.084
+  ],
+  "gate_tries": 1,
+  "grabs": [
+   "success (MuJoCo gate"
+  ],
+  "last_dock": "D0 19:14",
+  "fast": null
+ },
+ {
+  "set": "start",
+  "run": "r61s_trips",
+  "scen": "s1b",
+  "seed": 23,
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [
+   [
+    "pickup",
+    74.4,
+    73.16,
+    "D0 18:00",
+    "D0 19:15"
+   ]
+  ],
+  "sim_min": 75.2,
+  "soc_end": 0.7424,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [
+   [
+    "pivot",
+    617,
+    "lid",
+    2.93,
+    3.4,
+    false
+   ]
+  ],
+  "hedge": 0.196,
+  "contact_min": 0.404,
+  "contact_with": "black",
+  "contacts": 0,
+  "place": [
+   0.061
+  ],
+  "gate_tries": 1,
+  "grabs": [
+   "success (MuJoCo gate"
+  ],
+  "last_dock": "D0 19:15",
+  "fast": null
+ },
+ {
+  "set": "start",
+  "run": "r61s_trips",
+  "scen": "s1b",
+  "seed": 7,
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [
+   [
+    "pickup",
+    74.8,
+    73.36,
+    "D0 18:00",
+    "D0 19:15"
+   ]
+  ],
+  "sim_min": 75.6,
+  "soc_end": 0.7419,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [
+   [
+    "pivot",
+    617,
+    "lid",
+    2.98,
+    3.2,
+    false
+   ]
+  ],
+  "hedge": 0.206,
+  "contact_min": 0.46,
+  "contact_with": "black",
+  "contacts": 0,
+  "place": [
+   0.088
+  ],
+  "gate_tries": 1,
+  "grabs": [
+   "success (MuJoCo gate"
+  ],
+  "last_dock": "D0 19:15",
+  "fast": null
+ },
+ {
+  "set": "start",
+  "run": "r61s_trips",
+  "scen": "s3a",
+  "seed": 7,
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [
+   [
+    "drop",
+    74.1,
+    72.92,
+    "D-1 18:00",
+    "D-1 19:14"
+   ],
+   [
+    "drop",
+    65.1,
+    69.91,
+    "D-1 19:14",
+    "D-1 20:19"
+   ],
+   [
+    "drop",
+    64.9,
+    69.51,
+    "D-1 20:19",
+    "D-1 21:24"
+   ]
+  ],
+  "sim_min": 204.9,
+  "soc_end": 0.4285,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [
+   [
+    "yard",
+    13,
+    "lid",
+    1.68,
+    3.3,
+    false
+   ],
+   [
+    "yard",
+    13,
+    "lid",
+    1.18,
+    3.2,
+    false
+   ]
+  ],
+  "hedge": 0.209,
+  "contact_min": 0.312,
+  "contact_with": "brown",
+  "contacts": 0,
+  "place": [
+   0.021,
+   0.037,
+   0.046
+  ],
+  "gate_tries": 1,
+  "grabs": [
+   "success (MuJoCo gate",
+   "success (MuJoCo gate",
+   "success (MuJoCo gate"
+  ],
+  "last_dock": "D-1 21:24",
+  "fast": null
+ },
+ {
+  "set": "start",
+  "run": "r61s_trips",
+  "scen": "s3b",
+  "seed": 7,
+  "result": "alert",
+  "outcome": "too late",
+  "alerts": [
+   "bye-law: a return started now would end after 21:00 (trip 78 min) - not started"
+  ],
+  "trips": [
+   [
+    "pickup",
+    73.9,
+    72.47,
+    "D0 18:00",
+    "D0 19:14"
+   ],
+   [
+    "pickup",
+    73.5,
+    72.66,
+    "D0 19:14",
+    "D0 20:28"
+   ]
+  ],
+  "sim_min": 148.3,
+  "soc_end": 0.5776,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [
+   [
+    "pivot",
+    608,
+    "lid",
+    2.82,
+    3.4,
+    false
+   ],
+   [
+    "pivot",
+    608,
+    "lid",
+    2.95,
+    3.5,
+    false
+   ],
+   [
+    "pivot",
+    614,
+    "lid",
+    2.91,
+    4.2,
+    false
+   ],
+   [
+    "pivot",
+    614,
+    "lid",
+    2.94,
+    4.3,
+    false
+   ],
+   [
+    "pivot",
+    614,
+    "lid",
+    2.97,
+    4.3,
+    false
+   ]
+  ],
+  "hedge": 0.209,
+  "contact_min": 0.483,
+  "contact_with": "green",
+  "contacts": 0,
+  "place": [
+   0.015,
+   0.065
+  ],
+  "gate_tries": 1,
+  "grabs": [
+   "success (MuJoCo gate",
+   "success (MuJoCo gate"
+  ],
+  "last_dock": "D0 20:28",
+  "fast": null
+ },
+ {
+  "set": "start_1630",
+  "run": "r61s_ret1630",
+  "scen": "s3b",
+  "seed": 7,
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [
+   [
+    "pickup",
+    73.1,
+    71.99,
+    "D0 16:30",
+    "D0 17:43"
+   ],
+   [
+    "pickup",
+    74.3,
+    73.0,
+    "D0 17:43",
+    "D0 18:57"
+   ],
+   [
+    "pickup",
+    74.4,
+    72.72,
+    "D0 18:57",
+    "D0 20:11"
+   ]
+  ],
+  "sim_min": 222.6,
+  "soc_end": 0.4165,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [
+   [
+    "pivot",
+    608,
+    "lid",
+    2.88,
+    3.2,
+    false
+   ],
+   [
+    "pivot",
+    608,
+    "lid",
+    2.96,
+    3.2,
+    false
+   ],
+   [
+    "pivot",
+    614,
+    "lid",
+    2.94,
+    4.4,
+    false
+   ],
+   [
+    "pivot",
+    614,
+    "lid",
+    2.97,
+    4.3,
+    false
+   ],
+   [
+    "pivot",
+    617,
+    "lid",
+    2.95,
+    4.2,
+    false
+   ],
+   [
+    "pivot",
+    617,
+    "lid",
+    2.98,
+    4.3,
+    false
+   ],
+   [
+    "yard",
+    13,
+    "lid",
+    1.43,
+    4.1,
+    false
+   ]
+  ],
+  "hedge": 0.206,
+  "contact_min": 0.272,
+  "contact_with": "green",
+  "contacts": 0,
+  "place": [
+   0.075,
+   0.027,
+   0.094
+  ],
+  "gate_tries": 1,
+  "grabs": [
+   "success (MuJoCo gate",
+   "success (MuJoCo gate",
+   "success (MuJoCo gate"
+  ],
+  "last_dock": "D0 20:11",
+  "fast": null
+ },
+ {
+  "set": "level1",
+  "run": "r61b1_trip",
+  "scen": "s1a",
+  "seed": 7,
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [
+   [
+    "drop",
+    36.6,
+    59.18,
+    "D-1 18:00",
+    "D-1 18:37"
+   ]
+  ],
+  "sim_min": 37.4,
+  "soc_end": 0.7725,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [],
+  "hedge": 0.215,
+  "contact_min": 0.401,
+  "contact_with": "black",
+  "contacts": 0,
+  "place": [
+   0.047
+  ],
+  "gate_tries": 1,
+  "grabs": [
+   "success (MuJoCo gate"
+  ],
+  "last_dock": "D-1 18:37",
+  "fast": {
+   "ends": 52.9,
+   "lane_s": 1492.1,
+   "fast": 999.7,
+   "gap": 237.5,
+   "float": 309.3,
+   "fix": 48.7,
+   "one_face": 103.8,
+   "narrow": 83.6,
+   "hedge_close": 2.0,
+   "ramp": 22.5,
+   "object": 0.5,
+   "bend": 5.4
+  }
+ },
+ {
+  "set": "level1",
+  "run": "r61b1_trip",
+  "scen": "s1b",
+  "seed": 7,
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [
+   [
+    "pickup",
+    40.2,
+    59.54,
+    "D0 18:00",
+    "D0 18:41"
+   ]
+  ],
+  "sim_min": 41.0,
+  "soc_end": 0.7717,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [
+   [
+    "pivot",
+    617,
+    "lid",
+    2.9,
+    3.4,
+    false
+   ],
+   [
+    "pivot",
+    617,
+    "lid",
+    2.99,
+    3.2,
+    false
+   ]
+  ],
+  "hedge": 0.219,
+  "contact_min": 0.528,
+  "contact_with": "black",
+  "contacts": 0,
+  "place": [
+   0.06
+  ],
+  "gate_tries": 1,
+  "grabs": [
+   "success (MuJoCo gate"
+  ],
+  "last_dock": "D0 18:41",
+  "fast": {
+   "ends": 66.4,
+   "lane_s": 1678.5,
+   "fast": 1103.6,
+   "object": 3.0,
+   "gap": 286.2,
+   "float": 278.0,
+   "fix": 47.9,
+   "one_face": 110.0,
+   "narrow": 87.7,
+   "hedge_close": 1.8,
+   "ramp": 28.3,
+   "bend": 5.2
+  }
+ },
+ {
+  "set": "level2",
+  "run": "r61b2_trip",
+  "scen": "s1a",
+  "seed": 7,
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [
+   [
+    "drop",
+    37.4,
+    63.1,
+    "D-1 18:00",
+    "D-1 18:38"
+   ]
+  ],
+  "sim_min": 38.2,
+  "soc_end": 0.764,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [],
+  "hedge": 0.2,
+  "contact_min": 0.401,
+  "contact_with": "black",
+  "contacts": 0,
+  "place": [
+   0.057
+  ],
+  "gate_tries": 1,
+  "grabs": [
+   "success (MuJoCo gate"
+  ],
+  "last_dock": "D-1 18:38",
+  "fast": {
+   "ends": 52.5,
+   "lane_s": 1534.2,
+   "gap": 338.6,
+   "fast": 942.5,
+   "object": 1.2,
+   "float": 300.6,
+   "fix": 58.9,
+   "one_face": 110.2,
+   "narrow": 75.4,
+   "hedge_close": 2.7,
+   "ramp": 21.6,
+   "bend": 5.5
+  }
+ },
+ {
+  "set": "level2",
+  "run": "r61b2_trip",
+  "scen": "s1b",
+  "seed": 7,
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [
+   [
+    "pickup",
+    41.5,
+    63.24,
+    "D0 18:00",
+    "D0 18:42"
+   ]
+  ],
+  "sim_min": 42.3,
+  "soc_end": 0.7637,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [
+   [
+    "pivot",
+    617,
+    "lid",
+    2.93,
+    3.4,
+    false
+   ]
+  ],
+  "hedge": 0.196,
+  "contact_min": 0.418,
+  "contact_with": "black",
+  "contacts": 0,
+  "place": [
+   0.045
+  ],
+  "gate_tries": 1,
+  "grabs": [
+   "success (MuJoCo gate"
+  ],
+  "last_dock": "D0 18:42",
+  "fast": {
+   "ends": 64.6,
+   "lane_s": 1737.8,
+   "fast": 1071.2,
+   "gap": 381.1,
+   "object": 1.9,
+   "float": 315.9,
+   "fix": 64.7,
+   "one_face": 116.8,
+   "narrow": 77.3,
+   "hedge_close": 1.8,
+   "ramp": 29.1,
+   "bend": 5.8
+  }
+ },
+ {
+  "set": "leaf",
+  "run": "r61f_leaf",
+  "scen": "s1a",
+  "seed": 7,
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [
+   [
+    "drop",
+    38.5,
+    58.8,
+    "D-1 18:00",
+    "D-1 18:39"
+   ]
+  ],
+  "sim_min": 39.3,
+  "soc_end": 0.7733,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [],
+  "hedge": 0.234,
+  "contact_min": 0.318,
+  "contact_with": "black",
+  "contacts": 0,
+  "place": [
+   0.023
+  ],
+  "gate_tries": 1,
+  "grabs": [
+   "success (MuJoCo gate"
+  ],
+  "last_dock": "D-1 18:39",
+  "fast": {
+   "ends": 59.4,
+   "lane_s": 1602.4,
+   "narrow": 100.3,
+   "fast": 1096.3,
+   "gap": 229.9,
+   "float": 321.0,
+   "object": 1.6,
+   "fix": 60.3,
+   "one_face": 95.9,
+   "ramp": 21.7,
+   "hedge_close": 1.5,
+   "bend": 3.5
+  }
+ },
+ {
+  "set": "leaf",
+  "run": "r61f_leaf",
+  "scen": "s1b",
+  "seed": 7,
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [
+   [
+    "pickup",
+    49.9,
+    63.1,
+    "D0 18:00",
+    "D0 18:50"
+   ]
+  ],
+  "sim_min": 50.7,
+  "soc_end": 0.764,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [
+   [
+    "pivot",
+    618,
+    "lid",
+    2.82,
+    3.4,
+    false
+   ],
+   [
+    "pivot",
+    618,
+    "lid",
+    2.95,
+    3.4,
+    false
+   ]
+  ],
+  "hedge": 0.246,
+  "contact_min": 0.49,
+  "contact_with": "black",
+  "contacts": 0,
+  "place": [
+   0.085
+  ],
+  "gate_tries": 1,
+  "grabs": [
+   "success (MuJoCo gate"
+  ],
+  "last_dock": "D0 18:50",
+  "fast": {
+   "ends": 68.6,
+   "lane_s": 2157.8,
+   "narrow": 109.7,
+   "fast": 958.1,
+   "gap": 238.5,
+   "float": 512.0,
+   "object": 0.3,
+   "one_face": 123.8,
+   "fix": 76.8,
+   "hedge_close": 2.3,
+   "ramp": 30.0,
+   "bend": 3.2
+  }
+ },
+ {
+  "set": "phantom",
+  "run": "r61f_phantom",
+  "scen": "s1a",
+  "seed": 7,
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [
+   [
+    "drop",
+    39.0,
+    59.49,
+    "D-1 18:00",
+    "D-1 18:39"
+   ]
+  ],
+  "sim_min": 39.8,
+  "soc_end": 0.7718,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [
+   [
+    253,
+    "cam",
+    2.05,
+    4.2,
+    true
+   ],
+   [
+    302,
+    "cam",
+    2.02,
+    4.2,
+    true
+   ],
+   [
+    476,
+    "cam",
+    1.84,
+    4.2,
+    true
+   ],
+   [
+    481,
+    "cam",
+    1.85,
+    4.2,
+    true
+   ],
+   [
+    433,
+    "cam",
+    2.31,
+    4.2,
+    true
+   ],
+   [
+    196,
+    "cam",
+    2.2,
+    4.2,
+    true
+   ]
+  ],
+  "pauses_other": [
+   [
+    "yard",
+    21,
+    "cam",
+    1.77,
+    4.0,
+    true
+   ]
+  ],
+  "hedge": 0.24,
+  "contact_min": 0.401,
+  "contact_with": "black",
+  "contacts": 0,
+  "place": [
+   0.018
+  ],
+  "gate_tries": 1,
+  "grabs": [
+   "success (MuJoCo gate"
+  ],
+  "last_dock": "D-1 18:39",
+  "fast": {
+   "ends": 52.6,
+   "lane_s": 1590.7,
+   "narrow": 105.9,
+   "fast": 1089.7,
+   "gap": 210.0,
+   "float": 290.4,
+   "object": 0.6,
+   "fix": 54.9,
+   "one_face": 95.6,
+   "seen": 16.2,
+   "hedge_close": 2.5,
+   "ramp": 21.7,
+   "bend": 3.0
+  }
+ },
+ {
+  "set": "phantom",
+  "run": "r61f_phantom",
+  "scen": "s1b",
+  "seed": 7,
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [
+   [
+    "pickup",
+    42.4,
+    59.57,
+    "D0 18:00",
+    "D0 18:43"
+   ]
+  ],
+  "sim_min": 43.2,
+  "soc_end": 0.7716,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [
+   [
+    26,
+    "cam",
+    1.77,
+    4.0,
+    true
+   ],
+   [
+    194,
+    "cam",
+    2.05,
+    4.2,
+    true
+   ],
+   [
+    223,
+    "cam",
+    2.02,
+    4.2,
+    true
+   ],
+   [
+    341,
+    "cam",
+    1.84,
+    4.2,
+    true
+   ],
+   [
+    347,
+    "cam",
+    1.85,
+    4.2,
+    true
+   ],
+   [
+    552,
+    "cam",
+    2.31,
+    4.2,
+    true
+   ],
+   [
+    338,
+    "cam",
+    2.2,
+    4.2,
+    true
+   ]
+  ],
+  "pauses_other": [
+   [
+    "pivot",
+    617,
+    "lid",
+    2.91,
+    3.4,
+    false
+   ]
+  ],
+  "hedge": 0.207,
+  "contact_min": 0.49,
+  "contact_with": "black",
+  "contacts": 0,
+  "place": [
+   0.05
+  ],
+  "gate_tries": 1,
+  "grabs": [
+   "success (MuJoCo gate"
+  ],
+  "last_dock": "D0 18:43",
+  "fast": {
+   "ends": 64.5,
+   "lane_s": 1764.3,
+   "narrow": 106.7,
+   "fast": 1190.5,
+   "gap": 246.6,
+   "float": 380.3,
+   "object": 0.3,
+   "fix": 49.9,
+   "one_face": 113.2,
+   "seen": 12.6,
+   "hedge_close": 5.7,
+   "ramp": 29.2,
+   "bend": 3.0
+  }
+ },
+ {
+  "set": "leafnogo",
+  "run": "r61f_leafnogo",
+  "scen": "s1b",
+  "seed": 7,
+  "result": "alert",
+  "outcome": "leaf season",
+  "alerts": [
+   "leaf season switch is on: the robot does not go down the hill without a bin - pick-up not "
+  ],
+  "trips": [],
+  "sim_min": 0.8,
+  "soc_end": 0.8997,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [],
+  "hedge": null,
+  "contact_min": null,
+  "contact_with": null,
+  "contacts": 0,
+  "place": [],
+  "gate_tries": 0,
+  "grabs": [],
+  "last_dock": null,
+  "fast": null
+ },
+ {
+  "set": "mid",
+  "run": "r61m_trip",
+  "scen": "s1a",
+  "seed": 7,
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [
+   [
+    "drop",
+    45.1,
+    61.09,
+    "D-1 18:00",
+    "D-1 18:45"
+   ]
+  ],
+  "sim_min": 45.9,
+  "soc_end": 0.7683,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [],
+  "hedge": 0.215,
+  "contact_min": 0.365,
+  "contact_with": "black",
+  "contacts": 0,
+  "place": [
+   0.018
+  ],
+  "gate_tries": 1,
+  "grabs": [
+   "success (MuJoCo gate"
+  ],
+  "last_dock": "D-1 18:45",
+  "fast": {
+   "ends": 55.0,
+   "lane_s": 1920.0,
+   "narrow": 103.7,
+   "fast": 1413.1,
+   "float": 406.5,
+   "gap": 232.2,
+   "object": 1.2,
+   "fix": 51.7,
+   "one_face": 90.7,
+   "ramp": 21.7,
+   "hedge_close": 3.1
+  }
+ },
+ {
+  "set": "mid",
+  "run": "r61m_trip",
+  "scen": "s1b",
+  "seed": 7,
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [
+   [
+    "pickup",
+    47.3,
+    61.02,
+    "D0 18:00",
+    "D0 18:48"
+   ]
+  ],
+  "sim_min": 48.1,
+  "soc_end": 0.7685,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [
+   [
+    "pivot",
+    617,
+    "lid",
+    2.88,
+    3.4,
+    false
+   ]
+  ],
+  "hedge": 0.206,
+  "contact_min": 0.571,
+  "contact_with": "black",
+  "contacts": 0,
+  "place": [
+   0.057
+  ],
+  "gate_tries": 1,
+  "grabs": [
+   "success (MuJoCo gate"
+  ],
+  "last_dock": "D0 18:48",
+  "fast": {
+   "ends": 65.3,
+   "lane_s": 2058.8,
+   "narrow": 104.6,
+   "fast": 1494.0,
+   "float": 442.1,
+   "gap": 247.9,
+   "one_face": 117.3,
+   "fix": 65.8,
+   "hedge_close": 5.6,
+   "ramp": 30.8
+  }
+ },
+ {
+  "set": "turn_a",
+  "run": "r61f_turn_a",
+  "scen": "s1a",
+  "seed": 7,
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [
+   [
+    "drop",
+    37.2,
+    57.93,
+    "D-1 18:00",
+    "D-1 18:37"
+   ]
+  ],
+  "sim_min": 38.0,
+  "soc_end": 0.7751,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [
+   [
+    "pivot",
+    618,
+    "cam",
+    4.8,
+    43.1,
+    true
+   ]
+  ],
+  "hedge": 0.239,
+  "contact_min": 0.401,
+  "contact_with": "black",
+  "contacts": 0,
+  "place": [
+   0.028
+  ],
+  "gate_tries": 1,
+  "grabs": [
+   "success (MuJoCo gate"
+  ],
+  "last_dock": "D-1 18:37",
+  "fast": {
+   "ends": 54.1,
+   "lane_s": 1482.5,
+   "narrow": 98.2,
+   "fast": 1010.4,
+   "gap": 211.4,
+   "float": 323.8,
+   "object": 0.5,
+   "fix": 46.0,
+   "one_face": 95.6,
+   "hedge_close": 1.8,
+   "ramp": 22.5,
+   "bend": 3.9
+  }
+ },
+ {
+  "set": "turn_a2",
+  "run": "r61f_turn_a2",
+  "scen": "s1a",
+  "seed": 7,
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [
+   [
+    "drop",
+    37.1,
+    57.99,
+    "D-1 18:00",
+    "D-1 18:37"
+   ]
+  ],
+  "sim_min": 37.9,
+  "soc_end": 0.775,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [
+   [
+    "pivot",
+    618,
+    "cam",
+    4.8,
+    42.8,
+    true
+   ]
+  ],
+  "hedge": 0.241,
+  "contact_min": -0.211,
+  "contact_with": "person",
+  "contacts": 0,
+  "place": [
+   0.026
+  ],
+  "gate_tries": 1,
+  "grabs": [
+   "success (MuJoCo gate"
+  ],
+  "last_dock": "D-1 18:37",
+  "fast": {
+   "ends": 53.3,
+   "lane_s": 1482.5,
+   "narrow": 99.9,
+   "fast": 1010.7,
+   "gap": 212.4,
+   "float": 323.3,
+   "object": 0.5,
+   "fix": 46.3,
+   "one_face": 96.0,
+   "hedge_close": 1.4,
+   "ramp": 20.8,
+   "bend": 3.2
+  }
+ },
+ {
+  "set": "turn_b",
+  "run": "r61f_turn_b",
+  "scen": "s1a",
+  "seed": 7,
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [
+   [
+    "drop",
+    36.9,
+    57.7,
+    "D-1 18:00",
+    "D-1 18:37"
+   ]
+  ],
+  "sim_min": 37.6,
+  "soc_end": 0.7756,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [
+   [
+    "pivot",
+    618,
+    "lid",
+    2.82,
+    43.2,
+    true
+   ]
+  ],
+  "hedge": 0.241,
+  "contact_min": -0.109,
+  "contact_with": "person",
+  "contacts": 0,
+  "place": [
+   0.033
+  ],
+  "gate_tries": 1,
+  "grabs": [
+   "success (MuJoCo gate"
+  ],
+  "last_dock": "D-1 18:37",
+  "fast": {
+   "ends": 56.8,
+   "lane_s": 1495.0,
+   "narrow": 100.0,
+   "fast": 1021.3,
+   "gap": 207.1,
+   "float": 309.0,
+   "fix": 49.2,
+   "one_face": 98.4,
+   "hedge_close": 1.2,
+   "ramp": 22.5,
+   "object": 0.1,
+   "bend": 3.6
+  }
+ },
+ {
+  "set": "turn_c",
+  "run": "r61f_turn_c",
+  "scen": "s1a",
+  "seed": 7,
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [
+   [
+    "drop",
+    37.0,
+    57.84,
+    "D-1 18:00",
+    "D-1 18:37"
+   ]
+  ],
+  "sim_min": 37.8,
+  "soc_end": 0.7753,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [
+   [
+    "pivot",
+    618,
+    "lid",
+    2.88,
+    53.0,
+    true
+   ]
+  ],
+  "hedge": 0.236,
+  "contact_min": -0.087,
+  "contact_with": "person",
+  "contacts": 0,
+  "place": [
+   0.047
+  ],
+  "gate_tries": 1,
+  "grabs": [
+   "success (MuJoCo gate"
+  ],
+  "last_dock": "D-1 18:37",
+  "fast": {
+   "ends": 56.0,
+   "lane_s": 1487.8,
+   "narrow": 100.2,
+   "fast": 1013.3,
+   "gap": 211.3,
+   "float": 323.2,
+   "object": 0.7,
+   "fix": 47.0,
+   "one_face": 96.1,
+   "hedge_close": 1.5,
+   "ramp": 20.8,
+   "bend": 3.7
+  }
+ },
+ {
+  "set": "turn_y",
+  "run": "r61f_turn_y",
+  "scen": "s1a",
+  "seed": 7,
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [
+   [
+    "drop",
+    37.5,
+    57.96,
+    "D-1 18:00",
+    "D-1 18:38"
+   ]
+  ],
+  "sim_min": 38.3,
+  "soc_end": 0.7751,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [
+   [
+    "pivot",
+    10,
+    "lid",
+    2.99,
+    51.1,
+    true
+   ]
+  ],
+  "hedge": 0.231,
+  "contact_min": 0.236,
+  "contact_with": "person",
+  "contacts": 0,
+  "place": [
+   0.042
+  ],
+  "gate_tries": 1,
+  "grabs": [
+   "success (MuJoCo gate"
+  ],
+  "last_dock": "D-1 18:38",
+  "fast": {
+   "ends": 52.4,
+   "lane_s": 1489.2,
+   "narrow": 102.0,
+   "fast": 1013.2,
+   "gap": 209.3,
+   "float": 319.4,
+   "object": 0.2,
+   "fix": 51.5,
+   "one_face": 99.0,
+   "hedge_close": 2.8,
+   "ramp": 20.8,
+   "bend": 3.0
+  }
+ },
+ {
+  "set": "pick",
+  "run": "r61f_pick",
+  "scen": "s1b",
+  "seed": 7,
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [
+   [
+    "pickup",
+    40.4,
+    58.12,
+    "D0 18:00",
+    "D0 18:41"
+   ]
+  ],
+  "sim_min": 41.2,
+  "soc_end": 0.7747,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [
+   [
+    "pivot",
+    617,
+    "lid",
+    2.95,
+    3.4,
+    false
+   ]
+  ],
+  "hedge": 0.23,
+  "contact_min": 0.483,
+  "contact_with": "black",
+  "contacts": 0,
+  "place": [
+   0.026
+  ],
+  "gate_tries": 1,
+  "grabs": [
+   "success (MuJoCo gate"
+  ],
+  "last_dock": "D0 18:41",
+  "fast": {
+   "ends": 64.5,
+   "lane_s": 1688.5,
+   "narrow": 105.3,
+   "fast": 1140.1,
+   "gap": 247.1,
+   "float": 340.4,
+   "object": 0.9,
+   "fix": 57.9,
+   "one_face": 106.2,
+   "hedge_close": 2.6,
+   "ramp": 30.0,
+   "bend": 2.9
+  }
+ },
+ {
+  "set": "nowalk_c",
+  "run": "r61x_turn_c_nowalk",
+  "scen": "s1a",
+  "seed": 7,
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [
+   [
+    "drop",
+    37.1,
+    57.83,
+    "D-1 18:00",
+    "D-1 18:37"
+   ]
+  ],
+  "sim_min": 37.9,
+  "soc_end": 0.7753,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [
+   [
+    "pivot",
+    618,
+    "lid",
+    2.83,
+    5.5,
+    false
+   ],
+   [
+    "pivot",
+    618,
+    "lid",
+    1.54,
+    4.2,
+    false
+   ],
+   [
+    "pivot",
+    618,
+    "lid",
+    1.38,
+    4.2,
+    false
+   ],
+   [
+    "pivot",
+    618,
+    "lid",
+    1.11,
+    4.2,
+    false
+   ],
+   [
+    "pivot",
+    618,
+    "lid",
+    0.81,
+    4.2,
+    false
+   ],
+   [
+    "pivot",
+    618,
+    "lid",
+    0.64,
+    19.0,
+    true
+   ]
+  ],
+  "hedge": 0.249,
+  "contact_min": -0.165,
+  "contact_with": "person",
+  "contacts": 0,
+  "place": [
+   0.024
+  ],
+  "gate_tries": 1,
+  "grabs": [
+   "success (MuJoCo gate"
+  ],
+  "last_dock": "D-1 18:37",
+  "fast": {
+   "ends": 53.3,
+   "lane_s": 1482.5,
+   "narrow": 99.8,
+   "fast": 1010.0,
+   "gap": 211.2,
+   "float": 322.3,
+   "fix": 47.2,
+   "one_face": 96.5,
+   "hedge_close": 1.7,
+   "ramp": 21.7,
+   "bend": 3.9
+  }
+ },
+ {
+  "set": "nowalk_y",
+  "run": "r61x_turn_y_nowalk",
+  "scen": "s1a",
+  "seed": 7,
+  "result": "pass",
+  "outcome": "plan completed",
+  "alerts": [],
+  "trips": [
+   [
+    "drop",
+    36.9,
+    57.75,
+    "D-1 18:00",
+    "D-1 18:37"
+   ]
+  ],
+  "sim_min": 37.7,
+  "soc_end": 0.7755,
+  "corridor_stops": 0,
+  "near_field_trips": 0,
+  "pauses_lane": [],
+  "pauses_other": [
+   [
+    "pivot",
+    10,
+    "lid",
+    2.89,
+    51.0,
+    true
+   ]
+  ],
+  "hedge": 0.238,
+  "contact_min": 0.23,
+  "contact_with": "person",
+  "contacts": 0,
+  "place": [
+   0.028
+  ],
+  "gate_tries": 1,
+  "grabs": [
+   "success (MuJoCo gate"
+  ],
+  "last_dock": "D-1 18:37",
+  "fast": {
+   "ends": 52.5,
+   "lane_s": 1480.0,
+   "narrow": 99.4,
+   "fast": 1012.1,
+   "gap": 208.9,
+   "float": 322.9,
+   "object": 0.1,
+   "fix": 46.9,
+   "one_face": 96.1,
+   "hedge_close": 2.3,
+   "ramp": 20.9,
+   "bend": 3.0
+  }
+ }
+]

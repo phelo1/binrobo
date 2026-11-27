@@ -547,7 +547,7 @@ Inputs:
   • the project journals for answer 2
 Sources:
   • County county waste management bye-laws 2018 (bye-law 6): [county council website]
-    07/clare-waste-management-bye-laws-2018-17061.pdf
+    [county council website]
   • the county council bye-laws summary page (9.00 pm): [county council website]
     waste/national-waste-policy-and-regulations/waste-management-bye-laws
   • OpenTopoData API (EU-DEM 25 m, SRTM 30 m, Mapzen, ASTER): https://api.opentopodata.org

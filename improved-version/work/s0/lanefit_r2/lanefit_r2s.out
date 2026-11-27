@@ -1,0 +1,33 @@
+piece sweep|down loaded 72s
+piece sweep|down empty 66s
+piece sweep|up loaded 83s
+piece sweep|up empty 75s
+piece lane_pivot 0s
+piece lane_pivot_loaded 0s
+piece yard_dock 17s
+piece mouth 85s
+piece seqk|drop n1 handle-to-lane|0 30s
+piece seqk|drop n1 handle-to-road|0 70s
+reuse seqk|drop n2 handle-to-lane|0 <- seqk|drop n1 handle-to-lane|0
+piece seqk|drop n2 handle-to-lane|1 32s
+reuse seqk|drop n2 handle-to-road|0 <- seqk|drop n1 handle-to-road|0
+piece seqk|drop n2 handle-to-road|1 18s
+reuse seqk|drop n3 handle-to-lane|0 <- seqk|drop n1 handle-to-lane|0
+reuse seqk|drop n3 handle-to-lane|1 <- seqk|drop n2 handle-to-lane|1
+piece seqk|drop n3 handle-to-lane|2 36s
+reuse seqk|drop n3 handle-to-road|0 <- seqk|drop n1 handle-to-road|0
+reuse seqk|drop n3 handle-to-road|1 <- seqk|drop n2 handle-to-road|1
+piece seqk|drop n3 handle-to-road|2 21s
+piece seqk|pickup n1 handle-to-lane|0 43s
+piece seqk|pickup n1 handle-to-road|0 62s
+piece seqk|pickup n2 handle-to-lane|0 46s
+reuse seqk|pickup n2 handle-to-lane|1 <- seqk|pickup n1 handle-to-lane|0
+piece seqk|pickup n2 handle-to-road|0 16s
+reuse seqk|pickup n2 handle-to-road|1 <- seqk|pickup n1 handle-to-road|0
+piece seqk|pickup n3 handle-to-lane|0 48s
+reuse seqk|pickup n3 handle-to-lane|1 <- seqk|pickup n2 handle-to-lane|0
+reuse seqk|pickup n3 handle-to-lane|2 <- seqk|pickup n1 handle-to-lane|0
+piece seqk|pickup n3 handle-to-road|0 13s
+reuse seqk|pickup n3 handle-to-road|1 <- seqk|pickup n2 handle-to-road|0
+reuse seqk|pickup n3 handle-to-road|2 <- seqk|pickup n1 handle-to-road|0
+DONE R2s_b2r pivot D 2.4 2.55 sweep min 0.325 {'down loaded': (0.378, 500.6), 'down empty': (0.378, 500.6), 'up loaded': (0.325, 417.0), 'up empty': (0.325, 417.0)} seq min 0.175 all ok True

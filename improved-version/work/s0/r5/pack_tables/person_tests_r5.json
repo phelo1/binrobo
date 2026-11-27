@@ -1,0 +1,361 @@
+{
+ "r5b0_person60": [
+  {
+   "seed": 11,
+   "result": "pass",
+   "outcome": "plan completed",
+   "lidar_stops": [
+    1.49
+   ],
+   "camera_stops": [],
+   "rest_gap": 1.418,
+   "closest": 1.418,
+   "prot": 0,
+   "sim": 338.0,
+   "alerts": []
+  },
+  {
+   "seed": 23,
+   "result": "pass",
+   "outcome": "plan completed",
+   "lidar_stops": [],
+   "camera_stops": [],
+   "rest_gap": null,
+   "closest": 0.164,
+   "prot": 0,
+   "sim": 285.6,
+   "alerts": []
+  },
+  {
+   "seed": 7,
+   "result": "pass",
+   "outcome": "plan completed",
+   "lidar_stops": [
+    1.49
+   ],
+   "camera_stops": [],
+   "rest_gap": 1.428,
+   "closest": 1.428,
+   "prot": 0,
+   "sim": 333.8,
+   "alerts": []
+  }
+ ],
+ "r5b0_person60near": [
+  {
+   "seed": 11,
+   "result": "pass",
+   "outcome": "plan completed",
+   "lidar_stops": [
+    0.95,
+    1.29
+   ],
+   "camera_stops": [],
+   "rest_gap": 0.51,
+   "closest": 0.501,
+   "prot": 1,
+   "sim": 355.7,
+   "alerts": []
+  },
+  {
+   "seed": 23,
+   "result": "pass",
+   "outcome": "plan completed",
+   "lidar_stops": [
+    1.46
+   ],
+   "camera_stops": [],
+   "rest_gap": 1.139,
+   "closest": 0.106,
+   "prot": 0,
+   "sim": 286.8,
+   "alerts": []
+  },
+  {
+   "seed": 7,
+   "result": "pass",
+   "outcome": "plan completed",
+   "lidar_stops": [
+    1.21
+   ],
+   "camera_stops": [],
+   "rest_gap": 0.907,
+   "closest": 0.907,
+   "prot": 0,
+   "sim": 348.9,
+   "alerts": []
+  }
+ ],
+ "r5b0_person200": [
+  {
+   "seed": 11,
+   "result": "alert",
+   "outcome": "path blocked",
+   "lidar_stops": [
+    1.48,
+    1.24,
+    1.37
+   ],
+   "camera_stops": [],
+   "rest_gap": 0.439,
+   "closest": 0.437,
+   "prot": 3,
+   "sim": 240.8,
+   "alerts": [
+    "protective field tripped 3 times in 2 minutes - holding in the lane"
+   ]
+  },
+  {
+   "seed": 23,
+   "result": "pass",
+   "outcome": "plan completed",
+   "lidar_stops": [],
+   "camera_stops": [],
+   "rest_gap": null,
+   "closest": 0.165,
+   "prot": 0,
+   "sim": 285.8,
+   "alerts": []
+  },
+  {
+   "seed": 7,
+   "result": "alert",
+   "outcome": "path blocked",
+   "lidar_stops": [
+    1.5
+   ],
+   "camera_stops": [],
+   "rest_gap": 1.432,
+   "closest": 1.43,
+   "prot": 0,
+   "sim": 228.8,
+   "alerts": [
+    "path blocked for 120 s (unmapped object 1.4 m ahead)"
+   ]
+  }
+ ],
+ "r5b_s5a_final": [
+  {
+   "seed": 11,
+   "result": "pass",
+   "outcome": "plan completed",
+   "lidar_stops": [],
+   "camera_stops": [],
+   "rest_gap": null,
+   "closest": 1.726,
+   "prot": 0,
+   "sim": 279.8,
+   "alerts": []
+  },
+  {
+   "seed": 23,
+   "result": "pass",
+   "outcome": "plan completed",
+   "lidar_stops": [],
+   "camera_stops": [],
+   "rest_gap": null,
+   "closest": 2.249,
+   "prot": 0,
+   "sim": 285.8,
+   "alerts": []
+  },
+  {
+   "seed": 7,
+   "result": "pass",
+   "outcome": "plan completed",
+   "lidar_stops": [],
+   "camera_stops": [],
+   "rest_gap": null,
+   "closest": 1.882,
+   "prot": 0,
+   "sim": 280.8,
+   "alerts": []
+  }
+ ],
+ "r5b_person60": [
+  {
+   "seed": 11,
+   "result": "pass",
+   "outcome": "plan completed",
+   "lidar_stops": [
+    1.48
+   ],
+   "camera_stops": [],
+   "rest_gap": 1.4,
+   "closest": 1.398,
+   "prot": 0,
+   "sim": 338.9,
+   "alerts": []
+  },
+  {
+   "seed": 23,
+   "result": "pass",
+   "outcome": "plan completed",
+   "lidar_stops": [],
+   "camera_stops": [
+    1.33
+   ],
+   "rest_gap": 1.478,
+   "closest": 1.478,
+   "prot": 0,
+   "sim": 329.9,
+   "alerts": []
+  },
+  {
+   "seed": 7,
+   "result": "pass",
+   "outcome": "plan completed",
+   "lidar_stops": [
+    1.49
+   ],
+   "camera_stops": [],
+   "rest_gap": 1.428,
+   "closest": 1.428,
+   "prot": 0,
+   "sim": 334.6,
+   "alerts": []
+  }
+ ],
+ "r5b_person60near": [
+  {
+   "seed": 11,
+   "result": "pass",
+   "outcome": "plan completed",
+   "lidar_stops": [],
+   "camera_stops": [
+    0.81
+   ],
+   "rest_gap": 0.775,
+   "closest": 0.773,
+   "prot": 0,
+   "sim": 355.7,
+   "alerts": []
+  },
+  {
+   "seed": 23,
+   "result": "pass",
+   "outcome": "plan completed",
+   "lidar_stops": [
+    1.45
+   ],
+   "camera_stops": [
+    1.05
+   ],
+   "rest_gap": 1.13,
+   "closest": 1.128,
+   "prot": 0,
+   "sim": 347.8,
+   "alerts": []
+  },
+  {
+   "seed": 7,
+   "result": "pass",
+   "outcome": "plan completed",
+   "lidar_stops": [],
+   "camera_stops": [
+    1.05
+   ],
+   "rest_gap": 0.963,
+   "closest": 0.959,
+   "prot": 0,
+   "sim": 350.0,
+   "alerts": []
+  }
+ ],
+ "r5b_person200": [
+  {
+   "seed": 11,
+   "result": "alert",
+   "outcome": "path blocked",
+   "lidar_stops": [
+    1.49
+   ],
+   "camera_stops": [
+    1.39
+   ],
+   "rest_gap": 1.41,
+   "closest": 1.407,
+   "prot": 0,
+   "sim": 276.4,
+   "alerts": [
+    "path blocked for 120 s (camera: person or animal 0.0 m ahead)"
+   ]
+  },
+  {
+   "seed": 23,
+   "result": "alert",
+   "outcome": "path blocked",
+   "lidar_stops": [],
+   "camera_stops": [
+    1.34
+   ],
+   "rest_gap": 1.493,
+   "closest": 1.493,
+   "prot": 0,
+   "sim": 229.6,
+   "alerts": [
+    "path blocked for 120 s (camera: person or animal 1.4 m ahead)"
+   ]
+  },
+  {
+   "seed": 7,
+   "result": "alert",
+   "outcome": "path blocked",
+   "lidar_stops": [
+    1.49
+   ],
+   "camera_stops": [
+    1.38
+   ],
+   "rest_gap": 1.41,
+   "closest": 1.408,
+   "prot": 0,
+   "sim": 297.4,
+   "alerts": [
+    "path blocked for 120 s (camera: person or animal 0.0 m ahead)"
+   ]
+  }
+ ],
+ "r5b_person60_nocam": [
+  {
+   "seed": 11,
+   "result": "pass",
+   "outcome": "plan completed",
+   "lidar_stops": [
+    1.5
+   ],
+   "camera_stops": [],
+   "rest_gap": 1.437,
+   "closest": 1.436,
+   "prot": 0,
+   "sim": 337.8,
+   "alerts": []
+  },
+  {
+   "seed": 23,
+   "result": "pass",
+   "outcome": "plan completed",
+   "lidar_stops": [],
+   "camera_stops": [],
+   "rest_gap": null,
+   "closest": 0.174,
+   "prot": 0,
+   "sim": 286.8,
+   "alerts": []
+  },
+  {
+   "seed": 7,
+   "result": "pass",
+   "outcome": "plan completed",
+   "lidar_stops": [
+    1.47
+   ],
+   "camera_stops": [],
+   "rest_gap": 1.403,
+   "closest": 1.403,
+   "prot": 0,
+   "sim": 333.8,
+   "alerts": []
+  }
+ ]
+}

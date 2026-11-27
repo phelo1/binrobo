@@ -1,0 +1,1 @@
+B_estop12_rev {"test": "estop12", "orient": "rev", "grab": "no_dock", "v0": 0.0, "stop_dist_m": 0.0, "stop_time_s": 0.0, "slide_after_stop_m": 0.001, "captured_end": false, "roll": 0.003, "pitch": 0.006, "bin_ground": 1134.428, "cmin": 20.494, "dmin": 0.0, "seated_all": false, "clear_min": -0.0, "ok": false, "cpu_s": 13}

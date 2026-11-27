@@ -1,0 +1,1 @@
+tyrecal {"test": "tyre calibration", "tyre": "0.030,0.5;0.5,0.95,0.02", "grab": "success", "drive_N": [985, 959], "deflection_mm": [2.77, 2.73], "k_secant_N_per_m": [355626, 351690], "cpu_s": 65}

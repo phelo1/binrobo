@@ -1,0 +1,343 @@
+{
+ "n": 60,
+ "outcomes": {
+  "bin tipped": 3,
+  "bin blocked": 3,
+  "wind no-go": 3,
+  "frost no-go": 3,
+  "pad outside geofence": 3,
+  "firmware fence hold": 3,
+  "plan completed": 21,
+  "too late": 3,
+  "no fix hold": 3,
+  "companion freeze -> firmware HOLD": 6,
+  "e-stop": 3,
+  "energy guard": 3,
+  "bin missing": 3
+ },
+ "trips": {
+  "n": 21,
+  "wh": [
+   69.16,
+   72.31,
+   70.7
+  ],
+  "minutes": [
+   63.2,
+   70.4,
+   66.7
+  ]
+ },
+ "soc_end": {
+  "s3a__s11": 0.4325,
+  "s3a__s23": 0.427,
+  "s3a__s7": 0.4308,
+  "s3b__s11": 0.5849,
+  "s3b__s23": 0.5842,
+  "s3b__s7": 0.5805
+ },
+ "last_dock": {
+  "s1a__s11": "D-1 19:04",
+  "s1a__s23": "D-1 19:05",
+  "s1a__s7": "D-1 19:04",
+  "s1b__s11": "D0 19:09",
+  "s1b__s23": "D0 19:09",
+  "s1b__s7": "D0 19:09",
+  "s3a__s11": "D-1 21:17",
+  "s3a__s23": "D-1 21:18",
+  "s3a__s7": "D-1 21:18",
+  "s3b__s11": "D0 20:17",
+  "s3b__s23": "D0 20:17",
+  "s3b__s7": "D0 20:17"
+ },
+ "hedge_lowest": [
+  [
+   0.196,
+   "s3a__s11",
+   [
+    6834.9,
+    416.6
+   ]
+  ],
+  [
+   0.197,
+   "s1a__s23",
+   [
+    2669.2,
+    417.0
+   ]
+  ],
+  [
+   0.202,
+   "s1a__s11",
+   [
+    2650.3,
+    417.4
+   ]
+  ],
+  [
+   0.204,
+   "s3a__s23",
+   [
+    6856.7,
+    417.0
+   ]
+  ],
+  [
+   0.208,
+   "s1a__s7",
+   [
+    2662.6,
+    417.4
+   ]
+  ],
+  [
+   0.217,
+   "s3a__s7",
+   [
+    6871.7,
+    416.6
+   ]
+  ]
+ ],
+ "hedge_full_missions": {
+  "s1a__s11": [
+   0.202,
+   [
+    2650.3,
+    417.4
+   ]
+  ],
+  "s1a__s23": [
+   0.197,
+   [
+    2669.2,
+    417.0
+   ]
+  ],
+  "s1a__s7": [
+   0.208,
+   [
+    2662.6,
+    417.4
+   ]
+  ],
+  "s1b__s11": [
+   0.234,
+   [
+    2902.2,
+    417.2
+   ]
+  ],
+  "s1b__s23": [
+   0.244,
+   [
+    2908.8,
+    417.2
+   ]
+  ],
+  "s1b__s7": [
+   0.224,
+   [
+    2889.6,
+    417.2
+   ]
+  ],
+  "s3a__s11": [
+   0.196,
+   [
+    6834.9,
+    416.6
+   ]
+  ],
+  "s3a__s23": [
+   0.204,
+   [
+    6856.7,
+    417.0
+   ]
+  ],
+  "s3a__s7": [
+   0.217,
+   [
+    6871.7,
+    416.6
+   ]
+  ],
+  "s3b__s11": [
+   0.228,
+   [
+    2841.2,
+    417.2
+   ]
+  ],
+  "s3b__s23": [
+   0.233,
+   [
+    6978.7,
+    417.2
+   ]
+  ],
+  "s3b__s7": [
+   0.232,
+   [
+    6970.3,
+    417.2
+   ]
+  ]
+ },
+ "placements": {
+  "n": 24,
+  "err_max_mm": 64,
+  "err_mean_mm": 38,
+  "handle_max_deg": 1.22
+ },
+ "gates": {
+  "n": 24,
+  "ok_cam": 24,
+  "ok_truth": 24,
+  "cam_ok_truth_out": 0,
+  "worst_lat_mm": 25,
+  "worst_yaw": 1.49
+ },
+ "seat_checks": {
+  "n": 21,
+  "ok": 21
+ },
+ "prot_stops": {},
+ "object_stops": 0,
+ "navcam": {
+  "n": 761801,
+  "cam_only": 4241,
+  "both": 654001,
+  "disagree": 38347,
+  "none": 27942,
+  "dis_cam": 374,
+  "dis_near": 79
+ },
+ "navcam_pct": {
+  "cam_only": 0.6,
+  "both": 85.8,
+  "disagree": 5.0,
+  "none": 3.7,
+  "dis_cam": 0.0,
+  "dis_near": 0.0
+ },
+ "alerts": {
+  "s3b__s11": [
+   "bye-law: a return started now would end after 21:00 (trip 72 min) - not started"
+  ],
+  "s3b__s23": [
+   "bye-law: a return started now would end after 21:00 (trip 72 min) - not started"
+  ],
+  "s3b__s7": [
+   "bye-law: a return started now would end after 21:00 (trip 72 min) - not started"
+  ]
+ },
+ "refused": {},
+ "windows": {
+  "s3a__s11": [
+   {
+    "kind": "drop",
+    "clock": "D-1 18:00",
+    "est_min": 78.0
+   },
+   {
+    "kind": "drop",
+    "clock": "D-1 19:10",
+    "est_min": 73.1
+   },
+   {
+    "kind": "drop",
+    "clock": "D-1 20:14",
+    "est_min": 73.1
+   }
+  ],
+  "s3a__s23": [
+   {
+    "kind": "drop",
+    "clock": "D-1 18:00",
+    "est_min": 78.0
+   },
+   {
+    "kind": "drop",
+    "clock": "D-1 19:10",
+    "est_min": 73.5
+   },
+   {
+    "kind": "drop",
+    "clock": "D-1 20:14",
+    "est_min": 73.5
+   }
+  ],
+  "s3a__s7": [
+   {
+    "kind": "drop",
+    "clock": "D-1 18:00",
+    "est_min": 78.0
+   },
+   {
+    "kind": "drop",
+    "clock": "D-1 19:11",
+    "est_min": 73.9
+   },
+   {
+    "kind": "drop",
+    "clock": "D-1 20:14",
+    "est_min": 73.9
+   }
+  ],
+  "s3b__s11": [
+   {
+    "kind": "pickup",
+    "clock": "D0 18:00",
+    "est_min": 78.0
+   },
+   {
+    "kind": "pickup",
+    "clock": "D0 19:08",
+    "est_min": 71.2
+   },
+   {
+    "kind": "pickup",
+    "clock": "D0 20:17",
+    "est_min": 72.0
+   }
+  ],
+  "s3b__s23": [
+   {
+    "kind": "pickup",
+    "clock": "D0 18:00",
+    "est_min": 78.0
+   },
+   {
+    "kind": "pickup",
+    "clock": "D0 19:09",
+    "est_min": 71.7
+   },
+   {
+    "kind": "pickup",
+    "clock": "D0 20:17",
+    "est_min": 71.8
+   }
+  ],
+  "s3b__s7": [
+   {
+    "kind": "pickup",
+    "clock": "D0 18:00",
+    "est_min": 78.0
+   },
+   {
+    "kind": "pickup",
+    "clock": "D0 19:09",
+    "est_min": 71.7
+   },
+   {
+    "kind": "pickup",
+    "clock": "D0 20:17",
+    "est_min": 71.7
+   }
+  ]
+ },
+ "collisions": {}
+}

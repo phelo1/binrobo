@@ -1,0 +1,9 @@
+env CGB_F9=1 CMP_SIM=simB2h CGB_MASSF=/home/claude/b2f_review/variants/mass_cgB2_B2F_S12.json B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG=_b2fS12 python3 h2/runH2.py step one
+env CGB_F9=1 CMP_SIM=simB2h CGB_MASSF=/home/claude/b2f_review/variants/mass_cgB2_B2F_S12.json B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG=_b2fS12 python3 h2/runH2.py step both
+env CGB_F9=1 CMP_SIM=simB2h CGB_MASSF=/home/claude/b2f_review/variants/mass_cgB2_B2F_S12.json B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG=_b2fS12 python3 h2/runH2.py step both_ramp
+env CGB_F9=1 CMP_SIM=simB2h CGB_MASSF=/home/claude/b2f_review/variants/mass_cgB2_B2F_S12.json B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG=_b2fS12 python3 h2/runH2.py grab WEB140 30 201
+env CGB_F9=1 CMP_SIM=simB2h CGB_MASSF=/home/claude/b2f_review/variants/mass_cgB2_B2F_S12.json B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG=_b2fS12 python3 h2/runH2.py grab ESE240SL 30 202
+env CGB_F9=1 CMP_SIM=simB2h CGB_MASSF=/home/claude/b2f_review/variants/mass_cgB2_B2F_S12.json B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG=_b2fS12 python3 h2/runH2.py grab ESE240CL 30 203
+env CGB_F9=1 CMP_SIM=simB2h CGB_MASSF=/home/claude/b2f_review/variants/mass_cgB2_B2F_S12.json B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG=_b2fS12_s303 python3 h2/runH2.py grab ESE240CL 30 303
+env CGB_F9=1 CMP_SIM=simB2h CGB_MASSF=/home/claude/b2f_review/variants/mass_cgB2_B2F_S12.json B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG=_b2fS12_s403 python3 h2/runH2.py grab ESE240CL 30 403
+env CGB_F9=1 CMP_SIM=simB2h CGB_MASSF=/home/claude/b2f_review/variants/mass_cgB2_B2F_S12.json B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG=_b2fS12_s503 python3 h2/runH2.py grab ESE240CL 30 503

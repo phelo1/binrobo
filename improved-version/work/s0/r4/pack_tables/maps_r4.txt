@@ -1,0 +1,74 @@
+40 mm step with a full 240 L bin: P = over, S = stalled (distance m). Columns: castor contact strip width, mm
+  side  v    at   torque |      16      24      32      36      40      44      50
+  both 0.5  1.6  t60    |       P       P S  0.47 S  0.47 S  0.47       P       P
+  both 0.5  1.6  b100   |       P       P       P       P       P       P       P
+  both 0.5  3.0  t60    | S  1.87 S  1.87 S  1.87 S  1.87 S  1.87       P S  1.87
+  both 0.5  3.0  b100   |       P       P       P       P       P       P       P
+  both 0.4  1.6  t60    |       - S  1.34       -       -       -       -       -
+  both 0.4  1.6  b100   |       - S  1.34       -       -       -       -       -
+  both 0.4  3.0  t60    |       - S  1.87       -       -       -       -       -
+  both 0.4  3.0  b100   |       - S  2.74       -       -       -       -       -
+  both 0.3  1.6  t60    |       - S  0.48       -       -       -       -       -
+  both 0.3  1.6  b100   |       - S  1.34       -       -       -       -       -
+  both 0.3  3.0  t60    |       - S  1.87       -       -       -       -       -
+  both 0.3  3.0  b100   |       - S  2.74       -       -       -       -       -
+  one  0.5  1.6  t60    |       P       P       P       P       P       P       P
+  one  0.5  1.6  b100   |       P       P       P       P       P       P       P
+  one  0.5  3.0  t60    |       P       P       P       P       P       P       P
+  one  0.5  3.0  b100   |       P       P       P       P       P       P       P
+  one  0.4  1.6  t60    |       -       P       -       -       -       -       -
+  one  0.4  1.6  b100   |       -       P       -       -       -       -       -
+  one  0.4  3.0  t60    |       -       P       -       -       -       -       -
+  one  0.4  3.0  b100   |       -       P       -       -       -       -       -
+  one  0.3  1.6  t60    |       -       P       -       -       -       -       -
+  one  0.3  1.6  b100   |       -       P       -       -       -       -       -
+  one  0.3  3.0  t60    |       -       P       -       -       -       -       -
+  one  0.3  3.0  b100   |       -       P       -       -       -       -       -
+  over the step: lift peak 2464..3671 N, wheel peak 4377..10747 N, comb 2464..3697 N; seated in all: True; bin on the ground in any: False
+  held the bin at the end in every run: True  runs 72
+
+empty robot on the 40 mm step (castors already trailing)
+  both v 0.3 t60  : over (5.98 m), wheel peak 1384 N, heading -0.0 deg
+  both v 0.3 t60  : STALL (1.88 m), wheel peak 1309 N, heading 0.0 deg
+  both v 0.3 t60  : STALL (1.88 m), wheel peak 2439 N, heading 0.0 deg
+  both v 0.3 t60  : over (5.98 m), wheel peak 3109 N, heading 20.0 deg
+  both v 0.3 t60  : over (5.98 m), wheel peak 2772 N, heading 20.0 deg
+  both v 0.3 t60  : STALL (2.08 m), wheel peak 1474 N, heading 0.0 deg
+  both v 0.4 t60  : over (6.04 m), wheel peak 1410 N, heading -0.0 deg
+  both v 0.4 t60  : STALL (1.88 m), wheel peak 1488 N, heading 0.0 deg
+  both v 0.4 t60  : STALL (1.88 m), wheel peak 1741 N, heading 0.0 deg
+  both v 0.4 b100 : STALL (1.87 m), wheel peak 4538 N, heading 0.2 deg
+  both v 0.4 t60  : STALL (1.87 m), wheel peak 4538 N, heading 0.2 deg
+  both v 0.4 t60  : STALL (1.92 m), wheel peak 2767 N, heading 0.1 deg
+  both v 0.4 t60  : over (6.04 m), wheel peak 4555 N, heading 20.0 deg
+  both v 0.4 t60  : over (6.04 m), wheel peak 3307 N, heading 20.0 deg
+  both v 0.4 t60  : STALL (2.07 m), wheel peak 1659 N, heading 0.1 deg
+  both v 0.4 t60  : STALL (2.32 m), wheel peak 1683 N, heading 0.0 deg
+  both v 0.5 b100 : STALL (1.87 m), wheel peak 1634 N, heading 0.3 deg
+  both v 0.5 t60  : STALL (1.87 m), wheel peak 1634 N, heading 0.3 deg
+  one  v 0.4 b100 : over (6.04 m), wheel peak 3151 N, heading -0.2 deg
+  one  v 0.4 t60  : over (6.04 m), wheel peak 3151 N, heading -0.2 deg
+  one  v 0.5 b100 : over (6.11 m), wheel peak 2727 N, heading -0.1 deg
+  one  v 0.5 t60  : over (6.11 m), wheel peak 2727 N, heading -0.1 deg
+
+slippery hill start (grip 0.22, bin CG +60 mm): strip width: heading swing deg / raw castor min N / 100 ms min N / reached
+   16 mm: 2.59   421.5   568.6  True
+   24 mm: 1.31    81.4   524.5  True
+   32 mm: 1.82    62.6   540.4  True
+   36 mm: 2.32    62.4   536.4  True
+   40 mm: 1.47    31.5   549.0  True
+   44 mm: 2.02    67.1   546.4  True
+   50 mm: 13.26     0.0   491.1  True
+
+lift shock and wheel load, kerb nose-first, lift cap 12 kN (so the shock is not clipped)
+  cap12      v 0.5 tyre rigid                        reached True  lift peak  3068 (static 1348) wheel  9350 comb  3048 pad  1057 sag 3.08 mm
+  cap12t20   v 0.5 tyre 0.020,0.5;0.5,0.95,0.02      reached True  lift peak  2749 (static 1346) wheel  3992 comb  2826 pad  1023 sag 3.01 mm
+  cap12t30   v 0.5 tyre 0.030,0.5;0.5,0.95,0.02      reached True  lift peak  2348 (static 1347) wheel  2654 comb  2501 pad   996 sag 2.64 mm
+  cap12t65   v 0.5 tyre 0.065,0.5;0.5,0.95,0.02      reached True  lift peak  2165 (static 1348) wheel  2360 comb  2373 pad   935 sag 2.59 mm
+  cap12      v 0.8 tyre rigid                        reached True  lift peak  4028 (static 1349) wheel  6016 comb  7838 pad  1414 sag 2.99 mm
+  cap12t20   v 0.8 tyre 0.020,0.5;0.5,0.95,0.02      reached True  lift peak  3832 (static 1350) wheel  4069 comb  7041 pad  1429 sag 3.53 mm
+  cap12t30   v 0.8 tyre 0.030,0.5;0.5,0.95,0.02      reached True  lift peak  3502 (static 1349) wheel  3557 comb  4512 pad  1415 sag 3.43 mm
+  cap12t65   v 0.8 tyre 0.065,0.5;0.5,0.95,0.02      reached True  lift peak  2688 (static 1352) wheel  3342 comb  3358 pad  1319 sag 3.26 mm
+  tyrecal B2F_tyrecal_r4t20.json 0.020,0.5;0.5,0.95,0.02 [984, 958] [1.33, 1.31] [739143, 732579]
+  tyrecal B2F_tyrecal_r4t30.json 0.030,0.5;0.5,0.95,0.02 [985, 959] [2.77, 2.73] [355626, 351690]
+  tyrecal B2F_tyrecal_r4t65.json 0.065,0.5;0.5,0.95,0.02 [987, 961] [7.24, 7.18] [136345, 133784]

@@ -1,0 +1,240 @@
+{
+ "scenario": "s5a",
+ "seed": 11,
+ "title": "Lidar: person + dog crossing (loaded)",
+ "expect": "pass",
+ "result": "pass",
+ "outcome": "plan completed",
+ "alerts": [],
+ "sim_time_s": 300.8,
+ "chunks": [
+  {
+   "t0": 0.0,
+   "t1": 300.8,
+   "wall": 53.9,
+   "frames": 16030,
+   "status": "done"
+  }
+ ],
+ "energy_wh": 5.61,
+ "soc_start": 0.9,
+ "soc_end": 0.8879,
+ "odo_m": 84.9,
+ "hedge_min_m": 0.377,
+ "hedge_min_at": [
+  138.6,
+  317.5
+ ],
+ "legal_min_m": null,
+ "legal_min_at": null,
+ "contact_min_m": 0.656,
+ "contact_with": "person",
+ "person_rest_min_m": 0.656,
+ "car_rest_min_m": null,
+ "collisions": [],
+ "chain_trips": [],
+ "metrics": {
+  "placements": [],
+  "grabs": [],
+  "trips": [],
+  "stops": [],
+  "gates": [],
+  "navcam": {
+   "n": 2052,
+   "cam_only": 14,
+   "both": 1787,
+   "disagree": 129,
+   "none": 46
+  },
+  "first_motion_clock": null,
+  "first_motion_t": 300.4,
+  "ppl_pauses": [
+   {
+    "t": 101.4,
+    "v_in": 0.42,
+    "range": 1.87,
+    "s": 316.8,
+    "by": "lid",
+    "where": "lane",
+    "obj": [
+     [
+      1.06,
+      -2.41,
+      22,
+      1.87,
+      null
+     ]
+    ],
+    "wait_s": 34.2,
+    "person": false
+   }
+  ]
+ },
+ "events": [
+  {
+   "t": 0.0,
+   "kind": "sim",
+   "text": "chunk 0 start: SITL launched, home = checkpoint pose s=295.0"
+  },
+  {
+   "t": 1.15,
+   "kind": "fw",
+   "text": "Calibrating barometer"
+  },
+  {
+   "t": 2.82,
+   "kind": "fw",
+   "text": "Barometer 1 calibration complete"
+  },
+  {
+   "t": 2.82,
+   "kind": "fw",
+   "text": "Barometer 2 calibration complete"
+  },
+  {
+   "t": 2.83,
+   "kind": "fw",
+   "text": "Beginning INS calibration. Do not move vehicle"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "ArduPilot Ready"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "RCInput: decoding UDP (Pulses)"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "AHRS: DCM active"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "GPS 1: specified as MAV"
+  },
+  {
+   "t": 3.09,
+   "kind": "fw",
+   "text": "GPS 1: detected MAV"
+  },
+  {
+   "t": 5.01,
+   "kind": "fw",
+   "text": "EKF3 IMU0 initialised"
+  },
+  {
+   "t": 5.01,
+   "kind": "fw",
+   "text": "EKF3 IMU1 initialised"
+  },
+  {
+   "t": 6.67,
+   "kind": "fw",
+   "text": "EKF3 IMU0 tilt alignment complete"
+  },
+  {
+   "t": 6.67,
+   "kind": "fw",
+   "text": "EKF3 IMU1 tilt alignment complete"
+  },
+  {
+   "t": 6.75,
+   "kind": "fw",
+   "text": "EKF3 IMU0 MAG0 initial yaw alignment complete"
+  },
+  {
+   "t": 6.75,
+   "kind": "fw",
+   "text": "EKF3 IMU1 MAG0 initial yaw alignment complete"
+  },
+  {
+   "t": 6.75,
+   "kind": "fw",
+   "text": "AHRS: EKF3 active"
+  },
+  {
+   "t": 15.15,
+   "kind": "fw",
+   "text": "EKF3 IMU0 origin set"
+  },
+  {
+   "t": 15.15,
+   "kind": "fw",
+   "text": "EKF3 IMU1 origin set"
+  },
+  {
+   "t": 15.17,
+   "kind": "fw",
+   "text": "Field Elevation Set: 30m"
+  },
+  {
+   "t": 21.65,
+   "kind": "fw",
+   "text": "SmartRTL deactivated: bad position"
+  },
+  {
+   "t": 42.57,
+   "kind": "fw",
+   "text": "EKF3 IMU0 is using GPS"
+  },
+  {
+   "t": 42.57,
+   "kind": "fw",
+   "text": "EKF3 IMU1 is using GPS"
+  },
+  {
+   "t": 45.95,
+   "kind": "fw",
+   "text": "Fence Indexed OK"
+  },
+  {
+   "t": 45.95,
+   "kind": "pi",
+   "text": "fence upload ack=0 (81 vertices)"
+  },
+  {
+   "t": 45.97,
+   "kind": "fw",
+   "text": "Warning: Arming Checks Disabled"
+  },
+  {
+   "t": 45.97,
+   "kind": "fw",
+   "text": "Throttle armed"
+  },
+  {
+   "t": 46.95,
+   "kind": "pi",
+   "text": "boot done (GUIDED, armed, fence 81 pts)"
+  },
+  {
+   "t": 101.37,
+   "kind": "pi",
+   "text": "lidar: something 1.9 m away -> stand still"
+  },
+  {
+   "t": 102.15,
+   "kind": "fw",
+   "text": "mode GUIDED -> HOLD"
+  },
+  {
+   "t": 135.61,
+   "kind": "pi",
+   "text": "nothing near for 3 s on any sensor -> carry on, slowly at first"
+  },
+  {
+   "t": 135.65,
+   "kind": "fw",
+   "text": "mode HOLD -> GUIDED"
+  },
+  {
+   "t": 300.77,
+   "kind": "pi",
+   "text": "FINISH pass: plan completed"
+  }
+ ]
+}

@@ -1,0 +1,19 @@
+  0 rc 0    10 s  step one
+  1 rc 0    10 s  step both
+  2 rc 0    11 s  step both_ramp
+  3 rc 0    20 s  step one
+  4 rc 0    10 s  climb 0.30 0.06
+  5 rc 0    12 s  climb 0.30 0.09
+  6 rc 0    11 s  climb 0.25 0.06
+  7 rc 0    11 s  climb 0.25 0.09
+  8 rc 0    12 s  climb 0.22 0.06
+  9 rc 0    18 s  climb 0.22 0.09
+ 10 rc 0    17 s  estop fwd
+ 11 rc 0    45 s  estop rev
+ 12 rc 0    83 s  towstab
+ 13 rc 0    56 s  rel WEB140 flat full
+ 14 rc 0    45 s  rel WEB140 flat empty
+ 15 rc 0    60 s  rel WEB140 up12 full
+ 16 rc 0    58 s  rel WEB140 up12 empty
+ 17 rc 0    65 s  rel WEB140 dn12 full
+ 18 rc 0    67 s  rel WEB140 dn12 empty

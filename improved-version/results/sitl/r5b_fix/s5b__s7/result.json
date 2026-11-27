@@ -1,0 +1,247 @@
+{
+ "scenario": "s5b",
+ "seed": 7,
+ "title": "Car in the bell-mouth at the drop",
+ "expect": "pass",
+ "result": "pass",
+ "outcome": "plan completed",
+ "alerts": [],
+ "sim_time_s": 268.7,
+ "chunks": [
+  {
+   "t0": 0.0,
+   "t1": 268.7,
+   "wall": 30.2,
+   "frames": 14428,
+   "status": "done"
+  }
+ ],
+ "energy_wh": 2.71,
+ "soc_start": 0.9,
+ "soc_end": 0.8942,
+ "odo_m": 44.7,
+ "hedge_min_m": 0.36,
+ "hedge_min_at": [
+  47.0,
+  585.0
+ ],
+ "legal_min_m": 3.132,
+ "legal_min_at": [
+  207.2,
+  621.9
+ ],
+ "contact_min_m": 0.521,
+ "contact_with": "black",
+ "person_rest_min_m": null,
+ "car_rest_min_m": 2.123,
+ "collisions": [],
+ "chain_trips": [],
+ "metrics": {
+  "placements": [
+   {
+    "bin": "black",
+    "where": "pad:A",
+    "err_m": 0.029,
+    "handle_err_deg": 0.84,
+    "clock": null,
+    "t": 232.0
+   }
+  ],
+  "grabs": [],
+  "trips": [],
+  "stops": [],
+  "gates": [],
+  "navcam": {
+   "n": 958,
+   "cam_only": 0,
+   "both": 872,
+   "disagree": 92,
+   "none": 0,
+   "dis_cam": 7
+  },
+  "first_motion_clock": null,
+  "first_motion_t": 268.4,
+  "waits": [
+   {
+    "pad": "A",
+    "wait_s": 20.1
+   }
+  ],
+  "pad_check": {
+   "pad": "A",
+   "margin_m": 3.17
+  }
+ },
+ "events": [
+  {
+   "t": 0.0,
+   "kind": "sim",
+   "text": "chunk 0 start: SITL launched, home = checkpoint pose s=585.0"
+  },
+  {
+   "t": 1.14,
+   "kind": "fw",
+   "text": "Calibrating barometer"
+  },
+  {
+   "t": 2.81,
+   "kind": "fw",
+   "text": "Barometer 1 calibration complete"
+  },
+  {
+   "t": 2.81,
+   "kind": "fw",
+   "text": "Barometer 2 calibration complete"
+  },
+  {
+   "t": 2.82,
+   "kind": "fw",
+   "text": "Beginning INS calibration. Do not move vehicle"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "ArduPilot Ready"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "RCInput: decoding UDP (Pulses)"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "AHRS: DCM active"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "GPS 1: specified as MAV"
+  },
+  {
+   "t": 3.11,
+   "kind": "fw",
+   "text": "GPS 1: detected MAV"
+  },
+  {
+   "t": 4.97,
+   "kind": "fw",
+   "text": "EKF3 IMU0 initialised"
+  },
+  {
+   "t": 4.97,
+   "kind": "fw",
+   "text": "EKF3 IMU1 initialised"
+  },
+  {
+   "t": 6.65,
+   "kind": "fw",
+   "text": "EKF3 IMU0 tilt alignment complete"
+  },
+  {
+   "t": 6.65,
+   "kind": "fw",
+   "text": "EKF3 IMU1 tilt alignment complete"
+  },
+  {
+   "t": 6.73,
+   "kind": "fw",
+   "text": "EKF3 IMU0 MAG0 initial yaw alignment complete"
+  },
+  {
+   "t": 6.73,
+   "kind": "fw",
+   "text": "EKF3 IMU1 MAG0 initial yaw alignment complete"
+  },
+  {
+   "t": 6.73,
+   "kind": "fw",
+   "text": "AHRS: EKF3 active"
+  },
+  {
+   "t": 15.13,
+   "kind": "fw",
+   "text": "EKF3 IMU0 origin set"
+  },
+  {
+   "t": 15.13,
+   "kind": "fw",
+   "text": "EKF3 IMU1 origin set"
+  },
+  {
+   "t": 15.15,
+   "kind": "fw",
+   "text": "Field Elevation Set: 31m"
+  },
+  {
+   "t": 21.63,
+   "kind": "fw",
+   "text": "SmartRTL deactivated: bad position"
+  },
+  {
+   "t": 42.57,
+   "kind": "fw",
+   "text": "EKF3 IMU0 is using GPS"
+  },
+  {
+   "t": 42.57,
+   "kind": "fw",
+   "text": "EKF3 IMU1 is using GPS"
+  },
+  {
+   "t": 45.95,
+   "kind": "fw",
+   "text": "Fence Indexed OK"
+  },
+  {
+   "t": 45.95,
+   "kind": "pi",
+   "text": "fence upload ack=0 (81 vertices)"
+  },
+  {
+   "t": 45.97,
+   "kind": "fw",
+   "text": "Warning: Arming Checks Disabled"
+  },
+  {
+   "t": 45.97,
+   "kind": "fw",
+   "text": "Throttle armed"
+  },
+  {
+   "t": 46.95,
+   "kind": "pi",
+   "text": "boot done (GUIDED, armed, fence 81 pts)"
+  },
+  {
+   "t": 156.81,
+   "kind": "pi",
+   "text": "pad A clear after 20 s wait"
+  },
+  {
+   "t": 208.21,
+   "kind": "pi",
+   "text": "pre-motion warning before the set-down (3 s)"
+  },
+  {
+   "t": 211.21,
+   "kind": "pi",
+   "text": "lower bin + pad release (21 s)"
+  },
+  {
+   "t": 232.01,
+   "kind": "pi",
+   "text": "bin black set down at A: 0.029 m / 0.8 deg from the spot (truth)"
+  },
+  {
+   "t": 243.41,
+   "kind": "pi",
+   "text": "photo of the placed bin (app) (5 s)"
+  },
+  {
+   "t": 268.73,
+   "kind": "pi",
+   "text": "FINISH pass: plan completed"
+  }
+ ]
+}

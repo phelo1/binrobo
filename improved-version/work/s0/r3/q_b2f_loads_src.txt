@@ -1,0 +1,29 @@
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ H2_S5V=2 IT1_TAG= python3 h2/runX.py ret ESE240SL step 0.5
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ H2_S5V=2 IT1_TAG= python3 h2/runX.py ret ESE240SL step 0.8
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG= python3 h2/runX.py ret ESE240SL trench 0.5
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG= python3 h2/runX.py ret ESE240SL trench 0.8
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG= python3 h2/runX.py ret ESE240SL pothole 0.5
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG= python3 h2/runX.py ret ESE240SL pothole 0.8
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ H2_S5V=2 IT1_TAG= python3 h2/runX.py ret WEB140 step 0.5
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ H2_S5V=2 IT1_TAG= python3 h2/runX.py ret WEB140 step 0.8
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG= python3 h2/runX.py ret WEB140 trench 0.5
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG= python3 h2/runX.py ret WEB140 trench 0.8
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG= python3 h2/runX.py ret WEB140 pothole 0.5
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG= python3 h2/runX.py ret WEB140 pothole 0.8
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ H2_KEEPER=1 H2_S5V=2 IT1_TAG= python3 h2/runX.py ret ESE240SL step 0.8
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ H2_KEEPER=1 IT1_TAG= python3 h2/runX.py ret ESE240SL trench 0.8
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ H2_KEEPER=1 IT1_TAG= python3 h2/runX.py ret ESE240SL pothole 0.8
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ H2_KEEPER=1 H2_S5V=2 IT1_TAG= python3 h2/runX.py ret WEB140 step 0.8
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ H2_KEEPER=1 IT1_TAG= python3 h2/runX.py ret WEB140 trench 0.8
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ H2_KEEPER=1 IT1_TAG= python3 h2/runX.py ret WEB140 pothole 0.8
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ H2_TYRE_POST='0.045,0.5;0.5,0.95,0.02' IT1_TAG=_t20 python3 h2/runX.py tyrecal
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG=_r python3 h2/runX.py kerb 0.5 nose
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ CGB_GEO='{"tcap":80}' IT1_TAG=_r80 python3 h2/runX.py kerb 0.5 nose
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ CGB_GEO='{"cr":0.13}' IT1_TAG=_rcas python3 h2/runX.py kerb 0.5 nose
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG=_r python3 h2/runX.py kerb 0.5 nose ramp
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ H2_TYRE_POST='0.065,0.5;0.5,0.95,0.02' IT1_TAG=_t15 python3 h2/runX.py kerb 0.5 nose
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ H2_TYRE_POST='0.065,0.5;0.5,0.95,0.02' CGB_GEO='{"cr":0.13,"tcap":80}' IT1_TAG=_t15_80cas python3 h2/runX.py kerb 0.5 nose
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ H2_S5V=2 H2_LIP_SOLREF=0.004,1 IT1_TAG=_lsr004 python3 h2/runX.py ret ESE240SL step 0.8
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ H2_LIP_SOLREF=0.004,1 IT1_TAG=_lsr004 python3 h2/runX.py ret ESE240SL pothole 0.8
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ H2_S5V=2 H2_LIP_MU=0.25 IT1_TAG=_lmu25 python3 h2/runX.py ret ESE240SL step 0.8
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ H2_LIP_MU=0.25 IT1_TAG=_lmu25 python3 h2/runX.py ret ESE240SL pothole 0.8

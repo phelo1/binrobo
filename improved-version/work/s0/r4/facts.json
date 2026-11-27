@@ -1,0 +1,38 @@
+{
+ "kg": "178",
+ "pivot": "3.00",
+ "speed_rule": [
+  [
+   "level or uphill",
+   "0.4 m/s",
+   "0.4 m/s"
+  ],
+  [
+   "downhill, up to 3 %",
+   "0.4 m/s",
+   "0.3 m/s"
+  ],
+  [
+   "downhill, 3 to 9 %",
+   "0.3 m/s",
+   "0.2 m/s"
+  ],
+  [
+   "downhill, steeper than 9 %",
+   "0.2 m/s",
+   "tail first, 0.2 m/s"
+  ]
+ ],
+ "speed_notes": [
+  "Longest simulated stop under this rule: 122 mm (wet surface, grip 0.30; 0.15 s from the touch to the brakes). Full bin on the 12 % pitch at 0.2 m/s: 94 mm.",
+  "Only the two drive wheels brake. Without a bin 55 % of the weight is on the castors, so the empty robot stops badly nose first downhill: on the 12 % pitch it needs 289 mm even from 0.15 m/s. Tail first (drive wheels downhill) it needs 71 mm from 0.2 m/s. Castor brakes are the alternative (reply note, decisions).",
+  "On the 12 % pitch with grip below 0.3 (wet leaves, ice) the empty robot does not hold nose first and the loaded robot needs 277 mm from 0.2 m/s: no trips in those conditions until the real slope and grip are measured.",
+  "The 150 mm and the 0.15 s are assumptions until the bumper, safety relay, contactors and brakes are chosen. Measure the stop on the built robot before it runs unattended."
+ ],
+ "lower_notes": [
+  "The lift comes down at up to 13 mm/s. While the bin is still more than 15 mm above the height at which it left the ground at the pick-up, the firmware watches the load on the lift. If the load falls by more than 80 N (or 10 % of the bin's weight), something is under the bin: the lift stops and goes back up 30 mm.",
+  "Simulated with a 25, 40 and 60 mm block under one bin wheel and a 60 mm bar under both wheels, bins of 25, 60 and 110 kg: the block carried at most 158 N before the lift stopped. Without the guard it carried 907 N.",
+  "The guard does not see anything thinner than about 20 mm (865 N on a 15 mm block). Two light beams cross under the bin 40 mm above the ground; lowering is blocked while either is broken. A flat hand under a bin wheel is covered by neither: the robot sounds a warning before it lowers.",
+  "The lift driver limits the current to 3 A on the way down (about 0.5 kN of push, to be set on the bench), so the comb and pad arm cannot press hard on anything by themselves."
+ ]
+}

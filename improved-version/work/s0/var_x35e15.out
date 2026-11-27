@@ -1,0 +1,37 @@
+  0 rc 0    18 s  climb 0.22 0.09
+  1 rc 0    16 s  step one
+  2 rc 0    14 s  step both
+  3 rc 0    15 s  step both_ramp
+  4 rc 0    15 s  estop fwd
+  5 rc 0    14 s  estop rev
+  6 rc 0    23 s  towstab
+  7 rc 0    15 s  rel WEB140 flat full
+  8 rc 0    16 s  rel WEB140 flat empty
+  9 rc 0    18 s  rel WEB140 up12 full
+ 10 rc 0    15 s  rel WEB140 up12 empty
+ 11 rc 0    30 s  rel WEB140 dn12 full
+ 12 rc 0    29 s  rel WEB140 dn12 empty
+ 13 rc 0    36 s  rel ESE240CL flat full
+ 14 rc 0    28 s  rel ESE240CL flat empty
+ 15 rc 0    36 s  rel ESE240CL up12 full
+ 16 rc 0    28 s  rel ESE240CL up12 empty
+ 17 rc 0    34 s  rel ESE240CL dn12 full
+ 18 rc 0    29 s  rel ESE240CL dn12 empty
+ 19 rc 0    30 s  rel ESE240SL250 flat full
+ 20 rc 0    24 s  rel ESE240SL250 flat empty
+ 21 rc 0    33 s  rel ESE240SL250 up12 full
+ 22 rc 0    26 s  rel ESE240SL250 up12 empty
+ 23 rc 0    33 s  rel ESE240SL250 dn12 full
+ 24 rc 0    27 s  rel ESE240SL250 dn12 empty
+ 25 rc 0    25 s  static up 110
+ 26 rc 0    25 s  static up 60
+ 27 rc 0    24 s  static dn 110
+ 28 rc 0    24 s  static dn 60
+ 29 rc 0    25 s  static crL 110
+ 30 rc 0    26 s  static crL 60
+ 31 rc 0    25 s  static crR 110
+ 32 rc 0    25 s  static crR 60
+ 33 rc 0   165 s  grab ESE240SL 10 202
+ 34 rc 0   163 s  grab WEB140 10 201
+ 35 rc 0    91 s  grab ESE240SL250 10 204
+batch done in 655 s

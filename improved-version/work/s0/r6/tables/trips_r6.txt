@@ -1,0 +1,15 @@
+set        kind     trips  minutes                Wh                     least hedge m
+rev 5.1    drop         3   66.9 to  76.3 (mean 70.1)   71.4 to  74.6 (mean 72.5)  0.213
+rev 5.1    pickup       6   74.6 to  76.7 (mean 75.4)   73.5 to  74.5 (mean 74.0)  0.197
+fast       drop         4   36.2 to  40.1 (mean 37.5)   57.4 to  57.9 (mean 57.6)  0.217
+fast       pickup       4   40.3 to  41.6 (mean 40.9)   57.9 to  58.5 (mean 58.2)  0.205
+fast, suite before the last changes drop        12   33.9 to  38.9 (mean 35.2)   56.3 to  57.8 (mean 56.8)  0.194
+fast, suite before the last changes pickup      12   36.8 to  38.9 (mean 37.7)   56.2 to  57.8 (mean 57.0)  0.186
+fast off   drop         1   65.4 to  65.4 (mean 65.4)   70.0 to  70.0 (mean 70.0)  0.228
+fast off   pickup       1   74.0 to  74.0 (mean 74.0)   72.9 to  72.9 (mean 72.9)  0.209
+middle     drop         1   43.1 to  43.1 (mean 43.1)   60.0 to  60.0 (mean 60.0)  0.219
+middle     pickup       1   45.6 to  45.6 (mean 45.6)   60.2 to  60.2 (mean 60.2)  0.201
+leaf       drop         1   35.9 to  35.9 (mean 35.9)   57.2 to  57.2 (mean 57.2)  0.247
+leaf       pickup       1   46.9 to  46.9 (mean 46.9)   61.2 to  61.2 (mean 61.2)  0.237
+phantom    drop         1   35.7 to  35.7 (mean 35.7)   57.7 to  57.7 (mean 57.7)  0.234
+phantom    pickup       1   39.4 to  39.4 (mean 39.4)   58.3 to  58.3 (mean 58.3)  0.253

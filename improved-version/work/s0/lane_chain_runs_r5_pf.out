@@ -1,0 +1,16 @@
+runs_r5_pf P7: DONE P7 PASS [] sim 1841 s E 25.7 Wh {"clear_min": 0.0466, "clear_at": 290.2, "seated_all": true, "bin_ground_N": 0.0, "roll_max": 1.7442, "pitch_max"
+runs_r5_pf P1: DONE P1 PASS [] sim 1845 s E 16.7 Wh {"clear_min": 0.0511, "clear_at": 290.2, "seated_all": true, "bin_ground_N": 0.0, "roll_max": 1.732, "pitch_max":
+runs_r5_pf P2a_pf: DONE P2a_pf PASS [] sim 1746 s E 33.6 Wh {"clear_min": 9.0, "clear_at": null, "seated_all": true, "bin_ground_N": 0.0, "roll_max": 1.8087, "pitch_max"
+runs_r5_pf P3: DONE P3 PASS [] sim 1851 s E 16.4 Wh {"clear_min": 0.0979, "clear_at": 14.2, "seated_all": true, "bin_ground_N": 0.0, "roll_max": 1.7238, "pitch_max":
+runs_r5_pf P4a: DONE P4a PASS [] sim 590 s E 0.5 Wh {"clear_min": 0.098, "clear_at": 133.9, "seated_all": true, "bin_ground_N": 0.0, "roll_max": 0.5246, "pitch_max": 
+runs_r5_pf P4b: DONE P4b PASS [] sim 734 s E 6.3 Wh {"clear_min": 0.095, "clear_at": 170.1, "seated_all": true, "bin_ground_N": 0.0, "roll_max": 2.4231, "pitch_max": 
+runs_r5_pf chain done
+runs_r5_pf P5a_drop_sharp_3kN: DONE P5a_drop_sharp_3kN PASS [] sim 993 s E 0.2 Wh {"clear_min": 0.047, "clear_at": 290.2, "seated_all": true, "bin_ground_N": 0.0, "roll_max": 0.199,
+runs_r5_pf P6a_person_estop: DONE P6a_person_estop PASS [] sim 539 s E 0.3 Wh {"clear_min": 0.0976, "clear_at": 128.1, "seated_all": true, "bin_ground_N": 0.0, "roll_max": 0.5253,
+runs_r5_pf P6b_dog_crossing: DONE P6b_dog_crossing PASS [] sim 838 s E 0.2 Wh {"clear_min": 0.096, "clear_at": 232.7, "seated_all": true, "bin_ground_N": 0.0, "roll_max": 0.0085, 
+runs_r5_pf P5d_up_sharp_3kN: DONE P5d_up_sharp_3kN FAIL ['drive2 stalled at s 291.0 (no progress 12 s (stall))'] sim 1051 s E 0.8 Wh {"clear_min": 0.0787, "clear_at": 291.0, "seat
+runs_r5_pf P5h_pothole: DONE P5h_pothole FAIL ['drive0 stalled at s 550.5 (no progress 12 s (stall))'] sim 1689 s E 1.9 Wh {"clear_min": 0.0486, "clear_at": 550.1, "seated_al
+runs_r5_pf P5g_trench_open: DONE P5g_trench_open FAIL ['drive0 stalled at s 454.2 (no progress 12 s (stall))'] sim 1410 s E 0.4 Wh {"clear_min": 0.0761, "clear_at": 454.2, "seate
+runs_r5_pf chain done
+runs_r5_pf P2c: DONE P2c PASS [] sim 1811 s E 34.8 Wh {"clear_min": 0.0982, "clear_at": 290.9, "seated_all": true, "bin_ground_N": 0.0, "roll_max": 1.8467, "pitch_max
+runs_r5_pf chain done

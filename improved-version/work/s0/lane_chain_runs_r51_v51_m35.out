@@ -1,0 +1,5 @@
+runs_r51_v51_m35 P6a_person_estop: DONE P6a_person_estop PASS [] sim 547 s E 0.3 Wh {"clear_min": 0.0956, "clear_at": 128.1, "seated_all": true, "bin_ground_N": 0.0, "roll_max": 0.3259,
+runs_r51_v51_m35 X8n: DONE X8n PASS [] sim 1643 s E 0.6 Wh {"clear_min": 9.0, "clear_at": null, "seated_all": true, "bin_ground_N": 0.0, "roll_max": 3.6095, "pitch_max": 4.
+runs_r51_v51_m35 X9n: DONE X9n PASS [] sim 1641 s E 0.6 Wh {"clear_min": 9.0, "clear_at": null, "seated_all": true, "bin_ground_N": 0.0, "roll_max": 3.6095, "pitch_max": 4.
+runs_r51_v51_m35 P4a: DONE P4a PASS [] sim 619 s E 0.5 Wh {"clear_min": 0.0961, "clear_at": 129.1, "seated_all": true, "bin_ground_N": 0.0, "roll_max": 0.3238, "pitch_max":
+runs_r51_v51_m35 chain done

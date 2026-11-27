@@ -1,0 +1,295 @@
+{
+ "scenario": "s5a",
+ "seed": 23,
+ "title": "Lidar: person + dog crossing (loaded)",
+ "expect": "pass",
+ "result": "pass",
+ "outcome": "plan completed",
+ "alerts": [],
+ "sim_time_s": 297.5,
+ "chunks": [
+  {
+   "t0": 0.0,
+   "t1": 297.5,
+   "wall": 36.9,
+   "frames": 15868,
+   "status": "done"
+  }
+ ],
+ "energy_wh": 6.03,
+ "soc_start": 0.9,
+ "soc_end": 0.887,
+ "odo_m": 85.7,
+ "hedge_min_m": 0.32,
+ "hedge_min_at": [
+  270.3,
+  363.0
+ ],
+ "legal_min_m": null,
+ "legal_min_at": null,
+ "contact_min_m": 1.124,
+ "contact_with": "person",
+ "person_rest_min_m": 1.124,
+ "car_rest_min_m": null,
+ "collisions": [],
+ "chain_trips": [],
+ "metrics": {
+  "placements": [],
+  "grabs": [],
+  "trips": [],
+  "stops": [],
+  "gates": [],
+  "navcam": {
+   "n": 1367,
+   "cam_only": 23,
+   "both": 1167,
+   "disagree": 178,
+   "none": 48,
+   "dis_cam": 3
+  },
+  "r6_fast": {
+   "lane_s": 136.7,
+   "fast": 94.2,
+   "gap": 32.3,
+   "float": 44.9,
+   "seen": 2.5,
+   "one_face": 7.2,
+   "fix": 0.4,
+   "object": 0.3
+  },
+  "first_motion_clock": null,
+  "first_motion_t": 297.2,
+  "ppl_pauses": [
+   {
+    "t": 75.9,
+    "v_in": 0.46,
+    "range": 1.72,
+    "s": 317.2,
+    "by": "lid",
+    "where": "lane",
+    "obj": [
+     [
+      2.34,
+      -1.94,
+      2,
+      1.72,
+      null
+     ]
+    ],
+    "wait_s": 95.6,
+    "person": true
+   },
+   {
+    "t": 232.3,
+    "v_in": 0.29,
+    "range": 3.89,
+    "s": 345.1,
+    "by": "cam",
+    "where": "lane",
+    "obj": [
+     [
+      4.79,
+      1.04,
+      2,
+      3.5,
+      null
+     ]
+    ],
+    "wait_s": 7.3,
+    "person": true
+   }
+  ]
+ },
+ "events": [
+  {
+   "t": 0.0,
+   "kind": "sim",
+   "text": "chunk 0 start: SITL launched, home = checkpoint pose s=295.0"
+  },
+  {
+   "t": 1.14,
+   "kind": "fw",
+   "text": "Calibrating barometer"
+  },
+  {
+   "t": 2.81,
+   "kind": "fw",
+   "text": "Barometer 1 calibration complete"
+  },
+  {
+   "t": 2.81,
+   "kind": "fw",
+   "text": "Barometer 2 calibration complete"
+  },
+  {
+   "t": 2.83,
+   "kind": "fw",
+   "text": "Beginning INS calibration. Do not move vehicle"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "ArduPilot Ready"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "RCInput: decoding UDP (Pulses)"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "AHRS: DCM active"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "GPS 1: specified as MAV"
+  },
+  {
+   "t": 3.13,
+   "kind": "fw",
+   "text": "GPS 1: detected MAV"
+  },
+  {
+   "t": 4.99,
+   "kind": "fw",
+   "text": "EKF3 IMU0 initialised"
+  },
+  {
+   "t": 4.99,
+   "kind": "fw",
+   "text": "EKF3 IMU1 initialised"
+  },
+  {
+   "t": 6.67,
+   "kind": "fw",
+   "text": "EKF3 IMU0 tilt alignment complete"
+  },
+  {
+   "t": 6.67,
+   "kind": "fw",
+   "text": "EKF3 IMU1 tilt alignment complete"
+  },
+  {
+   "t": 6.75,
+   "kind": "fw",
+   "text": "EKF3 IMU0 MAG0 initial yaw alignment complete"
+  },
+  {
+   "t": 6.75,
+   "kind": "fw",
+   "text": "EKF3 IMU1 MAG0 initial yaw alignment complete"
+  },
+  {
+   "t": 6.75,
+   "kind": "fw",
+   "text": "AHRS: EKF3 active"
+  },
+  {
+   "t": 15.15,
+   "kind": "fw",
+   "text": "EKF3 IMU0 origin set"
+  },
+  {
+   "t": 15.15,
+   "kind": "fw",
+   "text": "EKF3 IMU1 origin set"
+  },
+  {
+   "t": 15.15,
+   "kind": "fw",
+   "text": "Field Elevation Set: 30m"
+  },
+  {
+   "t": 21.63,
+   "kind": "fw",
+   "text": "SmartRTL deactivated: bad position"
+  },
+  {
+   "t": 42.59,
+   "kind": "fw",
+   "text": "EKF3 IMU0 is using GPS"
+  },
+  {
+   "t": 42.59,
+   "kind": "fw",
+   "text": "EKF3 IMU1 is using GPS"
+  },
+  {
+   "t": 46.75,
+   "kind": "fw",
+   "text": "Fence Indexed OK"
+  },
+  {
+   "t": 46.75,
+   "kind": "pi",
+   "text": "fence upload ack=0 (81 vertices)"
+  },
+  {
+   "t": 46.81,
+   "kind": "fw",
+   "text": "Warning: Arming Checks Disabled"
+  },
+  {
+   "t": 46.81,
+   "kind": "fw",
+   "text": "Throttle armed"
+  },
+  {
+   "t": 47.75,
+   "kind": "pi",
+   "text": "boot done (GUIDED, armed, fence 81 pts)"
+  },
+  {
+   "t": 75.93,
+   "kind": "pi",
+   "text": "lidar: something 1.7 m away -> stand still"
+  },
+  {
+   "t": 75.99,
+   "kind": "fw",
+   "text": "mode GUIDED -> HOLD"
+  },
+  {
+   "t": 87.99,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 171.51,
+   "kind": "pi",
+   "text": "nothing near for 3 s on any sensor -> carry on, slowly at first"
+  },
+  {
+   "t": 171.57,
+   "kind": "fw",
+   "text": "mode HOLD -> GUIDED"
+  },
+  {
+   "t": 232.31,
+   "kind": "pi",
+   "text": "camera: person or animal 3.9 m away -> stand still"
+  },
+  {
+   "t": 232.87,
+   "kind": "fw",
+   "text": "mode GUIDED -> HOLD"
+  },
+  {
+   "t": 239.61,
+   "kind": "pi",
+   "text": "nothing near for 3 s on any sensor -> carry on, slowly at first"
+  },
+  {
+   "t": 239.67,
+   "kind": "fw",
+   "text": "mode HOLD -> GUIDED"
+  },
+  {
+   "t": 297.53,
+   "kind": "pi",
+   "text": "FINISH pass: plan completed"
+  }
+ ]
+}

@@ -1,0 +1,8 @@
+step frame 0 of 600 s 285.7 clr 0.103
+step frame 100 of 600 s 287.7 clr 0.101
+step frame 200 of 600 s 289.7 clr 0.107
+step frame 300 of 600 s 291.7 clr 0.101
+step frame 400 of 600 s 293.7 clr 0.102
+step frame 500 of 600 s 295.7 clr 0.102
+step frame 600 of 600 s 297.7 clr 0.102
+WROTE /home/claude/s0/video/out/1_improved_full_240L_over_sharp_step.mp4 lowest clearance in the clip 56 mm

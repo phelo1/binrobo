@@ -1,0 +1,213 @@
+{
+ "scenario": "tune",
+ "seed": 7,
+ "title": "tuning segment s 200-290 loaded",
+ "expect": "pass",
+ "result": "pass",
+ "outcome": "plan completed",
+ "alerts": [],
+ "sim_time_s": 288.4,
+ "chunks": [
+  {
+   "t0": 0.0,
+   "t1": 288.4,
+   "wall": 29.3,
+   "frames": 15412,
+   "status": "done"
+  }
+ ],
+ "energy_wh": 5.67,
+ "soc_start": 0.9,
+ "soc_end": 0.8878,
+ "odo_m": 90.7,
+ "hedge_min_m": 0.385,
+ "hedge_min_at": [
+  68.2,
+  298.0
+ ],
+ "legal_min_m": null,
+ "legal_min_at": null,
+ "contact_min_m": null,
+ "contact_with": null,
+ "person_rest_min_m": null,
+ "car_rest_min_m": null,
+ "collisions": [],
+ "chain_trips": [],
+ "metrics": {
+  "placements": [],
+  "grabs": [],
+  "trips": [],
+  "stops": [],
+  "gates": [],
+  "navcam": {
+   "n": 2237,
+   "cam_only": 17,
+   "both": 1978,
+   "disagree": 335,
+   "none": 46
+  },
+  "first_motion_clock": null,
+  "first_motion_t": 288.0,
+  "faults": [
+   {
+    "kind": "cam",
+    "t": 73.4,
+    "s": 300.2,
+    "val": 0.5,
+    "dur": 30.0
+   }
+  ]
+ },
+ "events": [
+  {
+   "t": 0.0,
+   "kind": "sim",
+   "text": "chunk 0 start: SITL launched, home = checkpoint pose s=290.0"
+  },
+  {
+   "t": 1.47,
+   "kind": "fw",
+   "text": "Calibrating barometer"
+  },
+  {
+   "t": 3.21,
+   "kind": "fw",
+   "text": "Barometer 1 calibration complete"
+  },
+  {
+   "t": 3.21,
+   "kind": "fw",
+   "text": "Barometer 2 calibration complete"
+  },
+  {
+   "t": 3.25,
+   "kind": "fw",
+   "text": "Beginning INS calibration. Do not move vehicle"
+  },
+  {
+   "t": 3.39,
+   "kind": "fw",
+   "text": "ArduPilot Ready"
+  },
+  {
+   "t": 3.39,
+   "kind": "fw",
+   "text": "RCInput: decoding UDP (Pulses)"
+  },
+  {
+   "t": 3.39,
+   "kind": "fw",
+   "text": "AHRS: DCM active"
+  },
+  {
+   "t": 3.39,
+   "kind": "fw",
+   "text": "GPS 1: specified as MAV"
+  },
+  {
+   "t": 3.49,
+   "kind": "fw",
+   "text": "GPS 1: detected MAV"
+  },
+  {
+   "t": 5.39,
+   "kind": "fw",
+   "text": "EKF3 IMU0 initialised"
+  },
+  {
+   "t": 5.39,
+   "kind": "fw",
+   "text": "EKF3 IMU1 initialised"
+  },
+  {
+   "t": 7.03,
+   "kind": "fw",
+   "text": "EKF3 IMU0 tilt alignment complete"
+  },
+  {
+   "t": 7.03,
+   "kind": "fw",
+   "text": "EKF3 IMU1 tilt alignment complete"
+  },
+  {
+   "t": 7.11,
+   "kind": "fw",
+   "text": "EKF3 IMU0 MAG0 initial yaw alignment complete"
+  },
+  {
+   "t": 7.11,
+   "kind": "fw",
+   "text": "EKF3 IMU1 MAG0 initial yaw alignment complete"
+  },
+  {
+   "t": 7.11,
+   "kind": "fw",
+   "text": "AHRS: EKF3 active"
+  },
+  {
+   "t": 15.61,
+   "kind": "fw",
+   "text": "EKF3 IMU0 origin set"
+  },
+  {
+   "t": 15.61,
+   "kind": "fw",
+   "text": "EKF3 IMU1 origin set"
+  },
+  {
+   "t": 15.61,
+   "kind": "fw",
+   "text": "Field Elevation Set: 30m"
+  },
+  {
+   "t": 21.99,
+   "kind": "fw",
+   "text": "SmartRTL deactivated: bad position"
+  },
+  {
+   "t": 42.99,
+   "kind": "fw",
+   "text": "EKF3 IMU0 is using GPS"
+  },
+  {
+   "t": 42.99,
+   "kind": "fw",
+   "text": "EKF3 IMU1 is using GPS"
+  },
+  {
+   "t": 46.69,
+   "kind": "fw",
+   "text": "Fence Indexed OK"
+  },
+  {
+   "t": 46.75,
+   "kind": "pi",
+   "text": "fence upload ack=0 (81 vertices)"
+  },
+  {
+   "t": 46.79,
+   "kind": "fw",
+   "text": "Warning: Arming Checks Disabled"
+  },
+  {
+   "t": 46.79,
+   "kind": "fw",
+   "text": "Throttle armed"
+  },
+  {
+   "t": 47.75,
+   "kind": "pi",
+   "text": "boot done (GUIDED, armed, fence 81 pts)"
+  },
+  {
+   "t": 73.41,
+   "kind": "test",
+   "text": "FAULT INJECTED: cam = +0.50 for 30 s at s 300.2"
+  },
+  {
+   "t": 288.41,
+   "kind": "pi",
+   "text": "FINISH pass: plan completed"
+  }
+ ]
+}

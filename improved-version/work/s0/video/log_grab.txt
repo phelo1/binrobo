@@ -1,0 +1,11 @@
+grab result: success | captured True | docked offset 18.8 mm | wheel clearance 101.7 mm | frames 2773 | sim time 56.0 s
+phases: [(0.0, ''), (0.3, '0 Comb to approach height (lip rim - 25 mm)'), (2.5, '1 Approach: camera-guided reversing'), (13.9, '1b Final approach 0.06 m/s'), (17.0, '1c-a Stop and pivot in place until the dual-ToF yaw is within 0.5 deg'), (25.7, '1c Creep 0.03 m/s, yaw-aligned, stop on ToF / comb contact / pad contact / bin motion'), (29.9, '2 Lift: comb rises until the load comes on'), (31.8, '2b Lift held at load-on, pad extends to the toggle lock'), (32.0, '2c Lift +100 mm'), (52.8, '3 Keeper closes on the handle bar'), (54.0, 'Holding the bin')]
+lift joint: at load-on 0.145 m, at the end 0.289 m, rise after load-on 144 mm
+frame 100 sim t 7.9 1 Approach: camera-guided reversing clr -0.000 lat 109
+frame 200 sim t 15.9 1b Final approach 0.06 m/s clr -0.000 lat -15
+frame 300 sim t 23.9 1c-a Stop and pivot in place until the dual-ToF ya clr -0.000 lat 10
+frame 400 sim t 31.9 2b Lift held at load-on, pad extends to the toggle clr -0.000 lat 19
+frame 500 sim t 39.9 2c Lift +100 mm clr 0.104 lat 15
+frame 600 sim t 47.9 2c Lift +100 mm clr 0.102 lat 14
+frame 700 sim t 55.9 Holding the bin clr 0.101 lat 13
+WROTE /home/claude/s0/video/out/4_grab_full_240L_close_up.mp4 frames 700

@@ -1,0 +1,13 @@
+pstop start 15:52:40
+pstop end 15:56:46
+step start 15:56:46
+step end 16:02:33
+s7 start 16:02:33
+s7 end 16:04:29
+lift start 16:04:29
+lift end 16:06:50
+seat start 16:06:50
+seat end 16:18:49
+soft start 16:18:49
+soft end 16:26:49
+tries1 start 16:26:49

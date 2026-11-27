@@ -1,0 +1,18 @@
+{
+ "donor": {
+  "published": 3844.23,
+  "sourcing_rocker_mast": 3620.06,
+  "plus_fixed_pad": 3534.31,
+  "plus_roller": 3459.56,
+  "agm_on_tested": null,
+  "agm_on_all": null
+ },
+ "new": {
+  "published": 4112.32,
+  "sourcing_rocker_mast": 3888.15,
+  "plus_fixed_pad": 3802.4,
+  "plus_roller": 3727.65,
+  "agm_on_tested": 3725.29,
+  "agm_on_all": 3650.54
+ }
+}

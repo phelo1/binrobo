@@ -1,0 +1,8 @@
+runs_r2_pf P1: DONE P1 PASS [] sim 1308 s E 15.2 Wh {"clear_min": 0.0466, "clear_at": 290.2, "seated_all": true, "bin_ground_N": 0.0, "roll_max": 1.7603, "pitch_max"
+runs_r2_pf P2a: DONE P2a PASS [] sim 1287 s E 28.4 Wh {"clear_min": 9.0, "clear_at": null, "seated_all": true, "bin_ground_N": 0.0, "roll_max": 1.8089, "pitch_max": 6
+runs_r2_pf P2c: DONE P2c PASS [] sim 1332 s E 29.5 Wh {"clear_min": 0.0982, "clear_at": 290.9, "seated_all": true, "bin_ground_N": 0.0, "roll_max": 1.845, "pitch_max"
+runs_r2_pf P7: DONE P7 PASS [] sim 1307 s E 21.5 Wh {"clear_min": 0.0397, "clear_at": 290.2, "seated_all": true, "bin_ground_N": 0.0, "roll_max": 1.7746, "pitch_max"
+runs_r2_pf P3: DONE P3 PASS [] sim 1310 s E 15.1 Wh {"clear_min": 0.1001, "clear_at": 14.2, "seated_all": true, "bin_ground_N": 0.0, "roll_max": 1.7459, "pitch_max":
+runs_r2_pf P4a: DONE P4a PASS [] sim 377 s E 0.3 Wh {"clear_min": 0.0954, "clear_at": 166.0, "seated_all": true, "bin_ground_N": 0.0, "roll_max": 0.4892, "pitch_max":
+runs_r2_pf P4b: DONE P4b PASS [] sim 494 s E 5.2 Wh {"clear_min": 0.0945, "clear_at": 127.0, "seated_all": true, "bin_ground_N": 0.0, "roll_max": 2.4412, "pitch_max":
+runs_r2_pf chain done

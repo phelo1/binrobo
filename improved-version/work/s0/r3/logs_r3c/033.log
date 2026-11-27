@@ -1,0 +1,1 @@
+B_static_dn_110 {"test": "static", "pose": "dn", "kg": 110.0, "grab": "success", "driveL": 787.8, "driveR": 776.7, "caster_sum": 948.0, "antitip": 0.0, "bin_ground": 0.0, "captured": true, "roll": 0.0, "pitch": 0.03, "lift_N": 1303, "pad_N": 584, "ok": true, "cpu_s": 8}

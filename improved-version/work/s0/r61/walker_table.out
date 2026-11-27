@@ -1,0 +1,68 @@
+/home/claude/b2f_run/sitl/b2f/scripts/b2f_r6.py:236: RuntimeWarning: All-NaN slice encountered
+  with np.errstate(all='ignore'): med = np.nanmedian(Y, axis=1)
+/home/claude/b2f_run/sitl/b2f/scripts/b2f_r6.py:236: RuntimeWarning: All-NaN slice encountered
+  with np.errstate(all='ignore'): med = np.nanmedian(Y, axis=1)
+/home/claude/b2f_run/sitl/b2f/scripts/b2f_r6.py:236: RuntimeWarning: All-NaN slice encountered
+  with np.errstate(all='ignore'): med = np.nanmedian(Y, axis=1)
+/home/claude/b2f_run/sitl/b2f/scripts/b2f_r6.py:236: RuntimeWarning: All-NaN slice encountered
+  with np.errstate(all='ignore'): med = np.nanmedian(Y, axis=1)
+/home/claude/b2f_run/sitl/b2f/scripts/b2f_r6.py:236: RuntimeWarning: All-NaN slice encountered
+  with np.errstate(all='ignore'): med = np.nanmedian(Y, axis=1)
+/home/claude/b2f_run/sitl/b2f/scripts/b2f_r6.py:236: RuntimeWarning: All-NaN slice encountered
+  with np.errstate(all='ignore'): med = np.nanmedian(Y, axis=1)
+/home/claude/b2f_run/sitl/b2f/scripts/b2f_r6.py:236: RuntimeWarning: All-NaN slice encountered
+  with np.errstate(all='ignore'): med = np.nanmedian(Y, axis=1)
+/home/claude/b2f_run/sitl/b2f/scripts/b2f_r6.py:236: RuntimeWarning: All-NaN slice encountered
+  with np.errstate(all='ignore'): med = np.nanmedian(Y, axis=1)
+/home/claude/b2f_run/sitl/b2f/scripts/b2f_r6.py:236: RuntimeWarning: All-NaN slice encountered
+  with np.errstate(all='ignore'): med = np.nanmedian(Y, axis=1)
+/home/claude/b2f_run/sitl/b2f/scripts/b2f_r6.py:236: RuntimeWarning: All-NaN slice encountered
+  with np.errstate(all='ignore'): med = np.nanmedian(Y, axis=1)
+/home/claude/b2f_run/sitl/b2f/scripts/b2f_r6.py:236: RuntimeWarning: All-NaN slice encountered
+  with np.errstate(all='ignore'): med = np.nanmedian(Y, axis=1)
+/home/claude/b2f_run/sitl/b2f/scripts/b2f_r6.py:236: RuntimeWarning: All-NaN slice encountered
+  with np.errstate(all='ignore'): med = np.nanmedian(Y, axis=1)
+/home/claude/b2f_run/sitl/b2f/scripts/b2f_r6.py:236: RuntimeWarning: All-NaN slice encountered
+  with np.errstate(all='ignore'): med = np.nanmedian(Y, axis=1)
+/home/claude/b2f_run/sitl/b2f/scripts/b2f_r6.py:236: RuntimeWarning: All-NaN slice encountered
+  with np.errstate(all='ignore'): med = np.nanmedian(Y, axis=1)
+/home/claude/b2f_run/sitl/b2f/scripts/b2f_r6.py:236: RuntimeWarning: All-NaN slice encountered
+  with np.errstate(all='ignore'): med = np.nanmedian(Y, axis=1)
+/home/claude/b2f_run/sitl/b2f/scripts/b2f_r6.py:236: RuntimeWarning: All-NaN slice encountered
+  with np.errstate(all='ignore'): med = np.nanmedian(Y, axis=1)
+/home/claude/b2f_run/sitl/b2f/scripts/b2f_r6.py:236: RuntimeWarning: All-NaN slice encountered
+  with np.errstate(all='ignore'): med = np.nanmedian(Y, axis=1)
+/home/claude/b2f_run/sitl/b2f/scripts/b2f_r6.py:236: RuntimeWarning: All-NaN slice encountered
+  with np.errstate(all='ignore'): med = np.nanmedian(Y, axis=1)
+/home/claude/b2f_run/sitl/b2f/scripts/b2f_r6.py:236: RuntimeWarning: All-NaN slice encountered
+  with np.errstate(all='ignore'): med = np.nanmedian(Y, axis=1)
+/home/claude/b2f_run/sitl/b2f/scripts/b2f_r6.py:236: RuntimeWarning: All-NaN slice encountered
+  with np.errstate(all='ignore'): med = np.nanmedian(Y, axis=1)
+/home/claude/b2f_run/sitl/b2f/scripts/b2f_r6.py:236: RuntimeWarning: All-NaN slice encountered
+  with np.errstate(all='ignore'): med = np.nanmedian(Y, axis=1)
+/home/claude/b2f_run/sitl/b2f/scripts/b2f_r6.py:236: RuntimeWarning: All-NaN slice encountered
+  with np.errstate(all='ignore'): med = np.nanmedian(Y, axis=1)
+/home/claude/b2f_run/sitl/b2f/scripts/b2f_r6.py:236: RuntimeWarning: All-NaN slice encountered
+  with np.errstate(all='ignore'): med = np.nanmedian(Y, axis=1)
+/home/claude/b2f_run/sitl/b2f/scripts/b2f_r6.py:236: RuntimeWarning: All-NaN slice encountered
+  with np.errstate(all='ignore'): med = np.nanmedian(Y, axis=1)
+/home/claude/b2f_run/sitl/b2f/scripts/b2f_r6.py:236: RuntimeWarning: All-NaN slice encountered
+  with np.errstate(all='ignore'): med = np.nanmedian(Y, axis=1)
+/home/claude/b2f_run/sitl/b2f/scripts/b2f_r6.py:236: RuntimeWarning: All-NaN slice encountered
+  with np.errstate(all='ignore'): med = np.nanmedian(Y, axis=1)
+/home/claude/b2f_run/sitl/b2f/scripts/b2f_r6.py:236: RuntimeWarning: All-NaN slice encountered
+  with np.errstate(all='ignore'): med = np.nanmedian(Y, axis=1)
+/home/claude/b2f_run/sitl/b2f/scripts/b2f_r6.py:236: RuntimeWarning: All-NaN slice encountered
+  with np.errstate(all='ignore'): med = np.nanmedian(Y, axis=1)
+/home/claude/b2f_run/sitl/b2f/scripts/b2f_r6.py:236: RuntimeWarning: All-NaN slice encountered
+  with np.errstate(all='ignore'): med = np.nanmedian(Y, axis=1)
+/home/claude/b2f_run/sitl/b2f/scripts/b2f_r6.py:236: RuntimeWarning: All-NaN slice encountered
+  with np.errstate(all='ignore'): med = np.nanmedian(Y, axis=1)
+/home/claude/b2f_run/sitl/b2f/scripts/b2f_r6.py:236: RuntimeWarning: All-NaN slice encountered
+  with np.errstate(all='ignore'): med = np.nanmedian(Y, axis=1)
+/home/claude/b2f_run/sitl/b2f/scripts/b2f_r6.py:236: RuntimeWarning: All-NaN slice encountered
+  with np.errstate(all='ignore'): med = np.nanmedian(Y, axis=1)
+/home/claude/b2f_run/sitl/b2f/scripts/b2f_r6.py:236: RuntimeWarning: All-NaN slice encountered
+  with np.errstate(all='ignore'): med = np.nanmedian(Y, axis=1)
+/home/claude/b2f_run/sitl/b2f/scripts/b2f_r6.py:236: RuntimeWarning: All-NaN slice encountered
+  with np.errstate(all='ignore'): med = np.nanmedian(Y, axis=1)

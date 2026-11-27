@@ -1,0 +1,1 @@
+stepempty_both_v04_yaw30 {"test": "step_empty", "yaw_deg": 30.0, "side": "both", "v": 0.4, "step_at_m": 3.0, "reached": false, "dist_m": 2.32, "tcap": 60.0, "wheel_peak_N": 1683, "yaw_end_deg": 0.0, "boost": null, "cpu_s": 12}

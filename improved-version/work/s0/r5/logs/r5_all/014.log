@@ -1,0 +1,1 @@
+B_climb_m22_c06 {"test": "climb12", "mu": 0.22, "crr_bin": 0.06, "rev": false, "grab": "success", "tug_kg": 172.5, "bin_kg": 110.0, "reached_5m": true, "dist_m": 5.0, "time_s": 11.5, "hold_creep_m": 0.033, "captured_end": true, "ok": true, "roll": 0.005, "pitch": 0.02, "bin_ground": 0.0, "cmin": 82.612, "dmin": 0.0, "seated_all": true, "clear_min": 0.086, "cpu_s": 67}

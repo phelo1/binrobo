@@ -1,0 +1,256 @@
+BinRobo revision 5.1 - independent MuJoCo re-test (real-slope lane, new
+                              speed rule)
+
+
+                                              23 November 2026
+
+
+1. Summary
+Verdict: revision 5.1 reproduces on the lane as modelled (EU-DEM profile, steepest 8.4 %), but it has
+almost no margin, and the margin is gone if the hill has any short section steeper than the DEM shows,
+or if the robot meets the slope at level speed.
+  • Reproduces (stand-in hardware, see 2): 15 of their 38 stop points re-run. 12 are within 7 mm of theirs
+    (level empty 0.4 m/s 139/139 mm, level full 119/118, 3 % full 0.4 143/142, 3 % empty 0.4 178/176, 8.5 % empty
+    0.2 221/223, 9 % empty 0.15 174/172, 10 % empty grip 0.30 92/93, and others). 10 % empty on wet leaves slides
+    here too (1.47 m against their 1.41 m).
+  • Does not reproduce: their headline point, 8.5 % empty on wet leaves at 0.15 m/s: 170 mm here
+    against their 120 mm. It sits on a cliff edge: 8.0 % 105 mm, 8.25 % 146, 8.5 % 170, 9 % 174, 9.5 % 307, 10 %
+    1.47 m, 11 % 8.1 m, 12 % 13.3 m (runaway). Two smaller differences: 10 % full bin 0.2 m/s 156/139 mm, 8.5 %
+    empty grip 0.30 80/64 mm. All three involve the drive wheels close to their grip limit, where the missing rev5
+    mass table (CG position) matters most.
+  • Whole lane on the real slope at grip 0.22 with the 5.1 rule: P1, P2a, P4a, P4b, P6a, X8n and X9n all
+    pass. They match their table closely: X8n gap 1.75 m (theirs 1.74), P6a 1.66 m (1.66), P4a/P4b creep 1.6 mm
+    (1.6), X9n creep 0.5 mm (their 5.1 run 2.5 mm), P2a 33.6 Wh (33.6).
+  • New finding 1, short ramp: we made the steepest 25 m of the hill (133-158 m) steeper than the DEM shows.
+    The empty robot on wet leaves:
+       – at 9 % it holds;
+       – at 10 % the stop-and-hold slides 409 mm in 5 s (FAIL);
+       – at 11 % the person test stops 28 mm from the person (e-stop 0.85 m), and the hold run cannot stop on the
+         ramp;
+       – at 12 % it runs away to 1.9-2.7 m/s, hits the person in X8n and hits the hedge in both runs.
+    On a wet surface without leaves (grip 0.30), 12 % still passes.
+    With a full bin it holds even at 12 % (creep 4 mm). Short pitches of this size do not show up in a 25 m DEM, so
+    the slope must be measured on site before the 8.4 % figure is relied on.
+  • New finding 2, meeting the slope at speed: a touch while the slope changes from level to 8.5 %, with the
+    robot still at the level speed of 0.4 m/s, gives 496 mm (empty, wet leaves) and 227 mm (empty, wet). A full bin
+    gives 215 mm. In the lane runs, a 3 m look-ahead on the mapped slope keeps the robot slow enough; on the real
+    robot that only works if the map is right.
+  • Probes:
+       – reaction 0.20 s: 8.5 % empty 178 mm, level empty 159 mm;
+       – +10 % mass (198 kg): 8.5 % empty 143 mm, 9 % empty 204 mm;
+       – grip 0.18: 8.5 % empty slides 1.17 m, full 125 mm, level empty 165 mm.
+  • Carried open, unchanged: the 40 mm sharp step, the open 60 mm pothole and the open trench all still stall
+    (s 291.0 / 550.5 / 454.2, the same as rev4 and their files).
+
+
+
+
+                                                         1
+2. The stand-in, and how close it is
+The revision 5 hardware pack (BinRobo_rev5_tests_2026-11-21.zip, with mass_cgB2_r5.json and the rev5
+simB2hx) was not sent to us. We used our rev4 setup with their rev5 settings:
+  • the revision 4 simulator (simB2hx_r4);
+  • their rev5 settings (X_NOSE_DX 0.245, rocker, lift 6800 N, the same CGB_GEO);
+  • the rev4 mass table scaled to 180 kg (h2/mass_cgB2_r4_m180.json: rows and carriage x1.01399).
+How close the stand-in is:
+  • JSON header check: we compared the header of one of their files (8.5 % empty, wet leaves) with ours at the
+    same settings. Only CGB_MASSF and CMP_SIM differ. All 40 geo entries are identical, and the reported robot mass
+    is the same (172.5 kg, the pstop figure that leaves out part of the carriage).
+  • Driver script: their runY.py differs from ours only in the lowering test (ToF sensor, X_TRIP_N). The person-stop
+    code is identical.
+  • X_NOSE_DX (0.245 against 0.34) makes no difference to pstop: both give 170 mm.
+The stand-in therefore has the right total mass and geometry but not their CG. Where braking is well inside the grip
+limit, it matches to within a few mm. Near the limit (empty robot on wet leaves, 8.5 % and up) the CG decides how
+much weight is on the braked drive wheels, and there we differ by up to 50 mm. The rev5 mass table is needed to
+settle the 8.5 % point.
+
+
+3. Stop after a touch (gate rig, runY_r4.py pstop, reaction 0.15 s)
+Distances in mm, from the touch to standstill. Their line is 130 mm; the foam gives about 150 mm.
+
+                         Slope down    Load         Speed   Grip          Ours           Theirs
+                         level         empty        0.4     0.22             139             139
+                         level         empty        0.4     0.30             133             127
+                         level         full         0.4     0.22             119             118
+                         3%            full         0.4     0.22             143             142
+                         3%            empty        0.4     0.22             178             176
+                         3%            empty        0.3     0.22             122             115
+                         6%            empty        0.2     0.22             105              98
+                         7%            empty        0.15    0.22              75              90
+                         8.5 %         full         0.2     0.22              87              93
+                         8.5 %         empty        0.2     0.22             221             223
+                         8.5 %         empty        0.15    0.22            170             120
+                         8.5 %         empty        0.15    0.30              80              64
+                         9%            empty        0.15    0.22             174             172
+                         10 %          full         0.2     0.22             156             139
+                         10 %          empty        0.15    0.22   1471 (slides)   1414 (slides)
+                         10 %          empty        0.15    0.30              92              93
+
+
+Probes (all ours, 180 kg stand-in unless stated):
+
+Case                                                                                                               mm
+empty 0.15 m/s grip 0.22 at 8.0 / 8.25 / 8.75 /                                    105 / 146 / 174 / 307 / 8098 / 13251
+9.5 / 11 / 12 %
+empty 12 % grip 0.30, 0.15 m/s                                                                                     304
+full 12 % grip 0.22, 0.2 m/s                                                                                       324
+transition level -> 8.5 % at 0.4 m/s,                                                                              496
+empty, grip 0.22 (slope ramps over 1 s, starting
+0.5 s before the touch)
+same, grip 0.30                                                                                                    227
+same, full bin                                                                                                     215
+
+
+                                                            2
+Case                                                                                                               mm
+same, but the slope change starts at the touch                                                                     176
+level -> 6 % / level -> 3 % at 0.4, empty                                                                    243 / 168
+3 % -> 8.5 % at 0.3 (5.1 rule speed for 3 %),                                                                      315
+empty
+6 % -> 8.5 % at 0.2, empty                                                                                         215
+8.5 % at 0.15 reached from level, empty                                                                            108
+8.5 % -> 10 % at 0.15, empty                                                                 1706, not stopped in 12 s
+reaction 0.20 s: 8.5 % e 0.15 / level e 0.4 / 3 %                                           178 / 159 / 164 / 98 / 137
+full 0.4 / 8.5 % full 0.2 / 3 % e 0.3
++10 % mass (198 kg; pstop 189.7 kg): 8.5 % e / 9                                            143 / 204 / 143 / 87 / 144
+% e / level e / 8.5 % full / 3 % full
+grip 0.18: 8.5 % e 0.15 / 8.5 % full 0.2 / 6 % e                          1170 (slides) / 125 / 134 / 77 / 165 / 135
+0.2 / 6 % e 0.15 / level e 0.4 / 3 % e 0.3
+
+
+Full table: revG/sim/cg/h2/res_r51/pstop_r51_table.txt (and pstop_r51_all.json). It is parsed from the run
+log because runY result file names round the grade to whole per cent and overwrite each other (for example -0.08,
+-0.0825 and -0.085 all write g-08). Their own stop_tests/ folder has the same naming, so any two of their
+runs that differ only in a fraction of a per cent will have overwritten each other.
+
+
+4. Whole lane on the real slope
+Their rev 5.1 lanerun_x.py was used unchanged (copy lanerun_x_r51.py), with lane_world_real.py built by their
+make_lane_world_real.py (steepest point 8.4 % at 146 m, matching theirs). Other settings:
+  • the 5.1 X_VSLOPE and X_VLOOK=3;
+  • leaf-zone grip 0.22 (X_MU_SCALE=0.629) for every run;
+  • the 180 kg stand-in;
+  • made-good lane (step ramp, trench covered, pothole filled), except for the P5 runs.
+
+Run                                     Ours (5.1 rule, grip 0.22)               Theirs
+P1 full bin house -> pad A              PASS, 2021 s (33.7 min), 17.2 Wh,        PASS, 1818 s, 16.6 Wh (rev 5 rule,
+                                        least bin-wheel clearance 45 mm at       grip 0.35)
+                                        the step ramp
+P2a_pf empty return                     PASS, 1745 s, 33.6 Wh                    PASS, 1745 s, 33.6 Wh
+P4a full, hold on the steepest part     PASS, -8.3 %, creep 1.6 mm in 10 s       1.6 mm
+going down
+P4b same going up                       PASS, 1.6 mm                             1.6 mm
+P6a full, person steps in               PASS, stops 1.66 m short                 1.655 m
+X8n empty nose first, person            PASS, 1.75 m short                       1.744 m
+X9n empty nose first, hold              PASS, -8.4 %, 0.5 mm                     2.5 mm
+P5d sharp 40 mm up-step (as-is)         FAIL, stall s 291.0                      carried open
+P5h open 60 mm pothole                  FAIL, stall s 550.5; hedge 87.6 mm       carried open
+                                        (rev4 on the 12 % lane: 5.6 mm)
+P5g open trench                         FAIL, stall s 454.2                      carried open
+
+
+P1 takes 3.4 min longer than their P1, because the 5.1 rule drives the full bin down the hill at 0.2 m/s instead of 0.3.
+It uses 0.6 Wh more.
+
+
+5. Sensitivity: a short steeper ramp the DEM cannot see
+We built three extra lane worlds, lane_world_s09/s10/s11/s12.py:
+  • the real profile with 133-158 m (25 m over the steepest part) set to 9, 10, 11 or 12 %;
+
+
+                                                           3
+  • the height difference made up again at 162-194 m;
+  • heights below 133 m unchanged, so the s 126 start snapshot is the same.
+All runs: wet leaves (0.22), 5.1 rule (the ramp is in the map, so the robot is at 0.15 m/s empty / 0.2 m/s full before it
+reaches it).
+
+Ramp                           X9n empty, stop and hold         X8n empty, person steps in    Full bin
+8.4 % (real)                   PASS, creep 0.5 mm               PASS, gap 1.75 m              P4a PASS 1.6 mm
+9%                             PASS, creep 6.5 mm               PASS, gap 1.71 m              not run
+10 %                           FAIL: slides 251 mm in           PASS, gap 1.21 m              P4a PASS 1.9 mm
+                               3 s, 409 mm in 5 s
+11 %                           runaway to 1.56 m/s,             FAIL: 1.16 m/s, e-stop        not run
+                               overshoots the 146 m             0.85 m, stops 28 mm
+                               stop point by 15 m (the          from the person
+                               script marks it PASS,
+                               see below)
+12 %                           FAIL: runaway to 2.74            FAIL: 1.92 m/s, E-stop        P4a PASS 4.0 mm; P6a
+                               m/s, hedge contact               0.09 m from the person,       PASS gap 1.48 m
+                                                                contact with the
+                                                                person, 17.6 m to stop,
+                                                                hedge contact
+12 %, wet without leaves       PASS, creep 46.8 mm in 5 s       PASS, gap 1.64 m              not run
+(grip 0.30)                    (37.5 mm in 3 s, limit 50)
+
+
+Runner caveat: their lanerun_x.py X9n verdict checks only the creep where the robot ended up holding. In s11 the
+robot could not stop at 146 m, slid to 161 m, then “held” on the 4.5 % run-out, and the run is marked PASS. A
+run-away check (overshoot of the hold point, or v_max over the rule) should be added to the criteria.
+Where it starts sliding: with the empty robot nose first on wet leaves:
+  • a hold fails between 9 and 10 %;
+  • driving down at 0.15 m/s with a person stepping in fails between 10 and 11 %, and at 11 % the robot cannot
+    stop on the ramp at all (gate rig: 9.5 % 307 mm, 10 % slides, 11 % runs away).
+On a wet surface without leaves (0.30), 12 % is passed with the hold just inside its limit. The full robot is fine at 12 %.
+
+
+6. Videos
+All in /workspace/work/out/rev51/videos/mechanical_lane. They are digital-twin renders, not field footage, made
+with the B2-F CAD meshes and a software rasteriser (no OpenGL).
+  1. rev51_01_empty_wet_leaves_8p5_vs_10pct.mp4: 8.5 % (170 mm) next to 10 % (slides 1.47 m).
+  2. rev51_02_level_to_8p5pct_transition_0p4.mp4: touch at the brow at 0.4 m/s: empty 496 mm, full 215 mm.
+  3. rev51_03_X8n_person_real_hill_wet_leaves.mp4: X8n on the real hill, PASS, gap 1.75 m.
+  4. rev51_04_short_12pct_ramp_X8n_runaway.mp4: X8n on a 12 % short ramp, runaway, person hit.
+  5. rev51_05_short_10pct_ramp_X9n_hold_slides.mp4: X9n hold on a 10 % short ramp slides 409 mm.
+  6. rev51_06_worst_stop_grip_0p18_vs_0p22.mp4: 8.5 % empty, grip 0.22 (170 mm) against 0.18 (slides 1.17 m).
+HUD note: the lane renderer labels the leaf zone “mu 0.35”, which is its built-in label. In these runs the grip there was
+0.22 (0.35 x 0.629), as the captions say.
+
+
+7. Verdict
+  • On the lane as modelled (DEM profile, 8.4 % max), the rev 5.1 settings pass every lane test we re-ran at grip
+    0.22, matching their numbers closely.
+  • The stop-distance claims mostly reproduce. One does not: the 8.5 % empty wet-leaf point, which the
+    speed rule is built on, comes out at 170 mm here against their 120 mm. Both stand-in and theirs agree that 9 %
+    gives 172-174 mm and 10 % slides.
+
+
+                                                            4
+  • The real margin is small. The empty robot on wet leaves goes from “fine” to “slides” between 8.5 and 10 %.
+    Any of these takes the stop past the foam:
+       – a 25 m stretch at 10 % or more, which a 25 m DEM cannot resolve;
+       – grip 0.18 instead of 0.22;
+       – meeting the slope at level speed.
+    12 % is a runaway that hits the person.
+Recommendations:
+  • survey the hill (the steepest 10 m and 25 m), and repeat the X8n/X9n checks at the surveyed grade;
+  • set the empty-robot speed limit from that survey, with margin;
+  • slow down from map knowledge or an IMU before the brow, not at it;
+  • keep the castor-brake or tail-first option open for the empty robot;
+  • send the rev5 mass table so that the 8.5 % point can be settled.
+
+
+8. Not run
+  • Rev5 hardware: the pack was not available.
+  • P7 (night), P3, P2c, the tail-first X8t/X9t, and lane runs at grip 0.30/0.35. Our lane P1 is at grip 0.22, so its
+    energy is not a like-for-like comparison with their P1 at 0.35.
+  • SITL missions (the sibling tester runs those).
+  • s10/s12 P4b, s11 full bin.
+  • The pothole/trench/step with boost or other fixes.
+  • Anything about the pause rule, cost or time of day.
+
+
+9. Files
+  • Gate: queue revG/sim/cg/h2/q_r51.txt (generator mk_queue_r51.py, then reordered by hand), runner
+    h2/q51.sh, results h2/res_r51/, comparison h2/cmp_r51.py. Mass files h2/mass_cgB2_r4_m180.json and
+    h2/mass_cgB2_r4_m198.json. Progress log h2/PROGRESS_REV51.md.
+  • Lane: work/b2f_lanephys/lanerun_x_r51.py (their file, unchanged), lane_world_real.py and lane_world_s09/s10/s11/
+    runner r51_lane_q.sh, runs in runs_r51t_w22, runs_r51t_s09, runs_r51t_s10, runs_r51t_s11,
+    runs_r51t_s12 and runs_r51t_s12w30. Table lane_tab_r51t.py -> runs_r51t_table.json, also copied to
+    h2/res_r51/lane_r51t_table.json.
+  • Videos: tooling work/rev51_vid, output /workspace/work/out/rev51/videos/mechanical_lane.
+
+
+
+
+                                                         5
+

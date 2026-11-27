@@ -1,0 +1,2 @@
+runs_r4_sharp P2a: DONE P2a FAIL ['drive2 stalled at s 291.0 (no progress 12 s (stall))'] sim 1010 s E 13.8 Wh {"clear_min": 9.0, "clear_at": null, "seated_all": true, "
+runs_r4_sharp chain done

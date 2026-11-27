@@ -1,0 +1,234 @@
+{
+ "scenario": "s5a",
+ "seed": 7,
+ "title": "Lidar: person + dog crossing (loaded)",
+ "expect": "pass",
+ "result": "alert",
+ "outcome": "path blocked",
+ "alerts": [
+  "path blocked for 120 s (camera: person or animal 0.0 m ahead)"
+ ],
+ "sim_time_s": 297.4,
+ "chunks": [
+  {
+   "t0": 0.0,
+   "t1": 297.4,
+   "wall": 26.3,
+   "frames": 15862,
+   "status": "done"
+  }
+ ],
+ "energy_wh": 2.22,
+ "soc_start": 0.9,
+ "soc_end": 0.8952,
+ "odo_m": 22.1,
+ "hedge_min_m": 0.375,
+ "hedge_min_at": [
+  54.8,
+  297.8
+ ],
+ "legal_min_m": null,
+ "legal_min_at": null,
+ "contact_min_m": 1.408,
+ "contact_with": "person",
+ "person_rest_min_m": 1.41,
+ "car_rest_min_m": null,
+ "collisions": [],
+ "chain_trips": [],
+ "metrics": {
+  "placements": [],
+  "grabs": [],
+  "trips": [],
+  "stops": [
+   {
+    "t": 110.0,
+    "gap": 1.49,
+    "s": 316.9
+   }
+  ],
+  "gates": [],
+  "navcam": {
+   "n": 555,
+   "cam_only": 0,
+   "both": 502,
+   "disagree": 16,
+   "none": 0
+  },
+  "first_motion_clock": null,
+  "first_motion_t": 177.6,
+  "cam_stops": [
+   {
+    "t": 177.3,
+    "gap": 1.38,
+    "s": 317.0
+   }
+  ]
+ },
+ "events": [
+  {
+   "t": 0.0,
+   "kind": "sim",
+   "text": "chunk 0 start: SITL launched, home = checkpoint pose s=295.0"
+  },
+  {
+   "t": 1.15,
+   "kind": "fw",
+   "text": "Calibrating barometer"
+  },
+  {
+   "t": 2.83,
+   "kind": "fw",
+   "text": "Barometer 1 calibration complete"
+  },
+  {
+   "t": 2.83,
+   "kind": "fw",
+   "text": "Barometer 2 calibration complete"
+  },
+  {
+   "t": 2.83,
+   "kind": "fw",
+   "text": "Beginning INS calibration. Do not move vehicle"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "ArduPilot Ready"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "RCInput: decoding UDP (Pulses)"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "AHRS: DCM active"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "GPS 1: specified as MAV"
+  },
+  {
+   "t": 3.09,
+   "kind": "fw",
+   "text": "GPS 1: detected MAV"
+  },
+  {
+   "t": 5.01,
+   "kind": "fw",
+   "text": "EKF3 IMU0 initialised"
+  },
+  {
+   "t": 5.01,
+   "kind": "fw",
+   "text": "EKF3 IMU1 initialised"
+  },
+  {
+   "t": 6.69,
+   "kind": "fw",
+   "text": "EKF3 IMU0 tilt alignment complete"
+  },
+  {
+   "t": 6.69,
+   "kind": "fw",
+   "text": "EKF3 IMU1 tilt alignment complete"
+  },
+  {
+   "t": 6.77,
+   "kind": "fw",
+   "text": "EKF3 IMU0 MAG0 initial yaw alignment complete"
+  },
+  {
+   "t": 6.77,
+   "kind": "fw",
+   "text": "EKF3 IMU1 MAG0 initial yaw alignment complete"
+  },
+  {
+   "t": 6.77,
+   "kind": "fw",
+   "text": "AHRS: EKF3 active"
+  },
+  {
+   "t": 15.15,
+   "kind": "fw",
+   "text": "EKF3 IMU0 origin set"
+  },
+  {
+   "t": 15.15,
+   "kind": "fw",
+   "text": "EKF3 IMU1 origin set"
+  },
+  {
+   "t": 15.17,
+   "kind": "fw",
+   "text": "Field Elevation Set: 30m"
+  },
+  {
+   "t": 21.65,
+   "kind": "fw",
+   "text": "SmartRTL deactivated: bad position"
+  },
+  {
+   "t": 42.57,
+   "kind": "fw",
+   "text": "EKF3 IMU0 is using GPS"
+  },
+  {
+   "t": 42.57,
+   "kind": "fw",
+   "text": "EKF3 IMU1 is using GPS"
+  },
+  {
+   "t": 46.13,
+   "kind": "fw",
+   "text": "Fence Indexed OK"
+  },
+  {
+   "t": 46.15,
+   "kind": "pi",
+   "text": "fence upload ack=0 (81 vertices)"
+  },
+  {
+   "t": 46.19,
+   "kind": "fw",
+   "text": "Warning: Arming Checks Disabled"
+  },
+  {
+   "t": 46.19,
+   "kind": "fw",
+   "text": "Throttle armed"
+  },
+  {
+   "t": 47.15,
+   "kind": "pi",
+   "text": "boot done (GUIDED, armed, fence 81 pts)"
+  },
+  {
+   "t": 110.01,
+   "kind": "pi",
+   "text": "unmapped object 1.49 m ahead -> stop"
+  },
+  {
+   "t": 177.11,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 177.31,
+   "kind": "pi",
+   "text": "camera: person or animal 1.38 m ahead, within 0.5 m of the robot's side -> stop"
+  },
+  {
+   "t": 297.41,
+   "kind": "ALERT",
+   "text": "path blocked for 120 s (camera: person or animal 0.0 m ahead)"
+  },
+  {
+   "t": 297.41,
+   "kind": "pi",
+   "text": "FINISH alert: path blocked"
+  }
+ ]
+}

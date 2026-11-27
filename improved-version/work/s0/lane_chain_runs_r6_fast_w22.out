@@ -1,0 +1,4 @@
+runs_r6_fast_w22 P1: DONE P1 PASS [] sim 877 s E 15.5 Wh {"clear_min": 0.0498, "clear_at": 290.2, "seated_all": true, "bin_ground_N": 0.0, "roll_max": 1.7276, "pitch_max":
+runs_r6_fast_w22 P2a_pf: DONE P2a_pf PASS [] sim 741 s E 32.3 Wh {"clear_min": 9.0, "clear_at": null, "seated_all": true, "bin_ground_N": 0.0, "roll_max": 1.8085, "pitch_max":
+runs_r6_fast_w22 P2c: DONE P2c PASS [] sim 806 s E 33.5 Wh {"clear_min": 0.0985, "clear_at": 290.9, "seated_all": true, "bin_ground_N": 0.0, "roll_max": 1.8469, "pitch_max"
+runs_r6_fast_w22 chain done

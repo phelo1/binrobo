@@ -1,0 +1,25 @@
+  0 rc 0    35 s  rel WEB140 flat full
+  1 rc 0    33 s  rel ESE240CL flat full
+  2 rc 0    41 s  rel ESE240SL250 flat full
+  3 rc 0   185 s  grab ESE240SL 10 202
+  4 rc 0   178 s  grab WEB140 10 201
+  5 rc 0   167 s  grab ESE240SL250 10 204
+  6 rc 0    23 s  rel WEB140 flat full
+  7 rc 0    23 s  rel ESE240CL flat full
+  8 rc 0    30 s  rel ESE240SL250 flat full
+  9 rc 0   154 s  grab ESE240SL 10 202
+ 10 rc 0   128 s  grab WEB140 10 201
+ 11 rc 0    88 s  grab ESE240SL250 10 204
+ 12 rc 0    11 s  rel WEB140 flat full
+ 13 rc 0    11 s  rel ESE240CL flat full
+ 14 rc 0    12 s  rel ESE240SL250 flat full
+ 15 rc 0    78 s  grab ESE240SL 10 202
+ 16 rc 0    80 s  grab WEB140 10 201
+ 17 rc 0    77 s  grab ESE240SL250 10 204
+ 18 rc 0    10 s  rel WEB140 flat full
+ 19 rc 0    11 s  rel ESE240CL flat full
+ 20 rc 0    11 s  rel ESE240SL250 flat full
+ 21 rc 0    72 s  grab ESE240SL 10 202
+ 22 rc 0    75 s  grab WEB140 10 201
+ 23 rc 0    74 s  grab ESE240SL250 10 204
+batch done in 828 s

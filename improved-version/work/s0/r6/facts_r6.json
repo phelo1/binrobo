@@ -1,0 +1,192 @@
+{
+ "kg": "180",
+ "pivot": "2.81",
+ "kl_gap": 0.42,
+ "speed_rule": [
+  [
+   "level or uphill",
+   "0.4 m/s",
+   "0.4 m/s",
+   "1.0 m/s",
+   "1.0 m/s"
+  ],
+  [
+   "downhill, up to 3 %",
+   "0.4 m/s",
+   "0.3 m/s",
+   "1.0 m/s",
+   "0.8 m/s"
+  ],
+  [
+   "downhill, 3 to 6 %",
+   "0.3 m/s",
+   "0.2 m/s",
+   "0.8 m/s",
+   "0.6 m/s"
+  ],
+  [
+   "downhill, steeper than 6 %",
+   "0.2 m/s",
+   "0.15 m/s",
+   "0.6 m/s",
+   "0.4 m/s"
+  ]
+ ],
+ "speed_notes": [
+  "Emergency stop from the fast cruise (brakes on 0.15 s after the trigger, simulated): on the level from 1.0 m/s, 0.45 m with a full bin and 0.55 m empty on a wet surface; 0.53 and 0.65 m on wet leaves. On an 8.5 % slope: 0.33 m (full bin, 0.6 m/s) and 0.27 m (empty, 0.4 m/s) wet; 0.50 and 0.61 m on wet leaves.",
+  "So at the fast cruise a touch on the nose is a push of 0.3 to 0.7 m, not a stop inside the foam. The robot may only be that fast when its sensors show the lane clear (sheet 18), and the hardware speed watchdog can only hold the fast limit.",
+  "Why 1.0 m/s and not more: the 2:1 chain stage gives about 1.2 m/s flat out (motor 4,600 rpm, 32:1 gearbox, 330 mm wheel) and leaves torque for the hill with a full bin at 1.0 m/s (motor curve ASSUMED). A 40 mm kerb at 1.0 m/s loads the drive wheel with 4,520 N (4,886 N at 0.8 m/s, so the frame factors of revision 5 stand) and the lift with 4,070 N (actuator holding factor 2.16); at 1.2 m/s that factor falls to 1.90.",
+  "Trip time in the mission simulation: 36 to 40 minutes for a drop-off and 40 to 42 for a pick-up (revision 5.1: 67 to 76 and 75 to 77).",
+  "Leaf season (leaves lying on the lane, or October to December): touch-safe 0.35 m/s on the level; fast cruise 1.0, 0.8, 0.6 and 0.5 m/s with a full bin and 1.0, 0.8, 0.5 and 0.15 m/s empty, by slope band. On wet leaves the empty robot holds only to about 9 %: on a 10 % slope it slides 3.0 m from 0.4 m/s. No empty run down the hill on leaves until the hill has been surveyed.",
+  "With the new chain stage the firmware speed and turn loops must be reset (values in the test pack): the same commands now turn the wheels 1.55 times faster. With them a turn on the spot peaks at 0.28 rad/s, nose corner 0.39 m/s.",
+  "The 150 mm of give in the foam and the 0.15 s are assumptions. Measure the stops on the built robot before it runs unattended."
+ ],
+ "lower_notes": [
+  "Before the bin comes down, a ToF sensor behind each leg guard reads the ground where the bin wheel will land and compares it with the bare ground it saw on arrival. 10 mm short: no lowering. In simulation a 10 mm block reads 12 mm short and a 20 mm block 24 mm short.",
+  "On the way down (6 mm/s for the last 100 mm) the firmware watches the load on the lift while the bin is more than 8 mm above the expected touchdown: a drop of more than 80 N (or 10 % of the bin's weight) stops it and raises 30 mm. Results by block height are in the reply note.",
+  "No lowering while the rear camera or the rear lidar shows anyone within 1 m of the bin. The robot sounds a warning first.",
+  "The lift driver's current limits (6 A up, 3 A down) are starting values: set them on the bench at 0 C, where the actuator draws more."
+ ],
+ "people_rules": [
+  "1. Lane watch. The three lidars look at the whole width of the lane, all round the robot. A return is hedge if it lies on the hedge face fitted from the scan itself (a face must be long, so a person or a box cannot pass for one), or is joined to it; under a good satellite fix the map gives a second opinion. Anything else is an object, wherever it is. The map and the position are not needed to find it.",
+  "2. Near zone. An object within 3 m of the robot's outline, in any direction: stop and stand still. Standing still means the firmware holds the drive at zero; the wheels do not twitch.",
+  "3. Camera. One sighting of a person or an animal ends the fast cruise. Two in a row within 5 m, with a lidar object at the same place, or within 2.5 m without one: stand still.",
+  "4. Restart only when every sensor has shown the zones empty for 3 s, and the first 3 m at 0.2 m/s. After 2 minutes the owner gets a message. After 15 minutes of standing in any 20, the robot holds and raises an alert.",
+  "5. Things, not people. A thing may be passed at 0.2 m/s only if the front camera has had it in view and never called it a person, it has not moved for 20 s and it is 0.5 m clear of the path. Anything that turns up beside or behind the robot is waited for like a person. A thing in the path for 2 minutes: path-blocked alert. Once a camera has called something a person it stays one.",
+  "6. Fast cruise (sheet 17) only with nothing in the lane within 4 m ahead at 0.4 m/s, growing to 10 m at 1.0 m/s; no camera sighting; both hedge faces in view and no gap in either within 5.5 m ahead (a gateway); a good fix (0.7 m/s under a degraded one); not in the yard or within 20 m of the road.",
+  "7. Protective field. Anything at all, hedge included, in the robot's own path up to 0.6 m ahead of the nose (1.4 m at 1.0 m/s): stop, back out 0.8 m, start again. Three times in two minutes: hold and call the owner.",
+  "8. Turning on the spot: not with anything unknown within 1.75 m of the axle (the circle the nose sweeps), nor with a person or anything moving within 3 m. The robot looks for a full second before a turn and five times a second during it; outside the yard anything that turns up inside 3 m counts as moving. It then stops turning and stands still. The same rule holds while it waits before setting a bin down. The sweep check allows for 20 degrees of overshoot. Reverse moves at 0.1 m/s. Keeping left as before, 0.42 m from the hedge.",
+  "9. Last line: the switch strips on the soft nose open the stop chain. Up to the touch-safe speed the robot then stops inside the foam."
+ ],
+ "people_rows": [
+  [
+   "level, full bin, 0.4 m/s",
+   "0.40",
+   "0.46",
+   "0.90",
+   "1.97"
+  ],
+  [
+   "level, empty, 0.4 m/s",
+   "0.42",
+   "0.48",
+   "0.92",
+   "1.96"
+  ],
+  [
+   "6 % down, full bin, 0.3 m/s",
+   "0.31",
+   "0.37",
+   "0.71",
+   "1.50"
+  ],
+  [
+   "6 % down, empty, 0.2 m/s",
+   "0.22",
+   "0.25",
+   "0.47",
+   "0.99"
+  ],
+  [
+   "8.5 % down, full bin, 0.2 m/s",
+   "0.22",
+   "0.25",
+   "0.47",
+   "1.01"
+  ],
+  [
+   "8.5 % down, empty, 0.15 m/s",
+   "0.17",
+   "0.20",
+   "0.36",
+   "0.76"
+  ],
+  [
+   "8.5 % down on wet leaves, full bin, 0.2 m/s",
+   "0.24",
+   "0.27",
+   "0.49",
+   "1.04"
+  ],
+  [
+   "8.5 % down on wet leaves, empty, 0.15 m/s",
+   "0.23",
+   "0.25",
+   "0.42",
+   "0.81"
+  ]
+ ],
+ "people_notes": [
+  "What it still cannot do. The robot needs up to 0.7 s to be sure of someone who steps out of the hedge, and about a second more to stop from 1.0 m/s. Someone who steps out less than about 1 m in front of the nose at the fast cruise is met by a robot that is still braking: with every run at the full 1.0 m/s, a walker 0.4 m in front of the nose was touched at up to 0.33 m/s and a running child at up to 0.86 m/s; from 1.0 m the robot stopped 0.09 to 0.18 m short. Someone standing against the hedge (within 0.3 to 0.5 m of it) is taken for hedge until they step out; the protective field covers the robot's own path. Things lower than 0.30 m are below the lidars: only the camera, then the nose strip.",
+  "Every detection figure is assumed: lidar 10 scans a second with 10 mm noise, a person modelled as a 0.5 m disc (a small child 0.3 m); camera 5 pictures a second, 60 % at night. The first job on the built robot is to measure them (reply note, section 7)."
+ ],
+ "tests_head": "Tested cases",
+ "tests_intro": "Mission simulation, a loaded robot in the lane at night, three seeds each. \"Nose 1.0 m from their line\": the person sets off from the hedge when the nose is that far from where they will cross; they walk on without looking. Touch = any contact while the robot is still moving. Camera: a person found in 60 % of pictures. The full table is in the reply note.",
+ "tests_rows": [
+  [
+   "Walks out of the far hedge into the path; nose 1.0 m from their line (the reviewers' case)",
+   "no touch; nearest 0.34 to 0.49 m, robot standing still",
+   "no touch while moving; nearest up to 0.52 m; in 1 of 3 they walked up to the standing robot"
+  ],
+  [
+   "Walks out of the far hedge into the path; nose 0.4 m from their line",
+   "no touch; they reached the robot after it had stood for 1.3 to 1.6 s",
+   "TOUCH in 3 of 3, robot braking, at up to 0.12 m/s"
+  ],
+  [
+   "Small child (0.3 m wide), nose 2.0 m from their line",
+   "no touch; nearest 1.40 to 1.56 m, robot standing still",
+   "no touch; nearest 1.07 to 1.53 m, robot standing still"
+  ],
+  [
+   "Child running across at 2.5 m/s, nose 1.0 m from their line",
+   "no touch; nearest 0.56 to 0.72 m, robot standing still",
+   "no touch; nearest 0.14 to 0.74 m, robot at up to 0.06 m/s then"
+  ],
+  [
+   "Child running across at 2.5 m/s, nose 0.4 m from their line",
+   "no touch while moving: they reached the robot within 0.4 s of its stopping",
+   "TOUCH in 3 of 3, robot braking, at 0.21 to 0.67 m/s"
+  ],
+  [
+   "Steps out of the near hedge into the path, 1.7 m ahead of the nose",
+   "no touch; nearest 1.01 to 1.22 m, robot standing still",
+   "no touch; nearest 0.55 to 0.77 m, robot standing still"
+  ],
+  [
+   "Walks out of a 4 m gateway in the far hedge; nose 1.0 m from their line",
+   "no touch; nearest 0.54 to 0.65 m, robot standing still",
+   "no touch; nearest 0.64 to 0.74 m, robot standing still"
+  ],
+  [
+   "Child runs out of the same gateway at 2.5 m/s; nose 1.0 m from their line",
+   "no touch; nearest 0.61 to 0.76 m, robot standing still",
+   "no touch; nearest 0.76 to 0.87 m, robot at up to 0.05 m/s then"
+  ],
+  [
+   "Walker comes from behind at 1.6 m/s and passes the robot's side",
+   "no touch; nearest 0.16 to 0.50 m, robot standing still",
+   "no touch; nearest 0.28 to 0.51 m, robot standing still"
+  ],
+  [
+   "Walks up from the far hedge and stands about 0.45 m from the robot's side for 30 s",
+   "no touch; nearest 0.31 to 0.65 m, robot standing still",
+   "no touch; nearest 0.59 to 0.92 m, robot standing still"
+  ],
+  [
+   "Walker comes up the lane towards the robot, stops beside or just behind it for 30 s, walks on",
+   "no touch; nearest 0.18 to 0.45 m, robot standing still",
+   "no touch; nearest 0.09 to 1.00 m, robot standing still"
+  ],
+  [
+   "Walker stands in the path for 1,000 s",
+   "no touch; nearest 3.27 to 3.51 m, robot at up to 0.08 m/s then; owner message at 2 minutes; still waiting when the 15-minute scenario ended; 5 to 6 stops",
+   "no touch; nearest 2.54 to 3.36 m, robot standing still; owner message at 2 minutes; still waiting when the 15-minute scenario ended; 5 to 9 stops"
+  ],
+  [
+   "Unmapped 0.4 m box on the far side of the lane, 1.5 m clear of the robot's path",
+   "no touch; stood still 3.0 m from it; after 20 s or more passed it at 0.2 m/s",
+   "no touch; stood still 3.0 m from it; after 20 s or more passed it at 0.2 m/s (1 of 3); path-blocked alert in 2 of 3"
+  ]
+ ]
+}

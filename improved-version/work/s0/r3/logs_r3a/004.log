@@ -1,0 +1,1 @@
+B_climb_m30_c06 {"test": "climb12", "mu": 0.3, "crr_bin": 0.06, "rev": false, "grab": "success", "tug_kg": 135.3, "bin_kg": 110.0, "reached_5m": true, "dist_m": 5.0, "time_s": 11.2, "hold_creep_m": 0.032, "captured_end": true, "ok": true, "roll": 0.003, "pitch": 0.032, "bin_ground": 0.0, "cmin": 380.636, "dmin": 0.0, "seated_all": true, "clear_min": 0.085, "cpu_s": 9}

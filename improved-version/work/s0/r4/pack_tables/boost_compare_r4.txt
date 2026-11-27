@@ -1,0 +1,3 @@
+S5_ESE240SL_pothole_v05                      boost False verdicts changed: [] | peaks: [('binwheel_x_minus_far_edge_m', 1, 1)]
+S5_WEB140_pothole_v05                        boost False verdicts changed: [] | peaks: [('lip_peak_N', 1640, 2047), ('lip_peak_x_weight', 3, 3)]
+47 pairs; 2 differ; boost triggered in 0; verdict changed in 0

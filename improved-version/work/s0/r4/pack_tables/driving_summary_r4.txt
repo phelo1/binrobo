@@ -1,0 +1,76 @@
+== r4: 60 runs; results: {'bin blocked': 3, 'bin missing': 3, 'bin tipped': 3, 'companion freeze -> firmware HOLD': 6, 'e-stop': 3, 'energy guard': 3, 'firmware fence hold': 3, 'frost no-go': 3, 'grab refused, back on the dock': 2, 'no fix hold': 3, 'pad outside geofence': 3, 'plan completed': 17, 'too late': 5, 'wind no-go': 3}
+   trips 18: Wh 67.1..74.7 (mean 70.2); minutes 62.3..71.5 (mean 67.8)
+   placements 19: error mm max 79 mean 45; handle angle max 2.5 deg
+   gate records 21, keys ['bin', 'attempt', 'lat_m', 'along_m', 'yaw_deg', 'ok', 'lat_cam', 'yaw_cam_deg', 'ok_cam']
+   gate: camera OK 19, truth OK 19; camera OK but truth outside 1; camera refused but truth inside 1
+   gate worst true lateral 84 mm, worst true yaw 3.31 deg
+   seating checks 16: ok 16; worst measured 24.9 mm, worst true 22.9 mm; worst sensor error 12.9 mm
+   refused: [('s1b__s11', {'bin': 'black', 'why': 'gate'}), ('s3b__s23', {'bin': 'black', 'why': 'camera'})]
+   camera checks 33
+   multi-trip runs, last time on the dock: [('s3a__s11', 'D-1 20:14'), ('s3a__s23', 'D-1 20:14'), ('s3a__s7', 'D-1 20:14'), ('s3b__s11', 'D0 20:20'), ('s3b__s23', 'D0 20:20'), ('s3b__s7', 'D0 20:20')]
+   keys of result: ['scenario', 'seed', 'title', 'expect', 'result', 'outcome', 'alerts', 'sim_time_s', 'chunks', 'energy_wh', 'soc_start', 'soc_end', 'odo_m', 'hedge_min_m']
+== r4_ruleA_partial: 4 runs; results: {'plan completed': 4}
+   trips 12: Wh 64.4..67.5 (mean 66.1); minutes 56.8..64.4 (mean 60.6)
+   placements 12: error mm max 126 mean 56; handle angle max 1.6 deg
+   gate records 12, keys ['bin', 'attempt', 'lat_m', 'along_m', 'yaw_deg', 'ok', 'lat_cam', 'yaw_cam_deg', 'ok_cam']
+   gate: camera OK 12, truth OK 12; camera OK but truth outside 0; camera refused but truth inside 0
+   gate worst true lateral 27 mm, worst true yaw 1.53 deg
+   seating checks 12: ok 12; worst measured 21.1 mm, worst true 14.9 mm; worst sensor error 12.9 mm
+   refused: []
+   camera checks 16
+   multi-trip runs, last time on the dock: [('s3a__s11', 'D-1 20:59'), ('s3a__s23', 'D-1 21:00'), ('s3a__s7', 'D-1 21:00'), ('s3b__s7', 'D0 21:10')]
+   keys of result: ['scenario', 'seed', 'title', 'expect', 'result', 'outcome', 'alerts', 'sim_time_s', 'chunks', 'energy_wh', 'soc_start', 'soc_end', 'odo_m', 'hedge_min_m']
+== r4ruleC: 4 runs; results: {'plan completed': 4}
+   trips 8: Wh 63.1..65.0 (mean 64.1); minutes 54.2..55.3 (mean 54.8)
+   placements 8: error mm max 99 mean 56; handle angle max 2.1 deg
+   gate records 8, keys ['bin', 'attempt', 'lat_m', 'along_m', 'yaw_deg', 'ok', 'lat_cam', 'yaw_cam_deg', 'ok_cam']
+   gate: camera OK 8, truth OK 8; camera OK but truth outside 0; camera refused but truth inside 0
+   gate worst true lateral 28 mm, worst true yaw 1.43 deg
+   seating checks 8: ok 8; worst measured 29.2 mm, worst true 16.3 mm; worst sensor error 12.9 mm
+   refused: []
+   camera checks 11
+   multi-trip runs, last time on the dock: [('s3a__s7', 'D-1 20:45'), ('s3b__s7', 'D0 20:44')]
+   keys of result: ['scenario', 'seed', 'title', 'expect', 'result', 'outcome', 'alerts', 'sim_time_s', 'chunks', 'energy_wh', 'soc_start', 'soc_end', 'odo_m', 'hedge_min_m']
+== r4camA: 2 runs; results: {'plan completed': 2}
+   trips 2: Wh 67.7..70.0 (mean 68.8); minutes 62.9..70.4 (mean 66.7)
+   placements 2: error mm max 63 mean 50; handle angle max 1.8 deg
+   gate records 2, keys ['bin', 'attempt', 'lat_m', 'along_m', 'yaw_deg', 'ok', 'lat_cam', 'yaw_cam_deg', 'ok_cam']
+   gate: camera OK 2, truth OK 2; camera OK but truth outside 0; camera refused but truth inside 0
+   gate worst true lateral 9 mm, worst true yaw 0.62 deg
+   seating checks 2: ok 2; worst measured 17.0 mm, worst true 23.9 mm; worst sensor error 6.9 mm
+   refused: []
+   camera checks 2
+   multi-trip runs, last time on the dock: []
+   keys of result: ['scenario', 'seed', 'title', 'expect', 'result', 'outcome', 'alerts', 'sim_time_s', 'chunks', 'energy_wh', 'soc_start', 'soc_end', 'odo_m', 'hedge_min_m']
+== r4camB: 2 runs; results: {'plan completed': 2}
+   trips 2: Wh 68.1..70.3 (mean 69.2); minutes 63.6..71.0 (mean 67.3)
+   placements 2: error mm max 43 mean 34; handle angle max 1.5 deg
+   gate records 2, keys ['bin', 'attempt', 'lat_m', 'along_m', 'yaw_deg', 'ok', 'lat_cam', 'yaw_cam_deg', 'ok_cam']
+   gate: camera OK 2, truth OK 1; camera OK but truth outside 1; camera refused but truth inside 0
+   gate worst true lateral 71 mm, worst true yaw 0.20 deg
+   seating checks 4: ok 2; worst measured 65.6 mm, worst true 72.5 mm; worst sensor error 6.9 mm
+   refused: []
+   camera checks 5
+   multi-trip runs, last time on the dock: []
+   keys of result: ['scenario', 'seed', 'title', 'expect', 'result', 'outcome', 'alerts', 'sim_time_s', 'chunks', 'energy_wh', 'soc_start', 'soc_end', 'odo_m', 'hedge_min_m']
+== r4camC: 2 runs; results: {'plan completed': 2}
+   trips 2: Wh 68.1..70.3 (mean 69.2); minutes 63.6..71.0 (mean 67.3)
+   placements 2: error mm max 58 mean 37; handle angle max 1.8 deg
+   gate records 2, keys ['bin', 'attempt', 'lat_m', 'along_m', 'yaw_deg', 'ok', 'lat_cam', 'yaw_cam_deg', 'ok_cam']
+   gate: camera OK 2, truth OK 0; camera OK but truth outside 2; camera refused but truth inside 0
+   gate worst true lateral 88 mm, worst true yaw 0.57 deg
+   seating checks 4: ok 2; worst measured 85.4 mm, worst true 92.3 mm; worst sensor error 6.9 mm
+   refused: []
+   camera checks 5
+   multi-trip runs, last time on the dock: []
+   keys of result: ['scenario', 'seed', 'title', 'expect', 'result', 'outcome', 'alerts', 'sim_time_s', 'chunks', 'energy_wh', 'soc_start', 'soc_end', 'odo_m', 'hedge_min_m']
+== r4camBnoseat: 2 runs; results: {'plan completed': 2}
+   trips 2: Wh 67.9..70.1 (mean 69.0); minutes 63.3..70.7 (mean 67.0)
+   placements 2: error mm max 64 mean 62; handle angle max 1.4 deg
+   gate records 2, keys ['bin', 'attempt', 'lat_m', 'along_m', 'yaw_deg', 'ok', 'lat_cam', 'yaw_cam_deg', 'ok_cam']
+   gate: camera OK 2, truth OK 2; camera OK but truth outside 0; camera refused but truth inside 0
+   gate worst true lateral 49 mm, worst true yaw 0.30 deg
+   refused: []
+   camera checks 4
+   multi-trip runs, last time on the dock: []
+   keys of result: ['scenario', 'seed', 'title', 'expect', 'result', 'outcome', 'alerts', 'sim_time_s', 'chunks', 'energy_wh', 'soc_start', 'soc_end', 'odo_m', 'hedge_min_m']

@@ -1,0 +1,14 @@
+  0 rc 0   205 s  grab WEB140 30 201
+  1 rc 0   199 s  grab ESE240SL 30 202
+  2 rc 0   280 s  grab ESE240CL 30 203
+  3 rc 0    13 s  ret ESE240SL step 0.5
+  4 rc 0    12 s  ret ESE240SL step 0.8
+  5 rc 0    87 s  ret ESE240SL trench 0.8
+  6 rc 0    22 s  ret WEB140 step 0.8
+  7 rc 0    22 s  estop fwd
+  8 rc 0    22 s  estop rev
+  9 rc 0    22 s  climb 0.22 0.06
+ 10 rc 0    22 s  step one
+ 11 rc 0    24 s  step both
+ 12 rc 0    28 s  climbn 0.22 0.06
+batch done in 479 s

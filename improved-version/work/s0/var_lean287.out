@@ -1,0 +1,46 @@
+  0 rc 0    15 s  climb 0.30 0.06
+  1 rc 0    13 s  climb 0.30 0.09
+  2 rc 0    14 s  climb 0.25 0.06
+  3 rc 0    15 s  climb 0.25 0.09
+  4 rc 0    14 s  climb 0.22 0.06
+  5 rc 0    15 s  climb 0.22 0.09
+  6 rc 0    14 s  step one
+  7 rc 0    13 s  step both
+  8 rc 0    14 s  step both_ramp
+  9 rc 0    13 s  estop fwd
+ 10 rc 0    13 s  estop rev
+ 11 rc 0    22 s  towstab
+ 12 rc 0    13 s  rel WEB140 flat full
+ 13 rc 0    12 s  rel WEB140 flat empty
+ 14 rc 0    14 s  rel WEB140 up12 full
+ 15 rc 0    15 s  rel WEB140 up12 empty
+ 16 rc 0    15 s  rel WEB140 dn12 full
+ 17 rc 0    12 s  rel WEB140 dn12 empty
+ 18 rc 0    14 s  rel ESE240CL flat full
+ 19 rc 0    12 s  rel ESE240CL flat empty
+ 20 rc 0    15 s  rel ESE240CL up12 full
+ 21 rc 0    15 s  rel ESE240CL up12 empty
+ 22 rc 0    20 s  rel ESE240CL dn12 full
+ 23 rc 0    14 s  rel ESE240CL dn12 empty
+ 24 rc 0    14 s  rel ESE240SL250 flat full
+ 25 rc 0    12 s  rel ESE240SL250 flat empty
+ 26 rc 0    15 s  rel ESE240SL250 up12 full
+ 27 rc 0    12 s  rel ESE240SL250 up12 empty
+ 28 rc 0    17 s  rel ESE240SL250 dn12 full
+ 29 rc 0    13 s  rel ESE240SL250 dn12 empty
+ 30 rc 0    12 s  static up 110
+ 31 rc 0    12 s  static up 60
+ 32 rc 0    13 s  static dn 110
+ 33 rc 0    12 s  static dn 60
+ 34 rc 0    12 s  static crL 110
+ 35 rc 0    11 s  static crL 60
+ 36 rc 0    12 s  static crR 110
+ 37 rc 0    12 s  static crR 60
+ 38 rc 0    28 s  climb 0.25 0.09
+ 39 rc 0    27 s  step one
+ 40 rc 0    26 s  estop fwd
+ 41 rc 0    24 s  tipcalc
+ 42 rc 0   308 s  grab WEB140 30 201
+ 43 rc 0   482 s  grab ESE240SL 30 202
+ 44 rc 0   307 s  grab ESE240CL 30 203
+batch done in 1725 s

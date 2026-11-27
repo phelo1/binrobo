@@ -1,0 +1,8 @@
+  0 rc 0    24 s  climb 0.25 0.09
+  1 rc 0    22 s  step one
+  2 rc 0    19 s  estop fwd
+  3 rc 0    15 s  tipcalc
+  4 rc 0   256 s  grab WEB140 30 201
+  5 rc 0   286 s  grab ESE240SL 30 202
+  6 rc 0   251 s  grab ESE240CL 30 203
+batch done in 545 s

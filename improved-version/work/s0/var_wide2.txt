@@ -1,0 +1,28 @@
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ PERT_MASS=1.1 IT1_TAG=_pm110_mj401 python3 h2/runH2.py climb 0.22 0.09
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ PERT_MASS=1.1 IT1_TAG=_pm110_mj401 python3 h2/runH2.py step one
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ PERT_MASS=1.1 IT1_TAG=_pm110_mj401 python3 h2/runH2.py estop fwd
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ PERT_MASS=1.1 IT1_TAG=_pm110_mj401 python3 h2/runH2.py rel ESE240CL up12 full
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ PERT_MASS=1.1 IT1_TAG=_pm110_mj401 python3 h2/runH2.py rel ESE240SL250 dn12 full
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ PERT_MASS=0.9 IT1_TAG=_pm090_mj401 python3 h2/runH2.py climb 0.22 0.09
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ PERT_MASS=0.9 IT1_TAG=_pm090_mj401 python3 h2/runH2.py step one
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ PERT_MASS=0.9 IT1_TAG=_pm090_mj401 python3 h2/runH2.py estop fwd
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ PERT_MASS=0.9 IT1_TAG=_pm090_mj401 python3 h2/runH2.py rel ESE240CL up12 full
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ PERT_MASS=0.9 IT1_TAG=_pm090_mj401 python3 h2/runH2.py rel ESE240SL250 dn12 full
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ PERT_MU=0.85 IT1_TAG=_pmu085_mj401 python3 h2/runH2.py climb 0.22 0.09
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ PERT_MU=0.85 IT1_TAG=_pmu085_mj401 python3 h2/runH2.py step one
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ PERT_MU=0.85 IT1_TAG=_pmu085_mj401 python3 h2/runH2.py estop fwd
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ PERT_MU=0.85 IT1_TAG=_pmu085_mj401 python3 h2/runH2.py rel ESE240CL up12 full
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ PERT_MU=0.85 IT1_TAG=_pmu085_mj401 python3 h2/runH2.py rel ESE240SL250 dn12 full
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ PERT_CRR=0.09 IT1_TAG=_pcrr09_mj401 python3 h2/runH2.py climb 0.22 0.09
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ PERT_CRR=0.09 IT1_TAG=_pcrr09_mj401 python3 h2/runH2.py step one
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ PERT_CRR=0.09 IT1_TAG=_pcrr09_mj401 python3 h2/runH2.py estop fwd
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ PERT_CRR=0.09 IT1_TAG=_pcrr09_mj401 python3 h2/runH2.py rel ESE240CL up12 full
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ PERT_CRR=0.09 IT1_TAG=_pcrr09_mj401 python3 h2/runH2.py rel ESE240SL250 dn12 full
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ PERT_MASS=1.1 IT1_TAG=_pm110_mj401 python3 h2/runH2.py grab ESE240SL 5 202
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ PERT_MASS=0.9 IT1_TAG=_pm090_mj401 python3 h2/runH2.py grab ESE240SL 5 202
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ PERT_MU=0.85 IT1_TAG=_pmu085_mj401 python3 h2/runH2.py grab ESE240SL 5 202
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ PERT_CRR=0.09 IT1_TAG=_pcrr09_mj401 python3 h2/runH2.py grab ESE240SL 5 202
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ X_DY_SCALE=1.5 X_DYAW_SCALE=1.5 IT1_TAG=_w15_mj401 python3 /home/claude/b2f_review/variants/runH2w.py grab WEB140 30 201
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ X_DY_SCALE=1.5 X_DYAW_SCALE=1.5 IT1_TAG=_w15_mj401 python3 /home/claude/b2f_review/variants/runH2w.py grab ESE240SL 30 202
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ X_DY_SCALE=1.5 X_DYAW_SCALE=1.5 IT1_TAG=_w15_mj401 python3 /home/claude/b2f_review/variants/runH2w.py grab ESE240CL 30 203
+env CGB_F9=1 CMP_SIM=simB2hx X_LIFT_RANGE=0.35 X_ROCKER=1 B2F_PAD_IN=-0.005 CGB_GEO='{"pad_ret":0.0,"lift_extra1":0.15}' B2_DOCK=front CMP_PREFIX=B2F_ X_DY_SCALE=2.0 X_DYAW_SCALE=2.0 IT1_TAG=_w20_lean python3 /home/claude/b2f_review/variants/runH2w.py grab WEB140 30 201

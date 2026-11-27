@@ -1,0 +1,1577 @@
+{
+ "scenario": "s1a",
+ "seed": 7,
+ "title": "One-bin night drop (240 L black -> pad A)",
+ "expect": "pass",
+ "result": "pass",
+ "outcome": "plan completed",
+ "alerts": [],
+ "sim_time_s": 2554.9,
+ "chunks": [
+  {
+   "t0": 0.0,
+   "t1": 2554.9,
+   "wall": 400.4,
+   "frames": 128739,
+   "status": "done"
+  }
+ ],
+ "energy_wh": 62.11,
+ "soc_start": 0.9,
+ "soc_end": 0.7664,
+ "odo_m": 1232.0,
+ "hedge_min_m": 0.217,
+ "hedge_min_at": [
+  1811.4,
+  417.2
+ ],
+ "legal_min_m": 3.176,
+ "legal_min_at": [
+  1401.3,
+  621.8
+ ],
+ "contact_min_m": 0.401,
+ "contact_with": "black",
+ "person_rest_min_m": null,
+ "car_rest_min_m": null,
+ "collisions": [],
+ "chain_trips": [],
+ "metrics": {
+  "placements": [
+   {
+    "bin": "black",
+    "where": "pad:A",
+    "err_m": 0.041,
+    "handle_err_deg": 1.15,
+    "clock": "D-1 18:23",
+    "t": 1427.7
+   }
+  ],
+  "grabs": [
+   {
+    "bin": "black",
+    "lat_mm": -6.5,
+    "yaw_deg": 0.37,
+    "result": "success (MuJoCo gate)"
+   }
+  ],
+  "trips": [
+   {
+    "kind": "drop black->A",
+    "t0": 48.0,
+    "wh0": 0.12,
+    "clk0": "D-1 18:00",
+    "t1": 2554.7,
+    "wh": 61.99,
+    "clk1": "D-1 18:42",
+    "min": 41.8
+   }
+  ],
+  "stops": [
+   {
+    "t": 231.3,
+    "gap": 0.56,
+    "s": 21.2
+   },
+   {
+    "t": 269.8,
+    "gap": 0.01,
+    "s": 32.0
+   },
+   {
+    "t": 285.6,
+    "gap": 0.41,
+    "s": 43.4
+   },
+   {
+    "t": 338.4,
+    "gap": 1.18,
+    "s": 71.6
+   },
+   {
+    "t": 383.0,
+    "gap": 1.23,
+    "s": 93.6
+   },
+   {
+    "t": 397.7,
+    "gap": 0.38,
+    "s": 96.8
+   },
+   {
+    "t": 447.3,
+    "gap": 0.77,
+    "s": 123.8
+   },
+   {
+    "t": 506.6,
+    "gap": 0.09,
+    "s": 142.7
+   },
+   {
+    "t": 527.7,
+    "gap": 0.53,
+    "s": 152.5
+   },
+   {
+    "t": 600.8,
+    "gap": 1.06,
+    "s": 193.5
+   },
+   {
+    "t": 681.3,
+    "gap": 0.79,
+    "s": 233.0
+   },
+   {
+    "t": 712.7,
+    "gap": 0.46,
+    "s": 244.0
+   },
+   {
+    "t": 748.7,
+    "gap": 0.26,
+    "s": 267.2
+   },
+   {
+    "t": 766.8,
+    "gap": 0.08,
+    "s": 279.0
+   },
+   {
+    "t": 785.9,
+    "gap": 0.21,
+    "s": 294.2
+   },
+   {
+    "t": 817.4,
+    "gap": 0.91,
+    "s": 317.5
+   },
+   {
+    "t": 857.2,
+    "gap": 0.8,
+    "s": 337.0
+   },
+   {
+    "t": 868.5,
+    "gap": 0.93,
+    "s": 342.8
+   },
+   {
+    "t": 879.4,
+    "gap": 0.5,
+    "s": 347.9
+   },
+   {
+    "t": 894.5,
+    "gap": 0.1,
+    "s": 355.5
+   },
+   {
+    "t": 916.8,
+    "gap": 0.84,
+    "s": 371.8
+   },
+   {
+    "t": 922.8,
+    "gap": 0.62,
+    "s": 373.4
+   },
+   {
+    "t": 940.4,
+    "gap": 1.34,
+    "s": 383.3
+   },
+   {
+    "t": 963.4,
+    "gap": 1.93,
+    "s": 401.4
+   },
+   {
+    "t": 968.7,
+    "gap": -0.03,
+    "s": 402.9
+   },
+   {
+    "t": 990.3,
+    "gap": 0.39,
+    "s": 420.0
+   },
+   {
+    "t": 1001.1,
+    "gap": 0.2,
+    "s": 426.9
+   },
+   {
+    "t": 1012.4,
+    "gap": 0.45,
+    "s": 434.2
+   },
+   {
+    "t": 1025.8,
+    "gap": 1.02,
+    "s": 443.7
+   },
+   {
+    "t": 1035.4,
+    "gap": 0.25,
+    "s": 449.3
+   },
+   {
+    "t": 1056.0,
+    "gap": 0.11,
+    "s": 456.8
+   },
+   {
+    "t": 1069.4,
+    "gap": 0.24,
+    "s": 461.3
+   },
+   {
+    "t": 1080.0,
+    "gap": 1.54,
+    "s": 468.0
+   },
+   {
+    "t": 1103.1,
+    "gap": -0.04,
+    "s": 487.2
+   },
+   {
+    "t": 1189.8,
+    "gap": 2.16,
+    "s": 525.7
+   },
+   {
+    "t": 1201.2,
+    "gap": 0.22,
+    "s": 532.1
+   },
+   {
+    "t": 1214.8,
+    "gap": 0.79,
+    "s": 541.7
+   },
+   {
+    "t": 1257.0,
+    "gap": 0.12,
+    "s": 570.1
+   },
+   {
+    "t": 1459.0,
+    "gap": -0.03,
+    "s": 615.7
+   },
+   {
+    "t": 1462.4,
+    "gap": 0.11,
+    "s": 615.6
+   },
+   {
+    "t": 1492.0,
+    "gap": 0.34,
+    "s": 594.4
+   },
+   {
+    "t": 1541.9,
+    "gap": 0.45,
+    "s": 558.9
+   },
+   {
+    "t": 1546.7,
+    "gap": 0.14,
+    "s": 557.7
+   },
+   {
+    "t": 1577.3,
+    "gap": 1.88,
+    "s": 531.7
+   },
+   {
+    "t": 1615.5,
+    "gap": 0.16,
+    "s": 510.5
+   },
+   {
+    "t": 1626.8,
+    "gap": 0.93,
+    "s": 508.1
+   },
+   {
+    "t": 1656.8,
+    "gap": 0.08,
+    "s": 496.9
+   },
+   {
+    "t": 1670.6,
+    "gap": 0.06,
+    "s": 487.7
+   },
+   {
+    "t": 1701.3,
+    "gap": 0.13,
+    "s": 464.5
+   },
+   {
+    "t": 1767.6,
+    "gap": 0.4,
+    "s": 426.9
+   },
+   {
+    "t": 1773.8,
+    "gap": 0.4,
+    "s": 425.8
+   },
+   {
+    "t": 1784.8,
+    "gap": 0.13,
+    "s": 423.9
+   },
+   {
+    "t": 1817.7,
+    "gap": 1.06,
+    "s": 412.5
+   },
+   {
+    "t": 1833.5,
+    "gap": 1.04,
+    "s": 402.8
+   },
+   {
+    "t": 1847.8,
+    "gap": 1.42,
+    "s": 394.6
+   },
+   {
+    "t": 1861.8,
+    "gap": 0.11,
+    "s": 386.4
+   },
+   {
+    "t": 1921.7,
+    "gap": 0.25,
+    "s": 341.7
+   },
+   {
+    "t": 1989.4,
+    "gap": 0.35,
+    "s": 306.1
+   },
+   {
+    "t": 1995.2,
+    "gap": 0.76,
+    "s": 304.9
+   },
+   {
+    "t": 2028.9,
+    "gap": 1.18,
+    "s": 276.7
+   },
+   {
+    "t": 2117.9,
+    "gap": 0.17,
+    "s": 217.7
+   },
+   {
+    "t": 2156.5,
+    "gap": 0.31,
+    "s": 191.7
+   },
+   {
+    "t": 2183.2,
+    "gap": 0.15,
+    "s": 175.5
+   },
+   {
+    "t": 2228.9,
+    "gap": 1.29,
+    "s": 143.4
+   },
+   {
+    "t": 2246.4,
+    "gap": 0.59,
+    "s": 132.1
+   },
+   {
+    "t": 2253.9,
+    "gap": 0.47,
+    "s": 128.6
+   },
+   {
+    "t": 2262.5,
+    "gap": -0.02,
+    "s": 124.4
+   },
+   {
+    "t": 2275.8,
+    "gap": 0.55,
+    "s": 114.8
+   },
+   {
+    "t": 2300.8,
+    "gap": 0.41,
+    "s": 94.2
+   },
+   {
+    "t": 2345.8,
+    "gap": 0.33,
+    "s": 75.0
+   },
+   {
+    "t": 2363.3,
+    "gap": 0.62,
+    "s": 68.1
+   },
+   {
+    "t": 2392.2,
+    "gap": 1.06,
+    "s": 54.6
+   },
+   {
+    "t": 2404.7,
+    "gap": 0.45,
+    "s": 47.9
+   },
+   {
+    "t": 2419.9,
+    "gap": 0.03,
+    "s": 38.1
+   },
+   {
+    "t": 2435.1,
+    "gap": 1.28,
+    "s": 33.6
+   },
+   {
+    "t": 2457.3,
+    "gap": 0.03,
+    "s": 25.9
+   },
+   {
+    "t": 2500.5,
+    "gap": 0.02,
+    "s": 13.0
+   }
+  ],
+  "gates": [
+   {
+    "bin": "black",
+    "attempt": 0,
+    "lat_m": 0.018,
+    "along_m": -0.012,
+    "yaw_deg": 0.12,
+    "ok": true,
+    "lat_cam": 0.022,
+    "yaw_cam_deg": -0.03,
+    "ok_cam": true
+   }
+  ],
+  "guard": [
+   {
+    "t": 48.0,
+    "soc": 0.9,
+    "avail_wh": 371.8,
+    "budget_wh": 80.0,
+    "kind": "drop black->A",
+    "need_wh": 80.0
+   }
+  ],
+  "window": [
+   {
+    "kind": "drop",
+    "clock": "D-1 18:00",
+    "est_min": 60.0
+   }
+  ],
+  "pad_check": {
+   "pad": "A",
+   "margin_m": 3.17
+  },
+  "first_motion_clock": "D-1 18:00",
+  "first_motion_t": 58.6,
+  "cam_checks": [
+   {
+    "bin": "black",
+    "k": 0,
+    "lat_cam": -0.03,
+    "lat_true": -0.024,
+    "e_est": -0.009,
+    "seen": true
+   },
+   {
+    "bin": "black",
+    "k": 1,
+    "lat_cam": 0.024,
+    "lat_true": 0.018,
+    "e_est": 0.015,
+    "seen": true
+   }
+  ],
+  "seat_checks": [
+   {
+    "bin": "black",
+    "k": 0,
+    "meas_mm": 0.4,
+    "true_mm": -6.5,
+    "ok": true
+   }
+  ],
+  "pivot_way": [
+   {
+    "t": 170.7,
+    "ccw_m": 3.96,
+    "cw_m": 3.97,
+    "way": "cw"
+   },
+   {
+    "t": 1339.1,
+    "ccw_m": 0.49,
+    "cw_m": 0.79,
+    "way": "cw"
+   }
+  ],
+  "navcam": {
+   "n": 16459,
+   "cam_only": 201,
+   "both": 13341,
+   "disagree": 1173,
+   "none": 1325,
+   "dis_near": 27,
+   "dis_cam": 39
+  },
+  "r6_fast": {
+   "ends": 53.8,
+   "lane_s": 1544.1,
+   "fast": 1059.7,
+   "gap": 219.7,
+   "float": 316.5,
+   "object": 0.9,
+   "fix": 43.1,
+   "one_face": 92.8,
+   "narrow": 99.9,
+   "ramp": 19.2,
+   "hedge_close": 1.0,
+   "bend": 5.1
+  },
+  "waits": [
+   {
+    "pad": "A",
+    "wait_s": 3.2
+   }
+  ],
+  "last_dock_clock": "D-1 18:42"
+ },
+ "events": [
+  {
+   "t": 0.0,
+   "kind": "sim",
+   "text": "chunk 0 start: SITL launched, home = checkpoint pose s=5.4"
+  },
+  {
+   "t": 1.14,
+   "kind": "fw",
+   "text": "Calibrating barometer"
+  },
+  {
+   "t": 2.82,
+   "kind": "fw",
+   "text": "Barometer 1 calibration complete"
+  },
+  {
+   "t": 2.82,
+   "kind": "fw",
+   "text": "Barometer 2 calibration complete"
+  },
+  {
+   "t": 2.83,
+   "kind": "fw",
+   "text": "Beginning INS calibration. Do not move vehicle"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "ArduPilot Ready"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "RCInput: decoding UDP (Pulses)"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "AHRS: DCM active"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "GPS 1: specified as MAV"
+  },
+  {
+   "t": 3.13,
+   "kind": "fw",
+   "text": "GPS 1: detected MAV"
+  },
+  {
+   "t": 4.99,
+   "kind": "fw",
+   "text": "EKF3 IMU0 initialised"
+  },
+  {
+   "t": 4.99,
+   "kind": "fw",
+   "text": "EKF3 IMU1 initialised"
+  },
+  {
+   "t": 6.67,
+   "kind": "fw",
+   "text": "EKF3 IMU0 tilt alignment complete"
+  },
+  {
+   "t": 6.67,
+   "kind": "fw",
+   "text": "EKF3 IMU1 tilt alignment complete"
+  },
+  {
+   "t": 6.75,
+   "kind": "fw",
+   "text": "EKF3 IMU0 MAG0 initial yaw alignment complete"
+  },
+  {
+   "t": 6.75,
+   "kind": "fw",
+   "text": "EKF3 IMU1 MAG0 initial yaw alignment complete"
+  },
+  {
+   "t": 6.75,
+   "kind": "fw",
+   "text": "AHRS: EKF3 active"
+  },
+  {
+   "t": 15.15,
+   "kind": "fw",
+   "text": "EKF3 IMU0 origin set"
+  },
+  {
+   "t": 15.15,
+   "kind": "fw",
+   "text": "EKF3 IMU1 origin set"
+  },
+  {
+   "t": 15.15,
+   "kind": "fw",
+   "text": "Field Elevation Set: 43m"
+  },
+  {
+   "t": 21.63,
+   "kind": "fw",
+   "text": "SmartRTL deactivated: bad position"
+  },
+  {
+   "t": 42.79,
+   "kind": "fw",
+   "text": "EKF3 IMU0 is using GPS"
+  },
+  {
+   "t": 42.79,
+   "kind": "fw",
+   "text": "EKF3 IMU1 is using GPS"
+  },
+  {
+   "t": 46.95,
+   "kind": "fw",
+   "text": "Fence Indexed OK"
+  },
+  {
+   "t": 46.95,
+   "kind": "pi",
+   "text": "fence upload ack=0 (81 vertices)"
+  },
+  {
+   "t": 47.01,
+   "kind": "fw",
+   "text": "Warning: Arming Checks Disabled"
+  },
+  {
+   "t": 47.01,
+   "kind": "fw",
+   "text": "Throttle armed"
+  },
+  {
+   "t": 47.95,
+   "kind": "pi",
+   "text": "boot done (GUIDED, armed, fence 81 pts)"
+  },
+  {
+   "t": 48.05,
+   "kind": "pi",
+   "text": "preflight OK (drop black->A): 372 Wh available, clock D-1 18:00"
+  },
+  {
+   "t": 48.45,
+   "kind": "pi",
+   "text": "undock: charger off, beacon + pre-motion warning (10 s)"
+  },
+  {
+   "t": 105.09,
+   "kind": "pi",
+   "text": "rear camera: bin axis 0.020 m off the estimate (camera -0.030 m) -> estimate corrected, re-aligning"
+  },
+  {
+   "t": 125.61,
+   "kind": "pi",
+   "text": "pre-grab gate OK on the camera: lateral 0.022 m, yaw -0.03 deg (truth: 0.018 m, 0.12 deg, inside)"
+  },
+  {
+   "t": 125.61,
+   "kind": "pi",
+   "text": "pre-motion warning (beacon, chime) (3 s)"
+  },
+  {
+   "t": 141.21,
+   "kind": "pi",
+   "text": "pre-motion warning before the lift (3 s)"
+  },
+  {
+   "t": 144.21,
+   "kind": "pi",
+   "text": "comb engage + lift + pad lock (MuJoCo G1 front dock: 90/90) (26 s)"
+  },
+  {
+   "t": 170.61,
+   "kind": "pi",
+   "text": "bin black lifted: comb seated, pad locked, 55 kg on board"
+  },
+  {
+   "t": 231.31,
+   "kind": "pi",
+   "text": "unmapped object 0.56 m ahead -> stop"
+  },
+  {
+   "t": 234.41,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 269.81,
+   "kind": "pi",
+   "text": "unmapped object 0.01 m ahead -> stop"
+  },
+  {
+   "t": 273.05,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 285.65,
+   "kind": "pi",
+   "text": "unmapped object 0.41 m ahead -> stop"
+  },
+  {
+   "t": 288.89,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 338.45,
+   "kind": "pi",
+   "text": "unmapped object 1.18 m ahead -> stop"
+  },
+  {
+   "t": 341.69,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 382.97,
+   "kind": "pi",
+   "text": "unmapped object 1.23 m ahead -> stop"
+  },
+  {
+   "t": 391.85,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 397.73,
+   "kind": "pi",
+   "text": "unmapped object 0.38 m ahead -> stop"
+  },
+  {
+   "t": 400.97,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 447.29,
+   "kind": "pi",
+   "text": "unmapped object 0.77 m ahead -> stop"
+  },
+  {
+   "t": 450.53,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 506.57,
+   "kind": "pi",
+   "text": "unmapped object 0.09 m ahead -> stop"
+  },
+  {
+   "t": 509.81,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 527.69,
+   "kind": "pi",
+   "text": "unmapped object 0.53 m ahead -> stop"
+  },
+  {
+   "t": 530.93,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 600.77,
+   "kind": "pi",
+   "text": "unmapped object 1.06 m ahead -> stop"
+  },
+  {
+   "t": 604.49,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 681.29,
+   "kind": "pi",
+   "text": "unmapped object 0.79 m ahead -> stop"
+  },
+  {
+   "t": 684.53,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 712.73,
+   "kind": "pi",
+   "text": "unmapped object 0.46 m ahead -> stop"
+  },
+  {
+   "t": 716.21,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 748.73,
+   "kind": "pi",
+   "text": "unmapped object 0.26 m ahead -> stop"
+  },
+  {
+   "t": 751.97,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 766.85,
+   "kind": "pi",
+   "text": "unmapped object 0.08 m ahead -> stop"
+  },
+  {
+   "t": 770.09,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 785.93,
+   "kind": "pi",
+   "text": "unmapped object 0.21 m ahead -> stop"
+  },
+  {
+   "t": 789.17,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 810.65,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 817.37,
+   "kind": "pi",
+   "text": "unmapped object 0.91 m ahead -> stop"
+  },
+  {
+   "t": 820.61,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 857.21,
+   "kind": "pi",
+   "text": "unmapped object 0.80 m ahead -> stop"
+  },
+  {
+   "t": 860.45,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 868.49,
+   "kind": "pi",
+   "text": "unmapped object 0.93 m ahead -> stop"
+  },
+  {
+   "t": 871.73,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 879.41,
+   "kind": "pi",
+   "text": "unmapped object 0.50 m ahead -> stop"
+  },
+  {
+   "t": 883.85,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 894.53,
+   "kind": "pi",
+   "text": "unmapped object 0.10 m ahead -> stop"
+  },
+  {
+   "t": 897.77,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 916.85,
+   "kind": "pi",
+   "text": "unmapped object 0.84 m ahead -> stop"
+  },
+  {
+   "t": 920.09,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 922.85,
+   "kind": "pi",
+   "text": "unmapped object 0.62 m ahead -> stop"
+  },
+  {
+   "t": 926.09,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 940.37,
+   "kind": "pi",
+   "text": "unmapped object 1.34 m ahead -> stop"
+  },
+  {
+   "t": 943.61,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 963.41,
+   "kind": "pi",
+   "text": "unmapped object 1.93 m ahead -> stop"
+  },
+  {
+   "t": 966.65,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 968.69,
+   "kind": "pi",
+   "text": "unmapped object -0.03 m ahead -> stop"
+  },
+  {
+   "t": 972.05,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 990.29,
+   "kind": "pi",
+   "text": "unmapped object 0.39 m ahead -> stop"
+  },
+  {
+   "t": 993.53,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 1001.09,
+   "kind": "pi",
+   "text": "unmapped object 0.20 m ahead -> stop"
+  },
+  {
+   "t": 1004.33,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 1012.37,
+   "kind": "pi",
+   "text": "unmapped object 0.45 m ahead -> stop"
+  },
+  {
+   "t": 1015.61,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 1025.81,
+   "kind": "pi",
+   "text": "unmapped object 1.02 m ahead -> stop"
+  },
+  {
+   "t": 1029.05,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 1035.41,
+   "kind": "pi",
+   "text": "unmapped object 0.25 m ahead -> stop"
+  },
+  {
+   "t": 1038.65,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 1056.05,
+   "kind": "pi",
+   "text": "unmapped object 0.11 m ahead -> stop"
+  },
+  {
+   "t": 1062.29,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 1069.37,
+   "kind": "pi",
+   "text": "unmapped object 0.24 m ahead -> stop"
+  },
+  {
+   "t": 1072.61,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 1080.05,
+   "kind": "pi",
+   "text": "unmapped object 1.54 m ahead -> stop"
+  },
+  {
+   "t": 1083.29,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 1103.09,
+   "kind": "pi",
+   "text": "unmapped object -0.04 m ahead -> stop"
+  },
+  {
+   "t": 1106.33,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 1132.51,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 1189.85,
+   "kind": "pi",
+   "text": "unmapped object 2.16 m ahead -> stop"
+  },
+  {
+   "t": 1194.29,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 1201.25,
+   "kind": "pi",
+   "text": "unmapped object 0.22 m ahead -> stop"
+  },
+  {
+   "t": 1204.49,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 1214.81,
+   "kind": "pi",
+   "text": "unmapped object 0.79 m ahead -> stop"
+  },
+  {
+   "t": 1218.05,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 1257.05,
+   "kind": "pi",
+   "text": "unmapped object 0.12 m ahead -> stop"
+  },
+  {
+   "t": 1260.29,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 1403.69,
+   "kind": "pi",
+   "text": "pre-motion warning before the set-down (3 s)"
+  },
+  {
+   "t": 1406.81,
+   "kind": "pi",
+   "text": "lower bin + pad release (21 s)"
+  },
+  {
+   "t": 1427.69,
+   "kind": "pi",
+   "text": "bin black set down at A: 0.041 m / 1.2 deg from the spot (truth)"
+  },
+  {
+   "t": 1439.57,
+   "kind": "pi",
+   "text": "photo of the placed bin (app) (5 s)"
+  },
+  {
+   "t": 1459.01,
+   "kind": "pi",
+   "text": "unmapped object -0.03 m ahead -> stop"
+  },
+  {
+   "t": 1462.25,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 1462.37,
+   "kind": "pi",
+   "text": "unmapped object 0.11 m ahead -> stop"
+  },
+  {
+   "t": 1465.61,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 1492.01,
+   "kind": "pi",
+   "text": "unmapped object 0.34 m ahead -> stop"
+  },
+  {
+   "t": 1495.73,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 1541.93,
+   "kind": "pi",
+   "text": "unmapped object 0.45 m ahead -> stop"
+  },
+  {
+   "t": 1545.17,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 1546.73,
+   "kind": "pi",
+   "text": "unmapped object 0.14 m ahead -> stop"
+  },
+  {
+   "t": 1549.97,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 1577.33,
+   "kind": "pi",
+   "text": "unmapped object 1.88 m ahead -> stop"
+  },
+  {
+   "t": 1580.57,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 1615.49,
+   "kind": "pi",
+   "text": "unmapped object 0.16 m ahead -> stop"
+  },
+  {
+   "t": 1618.73,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 1626.77,
+   "kind": "pi",
+   "text": "unmapped object 0.93 m ahead -> stop"
+  },
+  {
+   "t": 1630.01,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 1656.77,
+   "kind": "pi",
+   "text": "unmapped object 0.08 m ahead -> stop"
+  },
+  {
+   "t": 1660.01,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 1670.57,
+   "kind": "pi",
+   "text": "unmapped object 0.06 m ahead -> stop"
+  },
+  {
+   "t": 1673.81,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 1701.29,
+   "kind": "pi",
+   "text": "unmapped object 0.13 m ahead -> stop"
+  },
+  {
+   "t": 1704.53,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 1767.65,
+   "kind": "pi",
+   "text": "unmapped object 0.40 m ahead -> stop"
+  },
+  {
+   "t": 1770.89,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 1773.77,
+   "kind": "pi",
+   "text": "unmapped object 0.40 m ahead -> stop"
+  },
+  {
+   "t": 1777.01,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 1784.81,
+   "kind": "pi",
+   "text": "unmapped object 0.13 m ahead -> stop"
+  },
+  {
+   "t": 1788.05,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 1817.69,
+   "kind": "pi",
+   "text": "unmapped object 1.06 m ahead -> stop"
+  },
+  {
+   "t": 1820.93,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 1833.53,
+   "kind": "pi",
+   "text": "unmapped object 1.04 m ahead -> stop"
+  },
+  {
+   "t": 1836.77,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 1847.81,
+   "kind": "pi",
+   "text": "unmapped object 1.42 m ahead -> stop"
+  },
+  {
+   "t": 1851.05,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 1861.85,
+   "kind": "pi",
+   "text": "unmapped object 0.11 m ahead -> stop"
+  },
+  {
+   "t": 1865.09,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 1921.73,
+   "kind": "pi",
+   "text": "unmapped object 0.25 m ahead -> stop"
+  },
+  {
+   "t": 1924.97,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 1989.41,
+   "kind": "pi",
+   "text": "unmapped object 0.35 m ahead -> stop"
+  },
+  {
+   "t": 1992.77,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 1995.17,
+   "kind": "pi",
+   "text": "unmapped object 0.76 m ahead -> stop"
+  },
+  {
+   "t": 1998.41,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 2028.89,
+   "kind": "pi",
+   "text": "unmapped object 1.18 m ahead -> stop"
+  },
+  {
+   "t": 2032.13,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 2117.91,
+   "kind": "pi",
+   "text": "unmapped object 0.17 m ahead -> stop"
+  },
+  {
+   "t": 2121.15,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 2130.19,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 2156.55,
+   "kind": "pi",
+   "text": "unmapped object 0.31 m ahead -> stop"
+  },
+  {
+   "t": 2159.79,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 2183.19,
+   "kind": "pi",
+   "text": "unmapped object 0.15 m ahead -> stop"
+  },
+  {
+   "t": 2186.43,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 2228.91,
+   "kind": "pi",
+   "text": "unmapped object 1.29 m ahead -> stop"
+  },
+  {
+   "t": 2232.15,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 2246.43,
+   "kind": "pi",
+   "text": "unmapped object 0.59 m ahead -> stop"
+  },
+  {
+   "t": 2249.67,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 2253.87,
+   "kind": "pi",
+   "text": "unmapped object 0.47 m ahead -> stop"
+  },
+  {
+   "t": 2257.11,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 2262.51,
+   "kind": "pi",
+   "text": "unmapped object -0.02 m ahead -> stop"
+  },
+  {
+   "t": 2265.75,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 2275.83,
+   "kind": "pi",
+   "text": "unmapped object 0.55 m ahead -> stop"
+  },
+  {
+   "t": 2279.31,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 2300.79,
+   "kind": "pi",
+   "text": "unmapped object 0.41 m ahead -> stop"
+  },
+  {
+   "t": 2304.03,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 2317.63,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 2345.79,
+   "kind": "pi",
+   "text": "unmapped object 0.33 m ahead -> stop"
+  },
+  {
+   "t": 2349.03,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 2352.17,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 2363.31,
+   "kind": "pi",
+   "text": "unmapped object 0.62 m ahead -> stop"
+  },
+  {
+   "t": 2366.79,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 2392.23,
+   "kind": "pi",
+   "text": "unmapped object 1.06 m ahead -> stop"
+  },
+  {
+   "t": 2395.47,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 2404.71,
+   "kind": "pi",
+   "text": "unmapped object 0.45 m ahead -> stop"
+  },
+  {
+   "t": 2407.95,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 2419.95,
+   "kind": "pi",
+   "text": "unmapped object 0.03 m ahead -> stop"
+  },
+  {
+   "t": 2423.19,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 2435.07,
+   "kind": "pi",
+   "text": "unmapped object 1.28 m ahead -> stop"
+  },
+  {
+   "t": 2438.31,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 2457.27,
+   "kind": "pi",
+   "text": "unmapped object 0.03 m ahead -> stop"
+  },
+  {
+   "t": 2460.51,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 2500.47,
+   "kind": "pi",
+   "text": "unmapped object 0.02 m ahead -> stop"
+  },
+  {
+   "t": 2503.71,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 2549.55,
+   "kind": "pi",
+   "text": "dock contacts closed, charging (5 s)"
+  },
+  {
+   "t": 2554.71,
+   "kind": "pi",
+   "text": "trip done: 62.0 Wh, 41.8 min, back D-1 18:42"
+  },
+  {
+   "t": 2554.95,
+   "kind": "pi",
+   "text": "FINISH pass: plan completed"
+  }
+ ]
+}

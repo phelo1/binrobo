@@ -1,0 +1,263 @@
+{
+ "scenario": "s4c",
+ "seed": 11,
+ "title": "RTK long loss under the hedge (70 m)",
+ "expect": "alert",
+ "result": "alert",
+ "outcome": "no fix hold",
+ "alerts": [
+  "no GNSS fix for 60 s after 25 m dead reckoning - holding in the lane"
+ ],
+ "sim_time_s": 220.3,
+ "chunks": [
+  {
+   "t0": 0.0,
+   "t1": 220.3,
+   "wall": 33.8,
+   "frames": 12007,
+   "status": "done"
+  }
+ ],
+ "energy_wh": 2.83,
+ "soc_start": 0.9,
+ "soc_end": 0.8939,
+ "odo_m": 50.3,
+ "hedge_min_m": 0.292,
+ "hedge_min_at": [
+  47.4,
+  34.9
+ ],
+ "legal_min_m": null,
+ "legal_min_at": null,
+ "contact_min_m": null,
+ "contact_with": null,
+ "person_rest_min_m": null,
+ "car_rest_min_m": null,
+ "collisions": [],
+ "chain_trips": [],
+ "metrics": {
+  "placements": [],
+  "grabs": [],
+  "trips": [],
+  "stops": [],
+  "gates": [],
+  "navcam": {
+   "n": 1024,
+   "cam_only": 17,
+   "both": 917,
+   "disagree": 82,
+   "none": 2,
+   "dis_cam": 4
+  },
+  "r6_fast": {
+   "hedge_close": 0.3,
+   "lane_s": 102.3,
+   "fast": 28.4,
+   "float": 13.6,
+   "fix": 73.6,
+   "one_face": 0.2,
+   "narrow": 7.9
+  },
+  "first_motion_clock": null,
+  "first_motion_t": 160.6,
+  "nofix_holds": [
+   {
+    "t": 160.3,
+    "s": 86.2,
+    "dr_m": 25.0
+   }
+  ]
+ },
+ "events": [
+  {
+   "t": 0.0,
+   "kind": "sim",
+   "text": "chunk 0 start: SITL launched, home = checkpoint pose s=34.9"
+  },
+  {
+   "t": 1.15,
+   "kind": "fw",
+   "text": "Calibrating barometer"
+  },
+  {
+   "t": 2.83,
+   "kind": "fw",
+   "text": "Barometer 1 calibration complete"
+  },
+  {
+   "t": 2.83,
+   "kind": "fw",
+   "text": "Barometer 2 calibration complete"
+  },
+  {
+   "t": 2.85,
+   "kind": "fw",
+   "text": "Beginning INS calibration. Do not move vehicle"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "ArduPilot Ready"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "RCInput: decoding UDP (Pulses)"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "AHRS: DCM active"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "GPS 1: specified as MAV"
+  },
+  {
+   "t": 3.11,
+   "kind": "fw",
+   "text": "GPS 1: detected MAV"
+  },
+  {
+   "t": 5.01,
+   "kind": "fw",
+   "text": "EKF3 IMU0 initialised"
+  },
+  {
+   "t": 5.01,
+   "kind": "fw",
+   "text": "EKF3 IMU1 initialised"
+  },
+  {
+   "t": 6.69,
+   "kind": "fw",
+   "text": "EKF3 IMU0 tilt alignment complete"
+  },
+  {
+   "t": 6.69,
+   "kind": "fw",
+   "text": "EKF3 IMU1 tilt alignment complete"
+  },
+  {
+   "t": 6.75,
+   "kind": "fw",
+   "text": "EKF3 IMU0 MAG0 initial yaw alignment complete"
+  },
+  {
+   "t": 6.75,
+   "kind": "fw",
+   "text": "EKF3 IMU1 MAG0 initial yaw alignment complete"
+  },
+  {
+   "t": 6.75,
+   "kind": "fw",
+   "text": "AHRS: EKF3 active"
+  },
+  {
+   "t": 15.15,
+   "kind": "fw",
+   "text": "EKF3 IMU0 origin set"
+  },
+  {
+   "t": 15.15,
+   "kind": "fw",
+   "text": "EKF3 IMU1 origin set"
+  },
+  {
+   "t": 15.17,
+   "kind": "fw",
+   "text": "Field Elevation Set: 42m"
+  },
+  {
+   "t": 21.65,
+   "kind": "fw",
+   "text": "SmartRTL deactivated: bad position"
+  },
+  {
+   "t": 42.77,
+   "kind": "fw",
+   "text": "EKF3 IMU0 is using GPS"
+  },
+  {
+   "t": 42.77,
+   "kind": "fw",
+   "text": "EKF3 IMU1 is using GPS"
+  },
+  {
+   "t": 46.17,
+   "kind": "fw",
+   "text": "Fence Indexed OK"
+  },
+  {
+   "t": 46.25,
+   "kind": "pi",
+   "text": "fence upload ack=0 (81 vertices)"
+  },
+  {
+   "t": 46.29,
+   "kind": "fw",
+   "text": "Warning: Arming Checks Disabled"
+  },
+  {
+   "t": 46.29,
+   "kind": "fw",
+   "text": "Throttle armed"
+  },
+  {
+   "t": 47.25,
+   "kind": "pi",
+   "text": "boot done (GUIDED, armed, fence 81 pts)"
+  },
+  {
+   "t": 78.53,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 160.31,
+   "kind": "pi",
+   "text": "no GNSS fix and dead-reckoning limit (25.0 m) reached -> HOLD, waiting for a fix"
+  },
+  {
+   "t": 168.33,
+   "kind": "fw",
+   "text": "mode GUIDED -> HOLD"
+  },
+  {
+   "t": 168.33,
+   "kind": "fw",
+   "text": "EKF variance"
+  },
+  {
+   "t": 168.33,
+   "kind": "fw",
+   "text": "EKF failsafe"
+  },
+  {
+   "t": 175.41,
+   "kind": "fw",
+   "text": "EKF3 IMU0 stopped aiding"
+  },
+  {
+   "t": 175.41,
+   "kind": "fw",
+   "text": "EKF3 IMU1 stopped aiding"
+  },
+  {
+   "t": 190.37,
+   "kind": "fw",
+   "text": "SmartRTL deactivated: bad position"
+  },
+  {
+   "t": 220.31,
+   "kind": "ALERT",
+   "text": "no GNSS fix for 60 s after 25 m dead reckoning - holding in the lane"
+  },
+  {
+   "t": 220.31,
+   "kind": "pi",
+   "text": "FINISH alert: no fix hold"
+  }
+ ]
+}

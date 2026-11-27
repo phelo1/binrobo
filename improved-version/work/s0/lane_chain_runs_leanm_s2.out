@@ -1,0 +1,8 @@
+runs_leanm_s2 P1: DONE P1 PASS [] sim 1314 s E 15.4 Wh {"clear_min": 0.0541, "clear_at": 290.2, "seated_all": true, "bin_ground_N": 0.0, "roll_max": 3.1362, "pitch_max"
+runs_leanm_s2 P2a: DONE P2a FAIL ['drive2 stalled at s 550.0 (no progress 12 s (stall))'] sim 192 s E 3.5 Wh {"clear_min": 9.0, "clear_at": null, "seated_all": true, "bi
+runs_leanm_s2 P2c: DONE P2c PASS [] sim 1336 s E 28.3 Wh {"clear_min": 0.0755, "clear_at": 550.3, "seated_all": true, "bin_ground_N": 0.0, "roll_max": 3.4739, "pitch_max
+runs_leanm_s2 P7: DONE P7 FAIL ['drive1 stalled at s 550.6 (timeout)', 'set-down fail'] sim 2466 s E 62.7 Wh {"clear_min": 0.0457, "clear_at": 290.2, "seated_all": true
+runs_leanm_s2 chain done
+runs_leanm_s2 P2a_pf: DONE P2a_pf PASS [] sim 1286 s E 27.1 Wh {"clear_min": 9.0, "clear_at": null, "seated_all": true, "bin_ground_N": 0.0, "roll_max": 1.8075, "pitch_max": 6.8438, "hedge_min": 0.327, "hedge_at": 621.1, "tip_min": 38.8777, "tip_at": 623.2, "liftF_max": 150.8188, "liftF_at": 622.8, "gap_min": 9.0, "v_max": 0.5038, "n_lost": 0}
+runs_leanm_s2 P2c_pf: DONE P2c_pf PASS [] sim 1330 s E 24.8 Wh {"clear_min": 0.1068, "clear_at": 290.9, "seated_all": true, "bin_ground_N": 0.0, "roll_max": 1.2718, "pitch_max": 6.8445, "hedge_min": 0.8961, "hedge_at": 504.0, "tip_min": 36.9955, "tip_at": 15.4, "liftF_max": 400.947, "liftF_at": 290.2, "gap_min": 9.0, "v_max": 0.506, "n_lost": 0}
+after-chain done

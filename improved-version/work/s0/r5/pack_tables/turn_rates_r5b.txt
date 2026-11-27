@@ -1,0 +1,5 @@
+r5b/s1a__s7 pivot states: max 0.27 rad/s (nose corner 0.38 m/s); other turning at standstill: max 0.23 rad/s (0.33 m/s); in the lane: max 0.16 rad/s; fastest reverse 0.13 m/s
+r5b/s1b__s11 pivot states: max 0.21 rad/s (nose corner 0.30 m/s); other turning at standstill: max 0.22 rad/s (0.31 m/s); in the lane: max 0.20 rad/s; fastest reverse 0.13 m/s
+r5b/s3b__s23 pivot states: max 0.22 rad/s (nose corner 0.31 m/s); other turning at standstill: max 0.29 rad/s (0.41 m/s); in the lane: max 0.29 rad/s; fastest reverse 0.13 m/s
+r5b/s3a__s23 pivot states: max 0.40 rad/s (nose corner 0.57 m/s); other turning at standstill: max 0.25 rad/s (0.35 m/s); in the lane: max 0.15 rad/s; fastest reverse 0.13 m/s
+r5a_prefix (first pass): s1a__s7 pivot 0.72 rad/s (1.02 m/s), other standstill 0.86 (1.22), lane 0.99, reverse 0.17; s1b__s7 pivot 0.87 (1.24), other 0.88 (1.24), lane 0.96, reverse 0.18

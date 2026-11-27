@@ -1,0 +1,13 @@
+  0 rc 0     8 s  stepempty both 0.4
+  1 rc 0    54 s  liftpeak step both 0.4
+  2 rc 0     7 s  stepempty both 0.3
+  3 rc 0    49 s  liftpeak step both 0.3
+  4 rc 0    19 s  stepempty both 0.4
+  5 rc 0    33 s  liftpeak step both 0.4
+  6 rc 0    12 s  stepempty both 0.3
+  7 rc 0    31 s  liftpeak step both 0.3
+  8 rc 0    14 s  stepempty both 0.4
+  9 rc 0    40 s  liftpeak step both 0.4
+ 10 rc 0    13 s  stepempty both 0.3
+ 11 rc 0    46 s  liftpeak step both 0.3
+batch done in 325 s

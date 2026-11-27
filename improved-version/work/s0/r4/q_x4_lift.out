@@ -1,0 +1,24 @@
+  0 rc 0    13 s  liftpeak step one 0.5
+  1 rc 0    12 s  liftpeak step both 0.5
+  2 rc 0    13 s  liftpeak kerb nose 0.5
+  3 rc 0    13 s  liftpeak kerb nose 0.8
+  4 rc 0    17 s  liftpeak kerb tail 0.5
+  5 rc 0    13 s  liftpeak step one 0.5
+  6 rc 0    12 s  liftpeak step both 0.5
+  7 rc 0    12 s  liftpeak kerb nose 0.5
+  8 rc 0    13 s  liftpeak kerb nose 0.8
+  9 rc 0    17 s  liftpeak kerb tail 0.5
+ 10 rc 0    13 s  liftpeak kerb nose 0.5
+ 11 rc 0    12 s  liftpeak kerb nose 0.8
+ 12 rc 0    10 s  tyrecal
+ 13 rc 0    12 s  liftpeak kerb nose 0.5
+ 14 rc 0    12 s  liftpeak kerb nose 0.8
+ 15 rc 0    10 s  tyrecal
+ 16 rc 0    12 s  liftpeak kerb nose 0.5
+ 17 rc 0    12 s  liftpeak kerb nose 0.8
+ 18 rc 0    10 s  tyrecal
+ 19 rc 0    12 s  liftpeak kerb nose 0.5
+ 20 rc 0    12 s  liftpeak kerb nose 0.8
+ 21 rc 0    10 s  tyrecal
+ 22 rc 0    10 s  tyrecal
+batch done in 141 s

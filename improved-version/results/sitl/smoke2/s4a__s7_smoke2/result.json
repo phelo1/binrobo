@@ -1,0 +1,1140 @@
+{
+ "scenario": "s4a",
+ "seed": 7,
+ "title": "RTK float under the hedge (40 m, loaded)",
+ "expect": "pass",
+ "result": "timeout",
+ "outcome": "time limit",
+ "alerts": [],
+ "sim_time_s": 900.0,
+ "chunks": [
+  {
+   "t0": 0.0,
+   "t1": 900.0,
+   "wall": 60.0,
+   "frames": 45992,
+   "status": "done"
+  }
+ ],
+ "energy_wh": 4.12,
+ "soc_start": 0.9,
+ "soc_end": 0.8911,
+ "odo_m": 0.0,
+ "hedge_min_m": 0.304,
+ "hedge_min_at": [
+  0.0,
+  34.9
+ ],
+ "legal_min_m": null,
+ "legal_min_at": null,
+ "contact_min_m": null,
+ "contact_with": null,
+ "person_rest_min_m": null,
+ "car_rest_min_m": null,
+ "collisions": [],
+ "chain_trips": [],
+ "metrics": {
+  "placements": [],
+  "grabs": [],
+  "trips": [],
+  "stops": [],
+  "gates": []
+ },
+ "events": [
+  {
+   "t": 0.0,
+   "kind": "sim",
+   "text": "chunk 0 start: SITL launched, home = checkpoint pose s=34.9"
+  },
+  {
+   "t": 1.15,
+   "kind": "fw",
+   "text": "Calibrating barometer"
+  },
+  {
+   "t": 2.83,
+   "kind": "fw",
+   "text": "Barometer 1 calibration complete"
+  },
+  {
+   "t": 2.83,
+   "kind": "fw",
+   "text": "Barometer 2 calibration complete"
+  },
+  {
+   "t": 2.85,
+   "kind": "fw",
+   "text": "Beginning INS calibration. Do not move vehicle"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "ArduPilot Ready"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "RCInput: decoding UDP (Pulses)"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "AHRS: DCM active"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "GPS 1: specified as MAV"
+  },
+  {
+   "t": 3.11,
+   "kind": "fw",
+   "text": "GPS 1: detected MAV"
+  },
+  {
+   "t": 5.01,
+   "kind": "fw",
+   "text": "EKF3 IMU0 initialised"
+  },
+  {
+   "t": 5.01,
+   "kind": "fw",
+   "text": "EKF3 IMU1 initialised"
+  },
+  {
+   "t": 6.69,
+   "kind": "fw",
+   "text": "EKF3 IMU0 tilt alignment complete"
+  },
+  {
+   "t": 6.69,
+   "kind": "fw",
+   "text": "EKF3 IMU1 tilt alignment complete"
+  },
+  {
+   "t": 6.75,
+   "kind": "fw",
+   "text": "EKF3 IMU0 MAG0 initial yaw alignment complete"
+  },
+  {
+   "t": 6.75,
+   "kind": "fw",
+   "text": "EKF3 IMU1 MAG0 initial yaw alignment complete"
+  },
+  {
+   "t": 6.75,
+   "kind": "fw",
+   "text": "AHRS: EKF3 active"
+  },
+  {
+   "t": 15.15,
+   "kind": "fw",
+   "text": "EKF3 IMU0 origin set"
+  },
+  {
+   "t": 15.15,
+   "kind": "fw",
+   "text": "EKF3 IMU1 origin set"
+  },
+  {
+   "t": 15.19,
+   "kind": "fw",
+   "text": "Field Elevation Set: 42m"
+  },
+  {
+   "t": 21.67,
+   "kind": "fw",
+   "text": "SmartRTL deactivated: bad position"
+  },
+  {
+   "t": 30.09,
+   "kind": "fw",
+   "text": "PreArm: Gyro 0 rate 69Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 30.09,
+   "kind": "fw",
+   "text": "PreArm: Fences enabled, but none selected"
+  },
+  {
+   "t": 42.79,
+   "kind": "fw",
+   "text": "EKF3 IMU0 is using GPS"
+  },
+  {
+   "t": 42.79,
+   "kind": "fw",
+   "text": "EKF3 IMU1 is using GPS"
+  },
+  {
+   "t": 46.91,
+   "kind": "fw",
+   "text": "Fence Indexed OK"
+  },
+  {
+   "t": 46.95,
+   "kind": "pi",
+   "text": "fence upload ack=0 (81 vertices)"
+  },
+  {
+   "t": 47.01,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 68Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 48.01,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 68Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 49.01,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 68Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 50.01,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 68Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 51.01,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 68Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 52.01,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 68Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 53.01,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 68Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 54.01,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 68Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 55.01,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 68Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 56.01,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 68Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 56.99,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 68Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 58.01,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 67Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 58.99,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 67Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 60.01,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 67Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 61.01,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 67Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 61.09,
+   "kind": "fw",
+   "text": "PreArm: Gyro 0 rate 67Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 62.01,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 67Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 63.01,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 67Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 64.01,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 67Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 65.17,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 67Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 66.39,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 67Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 67.59,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 67Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 68.79,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 67Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 69.99,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 67Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 71.19,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 67Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 72.37,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 66Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 73.59,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 66Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 74.79,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 66Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 75.99,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 66Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 77.19,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 66Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 78.37,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 66Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 79.59,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 66Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 79.59,
+   "kind": "fw",
+   "text": "Arm: GPS 1: not healthy"
+  },
+  {
+   "t": 80.79,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 66Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 80.79,
+   "kind": "fw",
+   "text": "Arm: GPS 1: not healthy"
+  },
+  {
+   "t": 81.99,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 66Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 81.99,
+   "kind": "fw",
+   "text": "Arm: GPS 1: not healthy"
+  },
+  {
+   "t": 83.19,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 66Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 83.19,
+   "kind": "fw",
+   "text": "Arm: GPS 1: not healthy"
+  },
+  {
+   "t": 84.39,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 66Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 84.39,
+   "kind": "fw",
+   "text": "Arm: GPS 1: not healthy"
+  },
+  {
+   "t": 85.57,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 66Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 85.57,
+   "kind": "fw",
+   "text": "Arm: GPS 1: not healthy"
+  },
+  {
+   "t": 86.79,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 66Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 86.79,
+   "kind": "fw",
+   "text": "Arm: GPS 1: not healthy"
+  },
+  {
+   "t": 87.99,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 65Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 87.99,
+   "kind": "fw",
+   "text": "Arm: GPS 1: not healthy"
+  },
+  {
+   "t": 89.19,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 65Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 89.19,
+   "kind": "fw",
+   "text": "Arm: GPS 1: not healthy"
+  },
+  {
+   "t": 90.37,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 65Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 90.37,
+   "kind": "fw",
+   "text": "Arm: GPS 1: not healthy"
+  },
+  {
+   "t": 91.15,
+   "kind": "fw",
+   "text": "PreArm: Gyro 0 rate 65Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 91.15,
+   "kind": "fw",
+   "text": "PreArm: GPS 1: not healthy"
+  },
+  {
+   "t": 91.57,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 65Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 91.57,
+   "kind": "fw",
+   "text": "Arm: GPS 1: not healthy"
+  },
+  {
+   "t": 92.77,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 65Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 92.77,
+   "kind": "fw",
+   "text": "Arm: GPS 1: not healthy"
+  },
+  {
+   "t": 93.99,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 65Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 93.99,
+   "kind": "fw",
+   "text": "Arm: GPS 1: not healthy"
+  },
+  {
+   "t": 95.17,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 65Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 95.17,
+   "kind": "fw",
+   "text": "Arm: GPS 1: not healthy"
+  },
+  {
+   "t": 96.39,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 65Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 96.39,
+   "kind": "fw",
+   "text": "Arm: GPS 1: not healthy"
+  },
+  {
+   "t": 97.59,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 65Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 97.59,
+   "kind": "fw",
+   "text": "Arm: GPS 1: not healthy"
+  },
+  {
+   "t": 98.77,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 65Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 98.77,
+   "kind": "fw",
+   "text": "Arm: GPS 1: not healthy"
+  },
+  {
+   "t": 99.99,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 65Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 99.99,
+   "kind": "fw",
+   "text": "Arm: GPS 1: not healthy"
+  },
+  {
+   "t": 101.17,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 65Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 101.17,
+   "kind": "fw",
+   "text": "Arm: GPS 1: not healthy"
+  },
+  {
+   "t": 102.39,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 65Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 102.39,
+   "kind": "fw",
+   "text": "Arm: GPS 1: not healthy"
+  },
+  {
+   "t": 103.59,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 65Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 103.59,
+   "kind": "fw",
+   "text": "Arm: GPS 1: not healthy"
+  },
+  {
+   "t": 104.79,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 64Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 104.79,
+   "kind": "fw",
+   "text": "Arm: GPS 1: not healthy"
+  },
+  {
+   "t": 105.99,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 64Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 105.99,
+   "kind": "fw",
+   "text": "Arm: GPS 1: not healthy"
+  },
+  {
+   "t": 107.19,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 64Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 107.19,
+   "kind": "fw",
+   "text": "Arm: GPS 1: not healthy"
+  },
+  {
+   "t": 108.37,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 64Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 108.37,
+   "kind": "fw",
+   "text": "Arm: GPS 1: not healthy"
+  },
+  {
+   "t": 109.59,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 64Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 109.59,
+   "kind": "fw",
+   "text": "Arm: GPS 1: not healthy"
+  },
+  {
+   "t": 110.79,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 64Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 110.79,
+   "kind": "fw",
+   "text": "Arm: GPS 1: not healthy"
+  },
+  {
+   "t": 111.97,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 64Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 111.97,
+   "kind": "fw",
+   "text": "Arm: GPS 1: not healthy"
+  },
+  {
+   "t": 113.19,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 64Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 113.19,
+   "kind": "fw",
+   "text": "Arm: GPS 1: not healthy"
+  },
+  {
+   "t": 114.39,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 64Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 114.39,
+   "kind": "fw",
+   "text": "Arm: GPS 1: not healthy"
+  },
+  {
+   "t": 115.59,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 64Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 115.59,
+   "kind": "fw",
+   "text": "Arm: GPS 1: not healthy"
+  },
+  {
+   "t": 116.79,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 64Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 116.79,
+   "kind": "fw",
+   "text": "Arm: GPS 1: not healthy"
+  },
+  {
+   "t": 117.99,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 64Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 117.99,
+   "kind": "fw",
+   "text": "Arm: GPS 1: not healthy"
+  },
+  {
+   "t": 119.19,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 64Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 119.19,
+   "kind": "fw",
+   "text": "Arm: GPS 1: not healthy"
+  },
+  {
+   "t": 120.39,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 63Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 120.39,
+   "kind": "fw",
+   "text": "Arm: GPS 1: not healthy"
+  },
+  {
+   "t": 121.59,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 63Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 121.59,
+   "kind": "fw",
+   "text": "Arm: GPS 1: not healthy"
+  },
+  {
+   "t": 122.13,
+   "kind": "fw",
+   "text": "PreArm: Gyro 0 rate 63Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 122.13,
+   "kind": "fw",
+   "text": "PreArm: GPS 1: not healthy"
+  },
+  {
+   "t": 122.79,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 63Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 122.79,
+   "kind": "fw",
+   "text": "Arm: GPS 1: not healthy"
+  },
+  {
+   "t": 123.99,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 63Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 123.99,
+   "kind": "fw",
+   "text": "Arm: GPS 1: not healthy"
+  },
+  {
+   "t": 125.17,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 63Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 125.17,
+   "kind": "fw",
+   "text": "Arm: GPS 1: not healthy"
+  },
+  {
+   "t": 126.39,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 63Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 126.39,
+   "kind": "fw",
+   "text": "Arm: GPS 1: not healthy"
+  },
+  {
+   "t": 127.57,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 63Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 127.57,
+   "kind": "fw",
+   "text": "Arm: GPS 1: not healthy"
+  },
+  {
+   "t": 128.67,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 63Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 128.67,
+   "kind": "fw",
+   "text": "Arm: GPS 1: not healthy"
+  },
+  {
+   "t": 129.67,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 63Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 129.67,
+   "kind": "fw",
+   "text": "Arm: GPS 1: not healthy"
+  },
+  {
+   "t": 130.67,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 63Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 130.67,
+   "kind": "fw",
+   "text": "Arm: GPS 1: not healthy"
+  },
+  {
+   "t": 131.67,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 63Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 132.67,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 63Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 133.63,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 63Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 134.67,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 63Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 135.67,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 62Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 136.67,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 62Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 137.67,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 62Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 138.67,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 62Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 139.67,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 62Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 140.65,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 62Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 141.67,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 62Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 142.63,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 62Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 143.67,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 62Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 144.67,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 62Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 145.67,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 62Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 146.67,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 62Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 147.67,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 62Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 148.67,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 62Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 149.67,
+   "kind": "fw",
+   "text": "Arm: Gyro 0 rate 62Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 150.61,
+   "kind": "pi",
+   "text": "boot: could not arm/GUIDED (mode GUIDED armed False)"
+  },
+  {
+   "t": 150.61,
+   "kind": "pi",
+   "text": "boot done (GUIDED, armed, fence 81 pts)"
+  },
+  {
+   "t": 153.15,
+   "kind": "fw",
+   "text": "PreArm: Gyro 0 rate 61Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 184.15,
+   "kind": "fw",
+   "text": "PreArm: Gyro 0 rate 60Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 215.15,
+   "kind": "fw",
+   "text": "PreArm: Gyro 0 rate 58Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 246.15,
+   "kind": "fw",
+   "text": "PreArm: Gyro 0 rate 56Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 276.27,
+   "kind": "fw",
+   "text": "PreArm: Gyro 0 rate 54Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 276.27,
+   "kind": "fw",
+   "text": "PreArm: GPS 1: not healthy"
+  },
+  {
+   "t": 307.29,
+   "kind": "fw",
+   "text": "PreArm: Gyro 0 rate 53Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 307.29,
+   "kind": "fw",
+   "text": "PreArm: GPS 1: not healthy"
+  },
+  {
+   "t": 338.27,
+   "kind": "fw",
+   "text": "PreArm: Gyro 0 rate 51Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 338.27,
+   "kind": "fw",
+   "text": "PreArm: GPS 1: not healthy"
+  },
+  {
+   "t": 369.27,
+   "kind": "fw",
+   "text": "PreArm: Gyro 0 rate 50Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 369.27,
+   "kind": "fw",
+   "text": "PreArm: GPS 1: not healthy"
+  },
+  {
+   "t": 400.29,
+   "kind": "fw",
+   "text": "PreArm: Gyro 0 rate 50Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 400.29,
+   "kind": "fw",
+   "text": "PreArm: GPS 1: not healthy"
+  },
+  {
+   "t": 431.27,
+   "kind": "fw",
+   "text": "PreArm: Gyro 0 rate 50Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 431.27,
+   "kind": "fw",
+   "text": "PreArm: GPS 1: not healthy"
+  },
+  {
+   "t": 462.29,
+   "kind": "fw",
+   "text": "PreArm: Gyro 0 rate 50Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 462.29,
+   "kind": "fw",
+   "text": "PreArm: GPS 1: not healthy"
+  },
+  {
+   "t": 493.27,
+   "kind": "fw",
+   "text": "PreArm: Gyro 0 rate 50Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 493.27,
+   "kind": "fw",
+   "text": "PreArm: GPS 1: not healthy"
+  },
+  {
+   "t": 524.29,
+   "kind": "fw",
+   "text": "PreArm: Gyro 0 rate 50Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 524.29,
+   "kind": "fw",
+   "text": "PreArm: GPS 1: not healthy"
+  },
+  {
+   "t": 555.27,
+   "kind": "fw",
+   "text": "PreArm: Gyro 0 rate 50Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 555.27,
+   "kind": "fw",
+   "text": "PreArm: GPS 1: not healthy"
+  },
+  {
+   "t": 586.29,
+   "kind": "fw",
+   "text": "PreArm: Gyro 0 rate 50Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 586.29,
+   "kind": "fw",
+   "text": "PreArm: GPS 1: not healthy"
+  },
+  {
+   "t": 617.27,
+   "kind": "fw",
+   "text": "PreArm: Gyro 0 rate 50Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 617.27,
+   "kind": "fw",
+   "text": "PreArm: GPS 1: not healthy"
+  },
+  {
+   "t": 648.27,
+   "kind": "fw",
+   "text": "PreArm: Gyro 0 rate 50Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 648.27,
+   "kind": "fw",
+   "text": "PreArm: GPS 1: not healthy"
+  },
+  {
+   "t": 679.29,
+   "kind": "fw",
+   "text": "PreArm: Gyro 0 rate 50Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 679.29,
+   "kind": "fw",
+   "text": "PreArm: GPS 1: not healthy"
+  },
+  {
+   "t": 710.27,
+   "kind": "fw",
+   "text": "PreArm: Gyro 0 rate 50Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 710.27,
+   "kind": "fw",
+   "text": "PreArm: GPS 1: not healthy"
+  },
+  {
+   "t": 741.29,
+   "kind": "fw",
+   "text": "PreArm: Gyro 0 rate 50Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 741.29,
+   "kind": "fw",
+   "text": "PreArm: GPS 1: not healthy"
+  },
+  {
+   "t": 772.29,
+   "kind": "fw",
+   "text": "PreArm: Gyro 0 rate 50Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 772.29,
+   "kind": "fw",
+   "text": "PreArm: GPS 1: not healthy"
+  },
+  {
+   "t": 803.29,
+   "kind": "fw",
+   "text": "PreArm: Gyro 0 rate 50Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 803.29,
+   "kind": "fw",
+   "text": "PreArm: GPS 1: not healthy"
+  },
+  {
+   "t": 834.29,
+   "kind": "fw",
+   "text": "PreArm: Gyro 0 rate 50Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 834.29,
+   "kind": "fw",
+   "text": "PreArm: GPS 1: not healthy"
+  },
+  {
+   "t": 865.29,
+   "kind": "fw",
+   "text": "PreArm: Gyro 0 rate 50Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 865.29,
+   "kind": "fw",
+   "text": "PreArm: GPS 1: not healthy"
+  },
+  {
+   "t": 896.29,
+   "kind": "fw",
+   "text": "PreArm: Gyro 0 rate 50Hz < loop rate*1.8 90Hz"
+  },
+  {
+   "t": 896.29,
+   "kind": "fw",
+   "text": "PreArm: GPS 1: not healthy"
+  },
+  {
+   "t": 900.01,
+   "kind": "sim",
+   "text": "time limit 900 s"
+  },
+  {
+   "t": 900.01,
+   "kind": "pi",
+   "text": "FINISH timeout: time limit"
+  }
+ ]
+}

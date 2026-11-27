@@ -1,0 +1,7 @@
+return frame 0 t 693.0
+return frame 100 t 697.0
+return frame 200 t 701.0
+return frame 300 t 705.0
+return frame 400 t 709.0
+return frame 500 t 713.0
+WROTE /home/claude/s0/video/out/2_empty_return_sharp_step_vs_ramp.mp4

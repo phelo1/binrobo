@@ -1,0 +1,1 @@
+stepempty_one_v05 {"test": "step_empty", "side": "one", "v": 0.5, "step_at_m": 3.0, "reached": true, "dist_m": 6.11, "tcap": 60.0, "wheel_peak_N": 2727, "yaw_end_deg": -0.1, "boost": {"stall": null, "on": null, "off": -1000000000.0, "n": 0, "tot": 0.0, "ok": null}, "cpu_s": 17}

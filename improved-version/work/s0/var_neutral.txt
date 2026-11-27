@@ -1,0 +1,4 @@
+env CGB_F9=1 CMP_SIM=simB2hx B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG=_neu python3 h2/runH2.py step one
+env CGB_F9=1 CMP_SIM=simB2hx B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG=_neu python3 h2/runH2.py estop fwd
+env CGB_F9=1 CMP_SIM=simB2hx B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG=_neu python3 h2/runH2.py rel WEB140 up12 full
+env CGB_F9=1 CMP_SIM=simB2hx B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG=_neu python3 h2/runH2.py static crL 110

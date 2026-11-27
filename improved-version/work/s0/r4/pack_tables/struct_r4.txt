@@ -1,0 +1,85 @@
+loads from 97 result files:
+  wheel_carry                    3497 N   estop12_rev_r4
+  wheel_edge                     4754 N   S5_WEB140_pothole_v08_r4
+  wheel_edge_pothole             4754 N   S5_WEB140_pothole_v08_r4
+  wheel_edge_kerb                3342 N   S6_kerb_v08_nose_t15_r4
+  wheel_rigid_step_info         11403 N   S5_WEB140_step_v08_r4
+  wheel_trench_info              2619 N   S5_ESE240SL_trench_v08_r4
+  comb_carry                     2421 N   climb_m22_c09_pm110_r4
+  comb_all                       7838 N   S6_kerb_v08_nose_r_r4
+  pad                            1414 N   S6_kerb_v08_nose_r_r4
+  lift                           4028 N   S6_kerb_v08_nose_r_r4
+  castor_static_sum              1064 N   static_dn_110_cg60_r4
+  extra: {'wheel_0.020': (4069.0, 'kerb_nose_v08_r4cap12t20'), 'lift': (4028.0, 'kerb_nose_v08_r4cap12'), 'wheel_0.065': (3342.0, 'kerb_nose_v08_r4cap12t65'), 'wheel_0.030': (3557.0, 'kerb_nose_v08_r4cap12t30'), 'wheel_rigid': (9350.0, 'kerb_nose_v05_r4cap12'), 'lat': (904.0, 'B2F_Y_lat_k110_r4.json')}
+
+item                                                                                                                   case                                                 load                                MPa     SF
+Side rail 60x60x4 S355, net section at the joint                                                                       carry                                                wheel 3497 N                      124.1   2.86  M = 1714 N m
+Side rail 60x60x4 S355, net section at the joint                                                                       edge                                                 wheel 4754 N                      168.7   2.10  M = 2329 N m
+Side rail 60x60x4 S355, net section at the joint                                                                       sharp 40 mm kerb at 0.8 m/s on a stiff solid tyre (6 wheel 4069 N                      144.4   2.46  my run kerb_nose_v08_r4cap12t20
+Side rail 60x60x4 S355, net section at the joint                                                                       the same kerb on a perfectly rigid tyre (not a real  wheel 11403 N                     404.6   0.88 (info) against yield: 0.88
+Side rail 60x60x4 at the joint, fatigue: bolted plates (holes, detail category 90, partial factor 1.35)                ASSUMED spectrum: wheel 1229 N +/-50 %, 2 million cy range 1229 N                       43.6   1.53  allowable range 66.7 MPa; needs 1.0
+Mast upright 80x40x4 S235 at the strut pin                                                                             carry                                                moment 545 N m                     30.6   7.67  
+Mast upright 80x40x4 S235 at the strut pin                                                                             comb_all                                             moment 1764 N m                    99.2   2.37  
+Mast strut 30x30x2 S235, axial                                                                                         comb_all                                             strut 6425 N                       28.7   8.19  Euler load 269 kN
+Strut pins M10 8.8, double shear                                                                                       comb_all                                             strut 6425 N                       55.4   6.67  
+Strut lug plates 2 x 5 mm S355, bearing on the pin                                                                     comb_all                                             strut 6425 N                       64.2   8.29  bearing limit 1.5 fy
+Lug bolts 2 x M8 8.8 through the upright (2 shear planes each; pin 52 mm in front of the bolts)                        comb_all                                             per plane 4474 N                  122.2   3.02  
+Strut foot cleats 2 x angle 40x40x4 S355, leg in its own plane, pin 52 mm above the member                             comb_all                                             push 4899 N                       119.4   2.97  
+Mast foot cleats: 2 x M8 8.8 through the upright (2 shear planes each)                                                 comb_all                                             foot 4899 N                        33.5  11.04  
+Mast foot cleats: 2 x M12 8.8 down through the cross-member, shear                                                     comb_all                                             foot 4899 N                        29.1  12.71  
+Mast-base cross-member 50x50x5 S355: two foot forces sideways to the member (195 mm from each rail)                    comb_all                                             2 x 4899 N                         77.7   4.57  
+Nose cross-member 50x50x4 S355: strut forces (both axes) + 3 x the static castor load at mid-span, summed at one corne comb_all + castors x3                                strut 6425 N, castors 3191 N      229.0   1.55 << BELOW 2.0 parts: 91 + 77 + 60 MPa
+Mast-base cross-member 50x50x5 S355, bending under the actuator at mid-span                                            lift shock, largest in my runs                       4028 N                             64.7   5.49  
+Actuator base bracket: angle 100x100x12 S355, 120 wide, pin 40 mm from the upright leg                                 lift shock, largest in my runs                       4028 N                             56.0   6.34  
+Base bracket bolts 2 x M12 8.8 through the cross-member (shear + prying)                                               lift shock, largest in my runs                       4028 N                             29.4  21.80  
+Lug angles on the bracket: 2 x M8 8.8 each                                                                             lift shock, largest in my runs                       per lug 2014 N                     27.5  13.42  
+Frame joint at the mast base: top and bottom plates 6 mm S355, 90 wide, 30 mm from bolt to rail edge (half the actuato lift shock, largest in my runs                       joint 2014 N                       56.0   6.34  
+Mast-base cross-member 50x50x5 S355, bending under the actuator at mid-span                                            actuator at its rated push                           6800 N                            109.2   3.25  
+Actuator base bracket: angle 100x100x12 S355, 120 wide, pin 40 mm from the upright leg                                 actuator at its rated push                           6800 N                             94.4   3.76  
+Base bracket bolts 2 x M12 8.8 through the cross-member (shear + prying)                                               actuator at its rated push                           6800 N                             49.6  12.91  
+Lug angles on the bracket: 2 x M8 8.8 each                                                                             actuator at its rated push                           per lug 3400 N                     46.4   7.95  
+Frame joint at the mast base: top and bottom plates 6 mm S355, 90 wide, 30 mm from bolt to rail edge (half the actuato actuator at its rated push                           joint 3400 N                       94.4   3.76  
+Mast-base cross-member 50x50x5 S355, bending under the actuator at mid-span                                            actuator against a stop, slip clutch at 1.4 x (its o 9520 N                            152.9   2.32  
+Actuator base bracket: angle 100x100x12 S355, 120 wide, pin 40 mm from the upright leg                                 actuator against a stop, slip clutch at 1.4 x (its o 9520 N                            132.2   2.68  
+Base bracket bolts 2 x M12 8.8 through the cross-member (shear + prying)                                               actuator against a stop, slip clutch at 1.4 x (its o 9520 N                             69.4   9.22  
+Lug angles on the bracket: 2 x M8 8.8 each                                                                             actuator against a stop, slip clutch at 1.4 x (its o per lug 4760 N                     65.0   5.68  
+Frame joint at the mast base: top and bottom plates 6 mm S355, 90 wide, 30 mm from bolt to rail edge (half the actuato actuator against a stop, slip clutch at 1.4 x (its o joint 4760 N                      132.2   2.68  
+Lift actuator holding (LINAK LA36 6.8 kN type: self-lock at least 8,800 N, data sheet)                                 lift shock, largest in my runs                       4028 N                                -   2.18  S6_kerb_v08_nose_r_r4
+Lift stop blocks: 2 x M10 8.8 through the upright, 30 mm apart, load 25 mm off the face                                slip clutch 1.4 x                                    block 4760 N                       79.8   4.63  
+Upright wall 4 mm S235 in bearing under a stop bolt                                                                    slip clutch 1.4 x                                    bolt 4626 N                        57.8   6.10  two walls; bearing limit 1.5 fy; crush tube inside
+Carriage cross-beam end on the aluminium stop block, 26 x 46 mm                                                        slip clutch 1.4 x                                    block 4760 N                        4.0  62.82  
+HGH15CA block, C0 23.47 kN, pitch 200 mm                                                                               carry                                                block 2724 N                          -   8.62  
+Rail screws M4 12.9 into the 10 mm flat (2 per block length)                                                           carry                                                screw 1362 N                      155.1   6.96  
+Carriage cross-beam 50x50x4 S355 (block force x 170 mm)                                                                carry                                                block 2724 N                       44.3   8.02  
+Carriage plate strip between beam end and block, 50 x 16 aluminium, 30 mm                                              carry                                                block 2724 N                       38.3   6.53  6082-T6, 250 MPa ASSUMED
+HGH15CA block, C0 23.47 kN, pitch 200 mm                                                                               comb_all                                             block 8818 N                          -   2.66  
+Rail screws M4 12.9 into the 10 mm flat (2 per block length)                                                           comb_all                                             screw 4409 N                      502.2   2.15  
+Carriage cross-beam 50x50x4 S355 (block force x 170 mm)                                                                comb_all                                             block 8818 N                      143.3   2.48  
+Carriage plate strip between beam end and block, 50 x 16 aluminium, 30 mm                                              comb_all                                             block 8818 N                      124.0   2.02  6082-T6, 250 MPa ASSUMED
+Comb pivot pin D20 8.8                                                                                                 comb_all                                             comb 7838 N                       199.6   3.21  
+Rocker bushes D20 x 12 bronze (2, 70 mm apart)                                                                         kerb strike, 100 N m per wheel                       bush 606 N                          2.5  23.76  
+Rocker pin D20 8.8 (12 mm arm)                                                                                         kerb strike, 100 N m per wheel                       bush 606 N                          9.3  69.12  
+Pivot clamp plates 10 x 90 S355, weak axis, 185 mm from the pin to the member                                          kerb strike, 100 N m per wheel                       plate 606 N                        74.7   4.75  
+Clamp bolts 4 x M10 8.8 through the nose member (plate root moment over a 35 mm lever, 2 bolts)                        kerb strike, 100 N m per wheel                       plate 606 N                        27.6  23.17  
+Nose cross-member 50x50x4 S355, torsion (kerb strike)                                                                  kerb strike, 100 N m per wheel                       push 1212 N                        15.0  13.62  
+Rocker bushes D20 x 12 bronze (2, 70 mm apart)                                                                         kerb strike, 150 N m per wheel                       bush 909 N                          3.8  15.84  
+Rocker pin D20 8.8 (12 mm arm)                                                                                         kerb strike, 150 N m per wheel                       bush 909 N                         13.9  46.08  
+Pivot clamp plates 10 x 90 S355, weak axis, 185 mm from the pin to the member                                          kerb strike, 150 N m per wheel                       plate 909 N                       112.1   3.17  
+Clamp bolts 4 x M10 8.8 through the nose member (plate root moment over a 35 mm lever, 2 bolts)                        kerb strike, 150 N m per wheel                       plate 909 N                        41.4  15.45  
+Nose cross-member 50x50x4 S355, torsion (kerb strike)                                                                  kerb strike, 150 N m per wheel                       push 1818 N                        22.6   9.08  
+Castor beam 50x40x3 S235 at the pivot (3 x the static load on one castor)                                              static x3                                            castor 1596 N                      63.7   3.69  
+Bumper side brackets: folded leg, angle 40x40x5 S355, 185 mm                                                           side knock 500 N at the bumper                       per leg 250 N                      24.2  14.66  
+Bumper side brackets: folded leg, angle 40x40x5 S355, 185 mm                                                           side knock 1000 N at the bumper                      per leg 500 N                      48.4   7.33  
+Bumper side brackets: leg in its own plane 40 x 5 S355, 185 mm                                                         bumper pressed to 600 N (the maker's largest referen per leg 300 N                      41.6   8.53  
+Bumper backing beam 40x40x2 S235 between the legs (300 mm span) with 175 mm overhangs                                  bumper pressed to 600 N on one end                   600 N at the tip                   28.6   8.21  
+Drive / motor plate 8 x 200 S355, weak axis at the flange                                                              largest sideways tyre force in my runs               904 N at the ground               150.0   2.37  B2F_Y_lat_k110_r4.json
+Drive / motor plate 8 x 200 S355, weak axis at the flange                                                              1.0 kN (the reviewer's figure)                       1000 N at the ground              165.9   2.14  
+Pad arm 80x40x3 S235 below the tongue bolts                                                                            pad peak                                             pad 1414 N                         50.7   4.64  
+Carriage plate tongue 120 x 16 aluminium at its root                                                                   pad peak                                             lower bolt 4426 N                 103.7   2.41  6082-T6, 250 MPa ASSUMED
+Tongue bolts 3 x M10 8.8 (lower pair reaction)                                                                         pad peak                                             reaction 4426 N                    38.2   9.68  
+Pad spring (2 x 15.0 N/mm), shear stress with the Wahl factor                                                          fitted (pad just touching)                           150 N each                        140.0   6.62  allowable 925 MPa for chrome-silicon wire (ASSUMED); spring 
+Pad spring (2 x 15.0 N/mm), shear stress with the Wahl factor                                                          largest pad force in my runs                         707 N each                        659.0   1.40  allowable 925 MPa for chrome-silicon wire (ASSUMED); spring 
+Pad spring (2 x 15.0 N/mm), shear stress with the Wahl factor                                                          full stroke 45 mm                                    825 N each                        768.0   1.20  allowable 925 MPa for chrome-silicon wire (ASSUMED); spring 
+Pad spring: length left before solid at full stroke                                                                    free 145, full stroke 90, solid 74.2 mm              -                                     -   1.59  15.8 mm left; EN 13906-1 asks 9.9 mm
+
+rows below 2.0 (not counting information rows): 1 of 62

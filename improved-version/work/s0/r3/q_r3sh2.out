@@ -1,0 +1,17 @@
+  0 rc 0    30 s  ret ESE240SL step 0.5
+  1 rc 0    30 s  ret ESE240SL step 0.8
+  2 rc 0    24 s  ret WEB140 step 0.5
+  3 rc 0    23 s  ret WEB140 step 0.8
+  4 rc 0    23 s  kerb 0.5 nose
+  5 rc 0    23 s  kerb 0.5 nose
+  6 rc 0    27 s  kerb 0.5 nose ramp
+  7 rc 0    27 s  kerb 0.5 nose
+  8 rc 0    29 s  ret ESE240SL step 0.8
+  9 rc 0    30 s  ret ESE240SL step 0.8
+ 10 rc 0    21 s  kerb 0.8 nose
+ 11 rc 0    34 s  kerb 0.5 tail
+ 12 rc 0    24 s  kerb 0.8 nose
+ 13 rc 0    32 s  kerb 0.5 tail
+ 14 rc 0    39 s  kerb 0.5 nose
+ 15 rc 0    23 s  kerb 0.5 nose
+batch done in 224 s

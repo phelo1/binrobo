@@ -1,0 +1,1 @@
+B_towstab {"test": "towstab", "grab": "success", "pivot_done": true, "pivot_turned_deg": 180.0, "swept_diameter_m": 2.4, "pivot_centre_drift_m": 0.093, "captured_end": true, "roll": 0.004, "pitch": 0.018, "bin_ground": 0.0, "cmin": 0.0, "dmin": 0.0, "seated_all": true, "clear_min": 0.085, "ok": true, "cpu_s": 55}

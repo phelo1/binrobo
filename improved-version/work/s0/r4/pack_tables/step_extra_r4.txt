@@ -1,0 +1,81 @@
+oblique approach and lower steps (60 N m, strip 24 mm, edge 3.0 m ahead)
+liftpeak_step_both_v02_at30_yaw20_r4w24t60.json          over  5.94 wheel 4326 lift 2026 held True seated True
+liftpeak_step_both_v03_at30_yaw10_r4w24t60.json          over  5.98 wheel 4479 lift 2574 held True seated True
+liftpeak_step_both_v03_at30_yaw20_r4w24t60.json          over  5.98 wheel 4633 lift 2295 held True seated True
+liftpeak_step_both_v03_at30_yaw30_r4w24t60.json          over  5.98 wheel 4586 lift 2891 held True seated True
+liftpeak_step_both_v04_at30_yaw10_r4w24t60.json          over  6.04 wheel 5784 lift 2508 held True seated True
+liftpeak_step_both_v04_at30_yaw20_r4w24t60.json          over  6.04 wheel 4599 lift 2764 held True seated True
+liftpeak_step_both_v04_at30_yaw30_r4w24t60.json          over  6.04 wheel 6407 lift 2644 held True seated True
+stepempty_both_v03_yaw20_h25_r4w24t60.json               over  5.98 wheel 3109 lift None held None seated None
+stepempty_both_v03_yaw20_h30_r4w24t60.json               over  5.98 wheel 2772 lift None held None seated None
+stepempty_both_v03_yaw20_r4w24t60.json                   STALL 2.08 wheel 1474 lift None held None seated None
+stepempty_both_v04_yaw10_r4w24t60.json                   STALL 1.92 wheel 2767 lift None held None seated None
+stepempty_both_v04_yaw20_h25_r4w24t60.json               over  6.04 wheel 4555 lift None held None seated None
+stepempty_both_v04_yaw20_h30_r4w24t60.json               over  6.04 wheel 3307 lift None held None seated None
+stepempty_both_v04_yaw20_r4w24t60.json                   STALL 2.07 wheel 1659 lift None held None seated None
+stepempty_both_v04_yaw30_r4w24t60.json                   STALL 2.32 wheel 1683 lift None held None seated None
+liftpeak_step_both_v03_at30_h20_r4w24t60.json            over  5.98 wheel 3335 lift 1979 held True seated True
+liftpeak_step_both_v03_at30_h25_r4w24t60.json            over  5.98 wheel 4559 lift 1975 held True seated True
+liftpeak_step_both_v03_at30_h30_r4w24t60.json            STALL 2.76 wheel 2363 lift 1632 held True seated True
+liftpeak_step_both_v04_at30_h20_r4w24t60.json            over  6.04 wheel 3190 lift 2085 held True seated True
+liftpeak_step_both_v04_at30_h25_r4w24t60.json            over  6.04 wheel 5320 lift 2125 held True seated True
+liftpeak_step_both_v04_at30_h30_r4w24t60.json            over  6.04 wheel 4950 lift 2132 held True seated True
+stepempty_both_v03_h20_r4w24t60.json                     over  5.98 wheel 1384 lift None held None seated None
+stepempty_both_v03_h25_r4w24t60.json                     STALL 1.88 wheel 1309 lift None held None seated None
+stepempty_both_v03_h30_r4w24t60.json                     STALL 1.88 wheel 2439 lift None held None seated None
+stepempty_both_v03_yaw20_h25_r4w24t60.json               over  5.98 wheel 3109 lift None held None seated None
+stepempty_both_v03_yaw20_h30_r4w24t60.json               over  5.98 wheel 2772 lift None held None seated None
+stepempty_both_v04_h20_r4w24t60.json                     over  6.04 wheel 1410 lift None held None seated None
+stepempty_both_v04_h25_r4w24t60.json                     STALL 1.88 wheel 1488 lift None held None seated None
+stepempty_both_v04_h30_r4w24t60.json                     STALL 1.88 wheel 1741 lift None held None seated None
+stepempty_both_v04_yaw20_h25_r4w24t60.json               over  6.04 wheel 4555 lift None held None seated None
+stepempty_both_v04_yaw20_h30_r4w24t60.json               over  6.04 wheel 3307 lift None held None seated None
+stepempty_both_v03_h20_r4w24t60.json                     over  5.98 wheel 1384 lift None held None seated None
+stepempty_both_v03_h25_r4w24t60.json                     STALL 1.88 wheel 1309 lift None held None seated None
+stepempty_both_v03_h30_r4w24t60.json                     STALL 1.88 wheel 2439 lift None held None seated None
+stepempty_both_v03_yaw20_h25_r4w24t60.json               over  5.98 wheel 3109 lift None held None seated None
+stepempty_both_v03_yaw20_h30_r4w24t60.json               over  5.98 wheel 2772 lift None held None seated None
+stepempty_both_v03_yaw20_r4w24t60.json                   STALL 2.08 wheel 1474 lift None held None seated None
+stepempty_both_v04_h20_r4w24t60.json                     over  6.04 wheel 1410 lift None held None seated None
+stepempty_both_v04_h25_r4w24t60.json                     STALL 1.88 wheel 1488 lift None held None seated None
+stepempty_both_v04_h30_r4w24t60.json                     STALL 1.88 wheel 1741 lift None held None seated None
+stepempty_both_v04_r4w24b100.json                        STALL 1.87 wheel 4538 lift None held None seated None
+stepempty_both_v04_r4w24t60.json                         STALL 1.87 wheel 4538 lift None held None seated None
+stepempty_both_v04_yaw10_r4w24t60.json                   STALL 1.92 wheel 2767 lift None held None seated None
+stepempty_both_v04_yaw20_h25_r4w24t60.json               over  6.04 wheel 4555 lift None held None seated None
+stepempty_both_v04_yaw20_h30_r4w24t60.json               over  6.04 wheel 3307 lift None held None seated None
+stepempty_both_v04_yaw20_r4w24t60.json                   STALL 2.07 wheel 1659 lift None held None seated None
+stepempty_both_v04_yaw30_r4w24t60.json                   STALL 2.32 wheel 1683 lift None held None seated None
+stepempty_both_v05_r4w24b100.json                        STALL 1.87 wheel 1634 lift None held None seated None
+stepempty_both_v05_r4w24t60.json                         STALL 1.87 wheel 1634 lift None held None seated None
+stepempty_one_v04_r4w24b100.json                         over  6.04 wheel 3151 lift None held None seated None
+stepempty_one_v04_r4w24t60.json                          over  6.04 wheel 3151 lift None held None seated None
+stepempty_one_v05_r4w24b100.json                         over  6.11 wheel 2727 lift None held None seated None
+stepempty_one_v05_r4w24t60.json                          over  6.11 wheel 2727 lift None held None seated None
+
+lowering guard
+lower_h000_L_k110_m15_r4.json            6.0 set down peak on block N 0 trip at mm None expected touchdown mm 199.0
+lower_h000_L_k110_m15_v13_r4.json        13.0 set down peak on block N 0 trip at mm None expected touchdown mm 199.0
+lower_h000_L_k25_m15_r4.json             6.0 set down peak on block N 0 trip at mm None expected touchdown mm 190.1
+lower_h000_L_k25_m15_v13_r4.json         13.0 set down peak on block N 0 trip at mm None expected touchdown mm 190.1
+lower_h000_L_k60_m15_r4.json             6.0 set down peak on block N 0 trip at mm None expected touchdown mm 191.6
+lower_h015_L_k110_m15_r4.json            6.0 set down on the block peak on block N 859 trip at mm None expected touchdown mm 199.0
+lower_h015_L_k110_m15_v13_r4.json        13.0 set down on the block peak on block N 865 trip at mm None expected touchdown mm 199.0
+lower_h025_L_k110_m15_r4.json            6.0 stopped and raised peak on block N 109 trip at mm 216.8 expected touchdown mm 199.0
+lower_h025_L_k110_m15_v13_r4.json        13.0 stopped and raised peak on block N 158 trip at mm 217.2 expected touchdown mm 199.0
+lower_h040_L_k110_m15_r4.json            6.0 stopped and raised peak on block N 107 trip at mm 231.7 expected touchdown mm 199.0
+lower_h040_L_k110_m15_v13_r4.json        13.0 stopped and raised peak on block N 130 trip at mm 232.3 expected touchdown mm 199.0
+lower_h060_L_k110_m15_nocheck_r4.json    6.0 set down on the block peak on block N 907 trip at mm None expected touchdown mm 199.0
+lower_h060_L_k110_m15_r4.json            6.0 stopped and raised peak on block N 109 trip at mm 251.6 expected touchdown mm 199.0
+lower_h060_L_k110_m15_v13_r4.json        13.0 stopped and raised peak on block N 122 trip at mm 252.4 expected touchdown mm 199.0
+lower_h060_L_k25_m15_r4.json             6.0 stopped and raised peak on block N 81 trip at mm 244.7 expected touchdown mm 190.1
+lower_h060_L_k25_m15_v13_r4.json         13.0 stopped and raised peak on block N 86 trip at mm 244.7 expected touchdown mm 190.1
+lower_h060_L_k60_m15_r4.json             6.0 stopped and raised peak on block N 83 trip at mm 246.3 expected touchdown mm 191.6
+lower_h060_L_k60_m15_v13_r4.json         13.0 stopped and raised peak on block N 86 trip at mm 246.4 expected touchdown mm 191.6
+lower_h060_both_k110_m15_r4.json         6.0 stopped and raised peak on block N 109 trip at mm 251.6 expected touchdown mm 199.0
+lower_h060_both_k110_m15_v13_r4.json     13.0 stopped and raised peak on block N 122 trip at mm 252.4 expected touchdown mm 199.0
+lower_h100_both_k110_m15_r4.json         6.0 stopped and raised peak on block N 5827 trip at mm 288.7 expected touchdown mm 199.0
+
+sideways drive-tyre force
+lat_k0_r4.json 586 {'straight 0.5 m/s': 1.1, 'turn 0.5 m/s, 0.5 rad/s': 398.5, 'slalom +/-25 deg': 333.3, 'pivot 180 deg on the spot': 335.7, 'e-stop from 0.5 m/s in a turn': 234.0, '12 % cross slope: ramp on': 15.1, '12 % cross slope: drive 0.5 m/s': 116.3, '12 % cross slope: e-stop': 585.9}
+lat_k110_r4.json 904 {'straight 0.5 m/s': 68.5, 'turn 0.5 m/s, 0.5 rad/s': 501.8, 'slalom +/-25 deg': 473.9, 'pivot 180 deg on the spot': 904.0, 'e-stop from 0.5 m/s in a turn': 437.9, '12 % cross slope: ramp on': 36.3, '12 % cross slope: drive 0.5 m/s': 37.5, '12 % cross slope: e-stop': 224.5}

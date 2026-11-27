@@ -1,0 +1,430 @@
+{
+ "r6f_pivflank_a": {
+  "run": "r6f_pivflank_a",
+  "result": "pass",
+  "outcome": "plan completed",
+  "contacts": 0,
+  "person_appears_t": 1180.37,
+  "state_then": "WAIT_CLEAR",
+  "pivot_from_t": 1229.09,
+  "within_3m_from_t": 1184.21,
+  "hold_from_t": 1182.77,
+  "gap_at_hold": 4.39,
+  "axle_at_hold": 5.77,
+  "s_from_3m_to_hold": -1.4,
+  "turning_with_person_inside_3m_s": 0.0,
+  "deg_turned_with_person_inside_3m": 0.0,
+  "nearest_while_turning": null,
+  "nearest": {
+   "gap": 0.52,
+   "axle": 1.74,
+   "w": -0.0,
+   "v": 0.0,
+   "mode": "HOLD",
+   "t": 1187.33
+  },
+  "pauses": [
+   {
+    "t": 1182.6,
+    "by": "cam",
+    "range": 4.64,
+    "wait_s": 43.0,
+    "person": true
+   }
+  ],
+  "peak_rate_in_turn": 0.221,
+  "trip_min": []
+ },
+ "r6f_pivflank_a2": {
+  "run": "r6f_pivflank_a2",
+  "result": "pass",
+  "outcome": "plan completed",
+  "contacts": 0,
+  "person_appears_t": 1186.61,
+  "state_then": "PIVOT_LOADED",
+  "pivot_from_t": 1186.61,
+  "within_3m_from_t": 1190.33,
+  "hold_from_t": 1189.01,
+  "gap_at_hold": 4.27,
+  "axle_at_hold": 5.69,
+  "s_from_3m_to_hold": -1.3,
+  "turning_with_person_inside_3m_s": 0.0,
+  "deg_turned_with_person_inside_3m": 0.0,
+  "nearest_while_turning": null,
+  "nearest": {
+   "gap": 0.01,
+   "axle": 1.44,
+   "w": 0.0,
+   "v": 0.0,
+   "mode": "HOLD",
+   "t": 1194.17
+  },
+  "pauses": [
+   {
+    "t": 1188.8,
+    "by": "cam",
+    "range": 4.83,
+    "wait_s": 43.1,
+    "person": true
+   }
+  ],
+  "peak_rate_in_turn": 0.179,
+  "trip_min": []
+ },
+ "r6f_pivflank_b": {
+  "run": "r6f_pivflank_b",
+  "result": "pass",
+  "outcome": "plan completed",
+  "contacts": 0,
+  "person_appears_t": 1185.17,
+  "state_then": "PIVOT_LOADED",
+  "pivot_from_t": 1185.17,
+  "within_3m_from_t": 1190.45,
+  "hold_from_t": 1190.69,
+  "gap_at_hold": 2.75,
+  "axle_at_hold": 3.56,
+  "s_from_3m_to_hold": 0.2,
+  "turning_with_person_inside_3m_s": 0.4,
+  "deg_turned_with_person_inside_3m": 0.7,
+  "nearest_while_turning": {
+   "gap": 2.86,
+   "w": -0.023,
+   "t": 1190.57
+  },
+  "nearest": {
+   "gap": 0.04,
+   "axle": 1.48,
+   "w": 0.0,
+   "v": 0.0,
+   "mode": "HOLD",
+   "t": 1224.41
+  },
+  "pauses": [
+   {
+    "t": 1190.4,
+    "by": "lid",
+    "range": 2.96,
+    "wait_s": 43.2,
+    "person": true
+   }
+  ],
+  "peak_rate_in_turn": 0.222,
+  "trip_min": []
+ },
+ "r6f_pivflank_before_fix/a": {
+  "run": "r6f_pivflank_before_fix/a",
+  "result": "pass",
+  "outcome": "plan completed",
+  "contacts": 0,
+  "person_appears_t": 1079.21,
+  "state_then": "PIVOT_LOADED",
+  "pivot_from_t": 1079.21,
+  "within_3m_from_t": 1083.17,
+  "hold_from_t": 1081.61,
+  "gap_at_hold": 4.42,
+  "axle_at_hold": 5.85,
+  "s_from_3m_to_hold": -1.6,
+  "turning_with_person_inside_3m_s": 12.6,
+  "deg_turned_with_person_inside_3m": 54.0,
+  "nearest_while_turning": {
+   "gap": 0.08,
+   "w": 0.023,
+   "t": 1116.65
+  },
+  "nearest": {
+   "gap": 0.08,
+   "axle": 1.47,
+   "w": 0.023,
+   "v": 0.0,
+   "mode": "GUIDED",
+   "t": 1116.65
+  },
+  "pauses": [
+   {
+    "t": 1081.4,
+    "by": "cam",
+    "range": 4.84,
+    "wait_s": 10.3,
+    "person": true
+   },
+   {
+    "t": 1092.3,
+    "by": "lid",
+    "range": 0.73,
+    "wait_s": 3.2,
+    "person": true
+   },
+   {
+    "t": 1096.1,
+    "by": "lid",
+    "range": 0.72,
+    "wait_s": 3.2,
+    "person": true
+   },
+   {
+    "t": 1104.0,
+    "by": "lid",
+    "range": 0.16,
+    "wait_s": 4.2,
+    "person": true
+   },
+   {
+    "t": 1108.8,
+    "by": "lid",
+    "range": 0.11,
+    "wait_s": 3.2,
+    "person": true
+   },
+   {
+    "t": 1112.7,
+    "by": "lid",
+    "range": 0.08,
+    "wait_s": 3.2,
+    "person": true
+   },
+   {
+    "t": 1116.5,
+    "by": "lid",
+    "range": 0.04,
+    "wait_s": 4.6,
+    "person": true
+   }
+  ],
+  "peak_rate_in_turn": 0.216,
+  "trip_min": []
+ },
+ "r6f_pivflank_before_fix/b": {
+  "run": "r6f_pivflank_before_fix/b",
+  "result": "alert",
+  "outcome": "contact stop",
+  "contacts": 1,
+  "person_appears_t": 1079.09,
+  "state_then": "WAIT_CLEAR",
+  "pivot_from_t": 1079.21,
+  "within_3m_from_t": 1084.37,
+  "hold_from_t": 1087.85,
+  "gap_at_hold": 0.08,
+  "axle_at_hold": 1.49,
+  "s_from_3m_to_hold": 3.5,
+  "turning_with_person_inside_3m_s": 6.2,
+  "deg_turned_with_person_inside_3m": 28.5,
+  "nearest_while_turning": {
+   "gap": 0.07,
+   "w": -0.109,
+   "t": 1091.33
+  },
+  "nearest": {
+   "gap": 0.07,
+   "axle": 1.49,
+   "w": -0.109,
+   "v": 0.0,
+   "mode": "GUIDED",
+   "t": 1091.33
+  },
+  "pauses": [
+   {
+    "t": 1087.6,
+    "by": "lid",
+    "range": 0.03,
+    "wait_s": 3.2,
+    "person": false
+   }
+  ],
+  "peak_rate_in_turn": 0.247,
+  "trip_min": [
+   0
+  ]
+ },
+ "r6f_pivflank_before_fix2/a": {
+  "run": "r6f_pivflank_before_fix2/a",
+  "result": "pass",
+  "outcome": "plan completed",
+  "contacts": 0,
+  "person_appears_t": 1162.73,
+  "state_then": "WAIT_CLEAR",
+  "pivot_from_t": 1173.77,
+  "within_3m_from_t": 1166.69,
+  "hold_from_t": 1174.61,
+  "gap_at_hold": 0.75,
+  "axle_at_hold": 1.49,
+  "s_from_3m_to_hold": 7.9,
+  "turning_with_person_inside_3m_s": 8.8,
+  "deg_turned_with_person_inside_3m": 13.8,
+  "nearest_while_turning": {
+   "gap": 0.53,
+   "w": 0.04,
+   "t": 1169.81
+  },
+  "nearest": {
+   "gap": 0.52,
+   "axle": 1.77,
+   "w": 0.013,
+   "v": 0.0,
+   "mode": "GUIDED",
+   "t": 1169.69
+  },
+  "pauses": [
+   {
+    "t": 1174.4,
+    "by": "lid",
+    "range": 0.73,
+    "wait_s": 33.7,
+    "person": false
+   }
+  ],
+  "peak_rate_in_turn": 0.241,
+  "trip_min": []
+ },
+ "r6f_pivflank_before_fix2/b": {
+  "run": "r6f_pivflank_before_fix2/b",
+  "result": "pass",
+  "outcome": "plan completed",
+  "contacts": 0,
+  "person_appears_t": 1156.97,
+  "state_then": "WAIT_CLEAR",
+  "pivot_from_t": 1157.21,
+  "within_3m_from_t": 1162.37,
+  "hold_from_t": 1162.61,
+  "gap_at_hold": 2.72,
+  "axle_at_hold": 3.51,
+  "s_from_3m_to_hold": 0.2,
+  "turning_with_person_inside_3m_s": 0.4,
+  "deg_turned_with_person_inside_3m": 0.7,
+  "nearest_while_turning": {
+   "gap": 2.82,
+   "w": -0.021,
+   "t": 1162.49
+  },
+  "nearest": {
+   "gap": 0.03,
+   "axle": 1.48,
+   "w": 0.0,
+   "v": 0.0,
+   "mode": "HOLD",
+   "t": 1196.21
+  },
+  "pauses": [
+   {
+    "t": 1162.4,
+    "by": "lid",
+    "range": 2.92,
+    "wait_s": 43.2,
+    "person": true
+   }
+  ],
+  "peak_rate_in_turn": 0.197,
+  "trip_min": []
+ },
+ "r6f_pivflank_before_fix3/a": {
+  "run": "r6f_pivflank_before_fix3/a",
+  "result": "pass",
+  "outcome": "plan completed",
+  "contacts": 0,
+  "person_appears_t": 1180.61,
+  "state_then": "WAIT_CLEAR",
+  "pivot_from_t": 1229.33,
+  "within_3m_from_t": 1184.57,
+  "hold_from_t": 1183.01,
+  "gap_at_hold": 4.43,
+  "axle_at_hold": 5.8,
+  "s_from_3m_to_hold": -1.6,
+  "turning_with_person_inside_3m_s": 0.0,
+  "deg_turned_with_person_inside_3m": 0.0,
+  "nearest_while_turning": null,
+  "nearest": {
+   "gap": 0.52,
+   "axle": 1.76,
+   "w": -0.0,
+   "v": 0.0,
+   "mode": "HOLD",
+   "t": 1187.57
+  },
+  "pauses": [
+   {
+    "t": 1182.9,
+    "by": "cam",
+    "range": 4.67,
+    "wait_s": 43.0,
+    "person": true
+   }
+  ],
+  "peak_rate_in_turn": 0.201,
+  "trip_min": []
+ },
+ "r6f_pivflank_before_fix3/a2": {
+  "run": "r6f_pivflank_before_fix3/a2",
+  "result": "pass",
+  "outcome": "plan completed",
+  "contacts": 0,
+  "person_appears_t": 1170.05,
+  "state_then": "PIVOT_LOADED",
+  "pivot_from_t": 1170.05,
+  "within_3m_from_t": 1174.01,
+  "hold_from_t": 1172.69,
+  "gap_at_hold": 4.2,
+  "axle_at_hold": 5.58,
+  "s_from_3m_to_hold": -1.3,
+  "turning_with_person_inside_3m_s": 0.0,
+  "deg_turned_with_person_inside_3m": 0.0,
+  "nearest_while_turning": null,
+  "nearest": {
+   "gap": -0.01,
+   "axle": 1.43,
+   "w": 0.0,
+   "v": 0.0,
+   "mode": "HOLD",
+   "t": 1177.85
+  },
+  "pauses": [
+   {
+    "t": 1172.4,
+    "by": "cam",
+    "range": 4.79,
+    "wait_s": 42.8,
+    "person": true
+   }
+  ],
+  "peak_rate_in_turn": 0.177,
+  "trip_min": []
+ },
+ "r6f_pivflank_before_fix3/b": {
+  "run": "r6f_pivflank_before_fix3/b",
+  "result": "pass",
+  "outcome": "plan completed",
+  "contacts": 0,
+  "person_appears_t": 1167.89,
+  "state_then": "WAIT_CLEAR",
+  "pivot_from_t": 1168.13,
+  "within_3m_from_t": 1173.29,
+  "hold_from_t": 1174.73,
+  "gap_at_hold": 1.79,
+  "axle_at_hold": 2.5,
+  "s_from_3m_to_hold": 1.4,
+  "turning_with_person_inside_3m_s": 2.2,
+  "deg_turned_with_person_inside_3m": 11.1,
+  "nearest_while_turning": {
+   "gap": 1.98,
+   "w": -0.148,
+   "t": 1174.49
+  },
+  "nearest": {
+   "gap": -0.02,
+   "axle": 1.41,
+   "w": 0.0,
+   "v": 0.0,
+   "mode": "HOLD",
+   "t": 1207.01
+  },
+  "pauses": [
+   {
+    "t": 1174.5,
+    "by": "lid",
+    "range": 1.97,
+    "wait_s": 42.0,
+    "person": true
+   }
+  ],
+  "peak_rate_in_turn": 0.179,
+  "trip_min": []
+ }
+}

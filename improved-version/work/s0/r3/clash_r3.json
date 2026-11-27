@@ -1,0 +1,218 @@
+{
+ "static": {
+  "nobin": [
+   [
+    69.0,
+    "BIN 240 L body, corrected hull (front taper 35 mm, rear dr",
+    "BIN Lid (hinge at the rear)",
+    "legacy"
+   ],
+   [
+    28.1,
+    "AT Anti-tip bracket R",
+    "AT Anti-tip roller R D80 (y 420)",
+    "legacy"
+   ],
+   [
+    28.1,
+    "AT Anti-tip bracket L",
+    "AT Anti-tip roller L D80 (y 420)",
+    "legacy"
+   ],
+   [
+    13.8,
+    "BIN Handle bracket",
+    "BIN Lid (hinge at the rear)",
+    "legacy"
+   ],
+   [
+    13.8,
+    "BIN Handle bracket",
+    "BIN Lid (hinge at the rear)",
+    "legacy"
+   ],
+   [
+    10.0,
+    "GU Mouth flare R",
+    "AT Anti-tip roller R D80 (y 420)",
+    "legacy"
+   ],
+   [
+    10.0,
+    "GU Mouth flare L",
+    "AT Anti-tip roller L D80 (y 420)",
+    "legacy"
+   ],
+   [
+    6.3,
+    "BIN Axle",
+    "BIN Wheel hub [bwR]",
+    "legacy"
+   ],
+   [
+    6.3,
+    "BIN Axle",
+    "BIN Wheel hub [bwL]",
+    "legacy"
+   ],
+   [
+    3.7,
+    "BIN 240 L body, corrected hull (front taper 35 mm, rear dr",
+    "BIN Wheel 200 mm [bwR]",
+    "legacy"
+   ],
+   [
+    3.7,
+    "BIN 240 L body, corrected hull (front taper 35 mm, rear dr",
+    "BIN Wheel 200 mm [bwL]",
+    "legacy"
+   ],
+   [
+    3.1,
+    "CA Castor fork 200 mm [cforkR]",
+    "CA Castor hub [cwheelR]",
+    "legacy"
+   ],
+   [
+    3.1,
+    "CA Castor fork 200 mm [cforkL]",
+    "CA Castor hub [cwheelL]",
+    "legacy"
+   ],
+   [
+    1.4,
+    "SF Rear bumper R (foam + switch)",
+    "SF Rear bumper stripe R",
+    "legacy"
+   ],
+   [
+    1.4,
+    "SF Rear bumper L (foam + switch)",
+    "SF Rear bumper stripe L",
+    "legacy"
+   ]
+  ],
+  "carry": [
+   [
+    79.3,
+    "BIN 240 L body, corrected hull (front taper 35 mm, rear dr",
+    "BIN Lid (hinge at the rear)",
+    "legacy"
+   ],
+   [
+    28.1,
+    "AT Anti-tip bracket R",
+    "AT Anti-tip roller R D80 (y 420)",
+    "legacy"
+   ],
+   [
+    28.1,
+    "AT Anti-tip bracket L",
+    "AT Anti-tip roller L D80 (y 420)",
+    "legacy"
+   ],
+   [
+    13.8,
+    "BIN Handle bracket",
+    "BIN Lid (hinge at the rear)",
+    "legacy"
+   ],
+   [
+    13.8,
+    "BIN Handle bracket",
+    "BIN Lid (hinge at the rear)",
+    "legacy"
+   ],
+   [
+    10.0,
+    "GU Mouth flare R",
+    "AT Anti-tip roller R D80 (y 420)",
+    "legacy"
+   ],
+   [
+    10.0,
+    "GU Mouth flare L",
+    "AT Anti-tip roller L D80 (y 420)",
+    "legacy"
+   ],
+   [
+    6.3,
+    "BIN Axle",
+    "BIN Wheel hub [bwR]",
+    "legacy"
+   ],
+   [
+    6.3,
+    "BIN Axle",
+    "BIN Wheel hub [bwL]",
+    "legacy"
+   ],
+   [
+    3.7,
+    "BIN 240 L body, corrected hull (front taper 35 mm, rear dr",
+    "BIN Wheel 200 mm [bwR]",
+    "legacy"
+   ],
+   [
+    3.7,
+    "BIN 240 L body, corrected hull (front taper 35 mm, rear dr",
+    "BIN Wheel 200 mm [bwL]",
+    "legacy"
+   ],
+   [
+    3.1,
+    "CA Castor fork 200 mm [cforkR]",
+    "CA Castor hub [cwheelR]",
+    "legacy"
+   ],
+   [
+    3.1,
+    "CA Castor fork 200 mm [cforkL]",
+    "CA Castor hub [cwheelL]",
+    "legacy"
+   ],
+   [
+    1.4,
+    "SF Rear bumper R (foam + switch)",
+    "SF Rear bumper stripe R",
+    "legacy"
+   ],
+   [
+    1.4,
+    "SF Rear bumper L (foam + switch)",
+    "SF Rear bumper stripe L",
+    "legacy"
+   ]
+  ]
+ },
+ "sweep": [
+  {
+   "moving": "LC Carriage plate 16 mm aluminium 6082, two windows, striker tabs, tongue for the pad arm",
+   "fixed": "LM Lift top stop L: bolted 12 mm S355 bracket with tongue, 2 x M10 through the upright",
+   "first_q_mm": 336.0,
+   "cm3": 0.59
+  },
+  {
+   "moving": "LC Carriage plate 16 mm aluminium 6082, two windows, striker tabs, tongue for the pad arm",
+   "fixed": "LM Lift top stop R: bolted 12 mm S355 bracket with tongue, 2 x M10 through the upright",
+   "first_q_mm": 336.0,
+   "cm3": 0.59
+  },
+  {
+   "moving": "LC Carriage plate 16 mm aluminium 6082, two windows, striker tabs, tongue for the pad arm",
+   "fixed": "SW Lift top limit switch L (channel A), roller lever down to 1,327 mm",
+   "first_q_mm": 340.0,
+   "cm3": 0.51
+  },
+  {
+   "moving": "LC Carriage plate 16 mm aluminium 6082, two windows, striker tabs, tongue for the pad arm",
+   "fixed": "SW Lift top limit switch R (channel B), roller lever down to 1,327 mm",
+   "first_q_mm": 340.0,
+   "cm3": 0.51
+  }
+ ],
+ "looms": {
+  "nobin": [],
+  "carry": []
+ }
+}

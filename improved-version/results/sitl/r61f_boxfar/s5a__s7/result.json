@@ -1,0 +1,241 @@
+{
+ "scenario": "s5a",
+ "seed": 7,
+ "title": "Lidar: person + dog crossing (loaded)",
+ "expect": "pass",
+ "result": "alert",
+ "outcome": "path blocked",
+ "alerts": [
+  "path blocked for 120 s (something 2.8 m from the robot, in its path)"
+ ],
+ "sim_time_s": 196.7,
+ "chunks": [
+  {
+   "t0": 0.0,
+   "t1": 196.7,
+   "wall": 23.3,
+   "frames": 10827,
+   "status": "done"
+  }
+ ],
+ "energy_wh": 1.37,
+ "soc_start": 0.9,
+ "soc_end": 0.897,
+ "odo_m": 20.9,
+ "hedge_min_m": 0.369,
+ "hedge_min_at": [
+  53.4,
+  299.3
+ ],
+ "legal_min_m": null,
+ "legal_min_at": null,
+ "contact_min_m": 2.832,
+ "contact_with": "box",
+ "person_rest_min_m": null,
+ "car_rest_min_m": null,
+ "collisions": [],
+ "chain_trips": [],
+ "metrics": {
+  "placements": [],
+  "grabs": [],
+  "trips": [],
+  "stops": [],
+  "gates": [],
+  "navcam": {
+   "n": 270,
+   "cam_only": 0,
+   "both": 245,
+   "disagree": 0,
+   "none": 0
+  },
+  "r6_fast": {
+   "lane_s": 27.0,
+   "fast": 18.5,
+   "object": 8.4,
+   "float": 10.4
+  },
+  "first_motion_clock": null,
+  "first_motion_t": 77.1,
+  "ppl_pauses": [
+   {
+    "t": 76.6,
+    "v_in": 0.41,
+    "range": 2.96,
+    "s": 315.7,
+    "by": "lid",
+    "where": "lane",
+    "obj": [
+     [
+      4.3,
+      -1.12,
+      14,
+      2.96,
+      0.01
+     ]
+    ]
+   }
+  ]
+ },
+ "events": [
+  {
+   "t": 0.0,
+   "kind": "sim",
+   "text": "chunk 0 start: SITL launched, home = checkpoint pose s=295.0"
+  },
+  {
+   "t": 1.14,
+   "kind": "fw",
+   "text": "Calibrating barometer"
+  },
+  {
+   "t": 2.81,
+   "kind": "fw",
+   "text": "Barometer 1 calibration complete"
+  },
+  {
+   "t": 2.81,
+   "kind": "fw",
+   "text": "Barometer 2 calibration complete"
+  },
+  {
+   "t": 2.83,
+   "kind": "fw",
+   "text": "Beginning INS calibration. Do not move vehicle"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "ArduPilot Ready"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "RCInput: decoding UDP (Pulses)"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "AHRS: DCM active"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "GPS 1: specified as MAV"
+  },
+  {
+   "t": 3.13,
+   "kind": "fw",
+   "text": "GPS 1: detected MAV"
+  },
+  {
+   "t": 4.99,
+   "kind": "fw",
+   "text": "EKF3 IMU0 initialised"
+  },
+  {
+   "t": 4.99,
+   "kind": "fw",
+   "text": "EKF3 IMU1 initialised"
+  },
+  {
+   "t": 6.67,
+   "kind": "fw",
+   "text": "EKF3 IMU0 tilt alignment complete"
+  },
+  {
+   "t": 6.67,
+   "kind": "fw",
+   "text": "EKF3 IMU1 tilt alignment complete"
+  },
+  {
+   "t": 6.75,
+   "kind": "fw",
+   "text": "EKF3 IMU0 MAG0 initial yaw alignment complete"
+  },
+  {
+   "t": 6.75,
+   "kind": "fw",
+   "text": "EKF3 IMU1 MAG0 initial yaw alignment complete"
+  },
+  {
+   "t": 6.75,
+   "kind": "fw",
+   "text": "AHRS: EKF3 active"
+  },
+  {
+   "t": 15.15,
+   "kind": "fw",
+   "text": "EKF3 IMU0 origin set"
+  },
+  {
+   "t": 15.15,
+   "kind": "fw",
+   "text": "EKF3 IMU1 origin set"
+  },
+  {
+   "t": 15.15,
+   "kind": "fw",
+   "text": "Field Elevation Set: 30m"
+  },
+  {
+   "t": 21.63,
+   "kind": "fw",
+   "text": "SmartRTL deactivated: bad position"
+  },
+  {
+   "t": 42.59,
+   "kind": "fw",
+   "text": "EKF3 IMU0 is using GPS"
+  },
+  {
+   "t": 42.59,
+   "kind": "fw",
+   "text": "EKF3 IMU1 is using GPS"
+  },
+  {
+   "t": 46.55,
+   "kind": "fw",
+   "text": "Fence Indexed OK"
+  },
+  {
+   "t": 46.55,
+   "kind": "pi",
+   "text": "fence upload ack=0 (81 vertices)"
+  },
+  {
+   "t": 46.59,
+   "kind": "fw",
+   "text": "Warning: Arming Checks Disabled"
+  },
+  {
+   "t": 46.59,
+   "kind": "fw",
+   "text": "Throttle armed"
+  },
+  {
+   "t": 47.55,
+   "kind": "pi",
+   "text": "boot done (GUIDED, armed, fence 81 pts)"
+  },
+  {
+   "t": 76.65,
+   "kind": "pi",
+   "text": "lidar: something 3.0 m away -> stand still"
+  },
+  {
+   "t": 77.31,
+   "kind": "fw",
+   "text": "mode GUIDED -> HOLD"
+  },
+  {
+   "t": 196.71,
+   "kind": "ALERT",
+   "text": "path blocked for 120 s (something 2.8 m from the robot, in its path)"
+  },
+  {
+   "t": 196.71,
+   "kind": "pi",
+   "text": "FINISH alert: path blocked"
+  }
+ ]
+}

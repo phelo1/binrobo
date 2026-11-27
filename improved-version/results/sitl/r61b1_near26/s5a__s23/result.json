@@ -1,0 +1,252 @@
+{
+ "scenario": "s5a",
+ "seed": 23,
+ "title": "Lidar: person + dog crossing (loaded)",
+ "expect": "pass",
+ "result": "alert",
+ "outcome": "contact stop",
+ "alerts": [
+  "bump strip / body contact - stop chain open, robot stopped (contact with person)"
+ ],
+ "sim_time_s": 77.1,
+ "chunks": [
+  {
+   "t0": 0.0,
+   "t1": 77.1,
+   "wall": 13.0,
+   "frames": 4848,
+   "status": "done"
+  }
+ ],
+ "energy_wh": 0.89,
+ "soc_start": 0.9,
+ "soc_end": 0.8981,
+ "odo_m": 23.6,
+ "hedge_min_m": 0.374,
+ "hedge_min_at": [
+  52.8,
+  298.5
+ ],
+ "legal_min_m": null,
+ "legal_min_at": null,
+ "contact_min_m": 0.074,
+ "contact_with": "person",
+ "person_rest_min_m": 0.074,
+ "car_rest_min_m": null,
+ "collisions": [
+  {
+   "t": 77.07,
+   "what": "person"
+  }
+ ],
+ "chain_trips": [
+  {
+   "t": 77.07,
+   "why": "contact with person",
+   "v": 0.005
+  }
+ ],
+ "metrics": {
+  "placements": [],
+  "grabs": [],
+  "trips": [],
+  "stops": [],
+  "gates": [],
+  "navcam": {
+   "n": 259,
+   "cam_only": 0,
+   "both": 235,
+   "disagree": 8,
+   "none": 0
+  },
+  "r6_fast": {
+   "lane_s": 25.9,
+   "fast": 25.7,
+   "gap": 0.1,
+   "float": 10.1
+  },
+  "first_motion_clock": null,
+  "first_motion_t": 76.8,
+  "ppl_pauses": [
+   {
+    "t": 75.6,
+    "v_in": 1.0,
+    "range": 1.56,
+    "s": 317.9,
+    "by": "lid",
+    "where": "lane",
+    "obj": [
+     [
+      1.74,
+      -2.05,
+      11,
+      1.56,
+      5.64
+     ]
+    ]
+   }
+  ]
+ },
+ "events": [
+  {
+   "t": 0.0,
+   "kind": "sim",
+   "text": "chunk 0 start: SITL launched, home = checkpoint pose s=295.0"
+  },
+  {
+   "t": 1.14,
+   "kind": "fw",
+   "text": "Calibrating barometer"
+  },
+  {
+   "t": 2.81,
+   "kind": "fw",
+   "text": "Barometer 1 calibration complete"
+  },
+  {
+   "t": 2.81,
+   "kind": "fw",
+   "text": "Barometer 2 calibration complete"
+  },
+  {
+   "t": 2.83,
+   "kind": "fw",
+   "text": "Beginning INS calibration. Do not move vehicle"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "ArduPilot Ready"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "RCInput: decoding UDP (Pulses)"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "AHRS: DCM active"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "GPS 1: specified as MAV"
+  },
+  {
+   "t": 3.13,
+   "kind": "fw",
+   "text": "GPS 1: detected MAV"
+  },
+  {
+   "t": 4.99,
+   "kind": "fw",
+   "text": "EKF3 IMU0 initialised"
+  },
+  {
+   "t": 4.99,
+   "kind": "fw",
+   "text": "EKF3 IMU1 initialised"
+  },
+  {
+   "t": 6.67,
+   "kind": "fw",
+   "text": "EKF3 IMU0 tilt alignment complete"
+  },
+  {
+   "t": 6.67,
+   "kind": "fw",
+   "text": "EKF3 IMU1 tilt alignment complete"
+  },
+  {
+   "t": 6.75,
+   "kind": "fw",
+   "text": "EKF3 IMU0 MAG0 initial yaw alignment complete"
+  },
+  {
+   "t": 6.75,
+   "kind": "fw",
+   "text": "EKF3 IMU1 MAG0 initial yaw alignment complete"
+  },
+  {
+   "t": 6.75,
+   "kind": "fw",
+   "text": "AHRS: EKF3 active"
+  },
+  {
+   "t": 15.15,
+   "kind": "fw",
+   "text": "EKF3 IMU0 origin set"
+  },
+  {
+   "t": 15.15,
+   "kind": "fw",
+   "text": "EKF3 IMU1 origin set"
+  },
+  {
+   "t": 15.15,
+   "kind": "fw",
+   "text": "Field Elevation Set: 30m"
+  },
+  {
+   "t": 21.63,
+   "kind": "fw",
+   "text": "SmartRTL deactivated: bad position"
+  },
+  {
+   "t": 42.59,
+   "kind": "fw",
+   "text": "EKF3 IMU0 is using GPS"
+  },
+  {
+   "t": 42.59,
+   "kind": "fw",
+   "text": "EKF3 IMU1 is using GPS"
+  },
+  {
+   "t": 46.75,
+   "kind": "fw",
+   "text": "Fence Indexed OK"
+  },
+  {
+   "t": 46.75,
+   "kind": "pi",
+   "text": "fence upload ack=0 (81 vertices)"
+  },
+  {
+   "t": 46.81,
+   "kind": "fw",
+   "text": "Warning: Arming Checks Disabled"
+  },
+  {
+   "t": 46.81,
+   "kind": "fw",
+   "text": "Throttle armed"
+  },
+  {
+   "t": 47.75,
+   "kind": "pi",
+   "text": "boot done (GUIDED, armed, fence 81 pts)"
+  },
+  {
+   "t": 75.57,
+   "kind": "pi",
+   "text": "lidar: something 1.6 m away -> stand still"
+  },
+  {
+   "t": 75.63,
+   "kind": "fw",
+   "text": "mode GUIDED -> HOLD"
+  },
+  {
+   "t": 77.13,
+   "kind": "ALERT",
+   "text": "bump strip / body contact - stop chain open, robot stopped (contact with person)"
+  },
+  {
+   "t": 77.13,
+   "kind": "pi",
+   "text": "FINISH alert: contact stop"
+  }
+ ]
+}

@@ -1,0 +1,5 @@
+  raised 10 mm with the nose member: 10 ['AU Horn speaker 15 W', 'CM LTE antenna', 'SN 2D lidar', 'SN Front camera', 'SN Front camera lens', 'SN GNSS antenna', 'SN Lidar bracket, 80 mm arm ', 'SN Lidar window', 'SN Radar, front', 'SN Sensor post D40 on a foot']
+pieces 182 items 88 triangles 60425
+by source: {'CAD': 18, 'changed': 36, 'new': 34}
+items without geometry: []
+robot envelope nobin (mm): x -401..1335  y -471..471  z 0..1510

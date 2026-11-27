@@ -1,0 +1,20 @@
+sheet 1 nobin FL labels 71 mm/px 1.007
+sheet 2 nobin FR labels 71 mm/px 1.007
+sheet 3 nobin RL labels 72 mm/px 1.007
+sheet 4 nobin RR labels 70 mm/px 1.007
+sheet 5 carry FL labels 75 mm/px 1.007
+sheet 6 carry FR labels 75 mm/px 1.007
+sheet 7 carry RL labels 69 mm/px 1.007
+sheet 8 carry RR labels 67 mm/px 1.007
+sheet 9 nobin UFL labels 63 mm/px 1.007
+sheet 10 carry RL labels 75 mm/px 1.007
+sheet 11 balloons 80 of 81 missing [211]
+sheet 12 balloons 84 of 85 missing [211]
+  parts column 0 ends at y 1487
+  parts column 1 ends at y 1468
+  parts column 2 ends at y 1556
+sheet 13
+  loom table ends at y 1926
+sheet 14
+  safety sheet right panel ends at y 1096
+sheet 15

@@ -1,0 +1,6 @@
+runs_r4_b100 P5g_trench_open: DONE P5g_trench_open FAIL ['drive0 stalled at s 454.2 (no progress 12 s (stall))'] sim 1400 s E 1.1 Wh {"clear_min": 0.0784, "clear_at": 454.2, "seate
+runs_r4_b100 P5d_up_sharp_3kN: DONE P5d_up_sharp_3kN FAIL ['drive2 stalled at s 290.1 (no progress 12 s (stall))'] sim 1042 s E 1.4 Wh {"clear_min": 0.0747, "clear_at": 290.1, "seat
+runs_r4_b100 P5a_drop_sharp_3kN: DONE P5a_drop_sharp_3kN PASS [] sim 983 s E 0.2 Wh {"clear_min": 0.0474, "clear_at": 290.2, "seated_all": true, "bin_ground_N": 0.0, "roll_max": 0.199
+runs_r4_b100 chain done
+runs_r4_b100 P5h_pothole: DONE P5h_pothole PASS [] sim 1648 s E 0.4 Wh {"clear_min": 0.0504, "clear_at": 550.1, "seated_all": true, "bin_ground_N": 0.0, "roll_max": 3.2127, "pi
+runs_r4_b100 chain done

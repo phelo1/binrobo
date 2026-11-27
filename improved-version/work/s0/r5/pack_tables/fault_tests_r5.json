@@ -1,0 +1,381 @@
+[
+ {
+  "fault": "none",
+  "text": "no fault",
+  "final": {
+   "outcome": "plan completed",
+   "result": "pass",
+   "hedge": 0.368,
+   "prot": 0,
+   "stops": 0,
+   "nav": {
+    "n": 2239,
+    "cam_only": 15,
+    "both": 1957,
+    "disagree": 87,
+    "none": 46,
+    "dis_cam": 1
+   }
+  },
+  "first_version": {
+   "outcome": "plan completed",
+   "result": "pass",
+   "hedge": 0.373,
+   "prot": 0,
+   "stops": 0,
+   "nav": {
+    "n": 2241,
+    "cam_only": 14,
+    "both": 1958,
+    "disagree": 89,
+    "none": 47,
+    "dis_cam": 1
+   }
+  },
+  "before_last_edits": {
+   "outcome": "plan completed",
+   "result": "pass",
+   "hedge": 0.366,
+   "prot": 0,
+   "stops": 0,
+   "nav": {
+    "n": 2240,
+    "cam_only": 15,
+    "both": 1957,
+    "disagree": 108,
+    "none": 46
+   }
+  }
+ },
+ {
+  "fault": "steerL8",
+  "text": "steering forced 20 degrees toward the near (left) hedge for 8 s",
+  "final": {
+   "outcome": "plan completed",
+   "result": "pass",
+   "hedge": 0.128,
+   "prot": 1,
+   "stops": 0,
+   "nav": {
+    "n": 2261,
+    "cam_only": 15,
+    "both": 1974,
+    "disagree": 71,
+    "none": 47
+   }
+  },
+  "first_version": {
+   "outcome": "plan completed",
+   "result": "pass",
+   "hedge": 0.006,
+   "prot": 0,
+   "stops": 2,
+   "nav": {
+    "n": 2249,
+    "cam_only": 18,
+    "both": 1963,
+    "disagree": 93,
+    "none": 43
+   }
+  },
+  "before_last_edits": {
+   "outcome": "plan completed",
+   "result": "pass",
+   "hedge": 0.14,
+   "prot": 1,
+   "stops": 0,
+   "nav": {
+    "n": 2268,
+    "cam_only": 16,
+    "both": 1979,
+    "disagree": 76,
+    "none": 47
+   }
+  }
+ },
+ {
+  "fault": "steerL90",
+  "text": "the same for 90 s",
+  "final": {
+   "outcome": "path blocked",
+   "result": "alert",
+   "hedge": 0.143,
+   "prot": 3,
+   "stops": 0,
+   "nav": {
+    "n": 274,
+    "cam_only": 0,
+    "both": 249,
+    "disagree": 5,
+    "none": 0
+   }
+  },
+  "first_version": {
+   "outcome": "path blocked",
+   "result": "alert",
+   "hedge": 0.004,
+   "prot": 3,
+   "stops": 1,
+   "nav": {
+    "n": 266,
+    "cam_only": 0,
+    "both": 241,
+    "disagree": 0,
+    "none": 0
+   }
+  },
+  "before_last_edits": {
+   "outcome": "path blocked",
+   "result": "alert",
+   "hedge": 0.107,
+   "prot": 3,
+   "stops": 0,
+   "nav": {
+    "n": 274,
+    "cam_only": 0,
+    "both": 249,
+    "disagree": 2,
+    "none": 0
+   }
+  }
+ },
+ {
+  "fault": "steerR40",
+  "text": "steering forced 20 degrees toward the far hedge for 40 s",
+  "final": {
+   "outcome": "plan completed",
+   "result": "pass",
+   "hedge": 0.2,
+   "prot": 2,
+   "stops": 1,
+   "nav": {
+    "n": 2281,
+    "cam_only": 16,
+    "both": 1929,
+    "disagree": 161,
+    "none": 76,
+    "dis_cam": 2
+   }
+  },
+  "first_version": {
+   "outcome": "plan completed",
+   "result": "pass",
+   "hedge": 0.12,
+   "prot": 2,
+   "stops": 0,
+   "nav": {
+    "n": 2272,
+    "cam_only": 17,
+    "both": 1914,
+    "disagree": 119,
+    "none": 92,
+    "dis_cam": 1
+   }
+  },
+  "before_last_edits": {
+   "outcome": "plan completed",
+   "result": "pass",
+   "hedge": 0.196,
+   "prot": 2,
+   "stops": 0,
+   "nav": {
+    "n": 2272,
+    "cam_only": 17,
+    "both": 1914,
+    "disagree": 136,
+    "none": 74,
+    "dis_cam": 1
+   }
+  }
+ },
+ {
+  "fault": "cam05",
+  "text": "camera reading stuck at 0.5 m for 30 s (true 0.9 m)",
+  "final": {
+   "outcome": "plan completed",
+   "result": "pass",
+   "hedge": 0.369,
+   "prot": 0,
+   "stops": 0,
+   "nav": {
+    "n": 2237,
+    "cam_only": 14,
+    "both": 1982,
+    "disagree": 343,
+    "none": 46
+   }
+  },
+  "first_version": {
+   "outcome": "plan completed",
+   "result": "pass",
+   "hedge": 0.381,
+   "prot": 0,
+   "stops": 0,
+   "nav": {
+    "n": 2238,
+    "cam_only": 15,
+    "both": 1982,
+    "disagree": 360,
+    "none": 46
+   }
+  },
+  "before_last_edits": {
+   "outcome": "plan completed",
+   "result": "pass",
+   "hedge": 0.385,
+   "prot": 0,
+   "stops": 0,
+   "nav": {
+    "n": 2237,
+    "cam_only": 17,
+    "both": 1978,
+    "disagree": 335,
+    "none": 46
+   }
+  }
+ },
+ {
+  "fault": "cam25",
+  "text": "camera reading stuck at 2.5 m for 30 s",
+  "final": {
+   "outcome": "plan completed",
+   "result": "pass",
+   "hedge": 0.372,
+   "prot": 0,
+   "stops": 0,
+   "nav": {
+    "n": 2241,
+    "cam_only": 14,
+    "both": 1983,
+    "disagree": 353,
+    "none": 47
+   }
+  },
+  "first_version": {
+   "outcome": "plan completed",
+   "result": "pass",
+   "hedge": 0.375,
+   "prot": 0,
+   "stops": 0,
+   "nav": {
+    "n": 2241,
+    "cam_only": 18,
+    "both": 1981,
+    "disagree": 350,
+    "none": 44
+   }
+  },
+  "before_last_edits": {
+   "outcome": "plan completed",
+   "result": "pass",
+   "hedge": 0.369,
+   "prot": 0,
+   "stops": 0,
+   "nav": {
+    "n": 2242,
+    "cam_only": 15,
+    "both": 1983,
+    "disagree": 350,
+    "none": 47
+   }
+  }
+ },
+ {
+  "fault": "lidp08",
+  "text": "lidar left-face reading 0.8 m too far for 30 s",
+  "final": {
+   "outcome": "plan completed",
+   "result": "pass",
+   "hedge": 0.359,
+   "prot": 0,
+   "stops": 0,
+   "nav": {
+    "n": 2240,
+    "cam_only": 16,
+    "both": 1956,
+    "disagree": 317,
+    "none": 46,
+    "dis_cam": 224
+   }
+  },
+  "first_version": {
+   "outcome": "plan completed",
+   "result": "pass",
+   "hedge": 0.035,
+   "prot": 1,
+   "stops": 0,
+   "nav": {
+    "n": 2245,
+    "cam_only": 17,
+    "both": 1959,
+    "disagree": 243,
+    "none": 46,
+    "dis_cam": 129
+   }
+  },
+  "before_last_edits": {
+   "outcome": "plan completed",
+   "result": "pass",
+   "hedge": 0.361,
+   "prot": 0,
+   "stops": 0,
+   "nav": {
+    "n": 2241,
+    "cam_only": 14,
+    "both": 1958,
+    "disagree": 330,
+    "none": 47,
+    "dis_cam": 224
+   }
+  }
+ },
+ {
+  "fault": "lidm05",
+  "text": "lidar left-face reading 0.5 m too near for 30 s",
+  "final": {
+   "outcome": "plan completed",
+   "result": "pass",
+   "hedge": 0.365,
+   "prot": 0,
+   "stops": 0,
+   "nav": {
+    "n": 2241,
+    "cam_only": 15,
+    "both": 1957,
+    "disagree": 322,
+    "none": 47,
+    "dis_cam": 226
+   }
+  },
+  "first_version": {
+   "outcome": "plan completed",
+   "result": "pass",
+   "hedge": 0.376,
+   "prot": 0,
+   "stops": 0,
+   "nav": {
+    "n": 2241,
+    "cam_only": 14,
+    "both": 1958,
+    "disagree": 326,
+    "none": 47,
+    "dis_cam": 222
+   }
+  },
+  "before_last_edits": {
+   "outcome": "plan completed",
+   "result": "pass",
+   "hedge": 0.371,
+   "prot": 0,
+   "stops": 0,
+   "nav": {
+    "n": 2241,
+    "cam_only": 14,
+    "both": 1958,
+    "disagree": 326,
+    "none": 47,
+    "dis_cam": 226
+   }
+  }
+ }
+]

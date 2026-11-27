@@ -1,0 +1,2222 @@
+[
+{
+"name": "FR Side rail L 50x50x4 RHS S355",
+"grp": "tug",
+"col": "steel",
+"src": "changed",
+"vol_cm3": 993.6,
+"bb": [
+-370.0,
+980.0,
+405.0,
+455.0,
+360.0,
+410.0
+]
+},
+{
+"name": "FR Drive/motor plate L 6 mm S355 with top flange bolted up through the rail",
+"grp": "tug",
+"col": "steel",
+"src": "changed",
+"vol_cm3": 334.8,
+"bb": [
+-100.0,
+100.0,
+405.0,
+450.0,
+120.0,
+360.0
+]
+},
+{
+"name": "DR Gearmotor L PEWM82M-320W on the rail + 3.5:1 chain",
+"grp": "tug",
+"col": "dark",
+"src": "CAD",
+"vol_cm3": 754.0,
+"bb": [
+-210.0,
+-60.0,
+380.0,
+460.0,
+412.0,
+492.0
+]
+},
+{
+"name": "DR Chain case L",
+"grp": "tug",
+"col": "dark",
+"src": "changed",
+"vol_cm3": 349.4,
+"bb": [
+-40.0,
+40.0,
+450.0,
+465.0,
+140.0,
+452.0
+]
+},
+{
+"name": "DR Axle stub L",
+"grp": "tug",
+"col": "steel",
+"src": "CAD",
+"vol_cm3": 53.7,
+"bb": [
+-15.0,
+15.0,
+368.0,
+444.0,
+150.0,
+180.0
+]
+},
+{
+"name": "GU UHMW guard L",
+"grp": "tug",
+"col": "uhmw",
+"src": "changed",
+"vol_cm3": 1623.6,
+"bb": [
+-300.0,
+380.0,
+358.0,
+368.1,
+59.9,
+360.0
+]
+},
+{
+"name": "GU Mouth flare L",
+"grp": "tug",
+"col": "uhmw",
+"src": "CAD",
+"vol_cm3": 240.0,
+"bb": [
+-372.1,
+-297.9,
+358.7,
+407.3,
+60.0,
+360.0
+]
+},
+{
+"name": "SN Leg-tip gap sensor L (ToF, potted)",
+"grp": "tug",
+"col": "sensor",
+"src": "CAD",
+"vol_cm3": 12.0,
+"bb": [
+-380.0,
+-360.0,
+388.0,
+408.0,
+200.0,
+230.0
+]
+},
+{
+"name": "AT Anti-tip bracket L",
+"grp": "tug",
+"col": "steel",
+"src": "CAD",
+"vol_cm3": 194.4,
+"bb": [
+-345.0,
+-315.0,
+408.0,
+432.0,
+90.0,
+360.0
+]
+},
+{
+"name": "AT Anti-tip roller L D80 (y 420)",
+"grp": "tug",
+"col": "rubber",
+"src": "CAD",
+"vol_cm3": 251.3,
+"bb": [
+-370.0,
+-290.0,
+395.0,
+445.0,
+50.0,
+130.0
+]
+},
+{
+"name": "SF Rear bumper L (foam + switch)",
+"grp": "tug",
+"col": "rubber",
+"src": "CAD",
+"vol_cm3": 192.5,
+"bb": [
+-395.0,
+-370.0,
+395.0,
+465.0,
+330.0,
+440.0
+]
+},
+{
+"name": "SF Rear bumper stripe L",
+"grp": "tug",
+"col": "stripe",
+"src": "CAD",
+"vol_cm3": 4.2,
+"bb": [
+-397.0,
+-394.0,
+395.0,
+465.0,
+375.0,
+395.0
+]
+},
+{
+"name": "FR Side rail R 50x50x4 RHS S355",
+"grp": "tug",
+"col": "steel",
+"src": "changed",
+"vol_cm3": 993.6,
+"bb": [
+-370.0,
+980.0,
+-455.0,
+-405.0,
+360.0,
+410.0
+]
+},
+{
+"name": "FR Drive/motor plate R 6 mm S355 with top flange bolted up through the rail",
+"grp": "tug",
+"col": "steel",
+"src": "changed",
+"vol_cm3": 334.8,
+"bb": [
+-100.0,
+100.0,
+-450.0,
+-405.0,
+120.0,
+360.0
+]
+},
+{
+"name": "DR Gearmotor R PEWM82M-320W on the rail + 3.5:1 chain",
+"grp": "tug",
+"col": "dark",
+"src": "CAD",
+"vol_cm3": 754.0,
+"bb": [
+-210.0,
+-60.0,
+-460.0,
+-380.0,
+412.0,
+492.0
+]
+},
+{
+"name": "DR Chain case R",
+"grp": "tug",
+"col": "dark",
+"src": "changed",
+"vol_cm3": 349.4,
+"bb": [
+-40.0,
+40.0,
+-465.0,
+-450.0,
+140.0,
+452.0
+]
+},
+{
+"name": "DR Axle stub R",
+"grp": "tug",
+"col": "steel",
+"src": "CAD",
+"vol_cm3": 53.7,
+"bb": [
+-15.0,
+15.0,
+-444.0,
+-368.0,
+150.0,
+180.0
+]
+},
+{
+"name": "GU UHMW guard R",
+"grp": "tug",
+"col": "uhmw",
+"src": "changed",
+"vol_cm3": 1623.6,
+"bb": [
+-300.0,
+380.0,
+-368.1,
+-358.0,
+59.9,
+360.0
+]
+},
+{
+"name": "GU Mouth flare R",
+"grp": "tug",
+"col": "uhmw",
+"src": "CAD",
+"vol_cm3": 240.0,
+"bb": [
+-372.1,
+-297.9,
+-407.3,
+-358.7,
+60.0,
+360.0
+]
+},
+{
+"name": "SN Leg-tip gap sensor R (ToF, potted)",
+"grp": "tug",
+"col": "sensor",
+"src": "CAD",
+"vol_cm3": 12.0,
+"bb": [
+-380.0,
+-360.0,
+-408.0,
+-388.0,
+200.0,
+230.0
+]
+},
+{
+"name": "AT Anti-tip bracket R",
+"grp": "tug",
+"col": "steel",
+"src": "CAD",
+"vol_cm3": 194.4,
+"bb": [
+-345.0,
+-315.0,
+-432.0,
+-408.0,
+90.0,
+360.0
+]
+},
+{
+"name": "AT Anti-tip roller R D80 (y 420)",
+"grp": "tug",
+"col": "rubber",
+"src": "CAD",
+"vol_cm3": 251.3,
+"bb": [
+-370.0,
+-290.0,
+-445.0,
+-395.0,
+50.0,
+130.0
+]
+},
+{
+"name": "SF Rear bumper R (foam + switch)",
+"grp": "tug",
+"col": "rubber",
+"src": "CAD",
+"vol_cm3": 192.5,
+"bb": [
+-395.0,
+-370.0,
+-465.0,
+-395.0,
+330.0,
+440.0
+]
+},
+{
+"name": "SF Rear bumper stripe R",
+"grp": "tug",
+"col": "stripe",
+"src": "CAD",
+"vol_cm3": 4.2,
+"bb": [
+-397.0,
+-394.0,
+-465.0,
+-395.0,
+375.0,
+395.0
+]
+},
+{
+"name": "FR Nose cross-member 50x50x3 RHS, at rail height",
+"grp": "tug",
+"col": "steel",
+"src": "changed",
+"vol_cm3": 456.8,
+"bb": [
+930.0,
+980.0,
+-405.0,
+405.0,
+360.0,
+410.0
+]
+},
+{
+"name": "FR Mast-base cross-member 50x50x5 RHS S355",
+"grp": "tug",
+"col": "steel",
+"src": "changed",
+"vol_cm3": 729.0,
+"bb": [
+465.0,
+515.0,
+-405.0,
+405.0,
+360.0,
+410.0
+]
+},
+{
+"name": "LM Mast upright L 80x40x4 RHS, welded all round to its foot shoe",
+"grp": "tug",
+"col": "steel",
+"src": "changed",
+"vol_cm3": 851.2,
+"bb": [
+480.0,
+560.0,
+180.0,
+220.0,
+420.0,
+1370.0
+]
+},
+{
+"name": "LM Linear rail L HGR15, 940 mm",
+"grp": "tug",
+"col": "rail",
+"src": "changed",
+"vol_cm3": 211.5,
+"bb": [
+455.0,
+470.0,
+192.5,
+207.5,
+420.0,
+1360.0
+]
+},
+{
+"name": "LM Mast upright R 80x40x4 RHS, welded all round to its foot shoe",
+"grp": "tug",
+"col": "steel",
+"src": "changed",
+"vol_cm3": 851.2,
+"bb": [
+480.0,
+560.0,
+-220.0,
+-180.0,
+420.0,
+1370.0
+]
+},
+{
+"name": "LM Linear rail R HGR15, 940 mm",
+"grp": "tug",
+"col": "rail",
+"src": "changed",
+"vol_cm3": 211.5,
+"bb": [
+455.0,
+470.0,
+-207.5,
+-192.5,
+420.0,
+1360.0
+]
+},
+{
+"name": "LM Mast top tie 50x50x2 RHS",
+"grp": "tug",
+"col": "steel",
+"src": "changed",
+"vol_cm3": 176.6,
+"bb": [
+470.0,
+520.0,
+-230.0,
+230.0,
+1370.0,
+1420.0
+]
+},
+{
+"name": "SN Rear camera (lip height, bin tilt)",
+"grp": "tug",
+"col": "sensor",
+"src": "changed",
+"vol_cm3": 122.5,
+"bb": [
+410.0,
+460.0,
+-35.0,
+35.0,
+1420.0,
+1455.0
+]
+},
+{
+"name": "SN Rear camera lens",
+"grp": "tug",
+"col": "lens",
+"src": "changed",
+"vol_cm3": 2.7,
+"bb": [
+404.0,
+410.0,
+-12.0,
+12.0,
+1426.0,
+1450.0
+]
+},
+{
+"name": "SF Amber beacon",
+"grp": "tug",
+"col": "beacon",
+"src": "changed",
+"vol_cm3": 255.2,
+"bb": [
+463.0,
+527.0,
+118.0,
+182.0,
+1420.0,
+1510.0
+]
+},
+{
+"name": "LA Lift actuator FDI 24 V 4 kN, 400 mm IP65 unit, 620 mm closed (340 mm used)",
+"grp": "tug",
+"col": "act",
+"src": "changed",
+"vol_cm3": 2053.0,
+"bb": [
+521.0,
+589.0,
+-34.0,
+34.0,
+326.0,
+910.0
+]
+},
+{
+"name": "LA Lift actuator motor",
+"grp": "tug",
+"col": "act",
+"src": "changed",
+"vol_cm3": 568.0,
+"bb": [
+589.0,
+660.0,
+-40.0,
+40.0,
+352.0,
+452.0
+]
+},
+{
+"name": "BY HDPE bay floor 10 mm, cut back at the front corners for the castors",
+"grp": "tug",
+"col": "panel",
+"src": "changed",
+"vol_cm3": 2660.0,
+"bb": [
+500.0,
+980.0,
+-380.0,
+380.0,
+120.0,
+130.0
+]
+},
+{
+"name": "BY HDPE side walls, ending 140 mm earlier for the castors",
+"grp": "tug",
+"col": "panel",
+"src": "changed",
+"vol_cm3": 591.6,
+"bb": [
+500.0,
+790.0,
+-386.0,
+386.0,
+130.0,
+300.0
+]
+},
+{
+"name": "BY HDPE rear cover (fixed), with cable grommets",
+"grp": "tug",
+"col": "panel",
+"src": "changed",
+"vol_cm3": 902.3,
+"bb": [
+520.0,
+720.0,
+-386.0,
+386.0,
+300.0,
+306.0
+]
+},
+{
+"name": "BY HDPE front cover (removable, shortened), with cable grommets",
+"grp": "tug",
+"col": "panel",
+"src": "changed",
+"vol_cm3": 898.7,
+"bb": [
+720.0,
+915.0,
+-386.0,
+386.0,
+300.0,
+306.0
+]
+},
+{
+"name": "PW Battery 24 V 20 Ah LiFePO4 + BMS (moved 58 mm back)",
+"grp": "tug",
+"col": "battery",
+"src": "changed",
+"vol_cm3": 4860.0,
+"bb": [
+722.0,
+902.0,
+-90.0,
+90.0,
+130.0,
+280.0
+]
+},
+{
+"name": "EL Electronics pod",
+"grp": "tug",
+"col": "dark",
+"src": "CAD",
+"vol_cm3": 6144.0,
+"bb": [
+560.0,
+720.0,
+-120.0,
+120.0,
+130.0,
+290.0
+]
+},
+{
+"name": "SF E-stop button",
+"grp": "tug",
+"col": "switch",
+"src": "CAD",
+"vol_cm3": 44.1,
+"bb": [
+618.0,
+662.0,
+-322.0,
+-278.0,
+306.0,
+335.0
+]
+},
+{
+"name": "SF Front bumper bar: rubber strip on an aluminium backing, slides 15 mm on two pins",
+"grp": "tug",
+"col": "rubber",
+"src": "changed",
+"vol_cm3": 1650.0,
+"bb": [
+1130.0,
+1155.0,
+-330.0,
+330.0,
+130.0,
+230.0
+]
+},
+{
+"name": "SF Bumper corner L 45 deg",
+"grp": "tug",
+"col": "rubber",
+"src": "changed",
+"vol_cm3": 480.0,
+"bb": [
+1057.6,
+1170.7,
+332.6,
+445.7,
+130.0,
+230.0
+]
+},
+{
+"name": "SF Bumper corner R 45 deg",
+"grp": "tug",
+"col": "rubber",
+"src": "changed",
+"vol_cm3": 480.0,
+"bb": [
+1057.6,
+1170.7,
+-445.7,
+-332.6,
+130.0,
+230.0
+]
+},
+{
+"name": "SF Front bumper stripe",
+"grp": "tug",
+"col": "stripe",
+"src": "changed",
+"vol_cm3": 39.6,
+"bb": [
+1154.0,
+1157.0,
+-330.0,
+330.0,
+170.0,
+190.0
+]
+},
+{
+"name": "DK Dock charge contact L",
+"grp": "tug",
+"col": "copper",
+"src": "changed",
+"vol_cm3": 7.2,
+"bb": [
+1155.0,
+1161.0,
+90.0,
+150.0,
+140.0,
+160.0
+]
+},
+{
+"name": "DK Dock charge contact R",
+"grp": "tug",
+"col": "copper",
+"src": "changed",
+"vol_cm3": 7.2,
+"bb": [
+1155.0,
+1161.0,
+-150.0,
+-90.0,
+140.0,
+160.0
+]
+},
+{
+"name": "SN Sensor post D40 on a foot plate on the nose cross-member",
+"grp": "tug",
+"col": "steel",
+"src": "changed",
+"vol_cm3": 868.0,
+"bb": [
+955.0,
+1040.0,
+-45.0,
+45.0,
+410.0,
+1060.0
+]
+},
+{
+"name": "SN Front camera",
+"grp": "tug",
+"col": "sensor",
+"src": "CAD",
+"vol_cm3": 180.0,
+"bb": [
+1015.0,
+1060.0,
+-40.0,
+40.0,
+700.0,
+750.0
+]
+},
+{
+"name": "SN Front camera lens",
+"grp": "tug",
+"col": "lens",
+"src": "CAD",
+"vol_cm3": 3.2,
+"bb": [
+1060.0,
+1066.0,
+-13.0,
+13.0,
+712.0,
+738.0
+]
+},
+{
+"name": "SN Lidar bracket, 80 mm arm from the post",
+"grp": "tug",
+"col": "steel",
+"src": "changed",
+"vol_cm3": 28.8,
+"bb": [
+1015.0,
+1095.0,
+-15.0,
+15.0,
+818.0,
+830.0
+]
+},
+{
+"name": "SN 2D lidar",
+"grp": "tug",
+"col": "sensor",
+"src": "changed",
+"vol_cm3": 589.0,
+"bb": [
+1030.0,
+1130.0,
+-50.0,
+50.0,
+830.0,
+905.0
+]
+},
+{
+"name": "SN Lidar window",
+"grp": "tug",
+"col": "lens",
+"src": "changed",
+"vol_cm3": 326.9,
+"bb": [
+1029.0,
+1131.0,
+-51.0,
+51.0,
+845.0,
+885.0
+]
+},
+{
+"name": "SN GNSS antenna",
+"grp": "tug",
+"col": "panel",
+"src": "CAD",
+"vol_cm3": 148.4,
+"bb": [
+955.0,
+1045.0,
+-45.0,
+45.0,
+1060.0,
+1090.0
+]
+},
+{
+"name": "DR Drive wheel 330 mm (tyre)",
+"grp": "wheel",
+"col": "tyre",
+"src": "CAD",
+"vol_cm3": 2820.4,
+"bb": [
+-165.1,
+165.1,
+-35.1,
+35.1,
+-165.0,
+165.0
+]
+},
+{
+"name": "DR Drive wheel hub",
+"grp": "wheel",
+"col": "hub",
+"src": "CAD",
+"vol_cm3": 2748.3,
+"bb": [
+-120.0,
+120.0,
+-36.0,
+36.0,
+-120.0,
+120.0
+]
+},
+{
+"name": "CA Castor fork 200 mm",
+"grp": "cfork",
+"col": "steel",
+"src": "CAD",
+"vol_cm3": 440.3,
+"bb": [
+-90.0,
+40.0,
+-40.0,
+40.0,
+-15.0,
+160.0
+]
+},
+{
+"name": "CA Castor wheel 200 mm",
+"grp": "cwheel",
+"col": "tyre",
+"src": "CAD",
+"vol_cm3": 907.1,
+"bb": [
+-100.0,
+100.0,
+-25.0,
+25.0,
+-100.0,
+100.0
+]
+},
+{
+"name": "CA Castor hub",
+"grp": "cwheel",
+"col": "hub",
+"src": "CAD",
+"vol_cm3": 592.2,
+"bb": [
+-65.0,
+65.0,
+-35.0,
+35.0,
+-65.0,
+65.0
+]
+},
+{
+"name": "LC Comb face plate (sprung, 10 mm UHMW)",
+"grp": "lift",
+"col": "dark",
+"src": "changed",
+"vol_cm3": 796.0,
+"bb": [
+-0.0,
+10.0,
+-200.0,
+200.0,
+-50.0,
+150.0
+]
+},
+{
+"name": "LC Carriage plate 16 mm aluminium 6082, two windows, striker tabs, tongue for the pad arm",
+"grp": "lift",
+"col": "dark",
+"src": "changed",
+"vol_cm3": 1943.2,
+"bb": [
+10.0,
+26.0,
+-252.0,
+252.0,
+-260.0,
+165.0
+]
+},
+{
+"name": "LC Actuator bracket: 10 mm S355 plate with two 6 mm cheeks, on the top cross-beam",
+"grp": "lift",
+"col": "dark",
+"src": "changed",
+"vol_cm3": 133.5,
+"bb": [
+76.0,
+165.0,
+-45.0,
+45.0,
+90.0,
+150.0
+]
+},
+{
+"name": "LA Lift actuator rod D30",
+"grp": "lift",
+"col": "act",
+"src": "changed",
+"vol_cm3": 307.5,
+"bb": [
+125.0,
+155.0,
+-15.0,
+15.0,
+-300.0,
+135.0
+]
+},
+{
+"name": "LC Comb pivot block (yaw +/-4, roll +/-3, centring springs)",
+"grp": "lift",
+"col": "steel",
+"src": "CAD",
+"vol_cm3": 220.0,
+"bb": [
+-112.0,
+-2.0,
+-50.0,
+50.0,
+-30.0,
+-10.0
+]
+},
+{
+"name": "SW Comb contact switch (roller lever, 30 N)",
+"grp": "lift",
+"col": "switch",
+"src": "CAD",
+"vol_cm3": 30.9,
+"bb": [
+-35.0,
+0.0,
+95.0,
+135.0,
+10.0,
+40.0
+]
+},
+{
+"name": "SN Comb ToF (gap + yaw) L",
+"grp": "lift",
+"col": "sensor",
+"src": "CAD",
+"vol_cm3": 10.8,
+"bb": [
+-12.0,
+0.0,
+165.0,
+195.0,
+-20.0,
+10.0
+]
+},
+{
+"name": "SN Comb ToF (gap + yaw) R",
+"grp": "lift",
+"col": "sensor",
+"src": "CAD",
+"vol_cm3": 10.8,
+"bb": [
+-12.0,
+0.0,
+-195.0,
+-165.0,
+-20.0,
+10.0
+]
+},
+{
+"name": "LC Comb plate 700 x 122 x 8 mm S355, self-aligning",
+"grp": "comb",
+"col": "dark",
+"src": "changed",
+"vol_cm3": 676.5,
+"bb": [
+-0.0,
+122.0,
+-350.0,
+350.0,
+-8.0,
+0.0
+]
+},
+{
+"name": "LC Nib 8 long x 20 high, 700 mm",
+"grp": "comb",
+"col": "nib",
+"src": "changed",
+"vol_cm3": 156.8,
+"bb": [
+-8.0,
+0.0,
+-350.0,
+350.0,
+-8.0,
+20.0
+]
+},
+{
+"name": "SW Nib seat switch (flush)",
+"grp": "comb",
+"col": "switch",
+"src": "CAD",
+"vol_cm3": 3.8,
+"bb": [
+2.0,
+18.0,
+-20.0,
+20.0,
+-6.0,
+0.0
+]
+},
+{
+"name": "PD Pad arm 80x40x3 RHS, bolted to the carriage plate tongue (3 x M10)",
+"grp": "lift",
+"col": "dark",
+"src": "changed",
+"vol_cm3": 388.5,
+"bb": [
+-30.0,
+10.0,
+-40.0,
+40.0,
+-620.0,
+-52.0
+]
+},
+{
+"name": "PD Pad guide block, aluminium, clamped round the arm, bushed for the rods",
+"grp": "lift",
+"col": "dark",
+"src": "changed",
+"vol_cm3": 502.8,
+"bb": [
+-37.0,
+14.0,
+-120.0,
+120.0,
+-595.0,
+-525.0
+]
+},
+{
+"name": "PD Pad UHMW face 300x100",
+"grp": "pad",
+"col": "pad",
+"src": "changed",
+"vol_cm3": 600.0,
+"bb": [
+-0.0,
+20.0,
+-150.0,
+150.0,
+-50.0,
+50.0
+]
+},
+{
+"name": "PD Pad springs 2 x 15 N/mm, outside diameter 31, wire 4.5, 134 mm free, 124 mm fitted",
+"grp": "pad",
+"col": "act",
+"src": "changed",
+"vol_cm3": 187.2,
+"bb": [
+26.0,
+150.0,
+-75.5,
+75.5,
+-15.5,
+15.5
+]
+},
+{
+"name": "SW Pad contact switch",
+"grp": "pad",
+"col": "switch",
+"src": "CAD",
+"vol_cm3": 11.2,
+"bb": [
+5.0,
+22.0,
+150.0,
+172.0,
+-15.0,
+15.0
+]
+},
+{
+"name": "BIN 240 L body, corrected hull (front taper 35 mm, rear draft 30 mm + wheel recess)",
+"grp": "bin",
+"col": "binb",
+"src": "CAD",
+"vol_cm3": 309514.7,
+"bb": [
+-100.2,
+571.7,
+-311.7,
+311.7,
+-104.8,
+937.2
+]
+},
+{
+"name": "BIN Handle bar D27 (rear)",
+"grp": "bin",
+"col": "bar",
+"src": "CAD",
+"vol_cm3": 254.2,
+"bb": [
+-165.5,
+-138.5,
+-222.0,
+222.0,
+903.5,
+930.5
+]
+},
+{
+"name": "BIN Handle bracket",
+"grp": "bin",
+"col": "binb",
+"src": "CAD",
+"vol_cm3": 128.8,
+"bb": [
+-162.0,
+-70.0,
+202.0,
+222.0,
+870.0,
+940.0
+]
+},
+{
+"name": "BIN Handle bracket",
+"grp": "bin",
+"col": "binb",
+"src": "CAD",
+"vol_cm3": 128.8,
+"bb": [
+-162.0,
+-70.0,
+-222.0,
+-202.0,
+870.0,
+940.0
+]
+},
+{
+"name": "BIN Plain rim 20 x 8 (handle side, no receiver)",
+"grp": "bin",
+"col": "binlip",
+"src": "CAD",
+"vol_cm3": 83.7,
+"bb": [
+-100.0,
+-80.0,
+-261.5,
+261.5,
+888.5,
+896.5
+]
+},
+{
+"name": "BIN EN 840 frontal receiver ledge 30 x 8, 580 mm (front wall)",
+"grp": "bin",
+"col": "binlip",
+"src": "CAD",
+"vol_cm3": 139.2,
+"bb": [
+551.5,
+581.5,
+-290.0,
+290.0,
+905.0,
+913.0
+]
+},
+{
+"name": "BIN EN 840 receiver rim 25 mm down-turn",
+"grp": "bin",
+"col": "binlip",
+"src": "CAD",
+"vol_cm3": 116.0,
+"bb": [
+573.5,
+581.5,
+-290.0,
+290.0,
+880.0,
+905.0
+]
+},
+{
+"name": "BIN Axle",
+"grp": "bin",
+"col": "hub",
+"src": "CAD",
+"vol_cm3": 163.0,
+"bb": [
+-10.0,
+10.0,
+-259.5,
+259.5,
+-10.0,
+10.0
+]
+},
+{
+"name": "BIN Wheel 200 mm",
+"grp": "bw",
+"col": "tyre",
+"src": "CAD",
+"vol_cm3": 801.1,
+"bb": [
+-100.0,
+100.0,
+-25.0,
+25.0,
+-100.0,
+100.0
+]
+},
+{
+"name": "BIN Wheel hub",
+"grp": "bw",
+"col": "hub",
+"src": "CAD",
+"vol_cm3": 615.8,
+"bb": [
+-70.0,
+70.0,
+-20.0,
+20.0,
+-70.0,
+70.0
+]
+},
+{
+"name": "BIN Lid (hinge at the rear)",
+"grp": "lid",
+"col": "lid",
+"src": "CAD",
+"vol_cm3": 11977.0,
+"bb": [
+-15.0,
+651.5,
+-299.5,
+299.5,
+-0.0,
+30.0
+]
+},
+{
+"name": "LM Rail backing flat L 30x10",
+"grp": "tug",
+"col": "steel",
+"src": "changed",
+"vol_cm3": 282.0,
+"bb": [
+470.0,
+480.0,
+185.0,
+215.0,
+420.0,
+1360.0
+]
+},
+{
+"name": "LM Rail backing flat R 30x10",
+"grp": "tug",
+"col": "steel",
+"src": "changed",
+"vol_cm3": 282.0,
+"bb": [
+470.0,
+480.0,
+-215.0,
+-185.0,
+420.0,
+1360.0
+]
+},
+{
+"name": "LA Actuator base bracket: 10 mm S355 back plate and shelf, two gussets, clevis lugs; 2 x M12 through the mast-base cross-member",
+"grp": "tug",
+"col": "steel",
+"src": "changed",
+"vol_cm3": 277.2,
+"bb": [
+515.0,
+600.0,
+-60.0,
+60.0,
+318.0,
+410.0
+]
+},
+{
+"name": "RK Castor cross-beam 50x40x3 RHS, pivots at its centre",
+"grp": "tug",
+"col": "rk",
+"src": "new",
+"vol_cm3": 362.9,
+"bb": [
+935.0,
+975.0,
+-360.0,
+360.0,
+266.0,
+316.0
+]
+},
+{
+"name": "RK Castor mounting plate L 6 mm",
+"grp": "tug",
+"col": "rk",
+"src": "new",
+"vol_cm3": 100.8,
+"bb": [
+890.0,
+1010.0,
+210.0,
+350.0,
+260.0,
+266.0
+]
+},
+{
+"name": "RK Bump stop L (rubber, +/-2 deg, about 10 mm at the castor)",
+"grp": "tug",
+"col": "rubber",
+"src": "new",
+"vol_cm3": 26.5,
+"bb": [
+939.0,
+971.0,
+284.0,
+316.0,
+316.0,
+349.0
+]
+},
+{
+"name": "RK Castor mounting plate R 6 mm",
+"grp": "tug",
+"col": "rk",
+"src": "new",
+"vol_cm3": 100.8,
+"bb": [
+890.0,
+1010.0,
+-350.0,
+-210.0,
+260.0,
+266.0
+]
+},
+{
+"name": "RK Bump stop R (rubber, +/-2 deg, about 10 mm at the castor)",
+"grp": "tug",
+"col": "rubber",
+"src": "new",
+"vol_cm3": 26.5,
+"bb": [
+939.0,
+971.0,
+-316.0,
+-284.0,
+316.0,
+349.0
+]
+},
+{
+"name": "RK Pivot hanger plate rear 10 mm S355, welded to the nose cross-member",
+"grp": "tug",
+"col": "steel",
+"src": "changed",
+"vol_cm3": 216.0,
+"bb": [
+920.0,
+930.0,
+-45.0,
+45.0,
+170.0,
+410.0
+]
+},
+{
+"name": "RK Pivot hanger plate front 10 mm S355, welded to the nose cross-member",
+"grp": "tug",
+"col": "steel",
+"src": "changed",
+"vol_cm3": 216.0,
+"bb": [
+980.0,
+990.0,
+-45.0,
+45.0,
+170.0,
+410.0
+]
+},
+{
+"name": "RK Castor cross-beam pivot housing (pin fixed in it, welded under the beam)",
+"grp": "tug",
+"col": "rk",
+"src": "new",
+"vol_cm3": 209.8,
+"bb": [
+936.0,
+974.0,
+-30.0,
+30.0,
+174.0,
+266.0
+]
+},
+{
+"name": "RK Pivot pin D20, bronze bushes in the beam housing, held in both hanger plates",
+"grp": "tug",
+"col": "hub",
+"src": "changed",
+"vol_cm3": 27.0,
+"bb": [
+912.0,
+998.0,
+-10.0,
+10.0,
+190.0,
+210.0
+]
+},
+{
+"name": "EL Power box: 2 contactors, lift driver, charge fuse and ideal diode",
+"grp": "tug",
+"col": "pbox",
+"src": "new",
+"vol_cm3": 3648.0,
+"bb": [
+610.0,
+770.0,
+170.0,
+360.0,
+130.0,
+250.0
+]
+},
+{
+"name": "EL Main fuse 50 A in a holder on the battery positive",
+"grp": "tug",
+"col": "red",
+"src": "new",
+"vol_cm3": 36.0,
+"bb": [
+734.0,
+784.0,
+-62.0,
+-22.0,
+280.0,
+298.0
+]
+},
+{
+"name": "EL Battery isolator key switch 100 A (on the power box, through the cover)",
+"grp": "tug",
+"col": "red",
+"src": "new",
+"vol_cm3": 91.1,
+"bb": [
+672.0,
+708.0,
+245.0,
+285.0,
+250.0,
+344.0
+]
+},
+{
+"name": "SF Reset button, blue illuminated",
+"grp": "tug",
+"col": "blue",
+"src": "new",
+"vol_cm3": 9.6,
+"bb": [
+587.0,
+613.0,
+-243.0,
+-217.0,
+306.0,
+324.0
+]
+},
+{
+"name": "LT Headlight L (dipped)",
+"grp": "tug",
+"col": "lamp",
+"src": "new",
+"vol_cm3": 87.0,
+"bb": [
+980.0,
+1018.0,
+273.0,
+327.0,
+358.0,
+412.0
+]
+},
+{
+"name": "LT Rear red marker L",
+"grp": "tug",
+"col": "red",
+"src": "new",
+"vol_cm3": 4.8,
+"bb": [
+-401.0,
+-396.0,
+408.0,
+452.0,
+404.0,
+426.0
+]
+},
+{
+"name": "SN Wheel encoder + speed sensor L",
+"grp": "tug",
+"col": "sensor",
+"src": "new",
+"vol_cm3": 16.3,
+"bb": [
+48.0,
+82.0,
+450.0,
+465.0,
+150.0,
+182.0
+]
+},
+{
+"name": "LT Headlight R (dipped)",
+"grp": "tug",
+"col": "lamp",
+"src": "new",
+"vol_cm3": 87.0,
+"bb": [
+980.0,
+1018.0,
+-327.0,
+-273.0,
+358.0,
+412.0
+]
+},
+{
+"name": "LT Rear red marker R",
+"grp": "tug",
+"col": "red",
+"src": "new",
+"vol_cm3": 4.8,
+"bb": [
+-401.0,
+-396.0,
+-452.0,
+-408.0,
+404.0,
+426.0
+]
+},
+{
+"name": "SN Wheel encoder + speed sensor R",
+"grp": "tug",
+"col": "sensor",
+"src": "new",
+"vol_cm3": 16.3,
+"bb": [
+48.0,
+82.0,
+-465.0,
+-450.0,
+150.0,
+182.0
+]
+},
+{
+"name": "LT Mast-top red marker",
+"grp": "tug",
+"col": "red",
+"src": "new",
+"vol_cm3": 7.9,
+"bb": [
+520.0,
+526.0,
+-30.0,
+30.0,
+1384.0,
+1406.0
+]
+},
+{
+"name": "LT Rear work lamp 3 W",
+"grp": "tug",
+"col": "lamp",
+"src": "new",
+"vol_cm3": 32.7,
+"bb": [
+444.0,
+470.0,
+-130.0,
+-90.0,
+1375.0,
+1415.0
+]
+},
+{
+"name": "SN Radar, rear",
+"grp": "tug",
+"col": "sensor",
+"src": "new",
+"vol_cm3": 22.4,
+"bb": [
+455.0,
+470.0,
+60.0,
+104.0,
+1378.0,
+1412.0
+]
+},
+{
+"name": "SN Radar, front",
+"grp": "tug",
+"col": "sensor",
+"src": "new",
+"vol_cm3": 46.5,
+"bb": [
+1018.0,
+1042.0,
+-22.0,
+22.0,
+560.0,
+604.0
+]
+},
+{
+"name": "AU USB microphone",
+"grp": "tug",
+"col": "sensor",
+"src": "new",
+"vol_cm3": 6.4,
+"bb": [
+487.0,
+503.0,
+-158.0,
+-142.0,
+1420.0,
+1452.0
+]
+},
+{
+"name": "AU Horn speaker 15 W",
+"grp": "tug",
+"col": "dark",
+"src": "new",
+"vol_cm3": 261.4,
+"bb": [
+1020.0,
+1072.0,
+-40.0,
+40.0,
+430.0,
+510.0
+]
+},
+{
+"name": "CM LTE antenna",
+"grp": "tug",
+"col": "white",
+"src": "new",
+"vol_cm3": 31.3,
+"bb": [
+985.0,
+1015.0,
+18.0,
+54.0,
+922.0,
+1045.0
+]
+},
+{
+"name": "FR Corner plate L rear, 6 mm, welded over the rail / mast-base joint",
+"grp": "tug",
+"col": "steel",
+"src": "new",
+"vol_cm3": 38.4,
+"bb": [
+450.0,
+530.0,
+375.0,
+455.0,
+410.0,
+416.0
+]
+},
+{
+"name": "FR Corner plate L front, 6 mm, welded over the rail / nose joint",
+"grp": "tug",
+"col": "steel",
+"src": "new",
+"vol_cm3": 31.2,
+"bb": [
+915.0,
+980.0,
+375.0,
+455.0,
+410.0,
+416.0
+]
+},
+{
+"name": "FR Corner plate R rear, 6 mm, welded over the rail / mast-base joint",
+"grp": "tug",
+"col": "steel",
+"src": "new",
+"vol_cm3": 38.4,
+"bb": [
+450.0,
+530.0,
+-455.0,
+-375.0,
+410.0,
+416.0
+]
+},
+{
+"name": "FR Corner plate R front, 6 mm, welded over the rail / nose joint",
+"grp": "tug",
+"col": "steel",
+"src": "new",
+"vol_cm3": 31.2,
+"bb": [
+915.0,
+980.0,
+-455.0,
+-375.0,
+410.0,
+416.0
+]
+},
+{
+"name": "LM Mast foot shoe L: 10 mm S355 top plate and front leg",
+"grp": "tug",
+"col": "steel",
+"src": "new",
+"vol_cm3": 133.2,
+"bb": [
+465.0,
+565.0,
+155.0,
+245.0,
+362.0,
+420.0
+]
+},
+{
+"name": "LM Lift top stop L: bolted 12 mm S355 bracket with tongue, 2 x M10 through the upright",
+"grp": "tug",
+"col": "red",
+"src": "new",
+"vol_cm3": 64.1,
+"bb": [
+427.0,
+560.0,
+190.0,
+232.0,
+1335.0,
+1365.0
+]
+},
+{
+"name": "LM Lift bottom stop L: bolted bracket with tongue, 2 x M10",
+"grp": "tug",
+"col": "red",
+"src": "new",
+"vol_cm3": 64.1,
+"bb": [
+427.0,
+560.0,
+190.0,
+232.0,
+690.0,
+720.0
+]
+},
+{
+"name": "SW Lift top limit switch L (channel A), roller lever down to 1,327 mm",
+"grp": "tug",
+"col": "switch",
+"src": "new",
+"vol_cm3": 19.8,
+"bb": [
+420.0,
+450.0,
+236.0,
+258.0,
+1338.0,
+1368.0
+]
+},
+{
+"name": "LM Mast foot shoe R: 10 mm S355 top plate and front leg",
+"grp": "tug",
+"col": "steel",
+"src": "new",
+"vol_cm3": 133.2,
+"bb": [
+465.0,
+565.0,
+-245.0,
+-155.0,
+362.0,
+420.0
+]
+},
+{
+"name": "LM Lift top stop R: bolted 12 mm S355 bracket with tongue, 2 x M10 through the upright",
+"grp": "tug",
+"col": "red",
+"src": "new",
+"vol_cm3": 64.1,
+"bb": [
+427.0,
+560.0,
+-232.0,
+-190.0,
+1335.0,
+1365.0
+]
+},
+{
+"name": "LM Lift bottom stop R: bolted bracket with tongue, 2 x M10",
+"grp": "tug",
+"col": "red",
+"src": "new",
+"vol_cm3": 64.1,
+"bb": [
+427.0,
+560.0,
+-232.0,
+-190.0,
+690.0,
+720.0
+]
+},
+{
+"name": "SW Lift top limit switch R (channel B), roller lever down to 1,327 mm",
+"grp": "tug",
+"col": "switch",
+"src": "new",
+"vol_cm3": 19.8,
+"bb": [
+420.0,
+450.0,
+-258.0,
+-236.0,
+1338.0,
+1368.0
+]
+},
+{
+"name": "SW Lift down limit switch, roller lever up to 725 mm",
+"grp": "tug",
+"col": "switch",
+"src": "new",
+"vol_cm3": 21.1,
+"bb": [
+420.0,
+450.0,
+236.0,
+258.0,
+684.0,
+716.0
+]
+},
+{
+"name": "LC Rail carriage block HGH15CA",
+"grp": "lift",
+"col": "rail",
+"src": "changed",
+"vol_cm3": 67.7,
+"bb": [
+26.0,
+50.0,
+176.5,
+223.5,
+-105.0,
+-45.0
+]
+},
+{
+"name": "LC Rail carriage block HGH15CA",
+"grp": "lift",
+"col": "rail",
+"src": "changed",
+"vol_cm3": 67.7,
+"bb": [
+26.0,
+50.0,
+176.5,
+223.5,
+95.0,
+155.0
+]
+},
+{
+"name": "LC Rail carriage block HGH15CA",
+"grp": "lift",
+"col": "rail",
+"src": "changed",
+"vol_cm3": 67.7,
+"bb": [
+26.0,
+50.0,
+-223.5,
+-176.5,
+-105.0,
+-45.0
+]
+},
+{
+"name": "LC Rail carriage block HGH15CA",
+"grp": "lift",
+"col": "rail",
+"src": "changed",
+"vol_cm3": 67.7,
+"bb": [
+26.0,
+50.0,
+-223.5,
+-176.5,
+95.0,
+155.0
+]
+},
+{
+"name": "LC Carriage cross-beam 50x50x4 RHS S355 behind the plate, top block row",
+"grp": "lift",
+"col": "steel",
+"src": "new",
+"vol_cm3": 250.2,
+"bb": [
+26.0,
+76.0,
+-170.0,
+170.0,
+100.0,
+150.0
+]
+},
+{
+"name": "LC Carriage cross-beam 50x50x4 RHS S355 behind the plate, bottom block row",
+"grp": "lift",
+"col": "steel",
+"src": "new",
+"vol_cm3": 250.2,
+"bb": [
+26.0,
+76.0,
+-170.0,
+170.0,
+-100.0,
+-50.0
+]
+},
+{
+"name": "PD Pad slide rods D16, fixed in the pad backing (move with the pad)",
+"grp": "pad",
+"col": "steel",
+"src": "changed",
+"vol_cm3": 37.4,
+"bb": [
+26.0,
+119.0,
+-98.0,
+98.0,
+-8.0,
+8.0
+]
+},
+{
+"name": "PD Pad backing plate 6 mm aluminium",
+"grp": "pad",
+"col": "steel",
+"src": "new",
+"vol_cm3": 151.2,
+"bb": [
+20.0,
+26.0,
+-140.0,
+140.0,
+-45.0,
+45.0
+]
+},
+{
+"name": "PD Pad spring cup plate 10 mm aluminium on two standoffs from the guide block (fixed)",
+"grp": "padbase",
+"col": "steel",
+"src": "new",
+"vol_cm3": 154.2,
+"bb": [
+133.0,
+160.0,
+-130.0,
+130.0,
+-30.0,
+30.0
+]
+},
+{
+"name": "SF Bumper carrier arm L 40x40x2 with drop leg, flange welded to the nose cross-member",
+"grp": "tug",
+"col": "steel",
+"src": "new",
+"vol_cm3": 120.6,
+"bb": [
+980.0,
+1090.0,
+60.0,
+120.0,
+165.0,
+415.0
+]
+},
+{
+"name": "SF Bumper guide pin D12 with return spring L",
+"grp": "tug",
+"col": "hub",
+"src": "new",
+"vol_cm3": 1.9,
+"bb": [
+1115.0,
+1132.0,
+144.0,
+156.0,
+179.0,
+191.0
+]
+},
+{
+"name": "SW Front bumper switch L, two normally-closed contacts (one per channel)",
+"grp": "tug",
+"col": "switch",
+"src": "new",
+"vol_cm3": 7.5,
+"bb": [
+1117.0,
+1129.0,
+178.0,
+202.0,
+172.0,
+198.0
+]
+},
+{
+"name": "SF Bumper carrier arm R 40x40x2 with drop leg, flange welded to the nose cross-member",
+"grp": "tug",
+"col": "steel",
+"src": "new",
+"vol_cm3": 120.6,
+"bb": [
+980.0,
+1090.0,
+-120.0,
+-60.0,
+165.0,
+415.0
+]
+},
+{
+"name": "SF Bumper guide pin D12 with return spring R",
+"grp": "tug",
+"col": "hub",
+"src": "new",
+"vol_cm3": 1.9,
+"bb": [
+1115.0,
+1132.0,
+-156.0,
+-144.0,
+179.0,
+191.0
+]
+},
+{
+"name": "SW Front bumper switch R, two normally-closed contacts (one per channel)",
+"grp": "tug",
+"col": "switch",
+"src": "new",
+"vol_cm3": 7.5,
+"bb": [
+1117.0,
+1129.0,
+-202.0,
+-178.0,
+172.0,
+198.0
+]
+},
+{
+"name": "SF Bumper carrier beam 40x25x2, fixed to the drop legs",
+"grp": "tug",
+"col": "steel",
+"src": "new",
+"vol_cm3": 97.6,
+"bb": [
+1090.0,
+1115.0,
+-200.0,
+200.0,
+165.0,
+205.0
+]
+},
+{
+"name": "CH Cable chain anchor bracket on the left upright",
+"grp": "tug",
+"col": "steel",
+"src": "new",
+"vol_cm3": 8.6,
+"bb": [
+497.0,
+513.0,
+162.0,
+180.0,
+1085.0,
+1115.0
+]
+},
+{
+"name": "CH Cable chain bracket on the carriage",
+"grp": "lift",
+"col": "steel",
+"src": "new",
+"vol_cm3": 34.6,
+"bb": [
+26.0,
+98.0,
+60.0,
+80.0,
+76.0,
+100.0
+]
+}
+]

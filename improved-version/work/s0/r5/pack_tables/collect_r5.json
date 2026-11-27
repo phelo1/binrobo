@@ -1,0 +1,344 @@
+{
+ "tag": "_r5",
+ "gate": {
+  "G1": "PASS",
+  "G2": "PASS",
+  "G3": "PASS",
+  "G4": "PASS",
+  "G5": "PASS",
+  "G6": "PASS",
+  "G7": "PASS",
+  "G8": "PASS",
+  "G9": "FAIL"
+ },
+ "gate_lines": [
+  "G1 PASS {\"bins\": {\"WEB140\": {\"n\": 30, \"captured\": 30, \"false_holds\": 0, \"knocked\": 0, \"non_success\": []}, \"ESE240SL\": {\"n\": 30, \"captured\": 30, \"false_holds\": 0, \"knocked\": 0, \"non_success\": []}, \"ESE240CL\": {\"n\": 30, \"captured\": 30, \"false_holds\": 0, \"knocked\": 0, \"non_success\": []}}, \"pooled\": 90, \"n\": 90, \"false_holds\": 0, \"knocked\": 0}",
+  "G2 PASS {\"runs\": {\"mu0.30 crr0.06\": {\"ok\": true, \"t\": 11.3, \"dist\": 5.0, \"creep\": 0.034, \"grab\": \"success\", \"torque_pk\": 150.0}, \"mu0.30 crr0.09\": {\"ok\": true, \"t\": 11.3, \"dist\": 5.0, \"creep\": 0.034, \"grab\": \"success\", \"torque_pk\": 150.0}, \"mu0.25 crr0.06\": {\"ok\": true, \"t\": 11.3, \"dist\": 5.0, \"creep\": 0.033, \"grab\": \"success\", \"torque_pk\": 150.0}, \"mu0.25 crr0.09\": {\"ok\": true, \"t\": 11.3, \"dist\":",
+  "G3 PASS {\"one\": {\"ok\": true, \"reached\": true, \"dist\": 4.72, \"roll\": 2.868, \"pitch\": 1.913, \"bin_ground\": 0.0, \"seated\": true, \"clear_min\": 0.079, \"grab\": \"success\", \"lift_pk\": 2788.76}, \"both\": {\"ok\": true, \"reached\": true, \"dist\": 4.72, \"roll\": 0.435, \"pitch\": 2.567, \"bin_ground\": 0.0, \"seated\": true, \"clear_min\": 0.076, \"grab\": \"success\", \"lift_pk\": 2278.2}}",
+  "G4 PASS {\"runs\": {\"fwd\": {\"ok\": true, \"stop\": 0.28, \"slide\": 0.001, \"roll\": 0.006, \"pitch\": 0.025}, \"rev\": {\"ok\": true, \"stop\": 0.122, \"slide\": 0.001, \"roll\": 0.005, \"pitch\": 0.01}}}",
+  "G5 PASS {\"run\": {\"ok\": true, \"roll\": 0.005, \"swept\": 2.81, \"pivot\": 180.0}}",
+  "G6 PASS {\"cases\": {\"WEB140 flat full\": \"PASS\", \"WEB140 flat empty\": \"PASS\", \"WEB140 up12 full\": \"PASS\", \"WEB140 up12 empty\": \"PASS\", \"WEB140 dn12 full\": \"PASS\", \"WEB140 dn12 empty\": \"PASS\", \"ESE240CL flat full\": \"PASS\", \"ESE240CL flat empty\": \"PASS\", \"ESE240CL up12 full\": \"PASS\", \"ESE240CL up12 empty\": \"PASS\", \"ESE240CL dn12 full\": \"PASS\", \"ESE240CL dn12 empty\": \"PASS\", \"ESE240SL250 flat full\": \"P",
+  "G7 PASS {\"runs\": {\"climb_m25_c09\": {\"base\": true, \"dt025\": true, \"t\": [11.3, 11.3], \"ok\": true}, \"step40_one\": {\"base\": true, \"dt025\": true, \"t\": [null, null], \"ok\": true}, \"estop12_fwd\": {\"base\": true, \"dt025\": true, \"t\": [null, null], \"ok\": true}}}",
+  "G8 PASS {\"poses\": {\"up 110\": {\"dL\": 1078.2, \"dR\": 1056.3, \"castors\": 690.3, \"antitip\": 0.0, \"ok\": true}, \"up 60\": {\"dL\": 819.0, \"dR\": 801.4, \"castors\": 717.2, \"antitip\": 0.0, \"ok\": true}, \"dn 110\": {\"dL\": 892.2, \"dR\": 860.8, \"castors\": 1071.8, \"antitip\": 0.0, \"ok\": true}, \"dn 60\": {\"dL\": 669.8, \"dR\": 644.4, \"castors\": 1023.5, \"antitip\": 0.0, \"ok\": true}, \"crL 110\": {\"dL\": 754.2, \"dR\": 1193.2, \"cas",
+  "G9 FAIL {\"kg\": 180.0}"
+ ],
+ "pickups": [
+  {
+   "file": "B2F_grab_ESE240CL_r5.json",
+   "bin": "ESE240CL",
+   "seed": 203,
+   "n": 30,
+   "lifted": 30,
+   "refused": 0,
+   "false_holds_their_score": 0,
+   "knocked": 0,
+   "beyond_640_band": 0,
+   "beyond_700_band": 0,
+   "band_640_mm": 50,
+   "band_700_mm": 80,
+   "max_off_mm": 16.8,
+   "setdowns": 0,
+   "results": {
+    "success": 30
+   },
+   "retries": 3,
+   "dock_dy_max": 13.4
+  },
+  {
+   "file": "B2F_grab_ESE240CL_r5_s303.json",
+   "bin": "ESE240CL",
+   "seed": 303,
+   "n": 30,
+   "lifted": 30,
+   "refused": 0,
+   "false_holds_their_score": 0,
+   "knocked": 0,
+   "beyond_640_band": 0,
+   "beyond_700_band": 0,
+   "band_640_mm": 50,
+   "band_700_mm": 80,
+   "max_off_mm": 18.8,
+   "setdowns": 1,
+   "results": {
+    "success": 30
+   },
+   "retries": 7,
+   "dock_dy_max": 15.2
+  },
+  {
+   "file": "B2F_grab_ESE240CL_r5_s403.json",
+   "bin": "ESE240CL",
+   "seed": 403,
+   "n": 30,
+   "lifted": 29,
+   "refused": 1,
+   "false_holds_their_score": 0,
+   "knocked": 0,
+   "beyond_640_band": 0,
+   "beyond_700_band": 0,
+   "band_640_mm": 50,
+   "band_700_mm": 80,
+   "max_off_mm": 17.2,
+   "setdowns": 0,
+   "results": {
+    "safe_miss": 1,
+    "success": 29
+   },
+   "retries": 5,
+   "dock_dy_max": 17.4
+  },
+  {
+   "file": "B2F_grab_ESE240CL_r5_s503.json",
+   "bin": "ESE240CL",
+   "seed": 503,
+   "n": 30,
+   "lifted": 30,
+   "refused": 0,
+   "false_holds_their_score": 0,
+   "knocked": 0,
+   "beyond_640_band": 0,
+   "beyond_700_band": 0,
+   "band_640_mm": 50,
+   "band_700_mm": 80,
+   "max_off_mm": 29.4,
+   "setdowns": 0,
+   "results": {
+    "success": 30
+   },
+   "retries": 7,
+   "dock_dy_max": 14.1
+  },
+  {
+   "file": "B2F_grab_ESE240SL_r5.json",
+   "bin": "ESE240SL",
+   "seed": 202,
+   "n": 30,
+   "lifted": 30,
+   "refused": 0,
+   "false_holds_their_score": 0,
+   "knocked": 0,
+   "beyond_640_band": 0,
+   "beyond_700_band": 0,
+   "band_640_mm": 50,
+   "band_700_mm": 80,
+   "max_off_mm": 19.4,
+   "setdowns": 0,
+   "results": {
+    "success": 30
+   },
+   "retries": 3,
+   "dock_dy_max": 12.9
+  },
+  {
+   "file": "B2F_grab_WEB140_r5.json",
+   "bin": "WEB140",
+   "seed": 201,
+   "n": 30,
+   "lifted": 30,
+   "refused": 0,
+   "false_holds_their_score": 0,
+   "knocked": 0,
+   "beyond_640_band": 0,
+   "beyond_700_band": 0,
+   "band_640_mm": 100,
+   "band_700_mm": 130,
+   "max_off_mm": 17.0,
+   "setdowns": 0,
+   "results": {
+    "success": 30
+   },
+   "retries": 5,
+   "dock_dy_max": 11.3
+  }
+ ],
+ "pickups_total": {
+  "n": 180,
+  "lifted": 179,
+  "refused": 1,
+  "fh_their": 0,
+  "off50": 0,
+  "off80": 0,
+  "setdowns": 1,
+  "knocked": 0
+ },
+ "s7": [
+  {
+   "file": "B2F_S7_climb_m22_c06_cg0_r5.json",
+   "reached": true,
+   "yaw_dev": 1.38,
+   "castor_min_raw_N": 82.6,
+   "castor_min_100ms_N": 533.3,
+   "castor_mean_N": 754.4,
+   "frac_below_50N": 0.0,
+   "ok_raw": true,
+   "ok_filtered": true
+  },
+  {
+   "file": "B2F_S7_climb_m22_c06_cg60_r5.json",
+   "reached": true,
+   "yaw_dev": 1.39,
+   "castor_min_raw_N": 443.9,
+   "castor_min_100ms_N": 565.3,
+   "castor_mean_N": 742.8,
+   "frac_below_50N": 0.0,
+   "ok_raw": true,
+   "ok_filtered": true
+  },
+  {
+   "file": "B2F_S7_climb_m25_c06_cg60_r5.json",
+   "reached": true,
+   "yaw_dev": 1.2,
+   "castor_min_raw_N": 59.4,
+   "castor_min_100ms_N": 566.6,
+   "castor_mean_N": 744.1,
+   "frac_below_50N": 0.0,
+   "ok_raw": true,
+   "ok_filtered": true
+  },
+  {
+   "file": "B2F_S7_climb_m30_c06_cg60_r5.json",
+   "reached": true,
+   "yaw_dev": 0.36,
+   "castor_min_raw_N": 44.9,
+   "castor_min_100ms_N": 519.1,
+   "castor_mean_N": 745.9,
+   "frac_below_50N": 0.001,
+   "ok_raw": false,
+   "ok_filtered": true
+  }
+ ],
+ "tipcalc": {
+  "test": "G8_handcalc_on_sim_CG",
+  "tipmin": 32.3,
+  "cpu_s": 24
+ },
+ "tipcalc_cg60": {
+  "test": "G8_handcalc_on_sim_CG",
+  "tipmin": 31.6,
+  "cpu_s": 43
+ },
+ "stress": [
+  {
+   "file": "B2F_climb_m22_c09_pcrr09_r5.json",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "file": "B2F_climb_m22_c09_pm090_r5.json",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "file": "B2F_climb_m22_c09_pm110_r5.json",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "file": "B2F_climb_m22_c09_pmu085_r5.json",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "file": "B2F_estop12_fwd_pcrr09_r5.json",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "file": "B2F_estop12_fwd_pm090_r5.json",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "file": "B2F_estop12_fwd_pm110_r5.json",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "file": "B2F_estop12_fwd_pmu085_r5.json",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "file": "B2F_grab_ESE240SL_pcrr09_r5.json",
+   "ok": true,
+   "detail": "5 of 5"
+  },
+  {
+   "file": "B2F_grab_ESE240SL_pm090_r5.json",
+   "ok": true,
+   "detail": "5 of 5"
+  },
+  {
+   "file": "B2F_grab_ESE240SL_pm110_r5.json",
+   "ok": true,
+   "detail": "5 of 5"
+  },
+  {
+   "file": "B2F_grab_ESE240SL_pmu085_r5.json",
+   "ok": true,
+   "detail": "5 of 5"
+  },
+  {
+   "file": "B2F_rel_ESE240CL_up12_full_pcrr09_r5.json",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "file": "B2F_rel_ESE240CL_up12_full_pm090_r5.json",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "file": "B2F_rel_ESE240CL_up12_full_pm110_r5.json",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "file": "B2F_rel_ESE240CL_up12_full_pmu085_r5.json",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "file": "B2F_rel_ESE240SL250_dn12_full_pcrr09_r5.json",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "file": "B2F_rel_ESE240SL250_dn12_full_pm090_r5.json",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "file": "B2F_rel_ESE240SL250_dn12_full_pm110_r5.json",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "file": "B2F_rel_ESE240SL250_dn12_full_pmu085_r5.json",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "file": "B2F_step40_one_pcrr09_r5.json",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "file": "B2F_step40_one_pm090_r5.json",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "file": "B2F_step40_one_pm110_r5.json",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "file": "B2F_step40_one_pmu085_r5.json",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "stress_pass": 24,
+ "stress_n": 24
+}

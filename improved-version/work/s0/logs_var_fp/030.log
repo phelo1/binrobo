@@ -1,0 +1,1 @@
+B_static_crL_60 {"test": "static", "pose": "crL", "kg": 60.0, "grab": "no_dock", "driveL": 166.4, "driveR": 299.0, "caster_sum": 449.4, "antitip": 0.0, "bin_ground": 577.7, "captured": false, "roll": 0.0, "pitch": 0.0, "lift_N": 83, "pad_N": 23, "ok": false, "cpu_s": 8}

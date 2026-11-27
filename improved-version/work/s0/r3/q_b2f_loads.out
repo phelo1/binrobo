@@ -1,0 +1,30 @@
+  0 rc 0    13 s  ret ESE240SL step 0.5
+  1 rc 0    12 s  ret ESE240SL step 0.8
+  2 rc 0    27 s  ret ESE240SL trench 0.5
+  3 rc 0    30 s  ret ESE240SL trench 0.8
+  4 rc 0    15 s  ret ESE240SL pothole 0.5
+  5 rc 0    13 s  ret ESE240SL pothole 0.8
+  6 rc 0    12 s  ret WEB140 step 0.5
+  7 rc 0    12 s  ret WEB140 step 0.8
+  8 rc 0    31 s  ret WEB140 trench 0.5
+  9 rc 0    30 s  ret WEB140 trench 0.8
+ 10 rc 0    16 s  ret WEB140 pothole 0.5
+ 11 rc 0    14 s  ret WEB140 pothole 0.8
+ 12 rc 0    14 s  ret ESE240SL step 0.8
+ 13 rc 0    32 s  ret ESE240SL trench 0.8
+ 14 rc 0    17 s  ret ESE240SL pothole 0.8
+ 15 rc 0    13 s  ret WEB140 step 0.8
+ 16 rc 0    32 s  ret WEB140 trench 0.8
+ 17 rc 0    17 s  ret WEB140 pothole 0.8
+ 18 rc 0    11 s  tyrecal
+ 19 rc 0    13 s  kerb 0.5 nose
+ 20 rc 0    14 s  kerb 0.5 nose
+ 21 rc 0    12 s  kerb 0.5 nose
+ 22 rc 0    13 s  kerb 0.5 nose ramp
+ 23 rc 0    14 s  kerb 0.5 nose
+ 24 rc 0    13 s  kerb 0.5 nose
+ 25 rc 0    12 s  ret ESE240SL step 0.8
+ 26 rc 0    12 s  ret ESE240SL pothole 0.8
+ 27 rc 0    12 s  ret ESE240SL step 0.8
+ 28 rc 0    13 s  ret ESE240SL pothole 0.8
+batch done in 488 s

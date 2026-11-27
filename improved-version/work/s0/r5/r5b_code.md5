@@ -1,0 +1,7 @@
+# Driving-software code versions of the second pass (md5)
+004b1f0a8118de42ef6221cba085ec8a  b2f_companion_x.py   as run for the 60 missions (r5b) and the 16:30 pick-up days (r5b_ret1630); copy: b2f_companion_x_as_run_for_the_60.py
+27b6279399eb1cdef6cd893d7e2c4970  b2f_runner_x.py      as run for the same
+c474efc1f6d8f300872f50e7fbaec6a8  b2f_companion_x.py   final: the above plus the camera person detector (cam_people, ppl_gap, hold_for_person), which does nothing
+                                                        unless a person or dog is in the scenario. Run for: r5b_s5a_final, r5b_person*, r5b_m198, r5b_camonly
+156c5e3d9fea732e6ad603e7cc1d256a  b2f_runner_x.py      final: the above plus the test switch X_MOVER
+The fault, bend and position-fault tests (r5bf_fault_*, r5b_fault_*, r5b_bend40, r5b_gps_*) ran on earlier steps of the second pass, as listed in the README.

@@ -1,0 +1,1 @@
+B_static_up_60 {"test": "static", "pose": "up", "kg": 60.0, "grab": "success", "driveL": 586.1, "driveR": 575.7, "caster_sum": 361.5, "antitip": 0.0, "bin_ground": 0.0, "captured": true, "roll": -0.0, "pitch": 0.0, "lift_N": 653, "pad_N": 223, "ok": true, "cpu_s": 22}

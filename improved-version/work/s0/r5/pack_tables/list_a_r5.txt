@@ -1,0 +1,55 @@
+lowering: block mm / where / bin kg | speed mm/s, trip N | ToF short mm (L, R) -> blocks at 10 mm? | guard result, peak N on the block
+    0 L    110 kg |    6 108 _n50_r5        | (0.0, 0.0) -> False | set down               peak    0 N
+    0 L    110 kg |    6 108 _r5            | (0.0, 0.0) -> False | set down               peak    0 N
+    0 L    110 kg |   13 108 _v13_r5        | (0.0, 0.0) -> False | set down               peak    0 N
+    0 L     25 kg |    6  50 _n50_r5        | (0.0, 0.0) -> False | set down               peak    0 N
+    0 L     25 kg |    6  80 _r5            | (0.0, 0.0) -> False | set down               peak    0 N
+    0 L     25 kg |   13  80 _v13_r5        | (0.0, 0.0) -> False | set down               peak    0 N
+    0 L     60 kg |    6  80 _r5            | (0.0, 0.0) -> False | set down               peak    0 N
+   10 L    110 kg |    6 108 _r5            | (11.9, 0.0) -> True  | set down on the block  peak  860 N
+   15 L    110 kg |    6 108 _r5            | (17.8, 0.0) -> True  | set down on the block  peak  848 N
+   15 L    110 kg |   13 108 _v13_r5        | (17.8, 0.0) -> True  | stopped and raised     peak  147 N
+   15 L     25 kg |    6  80 _r5            | (17.8, 0.0) -> True  | stopped and raised     peak   80 N
+   20 L    110 kg |    6 108 _n50_r5        | (23.8, 0.0) -> True  | stopped and raised     peak  108 N
+   20 L    110 kg |    6 108 _r5            | (23.8, 0.0) -> True  | stopped and raised     peak  108 N
+   20 L    110 kg |    6 119 _r5pm110       | (23.8, 0.0) -> True  | stopped and raised     peak  135 N
+   20 L    110 kg |   13 108 _v13_r5        | (23.8, 0.0) -> True  | stopped and raised     peak  110 N
+   20 L     25 kg |    6  80 _r5            | (23.7, 0.0) -> True  | stopped and raised     peak   81 N
+   20 both 110 kg |    6 108 _r5            | (23.8, 23.9) -> True  | stopped and raised     peak  108 N
+   25 L    110 kg |    6 108 _r5            | (29.7, 0.0) -> True  | stopped and raised     peak  108 N
+   25 L    110 kg |   13 108 _v13_r5        | (29.7, 0.0) -> True  | stopped and raised     peak  143 N
+   25 L     25 kg |    6  50 _n50_r5        | (29.6, 0.0) -> True  | stopped and raised     peak   51 N
+   40 L    110 kg |    6 108 _r5            | (47.5, 0.0) -> True  | stopped and raised     peak  109 N
+   60 L    110 kg |    6 108 _nocheck_r5    | (71.3, 0.0) -> True  | set down on the block  peak  903 N  (guard off)
+   60 L    110 kg |    6 108 _r5            | (71.3, 0.0) -> True  | stopped and raised     peak  108 N
+   60 L    110 kg |   13 108 _v13_r5        | (71.3, 0.0) -> True  | stopped and raised     peak  144 N
+   60 both 110 kg |    6 108 _r5            | (71.3, 71.8) -> True  | stopped and raised     peak  108 N
+
+edges
+  stepempty_both_v03_h08                       at 1.12 m  over  (4.10 m)
+  stepempty_both_v03_h10                       at 1.12 m  over  (4.10 m)
+  stepempty_both_v03_h12                       at 1.12 m  over  (4.10 m)
+  stepempty_both_v03_h15                       at 1.12 m  over  (4.10 m)
+  stepempty_both_v03_h20                       at 1.12 m  STALL (0.01 m)
+  stepempty_both_v03_h25                       at 3.00 m  STALL (1.88 m)
+  stepempty_both_v03_yaw20_h30                 at 3.00 m  over  (5.98 m)
+  stepempty_one_v04                            at 3.00 m  over  (6.04 m)
+  liftpeak_step_both_v03_at12_h10              at 1.15 m  over  (4.13 m)
+  liftpeak_step_both_v03_at12_h15              at 1.15 m  over  (4.13 m)
+  liftpeak_step_both_v03_at12_h20              at 1.15 m  over  (4.13 m)
+  liftpeak_step_both_v03_at30_h20              at 3.00 m  over  (5.98 m)
+  liftpeak_step_both_v03_at30_h25              at 3.00 m  over  (5.98 m)
+  liftpeak_step_both_v03_at30_h30              at 3.00 m  STALL (2.76 m)
+  liftpeak_step_both_v03_at30_yaw20            at 3.00 m  over  (5.98 m)
+  liftpeak_step_both_v04_at30_h20              at 3.00 m  over  (6.04 m)
+  liftpeak_step_both_v04_at30_h25              at 3.00 m  over  (6.04 m)
+  liftpeak_step_both_v04_at30_h30              at 3.00 m  over  (6.04 m)
+  liftpeak_step_both_v04_at30_yaw20            at 3.00 m  over  (6.04 m)
+
+kerb, lift cap out of the way
+  liftpeak_kerb_nose_v05_r5cap12           v 0.5 lift  3017 (static 1348) wheel  9396 comb  3003 pad  1058 reached True
+  liftpeak_kerb_nose_v05_r5cap12t20        v 0.5 lift  2760 (static 1348) wheel  3982 comb  2852 pad  1017 reached True
+  liftpeak_kerb_nose_v08_r5cap12           v 0.8 lift  3487 (static 1349) wheel  8113 comb  7271 pad  1410 reached True
+  liftpeak_kerb_nose_v08_r5cap12t20        v 0.8 lift  3858 (static 1350) wheel  4886 comb  7946 pad  1419 reached True
+  sideways tyre force lat_k0_r5 584
+  sideways tyre force lat_k110_r5 831

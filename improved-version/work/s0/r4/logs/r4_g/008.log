@@ -1,0 +1,1 @@
+stepempty_both_v04_h30 {"test": "step_empty", "step_h_mm": 30.0, "yaw_deg": 0.0, "side": "both", "v": 0.4, "step_at_m": 3.0, "reached": false, "dist_m": 1.88, "tcap": 60.0, "wheel_peak_N": 1741, "yaw_end_deg": 0.0, "boost": null, "cpu_s": 10}

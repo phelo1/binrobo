@@ -1,0 +1,33 @@
+  0 rc 0    14 s  climb 0.22 0.09
+  1 rc 0    11 s  step one
+  2 rc 0    12 s  estop fwd
+  3 rc 0    14 s  rel ESE240CL up12 full
+  4 rc 0    14 s  rel ESE240SL250 dn12 full
+  5 rc 0    14 s  climb 0.22 0.09
+  6 rc 0    12 s  step one
+  7 rc 0    12 s  estop fwd
+  8 rc 0    14 s  rel ESE240CL up12 full
+  9 rc 0    13 s  rel ESE240SL250 dn12 full
+ 10 rc 0    14 s  climb 0.22 0.09
+ 11 rc 0    12 s  step one
+ 12 rc 0    12 s  estop fwd
+ 13 rc 0    15 s  rel ESE240CL up12 full
+ 14 rc 0    14 s  rel ESE240SL250 dn12 full
+ 15 rc 0    12 s  climb 0.22 0.09
+ 16 rc 0    11 s  step one
+ 17 rc 0    11 s  estop fwd
+ 18 rc 0    12 s  rel ESE240CL up12 full
+ 19 rc 0    13 s  rel ESE240SL250 dn12 full
+ 20 rc 0    13 s  rel ESE240SL250 flat full
+ 21 rc 0     9 s  rel ESE240SL250 flat empty
+ 22 rc 0    14 s  rel ESE240SL250 up12 full
+ 23 rc 0    17 s  rel ESE240SL250 up12 empty
+ 24 rc 0    21 s  rel ESE240SL250 dn12 full
+ 25 rc 0    16 s  rel ESE240SL250 dn12 empty
+ 26 rc 0    55 s  grab ESE240SL 5 202
+ 27 rc 0    48 s  grab ESE240SL 5 202
+ 28 rc 0    48 s  grab ESE240SL 5 202
+ 29 rc 0    47 s  grab ESE240SL 5 202
+ 30 rc 0   359 s  grab ESE240SL250 30 204
+ 31 rc 0   418 s  grab ESE140CL 30 205
+batch done in 1321 s

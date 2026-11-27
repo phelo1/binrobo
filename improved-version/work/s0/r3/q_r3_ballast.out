@@ -1,0 +1,61 @@
+  0 rc 0    12 s  step one
+  1 rc 0    12 s  step both
+  2 rc 0    11 s  step both ramp
+  3 rc 0    11 s  static up 110
+  4 rc 0    11 s  static up 60
+  5 rc 0    11 s  static dn 110
+  6 rc 0    10 s  static dn 60
+  7 rc 0    11 s  static crL 110
+  8 rc 0    11 s  static crL 60
+  9 rc 0     9 s  static crR 110
+ 10 rc 0    10 s  static crR 60
+ 11 rc 0    18 s  tipcalc
+ 12 rc 0    13 s  climb 0.22 0.06
+ 13 rc 0    13 s  climb 0.22 0.09
+ 14 rc 0    12 s  climb 0.25 0.06
+ 15 rc 0    18 s  climb 0.25 0.09
+ 16 rc 0    17 s  climb 0.30 0.06
+ 17 rc 0    14 s  climb 0.30 0.09
+ 18 rc 0    16 s  estop fwd
+ 19 rc 0    12 s  estop rev
+ 20 rc 0    19 s  towstab
+ 21 rc 0    14 s  climbn 0.22 0.06
+ 22 rc 0    14 s  climbn 0.25 0.06
+ 23 rc 0    14 s  climbn 0.30 0.06
+ 24 rc 0    14 s  climbn 0.22 0.06
+ 25 rc 0     8 s  static up 110
+ 26 rc 0    12 s  static dn 110
+ 27 rc 0    11 s  static crL 110
+ 28 rc 0    11 s  static crR 110
+ 29 rc 0    18 s  tipcalc
+ 30 rc 0    11 s  step one
+ 31 rc 0    10 s  step both
+ 32 rc 0    11 s  step both ramp
+ 33 rc 0    10 s  static up 110
+ 34 rc 0    10 s  static up 60
+ 35 rc 0    10 s  static dn 110
+ 36 rc 0    10 s  static dn 60
+ 37 rc 0    10 s  static crL 110
+ 38 rc 0     9 s  static crL 60
+ 39 rc 0    11 s  static crR 110
+ 40 rc 0    10 s  static crR 60
+ 41 rc 0    17 s  tipcalc
+ 42 rc 0    13 s  climb 0.22 0.06
+ 43 rc 0    12 s  climb 0.22 0.09
+ 44 rc 0    12 s  climb 0.25 0.06
+ 45 rc 0    12 s  climb 0.25 0.09
+ 46 rc 0    12 s  climb 0.30 0.06
+ 47 rc 0    11 s  climb 0.30 0.09
+ 48 rc 0    11 s  estop fwd
+ 49 rc 0    10 s  estop rev
+ 50 rc 0    18 s  towstab
+ 51 rc 0    12 s  climbn 0.22 0.06
+ 52 rc 0    11 s  climbn 0.25 0.06
+ 53 rc 0    12 s  climbn 0.30 0.06
+ 54 rc 0    12 s  climbn 0.22 0.06
+ 55 rc 0     8 s  static up 110
+ 56 rc 0    10 s  static dn 110
+ 57 rc 0    10 s  static crL 110
+ 58 rc 0    10 s  static crR 110
+ 59 rc 0    17 s  tipcalc
+batch done in 727 s

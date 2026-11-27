@@ -1,0 +1,54 @@
+60 runs in r61f_suite
+outcome against expectation, by scenario:
+  s10a  expect alert  | s11 alert/bin tipped, s23 alert/bin tipped, s7 alert/bin tipped
+  s10b  expect alert  | s11 alert/bin blocked, s23 alert/bin blocked, s7 alert/bin blocked
+  s11a  expect alert  | s11 alert/wind no-go, s23 alert/wind no-go, s7 alert/wind no-go
+  s11b  expect alert  | s11 alert/frost no-go, s23 alert/frost no-go, s7 alert/frost no-go
+  s12a  expect alert  | s11 alert/pad outside geofence, s23 alert/pad outside geofence, s7 alert/pad outside geofence
+  s12b  expect alert  | s11 alert/firmware fence hold, s23 alert/firmware fence hold, s7 alert/firmware fence hold
+  s1a   expect pass   | s11 pass/plan completed, s23 pass/plan completed, s7 pass/plan completed
+  s1b   expect pass   | s11 pass/plan completed, s23 pass/plan completed, s7 pass/plan completed
+  s3a   expect pass   | s11 pass/plan completed, s23 pass/plan completed, s7 pass/plan completed
+  s3b   expect pass   | s11 pass/plan completed, s23 pass/plan completed, s7 pass/plan completed
+  s4a   expect pass   | s11 pass/plan completed, s23 pass/plan completed, s7 pass/plan completed
+  s4b   expect pass   | s11 pass/plan completed, s23 pass/plan completed, s7 pass/plan completed
+  s4c   expect alert  | s11 alert/no fix hold, s23 alert/no fix hold, s7 alert/no fix hold
+  s5a   expect pass   | s11 pass/plan completed, s23 pass/plan completed, s7 pass/plan completed
+  s5b   expect pass   | s11 pass/plan completed, s23 pass/plan completed, s7 pass/plan completed
+  s6a   expect alert  | s11 alert/companion freeze -> firmware HOLD, s23 alert/companion freeze -> firmware HOLD, s7 alert/companion freeze -> firmware HOLD
+  s6b   expect alert  | s11 alert/companion freeze -> firmware HOLD, s23 alert/companion freeze -> firmware HOLD, s7 alert/companion freeze -> firmware HOLD
+  s7    expect alert  | s11 alert/e-stop, s23 alert/e-stop, s7 alert/e-stop
+  s8    expect alert  | s11 alert/energy guard, s23 alert/energy guard, s7 alert/energy guard
+  s9    expect alert  | s11 alert/bin missing, s23 alert/bin missing, s7 alert/bin missing
+drop trips: 12, 36.3 to 41.9 min (mean 38.0), 57.4 to 59.0 Wh (mean 58.0)
+pickup trips: 12, 39.6 to 43.1 min (mean 41.2), 57.5 to 59.3 Wh (mean 58.4)
+  s3a s11: 41.4 min 58.6 Wh, 37.1 min 58.1 Wh, 36.3 min 57.5 Wh | first motion D-1 18:00, last dock D-1 19:55, charge left 51 %
+  s3a s23: 41.9 min 59.0 Wh, 37.3 min 57.8 Wh, 37.9 min 58.3 Wh | first motion D-1 18:00, last dock D-1 19:57, charge left 51 %
+  s3a s7: 40.5 min 58.1 Wh, 36.5 min 57.5 Wh, 36.5 min 57.4 Wh | first motion D-1 18:00, last dock D-1 19:54, charge left 52 %
+  s3b s11: 40.6 min 57.9 Wh, 41.1 min 58.5 Wh, 43.1 min 59.3 Wh | first motion D0 18:00, last dock D0 20:05, charge left 51 %
+  s3b s23: 40.7 min 58.1 Wh, 40.7 min 58.1 Wh, 42.0 min 58.5 Wh | first motion D0 18:00, last dock D0 20:04, charge left 51 %
+  s3b s7: 39.6 min 57.5 Wh, 40.5 min 58.0 Wh, 42.3 min 58.8 Wh | first motion D0 18:00, last dock D0 20:03, charge left 51 %
+least hedge clearance 0.162 m (s3b s11 at [6326.1, 620.0])
+placements: 27, worst 0.086 m (s1a s11), mean 0.041 m; worst handle angle 1.2 deg
+nearest approach to a bin, car or other standing thing: 0.249 m (green, s3b s7)
+runs with a contact: none
+stand-still pauses: 44 in 20 runs; by place: {'lane': 18, 'pivot': 23, 'yard': 3}; by sensor: {'lid': 38, 'cam': 6}; called a person: 7; passed as a static thing: 0
+   pauses by scenario: {'s10a': 3, 's10b': 3, 's1b': 4, 's3a': 4, 's3b': 19, 's5a': 7, 's5b': 3, 's6b': 1}
+   waits: 3.1 to 90.6 s, total 456 s
+protective-field stops: 0; lidar path stops (old rule): 4
+near-half turns checked both ways: 51; one way blocked (under 0.15 m) in 6; clearance on the way taken: 0.59 m at least
+alerts:
+     3 x weather no-go: wind gust 18 m/s >= 15 m/s - bins stay home
+     3 x weather no-go: frost / ice on the lane (air -3.0 C) - bins stay home
+     3 x drop spot A is -4.47 m from the road-verge boundary (< 0.3 m): not goi
+     3 x firmware geofence HOLD at the road edge
+     3 x no GNSS fix for 60 s after 25 m dead reckoning - holding in the lane
+     3 x energy guard: 32 Wh available above the 10 % reserve < 80 Wh trip budg
+     3 x bin black not found at A (lidar: 0 returns) - photo sent, heading home
+     2 x approach to bin black is blocked for 120 s (something 3.0 m from the r
+     2 x E-stop pressed: robot stopped 0.04 m / 0.3 s
+     1 x bin black at A does not look upright (lidar outline 1.04 x 0.20 m) - n
+     1 x bin black at A does not look upright (lidar outline 1.06 x 0.43 m) - n
+     1 x bin black at A does not look upright (lidar outline 1.03 x 0.35 m) - n
+     1 x approach to bin black is blocked for 120 s (something 2.9 m from the r
+     1 x E-stop pressed: robot stopped 0.04 m / 0.2 s

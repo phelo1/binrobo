@@ -1,0 +1,116 @@
+{
+ "kg": "180",
+ "pivot": "2.81",
+ "kl_gap": 0.42,
+ "speed_rule": [
+  [
+   "level or uphill",
+   "0.4 m/s",
+   "0.4 m/s"
+  ],
+  [
+   "downhill, up to 3 %",
+   "0.4 m/s",
+   "0.3 m/s"
+  ],
+  [
+   "downhill, 3 to 6 %",
+   "0.3 m/s",
+   "0.2 m/s"
+  ],
+  [
+   "downhill, steeper than 6 %",
+   "0.2 m/s",
+   "0.15 m/s"
+  ]
+ ],
+ "speed_notes": [
+  "Set for this lane. In the 25 m elevation data the lane falls 13.7 m over 635 m; its one hill, about 145 m long and starting some 80 m from the house, runs at 6 to 8 %. A second, coarser model (30 m, whole metres) gives the same fall and allows up to about 10 % near the top of the hill. The 12 % pitch of revisions 1 to 5 was an assumption of the simulated lane and is removed. Neither model can show a short steeper bit: measure the hill with a level before the first run.",
+  "Longest simulated stop under this rule on a wet surface (grip 0.30): 127 mm (empty, level, 0.4 m/s). On an 8.5 % slope: 71 mm with a full bin, 64 mm empty.",
+  "On wet leaves (grip 0.22): 93 mm with a full bin and 120 mm empty on the 8.5 % slope. At 0.4 m/s on the level and on a 3 % slope it is 139 to 142 mm: past the 130 mm line, inside the 150 mm of foam.",
+  "Tail-first driving is dropped: the empty robot comes down the hill nose first at 0.15 m/s. On a wet surface that works up to 10 % at least (93 mm). On wet leaves it works up to 8.5 % only, because just the two drive wheels brake: at 9 % the stop is 172 mm and at 10 % the robot slides 1.4 m. If any part of the hill is steeper than 8.5 % and collects wet leaves, tail first is needed there after all.",
+  "The 150 mm of give in the foam and the 0.15 s are assumptions. Measure the stop on the built robot before it runs unattended."
+ ],
+ "lower_notes": [
+  "Before the bin comes down, a ToF sensor behind each leg guard reads the ground where the bin wheel will land and compares it with the bare ground it saw on arrival. 10 mm short: no lowering. In simulation a 10 mm block reads 12 mm short and a 20 mm block 24 mm short.",
+  "On the way down (6 mm/s for the last 100 mm) the firmware watches the load on the lift while the bin is more than 8 mm above the expected touchdown: a drop of more than 80 N (or 10 % of the bin's weight) stops it and raises 30 mm. Results by block height are in the reply note.",
+  "No lowering while the rear camera or the rear lidar shows anyone within 1 m of the bin. The robot sounds a warning first.",
+  "The lift driver's current limits (6 A up, 3 A down) are starting values: set them on the bench at 0 C, where the actuator draws more."
+ ],
+ "people_rules": [
+  "1. Pause for people (new in 5.1): when the front camera has found a person or an animal within 5 m in two pictures in a row, the robot stops and stands still. It moves on by itself once nobody has been within 5.5 m for 3 s. After 2 minutes it messages the owner and keeps waiting; after 15 minutes it holds and raises an alert. The rule runs in the lane, on the yard paths and before every pivot turn.",
+  "2. Forward, by lidar: an unknown object in the robot's path inside 4 m: slow to 0.25 m/s. Inside 1.5 m: stop and wait; move on when the path has been clear for 3 s. The camera adds a stop for a person or dog within 0.5 m of the robot's sides, whatever the map says.",
+  "3. Protective field: anything at all, hedge included, inside the robot's own path up to 0.6 m ahead of the nose or within 80 mm of its sides: stop, back out 0.8 m, start again from the lane edges. Three times in two minutes: hold and call the owner. It does not use the map or the satellite position.",
+  "4. Keeping left: the robot's left side stays 0.42 m from the left edge of the lane. The lidar measures the hedge face and the camera the left edge. If they differ by more than 0.25 m, the reading that fits the known lane width is used. Never planned closer than 0.20 m to the left hedge or 0.35 m to the right.",
+  "5. Turning: pivot turns are slow. In the mission runs the nose corner moves at 0.3 to 0.6 m/s at the peak (it was 1.0 to 1.2 m/s). Before a pivot the turning circle is checked against the map and known objects; a lidar check for anything else in the circle is still to be written. In the lane the heading command may change at 0.15 rad/s at most. A stopped robot holds the heading it stopped at.",
+  "6. Reverse moves: 0.1 m/s, watched by the rear lidar and the rear camera.",
+  "7. Lowering the bin: see sheet 17.",
+  "8. Last line: the switch strips on the front and both sides of the soft nose, and the two rear bumper switches, open the stop chain at the first touch.",
+  "9. Self-check: each sensor is tested at the start of a trip and must keep reporting. If one stops, the robot goes on at 0.2 m/s on the other and reports it; if both stop, it stops."
+ ],
+ "people_rows": [
+  [
+   "level, full bin, 0.4 m/s",
+   "0.40",
+   "0.46",
+   "0.90",
+   "1.97"
+  ],
+  [
+   "level, empty, 0.4 m/s",
+   "0.42",
+   "0.48",
+   "0.92",
+   "1.96"
+  ],
+  [
+   "6 % down, full bin, 0.3 m/s",
+   "0.31",
+   "0.37",
+   "0.71",
+   "1.50"
+  ],
+  [
+   "6 % down, empty, 0.2 m/s",
+   "0.22",
+   "0.25",
+   "0.47",
+   "0.99"
+  ],
+  [
+   "8.5 % down, full bin, 0.2 m/s",
+   "0.22",
+   "0.25",
+   "0.47",
+   "1.01"
+  ],
+  [
+   "8.5 % down, empty, 0.15 m/s",
+   "0.17",
+   "0.20",
+   "0.36",
+   "0.76"
+  ],
+  [
+   "8.5 % down on wet leaves, full bin, 0.2 m/s",
+   "0.24",
+   "0.27",
+   "0.49",
+   "1.04"
+  ],
+  [
+   "8.5 % down on wet leaves, empty, 0.15 m/s",
+   "0.23",
+   "0.25",
+   "0.42",
+   "0.81"
+  ]
+ ],
+ "people_notes": [
+  "Assumed until measured on the built robot: lidar 10 scans a second, an adult's legs found in 90 % of scans; camera 5 frames a second, a person found in 85 % of frames by day and 60 % at night with the infra-red light; 0.15 s to process. Stopping distances are the simulated ones.",
+  "Rule 1 in the mission simulation, 18 runs. A walker in the lane, then a dog crossing: the robot stood still 10 to 14 s for the walker and 8 to 10 s for the dog, and neither came nearer than 3.2 m. A walker who stands for 60 s or 200 s: it waits and then goes on by itself. Someone who steps out 3.5 m ahead: found at 2.2 to 2.6 m at the night rate (3.1 to 3.4 m by day); the robot stopped 1.16 to 1.26 m short of them (1.39 to 1.57 m by day).",
+  "The table is for someone who appears closer than the camera can react to. Inside these distances the soft nose touches them at a speed at which the robot stops inside the foam (sheet 17).",
+  "At night the camera works by its own infra-red light and the lidar needs no light. How well a real detector finds a child, a dog or someone in dark clothes at night is the main thing to test on the built robot.",
+  "In the mission software and tested: rules 1 to 5 and the 0.1 m/s reverse. Not yet: the rear sensors (so rule 1 does not yet see someone walking up from behind) and rule 9. No part here is certified; by the owner's decision of 22 November the functions are proved by his own tests (reply note, section 6)."
+ ]
+}

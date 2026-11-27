@@ -1,0 +1,1 @@
+B_step40_both_ramp {"test": "step40", "side": "both_ramp", "grab": "success", "reached": true, "dist_m": 4.71, "captured_end": true, "roll": 0.001, "pitch": 0.005, "bin_ground": 0.0, "cmin": 0.0, "dmin": 420.594, "seated_all": true, "clear_min": 0.085, "ok": true, "cpu_s": 12}

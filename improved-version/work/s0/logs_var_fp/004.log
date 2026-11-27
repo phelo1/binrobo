@@ -1,0 +1,1 @@
+B_estop12_fwd {"test": "estop12", "orient": "fwd", "grab": "no_dock", "v0": 0.55, "stop_dist_m": 0.51, "stop_time_s": 1.79, "slide_after_stop_m": 0.001, "captured_end": false, "roll": 0.004, "pitch": 0.008, "bin_ground": 1072.588, "cmin": 0.0, "dmin": 0.0, "seated_all": false, "clear_min": -0.0, "ok": false, "cpu_s": 10}

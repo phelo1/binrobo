@@ -1,0 +1,109 @@
+# ---- B2F frozen suite
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG= python3 h2/runH2.py grab WEB140 30 201
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG= python3 h2/runH2.py grab ESE240SL 30 202
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG= python3 h2/runH2.py grab ESE240CL 30 203
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG= python3 h2/runH2.py climb 0.30 0.06
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG= python3 h2/runH2.py climb 0.30 0.09
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG= python3 h2/runH2.py climb 0.25 0.06
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG= python3 h2/runH2.py climb 0.25 0.09
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG= python3 h2/runH2.py climb 0.22 0.06
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG= python3 h2/runH2.py climb 0.22 0.09
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG= python3 h2/runH2.py step one
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG= python3 h2/runH2.py step both
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG= python3 h2/runH2.py step both_ramp
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG= python3 h2/runH2.py estop fwd
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG= python3 h2/runH2.py estop rev
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG= python3 h2/runH2.py towstab
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG= python3 h2/runH2.py rel WEB140 flat full
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG= python3 h2/runH2.py rel WEB140 flat empty
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG= python3 h2/runH2.py rel WEB140 up12 full
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG= python3 h2/runH2.py rel WEB140 up12 empty
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG= python3 h2/runH2.py rel WEB140 dn12 full
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG= python3 h2/runH2.py rel WEB140 dn12 empty
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG= python3 h2/runH2.py rel ESE240CL flat full
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG= python3 h2/runH2.py rel ESE240CL flat empty
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG= python3 h2/runH2.py rel ESE240CL up12 full
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG= python3 h2/runH2.py rel ESE240CL up12 empty
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG= python3 h2/runH2.py rel ESE240CL dn12 full
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG= python3 h2/runH2.py rel ESE240CL dn12 empty
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG= python3 h2/runH2.py rel ESE240SL250 flat full
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG= python3 h2/runH2.py rel ESE240SL250 flat empty
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG= python3 h2/runH2.py rel ESE240SL250 up12 full
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG= python3 h2/runH2.py rel ESE240SL250 up12 empty
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG= python3 h2/runH2.py rel ESE240SL250 dn12 full
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG= python3 h2/runH2.py rel ESE240SL250 dn12 empty
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ SIM_DT=0.00025 IT1_TAG= python3 h2/runH2.py climb 0.25 0.09
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ SIM_DT=0.00025 IT1_TAG= python3 h2/runH2.py step one
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ SIM_DT=0.00025 IT1_TAG= python3 h2/runH2.py estop fwd
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG= python3 h2/runH2.py static up 110
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG= python3 h2/runH2.py static up 60
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG= python3 h2/runH2.py static dn 110
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG= python3 h2/runH2.py static dn 60
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG= python3 h2/runH2.py static crL 110
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG= python3 h2/runH2.py static crL 60
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG= python3 h2/runH2.py static crR 110
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG= python3 h2/runH2.py static crR 60
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG= python3 h2/runH2.py grab ESE240SL250 30 204
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG= python3 h2/runH2.py grab ESE140CL 30 205
+# ---- H2 S5 retention
+env CGB_F9=1 CMP_SIM=simH2 CMP_PREFIX=H2_ H2_S5V=2 IT1_TAG= python3 h2/runX.py ret ESE240SL step 0.5 #est=30
+env CGB_F9=1 CMP_SIM=simH2 CMP_PREFIX=H2_ H2_S5V=2 IT1_TAG= python3 h2/runX.py ret ESE240SL step 0.8 #est=30
+env CGB_F9=1 CMP_SIM=simH2 CMP_PREFIX=H2_ IT1_TAG= python3 h2/runX.py ret ESE240SL trench 0.5 #est=30
+env CGB_F9=1 CMP_SIM=simH2 CMP_PREFIX=H2_ IT1_TAG= python3 h2/runX.py ret ESE240SL trench 0.8 #est=30
+env CGB_F9=1 CMP_SIM=simH2 CMP_PREFIX=H2_ IT1_TAG= python3 h2/runX.py ret ESE240SL pothole 0.5 #est=30
+env CGB_F9=1 CMP_SIM=simH2 CMP_PREFIX=H2_ IT1_TAG= python3 h2/runX.py ret ESE240SL pothole 0.8 #est=30
+env CGB_F9=1 CMP_SIM=simH2 CMP_PREFIX=H2_ H2_S5V=2 IT1_TAG= python3 h2/runX.py ret WEB140 step 0.5 #est=30
+env CGB_F9=1 CMP_SIM=simH2 CMP_PREFIX=H2_ H2_S5V=2 IT1_TAG= python3 h2/runX.py ret WEB140 step 0.8 #est=30
+env CGB_F9=1 CMP_SIM=simH2 CMP_PREFIX=H2_ IT1_TAG= python3 h2/runX.py ret WEB140 trench 0.5 #est=30
+env CGB_F9=1 CMP_SIM=simH2 CMP_PREFIX=H2_ IT1_TAG= python3 h2/runX.py ret WEB140 trench 0.8 #est=30
+env CGB_F9=1 CMP_SIM=simH2 CMP_PREFIX=H2_ IT1_TAG= python3 h2/runX.py ret WEB140 pothole 0.5 #est=30
+env CGB_F9=1 CMP_SIM=simH2 CMP_PREFIX=H2_ IT1_TAG= python3 h2/runX.py ret WEB140 pothole 0.8 #est=30
+env CGB_F9=1 CMP_SIM=simH2 CMP_PREFIX=H2_ H2_KEEPER=1 H2_S5V=2 IT1_TAG= python3 h2/runX.py ret ESE240SL step 0.5 #est=30
+env CGB_F9=1 CMP_SIM=simH2 CMP_PREFIX=H2_ H2_KEEPER=1 H2_S5V=2 IT1_TAG= python3 h2/runX.py ret ESE240SL step 0.8 #est=30
+env CGB_F9=1 CMP_SIM=simH2 CMP_PREFIX=H2_ H2_KEEPER=1 IT1_TAG= python3 h2/runX.py ret ESE240SL trench 0.5 #est=30
+env CGB_F9=1 CMP_SIM=simH2 CMP_PREFIX=H2_ H2_KEEPER=1 IT1_TAG= python3 h2/runX.py ret ESE240SL trench 0.8 #est=30
+env CGB_F9=1 CMP_SIM=simH2 CMP_PREFIX=H2_ H2_KEEPER=1 IT1_TAG= python3 h2/runX.py ret ESE240SL pothole 0.5 #est=30
+env CGB_F9=1 CMP_SIM=simH2 CMP_PREFIX=H2_ H2_KEEPER=1 IT1_TAG= python3 h2/runX.py ret ESE240SL pothole 0.8 #est=30
+env CGB_F9=1 CMP_SIM=simH2 CMP_PREFIX=H2_ H2_KEEPER=1 H2_S5V=2 IT1_TAG= python3 h2/runX.py ret WEB140 step 0.5 #est=30
+env CGB_F9=1 CMP_SIM=simH2 CMP_PREFIX=H2_ H2_KEEPER=1 H2_S5V=2 IT1_TAG= python3 h2/runX.py ret WEB140 step 0.8 #est=30
+env CGB_F9=1 CMP_SIM=simH2 CMP_PREFIX=H2_ H2_KEEPER=1 IT1_TAG= python3 h2/runX.py ret WEB140 trench 0.5 #est=30
+env CGB_F9=1 CMP_SIM=simH2 CMP_PREFIX=H2_ H2_KEEPER=1 IT1_TAG= python3 h2/runX.py ret WEB140 trench 0.8 #est=30
+env CGB_F9=1 CMP_SIM=simH2 CMP_PREFIX=H2_ H2_KEEPER=1 IT1_TAG= python3 h2/runX.py ret WEB140 pothole 0.5 #est=30
+env CGB_F9=1 CMP_SIM=simH2 CMP_PREFIX=H2_ H2_KEEPER=1 IT1_TAG= python3 h2/runX.py ret WEB140 pothole 0.8 #est=30
+# ---- B2F S5 retention
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ H2_S5V=2 IT1_TAG= python3 h2/runX.py ret ESE240SL step 0.5 #est=30
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ H2_S5V=2 IT1_TAG= python3 h2/runX.py ret ESE240SL step 0.8 #est=30
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG= python3 h2/runX.py ret ESE240SL trench 0.5 #est=30
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG= python3 h2/runX.py ret ESE240SL trench 0.8 #est=30
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG= python3 h2/runX.py ret ESE240SL pothole 0.5 #est=30
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG= python3 h2/runX.py ret ESE240SL pothole 0.8 #est=30
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ H2_S5V=2 IT1_TAG= python3 h2/runX.py ret WEB140 step 0.5 #est=30
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ H2_S5V=2 IT1_TAG= python3 h2/runX.py ret WEB140 step 0.8 #est=30
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG= python3 h2/runX.py ret WEB140 trench 0.5 #est=30
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG= python3 h2/runX.py ret WEB140 trench 0.8 #est=30
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG= python3 h2/runX.py ret WEB140 pothole 0.5 #est=30
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ IT1_TAG= python3 h2/runX.py ret WEB140 pothole 0.8 #est=30
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ H2_KEEPER=1 H2_S5V=2 IT1_TAG= python3 h2/runX.py ret ESE240SL step 0.8 #est=30
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ H2_KEEPER=1 IT1_TAG= python3 h2/runX.py ret ESE240SL trench 0.8 #est=30
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ H2_KEEPER=1 IT1_TAG= python3 h2/runX.py ret ESE240SL pothole 0.8 #est=30
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ H2_KEEPER=1 H2_S5V=2 IT1_TAG= python3 h2/runX.py ret WEB140 step 0.8 #est=30
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ H2_KEEPER=1 IT1_TAG= python3 h2/runX.py ret WEB140 trench 0.8 #est=30
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ H2_KEEPER=1 IT1_TAG= python3 h2/runX.py ret WEB140 pothole 0.8 #est=30
+# ---- H2 S5 trench/pothole re-run with distance + bin-wheel crossing record (H2_S5DIAG=1, no other effect)
+env CGB_F9=1 CMP_SIM=simH2 CMP_PREFIX=H2_ H2_S5DIAG=1 IT1_TAG= python3 h2/runX.py ret ESE240SL trench 0.5 #est=30
+env CGB_F9=1 CMP_SIM=simH2 CMP_PREFIX=H2_ H2_S5DIAG=1 IT1_TAG= python3 h2/runX.py ret ESE240SL trench 0.8 #est=30
+env CGB_F9=1 CMP_SIM=simH2 CMP_PREFIX=H2_ H2_S5DIAG=1 IT1_TAG= python3 h2/runX.py ret ESE240SL pothole 0.5 #est=30
+env CGB_F9=1 CMP_SIM=simH2 CMP_PREFIX=H2_ H2_S5DIAG=1 IT1_TAG= python3 h2/runX.py ret ESE240SL pothole 0.8 #est=30
+env CGB_F9=1 CMP_SIM=simH2 CMP_PREFIX=H2_ H2_S5DIAG=1 IT1_TAG= python3 h2/runX.py ret WEB140 trench 0.5 #est=30
+env CGB_F9=1 CMP_SIM=simH2 CMP_PREFIX=H2_ H2_S5DIAG=1 IT1_TAG= python3 h2/runX.py ret WEB140 trench 0.8 #est=30
+env CGB_F9=1 CMP_SIM=simH2 CMP_PREFIX=H2_ H2_S5DIAG=1 IT1_TAG= python3 h2/runX.py ret WEB140 pothole 0.5 #est=30
+env CGB_F9=1 CMP_SIM=simH2 CMP_PREFIX=H2_ H2_S5DIAG=1 IT1_TAG= python3 h2/runX.py ret WEB140 pothole 0.8 #est=30
+# ---- B2F S5 trench/pothole re-run with distance + bin-wheel crossing record (H2_S5DIAG=1, no other effect)
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ H2_S5DIAG=1 IT1_TAG= python3 h2/runX.py ret ESE240SL trench 0.5 #est=30
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ H2_S5DIAG=1 IT1_TAG= python3 h2/runX.py ret ESE240SL trench 0.8 #est=30
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ H2_S5DIAG=1 IT1_TAG= python3 h2/runX.py ret ESE240SL pothole 0.5 #est=30
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ H2_S5DIAG=1 IT1_TAG= python3 h2/runX.py ret ESE240SL pothole 0.8 #est=30
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ H2_S5DIAG=1 IT1_TAG= python3 h2/runX.py ret WEB140 trench 0.5 #est=30
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ H2_S5DIAG=1 IT1_TAG= python3 h2/runX.py ret WEB140 trench 0.8 #est=30
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ H2_S5DIAG=1 IT1_TAG= python3 h2/runX.py ret WEB140 pothole 0.5 #est=30
+env CGB_F9=1 CMP_SIM=simB2h B2_DOCK=front CMP_PREFIX=B2F_ H2_S5DIAG=1 IT1_TAG= python3 h2/runX.py ret WEB140 pothole 0.8 #est=30

@@ -1,0 +1,5 @@
+runs_r5_w30 X8t: DONE X8t PASS [] sim 1580 s E 0.4 Wh {"clear_min": 9.0, "clear_at": null, "seated_all": true, "bin_ground_N": 0.0, "roll_max": 0.5245, "pitch_max": 6.
+runs_r5_w30 X8n: DONE X8n PASS [] sim 1593 s E 0.5 Wh {"clear_min": 9.0, "clear_at": null, "seated_all": true, "bin_ground_N": 0.0, "roll_max": 3.6047, "pitch_max": 6.
+runs_r5_w30 X9t: DONE X9t PASS [] sim 1593 s E 0.5 Wh {"clear_min": 9.0, "clear_at": null, "seated_all": true, "bin_ground_N": 0.0, "roll_max": 3.7416, "pitch_max": 6.
+runs_r5_w30 X9n: DONE X9n PASS [] sim 1593 s E 0.5 Wh {"clear_min": 9.0, "clear_at": null, "seated_all": true, "bin_ground_N": 0.0, "roll_max": 3.6047, "pitch_max": 6.
+runs_r5_w30 chain done

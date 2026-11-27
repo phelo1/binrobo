@@ -1,0 +1,344 @@
+repro start 08:12:46
+repro end 08:13:46
+r6a_near26 start 08:27:26
+r6a_near26 end 08:29:56
+r6a_near26 start 08:30:06
+r6a_near26 end 08:32:27
+r6a_dbg start 08:32:40
+r6a_dbg end 08:33:49
+r6a_near26 start 08:34:38
+r6a_near26 end 08:36:41
+r6f_trip1 start 08:37:15
+r6f_trip1 end 08:43:13
+r6f_trip1 start 08:43:38
+r6f_trip1 end 08:48:42
+r6f_trip2 start 08:49:35
+r6f_trip2 end 08:55:35
+r6f_trip2 start 08:55:55
+r6f_trip2 end 09:00:54
+r6s_asis start 09:02:13
+r6s_asis end 09:04:04
+r6s_near35 start 09:04:04
+r6s_near35 end 09:06:49
+r6s_near31 start 09:06:49
+r6s_near31 end 09:09:38
+r6s_near26 start 09:09:38
+r6s_near26 end 09:12:25
+r6s_near20 start 09:12:25
+r6s_near20 end 09:13:19
+r6s_child35 start 09:13:19
+r6t_near20 start 09:14:33
+r6t_near20 end 09:15:25
+r6t_near20 start 09:15:56
+r6t_near20 end 09:18:41
+r6s_asis start 09:18:49
+r6s_asis end 09:21:12
+r6s_near35 start 09:21:12
+r6s_near35 end 09:23:55
+r6s_near31 start 09:23:55
+r6s_near31 end 09:26:42
+r6s_near26 start 09:26:42
+r6s_near26 end 09:29:59
+r6s_near20 start 09:29:59
+r6s_near20 end 09:32:54
+r6s_child35 start 09:32:54
+r6s_child35 end 09:35:54
+r6s_run40 start 09:35:54
+r6s_run40 end 09:38:28
+r6s_run26 start 09:38:28
+r6s_run26 end 09:40:57
+r6s_nearhedge30 start 09:40:57
+r6s_nearhedge30 end 09:43:19
+r6s_nearhedge45 start 09:43:19
+r6s_nearhedge45 end 09:45:51
+r6s_behind start 09:45:51
+r6s_behind end 09:48:10
+r6s_side start 09:48:10
+r6s_side end 09:50:54
+r6s_slowwalk start 09:50:54
+r6s_slowwalk end 09:54:59
+r6s_low40 start 09:54:59
+r6s_low40 end 09:59:29
+r6s_low40near start 09:59:29
+r6s_low40near end 10:04:02
+r6s_stay1000 start 10:04:02
+r6s_stay1000 end 10:10:51
+r6s_boxside start 10:10:51
+r6s_boxside end 10:12:52
+r6s_boxpath start 10:12:52
+r6s_boxpath end 10:16:50
+stress r6s done (all 18 profiles; marker written by hand 10:19:41)
+--- final chain start 10:29:23
+r6f_near26 start 10:29:23
+r6f_near26 end 10:30:39
+r6f_near20 start 10:30:39
+r6f_near20 end 10:31:23
+r6f_run26 start 10:31:23
+r6f_run26 end 10:32:49
+r6f_child35 start 10:32:49
+r6f_child35 end 10:34:27
+r6f_side start 10:34:27
+--- final chain RESTART (quick stop from fast cruise) 10:37:18
+r6f_near26 start 10:37:18
+r6f_near26 end 10:38:54
+r6f_near20 start 10:38:54
+r6f_near20 end 10:39:37
+r6f_run26 start 10:39:37
+r6f_run26 end 10:41:06
+r6f_run20 start 10:41:06
+r6f_run20 end 10:41:50
+r6f_child35 start 10:41:50
+r6f_child35 end 10:43:24
+r6f_side start 10:43:24
+r6f_side end 10:44:44
+r6f_behind start 10:44:44
+r6f_behind end 10:45:57
+r6f_flank start 10:45:57
+r6f_flank end 10:47:25
+r6f_asis start 10:47:25
+r6f_asis end 10:48:44
+r6f_near35 start 10:48:44
+r6f_near35 end 10:50:27
+r6f_near31 start 10:50:28
+r6f_near31 end 10:52:06
+r6f_run40 start 10:52:06
+r6f_run40 end 10:53:30
+r6f_nearhedge30 start 10:53:30
+r6f_nearhedge30 end 10:54:48
+r6f_nearhedge45 start 10:54:48
+r6f_nearhedge45 end 10:56:09
+r6f_slowwalk start 10:56:09
+r6f_slowwalk end 10:58:00
+r6f_low40 start 10:58:00
+r6f_low40 end 10:59:20
+r6f_low40near start 10:59:20
+r6f_low40near end 11:00:59
+r6f_stay1000 start 11:00:59
+r6f_stay1000 end 11:05:35
+r6f_boxside start 11:05:35
+r6f_boxside end 11:07:35
+r6f_boxpath start 11:07:35
+r6f_boxpath end 11:08:59
+r6f_boxfar start 11:08:59
+r6f_boxfar end 11:10:27
+stress r6f done 11:10:27
+stress fast done 11:10:27
+r6f_suite start 11:10:27
+--- chain stopped 11:33:30: s3a seed 23 contact in the yard (turn direction); fixing
+--- chain part 2 start (turn-direction fix in) 11:50:17
+r6f_suite start 11:50:17
+r6f_suite end 13:00:45
+suite fast done 13:00:45
+r6f_pivflank_a start 13:00:45
+--- part 2 stopped after the suite, part 3 start 13:00:52
+pivflank start 13:00:52
+pivflank end 13:07:27
+r6f_leaf start 13:07:27
+--- part 3 stopped 13:09:11: the pivot tests showed two holes (person beside the robot during a turn); fixing
+pivflank (after fix) start 13:09:54
+pivflank end 13:14:53
+r6f_val start 13:14:53
+r6f_val end 13:35:59
+validation done 13:35:59
+--- part 3b start (final code: pivot fix in; lane driving unchanged) 13:36:36
+r6f_leaf start 13:36:36
+r6f_leaf end 13:43:07
+r6f_phantom start 13:43:07
+r6f_phantom end 13:49:00
+r6f_leafnogo start 13:49:00
+r6f_leafnogo end 13:49:09
+extras fast done 13:49:09
+r6s2_near26 start 13:49:09
+r6f_leaf re-run with the leaf tables (first run had the normal ones: the env file overrode them) 13:49:16
+r6s2_near26 end 13:52:01
+r6s2_near20 start 13:52:01
+r6s2_near20 end 13:54:47
+r6s2_run26 start 13:54:47
+r6s2_run26 end 13:57:24
+r6s2_run20 start 13:57:24
+r6s2_run20 end 13:59:11
+r6s2_child35 start 13:59:11
+r6s2_child35 end 14:01:30
+r6s2_side start 14:01:30
+r6s2_side end 14:03:18
+r6s2_behind start 14:03:18
+r6s2_behind end 14:05:05
+r6s2_flank start 14:05:05
+r6s2_flank end 14:06:59
+r6s2_asis start 14:06:59
+r6s2_asis end 14:08:53
+r6s2_near35 start 14:08:53
+r6s2_near35 end 14:11:01
+r6s2_near31 start 14:11:01
+r6s2_near31 end 14:13:07
+r6s2_run40 start 14:13:07
+r6s2_run40 end 14:15:05
+r6s2_nearhedge30 start 14:15:05
+r6s2_nearhedge30 end 14:16:55
+r6s2_nearhedge45 start 14:16:55
+r6s2_nearhedge45 end 14:18:47
+r6s2_slowwalk start 14:18:47
+r6s2_slowwalk end 14:20:49
+r6s2_low40 start 14:20:49
+r6s2_low40 end 14:22:39
+r6s2_low40near start 14:22:39
+r6s2_low40near end 14:24:44
+r6s2_stay1000 start 14:24:44
+r6s2_stay1000 end 14:29:36
+r6s2_boxside start 14:29:36
+r6s2_boxside end 14:31:13
+r6s2_boxpath start 14:31:13
+r6s2_boxpath end 14:32:59
+r6s2_boxfar start 14:32:59
+r6s2_boxfar end 14:35:04
+stress r6s2 done 14:35:04
+stress slow2 done 14:35:04
+r6s2_trip start 14:35:04
+r6s2_trip end 14:46:16
+r6m_trip start 14:46:16
+r6m_trip end 14:52:50
+r6f_gapwalk26 start 14:52:50
+r6f_gapwalk26 end 14:54:00
+r6f_gaprun26 start 14:54:00
+r6f_gaprun26 end 14:55:27
+stress r6f done 14:55:27
+r6s2_gapwalk26 start 14:55:27
+r6s2_gapwalk26 end 14:56:58
+r6s2_gaprun26 start 14:56:58
+r6s2_gaprun26 end 14:58:54
+stress r6s2 done 14:58:54
+trips and gaps done 14:58:54
+r6f_suite_ph start 14:58:54
+--- stopped 15:03:15: the gateway cases showed the lidar missing a walker where there is no hedge beside them; fixing (r6f_suite_ph abandoned at 6 of 48)
+r6f_gapwalk26 start 15:03:15
+r6f_gapwalk26 end 15:04:26
+r6f_gaprun26 start 15:04:26
+r6f_gaprun26 end 15:05:55
+stress r6f done 15:05:55
+r6s2_gapwalk26 start 15:05:55
+r6s2_gapwalk26 end 15:07:26
+r6s2_gaprun26 start 15:07:26
+r6s2_gaprun26 end 15:09:24
+stress r6s2 done 15:09:24
+gaps after fix done 15:09:24
+r6f_val2 start 15:09:24
+--- stopped 15:14:35: gateway walker still missed in 1 of 3 at each setting (their own returns still outvoted the few hedge returns); second fix: faces fitted from 0.25 m bins
+--- last chain start (final code) 15:16:22
+r6f_gapwalk26 start 15:16:22
+r6f_gapwalk26 end 15:17:58
+r6f_gaprun26 start 15:17:58
+r6f_gaprun26 end 15:19:26
+stress r6f done 15:19:26
+r6s2_gapwalk26 start 15:19:26
+r6s2_gapwalk26 end 15:21:37
+r6s2_gaprun26 start 15:21:37
+r6s2_gaprun26 end 15:23:27
+stress r6s2 done 15:23:27
+gaps after fix 2 done 15:23:27
+r6f_near26 start 15:23:27
+--- stopped 15:24:53: adding a look-ahead for gateways to the fast cruise (the robot was still at 0.7 m/s when the gateway walker came out)
+--- last chain start (final code, with the gateway look-ahead) 15:30:20
+r6f_gapwalk26 start 15:30:20
+r6f_gapwalk26 end 15:32:03
+r6f_gaprun26 start 15:32:03
+r6f_gaprun26 end 15:33:30
+stress r6f done 15:33:30
+r6s2_gapwalk26 start 15:33:30
+r6s2_gapwalk26 end 15:35:29
+r6s2_gaprun26 start 15:35:29
+r6s2_gaprun26 end 15:37:24
+stress r6s2 done 15:37:24
+gaps (final) done 15:37:24
+r6f_near26 start 15:37:24
+r6f_near26 end 15:39:11
+r6f_near20 start 15:39:11
+r6f_near20 end 15:39:54
+r6f_run26 start 15:39:54
+r6f_run26 end 15:41:23
+r6f_run20 start 15:41:23
+r6f_run20 end 15:42:07
+r6f_child35 start 15:42:07
+r6f_child35 end 15:43:49
+r6f_side start 15:43:49
+r6f_side end 15:45:11
+r6f_behind start 15:45:11
+r6f_behind end 15:46:27
+r6f_flank start 15:46:27
+r6f_flank end 15:47:57
+r6f_asis start 15:47:57
+r6f_asis end 15:49:29
+r6f_near35 start 15:49:29
+r6f_near35 end 15:51:12
+r6f_near31 start 15:51:12
+r6f_near31 end 15:52:55
+r6f_run40 start 15:52:55
+r6f_run40 end 15:54:24
+r6f_nearhedge30 start 15:54:24
+r6f_nearhedge30 end 15:55:50
+r6f_nearhedge45 start 15:55:50
+r6f_nearhedge45 end 15:57:19
+r6f_slowwalk start 15:57:19
+r6f_slowwalk end 15:59:14
+r6f_low40 start 15:59:14
+r6f_low40 end 16:00:45
+r6f_low40near start 16:00:45
+r6f_low40near end 16:02:24
+r6f_stay1000 start 16:02:24
+r6f_stay1000 end 16:07:21
+r6f_boxside start 16:07:21
+r6f_boxside end 16:09:21
+r6f_boxpath start 16:09:21
+r6f_boxpath end 16:10:50
+r6f_boxfar start 16:10:50
+r6f_boxfar end 16:12:14
+stress r6f done 16:12:14
+people fast (final) done 16:12:14
+r6s2_near26 start 16:12:14
+r6s2_near26 end 16:14:18
+r6s2_near20 start 16:14:18
+r6s2_near20 end 16:16:18
+r6s2_run26 start 16:16:18
+r6s2_run26 end 16:18:09
+r6s2_run20 start 16:18:09
+r6s2_run20 end 16:20:00
+r6s2_child35 start 16:20:00
+r6s2_child35 end 16:22:15
+r6s2_side start 16:22:15
+r6s2_side end 16:24:13
+r6s2_behind start 16:24:13
+r6s2_behind end 16:26:10
+r6s2_flank start 16:26:10
+r6s2_flank end 16:28:09
+r6s2_nearhedge30 start 16:28:09
+r6s2_nearhedge30 end 16:29:57
+r6s2_stay1000 start 16:29:57
+r6s2_stay1000 end 16:34:43
+r6s2_boxfar start 16:34:43
+r6s2_boxfar end 16:36:35
+stress r6s2 done 16:36:35
+people off (final) done 16:36:35
+r6f_val2 start 16:36:35
+r6f_val2 end 17:02:02
+missions (final) done 17:07:50
+r6v_near31 start 17:07:50
+r6v_near31 end 17:09:30
+r6v_near26 start 17:09:30
+r6v_near26 end 17:11:20
+r6v_near20 start 17:11:20
+r6v_near20 end 17:12:02
+r6v_run26 start 17:12:02
+r6v_run26 end 17:13:26
+r6v_run20 start 17:13:26
+r6v_run20 end 17:14:07
+stress r6v done 17:14:07
+last chain done 17:14:07
+pivpre start 17:16:56
+pivpre stopped: wait-for-pad change went in; restarted 17:18:45
+pivpre start 17:18:45
+pivot a b (pre-check fix) done 17:24:15
+pivot a2 + pick-up (pre-check fix) done 17:30:04
+pivpre2 start 17:30:43
+pivpre2 stopped: empty looks now recorded; restarted 17:31:17
+pivpre2 start 17:31:17
+pivot b a2 (arrival rule) done 17:37:05
+pivot a + pick-up (arrival rule) done 17:42:49

@@ -1,0 +1,39 @@
+scen   | stored (4.6.2, their machine) | their code unmodified (4.7.2) | with 4 fixes (4.7.2)      
+s1a    | 3/3  PPP                      | 3/3  PPP                   | 3/3  PPP                  
+s1b    | 1/3  PFF                      | 3/3  PPP                   | 3/3  PPP                  
+s3a    | 0/3  FFF                      | 0/3  FFF                   | 3/3  PPP                  
+s3b    | 1/3  FPF                      | 1/1  P--                   | 3/3  PPP                  
+s4a    | 3/3  PPP                      | 3/3  PPP                   | 3/3  PPP                  
+s4b    | 2/3  PPF                      | 3/3  PPP                   | 3/3  PPP                  
+s4c    | 3/3  PPP                      | 3/3  PPP                   | 3/3  PPP                  
+s5a    | 3/3  PPP                      | 3/3  PPP                   | 3/3  PPP                  
+s5b    | 3/3  PPP                      | 3/3  PPP                   | 3/3  PPP                  
+s6a    | 3/3  PPP                      | 3/3  PPP                   | 3/3  PPP                  
+s6b    | 3/3  PPP                      | 3/3  PPP                   | 3/3  PPP                  
+s7     | 3/3  PPP                      | 3/3  PPP                   | 3/3  PPP                  
+s8     | 3/3  PPP                      | 3/3  PPP                   | 3/3  PPP                  
+s9     | 3/3  PPP                      | 3/3  PPP                   | 3/3  PPP                  
+s10a   | 3/3  PPP                      | 3/3  PPP                   | 3/3  PPP                  
+s10b   | 3/3  PPP                      | 3/3  PPP                   | 3/3  PPP                  
+s11a   | 3/3  PPP                      | 3/3  PPP                   | 3/3  PPP                  
+s11b   | 3/3  PPP                      | 3/3  PPP                   | 3/3  PPP                  
+s12a   | 3/3  PPP                      | 3/3  PPP                   | 3/3  PPP                  
+s12b   | 3/3  PPP                      | 3/3  PPP                   | 3/3  PPP                  
+total  | 52/60                         | 55/58                      | 60/60                     
+
+their code unmodified (4.7.2): 58 runs | pre-grab gate: 15 first attempts, 1 missed first time, 0 runs ended without a grab | first-attempt |lateral| mean 0.023 max 0.052 m
+   set-downs 12: error mean 0.056 max 0.097 m
+   trips 9: 53.8-55.0 min, 45.0-46.7 Wh
+   hedge clearance min over moving runs: 0.010 m (s3a__s11)
+   s3b__s7: 3 trips, last dock D0 20:44, energy 137 Wh
+with 4 fixes (4.7.2): 60 runs | pre-grab gate: 27 first attempts, 0 missed first time, 0 runs ended without a grab | first-attempt |lateral| mean 0.011 max 0.028 m
+   set-downs 27: error mean 0.046 max 0.100 m
+   trips 24: 53.1-56.0 min, 44.5-49.2 Wh
+   camera checks 45, re-aligns 22
+   hedge clearance min over moving runs: 0.148 m (s3b__s7)
+   s3a__s11: 3 trips, last dock D-1 20:43, energy 137 Wh
+   s3a__s23: 3 trips, last dock D-1 20:45, energy 140 Wh
+   s3a__s7: 3 trips, last dock D-1 20:44, energy 140 Wh
+   s3b__s11: 3 trips, last dock D0 20:43, energy 135 Wh
+   s3b__s23: 3 trips, last dock D0 20:44, energy 141 Wh
+   s3b__s7: 3 trips, last dock D0 20:43, energy 135 Wh

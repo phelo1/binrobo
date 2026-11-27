@@ -1,0 +1,11 @@
+9506aa6676a9db9cdad192839495b119  /home/claude/b2f_run/sitl/b2f/scripts/b2f_r6.py
+df5a1632f449974acbd0b13540b8b008  /home/claude/b2f_run/sitl/b2f/scripts/b2f_companion_x.py
+182b4ac7866c63fcf5d97c35c5eb27e4  /home/claude/b2f_run/sitl/b2f/scripts/b2f_runner_x.py
+87a56f4e218b365b9a477dc635e932a6  r61/env_r61_fast.sh
+324393c6f99dd0c73b2d96eef81f79d1  r61/env_r61_start.sh
+79d5e8239b8589882a1924ee822cfe78  r61/env_r61_fast_v10.sh
+195033e7f6dcba7a4160a9ef5e5a70f4  r6/env_r6_fast.sh
+d9b3c1263cca45ef3911d1378b22f6ae  r6/env_r6.sh
+7506b54ae47231b62baac259de9a4523  r61/stress2.sh
+1722ad2bc37216534c8162c18b0ea170  r61/run2.sh
+65c61ffaa199076c7353b547c2f5f566  r61/chain_g.sh

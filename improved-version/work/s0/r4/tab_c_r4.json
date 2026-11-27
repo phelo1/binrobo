@@ -1,0 +1,479 @@
+{
+"step": [
+{
+"side": "both",
+"v": 0.5,
+"at": 1.6,
+"torque": "t60",
+"res": {
+"16": true,
+"24": true,
+"32": 0.47,
+"36": 0.47,
+"40": 0.47,
+"44": true,
+"50": true
+}
+},
+{
+"side": "both",
+"v": 0.5,
+"at": 1.6,
+"torque": "b100",
+"res": {
+"16": true,
+"24": true,
+"32": true,
+"36": true,
+"40": true,
+"44": true,
+"50": true
+}
+},
+{
+"side": "both",
+"v": 0.5,
+"at": 3.0,
+"torque": "t60",
+"res": {
+"16": 1.87,
+"24": 1.87,
+"32": 1.87,
+"36": 1.87,
+"40": 1.87,
+"44": true,
+"50": 1.87
+}
+},
+{
+"side": "both",
+"v": 0.5,
+"at": 3.0,
+"torque": "b100",
+"res": {
+"16": true,
+"24": true,
+"32": true,
+"36": true,
+"40": true,
+"44": true,
+"50": true
+}
+},
+{
+"side": "both",
+"v": 0.4,
+"at": 1.6,
+"torque": "t60",
+"res": {
+"24": 1.34
+}
+},
+{
+"side": "both",
+"v": 0.4,
+"at": 1.6,
+"torque": "b100",
+"res": {
+"24": 1.34
+}
+},
+{
+"side": "both",
+"v": 0.4,
+"at": 3.0,
+"torque": "t60",
+"res": {
+"24": 1.87
+}
+},
+{
+"side": "both",
+"v": 0.4,
+"at": 3.0,
+"torque": "b100",
+"res": {
+"24": 2.74
+}
+},
+{
+"side": "both",
+"v": 0.3,
+"at": 1.6,
+"torque": "t60",
+"res": {
+"24": 0.48
+}
+},
+{
+"side": "both",
+"v": 0.3,
+"at": 1.6,
+"torque": "b100",
+"res": {
+"24": 1.34
+}
+},
+{
+"side": "both",
+"v": 0.3,
+"at": 3.0,
+"torque": "t60",
+"res": {
+"24": 1.87
+}
+},
+{
+"side": "both",
+"v": 0.3,
+"at": 3.0,
+"torque": "b100",
+"res": {
+"24": 2.74
+}
+},
+{
+"side": "one",
+"v": 0.5,
+"at": 1.6,
+"torque": "t60",
+"res": {
+"16": true,
+"24": true,
+"32": true,
+"36": true,
+"40": true,
+"44": true,
+"50": true
+}
+},
+{
+"side": "one",
+"v": 0.5,
+"at": 1.6,
+"torque": "b100",
+"res": {
+"16": true,
+"24": true,
+"32": true,
+"36": true,
+"40": true,
+"44": true,
+"50": true
+}
+},
+{
+"side": "one",
+"v": 0.5,
+"at": 3.0,
+"torque": "t60",
+"res": {
+"16": true,
+"24": true,
+"32": true,
+"36": true,
+"40": true,
+"44": true,
+"50": true
+}
+},
+{
+"side": "one",
+"v": 0.5,
+"at": 3.0,
+"torque": "b100",
+"res": {
+"16": true,
+"24": true,
+"32": true,
+"36": true,
+"40": true,
+"44": true,
+"50": true
+}
+},
+{
+"side": "one",
+"v": 0.4,
+"at": 1.6,
+"torque": "t60",
+"res": {
+"24": true
+}
+},
+{
+"side": "one",
+"v": 0.4,
+"at": 1.6,
+"torque": "b100",
+"res": {
+"24": true
+}
+},
+{
+"side": "one",
+"v": 0.4,
+"at": 3.0,
+"torque": "t60",
+"res": {
+"24": true
+}
+},
+{
+"side": "one",
+"v": 0.4,
+"at": 3.0,
+"torque": "b100",
+"res": {
+"24": true
+}
+},
+{
+"side": "one",
+"v": 0.3,
+"at": 1.6,
+"torque": "t60",
+"res": {
+"24": true
+}
+},
+{
+"side": "one",
+"v": 0.3,
+"at": 1.6,
+"torque": "b100",
+"res": {
+"24": true
+}
+},
+{
+"side": "one",
+"v": 0.3,
+"at": 3.0,
+"torque": "t60",
+"res": {
+"24": true
+}
+},
+{
+"side": "one",
+"v": 0.3,
+"at": 3.0,
+"torque": "b100",
+"res": {
+"24": true
+}
+}
+],
+"step_empty": [
+{
+"side": "both",
+"v": 0.3,
+"torque": "t60",
+"reached": false,
+"dist": 2.08
+},
+{
+"side": "both",
+"v": 0.4,
+"torque": "b100",
+"reached": false,
+"dist": 1.87
+},
+{
+"side": "both",
+"v": 0.4,
+"torque": "t60",
+"reached": false,
+"dist": 1.87
+},
+{
+"side": "both",
+"v": 0.4,
+"torque": "t60",
+"reached": false,
+"dist": 1.92
+},
+{
+"side": "both",
+"v": 0.4,
+"torque": "t60",
+"reached": false,
+"dist": 2.07
+},
+{
+"side": "both",
+"v": 0.4,
+"torque": "t60",
+"reached": false,
+"dist": 2.32
+},
+{
+"side": "both",
+"v": 0.5,
+"torque": "b100",
+"reached": false,
+"dist": 1.87
+},
+{
+"side": "both",
+"v": 0.5,
+"torque": "t60",
+"reached": false,
+"dist": 1.87
+},
+{
+"side": "one",
+"v": 0.4,
+"torque": "b100",
+"reached": true,
+"dist": 6.04
+},
+{
+"side": "one",
+"v": 0.4,
+"torque": "t60",
+"reached": true,
+"dist": 6.04
+},
+{
+"side": "one",
+"v": 0.5,
+"torque": "b100",
+"reached": true,
+"dist": 6.11
+},
+{
+"side": "one",
+"v": 0.5,
+"torque": "t60",
+"reached": true,
+"dist": 6.11
+}
+],
+"s7": [
+{
+"w": 16,
+"yaw": 2.59,
+"raw": 421.5,
+"ma": 568.6,
+"reached": true
+},
+{
+"w": 24,
+"yaw": 1.314,
+"raw": 81.4,
+"ma": 524.5,
+"reached": true
+},
+{
+"w": 32,
+"yaw": 1.82,
+"raw": 62.6,
+"ma": 540.4,
+"reached": true
+},
+{
+"w": 36,
+"yaw": 2.324,
+"raw": 62.4,
+"ma": 536.4,
+"reached": true
+},
+{
+"w": 40,
+"yaw": 1.468,
+"raw": 31.5,
+"ma": 549.0,
+"reached": true
+},
+{
+"w": 44,
+"yaw": 2.017,
+"raw": 67.1,
+"ma": 546.4,
+"reached": true
+},
+{
+"w": 50,
+"yaw": 13.26,
+"raw": 0.0,
+"ma": 491.1,
+"reached": true
+}
+],
+"kerb": [
+{
+"tag": "cap12",
+"v": 0.5,
+"lift": 3068,
+"static": 1348,
+"wheel": 9350,
+"comb": 3048,
+"reached": true
+},
+{
+"tag": "cap12t20",
+"v": 0.5,
+"lift": 2749,
+"static": 1346,
+"wheel": 3992,
+"comb": 2826,
+"reached": true
+},
+{
+"tag": "cap12t30",
+"v": 0.5,
+"lift": 2348,
+"static": 1347,
+"wheel": 2654,
+"comb": 2501,
+"reached": true
+},
+{
+"tag": "cap12t65",
+"v": 0.5,
+"lift": 2165,
+"static": 1348,
+"wheel": 2360,
+"comb": 2373,
+"reached": true
+},
+{
+"tag": "cap12",
+"v": 0.8,
+"lift": 4028,
+"static": 1349,
+"wheel": 6016,
+"comb": 7838,
+"reached": true
+},
+{
+"tag": "cap12t20",
+"v": 0.8,
+"lift": 3832,
+"static": 1350,
+"wheel": 4069,
+"comb": 7041,
+"reached": true
+},
+{
+"tag": "cap12t30",
+"v": 0.8,
+"lift": 3502,
+"static": 1349,
+"wheel": 3557,
+"comb": 4512,
+"reached": true
+},
+{
+"tag": "cap12t65",
+"v": 0.8,
+"lift": 2688,
+"static": 1352,
+"wheel": 3342,
+"comb": 3358,
+"reached": true
+}
+]
+}

@@ -1,0 +1,222 @@
+{
+ "scenario": "s9",
+ "seed": 23,
+ "title": "Bin missing at pickup",
+ "expect": "alert",
+ "result": "alert",
+ "outcome": "bin missing",
+ "alerts": [
+  "bin black not found at A (lidar: 0 returns) - photo sent, heading home empty"
+ ],
+ "sim_time_s": 235.6,
+ "chunks": [
+  {
+   "t0": 0.0,
+   "t1": 235.6,
+   "wall": 34.7,
+   "frames": 12772,
+   "status": "done"
+  }
+ ],
+ "energy_wh": 2.95,
+ "soc_start": 0.9,
+ "soc_end": 0.8937,
+ "odo_m": 72.8,
+ "hedge_min_m": 0.369,
+ "hedge_min_at": [
+  131.6,
+  609.6
+ ],
+ "legal_min_m": 5.565,
+ "legal_min_at": [
+  171.0,
+  617.3
+ ],
+ "contact_min_m": null,
+ "contact_with": null,
+ "person_rest_min_m": null,
+ "car_rest_min_m": null,
+ "collisions": [],
+ "chain_trips": [],
+ "metrics": {
+  "placements": [],
+  "grabs": [],
+  "trips": [],
+  "stops": [],
+  "gates": [],
+  "navcam": {
+   "n": 1488,
+   "cam_only": 0,
+   "both": 1362,
+   "disagree": 162,
+   "none": 0
+  },
+  "r6_fast": {
+   "lane_s": 148.8,
+   "fast": 69.3,
+   "float": 24.5,
+   "narrow": 13.3,
+   "ramp": 55.0,
+   "ends": 31.2
+  },
+  "first_motion_clock": null,
+  "first_motion_t": 234.3,
+  "verify": {
+   "bin": "black",
+   "n_pts": 0,
+   "verdict": "missing"
+  }
+ },
+ "events": [
+  {
+   "t": 0.0,
+   "kind": "sim",
+   "text": "chunk 0 start: SITL launched, home = checkpoint pose s=565.0"
+  },
+  {
+   "t": 1.14,
+   "kind": "fw",
+   "text": "Calibrating barometer"
+  },
+  {
+   "t": 2.82,
+   "kind": "fw",
+   "text": "Barometer 1 calibration complete"
+  },
+  {
+   "t": 2.82,
+   "kind": "fw",
+   "text": "Barometer 2 calibration complete"
+  },
+  {
+   "t": 2.83,
+   "kind": "fw",
+   "text": "Beginning INS calibration. Do not move vehicle"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "ArduPilot Ready"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "RCInput: decoding UDP (Pulses)"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "AHRS: DCM active"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "GPS 1: specified as MAV"
+  },
+  {
+   "t": 3.13,
+   "kind": "fw",
+   "text": "GPS 1: detected MAV"
+  },
+  {
+   "t": 4.99,
+   "kind": "fw",
+   "text": "EKF3 IMU0 initialised"
+  },
+  {
+   "t": 4.99,
+   "kind": "fw",
+   "text": "EKF3 IMU1 initialised"
+  },
+  {
+   "t": 6.67,
+   "kind": "fw",
+   "text": "EKF3 IMU0 tilt alignment complete"
+  },
+  {
+   "t": 6.67,
+   "kind": "fw",
+   "text": "EKF3 IMU1 tilt alignment complete"
+  },
+  {
+   "t": 6.75,
+   "kind": "fw",
+   "text": "EKF3 IMU0 MAG0 initial yaw alignment complete"
+  },
+  {
+   "t": 6.75,
+   "kind": "fw",
+   "text": "EKF3 IMU1 MAG0 initial yaw alignment complete"
+  },
+  {
+   "t": 6.75,
+   "kind": "fw",
+   "text": "AHRS: EKF3 active"
+  },
+  {
+   "t": 15.15,
+   "kind": "fw",
+   "text": "EKF3 IMU0 origin set"
+  },
+  {
+   "t": 15.15,
+   "kind": "fw",
+   "text": "EKF3 IMU1 origin set"
+  },
+  {
+   "t": 15.15,
+   "kind": "fw",
+   "text": "Field Elevation Set: 31m"
+  },
+  {
+   "t": 21.63,
+   "kind": "fw",
+   "text": "SmartRTL deactivated: bad position"
+  },
+  {
+   "t": 42.59,
+   "kind": "fw",
+   "text": "EKF3 IMU0 is using GPS"
+  },
+  {
+   "t": 42.59,
+   "kind": "fw",
+   "text": "EKF3 IMU1 is using GPS"
+  },
+  {
+   "t": 46.71,
+   "kind": "fw",
+   "text": "Fence Indexed OK"
+  },
+  {
+   "t": 46.75,
+   "kind": "pi",
+   "text": "fence upload ack=0 (81 vertices)"
+  },
+  {
+   "t": 46.81,
+   "kind": "fw",
+   "text": "Warning: Arming Checks Disabled"
+  },
+  {
+   "t": 46.81,
+   "kind": "fw",
+   "text": "Throttle armed"
+  },
+  {
+   "t": 47.75,
+   "kind": "pi",
+   "text": "boot done (GUIDED, armed, fence 81 pts)"
+  },
+  {
+   "t": 169.71,
+   "kind": "ALERT",
+   "text": "bin black not found at A (lidar: 0 returns) - photo sent, heading home empty"
+  },
+  {
+   "t": 235.61,
+   "kind": "pi",
+   "text": "FINISH alert: bin missing"
+  }
+ ]
+}

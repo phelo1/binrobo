@@ -1,0 +1,8 @@
+eudem25m : house 43.1 m, road 29.4 m, fall 13.7 m over 635.0 m, mean 2.16 %
+   steepest {'5 m': {'pct': 8.2, 'from_m': 145, 'to_m': 150}, '10 m': {'pct': 7.9, 'from_m': 145, 'to_m': 155}, '25 m': {'pct': 7.5, 'from_m': 135, 'to_m': 160}, '50 m': {'pct': 7.2, 'from_m': 115, 'to_m': 165}}
+   length steeper than {'3 %': 240, '5 %': 150, '6 %': 125, '7 %': 55, '8 %': 0, '9 %': 0, '10 %': 0}
+   hill (over 5 %) {'from_m': 15, 'to_m': 230} | rises towards the road {'length_m': 135, 'steepest_pct': 2.2, 'from_m': 40, 'to_m': 445}
+srtm30m : house 43.0 m, road 29.0 m, fall 14.0 m over 635.0 m, mean 2.2 %
+   steepest {'5 m': {'pct': 20.0, 'from_m': 10, 'to_m': 15}, '10 m': {'pct': 10.0, 'from_m': 5, 'to_m': 15}, '25 m': {'pct': 12.0, 'from_m': 55, 'to_m': 80}, '50 m': {'pct': 10.0, 'from_m': 50, 'to_m': 100}}
+   length steeper than {'3 %': 175, '5 %': 175, '6 %': 175, '7 %': 175, '8 %': 175, '9 %': 175, '10 %': 5}
+   hill (over 5 %) {'from_m': 5, 'to_m': 635} | rises towards the road {'length_m': 40, 'steepest_pct': 10.0, 'from_m': 35, 'to_m': 440}

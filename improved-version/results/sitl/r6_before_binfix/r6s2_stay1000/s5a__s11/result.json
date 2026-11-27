@@ -1,0 +1,380 @@
+{
+ "scenario": "s5a",
+ "seed": 11,
+ "title": "Lidar: person + dog crossing (loaded)",
+ "expect": "pass",
+ "result": "timeout",
+ "outcome": "time limit",
+ "alerts": [
+  "waiting: someone has been near the robot for 2 minutes (it carries on by itself when the way is clear)",
+  "waiting: someone has been near the robot for 2 minutes (it carries on by itself when the way is clear)"
+ ],
+ "sim_time_s": 900.0,
+ "chunks": [
+  {
+   "t0": 0.0,
+   "t1": 900.0,
+   "wall": 134.8,
+   "frames": 45992,
+   "status": "done"
+  }
+ ],
+ "energy_wh": 4.92,
+ "soc_start": 0.9,
+ "soc_end": 0.8894,
+ "odo_m": 20.3,
+ "hedge_min_m": 0.38,
+ "hedge_min_at": [
+  46.2,
+  295.0
+ ],
+ "legal_min_m": null,
+ "legal_min_at": null,
+ "contact_min_m": 3.287,
+ "contact_with": "person",
+ "person_rest_min_m": null,
+ "car_rest_min_m": null,
+ "collisions": [],
+ "chain_trips": [],
+ "metrics": {
+  "placements": [],
+  "grabs": [],
+  "trips": [],
+  "stops": [],
+  "gates": [],
+  "navcam": {
+   "n": 487,
+   "cam_only": 0,
+   "both": 442,
+   "disagree": 45,
+   "none": 0
+  },
+  "first_motion_clock": null,
+  "first_motion_t": 819.5,
+  "ppl_pauses": [
+   {
+    "t": 93.1,
+    "v_in": 0.41,
+    "range": 4.94,
+    "s": 313.8,
+    "by": "cam",
+    "where": "lane",
+    "obj": [],
+    "wait_s": 50.4,
+    "person": true
+   },
+   {
+    "t": 145.5,
+    "v_in": 0.19,
+    "range": 4.6,
+    "s": 314.2,
+    "by": "cam",
+    "where": "lane",
+    "obj": [],
+    "wait_s": 265.8,
+    "person": true
+   },
+   {
+    "t": 412.6,
+    "v_in": 0.18,
+    "range": 4.32,
+    "s": 314.4,
+    "by": "cam",
+    "where": "lane",
+    "obj": [],
+    "wait_s": 328.7,
+    "person": true
+   },
+   {
+    "t": 743.3,
+    "v_in": 0.13,
+    "range": 3.95,
+    "s": 314.7,
+    "by": "cam",
+    "where": "lane",
+    "obj": [],
+    "wait_s": 73.8,
+    "person": true
+   },
+   {
+    "t": 819.3,
+    "v_in": 0.22,
+    "range": 3.76,
+    "s": 315.0,
+    "by": "cam",
+    "where": "lane",
+    "obj": [
+     [
+      4.72,
+      0.62,
+      8,
+      3.34,
+      null
+     ]
+    ]
+   }
+  ]
+ },
+ "events": [
+  {
+   "t": 0.0,
+   "kind": "sim",
+   "text": "chunk 0 start: SITL launched, home = checkpoint pose s=295.0"
+  },
+  {
+   "t": 0.14,
+   "kind": "fw",
+   "text": "Calibrating barometer"
+  },
+  {
+   "t": 1.76,
+   "kind": "fw",
+   "text": "Barometer 1 calibration complete"
+  },
+  {
+   "t": 1.76,
+   "kind": "fw",
+   "text": "Barometer 2 calibration complete"
+  },
+  {
+   "t": 1.77,
+   "kind": "fw",
+   "text": "Beginning INS calibration. Do not move vehicle"
+  },
+  {
+   "t": 1.9,
+   "kind": "fw",
+   "text": "ArduPilot Ready"
+  },
+  {
+   "t": 1.9,
+   "kind": "fw",
+   "text": "RCInput: decoding UDP (Pulses)"
+  },
+  {
+   "t": 1.9,
+   "kind": "fw",
+   "text": "AHRS: DCM active"
+  },
+  {
+   "t": 1.9,
+   "kind": "fw",
+   "text": "GPS 1: specified as MAV"
+  },
+  {
+   "t": 2.06,
+   "kind": "fw",
+   "text": "GPS 1: detected MAV"
+  },
+  {
+   "t": 3.93,
+   "kind": "fw",
+   "text": "EKF3 IMU0 initialised"
+  },
+  {
+   "t": 3.93,
+   "kind": "fw",
+   "text": "EKF3 IMU1 initialised"
+  },
+  {
+   "t": 5.63,
+   "kind": "fw",
+   "text": "EKF3 IMU0 tilt alignment complete"
+  },
+  {
+   "t": 5.63,
+   "kind": "fw",
+   "text": "EKF3 IMU1 tilt alignment complete"
+  },
+  {
+   "t": 5.71,
+   "kind": "fw",
+   "text": "EKF3 IMU0 MAG0 initial yaw alignment complete"
+  },
+  {
+   "t": 5.71,
+   "kind": "fw",
+   "text": "EKF3 IMU1 MAG0 initial yaw alignment complete"
+  },
+  {
+   "t": 5.71,
+   "kind": "fw",
+   "text": "AHRS: EKF3 active"
+  },
+  {
+   "t": 14.07,
+   "kind": "fw",
+   "text": "EKF3 IMU0 origin set"
+  },
+  {
+   "t": 14.07,
+   "kind": "fw",
+   "text": "EKF3 IMU1 origin set"
+  },
+  {
+   "t": 14.13,
+   "kind": "fw",
+   "text": "Field Elevation Set: 30m"
+  },
+  {
+   "t": 20.61,
+   "kind": "fw",
+   "text": "SmartRTL deactivated: bad position"
+  },
+  {
+   "t": 41.57,
+   "kind": "fw",
+   "text": "EKF3 IMU0 is using GPS"
+  },
+  {
+   "t": 41.57,
+   "kind": "fw",
+   "text": "EKF3 IMU1 is using GPS"
+  },
+  {
+   "t": 45.15,
+   "kind": "fw",
+   "text": "Fence Indexed OK"
+  },
+  {
+   "t": 45.15,
+   "kind": "pi",
+   "text": "fence upload ack=0 (81 vertices)"
+  },
+  {
+   "t": 45.21,
+   "kind": "fw",
+   "text": "Warning: Arming Checks Disabled"
+  },
+  {
+   "t": 45.21,
+   "kind": "fw",
+   "text": "Throttle armed"
+  },
+  {
+   "t": 46.15,
+   "kind": "pi",
+   "text": "boot done (GUIDED, armed, fence 81 pts)"
+  },
+  {
+   "t": 93.09,
+   "kind": "pi",
+   "text": "camera: person or animal 4.9 m away -> stand still"
+  },
+  {
+   "t": 93.73,
+   "kind": "fw",
+   "text": "mode GUIDED -> HOLD"
+  },
+  {
+   "t": 143.51,
+   "kind": "pi",
+   "text": "nothing near for 3 s on any sensor -> carry on, slowly at first"
+  },
+  {
+   "t": 143.55,
+   "kind": "fw",
+   "text": "mode HOLD -> GUIDED"
+  },
+  {
+   "t": 145.51,
+   "kind": "pi",
+   "text": "camera: person or animal 4.6 m away -> stand still"
+  },
+  {
+   "t": 146.25,
+   "kind": "fw",
+   "text": "mode GUIDED -> HOLD"
+  },
+  {
+   "t": 265.61,
+   "kind": "ALERT",
+   "text": "waiting: someone has been near the robot for 2 minutes (it carries on by itself when the way is clear)"
+  },
+  {
+   "t": 411.29,
+   "kind": "pi",
+   "text": "nothing near for 3 s on any sensor -> carry on, slowly at first"
+  },
+  {
+   "t": 411.33,
+   "kind": "fw",
+   "text": "mode HOLD -> GUIDED"
+  },
+  {
+   "t": 412.61,
+   "kind": "pi",
+   "text": "camera: person or animal 4.3 m away -> stand still"
+  },
+  {
+   "t": 413.13,
+   "kind": "fw",
+   "text": "mode GUIDED -> HOLD"
+  },
+  {
+   "t": 501.77,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 532.73,
+   "kind": "ALERT",
+   "text": "waiting: someone has been near the robot for 2 minutes (it carries on by itself when the way is clear)"
+  },
+  {
+   "t": 553.03,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 741.29,
+   "kind": "pi",
+   "text": "nothing near for 3 s on any sensor -> carry on, slowly at first"
+  },
+  {
+   "t": 741.33,
+   "kind": "fw",
+   "text": "mode HOLD -> GUIDED"
+  },
+  {
+   "t": 743.33,
+   "kind": "pi",
+   "text": "camera: person or animal 3.9 m away -> stand still"
+  },
+  {
+   "t": 743.61,
+   "kind": "fw",
+   "text": "mode GUIDED -> HOLD"
+  },
+  {
+   "t": 817.13,
+   "kind": "pi",
+   "text": "nothing near for 3 s on any sensor -> carry on, slowly at first"
+  },
+  {
+   "t": 817.19,
+   "kind": "fw",
+   "text": "mode HOLD -> GUIDED"
+  },
+  {
+   "t": 819.29,
+   "kind": "pi",
+   "text": "camera: person or animal 3.8 m away -> stand still"
+  },
+  {
+   "t": 819.69,
+   "kind": "fw",
+   "text": "mode GUIDED -> HOLD"
+  },
+  {
+   "t": 900.01,
+   "kind": "sim",
+   "text": "time limit 900 s"
+  },
+  {
+   "t": 900.01,
+   "kind": "pi",
+   "text": "FINISH timeout: time limit"
+  }
+ ]
+}

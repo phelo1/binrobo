@@ -1,0 +1,329 @@
+{
+ "scenario": "s5a",
+ "seed": 7,
+ "title": "Lidar: person + dog crossing (loaded)",
+ "expect": "pass",
+ "result": "alert",
+ "outcome": "path blocked",
+ "alerts": [
+  "waiting: someone has been near the robot for 2 minutes (it carries on by itself when the way is clear)",
+  "waiting: someone has been near the robot for 2 minutes (it carries on by itself when the way is clear)",
+  "waiting: someone has been near the robot for 2 minutes (it carries on by itself when the way is clear)",
+  "someone or something has been near the robot for 10 of the last 20 minutes - holding"
+ ],
+ "sim_time_s": 672.5,
+ "chunks": [
+  {
+   "t0": 0.0,
+   "t1": 672.5,
+   "wall": 107.8,
+   "frames": 34618,
+   "status": "done"
+  }
+ ],
+ "energy_wh": 3.66,
+ "soc_start": 0.9,
+ "soc_end": 0.8921,
+ "odo_m": 19.2,
+ "hedge_min_m": 0.381,
+ "hedge_min_at": [
+  0.0,
+  295.0
+ ],
+ "legal_min_m": null,
+ "legal_min_at": null,
+ "contact_min_m": 4.211,
+ "contact_with": "person",
+ "person_rest_min_m": null,
+ "car_rest_min_m": null,
+ "collisions": [],
+ "chain_trips": [],
+ "metrics": {
+  "placements": [],
+  "grabs": [],
+  "trips": [],
+  "stops": [],
+  "gates": [],
+  "navcam": {
+   "n": 240,
+   "cam_only": 0,
+   "both": 220,
+   "disagree": 0,
+   "none": 0
+  },
+  "r6_fast": {
+   "lane_s": 24.0,
+   "fast": 18.4,
+   "float": 7.1,
+   "object": 2.4,
+   "seen": 2.9
+  },
+  "first_motion_clock": null,
+  "first_motion_t": 543.2,
+  "ppl_pauses": [
+   {
+    "t": 70.6,
+    "v_in": 0.4,
+    "range": 4.98,
+    "s": 313.8,
+    "by": "cam",
+    "where": "lane",
+    "obj": [],
+    "wait_s": 318.2,
+    "person": true
+   },
+   {
+    "t": 390.2,
+    "v_in": 0.2,
+    "range": 4.7,
+    "s": 314.1,
+    "by": "cam",
+    "where": "lane",
+    "obj": [],
+    "wait_s": 152.0,
+    "person": true
+   },
+   {
+    "t": 542.7,
+    "v_in": 0.09,
+    "range": 4.7,
+    "s": 314.1,
+    "by": "cam",
+    "where": "lane",
+    "obj": []
+   }
+  ]
+ },
+ "events": [
+  {
+   "t": 0.0,
+   "kind": "sim",
+   "text": "chunk 0 start: SITL launched, home = checkpoint pose s=295.0"
+  },
+  {
+   "t": 1.15,
+   "kind": "fw",
+   "text": "Calibrating barometer"
+  },
+  {
+   "t": 2.82,
+   "kind": "fw",
+   "text": "Barometer 1 calibration complete"
+  },
+  {
+   "t": 2.82,
+   "kind": "fw",
+   "text": "Barometer 2 calibration complete"
+  },
+  {
+   "t": 2.85,
+   "kind": "fw",
+   "text": "Beginning INS calibration. Do not move vehicle"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "ArduPilot Ready"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "RCInput: decoding UDP (Pulses)"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "AHRS: DCM active"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "GPS 1: specified as MAV"
+  },
+  {
+   "t": 3.09,
+   "kind": "fw",
+   "text": "GPS 1: detected MAV"
+  },
+  {
+   "t": 5.01,
+   "kind": "fw",
+   "text": "EKF3 IMU0 initialised"
+  },
+  {
+   "t": 5.01,
+   "kind": "fw",
+   "text": "EKF3 IMU1 initialised"
+  },
+  {
+   "t": 6.67,
+   "kind": "fw",
+   "text": "EKF3 IMU0 tilt alignment complete"
+  },
+  {
+   "t": 6.67,
+   "kind": "fw",
+   "text": "EKF3 IMU1 tilt alignment complete"
+  },
+  {
+   "t": 6.75,
+   "kind": "fw",
+   "text": "EKF3 IMU0 MAG0 initial yaw alignment complete"
+  },
+  {
+   "t": 6.75,
+   "kind": "fw",
+   "text": "EKF3 IMU1 MAG0 initial yaw alignment complete"
+  },
+  {
+   "t": 6.75,
+   "kind": "fw",
+   "text": "AHRS: EKF3 active"
+  },
+  {
+   "t": 15.15,
+   "kind": "fw",
+   "text": "EKF3 IMU0 origin set"
+  },
+  {
+   "t": 15.15,
+   "kind": "fw",
+   "text": "EKF3 IMU1 origin set"
+  },
+  {
+   "t": 15.17,
+   "kind": "fw",
+   "text": "Field Elevation Set: 30m"
+  },
+  {
+   "t": 21.65,
+   "kind": "fw",
+   "text": "SmartRTL deactivated: bad position"
+  },
+  {
+   "t": 42.57,
+   "kind": "fw",
+   "text": "EKF3 IMU0 is using GPS"
+  },
+  {
+   "t": 42.57,
+   "kind": "fw",
+   "text": "EKF3 IMU1 is using GPS"
+  },
+  {
+   "t": 46.05,
+   "kind": "fw",
+   "text": "Fence Indexed OK"
+  },
+  {
+   "t": 46.05,
+   "kind": "pi",
+   "text": "fence upload ack=0 (81 vertices)"
+  },
+  {
+   "t": 46.07,
+   "kind": "fw",
+   "text": "Warning: Arming Checks Disabled"
+  },
+  {
+   "t": 46.07,
+   "kind": "fw",
+   "text": "Throttle armed"
+  },
+  {
+   "t": 47.05,
+   "kind": "pi",
+   "text": "boot done (GUIDED, armed, fence 81 pts)"
+  },
+  {
+   "t": 70.65,
+   "kind": "pi",
+   "text": "camera: person or animal 5.0 m away -> stand still"
+  },
+  {
+   "t": 71.29,
+   "kind": "fw",
+   "text": "mode GUIDED -> HOLD"
+  },
+  {
+   "t": 79.63,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 190.71,
+   "kind": "ALERT",
+   "text": "waiting: someone has been near the robot for 2 minutes (it carries on by itself when the way is clear)"
+  },
+  {
+   "t": 339.19,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 388.85,
+   "kind": "pi",
+   "text": "nothing near for 3 s on any sensor -> carry on, slowly at first"
+  },
+  {
+   "t": 388.89,
+   "kind": "fw",
+   "text": "mode HOLD -> GUIDED"
+  },
+  {
+   "t": 390.17,
+   "kind": "pi",
+   "text": "camera: person or animal 4.7 m away -> stand still"
+  },
+  {
+   "t": 390.57,
+   "kind": "fw",
+   "text": "mode GUIDED -> HOLD"
+  },
+  {
+   "t": 510.29,
+   "kind": "ALERT",
+   "text": "waiting: someone has been near the robot for 2 minutes (it carries on by itself when the way is clear)"
+  },
+  {
+   "t": 514.09,
+   "kind": "pi",
+   "text": "GNSS no fix -> wheel-odometry dead reckoning"
+  },
+  {
+   "t": 542.21,
+   "kind": "pi",
+   "text": "nothing near for 3 s on any sensor -> carry on, slowly at first"
+  },
+  {
+   "t": 542.25,
+   "kind": "fw",
+   "text": "mode HOLD -> GUIDED"
+  },
+  {
+   "t": 542.69,
+   "kind": "pi",
+   "text": "camera: person or animal 4.7 m away -> stand still"
+  },
+  {
+   "t": 542.97,
+   "kind": "fw",
+   "text": "mode GUIDED -> HOLD"
+  },
+  {
+   "t": 662.81,
+   "kind": "ALERT",
+   "text": "waiting: someone has been near the robot for 2 minutes (it carries on by itself when the way is clear)"
+  },
+  {
+   "t": 672.53,
+   "kind": "ALERT",
+   "text": "someone or something has been near the robot for 10 of the last 20 minutes - holding"
+  },
+  {
+   "t": 672.53,
+   "kind": "pi",
+   "text": "FINISH alert: path blocked"
+  }
+ ]
+}

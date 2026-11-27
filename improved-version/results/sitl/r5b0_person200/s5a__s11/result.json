@@ -1,0 +1,285 @@
+{
+ "scenario": "s5a",
+ "seed": 11,
+ "title": "Lidar: person + dog crossing (loaded)",
+ "expect": "pass",
+ "result": "alert",
+ "outcome": "path blocked",
+ "alerts": [
+  "protective field tripped 3 times in 2 minutes - holding in the lane"
+ ],
+ "sim_time_s": 240.8,
+ "chunks": [
+  {
+   "t0": 0.0,
+   "t1": 240.8,
+   "wall": 22.3,
+   "frames": 13032,
+   "status": "done"
+  }
+ ],
+ "energy_wh": 2.1,
+ "soc_start": 0.9,
+ "soc_end": 0.8955,
+ "odo_m": 26.6,
+ "hedge_min_m": 0.149,
+ "hedge_min_at": [
+  236.4,
+  316.9
+ ],
+ "legal_min_m": null,
+ "legal_min_at": null,
+ "contact_min_m": 0.437,
+ "contact_with": "person",
+ "person_rest_min_m": 0.439,
+ "car_rest_min_m": null,
+ "collisions": [],
+ "chain_trips": [],
+ "metrics": {
+  "placements": [],
+  "grabs": [],
+  "trips": [],
+  "stops": [
+   {
+    "t": 106.8,
+    "gap": 1.48,
+    "s": 316.9
+   },
+   {
+    "t": 170.2,
+    "gap": 1.24,
+    "s": 317.1
+   },
+   {
+    "t": 221.5,
+    "gap": 1.37,
+    "s": 317.3
+   }
+  ],
+  "gates": [],
+  "navcam": {
+   "n": 630,
+   "cam_only": 0,
+   "both": 573,
+   "disagree": 35,
+   "none": 0,
+   "dis_cam": 31
+  },
+  "first_motion_clock": null,
+  "first_motion_t": 240.2,
+  "prot_stops": [
+   {
+    "t": 160.7,
+    "s": 317.8,
+    "gap": 0.57
+   },
+   {
+    "t": 226.6,
+    "s": 317.7,
+    "gap": 0.59
+   },
+   {
+    "t": 239.8,
+    "s": 317.8,
+    "gap": 0.56
+   }
+  ]
+ },
+ "events": [
+  {
+   "t": 0.0,
+   "kind": "sim",
+   "text": "chunk 0 start: SITL launched, home = checkpoint pose s=295.0"
+  },
+  {
+   "t": 1.14,
+   "kind": "fw",
+   "text": "Calibrating barometer"
+  },
+  {
+   "t": 2.82,
+   "kind": "fw",
+   "text": "Barometer 1 calibration complete"
+  },
+  {
+   "t": 2.82,
+   "kind": "fw",
+   "text": "Barometer 2 calibration complete"
+  },
+  {
+   "t": 2.83,
+   "kind": "fw",
+   "text": "Beginning INS calibration. Do not move vehicle"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "ArduPilot Ready"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "RCInput: decoding UDP (Pulses)"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "AHRS: DCM active"
+  },
+  {
+   "t": 2.97,
+   "kind": "fw",
+   "text": "GPS 1: specified as MAV"
+  },
+  {
+   "t": 3.09,
+   "kind": "fw",
+   "text": "GPS 1: detected MAV"
+  },
+  {
+   "t": 4.99,
+   "kind": "fw",
+   "text": "EKF3 IMU0 initialised"
+  },
+  {
+   "t": 4.99,
+   "kind": "fw",
+   "text": "EKF3 IMU1 initialised"
+  },
+  {
+   "t": 6.67,
+   "kind": "fw",
+   "text": "EKF3 IMU0 tilt alignment complete"
+  },
+  {
+   "t": 6.67,
+   "kind": "fw",
+   "text": "EKF3 IMU1 tilt alignment complete"
+  },
+  {
+   "t": 6.75,
+   "kind": "fw",
+   "text": "EKF3 IMU0 MAG0 initial yaw alignment complete"
+  },
+  {
+   "t": 6.75,
+   "kind": "fw",
+   "text": "EKF3 IMU1 MAG0 initial yaw alignment complete"
+  },
+  {
+   "t": 6.75,
+   "kind": "fw",
+   "text": "AHRS: EKF3 active"
+  },
+  {
+   "t": 15.15,
+   "kind": "fw",
+   "text": "EKF3 IMU0 origin set"
+  },
+  {
+   "t": 15.15,
+   "kind": "fw",
+   "text": "EKF3 IMU1 origin set"
+  },
+  {
+   "t": 15.17,
+   "kind": "fw",
+   "text": "Field Elevation Set: 30m"
+  },
+  {
+   "t": 21.65,
+   "kind": "fw",
+   "text": "SmartRTL deactivated: bad position"
+  },
+  {
+   "t": 42.57,
+   "kind": "fw",
+   "text": "EKF3 IMU0 is using GPS"
+  },
+  {
+   "t": 42.57,
+   "kind": "fw",
+   "text": "EKF3 IMU1 is using GPS"
+  },
+  {
+   "t": 45.93,
+   "kind": "fw",
+   "text": "Fence Indexed OK"
+  },
+  {
+   "t": 45.95,
+   "kind": "pi",
+   "text": "fence upload ack=0 (81 vertices)"
+  },
+  {
+   "t": 45.99,
+   "kind": "fw",
+   "text": "Warning: Arming Checks Disabled"
+  },
+  {
+   "t": 45.99,
+   "kind": "fw",
+   "text": "Throttle armed"
+  },
+  {
+   "t": 46.95,
+   "kind": "pi",
+   "text": "boot done (GUIDED, armed, fence 81 pts)"
+  },
+  {
+   "t": 106.77,
+   "kind": "pi",
+   "text": "unmapped object 1.48 m ahead -> stop"
+  },
+  {
+   "t": 157.51,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 160.71,
+   "kind": "pi",
+   "text": "protective field: return 0.57 m ahead of the nose inside the robot's own path (or beside the nose) -> stop, back out"
+  },
+  {
+   "t": 170.21,
+   "kind": "pi",
+   "text": "unmapped object 1.24 m ahead -> stop"
+  },
+  {
+   "t": 220.51,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 221.51,
+   "kind": "pi",
+   "text": "unmapped object 1.37 m ahead -> stop"
+  },
+  {
+   "t": 224.71,
+   "kind": "pi",
+   "text": "path clear for 3 s -> resume"
+  },
+  {
+   "t": 226.61,
+   "kind": "pi",
+   "text": "protective field: return 0.59 m ahead of the nose inside the robot's own path (or beside the nose) -> stop, back out"
+  },
+  {
+   "t": 239.81,
+   "kind": "pi",
+   "text": "protective field: return 0.56 m ahead of the nose inside the robot's own path (or beside the nose) -> stop, back out"
+  },
+  {
+   "t": 240.81,
+   "kind": "ALERT",
+   "text": "protective field tripped 3 times in 2 minutes - holding in the lane"
+  },
+  {
+   "t": 240.81,
+   "kind": "pi",
+   "text": "FINISH alert: path blocked"
+  }
+ ]
+}

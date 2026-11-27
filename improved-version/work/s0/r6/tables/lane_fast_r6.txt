@@ -1,0 +1,17 @@
+set                rule                       grip  run     verd  time s     Wh v max seated clear mm   roll  pitch hedge m hold creep mm / overrun m / fails
+runs_r51_real      touch-safe (rev 5 rule)    0.35  P1      PASS    1818   16.6  0.47 True         51    1.7    4.8   0.309 None None 
+runs_r51_real      touch-safe (rev 5 rule)    0.35  P7      PASS    1815   25.5  0.47 True         48    1.7    4.8   0.309 None None 
+runs_r51_real      touch-safe (rev 5 rule)    0.35  P2a_pf  PASS    1745   33.6  0.40 True       None    1.8    4.8   0.333 None None 
+runs_r51_real      touch-safe (rev 5 rule)    0.35  P4a     PASS    -266    0.4  0.32 True         97    0.3    4.8   1.500 1.6 None 
+runs_r51_real      touch-safe (rev 5 rule)    0.35  P4b     PASS    -415    5.7  0.38 True        103    3.5    4.8   0.695 1.6 None 
+runs_r51_v51_m35   touch-safe (rev 5.1 rule)  0.35  P4a     PASS    -207    0.5  0.31 True         96    0.3    4.8   1.498 1.5 None 
+runs_r6_fast       fast cruise                0.35  P1      PASS     877   15.5  1.23 True         51    1.7    4.8   0.308 None None 
+runs_r6_fast       fast cruise                0.35  P7      PASS     876   19.9  1.24 True         49    1.7    4.8   0.309 None None 
+runs_r6_fast       fast cruise                0.35  P3      PASS     878   15.2  1.18 True         98    1.7    4.8   0.309 None None 
+runs_r6_fast       fast cruise                0.35  P2a_pf  PASS     741   32.3  1.07 True       None    1.8    4.8   0.333 None None 
+runs_r6_fast       fast cruise                0.35  P2c     PASS     806   33.5  1.06 True         97    1.8    4.8   0.313 None None 
+runs_r6_fast       fast cruise                0.35  P4a     PASS    -178    0.2  0.62 True         99    0.3    4.8   1.498 1.6 0.0 
+runs_r6_fast       fast cruise                0.35  P4b     PASS    -255    5.7  0.99 True         99    3.5    4.8   0.639 1.7 0.0 
+runs_r6_fast_w22   fast cruise                0.22  P1      PASS     877   15.5  1.24 True         50    1.7    4.8   0.308 None None 
+runs_r6_fast_w22   fast cruise                0.22  P2a_pf  PASS     741   32.3  1.04 True       None    1.8    4.8   0.333 None None 
+runs_r6_fast_w22   fast cruise                0.22  P2c     PASS     806   33.5  1.10 True         98    1.8    4.8   0.333 None None 

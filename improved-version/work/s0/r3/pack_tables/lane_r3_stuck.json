@@ -1,0 +1,92 @@
+{
+ "runs_r3_pf/P1": {
+  "frozen": "PASS",
+  "stuck_s": 57.8,
+  "at_t": 0.0,
+  "at_s": 11.7,
+  "end_wait_s": 34.0,
+  "dist_m": 611.1,
+  "verdict_120": "PASS"
+ },
+ "runs_r3_pf/P2a": {
+  "frozen": "PASS",
+  "stuck_s": 40.8,
+  "at_t": 0.0,
+  "at_s": 622.8,
+  "end_wait_s": 14.9,
+  "dist_m": 610.7,
+  "verdict_120": "PASS"
+ },
+ "runs_r3_pf/P2c": {
+  "frozen": "PASS",
+  "stuck_s": 57.0,
+  "at_t": 0.0,
+  "at_s": 623.3,
+  "end_wait_s": 33.7,
+  "dist_m": 614.5,
+  "verdict_120": "PASS"
+ },
+ "runs_r3_pf/P3": {
+  "frozen": "PASS",
+  "stuck_s": 57.8,
+  "at_t": 0.0,
+  "at_s": 11.5,
+  "end_wait_s": 34.0,
+  "dist_m": 611.1,
+  "verdict_120": "PASS"
+ },
+ "runs_r3_pf/P4a": {
+  "frozen": "PASS",
+  "stuck_s": 21.4,
+  "at_t": 312.3,
+  "at_s": 140.1,
+  "end_wait_s": 10.8,
+  "dist_m": 41.9,
+  "verdict_120": "PASS"
+ },
+ "runs_r3_pf/P4b": {
+  "frozen": "PASS",
+  "stuck_s": 28.6,
+  "at_t": 370.9,
+  "at_s": 170.0,
+  "end_wait_s": 11.6,
+  "dist_m": 43.0,
+  "verdict_120": "PASS"
+ },
+ "runs_r3_pf/P5a_drop_sharp_3kN": {
+  "frozen": "PASS",
+  "stuck_s": 10.2,
+  "at_t": 612.7,
+  "at_s": 291.9,
+  "end_wait_s": 14.2,
+  "dist_m": 14.9,
+  "verdict_120": "PASS"
+ },
+ "runs_r3_pf/P5d_up_sharp_3kN": {
+  "frozen": "FAIL",
+  "stuck_s": 30.2,
+  "at_t": 625.1,
+  "at_s": 298.1,
+  "end_wait_s": 35.7,
+  "dist_m": 7.1,
+  "verdict_120": "PASS"
+ },
+ "runs_r3_pf/P6a_person_estop": {
+  "frozen": "PASS",
+  "stuck_s": 18.3,
+  "at_t": 309.9,
+  "at_s": 138.9,
+  "end_wait_s": 10.6,
+  "dist_m": 23.9,
+  "verdict_120": "PASS"
+ },
+ "runs_r3_pf/P7": {
+  "frozen": "PASS",
+  "stuck_s": 57.8,
+  "at_t": 0.0,
+  "at_s": 11.7,
+  "end_wait_s": 34.0,
+  "dist_m": 611.1,
+  "verdict_120": "PASS"
+ }
+}

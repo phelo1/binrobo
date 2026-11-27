@@ -1,0 +1,5 @@
+sitl start 17:20:01
+queue 1 done 18:22:09
+queue 0 done 18:22:26
+sitl end 18:41:06
+sitlC end 18:56:28

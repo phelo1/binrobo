@@ -1,0 +1,1 @@
+B_step40_one {"test": "step40", "side": "one", "grab": "success", "reached": true, "dist_m": 4.68, "captured_end": true, "roll": 0.806, "pitch": 8.212, "bin_ground": 0.0, "cmin": 0.0, "dmin": 0.0, "seated_all": true, "clear_min": 0.031, "ok": true, "cpu_s": 18}

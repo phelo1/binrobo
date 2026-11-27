@@ -1,0 +1,5 @@
+env CGB_F9=1 IT1_TAG= python3 b2/runB2.py grab ESE140CL 30 205
+env CGB_F9=1 IT1_TAG= python3 b2/runB2.py grab ESE240CL 30 203
+env CGB_F9=1 IT1_TAG= python3 b2/runB2.py grab ESE240SL 30 202
+env CGB_F9=1 IT1_TAG= python3 b2/runB2.py grab ESE240SL250 30 204
+env CGB_F9=1 IT1_TAG= python3 b2/runB2.py grab WEB140 30 201

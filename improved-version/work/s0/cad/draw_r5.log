@@ -1,0 +1,14 @@
+sheet 1 nobin FL labels 72 mm/px 1.025
+sheet 2 nobin FR labels 73 mm/px 1.025
+sheet 3 nobin RL labels 73 mm/px 1.025
+sheet 4 nobin RR labels 75 mm/px 1.025
+sheet 5 carry FL labels 76 mm/px 1.025
+sheet 6 carry FR labels 76 mm/px 1.025
+sheet 7 carry RL labels 73 mm/px 1.025
+sheet 8 carry RR labels 71 mm/px 1.025
+sheet 9 nobin UFL labels 63 mm/px 1.025
+sheet 10 carry RL labels 78 mm/px 1.025
+sheet 11 balloons 82 of 84 missing [21, 65]
+sheet 12 balloons 87 of 88 missing [21]
+  loom table ends at y 2059
+sheet 14

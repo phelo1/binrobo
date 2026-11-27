@@ -1,0 +1,514 @@
+{
+ "static": {
+  "nobin": [
+   [
+    92.5,
+    "GU UHMW guard R",
+    "DR Drive wheel 330 mm (tyre) [wheelR]",
+    "legacy"
+   ],
+   [
+    92.5,
+    "GU UHMW guard L",
+    "DR Drive wheel 330 mm (tyre) [wheelL]",
+    "legacy"
+   ],
+   [
+    78.4,
+    "PD Pad arm (on the carriage)",
+    "PD Pad guide block",
+    "mine"
+   ],
+   [
+    69.0,
+    "BIN 240 L body, corrected hull (front taper 35 mm, rear dr",
+    "BIN Lid (hinge at the rear)",
+    "legacy"
+   ],
+   [
+    44.8,
+    "LC Comb pivot block (yaw +/-4, roll +/-3, centring springs",
+    "PD Pad arm (on the carriage)",
+    "mine"
+   ],
+   [
+    32.0,
+    "LC Comb face plate (sprung, 10 mm)",
+    "PD Pad arm (on the carriage)",
+    "mine"
+   ],
+   [
+    32.0,
+    "LC Carriage plate",
+    "PD Pad arm (on the carriage)",
+    "mine"
+   ],
+   [
+    28.1,
+    "AT Anti-tip bracket R",
+    "AT Anti-tip roller R D80 (y 420)",
+    "legacy"
+   ],
+   [
+    28.1,
+    "AT Anti-tip bracket L",
+    "AT Anti-tip roller L D80 (y 420)",
+    "legacy"
+   ],
+   [
+    16.5,
+    "LM Linear rail R HGR15 1 m, mounted 60 mm higher",
+    "LC Carriage plate",
+    "mine"
+   ],
+   [
+    16.5,
+    "LM Linear rail L HGR15 1 m, mounted 60 mm higher",
+    "LC Carriage plate",
+    "mine"
+   ],
+   [
+    13.8,
+    "BIN Handle bracket",
+    "BIN Lid (hinge at the rear)",
+    "legacy"
+   ],
+   [
+    13.8,
+    "BIN Handle bracket",
+    "BIN Lid (hinge at the rear)",
+    "legacy"
+   ],
+   [
+    13.2,
+    "SF Front bumper (switch strip)",
+    "SF Front bumper stripe",
+    "mine"
+   ],
+   [
+    11.3,
+    "GU UHMW guard R",
+    "DR Drive wheel hub [wheelR]",
+    "legacy"
+   ],
+   [
+    11.3,
+    "GU UHMW guard L",
+    "DR Drive wheel hub [wheelL]",
+    "legacy"
+   ],
+   [
+    10.0,
+    "GU Mouth flare R",
+    "AT Anti-tip roller R D80 (y 420)",
+    "legacy"
+   ],
+   [
+    10.0,
+    "GU Mouth flare L",
+    "AT Anti-tip roller L D80 (y 420)",
+    "legacy"
+   ],
+   [
+    9.0,
+    "FR Side rail R 50x50x2 RHS",
+    "DR Chain case R",
+    "mine"
+   ],
+   [
+    9.0,
+    "FR Side rail L 50x50x2 RHS",
+    "DR Chain case L",
+    "mine"
+   ],
+   [
+    6.5,
+    "LM Linear rail R HGR15 1 m, mounted 60 mm higher",
+    "LM Lift hard stop R at 345 mm, clamped on the rail",
+    "mine"
+   ],
+   [
+    6.5,
+    "LM Linear rail L HGR15 1 m, mounted 60 mm higher",
+    "LM Lift hard stop L at 345 mm, clamped on the rail",
+    "mine"
+   ],
+   [
+    6.3,
+    "BIN Axle",
+    "BIN Wheel hub [bwR]",
+    "legacy"
+   ],
+   [
+    6.3,
+    "BIN Axle",
+    "BIN Wheel hub [bwL]",
+    "legacy"
+   ],
+   [
+    6.1,
+    "BY HDPE rear cover (fixed)",
+    "EL Battery isolator key switch 100 A (on the power box, th",
+    "mine"
+   ],
+   [
+    4.8,
+    "FR Side rail R 50x50x2 RHS",
+    "FR Drive/motor plate R 6 mm (laser)",
+    "mine"
+   ],
+   [
+    4.8,
+    "FR Side rail L 50x50x2 RHS",
+    "FR Drive/motor plate L 6 mm (laser)",
+    "mine"
+   ],
+   [
+    3.8,
+    "LC Comb plate 700 mm, 8 mm S355 (S12), self-aligning",
+    "SW Nib seat switch (flush)",
+    "mine"
+   ],
+   [
+    3.7,
+    "BIN 240 L body, corrected hull (front taper 35 mm, rear dr",
+    "BIN Wheel 200 mm [bwR]",
+    "legacy"
+   ],
+   [
+    3.7,
+    "BIN 240 L body, corrected hull (front taper 35 mm, rear dr",
+    "BIN Wheel 200 mm [bwL]",
+    "legacy"
+   ],
+   [
+    3.6,
+    "SN Comb ToF (gap + yaw) R",
+    "LC Comb plate 700 mm, 8 mm S355 (S12), self-aligning",
+    "mine"
+   ],
+   [
+    3.6,
+    "SN Comb ToF (gap + yaw) L",
+    "LC Comb plate 700 mm, 8 mm S355 (S12), self-aligning",
+    "mine"
+   ],
+   [
+    3.1,
+    "CA Castor fork 200 mm [cforkR]",
+    "CA Castor hub [cwheelR]",
+    "legacy"
+   ],
+   [
+    3.1,
+    "CA Castor fork 200 mm [cforkL]",
+    "CA Castor hub [cwheelL]",
+    "legacy"
+   ],
+   [
+    2.2,
+    "FR Mast-base cross-member 50x50x2",
+    "LM Linear rail R HGR15 1 m, mounted 60 mm higher",
+    "mine"
+   ],
+   [
+    2.2,
+    "FR Mast-base cross-member 50x50x2",
+    "LM Linear rail L HGR15 1 m, mounted 60 mm higher",
+    "mine"
+   ],
+   [
+    1.4,
+    "SF Rear bumper R (foam + switch)",
+    "SF Rear bumper stripe R",
+    "legacy"
+   ],
+   [
+    1.4,
+    "SF Rear bumper L (foam + switch)",
+    "SF Rear bumper stripe L",
+    "legacy"
+   ]
+  ],
+  "carry": [
+   [
+    92.5,
+    "GU UHMW guard R",
+    "DR Drive wheel 330 mm (tyre) [wheelR]",
+    "legacy"
+   ],
+   [
+    92.5,
+    "GU UHMW guard L",
+    "DR Drive wheel 330 mm (tyre) [wheelL]",
+    "legacy"
+   ],
+   [
+    79.3,
+    "BIN 240 L body, corrected hull (front taper 35 mm, rear dr",
+    "BIN Lid (hinge at the rear)",
+    "legacy"
+   ],
+   [
+    78.4,
+    "PD Pad arm (on the carriage)",
+    "PD Pad guide block",
+    "mine"
+   ],
+   [
+    44.8,
+    "LC Comb pivot block (yaw +/-4, roll +/-3, centring springs",
+    "PD Pad arm (on the carriage)",
+    "mine"
+   ],
+   [
+    32.0,
+    "LC Comb face plate (sprung, 10 mm)",
+    "PD Pad arm (on the carriage)",
+    "mine"
+   ],
+   [
+    32.0,
+    "LC Carriage plate",
+    "PD Pad arm (on the carriage)",
+    "mine"
+   ],
+   [
+    28.1,
+    "AT Anti-tip bracket R",
+    "AT Anti-tip roller R D80 (y 420)",
+    "legacy"
+   ],
+   [
+    28.1,
+    "AT Anti-tip bracket L",
+    "AT Anti-tip roller L D80 (y 420)",
+    "legacy"
+   ],
+   [
+    16.5,
+    "LM Linear rail R HGR15 1 m, mounted 60 mm higher",
+    "LC Carriage plate",
+    "mine"
+   ],
+   [
+    16.5,
+    "LM Linear rail L HGR15 1 m, mounted 60 mm higher",
+    "LC Carriage plate",
+    "mine"
+   ],
+   [
+    13.8,
+    "BIN Handle bracket",
+    "BIN Lid (hinge at the rear)",
+    "legacy"
+   ],
+   [
+    13.8,
+    "BIN Handle bracket",
+    "BIN Lid (hinge at the rear)",
+    "legacy"
+   ],
+   [
+    13.2,
+    "SF Front bumper (switch strip)",
+    "SF Front bumper stripe",
+    "mine"
+   ],
+   [
+    11.3,
+    "GU UHMW guard R",
+    "DR Drive wheel hub [wheelR]",
+    "legacy"
+   ],
+   [
+    11.3,
+    "GU UHMW guard L",
+    "DR Drive wheel hub [wheelL]",
+    "legacy"
+   ],
+   [
+    10.0,
+    "GU Mouth flare R",
+    "AT Anti-tip roller R D80 (y 420)",
+    "legacy"
+   ],
+   [
+    10.0,
+    "GU Mouth flare L",
+    "AT Anti-tip roller L D80 (y 420)",
+    "legacy"
+   ],
+   [
+    9.0,
+    "FR Side rail R 50x50x2 RHS",
+    "DR Chain case R",
+    "mine"
+   ],
+   [
+    9.0,
+    "FR Side rail L 50x50x2 RHS",
+    "DR Chain case L",
+    "mine"
+   ],
+   [
+    6.5,
+    "LM Linear rail R HGR15 1 m, mounted 60 mm higher",
+    "LM Lift hard stop R at 345 mm, clamped on the rail",
+    "mine"
+   ],
+   [
+    6.5,
+    "LM Linear rail L HGR15 1 m, mounted 60 mm higher",
+    "LM Lift hard stop L at 345 mm, clamped on the rail",
+    "mine"
+   ],
+   [
+    6.3,
+    "BIN Axle",
+    "BIN Wheel hub [bwR]",
+    "legacy"
+   ],
+   [
+    6.3,
+    "BIN Axle",
+    "BIN Wheel hub [bwL]",
+    "legacy"
+   ],
+   [
+    6.1,
+    "BY HDPE rear cover (fixed)",
+    "EL Battery isolator key switch 100 A (on the power box, th",
+    "mine"
+   ],
+   [
+    4.8,
+    "FR Side rail R 50x50x2 RHS",
+    "FR Drive/motor plate R 6 mm (laser)",
+    "mine"
+   ],
+   [
+    4.8,
+    "FR Side rail L 50x50x2 RHS",
+    "FR Drive/motor plate L 6 mm (laser)",
+    "mine"
+   ],
+   [
+    3.8,
+    "LC Comb plate 700 mm, 8 mm S355 (S12), self-aligning",
+    "SW Nib seat switch (flush)",
+    "mine"
+   ],
+   [
+    3.7,
+    "BIN 240 L body, corrected hull (front taper 35 mm, rear dr",
+    "BIN Wheel 200 mm [bwR]",
+    "legacy"
+   ],
+   [
+    3.7,
+    "BIN 240 L body, corrected hull (front taper 35 mm, rear dr",
+    "BIN Wheel 200 mm [bwL]",
+    "legacy"
+   ],
+   [
+    3.6,
+    "SN Comb ToF (gap + yaw) R",
+    "LC Comb plate 700 mm, 8 mm S355 (S12), self-aligning",
+    "mine"
+   ],
+   [
+    3.6,
+    "SN Comb ToF (gap + yaw) L",
+    "LC Comb plate 700 mm, 8 mm S355 (S12), self-aligning",
+    "mine"
+   ],
+   [
+    3.1,
+    "CA Castor fork 200 mm [cforkR]",
+    "CA Castor hub [cwheelR]",
+    "legacy"
+   ],
+   [
+    3.1,
+    "CA Castor fork 200 mm [cforkL]",
+    "CA Castor hub [cwheelL]",
+    "legacy"
+   ],
+   [
+    2.2,
+    "PD Pad UHMW face 300x100",
+    "BIN 240 L body, corrected hull (front taper 35 mm, rear dr",
+    "mine"
+   ],
+   [
+    2.2,
+    "FR Mast-base cross-member 50x50x2",
+    "LM Linear rail R HGR15 1 m, mounted 60 mm higher",
+    "mine"
+   ],
+   [
+    2.2,
+    "FR Mast-base cross-member 50x50x2",
+    "LM Linear rail L HGR15 1 m, mounted 60 mm higher",
+    "mine"
+   ],
+   [
+    1.4,
+    "SF Rear bumper R (foam + switch)",
+    "SF Rear bumper stripe R",
+    "legacy"
+   ],
+   [
+    1.4,
+    "SF Rear bumper L (foam + switch)",
+    "SF Rear bumper stripe L",
+    "legacy"
+   ]
+  ]
+ },
+ "sweep": [
+  {
+   "moving": "LC Carriage plate",
+   "fixed": "LM Linear rail L HGR15 1 m, mounted 60 mm higher",
+   "first_q_mm": 0.0,
+   "cm3": 16.5
+  },
+  {
+   "moving": "LC Carriage plate",
+   "fixed": "LM Linear rail R HGR15 1 m, mounted 60 mm higher",
+   "first_q_mm": 0.0,
+   "cm3": 16.5
+  },
+  {
+   "moving": "LC Carriage plate",
+   "fixed": "SW Lift top limit switch (in the up feed of the lift driver)",
+   "first_q_mm": 310.0,
+   "cm3": 0.24
+  },
+  {
+   "moving": "LC Carriage plate",
+   "fixed": "LM Lift hard stop L at 345 mm, clamped on the rail",
+   "first_q_mm": 338.0,
+   "cm3": 0.58
+  },
+  {
+   "moving": "LC Carriage plate",
+   "fixed": "LM Lift hard stop R at 345 mm, clamped on the rail",
+   "first_q_mm": 338.0,
+   "cm3": 0.58
+  },
+  {
+   "moving": "LC Rail carriage",
+   "fixed": "LM Lift hard stop L at 345 mm, clamped on the rail",
+   "first_q_mm": 348.0,
+   "cm3": 0.77
+  },
+  {
+   "moving": "LC Rail carriage",
+   "fixed": "LM Lift hard stop R at 345 mm, clamped on the rail",
+   "first_q_mm": 348.0,
+   "cm3": 0.77
+  }
+ ]
+}

@@ -1,0 +1,1 @@
+stepempty_both_v03_yaw20_h25 {"test": "step_empty", "step_h_mm": 25.0, "yaw_deg": 20.0, "side": "both", "v": 0.3, "step_at_m": 3.0, "reached": true, "dist_m": 5.98, "tcap": 60.0, "wheel_peak_N": 3109, "yaw_end_deg": 20.0, "boost": null, "cpu_s": 4}

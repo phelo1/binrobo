@@ -1,0 +1,110 @@
+  0 rc 0     3 s  pstop 0.2 0 0.3 0 0.15
+  1 rc 0     3 s  pstop 0.3 0 0.3 0 0.15
+  2 rc 0     3 s  pstop 0.4 0 0.3 0 0.15
+  3 rc 0     3 s  pstop 0.2 -0.03 0.3 0 0.15
+  4 rc 0     3 s  pstop 0.3 -0.03 0.3 0 0.15
+  5 rc 0     3 s  pstop 0.4 -0.03 0.3 0 0.15
+  6 rc 0     3 s  pstop 0.2 -0.06 0.3 0 0.15
+  7 rc 0     4 s  pstop 0.3 -0.06 0.3 0 0.15
+  8 rc 0     3 s  pstop 0.4 -0.06 0.3 0 0.15
+  9 rc 0     3 s  pstop 0.2 -0.08 0.3 0 0.15
+ 10 rc 0     3 s  pstop 0.3 -0.08 0.3 0 0.15
+ 11 rc 0     3 s  pstop 0.4 -0.08 0.3 0 0.15
+ 12 rc 0     3 s  pstop 0.2 -0.1 0.3 0 0.15
+ 13 rc 0     3 s  pstop 0.3 -0.1 0.3 0 0.15
+ 14 rc 0     3 s  pstop 0.4 -0.1 0.3 0 0.15
+ 15 rc 0     3 s  pstop 0.2 -0.12 0.3 0 0.15
+ 16 rc 0     4 s  pstop 0.3 -0.12 0.3 0 0.15
+ 17 rc 0     4 s  pstop 0.4 -0.12 0.3 0 0.15
+ 18 rc 0     3 s  pstop 0.2 -0.06 0.22 0 0.15
+ 19 rc 0     3 s  pstop 0.2 -0.08 0.22 0 0.15
+ 20 rc 0     5 s  pstop 0.2 -0.1 0.22 0 0.15
+ 21 rc 0     4 s  pstop 0.2 -0.12 0.22 0 0.15
+ 22 rc 0     3 s  pstop 0.4 0 0.22 0 0.15
+ 23 rc 0     3 s  pstop 0.2 -0.06 0.3 0 0.15 rev
+ 24 rc 0     3 s  pstop 0.3 -0.06 0.3 0 0.15 rev
+ 25 rc 0     4 s  pstop 0.2 -0.06 0.22 0 0.15 rev
+ 26 rc 0     4 s  pstop 0.2 -0.08 0.3 0 0.15 rev
+ 27 rc 0     3 s  pstop 0.3 -0.08 0.3 0 0.15 rev
+ 28 rc 0     4 s  pstop 0.2 -0.08 0.22 0 0.15 rev
+ 29 rc 0     3 s  pstop 0.2 -0.1 0.3 0 0.15 rev
+ 30 rc 0     3 s  pstop 0.3 -0.1 0.3 0 0.15 rev
+ 31 rc 0     3 s  pstop 0.2 -0.1 0.22 0 0.15 rev
+ 32 rc 0     3 s  pstop 0.2 -0.12 0.3 0 0.15 rev
+ 33 rc 0     3 s  pstop 0.3 -0.12 0.3 0 0.15 rev
+ 34 rc 0     3 s  pstop 0.2 -0.12 0.22 0 0.15 rev
+ 35 rc 0     3 s  pstop 0.3 -0.12 0.22 0 0.15 rev
+ 36 rc 0    18 s  pstop 0.2 0 0.3 110 0.15
+ 37 rc 0    17 s  pstop 0.3 0 0.3 110 0.15
+ 38 rc 0    16 s  pstop 0.4 0 0.3 110 0.15
+ 39 rc 0    17 s  pstop 0.2 -0.03 0.3 110 0.15
+ 40 rc 0    16 s  pstop 0.3 -0.03 0.3 110 0.15
+ 41 rc 0    16 s  pstop 0.4 -0.03 0.3 110 0.15
+ 42 rc 0    17 s  pstop 0.2 -0.06 0.3 110 0.15
+ 43 rc 0    16 s  pstop 0.3 -0.06 0.3 110 0.15
+ 44 rc 0    15 s  pstop 0.4 -0.06 0.3 110 0.15
+ 45 rc 0    16 s  pstop 0.2 -0.09 0.3 110 0.15
+ 46 rc 0    27 s  pstop 0.3 -0.09 0.3 110 0.15
+ 47 rc 0    28 s  pstop 0.4 -0.09 0.3 110 0.15
+ 48 rc 0    34 s  pstop 0.2 -0.12 0.3 110 0.15
+ 49 rc 0    33 s  pstop 0.3 -0.12 0.3 110 0.15
+ 50 rc 0    32 s  pstop 0.4 -0.12 0.3 110 0.15
+ 51 rc 0    31 s  pstop 0.5 0 0.3 110 0.15
+ 52 rc 0    33 s  pstop 0.2 -0.06 0.22 110 0.15
+ 53 rc 0    34 s  pstop 0.2 -0.09 0.22 110 0.15
+ 54 rc 0    38 s  pstop 0.2 -0.12 0.22 110 0.15
+ 55 rc 0     6 s  pstop 0.4 0 0.3 0 0.2
+ 56 rc 0    35 s  pstop 0.3 -0.09 0.3 110 0.2
+ 57 rc 0     7 s  pstop 0.4 0 0.3 0 0.15
+ 58 rc 0     8 s  pstop 0.2 -0.12 0.3 0 0.15 rev
+ 59 rc 0    42 s  pstop 0.2 -0.12 0.3 110 0.15
+ 60 rc 0     9 s  pstop 0.2 -0.12 0.3 0 0.15
+ 61 rc 0     7 s  stepempty both 0.3
+ 62 rc 0    10 s  stepempty both 0.3
+ 63 rc 0     9 s  stepempty both 0.3
+ 64 rc 0    11 s  stepempty both 0.3
+ 65 rc 0    26 s  stepempty both 0.3
+ 66 rc 0    13 s  stepempty both 0.3
+ 67 rc 0    21 s  stepempty both 0.3
+ 68 rc 0    50 s  liftpeak step both 0.3
+ 69 rc 0    51 s  liftpeak step both 0.4
+ 70 rc 0    95 s  liftpeak step both 0.3
+ 71 rc 0   100 s  liftpeak step both 0.4
+ 72 rc 0   104 s  liftpeak step both 0.3
+ 73 rc 0    74 s  liftpeak step both 0.4
+ 74 rc 0    87 s  liftpeak step both 0.4
+ 75 rc 0    98 s  liftpeak step both 0.3
+ 76 rc 0    37 s  stepempty one 0.4
+ 77 rc 0    24 s  stepempty both 0.3
+ 78 rc 0   123 s  lat 110
+ 79 rc 0    43 s  lat 0
+ 80 rc 0    84 s  liftpeak kerb nose 0.5
+ 81 rc 0    63 s  liftpeak kerb nose 0.5
+ 82 rc 0    60 s  liftpeak kerb nose 0.8
+ 83 rc 0    51 s  liftpeak kerb nose 0.8
+ 84 rc 0    66 s  lower 0 L 110 8
+ 85 rc 0    73 s  lower 0 L 60 8
+ 86 rc 0    85 s  lower 0 L 25 8
+ 87 rc 0   123 s  lower 10 L 110 8
+ 88 rc 0   119 s  lower 15 L 110 8
+ 89 rc 0    93 s  lower 20 L 110 8
+ 90 rc 0    88 s  lower 25 L 110 8
+ 91 rc 0    77 s  lower 40 L 110 8
+ 92 rc 0    81 s  lower 60 L 110 8
+ 93 rc 0    64 s  lower 20 L 25 8
+ 94 rc 0    45 s  lower 15 L 25 8
+ 95 rc 0    39 s  lower 20 both 110 8
+ 96 rc 0    37 s  lower 60 both 110 8
+ 97 rc 0    34 s  lower 0 L 110 8
+ 98 rc 0    34 s  lower 0 L 25 8
+ 99 rc 0    35 s  lower 15 L 110 8
+100 rc 0    35 s  lower 20 L 110 8
+101 rc 0    38 s  lower 25 L 110 8
+102 rc 0    43 s  lower 60 L 110 8
+103 rc 0   118 s  lower 0 L 110 8
+104 rc 0   130 s  lower 0 L 25 8
+105 rc 0    91 s  lower 20 L 110 8
+106 rc 0   102 s  lower 25 L 25 8
+107 rc 0   135 s  lower 60 L 110 8 nocheck
+108 rc 0   116 s  lower 20 L 110 8
+batch done in 1917 s
